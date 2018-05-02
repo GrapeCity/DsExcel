@@ -1,0 +1,1423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessWorksheet.Name" xml:space="preserve">
+    <value>访问工作表</value>
+  </data>
+  <data name="ActivateWorksheet.Name" xml:space="preserve">
+    <value>激活工作表</value>
+  </data>
+  <data name="AddCustomTableStyle.Name" xml:space="preserve">
+    <value>添加自定义表格样式</value>
+  </data>
+  <data name="AddCustomThemes.Name" xml:space="preserve">
+    <value>添加自定义主题</value>
+  </data>
+  <data name="AddWorksheet.Name" xml:space="preserve">
+    <value>添加工作表</value>
+  </data>
+  <data name="ApplyTableStyle.Name" xml:space="preserve">
+    <value>设置内置表格样式</value>
+  </data>
+  <data name="ChangeWorkbookTheme.Name" xml:space="preserve">
+    <value>修改工作簿主题</value>
+  </data>
+  <data name="ClearSparklineGroup.Name" xml:space="preserve">
+    <value>清除迷你图组</value>
+  </data>
+  <data name="ClearSparklines.Name" xml:space="preserve">
+    <value>清除迷你图</value>
+  </data>
+  <data name="ConfigSparklineSettings.Name" xml:space="preserve">
+    <value>设置迷你图</value>
+  </data>
+  <data name="ConfigWorksheet.Name" xml:space="preserve">
+    <value>设置工作表属性</value>
+  </data>
+  <data name="CreateNewWorkbook.Name" xml:space="preserve">
+    <value>创建新的工作簿</value>
+  </data>
+  <data name="CreateSparklines.Name" xml:space="preserve">
+    <value>创建迷你图</value>
+  </data>
+  <data name="CreateTable.Name" xml:space="preserve">
+    <value>创建表格</value>
+  </data>
+  <data name="CustomSort.Name" xml:space="preserve">
+    <value>根据自定义序列排序</value>
+  </data>
+  <data name="DeleteWorksheet.Name" xml:space="preserve">
+    <value>删除工作表</value>
+  </data>
+  <data name="Filtering.Name" xml:space="preserve">
+    <value>过滤</value>
+  </data>
+  <data name="GroupExistSparklines.Name" xml:space="preserve">
+    <value>组合迷你图</value>
+  </data>
+  <data name="ImportExcelFileToWorkbook.Name" xml:space="preserve">
+    <value>导入Excel文件</value>
+  </data>
+  <data name="ImportExcelFileWithPassword.Name" xml:space="preserve">
+    <value>导入密码保护的Excel文件</value>
+  </data>
+  <data name="InsertDeleteTableRowColumns.Name" xml:space="preserve">
+    <value>插入/删除表格行列</value>
+  </data>
+  <data name="PerformCalculationsInTable.Name" xml:space="preserve">
+    <value>表格内执行计算</value>
+  </data>
+  <data name="ProtectWorksheet.Name" xml:space="preserve">
+    <value>保护工作表</value>
+  </data>
+  <data name="RemoveTable.Name" xml:space="preserve">
+    <value>删除表格</value>
+  </data>
+  <data name="SaveWorkbookToExcelFile.Name" xml:space="preserve">
+    <value>保存为Excel</value>
+  </data>
+  <data name="SaveWorkbookWithPassword.Name" xml:space="preserve">
+    <value>保存为密码保护的Excel</value>
+  </data>
+  <data name="Sorting.Name" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="SortRangeByFontColor.Name" xml:space="preserve">
+    <value>按字体颜色排序</value>
+  </data>
+  <data name="SortRangeByIcon.Name" xml:space="preserve">
+    <value>按图标排序</value>
+  </data>
+  <data name="SortRangeByInterior.Name" xml:space="preserve">
+    <value>按背景色排序</value>
+  </data>
+  <data name="SortRangeByValue.Name" xml:space="preserve">
+    <value>按值排序</value>
+  </data>
+  <data name="Sparklines.Name" xml:space="preserve">
+    <value>迷你图</value>
+  </data>
+  <data name="TableFilter.Name" xml:space="preserve">
+    <value>过滤表格区域</value>
+  </data>
+  <data name="Tables.Name" xml:space="preserve">
+    <value>表格</value>
+  </data>
+  <data name="TableSort.Name" xml:space="preserve">
+    <value>排序表格区域</value>
+  </data>
+  <data name="TextFilter.Name" xml:space="preserve">
+    <value>应用文本过滤</value>
+  </data>
+  <data name="Theme.Name" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="UnprotectWorksheet.Name" xml:space="preserve">
+    <value>取消保护工作表</value>
+  </data>
+  <data name="UseDateAxis.Name" xml:space="preserve">
+    <value>使用日期轴</value>
+  </data>
+  <data name="ValueFilter.Descrip" xml:space="preserve">
+    <value>创建值过滤</value>
+  </data>
+  <data name="ValueFilter.Name" xml:space="preserve">
+    <value>值过滤</value>
+  </data>
+  <data name="Workbook.Name" xml:space="preserve">
+    <value>工作簿</value>
+  </data>
+  <data name="Worksheets.Name" xml:space="preserve">
+    <value>工作表</value>
+  </data>
+  <data name="AddSlicersForTable.Name" xml:space="preserve">
+    <value>为表格添加切片器</value>
+  </data>
+  <data name="Slicer.Name" xml:space="preserve">
+    <value>切片器</value>
+  </data>
+  <data name="AddSlicersForPivotTable.Name" xml:space="preserve">
+    <value>为数据透视表添加切片器</value>
+  </data>
+  <data name="DoTableFilter.Name" xml:space="preserve">
+    <value>表格过滤</value>
+  </data>
+  <data name="ApplySlicerStyle.Name" xml:space="preserve">
+    <value>设置内置切片器样式</value>
+  </data>
+  <data name="UseSlicerDoFilter.Name" xml:space="preserve">
+    <value>使用切片器过滤</value>
+  </data>
+  <data name="ConfigSlicerLayout.Name" xml:space="preserve">
+    <value>设置切片器布局</value>
+  </data>
+  <data name="CreateConnectorShape.Name" xml:space="preserve">
+    <value>创建连接器</value>
+  </data>
+  <data name="Shape.Name" xml:space="preserve">
+    <value>形状</value>
+  </data>
+  <data name="ConnectShapesByConnector.Name" xml:space="preserve">
+    <value>使用连接器连接形状</value>
+  </data>
+  <data name="ConfigShapeWithPictureFill.Name" xml:space="preserve">
+    <value>设置图片填充样式</value>
+  </data>
+  <data name="ConfigShapeWithGradientFill.Name" xml:space="preserve">
+    <value>设置渐变填充样式</value>
+  </data>
+  <data name="ConfigShapeWithPatternFill.Name" xml:space="preserve">
+    <value>设置图案填充样式</value>
+  </data>
+  <data name="ConfigShapeWithTextureFill.Name" xml:space="preserve">
+    <value>设置纹理填充样式</value>
+  </data>
+  <data name="ConfigShapeWithSolidFill.Name" xml:space="preserve">
+    <value>设置纯色填充样式</value>
+  </data>
+  <data name="ConfigShapeLine.Name" xml:space="preserve">
+    <value>设置形状的线条样式</value>
+  </data>
+  <data name="ConfigShape3DFormat.Name" xml:space="preserve">
+    <value>设置形状的3D样式</value>
+  </data>
+  <data name="SetShapeText.Name" xml:space="preserve">
+    <value>设置形状文本内容</value>
+  </data>
+  <data name="CreatePicture.Name" xml:space="preserve">
+    <value>创建图片</value>
+  </data>
+  <data name="DeletePicture.Name" xml:space="preserve">
+    <value>删除图片</value>
+  </data>
+  <data name="MergeCells.Name" xml:space="preserve">
+    <value>合并单元格</value>
+  </data>
+  <data name="RangeOperations.Name" xml:space="preserve">
+    <value>区域操作</value>
+  </data>
+  <data name="AccessEachAreaOfRange.Name" xml:space="preserve">
+    <value>访问每块区域</value>
+  </data>
+  <data name="GetRangeRowCountColumnCount.Name" xml:space="preserve">
+    <value>获得行数列数</value>
+  </data>
+  <data name="AccessCellsRowsColumns.Name" xml:space="preserve">
+    <value>操作单元格/行/列</value>
+  </data>
+  <data name="GetWorksheetUsedRange.Name" xml:space="preserve">
+    <value>获得使用区域</value>
+  </data>
+  <data name="SetRowHeightColumnWidth.Name" xml:space="preserve">
+    <value>设置行高列宽</value>
+  </data>
+  <data name="AccessRange.Name" xml:space="preserve">
+    <value>访问区域</value>
+  </data>
+  <data name="InsertCellsDeleteCells.Name" xml:space="preserve">
+    <value>插入/删除单元格</value>
+  </data>
+  <data name="InsertDeleteRowsColumns.Name" xml:space="preserve">
+    <value>插入/删除行列</value>
+  </data>
+  <data name="CutCopyRange.Name" xml:space="preserve">
+    <value>剪切/拷贝区域</value>
+  </data>
+  <data name="GetFeatureRelatedUsedRange.Name" xml:space="preserve">
+    <value>按特性获取使用区域</value>
+  </data>
+  <data name="PivotTable.Name" xml:space="preserve">
+    <value>数据透视表</value>
+  </data>
+  <data name="CreatePivotTable.Name" xml:space="preserve">
+    <value>创建数据透视表</value>
+  </data>
+  <data name="ChangeDataFiledSummarizeFunction.Name" xml:space="preserve">
+    <value>修改数据字段求和公式</value>
+  </data>
+  <data name="ModifySubtotalsForPivotField.Name" xml:space="preserve">
+    <value>修改数据透视表字段小计</value>
+  </data>
+  <data name="FilterItemsInPivotTable.Name" xml:space="preserve">
+    <value>过滤数据透视表中的项</value>
+  </data>
+  <data name="RefreshPivotTable.Name" xml:space="preserve">
+    <value>刷新数据透视表</value>
+  </data>
+  <data name="DeleteHyperlinks.Name" xml:space="preserve">
+    <value>删除超链接</value>
+  </data>
+  <data name="CreateRangeGroup.Name" xml:space="preserve">
+    <value>创建分组</value>
+  </data>
+  <data name="UngroupRange.Name" xml:space="preserve">
+    <value>取消区域分组</value>
+  </data>
+  <data name="ClearOutline.Name" xml:space="preserve">
+    <value>清除分组</value>
+  </data>
+  <data name="ShowSpecificLevel.Name" xml:space="preserve">
+    <value>显示指定层级数据</value>
+  </data>
+  <data name="AddCustomName.Name" xml:space="preserve">
+    <value>添加自定义名称</value>
+  </data>
+  <data name="Grouping.Name" xml:space="preserve">
+    <value>分组</value>
+  </data>
+  <data name="Hyperlinks.Name" xml:space="preserve">
+    <value>超链接</value>
+  </data>
+  <data name="Picture.Name" xml:space="preserve">
+    <value>图片</value>
+  </data>
+  <data name="ConfigWorkbookReferenceStyle.Name" xml:space="preserve">
+    <value>设置工作簿引用样式</value>
+  </data>
+  <data name="Formulas.Name" xml:space="preserve">
+    <value>公式</value>
+  </data>
+  <data name="UseArrayFormula.Name" xml:space="preserve">
+    <value>使用数组公式</value>
+  </data>
+  <data name="UseTableFormula.Name" xml:space="preserve">
+    <value>使用表格公式</value>
+  </data>
+  <data name="DirtyAndCalculation.Name" xml:space="preserve">
+    <value>失效和重新计算</value>
+  </data>
+  <data name="SetRangeValue.Name" xml:space="preserve">
+    <value>为区域设值</value>
+  </data>
+  <data name="ToJsonFromJson.Name" xml:space="preserve">
+    <value>导入导出JSON</value>
+  </data>
+  <data name="CustomNumberFormat.Name" xml:space="preserve">
+    <value>设置自定义格式</value>
+  </data>
+  <data name="DateAndTimeFormat.Name" xml:space="preserve">
+    <value>设置日期和时间格式</value>
+  </data>
+  <data name="Formatting.Name" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="NumberFormat.Name" xml:space="preserve">
+    <value>数字格式</value>
+  </data>
+  <data name="NumberFormats.Name" xml:space="preserve">
+    <value>设置数字格式</value>
+  </data>
+  <data name="HAlignVAlign.Name" xml:space="preserve">
+    <value>设置水平/垂直对齐</value>
+  </data>
+  <data name="ShrinkToFit.Name" xml:space="preserve">
+    <value>缩小字体填充</value>
+  </data>
+  <data name="RotateCellContents.Name" xml:space="preserve">
+    <value>翻转单元格内容</value>
+  </data>
+  <data name="WrapText.Name" xml:space="preserve">
+    <value>文字换行</value>
+  </data>
+  <data name="AddBordersToCell.Name" xml:space="preserve">
+    <value>设置单元格边框</value>
+  </data>
+  <data name="AddingBordersToRange.Name" xml:space="preserve">
+    <value>设置区域边框</value>
+  </data>
+  <data name="FontColor.Name" xml:space="preserve">
+    <value>设置字体颜色</value>
+  </data>
+  <data name="FontEffect.Name" xml:space="preserve">
+    <value>设置字体效果</value>
+  </data>
+  <data name="FontName.Name" xml:space="preserve">
+    <value>设置字体</value>
+  </data>
+  <data name="FontSize.Name" xml:space="preserve">
+    <value>设置字号</value>
+  </data>
+  <data name="FontStyle.Name" xml:space="preserve">
+    <value>设置字体样式</value>
+  </data>
+  <data name="FontUnderline.Name" xml:space="preserve">
+    <value>设置下划线</value>
+  </data>
+  <data name="LinearGradientFill.Name" xml:space="preserve">
+    <value>设置线性渐变填充</value>
+  </data>
+  <data name="PatternFill.Name" xml:space="preserve">
+    <value>设置图案填充</value>
+  </data>
+  <data name="RectangularGradientFill.Name" xml:space="preserve">
+    <value>设置矩形渐变填充</value>
+  </data>
+  <data name="SolidFill.Name" xml:space="preserve">
+    <value>设置纯色填充</value>
+  </data>
+  <data name="TextOrientation.Name" xml:space="preserve">
+    <value>设置文本方向</value>
+  </data>
+  <data name="Alignment.Name" xml:space="preserve">
+    <value>对齐</value>
+  </data>
+  <data name="ApplyStyle.Name" xml:space="preserve">
+    <value>设置区域样式</value>
+  </data>
+  <data name="Borders.Name" xml:space="preserve">
+    <value>边框</value>
+  </data>
+  <data name="CreateCustomStyle.Name" xml:space="preserve">
+    <value>创建自定义样式</value>
+  </data>
+  <data name="Fill.Name" xml:space="preserve">
+    <value>填充</value>
+  </data>
+  <data name="Fonts.Name" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="GetDisplayFormat.Name" xml:space="preserve">
+    <value>获取显示样式</value>
+  </data>
+  <data name="Protection.Name" xml:space="preserve">
+    <value>保护工作表</value>
+  </data>
+  <data name="SetRangeFormulaHidden.Name" xml:space="preserve">
+    <value>隐藏公式</value>
+  </data>
+  <data name="SetRangeLocked.Name" xml:space="preserve">
+    <value>锁定区域</value>
+  </data>
+  <data name="AddComment.Name" xml:space="preserve">
+    <value>添加批注</value>
+  </data>
+  <data name="ClearComment.Name" xml:space="preserve">
+    <value>清除批注</value>
+  </data>
+  <data name="Comments.Name" xml:space="preserve">
+    <value>批注</value>
+  </data>
+  <data name="ConfigCommentLayout.Name" xml:space="preserve">
+    <value>设置批注布局</value>
+  </data>
+  <data name="SetRichTextForComment.Name" xml:space="preserve">
+    <value>富文本批注</value>
+  </data>
+  <data name="ConditionalFormatting.Name" xml:space="preserve">
+    <value>条件格式</value>
+  </data>
+  <data name="CreateAverageRule.Name" xml:space="preserve">
+    <value>创建平均值条件格式</value>
+  </data>
+  <data name="CreateCellValueRule.Name" xml:space="preserve">
+    <value>创建单元格值条件格式</value>
+  </data>
+  <data name="CreateDatabBarRule.Name" xml:space="preserve">
+    <value>创建数据条条件格式</value>
+  </data>
+  <data name="CreateExpressionRule.Name" xml:space="preserve">
+    <value>创建公式条件格式</value>
+  </data>
+  <data name="CreateIconSetRule.Name" xml:space="preserve">
+    <value>创建图标集条件格式</value>
+  </data>
+  <data name="CreateMultiRuleForRange.Name" xml:space="preserve">
+    <value>创建多个条件格式</value>
+  </data>
+  <data name="CreateThreeColorScaleRule.Name" xml:space="preserve">
+    <value>创建三色刻度条件格式</value>
+  </data>
+  <data name="CreateTopBottomRule.Name" xml:space="preserve">
+    <value>创建排名前后条件格式</value>
+  </data>
+  <data name="CreateTwoColorScaleRule.Name" xml:space="preserve">
+    <value>创建双色刻度条件格式</value>
+  </data>
+  <data name="CreateUniqueRule.Name" xml:space="preserve">
+    <value>创建唯一值条件格式</value>
+  </data>
+  <data name="DeleteConditionalFormatRules.Name" xml:space="preserve">
+    <value>删除条件格式</value>
+  </data>
+  <data name="RootExample.Descrip" xml:space="preserve">
+    <value>Spread.Services功能列表</value>
+  </data>
+  <data name="RootExample.Name" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="CreateCustomValidation.Name" xml:space="preserve">
+    <value>创建自定义数据验证</value>
+  </data>
+  <data name="CreateDateValidation.Name" xml:space="preserve">
+    <value>创建日期型数据验证</value>
+  </data>
+  <data name="CreateDecimalValidation.Name" xml:space="preserve">
+    <value>创建小数型数据验证</value>
+  </data>
+  <data name="CreateListValidation.Name" xml:space="preserve">
+    <value>创建序列数据验证</value>
+  </data>
+  <data name="CreateTextLength.Name" xml:space="preserve">
+    <value>创建文本长度数据验证</value>
+  </data>
+  <data name="CreateTimeValidation.Name" xml:space="preserve">
+    <value>创建时间型数据验证</value>
+  </data>
+  <data name="CreateWholeNumberValidation.Name" xml:space="preserve">
+    <value>创建整数数据验证</value>
+  </data>
+  <data name="DataValidation.Name" xml:space="preserve">
+    <value>数据验证</value>
+  </data>
+  <data name="DeleteValidation.Name" xml:space="preserve">
+    <value>删除数据验证</value>
+  </data>
+  <data name="ModifyValidation.Name" xml:space="preserve">
+    <value>修改数据验证</value>
+  </data>
+  <data name="AddSeries.Name" xml:space="preserve">
+    <value>添加数据系列</value>
+  </data>
+  <data name="Charts.Name" xml:space="preserve">
+    <value>图表</value>
+  </data>
+  <data name="ConfigBubbleChartLayout.Name" xml:space="preserve">
+    <value>设置气泡图布局</value>
+  </data>
+  <data name="ConfigDataLabelText.Name" xml:space="preserve">
+    <value>设置数据标签显示文本</value>
+  </data>
+  <data name="ConfigDataPointFormat.Name" xml:space="preserve">
+    <value>设置数据点样式</value>
+  </data>
+  <data name="CreateChart.Name" xml:space="preserve">
+    <value>创建图表</value>
+  </data>
+  <data name="CreateDropLine.Name" xml:space="preserve">
+    <value>创建垂直线</value>
+  </data>
+  <data name="CreateHiLoLine.Name" xml:space="preserve">
+    <value>创建高低点连线</value>
+  </data>
+  <data name="CreateSecondaryAxis.Name" xml:space="preserve">
+    <value>设置数据辅轴</value>
+  </data>
+  <data name="CreateTrendline.Name" xml:space="preserve">
+    <value>创建趋势线</value>
+  </data>
+  <data name="DeleteChart.Name" xml:space="preserve">
+    <value>删除图表</value>
+  </data>
+  <data name="Series.Name" xml:space="preserve">
+    <value>数据系列</value>
+  </data>
+  <data name="SetVaryColorForColumnChart.Name" xml:space="preserve">
+    <value>依据数据点着色</value>
+  </data>
+  <data name="CreateConnectorLine.Name" xml:space="preserve">
+    <value>为复合饼图创建连接线</value>
+  </data>
+  <data name="CreateSeriesLine.Name" xml:space="preserve">
+    <value>为柱状图创建数据系列线</value>
+  </data>
+  <data name="ExtendSeries.Name" xml:space="preserve">
+    <value>为数据系列增加数据点</value>
+  </data>
+  <data name="CreateUpDownBars.Name" xml:space="preserve">
+    <value>创建涨跌柱线</value>
+  </data>
+  <data name="AccessTableRanges.Name" xml:space="preserve">
+    <value>访问表格区域</value>
+  </data>
+  <data name="Axes.Name" xml:space="preserve">
+    <value>坐标轴</value>
+  </data>
+  <data name="ConfigCategoryAxesFormat.Name" xml:space="preserve">
+    <value>设置横坐标轴样式</value>
+  </data>
+  <data name="ConfigAxisTitle.Name" xml:space="preserve">
+    <value>设置坐标轴标题</value>
+  </data>
+  <data name="ConfigCategoryAxisUnits.Name" xml:space="preserve">
+    <value>设置时间坐标轴单位</value>
+  </data>
+  <data name="ConfigDisplayUnitLabel.Name" xml:space="preserve">
+    <value>设置显示单位样式</value>
+  </data>
+  <data name="ConfigGridlines.Name" xml:space="preserve">
+    <value>设置网格线样式</value>
+  </data>
+  <data name="ConfigTickMarkLabel.Name" xml:space="preserve">
+    <value>设置刻度线标签样式</value>
+  </data>
+  <data name="ConfigValueAxisUnits.Name" xml:space="preserve">
+    <value>设置纵轴单位</value>
+  </data>
+  <data name="SetAxisScaleType.Name" xml:space="preserve">
+    <value>设置纵轴比例尺类型</value>
+  </data>
+  <data name="SetAxisTickMark.Name" xml:space="preserve">
+    <value>设置轴刻度位置</value>
+  </data>
+  <data name="ChartJustPlotVisibleCell.Name" xml:space="preserve">
+    <value>只显示可见单元格</value>
+  </data>
+  <data name="ConfigChartAreaFormat.Name" xml:space="preserve">
+    <value>设置图表区域样式</value>
+  </data>
+  <data name="ConfigChartFloorStyle.Name" xml:space="preserve">
+    <value>设置基底样式</value>
+  </data>
+  <data name="ConfigChartTitleStyle.Name" xml:space="preserve">
+    <value>设置图表标题样式</value>
+  </data>
+  <data name="ConfigChartWallStyle.Name" xml:space="preserve">
+    <value>设置背景墙样式</value>
+  </data>
+  <data name="ConfigLegendEntryFontStyle.Name" xml:space="preserve">
+    <value>设置单个图例字体</value>
+  </data>
+  <data name="ConfigLegendPositionAndLayout.Name" xml:space="preserve">
+    <value>设置图例位置</value>
+  </data>
+  <data name="ConfigPlotAreaFormat.Name" xml:space="preserve">
+    <value>设置绘图区域样式</value>
+  </data>
+  <data name="BloodPressureTracker.Name" xml:space="preserve">
+    <value>血压跟踪报告</value>
+  </data>
+  <data name="UseCases.Name" xml:space="preserve">
+    <value>案例</value>
+  </data>
+  <data name="ToDoListWithProgressTracker.Name" xml:space="preserve">
+    <value>任务进度跟踪表</value>
+  </data>
+  <data name="CostAnalysisWithParetoChart.Name" xml:space="preserve">
+    <value>图表成本分析</value>
+  </data>
+  <data name="DateDynamicFilter.Name" xml:space="preserve">
+    <value>根据日期动态过滤</value>
+  </data>
+  <data name="BidTracker.Name" xml:space="preserve">
+    <value>目标跟踪</value>
+  </data>
+  <data name="PersonalAddressBook.Name" xml:space="preserve">
+    <value>个人地址簿</value>
+  </data>
+  <data name="CustomerProfitabilityAnalysis.Name" xml:space="preserve">
+    <value>用户利润分析</value>
+  </data>
+  <data name="DateFiltering.Name" xml:space="preserve">
+    <value>日期型过滤</value>
+  </data>
+  <data name="FilteringByColor.Name" xml:space="preserve">
+    <value>按颜色过滤</value>
+  </data>
+  <data name="FilteringByIcon.Name" xml:space="preserve">
+    <value>按图标过滤</value>
+  </data>
+  <data name="NumberFiltering.Name" xml:space="preserve">
+    <value>数字过滤</value>
+  </data>
+  <data name="TextFiltering.Name" xml:space="preserve">
+    <value>文本过滤</value>
+  </data>
+  <data name="ChangeWorksheetFilterRange.Name" xml:space="preserve">
+    <value>修改过滤区域</value>
+  </data>
+  <data name="ClearFilter.Name" xml:space="preserve">
+    <value>清除过滤</value>
+  </data>
+  <data name="DateFilter.Name" xml:space="preserve">
+    <value>设置日期型过滤</value>
+  </data>
+  <data name="FilterByNoFill.Name" xml:space="preserve">
+    <value>按无填充过滤</value>
+  </data>
+  <data name="FilterByAutomaticFontColor.Name" xml:space="preserve">
+    <value>按自动字体颜色过滤</value>
+  </data>
+  <data name="FilterByCellColor.Name" xml:space="preserve">
+    <value>按单元格颜色过滤</value>
+  </data>
+  <data name="FilterByFontColor.Name" xml:space="preserve">
+    <value>按字体颜色过滤</value>
+  </data>
+  <data name="FilterByIcon.Name" xml:space="preserve">
+    <value>按图标过滤</value>
+  </data>
+  <data name="FilterByNoIcon.Name" xml:space="preserve">
+    <value>按无图标过滤</value>
+  </data>
+  <data name="MultiSelectFilter.Name" xml:space="preserve">
+    <value>多选过滤</value>
+  </data>
+  <data name="NumberFilter.Name" xml:space="preserve">
+    <value>应用数字过滤</value>
+  </data>
+  <data name="ReApplyFilter.Name" xml:space="preserve">
+    <value>重新过滤</value>
+  </data>
+  <data name="Features.Name" xml:space="preserve">
+    <value>特性列表</value>
+  </data>
+  <data name="Samples.Name" xml:space="preserve">
+    <value>示例</value>
+  </data>
+  <data name="MovieList.Name" xml:space="preserve">
+    <value>电影列表</value>
+  </data>
+  <data name="SimpleInvoice.Name" xml:space="preserve">
+    <value>简单发票</value>
+  </data>
+  <data name="CreateHyperlinks.Name" xml:space="preserve">
+    <value>创建超链接</value>
+  </data>
+  <data name="BasicSalesReport.Name" xml:space="preserve">
+    <value>销售报告</value>
+  </data>
+  <data name="Axes.Descrip" xml:space="preserve">
+    <value>图表有几种不同类型的坐标轴： **横轴**, **纵轴** 和**系列轴**, 它们都是图表自动生成的，不能通过编程接口添加或删除。
+
+坐标轴的示例程序展示了如何设置坐标轴的各种属性，比如轴标题，轴单位，轴显示单位标签，网格线，刻度线和刻度线标签等等。</value>
+  </data>
+  <data name="Charts.Descrip" xml:space="preserve">
+    <value>**Spread.Services**提供了一套非常完整的图表API，通过这些图表API你可以：
+
+- 使用**IWorksheet.Shapes.AddChart**方法来向工作表中添加一个图表， 它会返回一个 **IShape** 的实例，然后进一步通过**IShape**接口的**Chart**的属性来访问所添加的图表
+- 使用 **IChart.SeriesCollection.Add**方法来为图表添加数据系列
+- 通过 **IChart.ChartTitle**属性来设置图表的标题
+- 通过**IChart.Legend**属性设置图表的图例
+- 通过**ISeries**接口来访问和修改每条数据系列
+- 通过**IPoint**接口来访问和定制数据系列中的每个数据点
+- 通过**IDataLabel**接口来访问和定制数据标签
+- 通过**IChartGroup**接口来批量修改和更新一组数据系列
+- 通过**IAxis**接口来修改和定制横向轴，纵向轴和系列轴
+
+除了上面那些图表基础特性，你还可以通过改变数据系列的图表类型来创建组合型图表，同时你可以通过**ISeries.AxisGroup**属性来指定一个数据系列是显示在主轴还是辅轴上。
+
+每个数据系列都会有一个关联的图表组(**IChartGroup**)的概念，基本上拥有同样图表类型的数据系列会在一个图表组中，在使用组合类型的图表时多个图表组会自动创建，你可以通过**IChartGroup**这个接口来为图表组中的所有数据系列设置统一的样式，比如饼图中的起始角度，柱状图中的系列重叠和分类间距，或者在线形图表中是否显示高低点连线和涨跌柱线。
+
+**IAxis**这个接口提供给用户可以手动指定轴最大值和最小值，同时可以设置轴刻度间距，显示或隐藏主要网格线和次要网格线。
+
+还有很多其它的图表元素，比如图表区域(Chart Area)，图表标题(Chart Title)，图表图例(Legend)，数据系列(ISeries)等等，它们都提供了一个**Format**属性用来设置元素的样式，比如设置纯色填充，渐变填充，不同类型的短划线，透明度等。</value>
+  </data>
+  <data name="Series.Descrip" xml:space="preserve">
+    <value>数据系列是图表中使用最频繁的特性，每个图表都会包含一个或多个数据系列，每个数据系列又包含了一组数据点。 
+
+本示例程序中你将了解如何为图表添加数据系列，并配置每个数据系列，比如：
+
+- 设置数据系列的样式
+- 改变数据系列的类型
+-设置气泡图表中气泡的大小和布局
+- 添加辅轴
+- 在柱状图中让每个数据点显示不同的颜色</value>
+  </data>
+  <data name="PersonalNetWorthCalculator.Name" xml:space="preserve">
+    <value>个人净资产计算器</value>
+  </data>
+  <data name="Comments.Descrip" xml:space="preserve">
+    <value>Spread.Services允许用户为工作表上的单元格添加批注，这样可以为单元格内容指定一些额外的信息，你可以使用**IRange.AddComment**来为单元格或区域添加批注，它会返回一个**IComment**实例，如果要修改批注的布局，可以通过**IComment.Shape**与批注关联的形状。如果需要使用富文本的批注，可以通过**IShape.TextFrame**属性。</value>
+  </data>
+  <data name="SpreadSheetsViewer.Name" xml:space="preserve">
+    <value>SpreadJS表格控件视图</value>
+  </data>
+  <data name="UseCases.Descrip" xml:space="preserve">
+    <value>Another two of Spread.Services useage scenario are as follows:
+- Use Spread.Services API programming, then export to an excel file -**Programming** Part.
+- Import excel template to Spread.Services data model, then use Spread.Services API programming, make contents more abundantly, then export to an excel file - **Templates** Part.</value>
+  </data>
+  <data name="ExcelReporting.Name" xml:space="preserve">
+    <value>创建Excel文档</value>
+  </data>
+  <data name="ExcelTemplates.Name" xml:space="preserve">
+    <value>编辑Excel模板</value>
+  </data>
+  <data name="HiddenRowColumn.Name" xml:space="preserve">
+    <value>隐藏行列</value>
+  </data>
+  <data name="HomeInventory.Name" xml:space="preserve">
+    <value>家庭调查表</value>
+  </data>
+  <data name="CollapseGroup.Name" xml:space="preserve">
+    <value>隐藏明细数据</value>
+  </data>
+  <data name="SimplePersonalBudget.Name" xml:space="preserve">
+    <value>简单个人预算</value>
+  </data>
+  <data name="StudentCalendar.Name" xml:space="preserve">
+    <value>学生日历</value>
+  </data>
+  <data name="TravelExpenseReport.Name" xml:space="preserve">
+    <value>差旅费用报告</value>
+  </data>
+  <data name="ConditionalFormatting.Descrip" xml:space="preserve">
+    <value>Spread.Services允许用户为单元格或区域设置条件格式，这样就可以对工作表中的重要信息进行高亮和提醒，当单元格中的内容符合设定的条件后，这些单元格就会自动应用条件格式中的样式。
+
+Spread.Services支持Excel中所有类型的条件格式：
+
+- 值类型条件格式
+- 平均值条件格式
+- 色阶条件格式
+- 数据条条件格式
+- 图标集条件格式
+- 排名靠前或靠后条件格式 
+- 唯一值或重复值条件格式
+- 公式条件格式
+
+可以通过**IRange.FormatConditions.Add**方法为区域设置条件格式. 你也可以使用以下具体的方法来添加具体类型的条件格式:
+
+- AddAboveAverage
+- AddColorScale
+- AddDatabar
+- AddIconSetCondition
+- AddTop10
+- AddUniqueValues</value>
+  </data>
+  <data name="DataValidation.Descrip" xml:space="preserve">
+    <value>Spread.Services支持为区域设置数据验证，这样用户能限制单元格的内容和格式，你可以单独为每个单元格创建数据验证，同时也可以为一片区域设置统一的数据验证，Spread.Services支持Excel所有的数据验证类型，包括：整型，小数，日期，时间，文本和自定义数据验证。
+
+
+通过**IRange.Validation.Add**可以为单元格或区域添加数据验证，这个方法会返回一个**IValidation**类型的实例，通过此接口你可以继续：
+- 使用**InputMesssage**和**ErrorMessage**为数据验证设置提示和错误信息
+- 使用**ShowInputMessage**和**ShowError**设置是否显示错误信息
+- 使用**InCellDropDown**属性设置是否显示下拉列表</value>
+  </data>
+  <data name="MonthlyBusinessBudget.Name" xml:space="preserve">
+    <value>月度预算</value>
+  </data>
+  <data name="Filtering.Descrip" xml:space="preserve">
+    <value>Spread.Services支持Excel所有类型的过滤：
+- 数字型过滤
+- 文本型过滤
+- 日期型过滤
+- 颜色型过滤
+- 图标型过滤
+
+通过调用**AutoFilter**方法可以对一片区域进行过滤操作，如果想要对多个列的内容同时进行过滤，你可以多次调用**AutoFilter**方法。
+
+在单元格内容变化后可以使用**IWorksheet.ApplyFilter**方法来对变化后的内容重新进行过滤。</value>
+  </data>
+  <data name="FilteringByColor.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何使用AutoFilter方法对区域进行按颜色过滤，可以作为过滤条件的颜色有：
+- 字体颜色
+- 填充颜色
+- 字体自动颜色
+- 无填充</value>
+  </data>
+  <data name="FilteringByIcon.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何使用AutoFilter方法对区域按图标过滤，你可以对**AutoFilterOperator**属性设置下列值来按图标过滤：
+
+- **Icon**表示过滤此属性指定的图标
+- **NoIcon**表示过滤没有图标的区域
+
+在使用图标过滤之前，你必须先为区域创建**IIconSetCondition**和**IFormatCondition**实例。</value>
+  </data>
+  <data name="SimpleBudget.Name" xml:space="preserve">
+    <value>简单预算</value>
+  </data>
+  <data name="TextFiltering.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何创建和使用文本过滤，比如你可以过滤出所有包含字母“e”的数据行。</value>
+  </data>
+  <data name="Alignment.Descrip" xml:space="preserve">
+    <value>本示例中的所有程序讲解了如何为单元格和区域设置不同的对齐方式：
+- 横向和竖向对齐
+- 文本方向
+- 缩小字体填充
+- 阅读方向
+- 文本自动折行</value>
+  </data>
+  <data name="Borders.Descrip" xml:space="preserve">
+    <value>本示例中的程序代码讲解了如何为单元格和区域设置各种边框：
+- 边框的线型
+- 边框的颜色</value>
+  </data>
+  <data name="DateFiltering.Descrip" xml:space="preserve">
+    <value>本示例中的所有程序讲解了如何使用**AutoFilter**方法来对日期进行筛选：
+- 筛选在一个日期时间段内的数据
+- 筛选所有二月份的数据</value>
+  </data>
+  <data name="Fill.Descrip" xml:space="preserve">
+    <value>本示例展示了如何为区域设置各种不同的填充：
+- 纯色填充
+- 纹理填充
+- 线形渐变填充
+- 矩形渐变填充</value>
+  </data>
+  <data name="Fonts.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何为单元格和区域设置字体相关属性：
+- 字体颜色
+- 字号
+- 字体名称
+- 粗体和斜体
+- 下划线
+- 删除线
+- 上标和下标</value>
+  </data>
+  <data name="Formatting.Descrip" xml:space="preserve">
+    <value>Spread.Services提供了丰富的API来设置区域的样式：
+
+- **IRange.NumberFormat** 设置数字格式
+- **IRange.HorizontalAlignment**,  **IRange.VerticalAlignment**, **IRange.IndentLevel** 等设置对齐
+- **IRange.Font** 设置字体
+- **IRange.Borders** 设置边框
+- **IRange.Interior** 设置纯色填充，纹理填充和渐变填充
+- **IRange.Locked** 和 **IRange.FormulaHidden** 设置工作表保护
+
+你可以创建自定义命名样式或者使用内置的命名样式，将它们设置到某片区域。</value>
+  </data>
+  <data name="Formulas.Descrip" xml:space="preserve">
+    <value>在Spread.Services中，用户可以像在Excel中一样为单元格设置公式和表达式，当表达式中所依赖的区域的值发生变化后，也会同步计算和更新，Spread.Services提供了450多个内置的函数，可以帮助用户创建非常实用和复杂的公式。
+
+Spread.Services的计算引擎提供给用户以下能力：
+- 450+内置函数
+- 自定义名称
+- 数组公式
+- 强制无效和计算
+- 表格公式</value>
+  </data>
+  <data name="Grouping.Descrip" xml:space="preserve">
+    <value>拥有大量数据的电子表格经常让人很头疼，你需要花大量的时间去查找，管理和分析这些数据，Spread.Services让你可以对大量的数据进行分组，这样再复杂的电子表格也很容易导航到你关心的数据。在数据分组后，用户可以通过下列属性或方法对数据进行分组，取消分组，展开和收缩分组：
+
+
+
+- **Group**方法可以对指定区域进行分组或增加分组层级
+- **Ungroup**方法可以取消指定区域的分组或减少分组层级
+- **ShowDetail**属性可以展开和收缩分组
+-  **ShowLevels**属性可以展开指定层级的分组</value>
+  </data>
+  <data name="NumberFormat.Descrip" xml:space="preserve">
+    <value>Spread.Services全面支持Excel的各种数字格式，你可以为单元格或一片区域指定某种格式。</value>
+  </data>
+  <data name="Protection.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何设置工作表保护：
+- 隐藏公式
+- 锁定单元格</value>
+  </data>
+  <data name="AddCustomSlicerStyle.Name" xml:space="preserve">
+    <value>添加自定义切片器样式</value>
+  </data>
+  <data name="BloodSugarTracker.Name" xml:space="preserve">
+    <value>血糖跟踪</value>
+  </data>
+  <data name="Tutorial.Name" xml:space="preserve">
+    <value>入门教程</value>
+  </data>
+  <data name="Hyperlinks.Descrip" xml:space="preserve">
+    <value>可以使用 **IRange.Hyperliks.Add**方法为单元格或区域添加超链接，Spread.Services支持下面几种类型的超链接：
+- 链接到一个网页
+- 链接到一片区域
+- 链接到一个外部文件
+- 链接到一个邮件地址</value>
+  </data>
+  <data name="Picture.Descrip" xml:space="preserve">
+    <value>Spread.Services允许用户在工作表中插入图片，并对图片进行各种设置。</value>
+  </data>
+  <data name="PivotTable.Descrip" xml:space="preserve">
+    <value>数据透视表是一个数据分析和总结的工具，使用它可以对工作表中存储的数据进行自动地计数，求和和取平均值，并在相应的表格中显示这些分析总结后的数据。
+创建数据透视表前应该先调用**Workbook.PivotCaches.Create**方法创建一个数据缓存，然后以此数据缓存为基础再调用**IWorksheet.PivotTables.Add**方法进一步创建数据透视表，同时可以使用**PivotFieldOrientation**属性来指定透视透视表的字段是行字段，列字段，值字段还是页面字段。</value>
+  </data>
+  <data name="RangeOperations.Descrip" xml:space="preserve">
+    <value>区域(Range)是 Spread.Services中最重要概念，**IWorksheet.Range**也是用户最常用的一个属性，大部分的特性都要通过IRange接口来使用：
+
+在本示例中，你将学会如何：
+- 访问单元格，行和列
+- 访问IRange中的每片区域
+- 不同访问区域的方法
+- 剪切，复制，黏贴区域
+- 取得已用区域(UsedRange)
+- 获得行数量和列数量
+- 隐藏行或列
+- 插入，删除单元格
+- 插入，删除行和列
+- 合并单元格
+- 为区域填充数据
+- 设置行高和列宽</value>
+  </data>
+  <data name="Shape.Descrip" xml:space="preserve">
+    <value>Spread.Services让你可以将一张图片或各种形状嵌入到工作表中，你可以嵌入箭头，直线，以及更多常用的形状， 你需要调用**IWorksheet.Shapes.AddShape**方法来添加一个形状，它会返回一个**IShape**的实例，然后你可以通过下面几种方法配置形状：
+
+- 通过**IShape.Fill**属性来配置各种填充效果
+- 通过**IShape.Line**属性来配置形状的线条
+- 通过**IShape.ThreeD**属性来配置形状的3D效果
+- 通过**IShape.TextFrame**给形状添加富文本内容</value>
+  </data>
+  <data name="Slicer.Descrip" xml:space="preserve">
+    <value>切片器是一种可视化的过滤器，通过它可以对表格或者数据透视表进行过滤操作。创建切片器之前先要为切片器创建切片缓存，每个切片器可以设置一个内置或自定义的切片器样式。</value>
+  </data>
+  <data name="Sorting.Descrip" xml:space="preserve">
+    <value>Spread.Services支持Excel所有排序方式，比如：
+- 按自定义排序
+- 按字体颜色排序
+- 按图标排序
+- 按背景色排序
+- 按值排序</value>
+  </data>
+  <data name="Sparklines.Descrip" xml:space="preserve">
+    <value>Spread.Services允许你使用迷你图来高亮并显示数据的变化趋势，迷你图是一种可以显示在单元格中的轻量级的图表，通过它可以快速地进行数据可视化。
+在Spread.Services中可以通过**IRange.SparklineGroups.Add**方法来添加一个迷你图组，每个迷你图必须存在于一个迷你图组中，它不可以独立于迷你图组而存在。
+Spread.Services支持以下几种类型的迷你图：
+- 折线图
+- 柱状图
+- 盈亏图</value>
+  </data>
+  <data name="SpreadSheetsViewer.Descrip" xml:space="preserve">
+    <value>本示例中的程序代码讲解了如何前后端配合使用**Spread.Services**和**SpreadJS表格控件**，**SpreadJS表格控件**是葡萄城的一款纯前端电子表格控件, Spread.Services工作在服务器端负责导入和导出Excel文件，SpreadJS表格控件则工作在浏览器中负责展示和编辑Excel文件的内容。
+
+本示例中所有页面的工作过程为：
+- 在服务端Spread.Services先打开一个Excel文件
+- 在服务端调用Spread.Servcices的**Workbook.ToJson**方法将Spread.Services的当前状态序列化到一个JSON字符串中，然后将这个JSON串发送到客户端
+- 在客户端浏览器中，SpreadJS表格控件控件则会将服务端传回来JSON串作为参数调用**fromJSON**方法，这样服务端Excel文件的内容就可以完全展示在SpreadJS表格控件中了
+
+点击**Template**按钮可以查看服务端原始Excel文件。
+
+对于这里面的每个示例页面，你都可以编辑SpreadJS表格控件中的内容，然后点击**导出**按钮来取得改变后的Excel文件，**导出**按钮的工作过程为：
+- 在浏览器中SpreadJS表格控件先使用它的**toJSON**方法将SpreadJS表格控件当前的状态序列化到一个JSON字符串（如果你已修改了SpreadJS表格控件的内容，那么它将包含最新的内容），然后将这个字符串发送到服务器端
+- 在服务器端，Spread.Services会调用它的**Workbook.FromJson**方法将JSON字符串反序列化回来，然后在使用**Workbook.Save**方法保存为一个Excel文件
+- 最后你将能下载并查看已修改的最新的Excel文件
+
+想更多了解**SpreadJS表格控件**，可以访问SpreadJS表格控件官方主页[http://www.gcpowertools.com.cn/products/spreadjs/](http://www.gcpowertools.com.cn/products/spreadjs/)</value>
+  </data>
+  <data name="Tables.Descrip" xml:space="preserve">
+    <value>在电子表格中为了更简单高效地管理和分析数据，你可以在一片区域上创建一个表格，一个表格中包含了若干你可以管理和格式化的行和列，在本示例中，你将会学到：
+
+- 给一个工作表中添加和删除表格
+- 如何对表格中的一列进行过滤
+- 如何对表格中的一列进行排序
+- 为表格设置一个内置的或者自定义的表格样式
+- 取得表格中的每块区域
+- 添加删除表格的一列
+- 对表格的特定区域使用公式进行分析和计算</value>
+  </data>
+  <data name="Theme.Descrip" xml:space="preserve">
+    <value>Spread.Services提供了一整套内置的主题，让你可以快速地改变整个工作簿的样式，同时也允许你创建自定义的主题，并将它应用给工作簿。本示例中的程序讲解了如何在Spread.Services中使用主题，包括设置主题，如何自定义主题等。</value>
+  </data>
+  <data name="Workbook.Descrip" xml:space="preserve">
+    <value>一个工作簿就代表了整个电子表格文档，它包含了若干的工作表，本示例中的代码讲解了如何使用工作簿：
+- 创建工作簿
+- 使用工作簿导入Excel文件
+- 使用工作簿导入有密码保护的Excel文件
+- 导出工作簿为Excel文件
+- 导出工作簿为密码保护的Excel文件
+- 工作簿序列化，反序列化JSON</value>
+  </data>
+  <data name="Worksheets.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了：
+- 添加一个工作表
+- 删除一个工作表
+- 保护工作表
+- 取消工作表保护
+- 激活工作表
+- 配置工作表</value>
+  </data>
+  <data name="ExcelReporting.Descrip" xml:space="preserve">
+    <value>在此类示例中，你可以发现很多完整的使用Spread.Services的程序代码，这些示例模拟真实场景，让这些代码运行在服务端并最终生成一个Excel文件或报表，所以在点击**运行**按钮后，在服务端会执行以下操作：
+- 创建一个空的工作簿实例
+- 执行代码窗口中的所有代码
+- 将工作簿保存为一个Excel文件
+
+然后，你就可以在浏览器中下载并查看保存的结果了</value>
+  </data>
+  <data name="ExcelTemplates.Descrip" xml:space="preserve">
+    <value>在实际开发场景中，你也许已经有自己的Excel模板了，你只是想在服务器端能打开并对文件做一些修改，此时你就可以使用Spread.Services先在服务器端打开这个Excel文件，然后继续使用Spread.Services丰富的API来修改文件内容，定制一些样式，做任何你想做的修改。
+
+点击 **模板**按钮可以查看原Excel文件， 点击 **运行**按钮后，可以查看执行完代码窗口中的代码后被修改的Excel文件。</value>
+  </data>
+  <data name="UseSlicerToClearFilter.Name" xml:space="preserve">
+    <value>使用切片器清除过滤</value>
+  </data>
+  <data name="Features.Descrip" xml:space="preserve">
+    <value>**Spread.Services**提供了大量Excel的特性让用户能够在电子表格中存储大量数据，改变主题，设置计算公式，分析数据，添加表格，图表，形状，图片，条件格式，迷你图等。在本示例中，你将会发现大量的程序代码说明每个特性的使用方法。</value>
+  </data>
+  <data name="ProjectCostTracker.Name" xml:space="preserve">
+    <value>工程成本跟踪</value>
+  </data>
+  <data name="EventBudget.Name" xml:space="preserve">
+    <value>活动预算</value>
+  </data>
+  <data name="NumberFiltering.Descrip" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ConfigValueAxesFormat.Name" xml:space="preserve">
+    <value>设置纵坐标轴样式</value>
+  </data>
+  <data name="ChangeSeriesType.Name" xml:space="preserve">
+    <value>改变数据系列类型</value>
+  </data>
+  <data name="ConfigDataLabelFormat.Name" xml:space="preserve">
+    <value>设置数据标签样式</value>
+  </data>
+  <data name="ConfigMarkerStyle.Name" xml:space="preserve">
+    <value>设置标记类型</value>
+  </data>
+  <data name="ConfigNegativePoint.Name" xml:space="preserve">
+    <value>设置负值样式</value>
+  </data>
+  <data name="ConfigSeriesFormat.Name" xml:space="preserve">
+    <value>设置数据系列样式</value>
+  </data>
+  <data name="DeleteSeries.Name" xml:space="preserve">
+    <value>删除数据系列</value>
+  </data>
+  <data name="ConfigChartTitleRichText.Name" xml:space="preserve">
+    <value>为图表标题设置丰富文本</value>
+  </data>
+  <data name="ChartArea.Name" xml:space="preserve">
+    <value>图表区域</value>
+  </data>
+  <data name="ChartLines.Name" xml:space="preserve">
+    <value>图表的各种标线</value>
+  </data>
+  <data name="ChartTitle.Name" xml:space="preserve">
+    <value>图表标题</value>
+  </data>
+  <data name="ChartWalls.Name" xml:space="preserve">
+    <value>图表背景墙</value>
+  </data>
+  <data name="ConfigChartAreaFont.Name" xml:space="preserve">
+    <value>设置图表区域字体</value>
+  </data>
+  <data name="ConfigChartBackWall.Name" xml:space="preserve">
+    <value>设置图表背面墙</value>
+  </data>
+  <data name="ConfigChartSideWall.Name" xml:space="preserve">
+    <value>设置图表侧面墙</value>
+  </data>
+  <data name="DataLabel.Name" xml:space="preserve">
+    <value>数据标签</value>
+  </data>
+  <data name="DataPoint.Name" xml:space="preserve">
+    <value>数据点</value>
+  </data>
+  <data name="Legend.Name" xml:space="preserve">
+    <value>图例</value>
+  </data>
+  <data name="ChartArea.Descrip" xml:space="preserve">
+    <value>图表区域是指一个完整的图表区域，包括：绘图区，图表标题，图例和轴区域。
+
+本示例程序展示如何设置整个图表区域的字体和图表区域的样式。</value>
+  </data>
+  <data name="ChartLines.Descrip" xml:space="preserve">
+    <value>图表的标线包含有： **趋势线**，**垂直线**，**高低点连线**和**数据系列线**。
+
+- 可以为指定的数据系列添加趋势线
+- 垂直线对折线图和面积图有效
+- 高低点连线对折线图有效
+- 数据系列线对堆积柱形图，条形图有效，还可为复合饼图和复合条形图添加连线
+
+本示例程序展示如何为图表添加这些标线和如何对标线进行设置。</value>
+  </data>
+  <data name="ChartTitle.Descrip" xml:space="preserve">
+    <value>图表标题指图表的名称，可以为图表设置合适的名称，并对图表的名称进行相应的设置。
+
+本示例展示如何显示图表标题，如何对标题的样式进行设置。</value>
+  </data>
+  <data name="ChartWalls.Descrip" xml:space="preserve">
+    <value>图表的**背景墙**包括**背面墙**和**侧面墙**。
+
+本示例展示如何设置背景墙的样式，包括：
+- 设置整个背景墙的样式
+- 分别设置背面墙和侧面墙的样式</value>
+  </data>
+  <data name="Chart3DFormat.Name" xml:space="preserve">
+    <value>图表的3D样式</value>
+  </data>
+  <data name="ConfigLegendFormat.Name" xml:space="preserve">
+    <value>设置图例样式</value>
+  </data>
+  <data name="ConfigSecondarySection.Name" xml:space="preserve">
+    <value>设置复合饼图的第二部分</value>
+  </data>
+  <data name="DataLabel.Descrip" xml:space="preserve">
+    <value>数据标签显示指定数据系列的数据信息，可以控制数据标签是否显示图例名称，数据系列名称，显示百分比等。
+
+本示例展示如何显示数据标签和如何设置数据样式的标签。</value>
+  </data>
+  <data name="DataPoint.Descrip" xml:space="preserve">
+    <value>每个数据系列都由**数据点**组成。
+
+本示例展示如何设置数据点的样式。</value>
+  </data>
+  <data name="Legend.Descrip" xml:space="preserve">
+    <value>本示例展示如何显示图例， 设置图例的样式和位置。</value>
+  </data>
+  <data name="PlotArea.Descrip" xml:space="preserve">
+    <value>本示例展示设置绘图区域的样式，和控制隐藏的单元格是否显示在绘图区域中</value>
+  </data>
+  <data name="PlotArea.Name" xml:space="preserve">
+    <value>绘图区域</value>
+  </data>
+  <data name="ChartGallery.Descrip" xml:space="preserve">
+    <value>图表集中的示例展示了各种类型的图表</value>
+  </data>
+  <data name="ChartGallery.Name" xml:space="preserve">
+    <value>图表集</value>
+  </data>
+  <data name="AreaChart.Name" xml:space="preserve">
+    <value>面积图</value>
+  </data>
+  <data name="AreaStacked100.Name" xml:space="preserve">
+    <value>百分比堆积面积图</value>
+  </data>
+  <data name="AreaStackedChart.Name" xml:space="preserve">
+    <value>堆积面积图</value>
+  </data>
+  <data name="BarClusteredChart.Name" xml:space="preserve">
+    <value>簇状条形图</value>
+  </data>
+  <data name="BarStacked100Chart.Name" xml:space="preserve">
+    <value>百分比堆积条形图</value>
+  </data>
+  <data name="BarStackedChart.Name" xml:space="preserve">
+    <value>堆积条形图</value>
+  </data>
+  <data name="ColumnClusteredChart.Name" xml:space="preserve">
+    <value>簇状柱形图</value>
+  </data>
+  <data name="ColumnStacked100Chart.Name" xml:space="preserve">
+    <value>百分比堆积柱形图</value>
+  </data>
+  <data name="ColumnStackedChart.Name" xml:space="preserve">
+    <value>堆积柱形图</value>
+  </data>
+  <data name="LineChart.Name" xml:space="preserve">
+    <value>折线图</value>
+  </data>
+  <data name="LineMarkersChart.Name" xml:space="preserve">
+    <value>带数据标记的折线图</value>
+  </data>
+  <data name="LineStacked100Chart.Name" xml:space="preserve">
+    <value>百分比堆积折线图</value>
+  </data>
+  <data name="LineStackedChart.Name" xml:space="preserve">
+    <value>堆积折线图</value>
+  </data>
+  <data name="PieChart.Name" xml:space="preserve">
+    <value>饼图</value>
+  </data>
+  <data name="Stock_HighLowCloseStockChart.Name" xml:space="preserve">
+    <value>盘高-盘低-收盘图</value>
+  </data>
+  <data name="Stock_OpenHighLowCloseStock.Name" xml:space="preserve">
+    <value>开盘-盘高-盘低-收盘图</value>
+  </data>
+  <data name="Stock_VolumeHighLowCloseStock.Name" xml:space="preserve">
+    <value>成交量-盘高-盘低-收盘图</value>
+  </data>
+  <data name="XYScatterChart.Name" xml:space="preserve">
+    <value>散点图</value>
+  </data>
+  <data name="XYScatterLinesChart.Name" xml:space="preserve">
+    <value>带直线和数据标记的散点图</value>
+  </data>
+  <data name="XYScatterSmooth.Name" xml:space="preserve">
+    <value>带平滑线的散点图</value>
+  </data>
+  <data name="BarCluteredChart.Name" xml:space="preserve">
+    <value>簇状条形图</value>
+  </data>
+  <data name="BubbleChart.Name" xml:space="preserve">
+    <value>气泡图</value>
+  </data>
+<<<<<<< working copy
+  <data name="ConfigHeaderFooter.Name" xml:space="preserve">
+=======
+  <data name="ConfigDefaultHeaderFooter.Name" xml:space="preserve">
+>>>>>>> merge rev
+    <value>设置页眉页脚</value>
+  </data>
+  <data name="ConfigEvenPageHeaderFooter.Name" xml:space="preserve">
+    <value>设置偶数页的页眉页脚</value>
+  </data>
+  <data name="ConfigFirstPageNumber.Name" xml:space="preserve">
+    <value>设置起始页码</value>
+  </data>
+  <data name="ConfigPageCenter.Name" xml:space="preserve">
+    <value>设置居中方式</value>
+  </data>
+  <data name="ConfigPageMargins.Name" xml:space="preserve">
+    <value>设置页边距</value>
+  </data>
+  <data name="ConfigPageOrder.Name" xml:space="preserve">
+    <value>设置打印顺序</value>
+  </data>
+  <data name="ConfigPageOrientation.Name" xml:space="preserve">
+    <value>设置页面方向</value>
+  </data>
+  <data name="ConfigPaperScaling.Name" xml:space="preserve">
+    <value>设置页面缩放</value>
+  </data>
+  <data name="ConfigPaperSize.Name" xml:space="preserve">
+    <value>设置纸张大小</value>
+  </data>
+  <data name="ConfigPrintArea.Name" xml:space="preserve">
+    <value>设置打印区域</value>
+  </data>
+  <data name="ConfigSheetPrintSetings.Name" xml:space="preserve">
+    <value>设置工作表打印配置</value>
+  </data>
+  <data name="PageSetup.Name" xml:space="preserve">
+    <value>页面设置</value>
+  </data>
+  <data name="CombinationChart1.Name" xml:space="preserve">
+    <value>组合图表1</value>
+  </data>
+  <data name="CombinationChart2.Name" xml:space="preserve">
+    <value>组合图表2</value>
+  </data>
+  <data name="LineMarkerStackedChart.Name" xml:space="preserve">
+    <value>带数据标记的堆积折线图</value>
+  </data>
+  <data name="Pie_DoughnutChart.Name" xml:space="preserve">
+    <value>圆环图</value>
+  </data>
+  <data name="Stock_VolumeOpenHighLowClose.Name" xml:space="preserve">
+    <value>成交量-开盘-盘高-盘低-收盘图</value>
+  </data>
+  <data name="XYScatterSmoothWithMarkers.Name" xml:space="preserve">
+    <value>带数据标记和平滑线的散点图</value>
+  </data>
+  <data name="LineMarkerStacked100Chart.Name" xml:space="preserve">
+    <value>带数据标记的百分比堆积折线图</value>
+  </data>
+  <data name="Chart3DFormat.Descrip" xml:space="preserve">
+    <value>本示例中展示了如何设置图表的**3D**样式。包括背景墙和基底</value>
+  </data>
+  <data name="ConfigMarkersFormat.Name" xml:space="preserve">
+    <value>设置标记样式</value>
+  </data>
+  <data name="Markers.Descrip" xml:space="preserve">
+    <value>本示例展示如何设置标记的类型和样式</value>
+  </data>
+  <data name="Markers.Name" xml:space="preserve">
+    <value>标记</value>
+  </data>
+  <data name="PageSetup.Descrip" xml:space="preserve">
+    <value>Spread.Services支持对打印页面设置，**页面设置**包含所有页面设置属性（如左边距，下边距，纸张大小等）。</value>
+  </data>
+  <data name="ConfigChart3DFormat.Name" xml:space="preserve">
+    <value>设置图表的3D样式</value>
+  </data>
+  <data name="ConfigFirstPageHeaderFooter.Name" xml:space="preserve">
+    <value>设置首页的页眉页脚</value>
+  </data>
+  <data name="ConfigPrintTitles.Name" xml:space="preserve">
+    <value>设置打印标题</value>
+  </data>
+</root>

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <RootNamespace>Benchmark</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="1.5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Files\Input\" />
+    <Folder Include="Files\Output\" />
+    <Folder Include="Files\Output\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Files\Input\test performance.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

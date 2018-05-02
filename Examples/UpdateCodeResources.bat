@@ -1,0 +1,1 @@
+dotnet BuildTools\UpdateCodeResources.dll .\
