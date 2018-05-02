@@ -9,21 +9,21 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Sorting
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Range["A1:F7"].Value = data;
             worksheet.Range["A:F"].ColumnWidth = 15;
 
-            //give a custom sort values string. "Eva" and "Cherry" should be the top1 and top2.
-            var sortkey = new ValueSortField(worksheet.Range["A2:A7"], "\"Eva\", \"Cherry\"");
+            //give a custom sort values string. "Angela" and "Damon" should be the top1 and top2.
+            var sortkey = new ValueSortField(worksheet.Range["A2:A7"], "\"Angela\", \"Damon\"");
             worksheet.Range["A2:F7"].Sort(SortOrientation.Columns, false, sortkey);
         }
     }

@@ -25,7 +25,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts.ChartArea
 
             //Font
             chartarea.Font.Color.RGB = Color.MediumSeaGreen;
-            chartarea.Font.Name = "Comic Sans MS";
+            chartarea.Font.Name = "Times New Roman";
             chartarea.Font.Size = 12;
             //rounded corners.
             chartarea.RoundedCorners = true;

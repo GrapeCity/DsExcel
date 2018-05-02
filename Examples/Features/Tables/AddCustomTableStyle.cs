@@ -13,11 +13,11 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Tables
 
             //Set WholeTable element style.
             style.TableStyleElements[TableStyleElementType.WholeTable].Font.Italic = true;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Font.ThemeColor = ThemeColor.Accent6;
+            style.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.White;
             style.TableStyleElements[TableStyleElementType.WholeTable].Font.Strikethrough = true;
             style.TableStyleElements[TableStyleElementType.WholeTable].Borders.LineStyle = BorderLineStyle.Dotted;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders.ThemeColor = ThemeColor.Accent2;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Interior.Color = Color.FromRGB(24, 232, 192);
+            style.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(0, 193, 213);
+            style.TableStyleElements[TableStyleElementType.WholeTable].Interior.Color = Color.FromRGB(59, 92, 170);
 
             //Set FirstColumnStripe element style.
             style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Font.Bold = true;

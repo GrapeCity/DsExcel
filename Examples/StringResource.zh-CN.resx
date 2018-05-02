@@ -1329,9 +1329,6 @@ Spread表格组件支持以下几种类型的迷你图：
   <data name="XYScatterSmooth.Name" xml:space="preserve">
     <value>带平滑线的散点图</value>
   </data>
-  <data name="BarCluteredChart.Name" xml:space="preserve">
-    <value>簇状条形图</value>
-  </data>
   <data name="BubbleChart.Name" xml:space="preserve">
     <value>气泡图</value>
   </data>
@@ -1365,7 +1362,7 @@ Spread表格组件支持以下几种类型的迷你图：
   <data name="ConfigPrintArea.Name" xml:space="preserve">
     <value>设置打印区域</value>
   </data>
-  <data name="ConfigSheetPrintSetings.Name" xml:space="preserve">
+  <data name="ConfigSheetPrintSettings.Name" xml:space="preserve">
     <value>设置工作表打印配置</value>
   </data>
   <data name="PageSetup.Name" xml:space="preserve">

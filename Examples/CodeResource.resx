@@ -3379,7 +3379,7 @@
 
             //Font
             chartarea.Font.Color.RGB = Color.MediumSeaGreen;
-            chartarea.Font.Name = "Comic Sans MS";
+            chartarea.Font.Name = "Times New Roman";
             chartarea.Font.Size = 12;
             //rounded corners.
             chartarea.RoundedCorners = true;
@@ -3497,7 +3497,7 @@
             shape.Chart.ChartTitle.Text = "Area Stacked Chart";
         </value>
   </data>
-  <data name="GrapeCity.Documents.Excel.Examples.Features.Charts.ChartGallery.BarCluteredChart" xml:space="preserve">
+  <data name="GrapeCity.Documents.Excel.Examples.Features.Charts.ChartGallery.BarClusteredChart" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
@@ -3867,22 +3867,22 @@
             GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddChart(GrapeCity.Documents.Excel.Drawing.ChartType.StockHLC, 350, 20, 360, 230);
             worksheet.Range["A1:D17"].Value = new object[,] {
                 { null, "High", "Low", "Close" },
-                { new DateTime(2008, 9, 1), 105.76, 92.38, 100.94 },
-                { new DateTime(2008, 9, 2), 102.45, 90.14, 93.45 },
-                { new DateTime(2008, 9, 3),102.11, 85.01, 99.89 },
-                { new DateTime(2008, 9, 4), 106.01, 94.04, 99.45 },
-                { new DateTime(2008, 9, 5),108.23, 98.16, 104.33 },
-                { new DateTime(2008, 9, 8),107.7, 91.02, 102.17 },
-                { new DateTime(2008, 9, 9),110.36, 101.62, 110.07 },
-                { new DateTime(2008, 9, 10),115.97, 106.89, 112.39 },
-                { new DateTime(2008, 9, 11),120.32, 112.15, 117.52 },
-                { new DateTime(2008, 9, 12),122.03, 114.67, 114.75 },
-                { new DateTime(2008, 9, 15),120.46, 106.21, 116.85 },
-                { new DateTime(2008, 9, 16),118.08, 113.55, 116.69 },
-                { new DateTime(2008, 9, 17),128.23, 110.91, 117.25 },
-                { new DateTime(2008, 9, 18),120.55, 108.09, 112.52 },
-                { new DateTime(2008, 9, 19),112.58, 105.42, 109.12 },
-                { new DateTime(2008, 9, 22),115.23, 97.25, 101.56 },
+                { new DateTime(2019, 9, 1), 105.76, 92.38, 100.94 },
+                { new DateTime(2019, 9, 2), 102.45, 90.14, 93.45 },
+                { new DateTime(2019, 9, 3),102.11, 85.01, 99.89 },
+                { new DateTime(2019, 9, 4), 106.01, 94.04, 99.45 },
+                { new DateTime(2019, 9, 5),108.23, 98.16, 104.33 },
+                { new DateTime(2019, 9, 8),107.7, 91.02, 102.17 },
+                { new DateTime(2019, 9, 9),110.36, 101.62, 110.07 },
+                { new DateTime(2019, 9, 10),115.97, 106.89, 112.39 },
+                { new DateTime(2019, 9, 11),120.32, 112.15, 117.52 },
+                { new DateTime(2019, 9, 12),122.03, 114.67, 114.75 },
+                { new DateTime(2019, 9, 15),120.46, 106.21, 116.85 },
+                { new DateTime(2019, 9, 16),118.08, 113.55, 116.69 },
+                { new DateTime(2019, 9, 17),128.23, 110.91, 117.25 },
+                { new DateTime(2019, 9, 18),120.55, 108.09, 112.52 },
+                { new DateTime(2019, 9, 19),112.58, 105.42, 109.12 },
+                { new DateTime(2019, 9, 22),115.23, 97.25, 101.56 },
             };
             shape.Chart.SeriesCollection.Add(worksheet.Range["A1:D17"], GrapeCity.Documents.Excel.Drawing.RowCol.Columns);
             shape.Chart.ChartTitle.Text = "High-Low-Close Stock Chart";
@@ -3909,22 +3909,22 @@
             GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddChart(GrapeCity.Documents.Excel.Drawing.ChartType.StockOHLC, 350, 20, 360, 220);
             worksheet.Range["A1:E17"].Value = new object[,] {
                     { null, "Open", "High", "Low", "Close" },
-                    { new DateTime(2008, 9, 1), 103.46, 105.76, 92.38, 100.94 },
-                    { new DateTime(2008, 9, 2), 100.26, 102.45, 90.14, 93.45 },
-                    { new DateTime(2008, 9, 3), 98.05, 102.11, 85.01, 99.89 },
-                    { new DateTime(2008, 9, 4), 100.32, 106.01, 94.04, 99.45 },
-                    { new DateTime(2008, 9, 5), 99.74, 108.23, 98.16, 104.33 },
-                    { new DateTime(2008, 9, 8), 92.11, 107.7, 91.02, 102.17 },
-                    { new DateTime(2008, 9, 9), 107.8, 110.36, 101.62, 110.07 },
-                    { new DateTime(2008, 9, 10), 107.56, 115.97, 106.89, 112.39 },
-                    { new DateTime(2008, 9, 11), 112.86, 120.32, 112.15, 117.52 },
-                    { new DateTime(2008, 9, 12), 115.02, 122.03, 114.67, 114.75 },
-                    { new DateTime(2008, 9, 15), 108.53, 120.46, 106.21, 116.85 },
-                    { new DateTime(2008, 9, 16), 114.97, 118.08, 113.55, 116.69 },
-                    { new DateTime(2008, 9, 17), 127.14, 128.23, 110.91, 117.25 },
-                    { new DateTime(2008, 9, 18), 118.89, 120.55, 108.09, 112.52 },
-                    { new DateTime(2008, 9, 19), 105.57, 112.58, 105.42, 109.12 },
-                    { new DateTime(2008, 9, 22), 110.23, 115.23, 97.25, 101.56 },
+                    { new DateTime(2019, 9, 1), 103.46, 105.76, 92.38, 100.94 },
+                    { new DateTime(2019, 9, 2), 100.26, 102.45, 90.14, 93.45 },
+                    { new DateTime(2019, 9, 3), 98.05, 102.11, 85.01, 99.89 },
+                    { new DateTime(2019, 9, 4), 100.32, 106.01, 94.04, 99.45 },
+                    { new DateTime(2019, 9, 5), 99.74, 108.23, 98.16, 104.33 },
+                    { new DateTime(2019, 9, 8), 92.11, 107.7, 91.02, 102.17 },
+                    { new DateTime(2019, 9, 9), 107.8, 110.36, 101.62, 110.07 },
+                    { new DateTime(2019, 9, 10), 107.56, 115.97, 106.89, 112.39 },
+                    { new DateTime(2019, 9, 11), 112.86, 120.32, 112.15, 117.52 },
+                    { new DateTime(2019, 9, 12), 115.02, 122.03, 114.67, 114.75 },
+                    { new DateTime(2019, 9, 15), 108.53, 120.46, 106.21, 116.85 },
+                    { new DateTime(2019, 9, 16), 114.97, 118.08, 113.55, 116.69 },
+                    { new DateTime(2019, 9, 17), 127.14, 128.23, 110.91, 117.25 },
+                    { new DateTime(2019, 9, 18), 118.89, 120.55, 108.09, 112.52 },
+                    { new DateTime(2019, 9, 19), 105.57, 112.58, 105.42, 109.12 },
+                    { new DateTime(2019, 9, 22), 110.23, 115.23, 97.25, 101.56 },
                 };
             shape.Chart.SeriesCollection.Add(worksheet.Range["A1:E17"], GrapeCity.Documents.Excel.Drawing.RowCol.Columns);
             //set chart title
@@ -3951,22 +3951,22 @@
             GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddChart(GrapeCity.Documents.Excel.Drawing.ChartType.StockVHLC, 350, 20, 360, 230);
             worksheet.Range["A1:E17"].Value = new object[,] {
                 { null, "Volume", "High", "Low", "Close" },
-                { new DateTime(2008, 9, 1), 26085,  105.76, 92.38, 100.94 },
-                { new DateTime(2008, 9, 2), 52314,  102.45, 90.14, 93.45 },
-                { new DateTime(2008, 9, 3), 70308, 102.11, 85.01, 99.89 },
-                { new DateTime(2008, 9, 4), 33401,  106.01, 94.04, 99.45 },
-                { new DateTime(2008, 9, 5), 87500,  108.23, 98.16, 104.33 },
-                { new DateTime(2008, 9, 8), 33756,  107.7, 91.02, 102.17 },
-                { new DateTime(2008, 9, 9), 65737,  110.36, 101.62, 110.07 },
-                { new DateTime(2008, 9, 10), 45668, 115.97, 106.89, 112.39 },
-                { new DateTime(2008, 9, 11), 47815, 120.32, 112.15, 117.52 },
-                { new DateTime(2008, 9, 12), 76759, 122.03, 114.67, 114.75 },
-                { new DateTime(2008, 9, 15), 23492, 120.46, 106.21, 116.85 },
-                { new DateTime(2008, 9, 16), 56127, 118.08, 113.55, 116.69 },
-                { new DateTime(2008, 9, 17), 81142, 128.23, 110.91, 117.25 },
-                { new DateTime(2008, 9, 18), 46384, 120.55, 108.09, 112.52 },
-                { new DateTime(2008, 9, 19), 51005, 112.58, 105.42, 109.12 },
-                { new DateTime(2008, 9, 22), 35223, 115.23, 97.25, 101.56 },
+                { new DateTime(2019, 9, 1), 26085,  105.76, 92.38, 100.94 },
+                { new DateTime(2019, 9, 2), 52314,  102.45, 90.14, 93.45 },
+                { new DateTime(2019, 9, 3), 70308, 102.11, 85.01, 99.89 },
+                { new DateTime(2019, 9, 4), 33401,  106.01, 94.04, 99.45 },
+                { new DateTime(2019, 9, 5), 87500,  108.23, 98.16, 104.33 },
+                { new DateTime(2019, 9, 8), 33756,  107.7, 91.02, 102.17 },
+                { new DateTime(2019, 9, 9), 65737,  110.36, 101.62, 110.07 },
+                { new DateTime(2019, 9, 10), 45668, 115.97, 106.89, 112.39 },
+                { new DateTime(2019, 9, 11), 47815, 120.32, 112.15, 117.52 },
+                { new DateTime(2019, 9, 12), 76759, 122.03, 114.67, 114.75 },
+                { new DateTime(2019, 9, 15), 23492, 120.46, 106.21, 116.85 },
+                { new DateTime(2019, 9, 16), 56127, 118.08, 113.55, 116.69 },
+                { new DateTime(2019, 9, 17), 81142, 128.23, 110.91, 117.25 },
+                { new DateTime(2019, 9, 18), 46384, 120.55, 108.09, 112.52 },
+                { new DateTime(2019, 9, 19), 51005, 112.58, 105.42, 109.12 },
+                { new DateTime(2019, 9, 22), 35223, 115.23, 97.25, 101.56 },
             };
             shape.Chart.SeriesCollection.Add(worksheet.Range["A1:E17"], GrapeCity.Documents.Excel.Drawing.RowCol.Columns);
             shape.Chart.ChartTitle.Text = "Volume-High-Low-Close Stock Chart";
@@ -4000,21 +4000,21 @@
             GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddChart(GrapeCity.Documents.Excel.Drawing.ChartType.StockVOHLC, 300, 20, 360, 230);
             worksheet.Range["A1:F23"].Value = new object[,] {
                 { null, "Volume", "Open", "High", "Low", "Close" },
-                { new DateTime(2008, 9, 1), 26085, 103.46, 105.76, 92.38, 100.94 },
-                { new DateTime(2008, 9, 2), 52314, 100.26, 102.45, 90.14, 93.45 },
-                { new DateTime(2008, 9, 3), 70308, 98.05, 102.11, 85.01, 99.89 },
-                { new DateTime(2008, 9, 4), 33401, 100.32, 106.01, 94.04, 99.45 },
-                { new DateTime(2008, 9, 5), 87500, 99.74, 108.23, 98.16, 104.33 },
-                { new DateTime(2008, 9, 8), 33756, 92.11, 107.7, 91.02, 102.17 },
-                { new DateTime(2008, 9, 9), 65737, 107.8, 110.36, 101.62, 110.07 },
-                { new DateTime(2008, 9, 10), 45668, 107.56, 115.97, 106.89, 112.39 },
-                { new DateTime(2008, 9, 11), 47815, 112.86, 120.32, 112.15, 117.52 },
-                { new DateTime(2008, 9, 12), 76759, 115.02, 122.03, 114.67, 114.75 },
-                { new DateTime(2008, 9, 15), 23492, 108.53, 120.46, 106.21, 116.85 },
-                { new DateTime(2008, 9, 16), 56127, 114.97, 118.08, 113.55, 116.69 },
-                { new DateTime(2008, 9, 17), 81142, 127.14, 128.23, 110.91, 117.25 },
-                { new DateTime(2008, 9, 18), 46384, 118.89, 120.55, 108.09, 112.52 },
-                { new DateTime(2008, 9, 19), 51005, 105.57, 112.58, 105.42, 109.12 },
+                { new DateTime(2019, 9, 1), 26085, 103.46, 105.76, 92.38, 100.94 },
+                { new DateTime(2019, 9, 2), 52314, 100.26, 102.45, 90.14, 93.45 },
+                { new DateTime(2019, 9, 3), 70308, 98.05, 102.11, 85.01, 99.89 },
+                { new DateTime(2019, 9, 4), 33401, 100.32, 106.01, 94.04, 99.45 },
+                { new DateTime(2019, 9, 5), 87500, 99.74, 108.23, 98.16, 104.33 },
+                { new DateTime(2019, 9, 8), 33756, 92.11, 107.7, 91.02, 102.17 },
+                { new DateTime(2019, 9, 9), 65737, 107.8, 110.36, 101.62, 110.07 },
+                { new DateTime(2019, 9, 10), 45668, 107.56, 115.97, 106.89, 112.39 },
+                { new DateTime(2019, 9, 11), 47815, 112.86, 120.32, 112.15, 117.52 },
+                { new DateTime(2019, 9, 12), 76759, 115.02, 122.03, 114.67, 114.75 },
+                { new DateTime(2019, 9, 15), 23492, 108.53, 120.46, 106.21, 116.85 },
+                { new DateTime(2019, 9, 16), 56127, 114.97, 118.08, 113.55, 116.69 },
+                { new DateTime(2019, 9, 17), 81142, 127.14, 128.23, 110.91, 117.25 },
+                { new DateTime(2019, 9, 18), 46384, 118.89, 120.55, 108.09, 112.52 },
+                { new DateTime(2019, 9, 19), 51005, 105.57, 112.58, 105.42, 109.12 },
             };
             shape.Chart.SeriesCollection.Add(worksheet.Range["A1:F23"], GrapeCity.Documents.Excel.Drawing.RowCol.Columns);
             shape.Chart.ChartTitle.Text = "Stock Volume-Open-High-Low-Close Chart";
@@ -4932,13 +4932,13 @@
             worksheet.Range["B:C"].ColumnWidth = 17;
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
@@ -4957,18 +4957,18 @@
             worksheet.Range["B:C"].ColumnWidth = 17;
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
             //weight between 71 and 79, set its interior color to yellow.
-            IFormatCondition condition = worksheet.Range["E2:E7"].FormatConditions.Add(FormatConditionType.CellValue, FormatConditionOperator.Between, 71, 79) as IFormatCondition;
+            IFormatCondition condition = worksheet.Range["E2:E7"].FormatConditions.Add(FormatConditionType.CellValue, FormatConditionOperator.Between, 66, 70) as IFormatCondition;
             condition.Interior.Color = Color.LightGreen;
         </value>
   </data>
@@ -4979,13 +4979,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
@@ -5016,18 +5016,18 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
             //expression rule, format weight greater than 80.
-            IFormatCondition condition = worksheet.Range["E2:E7"].FormatConditions.Add(FormatConditionType.Expression, 0, "=E2&gt;72") as IFormatCondition;
+            IFormatCondition condition = worksheet.Range["E2:E7"].FormatConditions.Add(FormatConditionType.Expression, 0, "=E2&gt;68") as IFormatCondition;
             condition.Interior.Color = Color.LightPink;
         </value>
   </data>
@@ -5038,13 +5038,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
@@ -5052,7 +5052,7 @@
             IIconSetCondition condition = worksheet.Range["E2:E7"].FormatConditions.AddIconSetCondition();
             condition.IconSet = workbook.IconSets[IconSetType.Icon3Symbols];
             condition.IconCriteria[1].Operator = FormatConditionOperator.GreaterEqual;
-            condition.IconCriteria[1].Value = 50;
+            condition.IconCriteria[1].Value = 30;
             condition.IconCriteria[1].Type = ConditionValueTypes.Percent;
             condition.IconCriteria[2].Operator = FormatConditionOperator.GreaterEqual;
             condition.IconCriteria[2].Value = 70;
@@ -5066,13 +5066,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
@@ -5081,7 +5081,7 @@
             iconset.IconSet = workbook.IconSets[IconSetType.Icon3TrafficLights1];
 
             //cell value rule added later, it has the highest priority, set StopIfTrue to true, if cell match condition, it will not apply icon set rule.
-            IFormatCondition cellvalueRule = worksheet.Range["E2:E7"].FormatConditions.Add(FormatConditionType.CellValue, FormatConditionOperator.Between, "71", "79") as IFormatCondition;
+            IFormatCondition cellvalueRule = worksheet.Range["E2:E7"].FormatConditions.Add(FormatConditionType.CellValue, FormatConditionOperator.Between, "66", "70") as IFormatCondition;
             cellvalueRule.Font.ThemeColor = ThemeColor.Accent1;
             cellvalueRule.StopIfTrue = true;
         </value>
@@ -5093,13 +5093,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
@@ -5109,7 +5109,7 @@
             threeColorScaleRule.ColorScaleCriteria[0].FormatColor.Color = Color.Red;
 
             threeColorScaleRule.ColorScaleCriteria[1].Type = ConditionValueTypes.Percent;
-            threeColorScaleRule.ColorScaleCriteria[1].Value = 50;
+            threeColorScaleRule.ColorScaleCriteria[1].Value = 30;
             threeColorScaleRule.ColorScaleCriteria[1].FormatColor.Color = Color.Yellow;
 
             threeColorScaleRule.ColorScaleCriteria[2].Type = ConditionValueTypes.HighestValue;
@@ -5123,13 +5123,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
@@ -5148,24 +5148,24 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
             //two color scale.
             IColorScale twoColorScaleRule = worksheet.Range["E2:E7"].FormatConditions.AddColorScale(ColorScaleType.TwoColorScale);
             twoColorScaleRule.ColorScaleCriteria[0].Type = ConditionValueTypes.Number;
-            twoColorScaleRule.ColorScaleCriteria[0].Value = 58;
+            twoColorScaleRule.ColorScaleCriteria[0].Value = 62;
             twoColorScaleRule.ColorScaleCriteria[0].FormatColor.Color = Color.Red;
 
             twoColorScaleRule.ColorScaleCriteria[1].Type = ConditionValueTypes.Number;
-            twoColorScaleRule.ColorScaleCriteria[1].Value = 80;
+            twoColorScaleRule.ColorScaleCriteria[1].Value = 76;
             twoColorScaleRule.ColorScaleCriteria[1].FormatColor.Color = Color.Green;
         </value>
   </data>
@@ -5176,13 +5176,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 80, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 72, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 71, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 80, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 58, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 71, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
@@ -5200,13 +5200,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
             worksheet.Range["A1:F7"].Value = data;
 
@@ -5215,7 +5215,7 @@
             iconset.IconSet = workbook.IconSets[IconSetType.Icon3TrafficLights1];
 
             //cell value rule added later, it has the highest priority, set StopIfTrue to true, if cell match condition, it will not apply icon set rule.
-            IFormatCondition cellvalueRule = worksheet.Range["E2:E7"].FormatConditions.Add(FormatConditionType.CellValue, FormatConditionOperator.Between, "71", "79") as IFormatCondition;
+            IFormatCondition cellvalueRule = worksheet.Range["E2:E7"].FormatConditions.Add(FormatConditionType.CellValue, FormatConditionOperator.Between, "66", "70") as IFormatCondition;
             cellvalueRule.StopIfTrue = true;
 
             //delete icon set rule.
@@ -5259,13 +5259,13 @@
 
             worksheet.Range["C2:E4"].Value = new object[,]
             {
-                {new DateTime(2015, 12, 1), new DateTime(2015, 12, 14), new DateTime(2015, 12, 15) },
-                {new DateTime(2015, 12, 18), new DateTime(2015, 12, 19), new DateTime(2015, 12, 30) },
-                {new DateTime(2015, 12, 31), new DateTime(2014, 12, 13), new DateTime(2017, 12, 15) }
+                {new DateTime(2020, 12, 1), new DateTime(2020, 12, 14), new DateTime(2020, 12, 15) },
+                {new DateTime(2020, 12, 18), new DateTime(2020, 12, 19), new DateTime(2020, 12, 30) },
+                {new DateTime(2020, 12, 31), new DateTime(2019, 12, 13), new DateTime(2019, 12, 15) }
             };
 
             //create date validation.
-            worksheet.Range["C2:E4"].Validation.Add(ValidationType.Date, ValidationAlertStyle.Stop, ValidationOperator.Between, new DateTime(2015, 12, 13), new DateTime(2015, 12, 18));
+            worksheet.Range["C2:E4"].Validation.Add(ValidationType.Date, ValidationAlertStyle.Stop, ValidationOperator.Between, new DateTime(2020, 12, 13), new DateTime(2020, 12, 18));
 
             //set column width just for export shown.
             worksheet.Range["C:E"].EntireColumn.ColumnWidthInPixel = 120;
@@ -5556,13 +5556,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5588,20 +5588,20 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
             worksheet.Range["A:F"].ColumnWidth = 15;
             worksheet.Range["E2:E7"].NumberFormat = "0.00";
             //multi select, selcet the weight equals to 80.00 and 58.00.
-            worksheet.Range["A1:F7"].AutoFilter(4, new object[] { "80.00", "58.00" }, AutoFilterOperator.Values);
+            worksheet.Range["A1:F7"].AutoFilter(4, new object[] { "62.00", "76.00" }, AutoFilterOperator.Values);
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Filtering.ReApplyFilter" xml:space="preserve">
@@ -5611,23 +5611,23 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
             worksheet.Range["A:F"].ColumnWidth = 15;
             //Weight less than 80.
-            worksheet.Range["A1:F7"].AutoFilter(4, "&lt;80");
+            worksheet.Range["A1:F7"].AutoFilter(4, "&lt;72");
             
             //change filter range data.
-            worksheet.Range["E2"].Value = 79;
-            //re-apply filter condition, row 2 will be shown. 
+            worksheet.Range["E4"].Value = 71;
+            //re-apply filter condition, row 4 will be shown. 
             worksheet.AutoFilter.ApplyFilter();
         </value>
   </data>
@@ -5638,13 +5638,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5661,13 +5661,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5686,13 +5686,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5712,13 +5712,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5738,13 +5738,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5764,13 +5764,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5790,13 +5790,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5816,13 +5816,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -5845,20 +5845,20 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
             worksheet.Range["A:F"].ColumnWidth = 15;
 
             //Weight less than 80.
-            worksheet.Range["A1:F7"].AutoFilter(4, "&lt;80");
+            worksheet.Range["A1:F7"].AutoFilter(4, "&lt;72");
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Filtering.TextFiltering.TextFilter" xml:space="preserve">
@@ -5868,13 +5868,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             worksheet.Range["A1:F7"].Value = data;
@@ -6503,7 +6503,7 @@
             {
                 {"SalesPerson", "Region",  "SalesAmount", "ComPct", "ComAmt"},
                 {"Joe", "North", 260, 0.10, null},
-                {"Robert", "South", 660, 0.15, null},
+                {"Nia", "South", 660, 0.15, null},
             };
 
             worksheet.Tables.Add(worksheet.Range["A1:E3"], true);
@@ -6627,10 +6627,10 @@
 
             //add a hyperlink link to email address.
             worksheet.Range["A5:B6"].Hyperlinks.Add(worksheet.Range["A5"],
-                                            "mailto:spread.sales@grapecity.com",
+                                            "mailto:us.sales@grapecity.com",
                                             null,
-                                            "Send an email to spread sales",
-                                            "Send an email to spread sales");
+                                            "Send an email to sales",
+                                            "Send an email to sales");
 
             //add a hyperlink link to external file.
             //change the path to real picture file path.
@@ -6664,10 +6664,10 @@
 
             //add a hyperlink link to email address.
             worksheet.Range["A5:B6"].Hyperlinks.Add(worksheet.Range["A5"],
-                                            "mailto:spread.sales@grapecity.com",
+                                            "mailto:us.sales@grapecity.com",
                                             null,
-                                            "Send an email to spread sales",
-                                            "Send an eamil to spread sales");
+                                            "Send an email to sales",
+                                            "Send an email to sales");
 
             //add a hyperlink link to external file.
             //change the path to real picture file path.
@@ -6724,6 +6724,8 @@
             worksheet.PageSetup.FirstPage.LeftFooter.Text = "&amp;G";
             System.IO.Stream stream = this.GetResourceStream("logo.png");
             worksheet.PageSetup.FirstPage.LeftFooter.Picture.SetGraphicStream(stream, ImageType.PNG);
+            worksheet.PageSetup.FirstPage.LeftFooter.Picture.Width = 100;
+            worksheet.PageSetup.FirstPage.LeftFooter.Picture.Height = 13;
 
         </value>
   </data>
@@ -6894,7 +6896,7 @@
 
         </value>
   </data>
-  <data name="GrapeCity.Documents.Excel.Examples.Features.PageSetup.ConfigSheetPrintSetings" xml:space="preserve">
+  <data name="GrapeCity.Documents.Excel.Examples.Features.PageSetup.ConfigSheetPrintSettings" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
@@ -7681,21 +7683,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -7703,6 +7705,9 @@
             worksheet.Range["A:F"].ColumnWidth = 15;
             var pivotcache = workbook.PivotCaches.Create(worksheet.Range["A1:F16"]);
             var pivottable = worksheet.PivotTables.Add(pivotcache, worksheet.Range["H7"], "pivottable1");
+            worksheet.Range["D2:D16"].NumberFormat = "$#,##0.00";
+            worksheet.Range["I9:O11"].NumberFormat = "$#,##0.00";
+            worksheet.Range["H:O"].ColumnWidth = 12;
 
             //config pivot table's fields
             var field_Category = pivottable.PivotFields["Category"];
@@ -7728,21 +7733,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -7750,6 +7755,9 @@
             worksheet.Range["A:F"].ColumnWidth = 15;
             var pivotcache = workbook.PivotCaches.Create(worksheet.Range["A1:F16"]);
             var pivottable = worksheet.PivotTables.Add(pivotcache, worksheet.Range["H7"], "pivottable1");
+            worksheet.Range["D2:D16"].NumberFormat = "$#,##0.00";
+            worksheet.Range["I9:O11"].NumberFormat = "$#,##0.00";
+            worksheet.Range["H:O"].ColumnWidth = 12;
 
             //config pivot table's fields
             var field_Category = pivottable.PivotFields["Category"];
@@ -7771,27 +7779,29 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Range["A1:F16"].Value = sourceData;
             var pivotcache = workbook.PivotCaches.Create(worksheet.Range["A1:F16"]);
             var pivottable = worksheet.PivotTables.Add(pivotcache, worksheet.Range["I7"], "pivottable1");
+            worksheet.Range["D2:D16"].NumberFormat = "$#,##0.00";
+            worksheet.Range["J8:J11"].NumberFormat = "$#,##0.00";
 
             var field_product = pivottable.PivotFields[1];
             field_product.Orientation = PivotFieldOrientation.RowField;
@@ -7822,28 +7832,30 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Range["A1:F16"].Value = sourceData;
             var pivotcache = workbook.PivotCaches.Create(worksheet.Range["A1:F16"]);
             var pivottable = worksheet.PivotTables.Add(pivotcache, worksheet.Range["I2"], "pivottable1");
-
+            worksheet.Range["D2:D16"].NumberFormat = "$#,##0.00";
+            worksheet.Range["J4:J17, J9:J33"].NumberFormat = "$#,##0.00";
+            
             var field_Category = pivottable.PivotFields[2];
             field_Category.Orientation = PivotFieldOrientation.RowField;
 
@@ -7855,13 +7867,11 @@
 
             //modify subtotals for pivot field.
             field_Category.Subtotals = SubtotalType.Sum | SubtotalType.Count | SubtotalType.Average | SubtotalType.Max |
-                                        SubtotalType.Min | SubtotalType.Product | SubtotalType.CountNums | SubtotalType.StdDev |
+                                        SubtotalType.Min | SubtotalType.CountNums | SubtotalType.StdDev |
                                         SubtotalType.StdDevP | SubtotalType.Var | SubtotalType.VarP;
 
             worksheet.Range["E:E"].ColumnWidth = 12;
-            worksheet.Range["I:I"].ColumnWidth = 12;
-            worksheet.Range["J:J"].ColumnWidth = 16;
-
+            worksheet.Range["I:J"].ColumnWidth = 20;
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.PivotTable.RefreshPivotTable" xml:space="preserve">
@@ -7870,27 +7880,29 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Range["A1:F16"].Value = sourceData;
             var pivotcache = workbook.PivotCaches.Create(worksheet.Range["A1:F16"]);
             var pivottable = worksheet.PivotTables.Add(pivotcache, worksheet.Range["I5"], "pivottable1");
+            worksheet.Range["D2:D16"].NumberFormat = "$#,##0.00";
+            worksheet.Range["J6:J12"].NumberFormat = "$#,##0.00";
 
             var field_product = pivottable.PivotFields["Product"];
             field_product.Orientation = PivotFieldOrientation.RowField;
@@ -8149,13 +8161,13 @@
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Range["A:F"].ColumnWidth = 15;
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             //set two-dimension array value to range A1:F7
@@ -8184,7 +8196,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Heart, 50, 30, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 50, 30, 200, 100);
             shape.ThreeD.RotationX = 50;
             shape.ThreeD.RotationY = 20;
             shape.ThreeD.RotationZ = 30;
@@ -8197,7 +8209,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Heart, 1, 1, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 1, 1, 200, 100);
             shape.Line.DashStyle = GrapeCity.Documents.Excel.Drawing.LineDashStyle.Dash;
             shape.Line.Style = GrapeCity.Documents.Excel.Drawing.LineStyle.Single;
             shape.Line.Weight = 2;
@@ -8210,7 +8222,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Heart, 1, 1, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 1, 1, 200, 100);
             shape.Fill.PresetGradient(GrapeCity.Documents.Excel.Drawing.GradientStyle.Vertical, 3, GrapeCity.Documents.Excel.Drawing.PresetGradientType.Silver);
             shape.Fill.RotateWithObject = false;
         </value>
@@ -8220,7 +8232,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Heart, 1, 1, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 1, 1, 200, 100);
             shape.Fill.Patterned(GrapeCity.Documents.Excel.Drawing.PatternType.Percent10);
             shape.Fill.Color.ObjectThemeColor = ThemeColor.Accent2;
             shape.Fill.PatternColor.ObjectThemeColor = ThemeColor.Accent6;
@@ -8231,7 +8243,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Rectangle, 20, 20, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 20, 20, 200, 100);
 
             System.IO.Stream stream = this.GetResourceStream("logo.png");
 
@@ -8250,7 +8262,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Heart, 1, 1, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 1, 1, 200, 100);
             shape.Fill.Solid();
             shape.Fill.Color.RGB = Color.Red;
         </value>
@@ -8260,7 +8272,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Heart, 1, 1, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 1, 1, 200, 100);
             shape.Fill.PresetTextured(GrapeCity.Documents.Excel.Drawing.PresetTexture.Canvas);
             shape.Fill.TextureAlignment = GrapeCity.Documents.Excel.Drawing.TextureAlignment.Center;
             shape.Fill.TextureOffsetX = 2.5;
@@ -8289,8 +8301,8 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Heart, 1, 1, 100, 100);
-            shape.Width = 300;
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 1, 1, 200, 100);
+            shape.Width = 500;
             shape.Height = 200;
 
             shape.TextFrame.TextRange.Font.Color.RGB = GrapeCity.Documents.Excel.Color.FromRGB(0, 255, 0);
@@ -8299,7 +8311,7 @@
             shape.TextFrame.TextRange.Font.Size = 20;
             shape.TextFrame.TextRange.Font.Strikethrough = true;
 
-            shape.TextFrame.TextRange.Paragraphs.Add("This is a heart shape.");
+            shape.TextFrame.TextRange.Paragraphs.Add("This is a parallelogram shape.");
             shape.TextFrame.TextRange.Paragraphs.Add("My name is XXX");
             shape.TextFrame.TextRange.Paragraphs[1].Runs.Add("Hello World!");
 
@@ -8367,21 +8379,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8389,6 +8401,7 @@
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
 
             //create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
@@ -8417,32 +8430,33 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Range["A1:F16"].Value = sourceData;
             worksheet.Range["A:F"].ColumnWidth = 15;
-
+            
             //Create pivot cache.
             IPivotCache pivotcache = workbook.PivotCaches.Create(worksheet.Range["A1:F16"]);
             //Create pivot tables.
             IPivotTable pivottable1 = worksheet.PivotTables.Add(pivotcache, worksheet.Range["K5"], "pivottable1");
             IPivotTable pivottable2 = worksheet.PivotTables.Add(pivotcache, worksheet.Range["N3"], "pivottable2");
+            worksheet.Range["D2:D16"].NumberFormat = "$#,##0.00";
 
             //Config pivot fields
             IPivotField field_product1 = pivottable1.PivotFields[1];
@@ -8472,21 +8486,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8494,6 +8508,7 @@
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
             //create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
 
@@ -8508,21 +8523,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8530,6 +8545,7 @@
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
 
             //create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
@@ -8547,21 +8563,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8569,6 +8585,8 @@
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
+
             //create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Product", "productCache");
 
@@ -8588,21 +8606,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8610,6 +8628,7 @@
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
 
             //create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
@@ -8629,27 +8648,28 @@
 
             object[,] sourceData = new object[,] {
                { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-               { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-               { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-               { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-               { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-               { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-               { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-               { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-               { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-               { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-               { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-               { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-               { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-               { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-               { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-               { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+               { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+               { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+               { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+               { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+               { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+               { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+               { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+               { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+               { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+               { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+               { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+               { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+               { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+               { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+               { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             worksheet.Range["A:F"].ColumnWidth = 15;
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
 
             //Create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
@@ -8676,27 +8696,28 @@
 
             object[,] sourceData = new object[,] {
                { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-               { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-               { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-               { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-               { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-               { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-               { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-               { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-               { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-               { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-               { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-               { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-               { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-               { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-               { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-               { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+               { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+               { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+               { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+               { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+               { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+               { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+               { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+               { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+               { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+               { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+               { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+               { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+               { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+               { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+               { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             worksheet.Range["A:F"].ColumnWidth = 15;
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
 
             //Create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
@@ -8723,27 +8744,28 @@
 
             object[,] sourceData = new object[,] {
                { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-               { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-               { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-               { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-               { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-               { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-               { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-               { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-               { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-               { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-               { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-               { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-               { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-               { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-               { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-               { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+               { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+               { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+               { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+               { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+               { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+               { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+               { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+               { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+               { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+               { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+               { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+               { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+               { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+               { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+               { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             worksheet.Range["A:F"].ColumnWidth = 15;
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
 
             //Create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
@@ -8762,21 +8784,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8784,6 +8806,7 @@
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
 
             //create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
@@ -8801,21 +8824,21 @@
 
             object[,] sourceData = new object[,] {
                 { "Order ID", "Product",  "Category",   "Amount", "Date",                    "Country" },
-                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2012, 1, 6),  "United States" },
-                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2012, 1, 7),  "United Kingdom" },
-                { 3,          "Banana",   "Fruit",       617,     new DateTime(2012, 1, 8),  "United States" },
-                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2012, 1, 10), "Canada" },
-                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2012, 1, 10), "Germany" },
-                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2012, 1, 11), "United States" },
-                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2012, 1, 11), "Australia" },
-                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2012, 1, 16), "New Zealand" },
-                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2012, 1, 16), "France" },
-                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2012, 1, 16), "Canada" },
-                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2012, 1, 16), "Germany" },
-                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2012, 1, 18), "United States" },
-                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2012, 1, 20), "Germany" },
-                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2012, 1, 22), "Canada" },
-                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2012, 1, 24), "France" },
+                { 1,          "Carrots",  "Vegetables",  4270,    new DateTime(2018, 1, 6),  "United States" },
+                { 2,          "Broccoli", "Vegetables",  8239,    new DateTime(2018, 1, 7),  "United Kingdom" },
+                { 3,          "Banana",   "Fruit",       617,     new DateTime(2018, 1, 8),  "United States" },
+                { 4,          "Banana",   "Fruit",       8384,    new DateTime(2018, 1, 10), "Canada" },
+                { 5,          "Beans",    "Vegetables",  2626,    new DateTime(2018, 1, 10), "Germany" },
+                { 6,          "Orange",   "Fruit",       3610,    new DateTime(2018, 1, 11), "United States" },
+                { 7,          "Broccoli", "Vegetables",  9062,    new DateTime(2018, 1, 11), "Australia" },
+                { 8,          "Banana",   "Fruit",       6906,    new DateTime(2018, 1, 16), "New Zealand" },
+                { 9,          "Apple",    "Fruit",       2417,    new DateTime(2018, 1, 16), "France" },
+                { 10,         "Apple",    "Fruit",       7431,    new DateTime(2018, 1, 16), "Canada" },
+                { 11,         "Banana",   "Fruit",       8250,    new DateTime(2018, 1, 16), "Germany" },
+                { 12,         "Broccoli", "Vegetables",  7012,    new DateTime(2018, 1, 18), "United States" },
+                { 13,         "Carrots",  "Vegetables",  1903,    new DateTime(2018, 1, 20), "Germany" },
+                { 14,         "Broccoli", "Vegetables",  2824,    new DateTime(2018, 1, 22), "Canada" },
+                { 15,         "Apple",    "Fruit",       6946,    new DateTime(2018, 1, 24), "France" },
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8823,6 +8846,7 @@
 
             worksheet.Range["A1:F16"].Value = sourceData;
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F16"], true);
+            table.Columns[3].DataBodyRange.NumberFormat = "$#,##0.00";
 
             //create slicer cache for table.
             ISlicerCache cache = workbook.SlicerCaches.Add(table, "Category", "categoryCache");
@@ -8842,21 +8866,21 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Range["A1:F7"].Value = data;
             worksheet.Range["A:F"].ColumnWidth = 15;
 
-            //give a custom sort values string. "Eva" and "Cherry" should be the top1 and top2.
-            var sortkey = new ValueSortField(worksheet.Range["A2:A7"], "\"Eva\", \"Cherry\"");
+            //give a custom sort values string. "Angela" and "Damon" should be the top1 and top2.
+            var sortkey = new ValueSortField(worksheet.Range["A2:A7"], "\"Angela\", \"Damon\"");
             worksheet.Range["A2:F7"].Sort(SortOrientation.Columns, false, sortkey);
         </value>
   </data>
@@ -8865,13 +8889,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8897,13 +8921,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8926,13 +8950,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8958,13 +8982,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -8981,7 +9005,7 @@
 
             object[,] data = new object[,]
             {
-                {"Number", "Date", "Customer", "Description", "Amount", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Trend"},
+                {"Number", "Date", "Customer", "Description", "Trend", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Amount"},
                 {"1001", new DateTime(2017, 5, 21), "Customer A", "Invoice 1001", null, 1200.15, 1916.18, 1105.23, 1806.53, null},
                 {"1002", new DateTime(2017, 3, 18), "Customer B", "Invoice 1002", null, 896.23, 1005.53, 1800.56, 1150.49, null},
                 {"1003", new DateTime(2017, 6, 15), "Customer C", "Invoice 1003", null, 827.63, 1009.23, 1869.23, 1002.56, null}
@@ -8992,15 +9016,15 @@
             worksheet.Range["B:K"].ColumnWidth = 15;
 
             worksheet.Tables.Add(worksheet.Range["B2:K5"], true);
-            worksheet.Tables[0].Columns[4].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
+            worksheet.Tables[0].Columns[9].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
 
             //create a new group of sparklines.
-            worksheet.Range["K3"].SparklineGroups.Add(SparkType.Line, "G3:J3");
+            worksheet.Range["F3"].SparklineGroups.Add(SparkType.Line, "G3:J3");
             //create another new group of sparklines.
-            worksheet.Range["K4:K5"].SparklineGroups.Add(SparkType.Column, "G4:J5");
+            worksheet.Range["F4:F5"].SparklineGroups.Add(SparkType.Column, "G4:J5");
 
-            //clear K11 and K12 cell's sparkline. K13 cell's sparkline still exist.
-            worksheet.Range["K3, K4"].SparklineGroups.ClearGroups();
+            //clear sparkline group, all sparklines in the group will be cleaned.
+            worksheet.Range["F3, F4"].SparklineGroups.ClearGroups();
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Sparklines.ClearSparklines" xml:space="preserve">
@@ -9009,7 +9033,7 @@
 
             object[,] data = new object[,]
             {
-                {"Number", "Date", "Customer", "Description", "Amount", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Trend"},
+                {"Number", "Date", "Customer", "Description", "Trend", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Amount"},
                 {"1001", new DateTime(2017, 5, 21), "Customer A", "Invoice 1001", null, 1200.15, 1916.18, 1105.23, 1806.53, null},
                 {"1002", new DateTime(2017, 3, 18), "Customer B", "Invoice 1002", null, 896.23, 1005.53, 1800.56, 1150.49, null},
                 {"1003", new DateTime(2017, 6, 15), "Customer C", "Invoice 1003", null, 827.63, 1009.23, 1869.23, 1002.56, null}
@@ -9020,15 +9044,15 @@
             worksheet.Range["B:K"].ColumnWidth = 15;
 
             worksheet.Tables.Add(worksheet.Range["B2:K5"], true);
-            worksheet.Tables[0].Columns[4].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
+            worksheet.Tables[0].Columns[9].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
 
             //create a new group of sparklines.
-            worksheet.Range["K3"].SparklineGroups.Add(SparkType.Line, "G3:J3");
+            worksheet.Range["F3"].SparklineGroups.Add(SparkType.Line, "G3:J3");
             //create another new group of sparklines.
-            worksheet.Range["K4:K5"].SparklineGroups.Add(SparkType.Column, "G4:J5");
+            worksheet.Range["F4:F5"].SparklineGroups.Add(SparkType.Column, "G4:J5");
 
-            //clear K11 and K12 cell's sparkline. K13 cell's sparkline still exist.
-            worksheet.Range["K3, K4"].SparklineGroups.Clear();
+            //clear F3 and F4 cell's sparkline. F5 cell's sparkline still exist.
+            worksheet.Range["F3, F4"].SparklineGroups.Clear();
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Sparklines.ConfigSparklineSettings" xml:space="preserve">
@@ -9037,7 +9061,7 @@
 
             object[,] data = new object[,]
             {
-                {"Number", "Date", "Customer", "Description", "Amount", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Trend"},
+                {"Number", "Date", "Customer", "Description", "Trend", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Amount"},
                 {"1001", new DateTime(2017, 5, 21), "Customer A", "Invoice 1001", null, 1200.15, 1916.18, 1105.23, 1806.53, null},
                 {"1002", new DateTime(2017, 3, 18), "Customer B", "Invoice 1002", null, 896.23, 1005.53, 1800.56, 1150.49, null},
                 {"1003", new DateTime(2017, 6, 15), "Customer C", "Invoice 1003", null, 827.63, 1009.23, 1869.23, 1002.56, null}
@@ -9048,11 +9072,11 @@
             worksheet.Range["B:K"].ColumnWidth = 15;
 
             worksheet.Tables.Add(worksheet.Range["B2:K5"], true);
-            worksheet.Tables[0].Columns[4].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
+            worksheet.Tables[0].Columns[9].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
 
             //create a new group of sparklines.
-            worksheet.Range["K3:K5"].SparklineGroups.Add(SparkType.Line, "G3:J5");
-            var sparklinegroup = worksheet.Range["K3"].SparklineGroups[0];
+            worksheet.Range["F3:F5"].SparklineGroups.Add(SparkType.Line, "G3:J5");
+            var sparklinegroup = worksheet.Range["F3"].SparklineGroups[0];
 
             //Config sparkline settings.
             sparklinegroup.LineWeight = 2.5;
@@ -9067,7 +9091,7 @@
 
             object[,] data = new object[,]
             {
-                {"Number", "Date", "Customer", "Description", "Amount", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Trend"},
+                {"Number", "Date", "Customer", "Description", "Trend", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Amount"},
                 {"1001", new DateTime(2017, 5, 21), "Customer A", "Invoice 1001", null, 1200.15, 1916.18, 1105.23, 1806.53, null},
                 {"1002", new DateTime(2017, 3, 18), "Customer B", "Invoice 1002", null, 896.23, 1005.53, 1800.56, 1150.49, null},
                 {"1003", new DateTime(2017, 6, 15), "Customer C", "Invoice 1003", null, 827.63, 1009.23, 1869.23, 1002.56, null}
@@ -9078,10 +9102,10 @@
             worksheet.Range["B:K"].ColumnWidth = 15;
 
             worksheet.Tables.Add(worksheet.Range["B2:K5"], true);
-            worksheet.Tables[0].Columns[4].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
+            worksheet.Tables[0].Columns[9].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
 
             //create a new group of sparklines.
-            worksheet.Range["K3:K5"].SparklineGroups.Add(SparkType.Line, "G3:J5");  
+            worksheet.Range["F3:F5"].SparklineGroups.Add(SparkType.Line, "G3:J5");  
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Sparklines.GroupExistSparklines" xml:space="preserve">
@@ -9090,7 +9114,7 @@
 
             object[,] data = new object[,]
             {
-                {"Number", "Date", "Customer", "Description", "Amount", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Trend"},
+                {"Number", "Date", "Customer", "Description", "Trend", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Amount"},
                 {"1001", new DateTime(2017, 5, 21), "Customer A", "Invoice 1001", null, 1200.15, 1916.18, 1105.23, 1806.53, null},
                 {"1002", new DateTime(2017, 3, 18), "Customer B", "Invoice 1002", null, 896.23, 1005.53, 1800.56, 1150.49, null},
                 {"1003", new DateTime(2017, 6, 15), "Customer C", "Invoice 1003", null, 827.63, 1009.23, 1869.23, 1002.56, null}
@@ -9101,15 +9125,15 @@
             worksheet.Range["B:K"].ColumnWidth = 15;
 
             worksheet.Tables.Add(worksheet.Range["B2:K5"], true);
-            worksheet.Tables[0].Columns[4].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
+            worksheet.Tables[0].Columns[9].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
 
             //create a new group of sparklines.
-            worksheet.Range["K3"].SparklineGroups.Add(SparkType.Line, "G3:J3");
+            worksheet.Range["F3"].SparklineGroups.Add(SparkType.Line, "G3:J3");
             //create another new group of sparklines.
-            worksheet.Range["K4:K5"].SparklineGroups.Add(SparkType.Column, "G4:J5");
+            worksheet.Range["F4:F5"].SparklineGroups.Add(SparkType.Column, "G4:J5");
 
-            //Create a new group, group exist sparklines, according to Range["K12"]'s sparkline group setting.
-            worksheet.Range["K3:K5"].SparklineGroups.Group(worksheet.Range["K4"]);
+            //Create a new group, group exist sparklines, according to Range["F4"]'s sparkline group setting.
+            worksheet.Range["F3:F5"].SparklineGroups.Group(worksheet.Range["F4"]);
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Sparklines.UseDateAxis" xml:space="preserve">
@@ -9118,7 +9142,7 @@
 
             object[,] data = new object[,]
             {
-                {"Number", "Date", "Customer", "Description", "Amount", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Trend"},
+                {"Number", "Date", "Customer", "Description", "Trend", "0-30 Days", "30-60 Days", "60-90 Days", "&gt;90 Days", "Amount"},
                 {"1001", new DateTime(2017, 5, 21), "Customer A", "Invoice 1001", null, 1200.15, 1916.18, 1105.23, 1806.53, null},
                 {"1002", new DateTime(2017, 3, 18), "Customer B", "Invoice 1002", null, 896.23, 1005.53, 1800.56, 1150.49, null},
                 {"1003", new DateTime(2017, 6, 15), "Customer C", "Invoice 1003", null, 827.63, 1009.23, 1869.23, 1002.56, null}
@@ -9129,15 +9153,15 @@
             worksheet.Range["B:K"].ColumnWidth = 15;
 
             worksheet.Tables.Add(worksheet.Range["B2:K5"], true);
-            worksheet.Tables[0].Columns[4].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
+            worksheet.Tables[0].Columns[9].DataBodyRange.Formula = "=SUM(Table1[@[0-30 Days]:[&gt;90 Days]])";
 
             //create a new group of sparklines.
-            worksheet.Range["K3:K5"].SparklineGroups.Add(SparkType.Line, "G3:J5");
+            worksheet.Range["F3:F5"].SparklineGroups.Add(SparkType.Line, "G3:J5");
 
             worksheet.Range["G7:J7"].Value = new object[] { new DateTime(2011, 12, 16), new DateTime(2011, 12, 17), new DateTime(2011, 12, 18), new DateTime(2011, 12, 19) };
-            worksheet.Range["K3"].SparklineGroups[0].DateRange = "G7:J7";
-            worksheet.Range["K3"].SparklineGroups[0].Axes.Horizontal.Axis.Visible = true;
-            worksheet.Range["K3"].SparklineGroups[0].Axes.Horizontal.Axis.Color.Color = Color.Green;
+            worksheet.Range["F3"].SparklineGroups[0].DateRange = "G7:J7";
+            worksheet.Range["F3"].SparklineGroups[0].Axes.Horizontal.Axis.Visible = true;
+            worksheet.Range["F3"].SparklineGroups[0].Axes.Horizontal.Axis.Color.Color = Color.Green;
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Tables.AccessTableRanges" xml:space="preserve">
@@ -9145,13 +9169,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -9179,11 +9203,11 @@
 
             //Set WholeTable element style.
             style.TableStyleElements[TableStyleElementType.WholeTable].Font.Italic = true;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Font.ThemeColor = ThemeColor.Accent6;
+            style.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.White;
             style.TableStyleElements[TableStyleElementType.WholeTable].Font.Strikethrough = true;
             style.TableStyleElements[TableStyleElementType.WholeTable].Borders.LineStyle = BorderLineStyle.Dotted;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders.ThemeColor = ThemeColor.Accent2;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Interior.Color = Color.FromRGB(24, 232, 192);
+            style.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(0, 193, 213);
+            style.TableStyleElements[TableStyleElementType.WholeTable].Interior.Color = Color.FromRGB(59, 92, 170);
 
             //Set FirstColumnStripe element style.
             style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Font.Bold = true;
@@ -9233,13 +9257,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -9255,13 +9279,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -9292,13 +9316,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -9320,13 +9344,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
                 object[,] data = new object[,]{
-                    {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                    {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                    {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                    {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                    {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                    {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                    { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                    {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                    {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                    {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                    {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                    {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                    {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                    {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
                 };
 
                 IWorksheet worksheet = workbook.Worksheets[0];
@@ -9345,13 +9369,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -9362,7 +9386,7 @@
             ITable table = worksheet.Tables.Add(worksheet.Range["A1:F7"], true);
 
             //Filter table 
-            table.Range.AutoFilter(0, new object[] { "bob", "Betty" }, AutoFilterOperator.Values);
+            table.Range.AutoFilter(0, new object[] { "Richard", "Nia" }, AutoFilterOperator.Values);
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Tables.TableSort" xml:space="preserve">
@@ -9370,13 +9394,13 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             object[,] data = new object[,]{
-                {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
-                {"Bob", "NewYork", new DateTime(1968, 6, 8), "male", 80, 180},
-                {"Betty", "NewYork", new DateTime(1972, 7, 3), "female", 72, 168},
-                {"Gary", "NewYork", new DateTime(1964, 3, 2), "male", 71, 179},
-                {"Hunk", "Washington", new DateTime(1972, 8, 8), "male", 80, 171},
-                {"Cherry", "Washington", new DateTime(1986, 2, 2), "female", 58, 161},
-                { "Eva", "Washington", new DateTime(1993, 2, 15), "female", 71, 180}
+                {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
+                {"Richard", "New York", new DateTime(1968, 6, 8), "Blue", 67, 165},
+                {"Nia", "New York", new DateTime(1972, 7, 3), "Brown", 62, 134},
+                {"Jared", "New York", new DateTime(1964, 3, 2), "Hazel", 72, 180},
+                {"Natalie", "Washington", new DateTime(1972, 8, 8), "Blue", 66, 163},
+                {"Damon", "Washington", new DateTime(1986, 2, 2), "Hazel", 76, 176},
+                {"Angela", "Washington", new DateTime(1993, 2, 15), "Brown", 68, 145}
             };
 
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -9402,17 +9426,61 @@
 
             //Customize theme's color.
             theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.AntiqueWhite;
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.AliceBlue;
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.Aqua;
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.Beige;
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.Black;
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.CadetBlue;
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.Chartreuse;
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.Chocolate;
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.Coral;
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.CornflowerBlue;
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.Cornsilk;
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.Honeydew;
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.HotPink;
 
             //Customize theme's font.
-            theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Buxton Sketch";
-            theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Segoe UI";
+            theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Kristen ITC";
+            theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Segoe Script";
 
             //Change workbook's theme to custom theme.
             workbook.Theme = theme;
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            worksheet.Range["B2"].Value = "Text";
+            worksheet.Range["B2"].Value = "Major Font:";
+            worksheet.Range["B3"].Value = "Minor Font:";
+            worksheet.Range["C2"].Value = "Kristen ITC";
+            worksheet.Range["C3"].Value = "Segoe Script";
+            worksheet.Range["C2"].Font.ThemeFont = ThemeFont.Major;
+            worksheet.Range["C3"].Font.ThemeFont = ThemeFont.Minor;
+
+            worksheet.Range["E2:E13"].Value = new object[]
+            {
+                "Light1",
+                "Dark1",
+                "Light2",
+                "Dark2",
+                "Accent1",
+                "Accent2",
+                "Accent3",
+                "Accent4",
+                "Accent5",
+                "Accent6",
+                "Hyperlink",
+                "FollowedHyperlink"
+            };
+
+            worksheet.Range["F2"].Interior.ThemeColor = ThemeColor.Light1;
+            worksheet.Range["F3"].Interior.ThemeColor = ThemeColor.Dark1;
+            worksheet.Range["F4"].Interior.ThemeColor = ThemeColor.Light2;
+            worksheet.Range["F5"].Interior.ThemeColor = ThemeColor.Dark2;
+            worksheet.Range["F6"].Interior.ThemeColor = ThemeColor.Accent1;
+            worksheet.Range["F7"].Interior.ThemeColor = ThemeColor.Accent2;
+            worksheet.Range["F8"].Interior.ThemeColor = ThemeColor.Accent3;
+            worksheet.Range["F9"].Interior.ThemeColor = ThemeColor.Accent4;
+            worksheet.Range["F10"].Interior.ThemeColor = ThemeColor.Accent5;
+            worksheet.Range["F11"].Interior.ThemeColor = ThemeColor.Accent6;
+            worksheet.Range["F12"].Interior.ThemeColor = ThemeColor.Hyperlink;
+            worksheet.Range["F13"].Interior.ThemeColor = ThemeColor.FollowedHyperlink;
 
         </value>
   </data>
@@ -9424,7 +9492,43 @@
             workbook.Theme = Themes.Berlin;
 
             IWorksheet worksheet = workbook.Worksheets[0];
-            worksheet.Range["B2"].Value = "Text";
+            worksheet.Range["B2"].Value = "Major Font:";
+            worksheet.Range["B3"].Value = "Minor Font:";
+            worksheet.Range["C2"].Value = "Trebuchet MS";
+            worksheet.Range["C3"].Value = "Trebuchet MS";
+            worksheet.Range["C2"].Font.ThemeFont = ThemeFont.Major;
+            worksheet.Range["C3"].Font.ThemeFont = ThemeFont.Minor;
+
+            worksheet.Range["E2:E13"].Value = new object[]
+            {
+                "Light1",
+                "Dark1",
+                "Light2",
+                "Dark2",
+                "Accent1",
+                "Accent2",
+                "Accent3",
+                "Accent4",
+                "Accent5",
+                "Accent6",
+                "Hyperlink",
+                "FollowedHyperlink"
+            };
+
+            worksheet.Range["F2"].Interior.ThemeColor = ThemeColor.Light1;
+            worksheet.Range["F3"].Interior.ThemeColor = ThemeColor.Dark1;
+            worksheet.Range["F4"].Interior.ThemeColor = ThemeColor.Light2;
+            worksheet.Range["F5"].Interior.ThemeColor = ThemeColor.Dark2;
+            worksheet.Range["F6"].Interior.ThemeColor = ThemeColor.Accent1;
+            worksheet.Range["F7"].Interior.ThemeColor = ThemeColor.Accent2;
+            worksheet.Range["F8"].Interior.ThemeColor = ThemeColor.Accent3;
+            worksheet.Range["F9"].Interior.ThemeColor = ThemeColor.Accent4;
+            worksheet.Range["F10"].Interior.ThemeColor = ThemeColor.Accent5;
+            worksheet.Range["F11"].Interior.ThemeColor = ThemeColor.Accent6;
+            worksheet.Range["F12"].Interior.ThemeColor = ThemeColor.Hyperlink;
+            worksheet.Range["F13"].Interior.ThemeColor = ThemeColor.FollowedHyperlink;
+
+            worksheet.Range["B:F"].ColumnWidth = 15;
 
         </value>
   </data>

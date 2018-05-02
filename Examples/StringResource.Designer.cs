@@ -310,7 +310,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Charts contain three axis types: 
+        ///   Looks up a localized string similar to ## Axis
+        ///Charts contain three axis types: 
         ///- category axis
         ///- value axis
         ///- series axis
@@ -346,15 +347,6 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string BarClusteredChart_Name {
             get {
                 return ResourceManager.GetString("BarClusteredChart.Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Clustered bar chart.
-        /// </summary>
-        internal static string BarCluteredChart_Name {
-            get {
-                return ResourceManager.GetString("BarCluteredChart.Name", resourceCulture);
             }
         }
         
@@ -478,7 +470,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to These examples in this folder demonstrate how to set charts 3D format.
+        ///   Looks up a localized string similar to ## Chart 3D format
+        ///These examples in this folder demonstrate how to set charts 3D format.
         /// </summary>
         internal static string Chart3DFormat_Descrip {
             get {
@@ -496,9 +489,10 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chart area is the complete chart area, include plot area, chart title and legend.
+        ///   Looks up a localized string similar to ## Chart area
+        ///Chart area is the complete chart area, include plot area, chart title and legend.
         ///
-        ///These examples demonstrate how to Configure chart area style and whole chart area font style..
+        ///These examples demonstrate how to configure chart area style and whole chart area font style..
         /// </summary>
         internal static string ChartArea_Descrip {
             get {
@@ -543,9 +537,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to **Chart gallery** include all kinds of chart type.
-        ///
-        ///These examples in this folder demonstrate the all types of chart..
+        ///   Looks up a localized string similar to ## Chart gallery
+        ///This chart gallery includes all of the **chart types** available and demonstrates how to configure each chart..
         /// </summary>
         internal static string ChartGallery_Descrip {
             get {
@@ -572,14 +565,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chart lines include: **Trendline**, **Dropline** , **High-Low Line** and **Series Line**.
+        ///   Looks up a localized string similar to ## Chart lines
+        ///Chart lines include: **Trendline**, **Dropline** , **High-Low Line** and **Series Line**.
         ///
         ///- **Trendline** is for specific series.
         ///- **Dropline** set for line chart or area chart.
         ///- **High-Low line** set for line chart.
-        ///- **Series line** set for stackes column chart or bar chart, Pie of Pie chart or Bar of Pie chart also has connector lines between the two sections.
+        ///- **Series line** set for stacked column or bar charts. Pie-of-pie charts and bar-of-pie charts also have connector lines between their sections
         ///
-        ///These examples demonstrate how to add these lines and how to Configure lines style..
+        ///These examples demonstrate how to add these lines and how to configure lines style..
         /// </summary>
         internal static string ChartLines_Descrip {
             get {
@@ -597,7 +591,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to **GrapeCity Documents for Excel** provides a comprehensive charting API:
+        ///   Looks up a localized string similar to ## Charts
+        ///**GrapeCity Documents for Excel** provides a comprehensive charting API:
         ///
         ///- Add charts to a worksheet using the **IWorksheet.AddChart** method
         ///-- Returns an instance of **IShape** 
@@ -605,7 +600,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///- Add data series with the **IChart.SeriesCollection.Add** method
         ///- Cutomize chart titles with the **IChart.ChartTitle** property
         ///- Cutomize chart legends with the **IChart.Legend** property
-        ///- Access and customize each data series through the **ISeries** interf [rest of string was truncated]&quot;;.
+        ///- Access and customize each data series through the **ISeri [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Charts_Descrip {
             get {
@@ -623,7 +618,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to **Chart title** is the name of the chart.
+        ///   Looks up a localized string similar to ## Chart title
+        ///**Chart title** is the name of the chart.
         ///
         ///These examples demonstrate how to display chart name  and how to specify settings for chart title..
         /// </summary>
@@ -764,7 +760,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel enables users to annotate worksheets. They can write comments for cells to add information about the data it contains.
+        ///   Looks up a localized string similar to ## Comments
+        ///GrapeCity Documents for Excel enables users to annotate worksheets. They can write comments for cells to add information about the data it contains.
         ///
         ///Add comments for a range using the **AddComment** method. It returns an instance of the **IComment** interface. 
         ///
@@ -772,7 +769,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///
         ///Modify comment layouts with the **Shape** property.
         ///
-        ///Create rich text using the **TextFrame** property of the **IShape** interface. You can use different font styles for each run..
+        ///Create rich text using the **TextFrame** property of the **IShape** interface. You can use different font styles for eac [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Comments_Descrip {
             get {
@@ -790,15 +787,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In order to enable you to highlight important information in rows or columns of a worksheet, GrapeCity Documents for Excel allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule..
+        ///   Looks up a localized string similar to ## Conditional Formatting
+        ///In order to enable you to highlight important information in rows or columns of a worksheet, GrapeCity Documents for Excel allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule..
         ///
         ///GrapeCity Documents for Excel supports all types of conditional formatting rules:
         ///
         ///- Cell Value
         ///- Average
-        ///- Color Scale
-        ///- Data Bar
-        ///- Ico [rest of string was truncated]&quot;;.
+        ///- Col [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ConditionalFormatting_Descrip {
             get {
@@ -1248,11 +1244,11 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Configure sheet print setings.
+        ///   Looks up a localized string similar to Configure sheet print settings.
         /// </summary>
-        internal static string ConfigSheetPrintSetings_Name {
+        internal static string ConfigSheetPrintSettings_Name {
             get {
-                return ResourceManager.GetString("ConfigSheetPrintSetings.Name", resourceCulture);
+                return ResourceManager.GetString("ConfigSheetPrintSettings.Name", resourceCulture);
             }
         }
         
@@ -1815,9 +1811,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to **Datalabel** can display specified series information. With interface **ShowLwgendKey**, **ShowPercentage** , **ShowValue** , **ShowSeriesName** .etc to Configure datalabel layout.
-        ///
-        ///These examples demonstrate how to display datalabels and how to specified settings for datalabel..
+        ///   Looks up a localized string similar to ## Data label
+        ///**Data labels** can display specified series information. Use ShowLegendKey, ShowPercentage, ShowValue, ShowSeriesName, .etc to configure data label layout. These examples demonstrate how to display data labels and specify settings for data labels..
         /// </summary>
         internal static string DataLabel_Descrip {
             get {
@@ -1835,9 +1830,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to **Datapoints** is a collectiong of all points in specific series.
-        ///
-        ///These examples demontrate how to specified settings for datapoint.
+        ///   Looks up a localized string similar to ## Data point
+        ///**Data points** are a collection of all points in a specific series. These examples demonstrate how to specify settings for data points..
         /// </summary>
         internal static string DataPoint_Descrip {
             get {
@@ -1855,7 +1849,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel lets you validate data by restricting the information format and the values that can be entered in cells of a worksheet. You can create distinct validation scenarios for individual cells or for a range of cells.
+        ///   Looks up a localized string similar to ## Data Validation
+        ///GrapeCity Documents for Excel lets you validate data by restricting the information format and the values that can be entered in cells of a worksheet. You can create distinct validation scenarios for individual cells or for a range of cells.
         ///
         ///GrapeCity Documents for Excel supports all types of validations, including:
         ///- Whole Number
@@ -1866,7 +1861,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///- Text length
         ///- Custom
         ///
-        ///Add validation for a range using the **Add** method of  **IRange.Validation** property. The method returns an in [rest of string was truncated]&quot;;.
+        ///Add validation for a range using the **Add** method of  **IRange.Validation** property. The  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DataValidation_Descrip {
             get {
@@ -1911,7 +1906,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrate how to use the AutoFilter method to filter by date. They show how you can filter:
+        ///   Looks up a localized string similar to ## Date Filter
+        ///The examples in this folder demonstrate how to use the AutoFilter method to filter by date. They show how you can filter:
         ///- between two dates
         ///- all dates in February.
         /// </summary>
@@ -2030,14 +2026,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In this folder, you can explore complete code demonstrating how to generate an Excel file or report at server side. 
+        ///   Looks up a localized string similar to ## Excel Reporting
+        ///In this folder, you can explore complete code demonstrating how to generate an Excel file or report at server side. 
         ///
         ///Click the **&quot;Run&quot;** button to perform the following actions on the server:
         ///- Create an empty workbook
         ///- Execute all of code in the code window
-        ///- Save to an excel file
+        ///- Save to an Excel file
         ///
-        ///Then you can view the results by downloading the excel file..
+        ///Then you can view the results by downloading the Excel file..
         /// </summary>
         internal static string ExcelReporting_Descrip {
             get {
@@ -2055,7 +2052,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In some scenarios, you may have your own Excel templates and just want to open and update some of the contents at server side. You can use the extensive GrapeCity Documents for Excel API to open an existing Excel file and then change some of its values, customize its formatting, and whatever else you need to do.
+        ///   Looks up a localized string similar to ## Excel Templates
+        ///In some scenarios, you may have your own Excel templates and just want to open and update some of the contents at server side. You can use the extensive GrapeCity Documents for Excel API to open an existing Excel file and then change some of its values, customize its formatting, and whatever else you need to do.
         ///- Click the **Template** button to download and view the original Excel template
         ///- Click the **Run** button to run the code and get the changed Excel file.
         /// </summary>
@@ -2093,7 +2091,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel provides some remarkable features that empower developers to create spreadsheets with:
+        ///   Looks up a localized string similar to ## Features
+        ///GrapeCity Documents for Excel provides some remarkable features that empower developers to create spreadsheets with:
         ///- High-performance attributes
         ///- Custom themes
         ///- Configurable components
@@ -2105,7 +2104,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///
         ///You can explore a lot of example code in the Features section that shows you how to use each feature in GrapeCity Documents for Excel.
         ///
-        ///Click the **&quot;Run&quot;** button to perform the following actions on [rest of string was truncated]&quot;;.
+        ///Click the **&quot;Run&quot;** button to perform the followi [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Features_Descrip {
             get {
@@ -2199,7 +2198,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel supports all types of filters, including: 
+        ///   Looks up a localized string similar to ## Filtering
+        ///GrapeCity Documents for Excel supports all types of filters, including: 
         ///- Number Filter
         ///- Text Filter
         ///- Date Filter
@@ -2226,7 +2226,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrate how to use the AutoFilter method to create a color filter. You can filter by:
+        ///   Looks up a localized string similar to ## Filter by color
+        ///The examples in this folder demonstrate how to use the AutoFilter method to create a color filter. You can filter by:
         ///- font color
         ///- interior color
         ///- automatic font color
@@ -2248,7 +2249,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrate how to use the AutoFilter method to filter by icon.  You can set the **AutoFilterOperator** parameter to: 
+        ///   Looks up a localized string similar to ## Filter by icon
+        ///The examples in this folder demonstrate how to use the AutoFilter method to filter by icon.  You can set the **AutoFilterOperator** parameter to: 
         ///
         ///- **Icon** and filter by the specified icon
         ///- **NoIcon** and filter by rows with no icon
@@ -2367,7 +2369,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel provides a lot of properties to customize the appearance of a range:
+        ///   Looks up a localized string similar to ## Formatting
+        ///GrapeCity Documents for Excel provides a lot of properties to customize the appearance of a range:
         ///
         ///- **IRange.NumberFormat** sets the number format
         ///- **IRange.HorizontalAlignment**,  **IRange.VerticalAlignment**, **IRange.IndentLevel**, etc. set the alignment
@@ -2376,7 +2379,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///- **IRange.Interior** sets solid fill, pattern fill, and gradient fill
         ///- **IRange.Locked** and **IRange.FormulaHidden** sets up protection
         ///
-        ///You can also create custom styles [rest of string was truncated]&quot;;.
+        ///You can also creat [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Formatting_Descrip {
             get {
@@ -2394,7 +2397,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel lets you create and use formulas. These are expressions that let you calculate the value of a cell quickly and accurately. You can also use built-in functions and operators to generate formulas and calculate values in cells.
+        ///   Looks up a localized string similar to ## Formulas
+        ///GrapeCity Documents for Excel lets you create and use formulas. These are expressions that let you calculate the value of a cell quickly and accurately. You can also use built-in functions and operators to generate formulas and calculate values in cells.
         ///
         ///The calc engine handles many calculations, for example:
         ///- Hundreds of built-in Excel functions
@@ -2463,9 +2467,10 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Spreadsheets with tons of data can be a headache to read. You can spend a lot of time and effort trying to visualize, manage, and analyze the information that is relevant to you.
+        ///   Looks up a localized string similar to ## Grouping
+        ///Spreadsheets with tons of data can be a headache to read. You can spend a lot of time and effort trying to visualize, manage, and analyze the information that is relevant to you.
         ///
-        ///GrapeCity Documents for Excel lets you summarize large amounts of information in groups so that complex spreadsheets are easier to navigate. After rows of data in a spreadsheet are grouped, users can expand and collapse details with the click of a button in the group header row. You can use the following methods and properties t [rest of string was truncated]&quot;;.
+        ///GrapeCity Documents for Excel lets you summarize large amounts of information in groups so that complex spreadsheets are easier to navigate. After rows of data in a spreadsheet are grouped, users can expand and collapse details with the click of a button in the group header row. You can use the following methods and [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Grouping_Descrip {
             get {
@@ -2510,7 +2515,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apply hyperlinks to a range using the **Add** method of a worksheet or range&apos;s **Hyperlinks** instance. GrapeCity Documents for Excel supports the following types of hyperlink:
+        ///   Looks up a localized string similar to ## Hyperlinks
+        ///Apply hyperlinks to a range using the **Add** method of a worksheet or range&apos;s **Hyperlinks** instance. GrapeCity Documents for Excel supports the following types of hyperlink:
         ///- Link to a web page
         ///- Link to a specific range in the current document
         ///- Link to an external file
@@ -2568,7 +2574,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Do not recalucate after opening Excel.
+        ///   Looks up a localized string similar to Do not recalculate after opening Excel.
         /// </summary>
         internal static string ImportExcelFileWithoutCalculation_Name {
             get {
@@ -2622,7 +2628,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to These examples demontrate how to Configure legend&apos;s style and position..
+        ///   Looks up a localized string similar to ## Legend
+        ///These examples demonstrate how to configure the style and position of chart **legends**..
         /// </summary>
         internal static string Legend_Descrip {
             get {
@@ -2703,7 +2710,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to These examples in this folder demonstrate how to set **Markers** sytle and format.
+        ///   Looks up a localized string similar to ## Markers
+        ///These examples demonstrate how to set style and format for **markers**..
         /// </summary>
         internal static string Markers_Descrip {
             get {
@@ -2748,7 +2756,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Monthly bussiness budget.
+        ///   Looks up a localized string similar to Monthly business budget.
         /// </summary>
         internal static string MonthlyBusinessBudget_Name {
             get {
@@ -2784,7 +2792,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrates how to use number filtering for range..
+        ///   Looks up a localized string similar to ## Number Filter
+        ///The examples in this folder demonstrates how to use number filtering for range..
         /// </summary>
         internal static string NumberFiltering_Descrip {
             get {
@@ -2847,7 +2856,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel supports page setup. The **PageSetup** object contains all page setup attributes (left margin, bottom margin, paper size, and so on) as properties..
+        ///   Looks up a localized string similar to ## Page Setup
+        ///GrapeCity Documents for Excel supports page setup. The **PageSetup** object contains all page setup attributes (left margin, bottom margin, paper size, and so on) as properties..
         /// </summary>
         internal static string PageSetup_Descrip {
             get {
@@ -2874,7 +2884,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In this folder, you can explore complete code demonstrating how to export an pdf file at server side. 
+        ///   Looks up a localized string similar to ## PDF Exporting
+        ///In this folder, you can explore complete code demonstrating how to export an pdf file at server side. 
         ///
         ///Click the **&quot;Save as PDF&quot;** button to perform the following actions on the server:
         ///- Create an empty workbook
@@ -2899,7 +2910,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel allows users to paginate each worksheet using the properties of the IPageSetup interface.
+        ///   Looks up a localized string similar to ## Page setup
+        ///GrapeCity Documents for Excel allows users to paginate each worksheet using the properties of the IPageSetup interface.
         ///
         ///You can customize the page size, print area, print title rows, print title columns; specify horizontal page breaks, vertical page breaks, the maximum number of pages for horizontal and vertical pagination etc. along with zoom and scale factors as per your preferences while exporting a spreadsheet to a PDF file..
         /// </summary>
@@ -2946,7 +2958,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel allows you to add a picture to a worksheet.
+        ///   Looks up a localized string similar to ## Picture
+        ///GrapeCity Documents for Excel allows you to add a picture to a worksheet.
         ///
         ///To add a picture to a worksheet, use the **AddPicture** method of the worksheet&apos;s **Shapes** collection..
         /// </summary>
@@ -3011,11 +3024,12 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A pivot table is a data summarization tool. It can automatically count, total, or average the data stored in a spreadsheet, and display the resulting summarized data in a second table.
+        ///   Looks up a localized string similar to ## Pivot Table
+        ///A pivot table is a data summarization tool. It can automatically count, total, or average the data stored in a spreadsheet, and display the resulting summarized data in a second table.
         ///
         ///Create a pivot cache using the **Create** method of the workbook&apos;s **PivotCaches** collection. It returns an instance of the **IPivotCache** interface. 
         ///
-        ///Create a pivot table using the **CreatePivotTable** method of the pivot cache instance. Or you can opt to use the **Add** method of the worksheet&apos;s **PivotTables** coll [rest of string was truncated]&quot;;.
+        ///Create a pivot table using the **CreatePivotTable** method of the pivot cache instance. Or you can opt to use the **Add** method of the worksheet&apos;s **Pi [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PivotTable_Descrip {
             get {
@@ -3033,7 +3047,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to These examples demonstrate how to specified setting for plot area..
+        ///   Looks up a localized string similar to ## Plot area
+        ///These examples demonstrate how to specify settings for **plot area**..
         /// </summary>
         internal static string PlotArea_Descrip {
             get {
@@ -3089,7 +3104,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Range is the most important concept in GrapeCity Documents for Excel. It is the entrance to most of the features.
+        ///   Looks up a localized string similar to ## Range Operations
+        ///Range is the most important concept in GrapeCity Documents for Excel. It is the entrance to most of the features.
         ///
         ///Examples in this folder demonstrate how to:
         ///- Access cells, rows, and columns
@@ -3103,7 +3119,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///- Insert or delete rows and columns
         ///- Merge cells
         ///- Set values to a range
-        ///- Set row height and c [rest of string was truncated]&quot;;.
+        ///- [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RangeOperations_Descrip {
             get {
@@ -3319,13 +3335,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to **Series** is the most frequently used feature in charts. Each chart contains one or more data series, and each series consists of a group of data points. 
+        ///   Looks up a localized string similar to ## Series
+        ///**Series** is the most frequently used feature in charts. Each chart contains one or more data series, and each series consists of a group of data points. 
         ///
         ///These examples demonstrate how to add a series to a chart, and how to specify settings for each series, such as:
         ///
         ///- **BubbleScale** and **SizeRepresents** for bubble charts
         ///- Configure **Series** format
-        ///- Chage **Series Tyepe**
+        ///- Change **Series Type**
         ///- Add **Secondary Axis**
         ///- **VaryByCategories** colors for single-series column charts.
         /// </summary>
@@ -3435,13 +3452,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel lets you embed drawing objects like shapes and pictures in the cells of a worksheet. You can insert arrows, lines, charts, slicers, pictures, and general shapes.
+        ///   Looks up a localized string similar to ## Shape
+        ///GrapeCity Documents for Excel lets you embed drawing objects like shapes and pictures in the cells of a worksheet. You can insert arrows, lines, charts, slicers, pictures, and general shapes.
         ///
         ///To create a shape for a worksheet, use the **AddShape** method of the worksheet&apos;s Shapes collection. Then you can configure the Shape instance using properties like these:
         ///
         ///- Configure a shape&apos;s fill style using the **Fill** property 
         ///- Configure a shape&apos;s line style using the **Line** property
-        ///- Configure a sha [rest of string was truncated]&quot;;.
+        ///- Confi [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Shape_Descrip {
             get {
@@ -3531,7 +3549,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Slicers are visual filters that you can use to filter a table or pivot table.
+        ///   Looks up a localized string similar to ## Slicer
+        ///Slicers are visual filters that you can use to filter a table or pivot table.
         ///
         ///Use the **Add** method of a workbook&apos;s **SlicerCaches** collection to create a slicer cache. It returns an instance of a slicer cache. 
         ///
@@ -3591,7 +3610,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel supports all types of sorting, including:
+        ///   Looks up a localized string similar to ## Sorting
+        ///GrapeCity Documents for Excel supports all types of sorting, including:
         ///- Sort by value
         ///- Sort by font color
         ///- Sort by interior
@@ -3650,11 +3670,12 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel allows you to highlight specific information and see how it varies over time using Sparklines. Sparklines are small, lightweight charts that are drawn inside cells to quickly visualize data for improved analysis.
+        ///   Looks up a localized string similar to ## Sparklines
+        ///GrapeCity Documents for Excel allows you to highlight specific information and see how it varies over time using Sparklines. Sparklines are small, lightweight charts that are drawn inside cells to quickly visualize data for improved analysis.
         ///
         ///Use the **Add** method of a range&apos;s **SparklineGroups** collection to create a group of new sparklines. Sparklines only exist inside of a sparkline group. There is no way to create a sparkline outside of a sparkline group.
         ///
-        ///We support the following types of sparkl [rest of string was truncated]&quot;;.
+        ///We support the following  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Sparklines_Descrip {
             get {
@@ -3672,12 +3693,12 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Examples in this folder demonstrate how to use **GrapeCity Documents for Excel** and **Spread.Sheets**, another Spread product that is included in SpreadJS. GrapeCity Documents for Excel works on the server side to import and export Excel template files. Spread.Sheets works in the browser (client side) as a viewer or editor.
+        ///   Looks up a localized string similar to ## Spread.Sheets Viewer
+        ///Examples in this folder demonstrate how to use **GrapeCity Documents for Excel** and **Spread.Sheets**, another Spread product that is included in SpreadJS. GrapeCity Documents for Excel works on the server side to import and export Excel template files. Spread.Sheets works in the browser (client side) as a viewer or editor.
         ///
-        ///To learn more about **Spread.Sheets**, visit the [Spread.Sheets Home Page](http://spread.grapecity.com/spreadjs/sheets//).
+        ///To learn more about **Spread.Sheets**, visit the [Spread.Sheets Home Page](https://www.grapecity.com/en/spreadsheets).
         ///
-        ///All examples in this folder work as below steps:
-        ///- Open [rest of string was truncated]&quot;;.
+        ///All examples in this folder work as [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string SpreadSheetsViewer_Descrip {
             get {
@@ -3758,7 +3779,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to To more easily manage and analyze data in spreadsheet, you can create table for a range. A table consists of rows and columns that you can format and manage independently in a worksheet. You will learn how to:
+        ///   Looks up a localized string similar to ## Tables
+        ///To more easily manage and analyze data in spreadsheet, you can create table for a range. A table consists of rows and columns that you can format and manage independently in a worksheet. You will learn how to:
         ///
         ///- Add or remove a table in a worksheet
         ///- Apply filtering to a table column
@@ -3793,6 +3815,18 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ## Export text
+        ///Various of text effect can be exported to pdf file, such as:- Text with Excel number formatter
+        ///- Overflow text
+        ///- Font effects: text alignment, wordwrap, text indent, shrink to fit, underline, strikethrough .etc.
+        /// </summary>
+        internal static string Text_Descrip {
+            get {
+                return ResourceManager.GetString("Text.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export text.
         /// </summary>
         internal static string Text_Name {
@@ -3811,7 +3845,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The example in this folder demonstrates how to use the AutoFilter method to create a text filter. For example, you can filter by rows that contain the letter &quot;e&quot;..
+        ///   Looks up a localized string similar to ## Text Filter
+        ///The example in this folder demonstrates how to use the AutoFilter method to create a text filter. For example, you can filter by rows that contain the letter &quot;e&quot;..
         /// </summary>
         internal static string TextFiltering_Descrip {
             get {
@@ -3847,12 +3882,13 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GrapeCity Documents for Excel provides you with a set of built-in themes so you can quickly change the overall appearance of a workbook. It also lets you create custom themes and apply them to workbooks.
+        ///   Looks up a localized string similar to ## Theme
+        ///GrapeCity Documents for Excel provides you with a set of built-in themes so you can quickly change the overall appearance of a workbook. It also lets you create custom themes and apply them to workbooks.
         ///
         ///- Use the **Theme** property of a workbook instance to change the workbook&apos;s theme. 
         ///- Use the **Add** method of a themes class instance to add a custom theme. 
         ///- Use the built-in properties of the **Themes** class to get a built-in theme instance.
-        ///- Use the **Themes** indexer to get a custom theme in [rest of string was truncated]&quot;;.
+        ///- Use the **Themes** indexer to get a custo [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Theme_Descrip {
             get {
@@ -4007,7 +4043,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A workbook is a spreadsheet document that contains one or more worksheets that are stored within the Worksheets collection.
+        ///   Looks up a localized string similar to ## Workbook
+        ///A workbook is a spreadsheet document that contains one or more worksheets that are stored within the Worksheets collection.
         ///
         ///The examples in this folder demonstrate the following cases:
         ///- Create  a new workbook
@@ -4033,7 +4070,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrate the following cases:
+        ///   Looks up a localized string similar to ## Worksheets
+        ///The examples in this folder demonstrate the following cases:
         ///- Add a worksheet
         ///- Delete a worksheet
         ///- Protect a worksheet

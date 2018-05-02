@@ -784,7 +784,8 @@
     <value>Basic sales report</value>
   </data>
   <data name="Axes.Descrip" xml:space="preserve">
-    <value>Charts contain three axis types: 
+    <value>## Axis
+Charts contain three axis types: 
 - category axis
 - value axis
 - series axis
@@ -800,7 +801,8 @@ Examples in the Axis folder demonstrate how to specify axis-related settings suc
 - tick mark labels</value>
   </data>
   <data name="Charts.Descrip" xml:space="preserve">
-    <value>**GrapeCity Documents for Excel** provides a comprehensive charting API:
+    <value>## Charts
+**GrapeCity Documents for Excel** provides a comprehensive charting API:
 
 - Add charts to a worksheet using the **IWorksheet.AddChart** method
 -- Returns an instance of **IShape** 
@@ -836,13 +838,14 @@ Many chart objects (chart area, plot area, chart title, legend, series) provide 
 - **lines** dashed or transparency</value>
   </data>
   <data name="Series.Descrip" xml:space="preserve">
-    <value>**Series** is the most frequently used feature in charts. Each chart contains one or more data series, and each series consists of a group of data points. 
+    <value>## Series
+**Series** is the most frequently used feature in charts. Each chart contains one or more data series, and each series consists of a group of data points. 
 
 These examples demonstrate how to add a series to a chart, and how to specify settings for each series, such as:
 
 - **BubbleScale** and **SizeRepresents** for bubble charts
 - Configure **Series** format
-- Chage **Series Tyepe**
+- Change **Series Type**
 - Add **Secondary Axis**
 - **VaryByCategories** colors for single-series column charts</value>
   </data>
@@ -850,7 +853,8 @@ These examples demonstrate how to add a series to a chart, and how to specify se
     <value>Personal net worth calculator</value>
   </data>
   <data name="Comments.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel enables users to annotate worksheets. They can write comments for cells to add information about the data it contains.
+    <value>## Comments
+GrapeCity Documents for Excel enables users to annotate worksheets. They can write comments for cells to add information about the data it contains.
 
 Add comments for a range using the **AddComment** method. It returns an instance of the **IComment** interface. 
 
@@ -893,7 +897,8 @@ Create rich text using the **TextFrame** property of the **IShape** interface. Y
     <value>Travel expense report</value>
   </data>
   <data name="ConditionalFormatting.Descrip" xml:space="preserve">
-    <value>In order to enable you to highlight important information in rows or columns of a worksheet, GrapeCity Documents for Excel allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule..
+    <value>## Conditional Formatting
+In order to enable you to highlight important information in rows or columns of a worksheet, GrapeCity Documents for Excel allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule..
 
 GrapeCity Documents for Excel supports all types of conditional formatting rules:
 
@@ -918,7 +923,8 @@ Apply conditional formatting rules to a range using the **Add** method of **IRan
 All of the Add functions return an instance of the **IFormatCondition** interface, or an interface specific to another Add method, such as **IAboveAverage**.</value>
   </data>
   <data name="DataValidation.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel lets you validate data by restricting the information format and the values that can be entered in cells of a worksheet. You can create distinct validation scenarios for individual cells or for a range of cells.
+    <value>## Data Validation
+GrapeCity Documents for Excel lets you validate data by restricting the information format and the values that can be entered in cells of a worksheet. You can create distinct validation scenarios for individual cells or for a range of cells.
 
 GrapeCity Documents for Excel supports all types of validations, including:
 - Whole Number
@@ -940,10 +946,11 @@ Add validation for a range using the **Add** method of  **IRange.Validation** pr
 -- InCellDropdown property</value>
   </data>
   <data name="MonthlyBusinessBudget.Name" xml:space="preserve">
-    <value>Monthly bussiness budget</value>
+    <value>Monthly business budget</value>
   </data>
   <data name="Filtering.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel supports all types of filters, including: 
+    <value>## Filtering
+GrapeCity Documents for Excel supports all types of filters, including: 
 - Number Filter
 - Text Filter
 - Date Filter
@@ -955,14 +962,16 @@ Filter a range using the range's **AutoFilter** method. If you want to apply the
 To re-apply filter conditions when the range's value changes, use the **ApplyFilter** method of the worksheet's **AutoFilter** instance.</value>
   </data>
   <data name="FilteringByColor.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrate how to use the AutoFilter method to create a color filter. You can filter by:
+    <value>## Filter by color
+The examples in this folder demonstrate how to use the AutoFilter method to create a color filter. You can filter by:
 - font color
 - interior color
 - automatic font color
 - no fill</value>
   </data>
   <data name="FilteringByIcon.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrate how to use the AutoFilter method to filter by icon.  You can set the **AutoFilterOperator** parameter to: 
+    <value>## Filter by icon
+The examples in this folder demonstrate how to use the AutoFilter method to filter by icon.  You can set the **AutoFilterOperator** parameter to: 
 
 - **Icon** and filter by the specified icon
 - **NoIcon** and filter by rows with no icon
@@ -973,10 +982,12 @@ Before you can apply an icon filter, you must first create an **IIconSetConditio
     <value>Simple Budget</value>
   </data>
   <data name="TextFiltering.Descrip" xml:space="preserve">
-    <value>The example in this folder demonstrates how to use the AutoFilter method to create a text filter. For example, you can filter by rows that contain the letter "e".</value>
+    <value>## Text Filter
+The example in this folder demonstrates how to use the AutoFilter method to create a text filter. For example, you can filter by rows that contain the letter "e".</value>
   </data>
   <data name="Alignment.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrate how to use these alignment settings:
+    <value>## Alignment
+The examples in this folder demonstrate how to use these alignment settings:
 - HorizontalAlignment (Left, Center, or Right)
 - VerticalAlignment (Top, Center, or Bottom)
 - ReadingOrder (sets text direction to RightToLeft or LeftToRight)
@@ -985,24 +996,28 @@ Before you can apply an icon filter, you must first create an **IIconSetConditio
 - Wrap Text </value>
   </data>
   <data name="Borders.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrate how to specify border settings for a range. You can set these border options:
+    <value>## Borders
+The examples in this folder demonstrate how to specify border settings for a range. You can set these border options:
 - BorderLineStyle (Dashed, DashDot, Dotted, Double, Medium, Hair, etc.)
 - Color (Green, Red, Blue, Tomato, LimeGreen, etc.)</value>
   </data>
   <data name="DateFiltering.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrate how to use the AutoFilter method to filter by date. They show how you can filter:
+    <value>## Date Filter
+The examples in this folder demonstrate how to use the AutoFilter method to filter by date. They show how you can filter:
 - between two dates
 - all dates in February</value>
   </data>
   <data name="Fill.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrate how to apply several kinds of fill to a range.
+    <value>## Fill
+The examples in this folder demonstrate how to apply several kinds of fill to a range.
 - Solid fill
 - Pattern fill
 - Linear gradient fill
 - Rectangular gradient fill</value>
   </data>
   <data name="Fonts.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrate how to apply font settings to a range:
+    <value>## Fonts
+The examples in this folder demonstrate how to apply font settings to a range:
 - Font color
 - Font size
 - Font name
@@ -1011,7 +1026,8 @@ Before you can apply an icon filter, you must first create an **IIconSetConditio
 - Strikethrough, Superscript, Subscript</value>
   </data>
   <data name="Formatting.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel provides a lot of properties to customize the appearance of a range:
+    <value>## Formatting
+GrapeCity Documents for Excel provides a lot of properties to customize the appearance of a range:
 
 - **IRange.NumberFormat** sets the number format
 - **IRange.HorizontalAlignment**,  **IRange.VerticalAlignment**, **IRange.IndentLevel**, etc. set the alignment
@@ -1023,7 +1039,8 @@ Before you can apply an icon filter, you must first create an **IIconSetConditio
 You can also create custom styles or use the built-in named styles, and apply named styles to one or more ranges.</value>
   </data>
   <data name="Formulas.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel lets you create and use formulas. These are expressions that let you calculate the value of a cell quickly and accurately. You can also use built-in functions and operators to generate formulas and calculate values in cells.
+    <value>## Formulas
+GrapeCity Documents for Excel lets you create and use formulas. These are expressions that let you calculate the value of a cell quickly and accurately. You can also use built-in functions and operators to generate formulas and calculate values in cells.
 
 The calc engine handles many calculations, for example:
 - Hundreds of built-in Excel functions
@@ -1032,7 +1049,8 @@ The calc engine handles many calculations, for example:
 - Table formula</value>
   </data>
   <data name="Grouping.Descrip" xml:space="preserve">
-    <value>Spreadsheets with tons of data can be a headache to read. You can spend a lot of time and effort trying to visualize, manage, and analyze the information that is relevant to you.
+    <value>## Grouping
+Spreadsheets with tons of data can be a headache to read. You can spend a lot of time and effort trying to visualize, manage, and analyze the information that is relevant to you.
 
 GrapeCity Documents for Excel lets you summarize large amounts of information in groups so that complex spreadsheets are easier to navigate. After rows of data in a spreadsheet are grouped, users can expand and collapse details with the click of a button in the group header row. You can use the following methods and properties to customize your groupings:
 
@@ -1042,10 +1060,12 @@ GrapeCity Documents for Excel lets you summarize large amounts of information in
 - The **ShowLevels** method of the worksheet's Outline instance expands specific level groups</value>
   </data>
   <data name="NumberFormat.Descrip" xml:space="preserve">
-    <value>The Number Format examples demonstrate how to apply a number format to a range. GrapeCity Documents for Excel uses Excel-style number formats.</value>
+    <value>## Number Format
+The Number Format examples demonstrate how to apply a number format to a range. GrapeCity Documents for Excel uses Excel-style number formats.</value>
   </data>
   <data name="Protection.Descrip" xml:space="preserve">
-    <value>The Protection examples demonstrate how to apply security settings to a range, for example:
+    <value>## Protection 
+The Protection examples demonstrate how to apply security settings to a range, for example:
 - The **FormulaHidden** property keeps formulas in a range from appearing in exported .xlsx files.
 - The **Locked** property protects cells in a range from being modified</value>
   </data>
@@ -1059,19 +1079,22 @@ GrapeCity Documents for Excel lets you summarize large amounts of information in
     <value>Tutorial</value>
   </data>
   <data name="Hyperlinks.Descrip" xml:space="preserve">
-    <value>Apply hyperlinks to a range using the **Add** method of a worksheet or range's **Hyperlinks** instance. GrapeCity Documents for Excel supports the following types of hyperlink:
+    <value>## Hyperlinks
+Apply hyperlinks to a range using the **Add** method of a worksheet or range's **Hyperlinks** instance. GrapeCity Documents for Excel supports the following types of hyperlink:
 - Link to a web page
 - Link to a specific range in the current document
 - Link to an external file
 - Link to an email address</value>
   </data>
   <data name="Picture.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel allows you to add a picture to a worksheet.
+    <value>## Picture
+GrapeCity Documents for Excel allows you to add a picture to a worksheet.
 
 To add a picture to a worksheet, use the **AddPicture** method of the worksheet's **Shapes** collection.</value>
   </data>
   <data name="PivotTable.Descrip" xml:space="preserve">
-    <value>A pivot table is a data summarization tool. It can automatically count, total, or average the data stored in a spreadsheet, and display the resulting summarized data in a second table.
+    <value>## Pivot Table
+A pivot table is a data summarization tool. It can automatically count, total, or average the data stored in a spreadsheet, and display the resulting summarized data in a second table.
 
 Create a pivot cache using the **Create** method of the workbook's **PivotCaches** collection. It returns an instance of the **IPivotCache** interface. 
 
@@ -1080,7 +1103,8 @@ Create a pivot table using the **CreatePivotTable** method of the pivot cache in
 Use the **PivotFieldOrientation** property of each pivot field to specify whether it is a RowField, ColumnField, ValueField, or PageField.</value>
   </data>
   <data name="RangeOperations.Descrip" xml:space="preserve">
-    <value>Range is the most important concept in GrapeCity Documents for Excel. It is the entrance to most of the features.
+    <value>## Range Operations
+Range is the most important concept in GrapeCity Documents for Excel. It is the entrance to most of the features.
 
 Examples in this folder demonstrate how to:
 - Access cells, rows, and columns
@@ -1097,7 +1121,8 @@ Examples in this folder demonstrate how to:
 - Set row height and column width</value>
   </data>
   <data name="Shape.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel lets you embed drawing objects like shapes and pictures in the cells of a worksheet. You can insert arrows, lines, charts, slicers, pictures, and general shapes.
+    <value>## Shape
+GrapeCity Documents for Excel lets you embed drawing objects like shapes and pictures in the cells of a worksheet. You can insert arrows, lines, charts, slicers, pictures, and general shapes.
 
 To create a shape for a worksheet, use the **AddShape** method of the worksheet's Shapes collection. Then you can configure the Shape instance using properties like these:
 
@@ -1107,7 +1132,8 @@ To create a shape for a worksheet, use the **AddShape** method of the worksheet'
 - Configure a shape's rich text using the **TextFrame** property</value>
   </data>
   <data name="Slicer.Descrip" xml:space="preserve">
-    <value>Slicers are visual filters that you can use to filter a table or pivot table.
+    <value>## Slicer
+Slicers are visual filters that you can use to filter a table or pivot table.
 
 Use the **Add** method of a workbook's **SlicerCaches** collection to create a slicer cache. It returns an instance of a slicer cache. 
 
@@ -1116,7 +1142,8 @@ Use the **Add** method of the slicer cashe's **Slicers** collection to create a 
 It supports both built-in and custom slicer styles.</value>
   </data>
   <data name="Sorting.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel supports all types of sorting, including:
+    <value>## Sorting
+GrapeCity Documents for Excel supports all types of sorting, including:
 - Sort by value
 - Sort by font color
 - Sort by interior
@@ -1124,7 +1151,8 @@ It supports both built-in and custom slicer styles.</value>
 - Sort by custom list</value>
   </data>
   <data name="Sparklines.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel allows you to highlight specific information and see how it varies over time using Sparklines. Sparklines are small, lightweight charts that are drawn inside cells to quickly visualize data for improved analysis.
+    <value>## Sparklines
+GrapeCity Documents for Excel allows you to highlight specific information and see how it varies over time using Sparklines. Sparklines are small, lightweight charts that are drawn inside cells to quickly visualize data for improved analysis.
 
 Use the **Add** method of a range's **SparklineGroups** collection to create a group of new sparklines. Sparklines only exist inside of a sparkline group. There is no way to create a sparkline outside of a sparkline group.
 
@@ -1134,9 +1162,10 @@ We support the following types of sparklines:
 - Win/Loss</value>
   </data>
   <data name="SpreadSheetsViewer.Descrip" xml:space="preserve">
-    <value>Examples in this folder demonstrate how to use **GrapeCity Documents for Excel** and **Spread.Sheets**, another Spread product that is included in SpreadJS. GrapeCity Documents for Excel works on the server side to import and export Excel template files. Spread.Sheets works in the browser (client side) as a viewer or editor.
+    <value>## Spread.Sheets Viewer
+Examples in this folder demonstrate how to use **GrapeCity Documents for Excel** and **Spread.Sheets**, another Spread product that is included in SpreadJS. GrapeCity Documents for Excel works on the server side to import and export Excel template files. Spread.Sheets works in the browser (client side) as a viewer or editor.
 
-To learn more about **Spread.Sheets**, visit the [Spread.Sheets Home Page](http://spread.grapecity.com/spreadjs/sheets//).
+To learn more about **Spread.Sheets**, visit the [Spread.Sheets Home Page](https://www.grapecity.com/en/spreadsheets).
 
 All examples in this folder work as below steps:
 - Open an Excel file with **GrapeCity Documents for Excel** existing on server.
@@ -1151,7 +1180,8 @@ In the demo page, you can edit the content in the Spread.Sheets control, then cl
 - Finally, you can download the changed Excel file.</value>
   </data>
   <data name="Tables.Descrip" xml:space="preserve">
-    <value>To more easily manage and analyze data in spreadsheet, you can create table for a range. A table consists of rows and columns that you can format and manage independently in a worksheet. You will learn how to:
+    <value>## Tables
+To more easily manage and analyze data in spreadsheet, you can create table for a range. A table consists of rows and columns that you can format and manage independently in a worksheet. You will learn how to:
 
 - Add or remove a table in a worksheet
 - Apply filtering to a table column
@@ -1162,7 +1192,8 @@ In the demo page, you can edit the content in the Spread.Sheets control, then cl
 - Perform calculations for a specific table range</value>
   </data>
   <data name="Theme.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel provides you with a set of built-in themes so you can quickly change the overall appearance of a workbook. It also lets you create custom themes and apply them to workbooks.
+    <value>## Theme
+GrapeCity Documents for Excel provides you with a set of built-in themes so you can quickly change the overall appearance of a workbook. It also lets you create custom themes and apply them to workbooks.
 
 - Use the **Theme** property of a workbook instance to change the workbook's theme. 
 - Use the **Add** method of a themes class instance to add a custom theme. 
@@ -1170,7 +1201,8 @@ In the demo page, you can edit the content in the Spread.Sheets control, then cl
 - Use the **Themes** indexer to get a custom theme instance.</value>
   </data>
   <data name="Workbook.Descrip" xml:space="preserve">
-    <value>A workbook is a spreadsheet document that contains one or more worksheets that are stored within the Worksheets collection.
+    <value>## Workbook
+A workbook is a spreadsheet document that contains one or more worksheets that are stored within the Worksheets collection.
 
 The examples in this folder demonstrate the following cases:
 - Create  a new workbook
@@ -1181,7 +1213,8 @@ The examples in this folder demonstrate the following cases:
 - Import or export a workbook using ToJson and FromJson</value>
   </data>
   <data name="Worksheets.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrate the following cases:
+    <value>## Worksheets
+The examples in this folder demonstrate the following cases:
 - Add a worksheet
 - Delete a worksheet
 - Protect a worksheet
@@ -1190,17 +1223,19 @@ The examples in this folder demonstrate the following cases:
 - Apply settings to a worksheet</value>
   </data>
   <data name="ExcelReporting.Descrip" xml:space="preserve">
-    <value>In this folder, you can explore complete code demonstrating how to generate an Excel file or report at server side. 
+    <value>## Excel Reporting
+In this folder, you can explore complete code demonstrating how to generate an Excel file or report at server side. 
 
 Click the **"Run"** button to perform the following actions on the server:
 - Create an empty workbook
 - Execute all of code in the code window
-- Save to an excel file
+- Save to an Excel file
 
-Then you can view the results by downloading the excel file.</value>
+Then you can view the results by downloading the Excel file.</value>
   </data>
   <data name="ExcelTemplates.Descrip" xml:space="preserve">
-    <value>In some scenarios, you may have your own Excel templates and just want to open and update some of the contents at server side. You can use the extensive GrapeCity Documents for Excel API to open an existing Excel file and then change some of its values, customize its formatting, and whatever else you need to do.
+    <value>## Excel Templates
+In some scenarios, you may have your own Excel templates and just want to open and update some of the contents at server side. You can use the extensive GrapeCity Documents for Excel API to open an existing Excel file and then change some of its values, customize its formatting, and whatever else you need to do.
 - Click the **Template** button to download and view the original Excel template
 - Click the **Run** button to run the code and get the changed Excel file</value>
   </data>
@@ -1208,7 +1243,8 @@ Then you can view the results by downloading the excel file.</value>
     <value>Use a slicer to clear a filter</value>
   </data>
   <data name="Features.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel provides some remarkable features that empower developers to create spreadsheets with:
+    <value>## Features
+GrapeCity Documents for Excel provides some remarkable features that empower developers to create spreadsheets with:
 - High-performance attributes
 - Custom themes
 - Configurable components
@@ -1239,7 +1275,8 @@ Then you can view the results by downloading the Excel file.
     <value>Apply number filter</value>
   </data>
   <data name="NumberFiltering.Descrip" xml:space="preserve">
-    <value>The examples in this folder demonstrates how to use number filtering for range.</value>
+    <value>## Number Filter
+The examples in this folder demonstrates how to use number filtering for range.</value>
   </data>
   <data name="NumberFormat.Name" xml:space="preserve">
     <value>Number Format</value>
@@ -1302,22 +1339,25 @@ Then you can view the results by downloading the Excel file.
     <value>Legend</value>
   </data>
   <data name="ChartArea.Descrip" xml:space="preserve">
-    <value>Chart area is the complete chart area, include plot area, chart title and legend.
+    <value>## Chart area
+Chart area is the complete chart area, include plot area, chart title and legend.
 
-These examples demonstrate how to Configure chart area style and whole chart area font style.</value>
+These examples demonstrate how to configure chart area style and whole chart area font style.</value>
   </data>
   <data name="ChartLines.Descrip" xml:space="preserve">
-    <value>Chart lines include: **Trendline**, **Dropline** , **High-Low Line** and **Series Line**.
+    <value>## Chart lines
+Chart lines include: **Trendline**, **Dropline** , **High-Low Line** and **Series Line**.
 
 - **Trendline** is for specific series.
 - **Dropline** set for line chart or area chart.
 - **High-Low line** set for line chart.
-- **Series line** set for stackes column chart or bar chart, Pie of Pie chart or Bar of Pie chart also has connector lines between the two sections.
+- **Series line** set for stacked column or bar charts. Pie-of-pie charts and bar-of-pie charts also have connector lines between their sections
 
-These examples demonstrate how to add these lines and how to Configure lines style.</value>
+These examples demonstrate how to add these lines and how to configure lines style.</value>
   </data>
   <data name="ChartTitle.Descrip" xml:space="preserve">
-    <value>**Chart title** is the name of the chart.
+    <value>## Chart title
+**Chart title** is the name of the chart.
 
 These examples demonstrate how to display chart name  and how to specify settings for chart title.</value>
   </data>
@@ -1338,28 +1378,27 @@ These examaple demonstrete how to specity settings for chart walls, include:
     <value>Configure secondary section for pie of pie chart</value>
   </data>
   <data name="DataLabel.Descrip" xml:space="preserve">
-    <value>**Datalabel** can display specified series information. With interface **ShowLwgendKey**, **ShowPercentage** , **ShowValue** , **ShowSeriesName** .etc to Configure datalabel layout.
-
-These examples demonstrate how to display datalabels and how to specified settings for datalabel.</value>
+    <value>## Data label
+**Data labels** can display specified series information. Use ShowLegendKey, ShowPercentage, ShowValue, ShowSeriesName, .etc to configure data label layout. These examples demonstrate how to display data labels and specify settings for data labels.</value>
   </data>
   <data name="DataPoint.Descrip" xml:space="preserve">
-    <value>**Datapoints** is a collectiong of all points in specific series.
-
-These examples demontrate how to specified settings for datapoint</value>
+    <value>## Data point
+**Data points** are a collection of all points in a specific series. These examples demonstrate how to specify settings for data points.</value>
   </data>
   <data name="Legend.Descrip" xml:space="preserve">
-    <value>These examples demontrate how to Configure legend's style and position.</value>
+    <value>## Legend
+These examples demonstrate how to configure the style and position of chart **legends**.</value>
   </data>
   <data name="PlotArea.Descrip" xml:space="preserve">
-    <value>These examples demonstrate how to specified setting for plot area.</value>
+    <value>## Plot area
+These examples demonstrate how to specify settings for **plot area**.</value>
   </data>
   <data name="PlotArea.Name" xml:space="preserve">
     <value>Plot area</value>
   </data>
   <data name="ChartGallery.Descrip" xml:space="preserve">
-    <value>**Chart gallery** include all kinds of chart type.
-
-These examples in this folder demonstrate the all types of chart.</value>
+    <value>## Chart gallery
+This chart gallery includes all of the **chart types** available and demonstrates how to configure each chart.</value>
   </data>
   <data name="ChartGallery.Name" xml:space="preserve">
     <value>Chart gallery</value>
@@ -1424,9 +1463,6 @@ These examples in this folder demonstrate the all types of chart.</value>
   <data name="XYScatterSmooth.Name" xml:space="preserve">
     <value>Scatter with smooth Lines</value>
   </data>
-  <data name="BarCluteredChart.Name" xml:space="preserve">
-    <value>Clustered bar chart</value>
-  </data>
   <data name="BubbleChart.Name" xml:space="preserve">
     <value>Bubble chart</value>
   </data>
@@ -1457,8 +1493,8 @@ These examples in this folder demonstrate the all types of chart.</value>
   <data name="ConfigPrintArea.Name" xml:space="preserve">
     <value>Configure print area</value>
   </data>
-  <data name="ConfigSheetPrintSetings.Name" xml:space="preserve">
-    <value>Configure sheet print setings</value>
+  <data name="ConfigSheetPrintSettings.Name" xml:space="preserve">
+    <value>Configure sheet print settings</value>
   </data>
   <data name="PageSetup.Name" xml:space="preserve">
     <value>Page Setup</value>
@@ -1485,19 +1521,22 @@ These examples in this folder demonstrate the all types of chart.</value>
     <value>100% Stacked line with markers chart</value>
   </data>
   <data name="Chart3DFormat.Descrip" xml:space="preserve">
-    <value>These examples in this folder demonstrate how to set charts 3D format</value>
+    <value>## Chart 3D format
+These examples in this folder demonstrate how to set charts 3D format</value>
   </data>
   <data name="ConfigMarkersFormat.Name" xml:space="preserve">
     <value>Configure markers format</value>
   </data>
   <data name="Markers.Descrip" xml:space="preserve">
-    <value>These examples in this folder demonstrate how to set **Markers** sytle and format</value>
+    <value>## Markers
+These examples demonstrate how to set style and format for **markers**.</value>
   </data>
   <data name="Markers.Name" xml:space="preserve">
     <value>Markers</value>
   </data>
   <data name="PageSetup.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel supports page setup. The **PageSetup** object contains all page setup attributes (left margin, bottom margin, paper size, and so on) as properties.</value>
+    <value>## Page Setup
+GrapeCity Documents for Excel supports page setup. The **PageSetup** object contains all page setup attributes (left margin, bottom margin, paper size, and so on) as properties.</value>
   </data>
   <data name="ConfigChart3DFormat.Name" xml:space="preserve">
     <value>Configure chart 3D format</value>
@@ -1524,10 +1563,11 @@ These examples in this folder demonstrate the all types of chart.</value>
     <value>Only import data from Excel</value>
   </data>
   <data name="ImportExcelFileWithoutCalculation.Name" xml:space="preserve">
-    <value>Do not recalucate after opening Excel</value>
+    <value>Do not recalculate after opening Excel</value>
   </data>
   <data name="PDFExporting.Descrip" xml:space="preserve">
-    <value>In this folder, you can explore complete code demonstrating how to export an pdf file at server side. 
+    <value>## PDF Exporting
+In this folder, you can explore complete code demonstrating how to export an pdf file at server side. 
 
 Click the **"Save as PDF"** button to perform the following actions on the server:
 - Create an empty workbook
@@ -1669,7 +1709,8 @@ Then you can view the pdf in your browser.</value>
     <value>Scaling</value>
   </data>
   <data name="PdfPageSetup.Descrip" xml:space="preserve">
-    <value>GrapeCity Documents for Excel allows users to paginate each worksheet using the properties of the IPageSetup interface.
+    <value>## Page setup
+GrapeCity Documents for Excel allows users to paginate each worksheet using the properties of the IPageSetup interface.
 
 You can customize the page size, print area, print title rows, print title columns; specify horizontal page breaks, vertical page breaks, the maximum number of pages for horizontal and vertical pagination etc. along with zoom and scale factors as per your preferences while exporting a spreadsheet to a PDF file.</value>
   </data>
@@ -1699,5 +1740,12 @@ You can customize the page size, print area, print title rows, print title colum
   </data>
   <data name="AgingReport.Name" xml:space="preserve">
     <value>Aging Report</value>
+  </data>
+  <data name="Text.Descrip" xml:space="preserve">
+    <value>## Export text
+Various of text effect can be exported to pdf file, such as:
+- Text with Excel number formatter
+- Overflow text
+- Font effects: text alignment, wordwrap, text indent, shrink to fit, underline, strikethrough .etc</value>
   </data>
 </root>

@@ -26,10 +26,10 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Hyperlinks
 
             //add a hyperlink link to email address.
             worksheet.Range["A5:B6"].Hyperlinks.Add(worksheet.Range["A5"],
-                                            "mailto:spread.sales@grapecity.com",
+                                            "mailto:us.sales@grapecity.com",
                                             null,
-                                            "Send an email to spread sales",
-                                            "Send an eamil to spread sales");
+                                            "Send an email to sales",
+                                            "Send an email to sales");
 
             //add a hyperlink link to external file.
             //change the path to real picture file path.

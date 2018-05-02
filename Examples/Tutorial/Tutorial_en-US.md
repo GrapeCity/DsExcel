@@ -1,4 +1,4 @@
-﻿# Getting started
+﻿# Getting started with Documents for Excel, a spreadsheet API
 
 In this tutorial, we create a real-life scenario with GrapeCity Documents for Excel to give you a fundamental understanding of what it can do. At the end of this tutorial, you will have a simple budget Excel file.
 

@@ -14,7 +14,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formulas
             {
                 {"SalesPerson", "Region",  "SalesAmount", "ComPct", "ComAmt"},
                 {"Joe", "North", 260, 0.10, null},
-                {"Robert", "South", 660, 0.15, null},
+                {"Nia", "South", 660, 0.15, null},
             };
 
             worksheet.Tables.Add(worksheet.Range["A1:E3"], true);

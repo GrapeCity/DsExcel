@@ -25,6 +25,8 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PageSetup
             worksheet.PageSetup.FirstPage.LeftFooter.Text = "&G";
             System.IO.Stream stream = this.GetResourceStream("logo.png");
             worksheet.PageSetup.FirstPage.LeftFooter.Picture.SetGraphicStream(stream, ImageType.PNG);
+            worksheet.PageSetup.FirstPage.LeftFooter.Picture.Width = 100;
+            worksheet.PageSetup.FirstPage.LeftFooter.Picture.Height = 13;
 
         }
     }

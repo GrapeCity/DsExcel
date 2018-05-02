@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Shape
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Heart, 50, 30, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 50, 30, 200, 100);
             shape.ThreeD.RotationX = 50;
             shape.ThreeD.RotationY = 20;
             shape.ThreeD.RotationZ = 30;

@@ -10,7 +10,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Shape
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             IWorksheet worksheet = workbook.Worksheets[0];
-            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Rectangle, 20, 20, 100, 100);
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 20, 20, 200, 100);
 
             System.IO.Stream stream = this.GetResourceStream("logo.png");
 
