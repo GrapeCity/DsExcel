@@ -133,37 +133,40 @@ namespace SpreadService.WebApi.Controllers
             ITableStyle tableStyle = workbook.TableStyles.Add("Bid Tracker");
             workbook.DefaultTableStyle = "Bid Tracker";
 
+            var wholeTableStyle = tableStyle.TableStyleElements[TableStyleElementType.WholeTable];
             //Set WholeTable element style.
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromRGB(89, 89, 89);
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(89, 89, 89);
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Font.Color = Color.FromRGB(89, 89, 89);
+            wholeTableStyle.Borders.Color = Color.FromRGB(89, 89, 89);
+            wholeTableStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
 
+            var headerRowStyle = tableStyle.TableStyleElements[TableStyleElementType.HeaderRow];
             //Set HeaderRow element style.
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromRGB(89, 89, 89);
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromRGB(131, 95, 1);
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.PatternColor = Color.FromRGB(254, 184, 10);
+            headerRowStyle.Borders.Color = Color.FromRGB(89, 89, 89);
+            headerRowStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
+            headerRowStyle.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
+            headerRowStyle.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
+            headerRowStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
+            headerRowStyle.Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
+            headerRowStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
+            headerRowStyle.Interior.Color = Color.FromRGB(131, 95, 1);
+            headerRowStyle.Interior.PatternColor = Color.FromRGB(254, 184, 10);
 
 
+            var totalRowStyle = tableStyle.TableStyleElements[TableStyleElementType.TotalRow];
             //Set TotalRow element style.
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders.Color = Color.White;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Interior.Color = Color.FromRGB(131, 95, 1);
+            totalRowStyle.Borders.Color = Color.White;
+            totalRowStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
+            totalRowStyle.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
+            totalRowStyle.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
+            totalRowStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
+            totalRowStyle.Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
+            totalRowStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
+            totalRowStyle.Interior.Color = Color.FromRGB(131, 95, 1);
 
 
 
@@ -407,12 +410,13 @@ namespace SpreadService.WebApi.Controllers
 
             //Add one custom table style.
             ITableStyle style = workbook.TableStyles.Add("To-do List");
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].ThemeColor = ThemeColor.Light1;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].TintAndShade = -0.14993743705557422;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].ThemeColor = ThemeColor.Light1;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].TintAndShade = -0.14993743705557422;
+            var wholeTableStyle = style.TableStyleElements[TableStyleElementType.WholeTable];
+            wholeTableStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.EdgeBottom].ThemeColor = ThemeColor.Light1;
+            wholeTableStyle.Borders[BordersIndex.EdgeBottom].TintAndShade = -0.14993743705557422;
+            wholeTableStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.InsideHorizontal].ThemeColor = ThemeColor.Light1;
+            wholeTableStyle.Borders[BordersIndex.InsideHorizontal].TintAndShade = -0.14993743705557422;
 
             //Create a table and apply the above table style.
             ITable table = worksheet.Tables.Add(worksheet.Range["B2:I7"], true);
@@ -565,20 +569,22 @@ namespace SpreadService.WebApi.Controllers
             workbook.DefaultTableStyle = "Personal Address Book";
 
             //Set WholeTable element style.
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(179, 35, 23);
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
+            var wholeTableStyle = tableStyle.TableStyleElements[TableStyleElementType.WholeTable];
+            wholeTableStyle.Borders.Color = Color.FromRGB(179, 35, 23);
+            wholeTableStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
+            wholeTableStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
 
             //Set FirstColumn element style.
             tableStyle.TableStyleElements[TableStyleElementType.FirstColumn].Font.Bold = true;
 
             //Set SecondColumns element style.
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromRGB(179, 35, 23);
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
+            var headerRowStyle = tableStyle.TableStyleElements[TableStyleElementType.HeaderRow];
+            headerRowStyle.Borders.Color = Color.FromRGB(179, 35, 23);
+            headerRowStyle.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
+            headerRowStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
 
 
 
