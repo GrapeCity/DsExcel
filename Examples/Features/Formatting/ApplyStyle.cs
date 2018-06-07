@@ -14,7 +14,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formatting
             worksheet.Range["A1"].Value = "Bad";
             worksheet.Range["A1"].Style = workbook.Styles["Bad"];
 
-
             //Change to custom name style.
             //Add custom name style.
             IStyle style = workbook.Styles.Add("testStyle");
@@ -68,9 +67,11 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formatting
             //Config custom name style settings end.
 
             //Set range's style to custom name style.
-            worksheet.Range["A2"].Value = "My test style";
+            worksheet.Range["A2"].Value = "my test style";
             worksheet.Range["A2"].Style = worksheet.Workbook.Styles["testStyle"];
 
+            worksheet.Range["A2"].RowHeightInPixel = 60;
+            worksheet.Range["A2"].ColumnWidthInPixel = 150;
         }
     }
 }

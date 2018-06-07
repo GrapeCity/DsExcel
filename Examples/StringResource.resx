@@ -319,7 +319,7 @@
     <value>Get row and column count</value>
   </data>
   <data name="AccessCellsRowsColumns.Name" xml:space="preserve">
-    <value>Access cells, rows and columns</value>
+    <value>Access cells, rows and columns in a range</value>
   </data>
   <data name="GetWorksheetUsedRange.Name" xml:space="preserve">
     <value>Get used range</value>
@@ -496,10 +496,10 @@
     <value>Protection</value>
   </data>
   <data name="SetRangeFormulaHidden.Name" xml:space="preserve">
-    <value>Hide Configure formula</value>
+    <value>Hide formula</value>
   </data>
   <data name="SetRangeLocked.Name" xml:space="preserve">
-    <value>Lock Configure range</value>
+    <value>Lock range</value>
   </data>
   <data name="AddComment.Name" xml:space="preserve">
     <value>Add comment to cell</value>
@@ -1104,7 +1104,7 @@ Use the **PivotFieldOrientation** property of each pivot field to specify whethe
   </data>
   <data name="RangeOperations.Descrip" xml:space="preserve">
     <value>## Range Operations
-Range is the most important concept in GrapeCity Documents for Excel. It is the entrance to most of the features.
+Range refers to a cell or a collection of cells and range operations are the operations performed on those cell collection using single line of code. The Range property of IWorksheet allows you to execute multiple operations on cells,rows or columns.
 
 Examples in this folder demonstrate how to:
 - Access cells, rows, and columns
@@ -1747,5 +1747,8 @@ Various of text effect can be exported to pdf file, such as:
 - Text with Excel number formatter
 - Overflow text
 - Font effects: text alignment, wordwrap, text indent, shrink to fit, underline, strikethrough .etc</value>
+  </data>
+  <data name="CellInfo.Name" xml:space="preserve">
+    <value>Use CellInfo helper class</value>
   </data>
 </root>

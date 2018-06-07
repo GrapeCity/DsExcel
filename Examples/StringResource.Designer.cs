@@ -61,7 +61,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Access cells, rows and columns.
+        ///   Looks up a localized string similar to Access cells, rows and columns in a range.
         /// </summary>
         internal static string AccessCellsRowsColumns_Name {
             get {
@@ -223,7 +223,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrate how to use these alignment settings:
+        ///   Looks up a localized string similar to ## Alignment
+        ///The examples in this folder demonstrate how to use these alignment settings:
         ///- HorizontalAlignment (Left, Center, or Right)
         ///- VerticalAlignment (Top, Center, or Bottom)
         ///- ReadingOrder (sets text direction to RightToLeft or LeftToRight)
@@ -405,7 +406,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrate how to specify border settings for a range. You can set these border options:
+        ///   Looks up a localized string similar to ## Borders
+        ///The examples in this folder demonstrate how to specify border settings for a range. You can set these border options:
         ///- BorderLineStyle (Dashed, DashDot, Dotted, Double, Medium, Hair, etc.)
         ///- Color (Green, Red, Blue, Tomato, LimeGreen, etc.).
         /// </summary>
@@ -430,6 +432,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string BubbleChart_Name {
             get {
                 return ResourceManager.GetString("BubbleChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use CellInfo helper class.
+        /// </summary>
+        internal static string CellInfo_Name {
+            get {
+                return ResourceManager.GetString("CellInfo.Name", resourceCulture);
             }
         }
         
@@ -2122,7 +2133,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrate how to apply several kinds of fill to a range.
+        ///   Looks up a localized string similar to ## Fill
+        ///The examples in this folder demonstrate how to apply several kinds of fill to a range.
         ///- Solid fill
         ///- Pattern fill
         ///- Linear gradient fill
@@ -2318,7 +2330,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The examples in this folder demonstrate how to apply font settings to a range:
+        ///   Looks up a localized string similar to ## Fonts
+        ///The examples in this folder demonstrate how to apply font settings to a range:
         ///- Font color
         ///- Font size
         ///- Font name
@@ -2811,7 +2824,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The Number Format examples demonstrate how to apply a number format to a range. GrapeCity Documents for Excel uses Excel-style number formats..
+        ///   Looks up a localized string similar to ## Number Format
+        ///The Number Format examples demonstrate how to apply a number format to a range. GrapeCity Documents for Excel uses Excel-style number formats..
         /// </summary>
         internal static string NumberFormat_Descrip {
             get {
@@ -3075,7 +3089,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The Protection examples demonstrate how to apply security settings to a range, for example:
+        ///   Looks up a localized string similar to ## Protection 
+        ///The Protection examples demonstrate how to apply security settings to a range, for example:
         ///- The **FormulaHidden** property keeps formulas in a range from appearing in exported .xlsx files.
         ///- The **Locked** property protects cells in a range from being modified.
         /// </summary>
@@ -3105,7 +3120,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         
         /// <summary>
         ///   Looks up a localized string similar to ## Range Operations
-        ///Range is the most important concept in GrapeCity Documents for Excel. It is the entrance to most of the features.
+        ///Range refers to a cell or a collection of cells and range operations are the operations performed on those cell collection using single line of code. The Range property of IWorksheet allows you to execute multiple operations on cells,rows or columns.
         ///
         ///Examples in this folder demonstrate how to:
         ///- Access cells, rows, and columns
@@ -3113,13 +3128,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///- Access ranges in various ways
         ///- Cut, Copy, and Paste a range
         ///- Work with a used range of cells
-        ///- Get a row count or column count
-        ///- Hide a row or column
-        ///- Insert or delete cells
-        ///- Insert or delete rows and columns
-        ///- Merge cells
-        ///- Set values to a range
-        ///- [rest of string was truncated]&quot;;.
+        ///- Get a row count or colum [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RangeOperations_Descrip {
             get {
@@ -3389,7 +3398,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hide Configure formula.
+        ///   Looks up a localized string similar to Hide formula.
         /// </summary>
         internal static string SetRangeFormulaHidden_Name {
             get {
@@ -3398,7 +3407,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lock Configure range.
+        ///   Looks up a localized string similar to Lock range.
         /// </summary>
         internal static string SetRangeLocked_Name {
             get {
@@ -3816,7 +3825,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         
         /// <summary>
         ///   Looks up a localized string similar to ## Export text
-        ///Various of text effect can be exported to pdf file, such as:- Text with Excel number formatter
+        ///Various of text effect can be exported to pdf file, such as:
+        ///- Text with Excel number formatter
         ///- Overflow text
         ///- Font effects: text alignment, wordwrap, text indent, shrink to fit, underline, strikethrough .etc.
         /// </summary>

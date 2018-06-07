@@ -63,6 +63,9 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formatting
             //Set range's style to custom name style.
             worksheet.Range["A1"].Value = "My test style";
             worksheet.Range["A1"].Style = worksheet.Workbook.Styles["testStyle"];
+
+            worksheet.Range["A2"].RowHeightInPixel = 60;
+            worksheet.Range["A2"].ColumnWidthInPixel = 150;
         }
     }
 }

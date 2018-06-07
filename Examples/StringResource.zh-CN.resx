@@ -1599,4 +1599,7 @@ Spread表格组件支持以下几种类型的迷你图：
   <data name="AgingReport.Name" xml:space="preserve">
     <value>账龄分析报告</value>
   </data>
+  <data name="CellInfo.Name" xml:space="preserve">
+    <value>使用CellInfo</value>
+  </data>
 </root>
