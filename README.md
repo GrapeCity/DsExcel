@@ -1,7 +1,7 @@
 # GrapeCity Documents for Excel
 GrapeCity Documents for Excel(GcExcel) is a high-speed, small-footprint spreadsheet API that requires no dependencies on Excel. With full .NET Standard 2.0 support, you can generate, load, modify, and convert spreadsheets in .NET Framework, .NET Core, Mono, and Xamarin. Apps using this spreadsheet API can be deployed to cloud, Windows, Mac, or Linux. Its powerful calculation engine and breadth of features means you’ll never have to compromise design or requirements.
 
-This repository contains source project of Examples and Showcases of **GcExcel** to help you learn and write your own applications. **Note** that you need to install [.NET Core SDK](https://www.microsoft.com/net/core) to run all these projects, and it may take a long time to run **AspNetCoreDemo** for the first time, because it needs to download and install some nodejs moudles during the first run.
+This repository contains source project of Examples and Showcases of **GcExcel** to help you learn and write your own applications. **Note** that you need to install [.NET Core SDK](https://www.microsoft.com/net/core) to run all these projects, and it may take a long time to run **AspNetCoreDemo** for the first time, because it needs to download and install some nodejs modules during the first run.
 
 | Directory    | Description    |
 | ------------- |-------------|

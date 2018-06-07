@@ -82922,7 +82922,7 @@ return Promise;
 
   function throwError(e) {
     setTimeout(function () {
-      throw e;
+      //throw e;
     }, 0);
   }
 

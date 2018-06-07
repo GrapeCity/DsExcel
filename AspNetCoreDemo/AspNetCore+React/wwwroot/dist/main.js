@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "755cf034f035aa2e9448"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8fdf760259f53bb13867"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -1489,7 +1489,7 @@ exports.routes = React.createElement(Layout_1.Layout, null,
     React.createElement(react_router_dom_1.Route, { path: '/ExcelIODemo', component: ExcelIODemo_1.ExcelIODemo }));
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\routes.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\routes.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\routes.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\routes.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -1543,7 +1543,7 @@ var Utility = (function () {
 exports.Utility = Utility;
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\utility.ts"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\utility.ts"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\utility.ts"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\utility.ts"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -3024,7 +3024,7 @@ if (true) {
 }
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\boot.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\boot.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\boot.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\boot.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -8326,7 +8326,7 @@ var ExcelIODemo = (function (_super) {
 exports.ExcelIODemo = ExcelIODemo;
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ExcelIODemo.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ExcelIODemo.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ExcelIODemo.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ExcelIODemo.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -8422,7 +8422,7 @@ var ExcelTemplateDemo = (function (_super) {
 exports.ExcelTemplateDemo = ExcelTemplateDemo;
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ExcelTemplateDemo.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ExcelTemplateDemo.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ExcelTemplateDemo.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ExcelTemplateDemo.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -8493,7 +8493,7 @@ var Home = (function (_super) {
 exports.Home = Home;
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\Home.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\Home.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\Home.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\Home.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -8532,7 +8532,7 @@ var Layout = (function (_super) {
 exports.Layout = Layout;
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\Layout.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\Layout.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\Layout.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\Layout.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -8594,7 +8594,7 @@ var NavMenu = (function (_super) {
 exports.NavMenu = NavMenu;
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\NavMenu.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\NavMenu.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\NavMenu.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\NavMenu.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -8700,7 +8700,7 @@ var ProgrammingDemo = (function (_super) {
 exports.ProgrammingDemo = ProgrammingDemo;
 
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ProgrammingDemo.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GrapeCity Documents for Excel\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ProgrammingDemo.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ProgrammingDemo.tsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "D:\\Jack\\Source\\GcExcel\\GcExcelGitDemos\\AspNetCoreDemo\\AspNetCore+React\\ClientApp\\components\\ProgrammingDemo.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
