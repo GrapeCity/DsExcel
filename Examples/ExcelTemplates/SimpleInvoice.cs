@@ -11,7 +11,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file Simple invoice.xlsx from resource
-            var fileStream = this.GetTemplateStream("Simple invoice.xlsx");
+            var fileStream = this.GetTemplateStream();
 
             workbook.Open(fileStream);
 

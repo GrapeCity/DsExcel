@@ -11,7 +11,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PageSetup
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetTemplateStream();
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -28,6 +28,14 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PageSetup
             worksheet.PageSetup.FirstPage.LeftFooter.Picture.Width = 100;
             worksheet.PageSetup.FirstPage.LeftFooter.Picture.Height = 13;
 
+        }
+
+        public override string TemplateName
+        {
+            get
+            {
+                return "PageSetup Demo.xlsx";
+            }
         }
     }
 }

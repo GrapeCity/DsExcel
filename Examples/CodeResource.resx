@@ -125,18 +125,18 @@
             //create a custom theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("testTheme");
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(140, 198, 63);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(242, 116, 45);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(106, 159, 207);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(242, 192, 45);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(146, 98, 174);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(121, 198, 199);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(106, 159, 207);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(146, 98, 74);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(140, 198, 63);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(242, 116, 45);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(106, 159, 207);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(242, 192, 45);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(146, 98, 174);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(121, 198, 199);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(106, 159, 207);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(146, 98, 74);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Garamond";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Garamond";
 
@@ -407,7 +407,7 @@
             //config shape's line and fill.
             shape.Line.DashStyle = LineDashStyle.Solid;
             shape.Line.Weight = 4;
-            shape.Line.Color.RGB = Color.FromRGB(89, 89, 89);
+            shape.Line.Color.RGB = Color.FromArgb(89, 89, 89);
             shape.Fill.Solid();
             shape.Fill.Color.ColorType = SolidColorType.None;
 
@@ -547,7 +547,7 @@
             IShape shape2 = worksheet3.Shapes.AddShape(AutoShapeType.RectangularCallout, 380, 65, 280, 50);
             shape2.Line.DashStyle = LineDashStyle.Solid;
             shape2.Line.Weight = 4;
-            shape2.Line.Color.RGB = Color.FromRGB(89, 89, 89);
+            shape2.Line.Color.RGB = Color.FromArgb(89, 89, 89);
             shape2.Fill.Solid();
             shape2.Fill.Color.ColorType = SolidColorType.None;
 
@@ -622,8 +622,8 @@
             workbook.DefaultTableStyle = "Bid Tracker";
 
             //Set WholeTable element style.
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromRGB(89, 89, 89);
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(89, 89, 89);
+            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromArgb(89, 89, 89);
+            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromArgb(89, 89, 89);
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
@@ -632,15 +632,15 @@
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
 
             //Set HeaderRow element style.
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromRGB(89, 89, 89);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromArgb(89, 89, 89);
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromRGB(131, 95, 1);
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.PatternColor = Color.FromRGB(254, 184, 10);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromArgb(131, 95, 1);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.PatternColor = Color.FromArgb(254, 184, 10);
 
 
             //Set TotalRow element style.
@@ -651,7 +651,7 @@
             tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Interior.Color = Color.FromRGB(131, 95, 1);
+            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Interior.Color = Color.FromArgb(131, 95, 1);
 
 
 
@@ -659,7 +659,7 @@
             IStyle titleStyle = workbook.Styles["Title"];
             titleStyle.Font.Name = "Trebuchet MS";
             titleStyle.Font.Size = 36;
-            titleStyle.Font.Color = Color.FromRGB(56, 145, 167);
+            titleStyle.Font.Color = Color.FromArgb(56, 145, 167);
             titleStyle.IncludeAlignment = true;
             titleStyle.VerticalAlignment = VerticalAlignment.Center;
 
@@ -674,7 +674,7 @@
             heading1Style.Font.Color = Color.White;
             heading1Style.Font.Bold = false;
             heading1Style.IncludePatterns = true;
-            heading1Style.Interior.Color = Color.FromRGB(131, 95, 1);
+            heading1Style.Interior.Color = Color.FromArgb(131, 95, 1);
             heading1Style.Font.Name = "Trebuchet MS";
 
 
@@ -706,7 +706,7 @@
             normalStyle.IndentLevel = 1;
             normalStyle.VerticalAlignment = VerticalAlignment.Center;
             normalStyle.WrapText = true;
-            normalStyle.Font.Color = Color.FromRGB(89, 89, 89);
+            normalStyle.Font.Color = Color.FromArgb(89, 89, 89);
 
 
             IStyle currencyStyle = workbook.Styles["Currency"];
@@ -726,7 +726,7 @@
             percentStyle.Font.Name = "Trebuchet MS";
             percentStyle.Font.Size = 20;
             percentStyle.Font.Bold = true;
-            percentStyle.Font.Color = Color.FromRGB(89, 89, 89);
+            percentStyle.Font.Color = Color.FromArgb(89, 89, 89);
             percentStyle.Font.Name = "Trebuchet MS";
 
 
@@ -748,7 +748,7 @@
             dataBar.MaxPoint.Value = 0;
 
             dataBar.BarFillType = DataBarFillType.Gradient;
-            dataBar.BarColor.Color = Color.FromRGB(126, 194, 211);
+            dataBar.BarColor.Color = Color.FromArgb(126, 194, 211);
             dataBar.Direction = DataBarDirection.Context;
 
             dataBar.AxisColor.Color = Color.Black;
@@ -786,18 +786,18 @@
             //create a custom theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("testTheme");
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(222, 222, 212);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(30, 46, 47);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(233, 117, 90);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(122, 182, 186);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(125, 181, 135);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(230, 191, 94);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(230, 143, 77);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(194, 107, 112);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(122, 182, 186);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(166, 140, 177);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(222, 222, 212);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(30, 46, 47);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(233, 117, 90);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(122, 182, 186);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(125, 181, 135);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(230, 191, 94);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(230, 143, 77);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(194, 107, 112);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(122, 182, 186);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(166, 140, 177);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Gill Sans";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Gill Sans";
 
@@ -1044,15 +1044,15 @@
             //set series fill to gradient fill.
             series_systolic.Format.Fill.TwoColorGradient(GradientStyle.Horizontal, 1);
             series_systolic.Format.Fill.GradientAngle = 270;
-            series_systolic.Format.Fill.GradientStops[0].Color.RGB = Color.FromRGB(255, 172, 175);
-            series_systolic.Format.Fill.GradientStops[1].Color.RGB = Color.FromRGB(255, 227, 228);
+            series_systolic.Format.Fill.GradientStops[0].Color.RGB = Color.FromArgb(255, 172, 175);
+            series_systolic.Format.Fill.GradientStops[1].Color.RGB = Color.FromArgb(255, 227, 228);
             series_systolic.Format.Fill.GradientStops.Insert(0xFEC6C8, 0.35);
             series_systolic.Format.Line.Color.ObjectThemeColor = ThemeColor.Accent6;
 
             series_diatolic.Format.Fill.TwoColorGradient(GradientStyle.Horizontal, 1);
             series_diatolic.Format.Fill.GradientAngle = 270;
-            series_diatolic.Format.Fill.GradientStops[0].Color.RGB = Color.FromRGB(255, 192, 147);
-            series_diatolic.Format.Fill.GradientStops[1].Color.RGB = Color.FromRGB(255, 227, 212);
+            series_diatolic.Format.Fill.GradientStops[0].Color.RGB = Color.FromArgb(255, 192, 147);
+            series_diatolic.Format.Fill.GradientStops[1].Color.RGB = Color.FromArgb(255, 227, 212);
             series_diatolic.Format.Fill.GradientStops.Insert(0xFFCBA9, 0.35);
             series_diatolic.Format.Line.Color.ObjectThemeColor = ThemeColor.Accent5;
 
@@ -1174,7 +1174,7 @@
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Name = "COST DATA and CHART";
-            worksheet.TabColor = Color.FromRGB(63, 94, 101);
+            worksheet.TabColor = Color.FromArgb(63, 94, 101);
             worksheet.SheetView.DisplayGridlines = false;
 
             //Set Value.
@@ -1250,7 +1250,7 @@
             //Set the chart's title format.
             shape.Chart.ChartTitle.Text = "Cost Center";
             shape.Chart.ChartTitle.Font.ThemeFont = ThemeFont.Minor;
-            shape.Chart.ChartTitle.Font.Color.RGB = Color.FromRGB(89, 89, 89);
+            shape.Chart.ChartTitle.Font.Color.RGB = Color.FromArgb(89, 89, 89);
             shape.Chart.ChartTitle.Font.Size = 18;
 
             //Set the chart has no legend.
@@ -1278,18 +1278,18 @@
             //Create customize theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("test");
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(96, 89, 88);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(241, 246, 246);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(63, 94, 101);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(224, 170, 83);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(179, 29, 66);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(162, 67, 162);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(120, 59, 101);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(55, 120, 169);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(71, 166, 181);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(120, 59, 101);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(96, 89, 88);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(241, 246, 246);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(63, 94, 101);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(224, 170, 83);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(179, 29, 66);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(162, 67, 162);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(120, 59, 101);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(55, 120, 169);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(71, 166, 181);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(120, 59, 101);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Constantia";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Helvetica";
 
@@ -1340,7 +1340,7 @@
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Name = "Customer Profitability";
-            worksheet.TabColor = Color.FromRGB(131, 172, 121);
+            worksheet.TabColor = Color.FromArgb(131, 172, 121);
             worksheet.SheetView.DisplayGridlines = false;
 
             //Set Value.
@@ -1603,18 +1603,18 @@
             //Create customize theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("test");
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(77, 70, 70);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(255, 251, 239);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(255, 225, 132);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(102, 173, 166);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(131, 172, 121);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(254, 191, 102);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(219, 112, 87);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(165, 115, 137);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(102, 173, 166);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(165, 115, 137);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(77, 70, 70);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(255, 251, 239);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(255, 225, 132);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(102, 173, 166);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(131, 172, 121);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(254, 191, 102);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(219, 112, 87);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(165, 115, 137);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(102, 173, 166);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(165, 115, 137);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Marion";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Marion";
 
@@ -1671,13 +1671,13 @@
 
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Interior.Color = Color.White;
 
-            tableStyle.TableStyleElements[TableStyleElementType.FirstRowStripe].Interior.Color = Color.FromRGB(38, 38, 38);
+            tableStyle.TableStyleElements[TableStyleElementType.FirstRowStripe].Interior.Color = Color.FromArgb(38, 38, 38);
 
             tableStyle.TableStyleElements[TableStyleElementType.SecondRowStripe].Interior.Color = Color.Black;
 
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Font.Color = Color.Black;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromRGB(38, 38, 38);
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromRGB(68, 217, 255);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromArgb(38, 38, 38);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromArgb(68, 217, 255);
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.None;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.None;
@@ -1698,9 +1698,9 @@
             movieListBorderStyle.Font.Color = Color.White;
             movieListBorderStyle.IncludeBorder = true;
             movieListBorderStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
-            movieListBorderStyle.Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(38, 38, 38);
+            movieListBorderStyle.Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(38, 38, 38);
             movieListBorderStyle.IncludePatterns = true;
-            movieListBorderStyle.Interior.Color = Color.FromRGB(238, 219, 78);
+            movieListBorderStyle.Interior.Color = Color.FromArgb(238, 219, 78);
 
             IStyle nOStyle = workbook.Styles.Add("NO.");
             nOStyle.IncludeNumber = true;
@@ -1713,7 +1713,7 @@
             nOStyle.Font.Color = Color.White;
             nOStyle.IncludeBorder = true;
             nOStyle.IncludePatterns = true;
-            nOStyle.Interior.Color = Color.FromRGB(38, 38, 38);
+            nOStyle.Interior.Color = Color.FromArgb(38, 38, 38);
 
             IStyle reviewStyle = workbook.Styles.Add("Review");
             reviewStyle.IncludeNumber = true;
@@ -1725,7 +1725,7 @@
             reviewStyle.Font.Color = Color.White;
             reviewStyle.IncludeBorder = true;
             reviewStyle.IncludePatterns = true;
-            reviewStyle.Interior.Color = Color.FromRGB(38, 38, 38);
+            reviewStyle.Interior.Color = Color.FromArgb(38, 38, 38);
 
             IStyle yearStyle = workbook.Styles.Add("Year");
             yearStyle.IncludeNumber = true;
@@ -1738,14 +1738,14 @@
             yearStyle.Font.Color = Color.White;
             yearStyle.IncludeBorder = true;
             yearStyle.IncludePatterns = true;
-            yearStyle.Interior.Color = Color.FromRGB(38, 38, 38);
+            yearStyle.Interior.Color = Color.FromArgb(38, 38, 38);
 
             IStyle heading1Style = workbook.Styles["Heading 1"];
             heading1Style.IncludeAlignment = true;
             heading1Style.VerticalAlignment = VerticalAlignment.Bottom;
             heading1Style.IncludeBorder = true;
             heading1Style.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
-            heading1Style.Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(68, 217, 255);
+            heading1Style.Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(68, 217, 255);
             heading1Style.IncludeFont = true;
             heading1Style.Font.Name = "Helvetica";
             heading1Style.Font.Bold = false;
@@ -1762,12 +1762,12 @@
             normalStyle.Font.Size = 11;
             normalStyle.Font.Color = Color.White;
             normalStyle.IncludePatterns = true;
-            normalStyle.Interior.Color = Color.FromRGB(38, 38, 38);
+            normalStyle.Interior.Color = Color.FromArgb(38, 38, 38);
 
 
             //-----------------------------Use NamedStyle--------------------------
             worksheet.SheetView.DisplayGridlines = false;
-            worksheet.TabColor = Color.FromRGB(38, 38, 38);
+            worksheet.TabColor = Color.FromArgb(38, 38, 38);
             table.TableStyle = tableStyle;
 
             worksheet.Range["A2:L2"].Style = movieListBorderStyle;
@@ -1795,13 +1795,13 @@
             roundedRectangular.Name = "Rounded Rectangular Callout 7";
             roundedRectangular.Placement = Placement.Move;
             roundedRectangular.TextFrame.TextRange.Font.Name = "Helvetica";
-            roundedRectangular.TextFrame.TextRange.Font.Color.RGB = Color.FromRGB(38, 38, 38);
+            roundedRectangular.TextFrame.TextRange.Font.Color.RGB = Color.FromArgb(38, 38, 38);
 
             roundedRectangular.Fill.Solid();
-            roundedRectangular.Fill.Color.RGB = Color.FromRGB(68, 217, 255);
+            roundedRectangular.Fill.Color.RGB = Color.FromArgb(68, 217, 255);
             roundedRectangular.Fill.Transparency = 0;
             roundedRectangular.Line.Solid();
-            roundedRectangular.Line.Color.RGB = Color.FromRGB(0, 129, 162);
+            roundedRectangular.Line.Color.RGB = Color.FromArgb(0, 129, 162);
             roundedRectangular.Line.Weight = 2;
             roundedRectangular.Line.Transparency = 0;
 
@@ -1831,7 +1831,7 @@
             IShape lineShape = worksheet.Shapes.AddConnector(ConnectorType.Straight, 455.228f, 57.35f, 756.228f, 57.35f);
             lineShape.Line.Solid();
             lineShape.Line.Weight = 3;
-            lineShape.Line.Color.RGB = Color.FromRGB(38, 38, 38);
+            lineShape.Line.Color.RGB = Color.FromArgb(38, 38, 38);
             lineShape.Line.DashStyle = LineDashStyle.SysDot;
         </value>
   </data>
@@ -1882,7 +1882,7 @@
             workbook.DefaultTableStyle = "Personal Address Book";
 
             //Set WholeTable element style.
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(179, 35, 23);
+            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromArgb(179, 35, 23);
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
@@ -1893,7 +1893,7 @@
             tableStyle.TableStyleElements[TableStyleElementType.FirstColumn].Font.Bold = true;
 
             //Set SecondColumns element style.
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromRGB(179, 35, 23);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromArgb(179, 35, 23);
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
             
@@ -1902,7 +1902,7 @@
             //***********************************Set Named Styles*****************************
             IStyle normalStyle = workbook.Styles["Normal"];
             normalStyle.Font.Name = "Arial";
-            normalStyle.Font.Color = Color.FromRGB(179, 35, 23);
+            normalStyle.Font.Color = Color.FromArgb(179, 35, 23);
             normalStyle.HorizontalAlignment = HorizontalAlignment.Left;
             normalStyle.IndentLevel = 1;
             normalStyle.VerticalAlignment = VerticalAlignment.Center;
@@ -1915,13 +1915,13 @@
             titleStyle.Font.Name = "Arial";
             titleStyle.Font.Bold = true;
             titleStyle.Font.Size = 72;
-            titleStyle.Font.Color = Color.FromRGB(179, 35, 23);
+            titleStyle.Font.Color = Color.FromArgb(179, 35, 23);
 
             IStyle heading1Style = workbook.Styles["Heading 1"];
             heading1Style.IncludeBorder = false;
             heading1Style.Font.Name = "Arial";
             heading1Style.Font.Size = 18;
-            heading1Style.Font.Color = Color.FromRGB(179, 35, 23);
+            heading1Style.Font.Color = Color.FromArgb(179, 35, 23);
 
             IStyle dataStyle = workbook.Styles.Add("Data");
             dataStyle.IncludeNumber = true;
@@ -1935,7 +1935,7 @@
 
             //****************************************Use NamedStyle**************************
             worksheet.SheetView.DisplayGridlines = false;
-            worksheet.Range["B2:L2"].Interior.Color = Color.FromRGB(217, 217, 217);
+            worksheet.Range["B2:L2"].Interior.Color = Color.FromArgb(217, 217, 217);
             worksheet.Range["B3:B4"].Font.Bold = true;
             worksheet.Range["2:2"].HorizontalAlignment = HorizontalAlignment.Left;
 
@@ -2039,8 +2039,8 @@
             //---------------------------Set Table Style---------------------------
             ITableStyle assetsTableStyle = workbook.TableStyles.Add("Assets");
             workbook.DefaultTableStyle = "Assets";
-            assetsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromRGB(64, 64, 64);
-            assetsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(128, 128, 128);
+            assetsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromArgb(64, 64, 64);
+            assetsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromArgb(128, 128, 128);
             assetsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Dotted;
             assetsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
             assetsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.None;
@@ -2052,15 +2052,15 @@
             assetsTableStyle.TableStyleElements[TableStyleElementType.SecondRowStripe].StripeSize = 1;
 
             assetsTableStyle.TableStyleElements[TableStyleElementType.LastColumn].Font.Bold = true;
-            assetsTableStyle.TableStyleElements[TableStyleElementType.LastColumn].Font.Color = Color.FromRGB(61, 125, 137);
+            assetsTableStyle.TableStyleElements[TableStyleElementType.LastColumn].Font.Color = Color.FromArgb(61, 125, 137);
             assetsTableStyle.TableStyleElements[TableStyleElementType.LastColumn].Interior.Color = Color.White;
 
-            assetsTableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromRGB(61, 125, 137);
+            assetsTableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromArgb(61, 125, 137);
 
 
             ITableStyle debtsTableStyle = workbook.TableStyles.Add("Debts");
-            debtsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromRGB(64, 64, 64);
-            debtsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(128, 128, 128);
+            debtsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromArgb(64, 64, 64);
+            debtsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromArgb(128, 128, 128);
             debtsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Dotted;
             debtsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
             debtsTableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.None;
@@ -2072,19 +2072,19 @@
             debtsTableStyle.TableStyleElements[TableStyleElementType.SecondRowStripe].StripeSize = 1;
 
             debtsTableStyle.TableStyleElements[TableStyleElementType.LastColumn].Font.Bold = true;
-            debtsTableStyle.TableStyleElements[TableStyleElementType.LastColumn].Font.Color = Color.FromRGB(146, 75, 12);
+            debtsTableStyle.TableStyleElements[TableStyleElementType.LastColumn].Font.Color = Color.FromArgb(146, 75, 12);
             debtsTableStyle.TableStyleElements[TableStyleElementType.LastColumn].Interior.Color = Color.White;
 
-            debtsTableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromRGB(218, 113, 18);
+            debtsTableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromArgb(218, 113, 18);
 
 
             //----------------------------Set Named Styles-------------------------
             IStyle normalStyle = workbook.Styles["Normal"];
             normalStyle.Font.Name = "Century Gothic";
             normalStyle.Font.Size = 12;
-            normalStyle.Font.Color = Color.FromRGB(64, 64, 64);
-            normalStyle.Interior.Color = Color.FromRGB(243, 243, 236);
-            normalStyle.Interior.PatternColor = Color.FromRGB(243, 243, 236);
+            normalStyle.Font.Color = Color.FromArgb(64, 64, 64);
+            normalStyle.Interior.Color = Color.FromArgb(243, 243, 236);
+            normalStyle.Interior.PatternColor = Color.FromArgb(243, 243, 236);
             normalStyle.HorizontalAlignment = HorizontalAlignment.Left;
             normalStyle.IndentLevel = 1;
             normalStyle.VerticalAlignment = VerticalAlignment.Center;
@@ -2096,9 +2096,9 @@
             titleStyle.WrapText = true;
             titleStyle.Font.Name = "Century Gothic";
             titleStyle.Font.Size = 66;
-            titleStyle.Font.Color = Color.FromRGB(64, 64, 64);
+            titleStyle.Font.Color = Color.FromArgb(64, 64, 64);
             titleStyle.IncludePatterns = true;
-            titleStyle.Interior.Color = Color.FromRGB(243, 243, 236);
+            titleStyle.Interior.Color = Color.FromArgb(243, 243, 236);
 
             IStyle heading1Style = workbook.Styles["Heading 1"];
             heading1Style.IncludeAlignment = true;
@@ -2108,10 +2108,10 @@
             heading1Style.Font.Name = "Century Gothic";
             heading1Style.Font.Bold = false;
             heading1Style.Font.Size = 16;
-            heading1Style.Font.Color = Color.FromRGB(64, 64, 64);
+            heading1Style.Font.Color = Color.FromArgb(64, 64, 64);
             heading1Style.IncludeBorder = false;
             heading1Style.IncludePatterns = true;
-            heading1Style.Interior.Color = Color.FromRGB(243, 243, 236);
+            heading1Style.Interior.Color = Color.FromArgb(243, 243, 236);
 
             IStyle heading2Style = workbook.Styles["Heading 2"];
             heading2Style.IncludeNumber = true;
@@ -2122,10 +2122,10 @@
             heading2Style.VerticalAlignment = VerticalAlignment.Center;
             heading2Style.Font.Name = "Century Gothic";
             heading2Style.Font.Size = 16;
-            heading2Style.Font.Color = Color.FromRGB(64, 64, 64);
+            heading2Style.Font.Color = Color.FromArgb(64, 64, 64);
             heading2Style.IncludeBorder = false;
             heading2Style.IncludePatterns = true;
-            heading2Style.Interior.Color = Color.FromRGB(243, 243, 236);
+            heading2Style.Interior.Color = Color.FromArgb(243, 243, 236);
 
             IStyle heading3Style = workbook.Styles["Heading 3"];
             heading3Style.IncludeAlignment = true;
@@ -2135,9 +2135,9 @@
             heading3Style.Font.Name = "Century Gothic";
             heading3Style.Font.Bold = false;
             heading3Style.Font.Size = 27;
-            heading3Style.Font.Color = Color.FromRGB(64, 64, 64);
+            heading3Style.Font.Color = Color.FromArgb(64, 64, 64);
             heading3Style.IncludePatterns = true;
-            heading3Style.Interior.Color = Color.FromRGB(243, 243, 236);
+            heading3Style.Interior.Color = Color.FromArgb(243, 243, 236);
 
             IStyle heading4Style = workbook.Styles["Heading 4"];
             heading4Style.Font.Name = "Century Gothic";
@@ -2166,31 +2166,31 @@
             worksheet.Range["C2:C4"].Style = heading2Style;
             worksheet.Range["B9:D9"].Style = heading4Style;
             worksheet.Range["D10:D30"].Style = currencyStyle;
-            worksheet.Range["D10:D30"].Font.Color = Color.FromRGB(61, 125, 137);
+            worksheet.Range["D10:D30"].Font.Color = Color.FromArgb(61, 125, 137);
 
             worksheet.Range["B34:C34"].Style = heading4Style;
             worksheet.Range["C35:C44"].Style = currencyStyle;
-            worksheet.Range["C35:C44"].Font.Color = Color.FromRGB(218, 113, 18);
+            worksheet.Range["C35:C44"].Font.Color = Color.FromArgb(218, 113, 18);
             worksheet.Range["B1"].Style = titleStyle;
             worksheet.Range["B8"].Style = heading3Style;
             worksheet.Range["B33"].Style = heading3Style;
 
             worksheet.Range["B3:C3"].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Hair;
-            worksheet.Range["B3:C3"].Borders[BordersIndex.EdgeTop].Color = Color.FromRGB(128, 128, 128);
+            worksheet.Range["B3:C3"].Borders[BordersIndex.EdgeTop].Color = Color.FromArgb(128, 128, 128);
             worksheet.Range["B3:C3"].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Hair;
-            worksheet.Range["B3:C3"].Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(128, 128, 128);
+            worksheet.Range["B3:C3"].Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(128, 128, 128);
 
 
             //--------------------------------Add Shape--------------------------------
             IShape recShape1 = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 17.81, 282.75, 20.963, 21.75);
             recShape1.Line.Color.ColorType = SolidColorType.None;
-            recShape1.Fill.Color.RGB= Color.FromRGB(60, 126, 138);
+            recShape1.Fill.Color.RGB= Color.FromArgb(60, 126, 138);
             IShape recShape2 = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 17.81, 312.75, 20.963, 21.75);
             recShape2.Line.Color.ColorType = SolidColorType.None;
-            recShape2.Fill.Color.RGB = Color.FromRGB(218, 118, 13);
+            recShape2.Fill.Color.RGB = Color.FromArgb(218, 118, 13);
             IShape recShape3 = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 17.81, 342.75, 20.963, 21.75);
             recShape3.Line.Color.ColorType = SolidColorType.None;
-            recShape3.Fill.Color.RGB = Color.FromRGB(84, 138, 57);
+            recShape3.Fill.Color.RGB = Color.FromArgb(84, 138, 57);
 
             IShape pieShape = worksheet.Shapes.AddChart(ChartType.Pie, 442.5, 26.25, 346, 350.25);
             pieShape.Chart.HasLegend = false;
@@ -2214,9 +2214,9 @@
             chartSeries.DataLabels.ShowPercentage = true;
             chartSeries.DataLabels.Position = DataLabelPosition.Center;
 
-            chartSeries.Points[0].Format.Fill.Color.RGB = Color.FromRGB(60, 126, 138);
-            chartSeries.Points[1].Format.Fill.Color.RGB = Color.FromRGB(218, 118, 13);
-            chartSeries.Points[2].Format.Fill.Color.RGB = Color.FromRGB(84, 138, 57);
+            chartSeries.Points[0].Format.Fill.Color.RGB = Color.FromArgb(60, 126, 138);
+            chartSeries.Points[1].Format.Fill.Color.RGB = Color.FromArgb(218, 118, 13);
+            chartSeries.Points[2].Format.Fill.Color.RGB = Color.FromArgb(84, 138, 57);
             chartSeries.Explosion = 1;
 
         </value>
@@ -2236,7 +2236,7 @@
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Name = "To-Do List";
-            worksheet.TabColor = Color.FromRGB(148, 112, 135);
+            worksheet.TabColor = Color.FromArgb(148, 112, 135);
             worksheet.SheetView.DisplayGridlines = false;
 
             //Set Value.
@@ -2444,18 +2444,18 @@
             //Create customize theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("test");
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(37, 28, 34);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(240, 248, 246);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(148, 112, 135);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(71, 166, 181);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(234, 194, 53);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(107, 192, 129);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(233, 115, 61);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(251, 147, 59);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(71, 166, 181);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(148, 112, 135);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(37, 28, 34);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(240, 248, 246);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(148, 112, 135);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(71, 166, 181);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(234, 194, 53);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(107, 192, 129);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(233, 115, 61);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(251, 147, 59);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(71, 166, 181);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(148, 112, 135);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Helvetica Neue";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Bookman Old Style";
 
@@ -3156,7 +3156,7 @@
             GrapeCity.Documents.Excel.Drawing.IAxis value_axis = shape.Chart.Axes.Item(GrapeCity.Documents.Excel.Drawing.AxisType.Value);
 
             //set value axis's format.
-            value_axis.Format.Line.Color.RGB = Color.FromRGB(91, 155, 213);
+            value_axis.Format.Line.Color.RGB = Color.FromArgb(91, 155, 213);
             value_axis.Format.Line.Weight = 2;
             value_axis.Format.Line.Style = GrapeCity.Documents.Excel.Drawing.LineStyle.Single;
 
@@ -4267,7 +4267,7 @@
 
             //config up down bars for line chart.
             shape.Chart.LineGroups[0].HasUpDownBars = true;
-            shape.Chart.LineGroups[0].UpBars.Format.Fill.Color.RGB = Color.FromRGB(199, 235, 217);
+            shape.Chart.LineGroups[0].UpBars.Format.Fill.Color.RGB = Color.FromArgb(199, 235, 217);
             shape.Chart.LineGroups[0].DownBars.Format.Fill.Color.RGB = Color.LightPink;
         </value>
   </data>
@@ -4406,7 +4406,7 @@
             GrapeCity.Documents.Excel.Drawing.ISeries series1 = shape.Chart.SeriesCollection[0];
            
             //set data point format.
-            series1.Points[2].Format.Fill.Color.RGB = Color.FromRGB(0,176,240);
+            series1.Points[2].Format.Fill.Color.RGB = Color.FromArgb(0,176,240);
             series1.Points[2].Format.Line.Color.RGB = Color.Blue;
             series1.Points[2].Format.Line.Weight = 1.5;
 
@@ -5905,7 +5905,7 @@
             style.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
             style.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Double;
             style.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Double;
-            style.Borders.Color = Color.FromRGB(0, 255, 0);
+            style.Borders.Color = Color.FromArgb(0, 255, 0);
 
             //Font
             style.Font.ThemeColor = ThemeColor.Accent1;
@@ -5936,7 +5936,7 @@
             //Fill
             style.Interior.ColorIndex = 5;
             style.Interior.Pattern = GrapeCity.Documents.Excel.Pattern.Down;
-            style.Interior.PatternColor = Color.FromRGB(0, 0, 255);
+            style.Interior.PatternColor = Color.FromArgb(0, 0, 255);
 
 
             style.IncludeAlignment = false;
@@ -5967,7 +5967,7 @@
             style.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
             style.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Double;
             style.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Double;
-            style.Borders.Color = Color.FromRGB(0, 255, 0);
+            style.Borders.Color = Color.FromArgb(0, 255, 0);
 
             //Font
             style.Font.ThemeColor = ThemeColor.Accent1;
@@ -5998,7 +5998,7 @@
             //Fill
             style.Interior.ColorIndex = 5;
             style.Interior.Pattern = GrapeCity.Documents.Excel.Pattern.Down;
-            style.Interior.PatternColor = Color.FromRGB(0, 0, 255);
+            style.Interior.PatternColor = Color.FromArgb(0, 0, 255);
 
 
             style.IncludeAlignment = false;
@@ -6998,12 +6998,12 @@
             //Color scale
             IColorScale cf1 = sheet.Range["B10:B19"].FormatConditions.AddColorScale(ColorScaleType.ThreeColorScale);
             cf1.ColorScaleCriteria[0].Type = ConditionValueTypes.LowestValue;
-            cf1.ColorScaleCriteria[0].FormatColor.Color = Color.FromRGB(248, 105, 107);
+            cf1.ColorScaleCriteria[0].FormatColor.Color = Color.FromArgb(248, 105, 107);
             cf1.ColorScaleCriteria[1].Type = ConditionValueTypes.Percentile;
             cf1.ColorScaleCriteria[1].Value = 50;
-            cf1.ColorScaleCriteria[1].FormatColor.Color = Color.FromRGB(255, 235, 132);
+            cf1.ColorScaleCriteria[1].FormatColor.Color = Color.FromArgb(255, 235, 132);
             cf1.ColorScaleCriteria[2].Type = ConditionValueTypes.HighestValue;
-            cf1.ColorScaleCriteria[2].FormatColor.Color = Color.FromRGB(99, 190, 123);
+            cf1.ColorScaleCriteria[2].FormatColor.Color = Color.FromArgb(99, 190, 123);
 
             //Data bar
             sheet.Range["C14"].Value = -5;
@@ -7012,11 +7012,11 @@
             cf2.MinPoint.Type = ConditionValueTypes.AutomaticMin;
             cf2.MaxPoint.Type = ConditionValueTypes.AutomaticMax;
             cf2.BarFillType = DataBarFillType.Gradient;
-            cf2.BarColor.Color = Color.FromRGB(0, 138, 239);
-            cf2.BarBorder.Color.Color = Color.FromRGB(0, 138, 239);
-            cf2.NegativeBarFormat.Color.Color = Color.FromRGB(255, 0, 0);
+            cf2.BarColor.Color = Color.FromArgb(0, 138, 239);
+            cf2.BarBorder.Color.Color = Color.FromArgb(0, 138, 239);
+            cf2.NegativeBarFormat.Color.Color = Color.FromArgb(255, 0, 0);
             cf2.NegativeBarFormat.BorderColorType = DataBarNegativeColorType.Color;
-            cf2.NegativeBarFormat.BorderColor.Color = Color.FromRGB(255, 0, 0);
+            cf2.NegativeBarFormat.BorderColor.Color = Color.FromArgb(255, 0, 0);
             cf2.AxisColor.Color = Color.Black;
             cf2.AxisPosition = DataBarAxisPosition.Automatic;
 
@@ -8305,7 +8305,7 @@
             shape.Width = 500;
             shape.Height = 200;
 
-            shape.TextFrame.TextRange.Font.Color.RGB = GrapeCity.Documents.Excel.Color.FromRGB(0, 255, 0);
+            shape.TextFrame.TextRange.Font.Color.RGB = GrapeCity.Documents.Excel.Color.FromArgb(0, 255, 0);
             shape.TextFrame.TextRange.Font.Bold = true;
             shape.TextFrame.TextRange.Font.Italic = true;
             shape.TextFrame.TextRange.Font.Size = 20;
@@ -9206,22 +9206,22 @@
             style.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.White;
             style.TableStyleElements[TableStyleElementType.WholeTable].Font.Strikethrough = true;
             style.TableStyleElements[TableStyleElementType.WholeTable].Borders.LineStyle = BorderLineStyle.Dotted;
-            style.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(0, 193, 213);
-            style.TableStyleElements[TableStyleElementType.WholeTable].Interior.Color = Color.FromRGB(59, 92, 170);
+            style.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromArgb(0, 193, 213);
+            style.TableStyleElements[TableStyleElementType.WholeTable].Interior.Color = Color.FromArgb(59, 92, 170);
 
             //Set FirstColumnStripe element style.
             style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Font.Bold = true;
-            style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Font.Color = Color.FromRGB(255, 0, 0);
+            style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Font.Color = Color.FromArgb(255, 0, 0);
             style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Borders.LineStyle = BorderLineStyle.Thick;
             style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Borders.ThemeColor = ThemeColor.Accent5;
-            style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Interior.Color = Color.FromRGB(255, 255, 0);
+            style.TableStyleElements[TableStyleElementType.FirstColumnStripe].Interior.Color = Color.FromArgb(255, 255, 0);
             style.TableStyleElements[TableStyleElementType.FirstColumnStripe].StripeSize = 2;
 
             //Set SecondColumnStripe element style.
-            style.TableStyleElements[TableStyleElementType.SecondColumnStripe].Font.Color = Color.FromRGB(255, 0, 255);
+            style.TableStyleElements[TableStyleElementType.SecondColumnStripe].Font.Color = Color.FromArgb(255, 0, 255);
             style.TableStyleElements[TableStyleElementType.SecondColumnStripe].Borders.LineStyle = BorderLineStyle.DashDot;
-            style.TableStyleElements[TableStyleElementType.SecondColumnStripe].Borders.Color = Color.FromRGB(42, 105, 162);
-            style.TableStyleElements[TableStyleElementType.SecondColumnStripe].Interior.Color = Color.FromRGB(204, 204, 255);
+            style.TableStyleElements[TableStyleElementType.SecondColumnStripe].Borders.Color = Color.FromArgb(42, 105, 162);
+            style.TableStyleElements[TableStyleElementType.SecondColumnStripe].Interior.Color = Color.FromArgb(204, 204, 255);
 
             //add table.
             IWorksheet worksheet = workbook.Worksheets[0];
@@ -10044,13 +10044,13 @@
             heading1Style.Font.Color = Color.White;
             heading1Style.IncludeBorder = false;
             heading1Style.IncludePatterns = true;
-            heading1Style.Interior.Color = Color.FromRGB(32, 61, 64);
+            heading1Style.Interior.Color = Color.FromArgb(32, 61, 64);
 
             IStyle percentStyle = workbook.Styles["Percent"];
             percentStyle.IncludeAlignment = true;
             percentStyle.HorizontalAlignment = HorizontalAlignment.Center;
             percentStyle.IncludeFont = true;
-            percentStyle.Font.Color = Color.FromRGB(32, 61, 64);
+            percentStyle.Font.Color = Color.FromArgb(32, 61, 64);
             percentStyle.Font.Name = "Century Gothic";
             percentStyle.Font.Bold = true;
             percentStyle.Font.Size = 14;
@@ -10061,18 +10061,18 @@
             worksheet.Range["G3"].Style = percentStyle;
 
             worksheet.Range["E6:G6"].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Medium;
-            worksheet.Range["E6:G6"].Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(32, 61, 64);
+            worksheet.Range["E6:G6"].Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(32, 61, 64);
             worksheet.Range["E7:G7"].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Medium;
-            worksheet.Range["E7:G7"].Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(32, 61, 64);
+            worksheet.Range["E7:G7"].Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(32, 61, 64);
 
-            worksheet.Range["E9:G9"].Interior.Color = Color.FromRGB(32, 61, 64);
+            worksheet.Range["E9:G9"].Interior.Color = Color.FromArgb(32, 61, 64);
             worksheet.Range["E9:G9"].HorizontalAlignment = HorizontalAlignment.Left;
             worksheet.Range["E9:G9"].VerticalAlignment = VerticalAlignment.Center;
             worksheet.Range["E9:G9"].Font.Name = "Century Gothic";
             worksheet.Range["E9:G9"].Font.Bold = true;
             worksheet.Range["E9:G9"].Font.Size = 11;
             worksheet.Range["E9:G9"].Font.Color = Color.White;
-            worksheet.Range["E3:F3"].Borders.Color = Color.FromRGB(32, 61, 64);
+            worksheet.Range["E3:F3"].Borders.Color = Color.FromArgb(32, 61, 64);
 
             //----------------------------Set Conditional Format-------------------------
             IDataBar dataBar = worksheet.Range["E3"].FormatConditions.AddDatabar();
@@ -10104,8 +10104,8 @@
 
             ISeries chartSeries = shape.Chart.SeriesCollection.NewSeries();
             chartSeries.Formula = "=SERIES(\"Simple Budget\",{\"Income\",\"Expenses\"},'Sheet1'!$G$6:$G$7,1)";
-            chartSeries.Points[0].Format.Fill.Color.RGB = Color.FromRGB(176, 21, 19);
-            chartSeries.Points[1].Format.Fill.Color.RGB = Color.FromRGB(234, 99, 18);
+            chartSeries.Points[0].Format.Fill.Color.RGB = Color.FromArgb(176, 21, 19);
+            chartSeries.Points[1].Format.Fill.Color.RGB = Color.FromArgb(234, 99, 18);
             chartSeries.DataLabels.Font.Size = 11;
             chartSeries.DataLabels.Font.Color.RGB = Color.Black;
             chartSeries.DataLabels.ShowValue = true;

@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="CodeResource_VB.Designer.vb" />
     <None Remove="Resource\Annual financial report.csv" />
     <None Remove="Resource\list.png" />
     <None Remove="Resource\logo.png" />
@@ -353,7 +354,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="1.5.0.3" />
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="1.5.0.4" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
@@ -362,6 +363,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>CodeResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="CodeResource_VB.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CodeResource_VB.resx</DependentUpon>
     </Compile>
     <Compile Update="StringResource.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -374,6 +380,10 @@
     <EmbeddedResource Update="CodeResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CodeResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CodeResource_VB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CodeResource_VB.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resource\xlsx\Student calendar %28Mon%29.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

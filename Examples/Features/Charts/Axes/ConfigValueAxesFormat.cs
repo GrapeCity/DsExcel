@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.Features.Charts.Axes
@@ -24,7 +25,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts.Axes
             GrapeCity.Documents.Excel.Drawing.IAxis value_axis = shape.Chart.Axes.Item(GrapeCity.Documents.Excel.Drawing.AxisType.Value);
 
             //set value axis's format.
-            value_axis.Format.Line.Color.RGB = Color.FromRGB(91, 155, 213);
+            value_axis.Format.Line.Color.RGB = Color.FromArgb(91, 155, 213);
             value_axis.Format.Line.Weight = 2;
             value_axis.Format.Line.Style = GrapeCity.Documents.Excel.Drawing.LineStyle.Single;
 

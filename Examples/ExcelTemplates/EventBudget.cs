@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file Event budget.xlsx from resource
-            var fileStream = this.GetTemplateStream("Event budget.xlsx");
+            var fileStream = this.GetTemplateStream();
 
             workbook.Open(fileStream);
 

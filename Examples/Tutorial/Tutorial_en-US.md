@@ -25,9 +25,10 @@ In this tutorial, we create a real-life scenario with GrapeCity Documents for Ex
 
 ## Add Namespace
 
-Open Program.cs and add these two namespaces.
+Open Program.cs and add these three namespaces.
 
 ```csharp
+using System.Drawing;
 using GrapeCity.Documents.Excel;
 using GrapeCity.Documents.Excel.Drawing; 
 ```
@@ -159,13 +160,13 @@ heading1Style.Font.Size = 11;
 heading1Style.Font.Color = Color.White;
 heading1Style.IncludeBorder = false;
 heading1Style.IncludePatterns = true;
-heading1Style.Interior.Color = Color.FromRGB(32, 61, 64);
+heading1Style.Interior.Color = Color.FromArgb(32, 61, 64);
 
 IStyle percentStyle = workbook.Styles["Percent"];
 percentStyle.IncludeAlignment = true;
 percentStyle.HorizontalAlignment = HorizontalAlignment.Center;
 percentStyle.IncludeFont = true;
-percentStyle.Font.Color = Color.FromRGB(32, 61, 64);
+percentStyle.Font.Color = Color.FromArgb(32, 61, 64);
 percentStyle.Font.Name = "Century Gothic";
 percentStyle.Font.Bold = true;
 percentStyle.Font.Size = 14;
@@ -176,18 +177,18 @@ worksheet.Range["B2, B9, E2, E5"].Style = heading1Style;
 worksheet.Range["G3"].Style = percentStyle;
 
 worksheet.Range["E6:G6"].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Medium;
-worksheet.Range["E6:G6"].Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(32, 61, 64);
+worksheet.Range["E6:G6"].Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(32, 61, 64);
 worksheet.Range["E7:G7"].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Medium;
-worksheet.Range["E7:G7"].Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(32, 61, 64);
+worksheet.Range["E7:G7"].Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(32, 61, 64);
 
-worksheet.Range["E9:G9"].Interior.Color = Color.FromRGB(32, 61, 64);
+worksheet.Range["E9:G9"].Interior.Color = Color.FromArgb(32, 61, 64);
 worksheet.Range["E9:G9"].HorizontalAlignment = HorizontalAlignment.Left;
 worksheet.Range["E9:G9"].VerticalAlignment = VerticalAlignment.Center;
 worksheet.Range["E9:G9"].Font.Name = "Century Gothic";
 worksheet.Range["E9:G9"].Font.Bold = true;
 worksheet.Range["E9:G9"].Font.Size = 11;
 worksheet.Range["E9:G9"].Font.Color = Color.White;
-worksheet.Range["E3:F3"].Borders.Color = Color.FromRGB(32, 61, 64);
+worksheet.Range["E3:F3"].Borders.Color = Color.FromArgb(32, 61, 64);
 ```
 
 
@@ -230,8 +231,8 @@ series_axis.TickLabels.Font.Color.RGB = Color.Black;
 
 ISeries chartSeries = shape.Chart.SeriesCollection.NewSeries();
 chartSeries.Formula = "=SERIES(\"Simple Budget\",{\"Income\",\"Expenses\"},'Sheet1'!$G$6:$G$7,1)";
-chartSeries.Points[0].Format.Fill.Color.RGB = Color.FromRGB(176, 21, 19);
-chartSeries.Points[1].Format.Fill.Color.RGB = Color.FromRGB(234, 99, 18);
+chartSeries.Points[0].Format.Fill.Color.RGB = Color.FromArgb(176, 21, 19);
+chartSeries.Points[1].Format.Fill.Color.RGB = Color.FromArgb(234, 99, 18);
 chartSeries.DataLabels.Font.Size = 11;
 chartSeries.DataLabels.Font.Color.RGB = Color.Black;
 chartSeries.DataLabels.ShowValue = true;

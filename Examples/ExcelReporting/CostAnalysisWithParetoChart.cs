@@ -1,6 +1,7 @@
 ﻿using GrapeCity.Documents.Excel.Drawing;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
@@ -25,7 +26,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Name = "COST DATA and CHART";
-            worksheet.TabColor = Color.FromRGB(63, 94, 101);
+            worksheet.TabColor = Color.FromArgb(63, 94, 101);
             worksheet.SheetView.DisplayGridlines = false;
 
             //Set Value.
@@ -101,7 +102,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //Set the chart's title format.
             shape.Chart.ChartTitle.Text = "Cost Center";
             shape.Chart.ChartTitle.Font.ThemeFont = ThemeFont.Minor;
-            shape.Chart.ChartTitle.Font.Color.RGB = Color.FromRGB(89, 89, 89);
+            shape.Chart.ChartTitle.Font.Color.RGB = Color.FromArgb(89, 89, 89);
             shape.Chart.ChartTitle.Font.Size = 18;
 
             //Set the chart has no legend.
@@ -129,18 +130,18 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //Create customize theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("test");
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(96, 89, 88);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(241, 246, 246);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(63, 94, 101);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(224, 170, 83);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(179, 29, 66);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(162, 67, 162);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(120, 59, 101);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(55, 120, 169);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(71, 166, 181);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(120, 59, 101);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(96, 89, 88);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(241, 246, 246);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(63, 94, 101);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(224, 170, 83);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(179, 29, 66);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(162, 67, 162);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(120, 59, 101);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(55, 120, 169);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(71, 166, 181);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(120, 59, 101);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Constantia";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Helvetica";
 

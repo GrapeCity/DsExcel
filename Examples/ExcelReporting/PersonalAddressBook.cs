@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
@@ -63,7 +64,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             workbook.DefaultTableStyle = "Personal Address Book";
 
             //Set WholeTable element style.
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(179, 35, 23);
+            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromArgb(179, 35, 23);
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
@@ -74,7 +75,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             tableStyle.TableStyleElements[TableStyleElementType.FirstColumn].Font.Bold = true;
 
             //Set SecondColumns element style.
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromRGB(179, 35, 23);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromArgb(179, 35, 23);
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
             
@@ -83,7 +84,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //***********************************Set Named Styles*****************************
             IStyle normalStyle = workbook.Styles["Normal"];
             normalStyle.Font.Name = "Arial";
-            normalStyle.Font.Color = Color.FromRGB(179, 35, 23);
+            normalStyle.Font.Color = Color.FromArgb(179, 35, 23);
             normalStyle.HorizontalAlignment = HorizontalAlignment.Left;
             normalStyle.IndentLevel = 1;
             normalStyle.VerticalAlignment = VerticalAlignment.Center;
@@ -96,13 +97,13 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             titleStyle.Font.Name = "Arial";
             titleStyle.Font.Bold = true;
             titleStyle.Font.Size = 72;
-            titleStyle.Font.Color = Color.FromRGB(179, 35, 23);
+            titleStyle.Font.Color = Color.FromArgb(179, 35, 23);
 
             IStyle heading1Style = workbook.Styles["Heading 1"];
             heading1Style.IncludeBorder = false;
             heading1Style.Font.Name = "Arial";
             heading1Style.Font.Size = 18;
-            heading1Style.Font.Color = Color.FromRGB(179, 35, 23);
+            heading1Style.Font.Color = Color.FromArgb(179, 35, 23);
 
             IStyle dataStyle = workbook.Styles.Add("Data");
             dataStyle.IncludeNumber = true;
@@ -116,7 +117,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
 
             //****************************************Use NamedStyle**************************
             worksheet.SheetView.DisplayGridlines = false;
-            worksheet.Range["B2:L2"].Interior.Color = Color.FromRGB(217, 217, 217);
+            worksheet.Range["B2:L2"].Interior.Color = Color.FromArgb(217, 217, 217);
             worksheet.Range["B3:B4"].Font.Bold = true;
             worksheet.Range["2:2"].HorizontalAlignment = HorizontalAlignment.Left;
 

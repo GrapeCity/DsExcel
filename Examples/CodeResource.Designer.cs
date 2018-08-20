@@ -68,9 +68,9 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            //create a custom theme.
         ///            Themes themes = new Themes();
         ///            ITheme theme = themes.Add(&quot;testTheme&quot;);
-        ///            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-        ///            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-        ///            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(255, 255, 2 [rest of string was truncated]&quot;;.
+        ///            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+        ///            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+        ///            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(255, 255, 2 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_BasicSalesReport {
             get {
@@ -108,8 +108,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            //create a custom theme.
         ///            Themes themes = new Themes();
         ///            ITheme theme = themes.Add(&quot;testTheme&quot;);
-        ///            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-        ///            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
+        ///            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+        ///            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
         ///            theme.Theme [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_BloodPressureTracker {
@@ -1149,7 +1149,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///                { &quot;Blue&quot;, 1 },
         ///                { &quot;Red&quot;, 2 },
         ///                { &quot;Green&quot;, 3 },
-        ///                { &quot;Purple&quot;, 4 },                     /// [rest of string was truncated]&quot;;.
+        ///                { &quot;Purple&quot;, 4 },             
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_Features_Charts_ChartGallery_PieChart {
             get {
@@ -1570,7 +1571,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            {
         ///                {null, &quot;S1&quot;, &quot;S2&quot;, &quot;S3&quot;},
         ///                {&quot;Item1&quot;, 10, 25, 25},
-        ///                {&quot;Item2&quot;, -51, -36, 27},        /// [rest of string was truncated]&quot;;.
+        ///                {&quot;Item2&quot;, -51, -36, 27},
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_Features_Charts_DataPoint_ConfigSecondarySection {
             get {
@@ -1784,7 +1786,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            {
         ///                {null, &quot;S1&quot;, &quot;S2&quot;, &quot;S3&quot;},
         ///                {&quot;Item1&quot;, 10, 25, 25},
-        ///                {&quot;Item2&quot;, -51, -36, 27},        /// [rest of string was truncated]&quot;;.
+        ///                {&quot;Item2&quot;, -51, -36, 27},
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_Features_Charts_Series_ConfigBubbleChartLayout {
             get {
@@ -3123,7 +3126,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            workbook.Names.Add(&quot;test3&quot;, &quot;=Sheet1!$A$1&quot;);
         ///
         ///            worksheet1.Range[&quot;A1&quot;].Value = 1;
-        ///        /// [rest of string was truncated]&quot;;.
+        ///
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_Features_Formulas_AddCustomName {
             get {
@@ -4171,7 +4175,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///
         ///            sheet.Range[&quot;C2&quot;].Value = &quot;Center Alignment&quot;;
         ///            sheet.Range[&quot;C2&quot;].HorizontalAlignment = HorizontalAlignment.Center;
-        ///        /// [rest of string was truncated]&quot;;.
+        ///
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_Features_PDFExporting_Text_TextStyle {
             get {
@@ -4786,7 +4791,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            shape.Width = 300;
         ///            shape.Height = 200;
         ///
-        ///            shape.TextFrame.TextRange.Font.Color.RGB = GrapeCity.Documents.Excel.Color.FromRGB(0, 255, 0);
+        ///            shape.TextFrame.TextRange.Font.Color.RGB = GrapeCity.Documents.Excel.Color.FromArgb(0, 255, 0);
         ///            shape.TextFram [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_Features_Shape_SetShapeText {
@@ -5258,7 +5263,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            //Add one custom table style.
         ///            ITableStyle style = workbook.TableStyles.Add(&quot;test&quot;);
         ///            //set custom table style for table.
-        ///            table.TableStyle = style;        /// [rest of string was truncated]&quot;;.
+        ///            table.TableStyle = style;
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_Features_Tables_ApplyTableStyle {
             get {

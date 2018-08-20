@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
@@ -19,7 +20,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Name = "To-Do List";
-            worksheet.TabColor = Color.FromRGB(148, 112, 135);
+            worksheet.TabColor = Color.FromArgb(148, 112, 135);
             worksheet.SheetView.DisplayGridlines = false;
 
             //Set Value.
@@ -227,18 +228,18 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //Create customize theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("test");
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(37, 28, 34);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(240, 248, 246);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(148, 112, 135);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(71, 166, 181);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(234, 194, 53);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(107, 192, 129);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(233, 115, 61);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(251, 147, 59);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(71, 166, 181);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(148, 112, 135);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(37, 28, 34);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(240, 248, 246);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(148, 112, 135);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(71, 166, 181);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(234, 194, 53);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(107, 192, 129);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(233, 115, 61);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(251, 147, 59);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(71, 166, 181);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(148, 112, 135);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Helvetica Neue";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Bookman Old Style";
 

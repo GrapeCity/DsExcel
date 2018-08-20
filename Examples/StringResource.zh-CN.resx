@@ -1602,4 +1602,28 @@ Spread表格组件支持以下几种类型的迷你图：
   <data name="CellInfo.Name" xml:space="preserve">
     <value>使用CellInfo</value>
   </data>
+  <data name="CustomFunctions.Descrip" xml:space="preserve">
+    <value>自定义函数是一个开放性的功能，它提供给用户实现任何算法逻辑的方法，自定义好的方法可以像内置的方法一样用在表格控件中。</value>
+  </data>
+  <data name="CustomFunctions.Name" xml:space="preserve">
+    <value>自定义函数</value>
+  </data>
+  <data name="MyAddFunction.Name" xml:space="preserve">
+    <value>自定义Add方法</value>
+  </data>
+  <data name="MyConcatenateFunction.Name" xml:space="preserve">
+    <value>自定义Concatenate方法</value>
+  </data>
+  <data name="MyIsErrorFunction.Name" xml:space="preserve">
+    <value>自定义IsError方法</value>
+  </data>
+  <data name="MySumFunction.Name" xml:space="preserve">
+    <value>自定义Sum方法</value>
+  </data>
+  <data name="MyConditionalSumFunction.Name" xml:space="preserve">
+    <value>自定义条件Sum方法</value>
+  </data>
+  <data name="MyIsMergedRangeFunction" xml:space="preserve">
+    <value>自定义IsMergedRange方法</value>
+  </data>
 </root>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
@@ -68,8 +69,8 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             workbook.DefaultTableStyle = "Bid Tracker";
 
             //Set WholeTable element style.
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromRGB(89, 89, 89);
-            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromRGB(89, 89, 89);
+            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Font.Color = Color.FromArgb(89, 89, 89);
+            tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders.Color = Color.FromArgb(89, 89, 89);
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
@@ -78,15 +79,15 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
 
             //Set HeaderRow element style.
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromRGB(89, 89, 89);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromArgb(89, 89, 89);
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromRGB(131, 95, 1);
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.PatternColor = Color.FromRGB(254, 184, 10);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromArgb(131, 95, 1);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.PatternColor = Color.FromArgb(254, 184, 10);
 
 
             //Set TotalRow element style.
@@ -97,7 +98,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
             tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Interior.Color = Color.FromRGB(131, 95, 1);
+            tableStyle.TableStyleElements[TableStyleElementType.TotalRow].Interior.Color = Color.FromArgb(131, 95, 1);
 
 
 
@@ -105,7 +106,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             IStyle titleStyle = workbook.Styles["Title"];
             titleStyle.Font.Name = "Trebuchet MS";
             titleStyle.Font.Size = 36;
-            titleStyle.Font.Color = Color.FromRGB(56, 145, 167);
+            titleStyle.Font.Color = Color.FromArgb(56, 145, 167);
             titleStyle.IncludeAlignment = true;
             titleStyle.VerticalAlignment = VerticalAlignment.Center;
 
@@ -120,7 +121,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             heading1Style.Font.Color = Color.White;
             heading1Style.Font.Bold = false;
             heading1Style.IncludePatterns = true;
-            heading1Style.Interior.Color = Color.FromRGB(131, 95, 1);
+            heading1Style.Interior.Color = Color.FromArgb(131, 95, 1);
             heading1Style.Font.Name = "Trebuchet MS";
 
 
@@ -152,7 +153,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             normalStyle.IndentLevel = 1;
             normalStyle.VerticalAlignment = VerticalAlignment.Center;
             normalStyle.WrapText = true;
-            normalStyle.Font.Color = Color.FromRGB(89, 89, 89);
+            normalStyle.Font.Color = Color.FromArgb(89, 89, 89);
 
 
             IStyle currencyStyle = workbook.Styles["Currency"];
@@ -172,7 +173,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             percentStyle.Font.Name = "Trebuchet MS";
             percentStyle.Font.Size = 20;
             percentStyle.Font.Bold = true;
-            percentStyle.Font.Color = Color.FromRGB(89, 89, 89);
+            percentStyle.Font.Color = Color.FromArgb(89, 89, 89);
             percentStyle.Font.Name = "Trebuchet MS";
 
 
@@ -194,7 +195,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             dataBar.MaxPoint.Value = 0;
 
             dataBar.BarFillType = DataBarFillType.Gradient;
-            dataBar.BarColor.Color = Color.FromRGB(126, 194, 211);
+            dataBar.BarColor.Color = Color.FromArgb(126, 194, 211);
             dataBar.Direction = DataBarDirection.Context;
 
             dataBar.AxisColor.Color = Color.Black;

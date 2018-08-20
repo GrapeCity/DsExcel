@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.Features.Formatting
@@ -18,7 +19,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formatting
             style.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
             style.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Double;
             style.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Double;
-            style.Borders.Color = Color.FromRGB(0, 255, 0);
+            style.Borders.Color = Color.FromArgb(0, 255, 0);
 
             //Font
             style.Font.ThemeColor = ThemeColor.Accent1;
@@ -49,7 +50,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formatting
             //Fill
             style.Interior.ColorIndex = 5;
             style.Interior.Pattern = GrapeCity.Documents.Excel.Pattern.Down;
-            style.Interior.PatternColor = Color.FromRGB(0, 0, 255);
+            style.Interior.PatternColor = Color.FromArgb(0, 0, 255);
 
 
             style.IncludeAlignment = false;

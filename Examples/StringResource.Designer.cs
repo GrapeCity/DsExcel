@@ -1795,6 +1795,24 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel provides you with the ability to create your own custom functions, allowing you to easily create any custom arithmetic logic you may need..
+        /// </summary>
+        internal static string CustomFunctions_Descrip {
+            get {
+                return ResourceManager.GetString("CustomFunctions.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Function.
+        /// </summary>
+        internal static string CustomFunctions_Name {
+            get {
+                return ResourceManager.GetString("CustomFunctions.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set custom number format.
         /// </summary>
         internal static string CustomNumberFormat_Name {
@@ -2796,6 +2814,60 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MyAddFunction.
+        /// </summary>
+        internal static string MyAddFunction_Name {
+            get {
+                return ResourceManager.GetString("MyAddFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MyConcatenateFunction.
+        /// </summary>
+        internal static string MyConcatenateFunction_Name {
+            get {
+                return ResourceManager.GetString("MyConcatenateFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MyConditionalSumFunction.
+        /// </summary>
+        internal static string MyConditionalSumFunction_Name {
+            get {
+                return ResourceManager.GetString("MyConditionalSumFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MyIsErrorFunction.
+        /// </summary>
+        internal static string MyIsErrorFunction_Name {
+            get {
+                return ResourceManager.GetString("MyIsErrorFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MyIsMergedRangeFunction.
+        /// </summary>
+        internal static string MyIsMergedRangeFunction_Name {
+            get {
+                return ResourceManager.GetString("MyIsMergedRangeFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MySumFunction.
+        /// </summary>
+        internal static string MySumFunction_Name {
+            get {
+                return ResourceManager.GetString("MySumFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Apply number filter.
         /// </summary>
         internal static string NumberFilter_Name {
@@ -3120,7 +3192,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         
         /// <summary>
         ///   Looks up a localized string similar to ## Range Operations
-        ///Range refers to a cell or a collection of cells and range operations are the operations performed on those cell collection using single line of code. The Range property of IWorksheet allows you to execute multiple operations on cells,rows or columns.
+        ///A range is a cell or a cluster of cells in a spreadsheet that can be used to execute important operations on cells, rows or columns with the help of **Range** property of the **IWorksheet** interface.
         ///
         ///Examples in this folder demonstrate how to:
         ///- Access cells, rows, and columns
@@ -3128,7 +3200,9 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///- Access ranges in various ways
         ///- Cut, Copy, and Paste a range
         ///- Work with a used range of cells
-        ///- Get a row count or colum [rest of string was truncated]&quot;;.
+        ///- Get a row count or column count
+        ///- Hide a row or column
+        ///- Insert or delet [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RangeOperations_Descrip {
             get {

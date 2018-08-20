@@ -1,6 +1,7 @@
 ﻿using GrapeCity.Documents.Excel.Drawing;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Reflection;
 using System.Text;
 
@@ -64,13 +65,13 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
 
             tableStyle.TableStyleElements[TableStyleElementType.WholeTable].Interior.Color = Color.White;
 
-            tableStyle.TableStyleElements[TableStyleElementType.FirstRowStripe].Interior.Color = Color.FromRGB(38, 38, 38);
+            tableStyle.TableStyleElements[TableStyleElementType.FirstRowStripe].Interior.Color = Color.FromArgb(38, 38, 38);
 
             tableStyle.TableStyleElements[TableStyleElementType.SecondRowStripe].Interior.Color = Color.Black;
 
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Font.Color = Color.Black;
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromRGB(38, 38, 38);
-            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromRGB(68, 217, 255);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders.Color = Color.FromArgb(38, 38, 38);
+            tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Interior.Color = Color.FromArgb(68, 217, 255);
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.None;
             tableStyle.TableStyleElements[TableStyleElementType.HeaderRow].Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.None;
@@ -91,9 +92,9 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             movieListBorderStyle.Font.Color = Color.White;
             movieListBorderStyle.IncludeBorder = true;
             movieListBorderStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
-            movieListBorderStyle.Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(38, 38, 38);
+            movieListBorderStyle.Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(38, 38, 38);
             movieListBorderStyle.IncludePatterns = true;
-            movieListBorderStyle.Interior.Color = Color.FromRGB(238, 219, 78);
+            movieListBorderStyle.Interior.Color = Color.FromArgb(238, 219, 78);
 
             IStyle nOStyle = workbook.Styles.Add("NO.");
             nOStyle.IncludeNumber = true;
@@ -106,7 +107,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             nOStyle.Font.Color = Color.White;
             nOStyle.IncludeBorder = true;
             nOStyle.IncludePatterns = true;
-            nOStyle.Interior.Color = Color.FromRGB(38, 38, 38);
+            nOStyle.Interior.Color = Color.FromArgb(38, 38, 38);
 
             IStyle reviewStyle = workbook.Styles.Add("Review");
             reviewStyle.IncludeNumber = true;
@@ -118,7 +119,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             reviewStyle.Font.Color = Color.White;
             reviewStyle.IncludeBorder = true;
             reviewStyle.IncludePatterns = true;
-            reviewStyle.Interior.Color = Color.FromRGB(38, 38, 38);
+            reviewStyle.Interior.Color = Color.FromArgb(38, 38, 38);
 
             IStyle yearStyle = workbook.Styles.Add("Year");
             yearStyle.IncludeNumber = true;
@@ -131,14 +132,14 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             yearStyle.Font.Color = Color.White;
             yearStyle.IncludeBorder = true;
             yearStyle.IncludePatterns = true;
-            yearStyle.Interior.Color = Color.FromRGB(38, 38, 38);
+            yearStyle.Interior.Color = Color.FromArgb(38, 38, 38);
 
             IStyle heading1Style = workbook.Styles["Heading 1"];
             heading1Style.IncludeAlignment = true;
             heading1Style.VerticalAlignment = VerticalAlignment.Bottom;
             heading1Style.IncludeBorder = true;
             heading1Style.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
-            heading1Style.Borders[BordersIndex.EdgeBottom].Color = Color.FromRGB(68, 217, 255);
+            heading1Style.Borders[BordersIndex.EdgeBottom].Color = Color.FromArgb(68, 217, 255);
             heading1Style.IncludeFont = true;
             heading1Style.Font.Name = "Helvetica";
             heading1Style.Font.Bold = false;
@@ -155,12 +156,12 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             normalStyle.Font.Size = 11;
             normalStyle.Font.Color = Color.White;
             normalStyle.IncludePatterns = true;
-            normalStyle.Interior.Color = Color.FromRGB(38, 38, 38);
+            normalStyle.Interior.Color = Color.FromArgb(38, 38, 38);
 
 
             //-----------------------------Use NamedStyle--------------------------
             worksheet.SheetView.DisplayGridlines = false;
-            worksheet.TabColor = Color.FromRGB(38, 38, 38);
+            worksheet.TabColor = Color.FromArgb(38, 38, 38);
             table.TableStyle = tableStyle;
 
             worksheet.Range["A2:L2"].Style = movieListBorderStyle;
@@ -188,13 +189,13 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             roundedRectangular.Name = "Rounded Rectangular Callout 7";
             roundedRectangular.Placement = Placement.Move;
             roundedRectangular.TextFrame.TextRange.Font.Name = "Helvetica";
-            roundedRectangular.TextFrame.TextRange.Font.Color.RGB = Color.FromRGB(38, 38, 38);
+            roundedRectangular.TextFrame.TextRange.Font.Color.RGB = Color.FromArgb(38, 38, 38);
 
             roundedRectangular.Fill.Solid();
-            roundedRectangular.Fill.Color.RGB = Color.FromRGB(68, 217, 255);
+            roundedRectangular.Fill.Color.RGB = Color.FromArgb(68, 217, 255);
             roundedRectangular.Fill.Transparency = 0;
             roundedRectangular.Line.Solid();
-            roundedRectangular.Line.Color.RGB = Color.FromRGB(0, 129, 162);
+            roundedRectangular.Line.Color.RGB = Color.FromArgb(0, 129, 162);
             roundedRectangular.Line.Weight = 2;
             roundedRectangular.Line.Transparency = 0;
 
@@ -224,7 +225,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             IShape lineShape = worksheet.Shapes.AddConnector(ConnectorType.Straight, 455.228f, 57.35f, 756.228f, 57.35f);
             lineShape.Line.Solid();
             lineShape.Line.Weight = 3;
-            lineShape.Line.Color.RGB = Color.FromRGB(38, 38, 38);
+            lineShape.Line.Color.RGB = Color.FromArgb(38, 38, 38);
             lineShape.Line.DashStyle = LineDashStyle.SysDot;
         }
 

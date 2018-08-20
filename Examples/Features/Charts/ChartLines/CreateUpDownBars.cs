@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.Features.Charts.ChartLines
@@ -24,7 +25,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts.ChartLines
 
             //config up down bars for line chart.
             shape.Chart.LineGroups[0].HasUpDownBars = true;
-            shape.Chart.LineGroups[0].UpBars.Format.Fill.Color.RGB = Color.FromRGB(199, 235, 217);
+            shape.Chart.LineGroups[0].UpBars.Format.Fill.Color.RGB = Color.FromArgb(199, 235, 217);
             shape.Chart.LineGroups[0].DownBars.Format.Fill.Color.RGB = Color.LightPink;
         }
 

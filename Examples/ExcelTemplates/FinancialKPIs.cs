@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file Financial KPIs.xlsx from resource
-            var fileStream = this.GetTemplateStream("Financial KPIs.xlsx");
+            var fileStream = this.GetTemplateStream();
 
             workbook.Open(fileStream);
 

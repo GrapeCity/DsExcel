@@ -1,6 +1,7 @@
 ﻿using GrapeCity.Documents.Excel.Drawing;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
@@ -15,18 +16,18 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //create a custom theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("testTheme");
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(222, 222, 212);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(30, 46, 47);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(233, 117, 90);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(122, 182, 186);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(125, 181, 135);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(230, 191, 94);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(230, 143, 77);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(194, 107, 112);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(122, 182, 186);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(166, 140, 177);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(222, 222, 212);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(30, 46, 47);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(233, 117, 90);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(122, 182, 186);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(125, 181, 135);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(230, 191, 94);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(230, 143, 77);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(194, 107, 112);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(122, 182, 186);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(166, 140, 177);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Gill Sans";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Gill Sans";
 
@@ -273,15 +274,15 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //set series fill to gradient fill.
             series_systolic.Format.Fill.TwoColorGradient(GradientStyle.Horizontal, 1);
             series_systolic.Format.Fill.GradientAngle = 270;
-            series_systolic.Format.Fill.GradientStops[0].Color.RGB = Color.FromRGB(255, 172, 175);
-            series_systolic.Format.Fill.GradientStops[1].Color.RGB = Color.FromRGB(255, 227, 228);
+            series_systolic.Format.Fill.GradientStops[0].Color.RGB = Color.FromArgb(255, 172, 175);
+            series_systolic.Format.Fill.GradientStops[1].Color.RGB = Color.FromArgb(255, 227, 228);
             series_systolic.Format.Fill.GradientStops.Insert(0xFEC6C8, 0.35);
             series_systolic.Format.Line.Color.ObjectThemeColor = ThemeColor.Accent6;
 
             series_diatolic.Format.Fill.TwoColorGradient(GradientStyle.Horizontal, 1);
             series_diatolic.Format.Fill.GradientAngle = 270;
-            series_diatolic.Format.Fill.GradientStops[0].Color.RGB = Color.FromRGB(255, 192, 147);
-            series_diatolic.Format.Fill.GradientStops[1].Color.RGB = Color.FromRGB(255, 227, 212);
+            series_diatolic.Format.Fill.GradientStops[0].Color.RGB = Color.FromArgb(255, 192, 147);
+            series_diatolic.Format.Fill.GradientStops[1].Color.RGB = Color.FromArgb(255, 227, 212);
             series_diatolic.Format.Fill.GradientStops.Insert(0xFFCBA9, 0.35);
             series_diatolic.Format.Line.Color.ObjectThemeColor = ThemeColor.Accent5;
 

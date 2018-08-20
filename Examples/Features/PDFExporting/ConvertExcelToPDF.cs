@@ -9,8 +9,16 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Open an excel file
-            var fileStream = this.GetTemplateStream("Employee absence schedule.xlsx");
+            var fileStream = this.GetTemplateStream();
             workbook.Open(fileStream);
+        }
+
+        public override string TemplateName
+        {
+            get
+            {
+                return "Employee absence schedule.xlsx";
+            }
         }
 
         public override bool SavePdf

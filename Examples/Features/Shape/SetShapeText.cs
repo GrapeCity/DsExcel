@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.Features.Shape
@@ -13,7 +14,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Shape
             shape.Width = 500;
             shape.Height = 200;
 
-            shape.TextFrame.TextRange.Font.Color.RGB = GrapeCity.Documents.Excel.Color.FromRGB(0, 255, 0);
+            shape.TextFrame.TextRange.Font.Color.RGB = Color.FromArgb(0, 255, 0);
             shape.TextFrame.TextRange.Font.Bold = true;
             shape.TextFrame.TextRange.Font.Italic = true;
             shape.TextFrame.TextRange.Font.Size = 20;

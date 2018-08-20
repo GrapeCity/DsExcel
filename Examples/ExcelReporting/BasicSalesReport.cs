@@ -1,6 +1,7 @@
 ﻿using GrapeCity.Documents.Excel.Drawing;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
@@ -13,18 +14,18 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //create a custom theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("testTheme");
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(140, 198, 63);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(242, 116, 45);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(106, 159, 207);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(242, 192, 45);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(146, 98, 174);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(121, 198, 199);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(106, 159, 207);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(146, 98, 74);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(140, 198, 63);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(242, 116, 45);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(106, 159, 207);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(242, 192, 45);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(146, 98, 174);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(121, 198, 199);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(106, 159, 207);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(146, 98, 74);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Garamond";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Garamond";
 
@@ -295,7 +296,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //config shape's line and fill.
             shape.Line.DashStyle = LineDashStyle.Solid;
             shape.Line.Weight = 4;
-            shape.Line.Color.RGB = Color.FromRGB(89, 89, 89);
+            shape.Line.Color.RGB = Color.FromArgb(89, 89, 89);
             shape.Fill.Solid();
             shape.Fill.Color.ColorType = SolidColorType.None;
 
@@ -435,7 +436,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             IShape shape2 = worksheet3.Shapes.AddShape(AutoShapeType.RectangularCallout, 380, 65, 280, 50);
             shape2.Line.DashStyle = LineDashStyle.Solid;
             shape2.Line.Weight = 4;
-            shape2.Line.Color.RGB = Color.FromRGB(89, 89, 89);
+            shape2.Line.Color.RGB = Color.FromArgb(89, 89, 89);
             shape2.Fill.Solid();
             shape2.Fill.Color.ColorType = SolidColorType.None;
 

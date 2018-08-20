@@ -1104,7 +1104,7 @@ Use the **PivotFieldOrientation** property of each pivot field to specify whethe
   </data>
   <data name="RangeOperations.Descrip" xml:space="preserve">
     <value>## Range Operations
-Range refers to a cell or a collection of cells and range operations are the operations performed on those cell collection using single line of code. The Range property of IWorksheet allows you to execute multiple operations on cells,rows or columns.
+A range is a cell or a cluster of cells in a spreadsheet that can be used to execute important operations on cells, rows or columns with the help of **Range** property of the **IWorksheet** interface.
 
 Examples in this folder demonstrate how to:
 - Access cells, rows, and columns
@@ -1750,5 +1750,29 @@ Various of text effect can be exported to pdf file, such as:
   </data>
   <data name="CellInfo.Name" xml:space="preserve">
     <value>Use CellInfo helper class</value>
+  </data>
+  <data name="CustomFunctions.Descrip" xml:space="preserve">
+    <value>GcExcel provides you with the ability to create your own custom functions, allowing you to easily create any custom arithmetic logic you may need.</value>
+  </data>
+  <data name="CustomFunctions.Name" xml:space="preserve">
+    <value>Custom Function</value>
+  </data>
+  <data name="MyAddFunction.Name" xml:space="preserve">
+    <value>MyAddFunction</value>
+  </data>
+  <data name="MyIsErrorFunction.Name" xml:space="preserve">
+    <value>MyIsErrorFunction</value>
+  </data>
+  <data name="MySumFunction.Name" xml:space="preserve">
+    <value>MySumFunction</value>
+  </data>
+  <data name="MyConcatenateFunction.Name" xml:space="preserve">
+    <value>MyConcatenateFunction</value>
+  </data>
+  <data name="MyConditionalSumFunction.Name" xml:space="preserve">
+    <value>MyConditionalSumFunction</value>
+  </data>
+  <data name="MyIsMergedRangeFunction.Name" xml:space="preserve">
+    <value>MyIsMergedRangeFunction</value>
   </data>
 </root>

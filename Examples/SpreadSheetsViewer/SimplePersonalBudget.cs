@@ -11,7 +11,7 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file
-            var fileStream = this.GetTemplateStream("Simple personal budget.xlsx");
+            var fileStream = this.GetTemplateStream();
             workbook.Open(fileStream);
         }
 

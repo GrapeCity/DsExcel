@@ -1,6 +1,7 @@
 ﻿using GrapeCity.Documents.Excel.Drawing;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
@@ -45,7 +46,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Name = "Customer Profitability";
-            worksheet.TabColor = Color.FromRGB(131, 172, 121);
+            worksheet.TabColor = Color.FromArgb(131, 172, 121);
             worksheet.SheetView.DisplayGridlines = false;
 
             //Set Value.
@@ -308,18 +309,18 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
             //Create customize theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("test");
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(77, 70, 70);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(255, 251, 239);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(255, 225, 132);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(102, 173, 166);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(131, 172, 121);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(254, 191, 102);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(219, 112, 87);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(165, 115, 137);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(102, 173, 166);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(165, 115, 137);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(77, 70, 70);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(255, 251, 239);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(255, 225, 132);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(102, 173, 166);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(131, 172, 121);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(254, 191, 102);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(219, 112, 87);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(165, 115, 137);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(102, 173, 166);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(165, 115, 137);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Marion";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Marion";
 

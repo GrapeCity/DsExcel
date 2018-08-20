@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.Features.Charts.DataPoint
@@ -24,7 +25,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts.DataPoint
             GrapeCity.Documents.Excel.Drawing.ISeries series1 = shape.Chart.SeriesCollection[0];
            
             //set data point format.
-            series1.Points[2].Format.Fill.Color.RGB = Color.FromRGB(0,176,240);
+            series1.Points[2].Format.Fill.Color.RGB = Color.FromArgb(0,176,240);
             series1.Points[2].Format.Line.Color.RGB = Color.Blue;
             series1.Points[2].Format.Line.Weight = 1.5;
 

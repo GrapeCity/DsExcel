@@ -1,6 +1,7 @@
 ﻿using GrapeCity.Documents.Excel.Drawing;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -12,8 +13,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file Monthly business budget.xlsx from resource
-            var fileStream = this.GetTemplateStream("Monthly business budget.xlsx");
-
+            var fileStream = this.GetTemplateStream();
             workbook.Open(fileStream);
 
             var worksheet = workbook.ActiveSheet;

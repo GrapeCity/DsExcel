@@ -12,7 +12,7 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file
-            var fileStream = this.GetTemplateStream("Home inventory.xlsx");
+            var fileStream = this.GetTemplateStream();
             workbook.Open(fileStream);
         }
 

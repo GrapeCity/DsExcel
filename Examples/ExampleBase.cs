@@ -32,6 +32,15 @@ namespace GrapeCity.Documents.Excel.Examples
             }
         }
 
+
+        public string CodeVB
+        {
+            get
+            {
+                return this.GetExampleCodeVB();
+            }
+        }
+
         public virtual bool CanDownload
         {
             get
@@ -94,9 +103,9 @@ namespace GrapeCity.Documents.Excel.Examples
         {
             get; set;
         }
-        public Stream GetTemplateStream(string templateName)
+        public Stream GetTemplateStream()
         {
-            return this.GetResourceStream("xlsx." + templateName);
+            return this.GetResourceStream("xlsx." + this.TemplateName);
         }
 
         public Stream GetResourceStream(string resourceName)
@@ -224,6 +233,34 @@ namespace GrapeCity.Documents.Excel.Examples
             {
                 code += "\r\n   //save to an excel file";
                 code += string.Format("\r\n   workbook.Save(\"{0}.xlsx\");", this.GetShortID());
+            }
+            return code;
+        }
+
+        private string GetExampleCodeVB()
+        {
+            string code = CodeResource_VB.ResourceManager.GetString(this.GetType().FullName.Replace("GrapeCity.Documents.Excel.Examples", "GrapeCity.Documents.Excel.Examples.VB"));
+            if (!string.IsNullOrWhiteSpace(code))
+            {
+                code = Regex.Replace(code, "[\r\n][^\r\n]\\s{8}", "\n");
+            }
+
+            code = "   'Create a new Workbook" + Environment.NewLine + "   Dim workbook = new Workbook()" + code;
+
+            if (this.SavePdf)
+            {
+                code += "\r\n  'save to an pdf file";
+                code += string.Format("\r\n   workbook.Save(\"{0}.pdf\", SaveFileFormat.Pdf)", this.GetShortID());
+            }
+            else if (this.SaveCsv)
+            {
+                code += "\r\n  'save to an csv file";
+                code += string.Format("\r\n   workbook.Save(\"{0}.csv\", SaveFileFormat.Csv)", this.GetShortID());
+            }
+            else if (this.CanDownload)
+            {
+                code += "\r\n  'save to an excel file";
+                code += string.Format("\r\n   workbook.Save(\"{0}.xlsx\")", this.GetShortID());
             }
             return code;
         }

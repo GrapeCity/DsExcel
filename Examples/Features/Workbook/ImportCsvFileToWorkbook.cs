@@ -9,10 +9,18 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            Stream stream = this.GetTemplateStream("Information.csv");
+            Stream stream = this.GetTemplateStream();
 
             //Open csv file stream.
             workbook.Open(stream, OpenFileFormat.Csv);
+        }
+
+        public override string TemplateName
+        {
+            get
+            {
+                return "Information.csv";
+            }
         }
 
         public override bool CanDownload
