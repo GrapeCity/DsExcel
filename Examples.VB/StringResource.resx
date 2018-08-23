@@ -1,0 +1,1754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessWorksheet.Name" xml:space="preserve">
+    <value>Access a worksheet</value>
+  </data>
+  <data name="ActivateWorksheet.Name" xml:space="preserve">
+    <value>Activate a worksheet</value>
+  </data>
+  <data name="AddCustomTableStyle.Name" xml:space="preserve">
+    <value>Add a custom table style</value>
+  </data>
+  <data name="AddCustomThemes.Name" xml:space="preserve">
+    <value>Add custom themes</value>
+  </data>
+  <data name="AddWorksheet.Name" xml:space="preserve">
+    <value>Add a worksheet</value>
+  </data>
+  <data name="ApplyTableStyle.Name" xml:space="preserve">
+    <value>Apply built-in styles to tables</value>
+  </data>
+  <data name="ChangeWorkbookTheme.Name" xml:space="preserve">
+    <value>Change workbook themes</value>
+  </data>
+  <data name="ClearSparklineGroup.Name" xml:space="preserve">
+    <value>Clear the sparkline group</value>
+  </data>
+  <data name="ClearSparklines.Name" xml:space="preserve">
+    <value>Clear sparklines</value>
+  </data>
+  <data name="ConfigSparklineSettings.Name" xml:space="preserve">
+    <value>Configure sparkline settings</value>
+  </data>
+  <data name="ConfigWorksheet.Name" xml:space="preserve">
+    <value>Configure worksheet properties</value>
+  </data>
+  <data name="CreateNewWorkbook.Name" xml:space="preserve">
+    <value>Create new workbook</value>
+  </data>
+  <data name="CreateSparklines.Name" xml:space="preserve">
+    <value>Create sparklines</value>
+  </data>
+  <data name="CreateTable.Name" xml:space="preserve">
+    <value>Create a table</value>
+  </data>
+  <data name="CustomSort.Name" xml:space="preserve">
+    <value>Sort list by custom parameter</value>
+  </data>
+  <data name="DeleteWorksheet.Name" xml:space="preserve">
+    <value>Delete a worksheet</value>
+  </data>
+  <data name="Filtering.Name" xml:space="preserve">
+    <value>Filtering</value>
+  </data>
+  <data name="GroupExistSparklines.Name" xml:space="preserve">
+    <value>Group exist sparklines</value>
+  </data>
+  <data name="ImportExcelFileToWorkbook.Name" xml:space="preserve">
+    <value>Import Excel file</value>
+  </data>
+  <data name="ImportExcelFileWithPassword.Name" xml:space="preserve">
+    <value>Import Excel file with password</value>
+  </data>
+  <data name="InsertDeleteTableRowColumns.Name" xml:space="preserve">
+    <value>Insert or delete table rows and columns</value>
+  </data>
+  <data name="PerformCalculationsInTable.Name" xml:space="preserve">
+    <value>Perform calculations in the table</value>
+  </data>
+  <data name="ProtectWorksheet.Name" xml:space="preserve">
+    <value>Protect worksheet</value>
+  </data>
+  <data name="RemoveTable.Name" xml:space="preserve">
+    <value>Remove table</value>
+  </data>
+  <data name="SaveWorkbookToExcelFile.Name" xml:space="preserve">
+    <value>Save to Excel file</value>
+  </data>
+  <data name="SaveWorkbookWithPassword.Name" xml:space="preserve">
+    <value>Save to Excel file with password</value>
+  </data>
+  <data name="Sorting.Name" xml:space="preserve">
+    <value>Sorting</value>
+  </data>
+  <data name="SortRangeByFontColor.Name" xml:space="preserve">
+    <value>Sort by font color</value>
+  </data>
+  <data name="SortRangeByIcon.Name" xml:space="preserve">
+    <value>Sort by icon</value>
+  </data>
+  <data name="SortRangeByInterior.Name" xml:space="preserve">
+    <value>Sort range by content</value>
+  </data>
+  <data name="SortRangeByValue.Name" xml:space="preserve">
+    <value>Sort range by value</value>
+  </data>
+  <data name="Sparklines.Name" xml:space="preserve">
+    <value>Sparklines</value>
+  </data>
+  <data name="TableFilter.Name" xml:space="preserve">
+    <value>Filter table range</value>
+  </data>
+  <data name="Tables.Name" xml:space="preserve">
+    <value>Tables</value>
+  </data>
+  <data name="TableSort.Name" xml:space="preserve">
+    <value>Sort table range</value>
+  </data>
+  <data name="TextFilter.Name" xml:space="preserve">
+    <value>Apply text filter</value>
+  </data>
+  <data name="Theme.Name" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="UnprotectWorksheet.Name" xml:space="preserve">
+    <value>Unprotect worksheet</value>
+  </data>
+  <data name="UseDateAxis.Name" xml:space="preserve">
+    <value>Use date axis</value>
+  </data>
+  <data name="ValueFilter.Descrip" xml:space="preserve">
+    <value>Create value filter</value>
+  </data>
+  <data name="ValueFilter.Name" xml:space="preserve">
+    <value>Value Filter</value>
+  </data>
+  <data name="Workbook.Name" xml:space="preserve">
+    <value>Workbook</value>
+  </data>
+  <data name="Worksheets.Name" xml:space="preserve">
+    <value>Worksheets</value>
+  </data>
+  <data name="AddSlicersForTable.Name" xml:space="preserve">
+    <value>Add slicers to tables</value>
+  </data>
+  <data name="Slicer.Name" xml:space="preserve">
+    <value>Slicer</value>
+  </data>
+  <data name="AddSlicersForPivotTable.Name" xml:space="preserve">
+    <value>Add slicers to pivot tables</value>
+  </data>
+  <data name="DoTableFilter.Name" xml:space="preserve">
+    <value>Auto-filter table with slicer</value>
+  </data>
+  <data name="ApplySlicerStyle.Name" xml:space="preserve">
+    <value>Apply built-in style to slicer</value>
+  </data>
+  <data name="UseSlicerDoFilter.Name" xml:space="preserve">
+    <value>Use slicer to filter table</value>
+  </data>
+  <data name="ConfigSlicerLayout.Name" xml:space="preserve">
+    <value>Configure slicer layout</value>
+  </data>
+  <data name="CreateConnectorShape.Name" xml:space="preserve">
+    <value>Create connector shape</value>
+  </data>
+  <data name="Shape.Name" xml:space="preserve">
+    <value>Shape</value>
+  </data>
+  <data name="ConnectShapesByConnector.Name" xml:space="preserve">
+    <value>Connect shapes with connector shape</value>
+  </data>
+  <data name="ConfigShapeWithPictureFill.Name" xml:space="preserve">
+    <value>Set shape's picture fill</value>
+  </data>
+  <data name="ConfigShapeWithGradientFill.Name" xml:space="preserve">
+    <value>Set shape's gradient fill</value>
+  </data>
+  <data name="ConfigShapeWithPatternFill.Name" xml:space="preserve">
+    <value>Set shape's pattern fill</value>
+  </data>
+  <data name="ConfigShapeWithTextureFill.Name" xml:space="preserve">
+    <value>Set shape's texture fill</value>
+  </data>
+  <data name="ConfigShapeWithSolidFill.Name" xml:space="preserve">
+    <value>Set shape's solid fill</value>
+  </data>
+  <data name="ConfigShapeLine.Name" xml:space="preserve">
+    <value>Set shape's line format</value>
+  </data>
+  <data name="ConfigShape3DFormat.Name" xml:space="preserve">
+    <value>Set shape's 3D format</value>
+  </data>
+  <data name="SetShapeText.Name" xml:space="preserve">
+    <value>Set shape's text</value>
+  </data>
+  <data name="CreatePicture.Name" xml:space="preserve">
+    <value>Create picture</value>
+  </data>
+  <data name="DeletePicture.Name" xml:space="preserve">
+    <value>Delete picture</value>
+  </data>
+  <data name="MergeCells.Name" xml:space="preserve">
+    <value>Merge cells</value>
+  </data>
+  <data name="RangeOperations.Name" xml:space="preserve">
+    <value>Range Operations</value>
+  </data>
+  <data name="AccessEachAreaOfRange.Name" xml:space="preserve">
+    <value>Access areas in a range</value>
+  </data>
+  <data name="GetRangeRowCountColumnCount.Name" xml:space="preserve">
+    <value>Get row and column count</value>
+  </data>
+  <data name="AccessCellsRowsColumns.Name" xml:space="preserve">
+    <value>Access cells, rows and columns in a range</value>
+  </data>
+  <data name="GetWorksheetUsedRange.Name" xml:space="preserve">
+    <value>Get used range</value>
+  </data>
+  <data name="SetRowHeightColumnWidth.Name" xml:space="preserve">
+    <value>Set row height and column width</value>
+  </data>
+  <data name="AccessRange.Name" xml:space="preserve">
+    <value>Access a range</value>
+  </data>
+  <data name="InsertCellsDeleteCells.Name" xml:space="preserve">
+    <value>Insert or delete cells</value>
+  </data>
+  <data name="InsertDeleteRowsColumns.Name" xml:space="preserve">
+    <value>Insert or delete rows and columns</value>
+  </data>
+  <data name="CutCopyRange.Name" xml:space="preserve">
+    <value>Cut or copy ranges</value>
+  </data>
+  <data name="GetFeatureRelatedUsedRange.Name" xml:space="preserve">
+    <value>Get used range features</value>
+  </data>
+  <data name="PivotTable.Name" xml:space="preserve">
+    <value>Pivot Table</value>
+  </data>
+  <data name="CreatePivotTable.Name" xml:space="preserve">
+    <value>Create pivot tables</value>
+  </data>
+  <data name="ChangeDataFieldSummarizeFunction.Name" xml:space="preserve">
+    <value>Set field's summarize function</value>
+  </data>
+  <data name="ModifySubtotalsForPivotField.Name" xml:space="preserve">
+    <value>Modify pivot field subtotal type</value>
+  </data>
+  <data name="FilterItemsInPivotTable.Name" xml:space="preserve">
+    <value>Filter items in pivot tables</value>
+  </data>
+  <data name="RefreshPivotTable.Name" xml:space="preserve">
+    <value>Refresh pivot table</value>
+  </data>
+  <data name="DeleteHyperlinks.Name" xml:space="preserve">
+    <value>Delete hyperlinks</value>
+  </data>
+  <data name="CreateRangeGroup.Name" xml:space="preserve">
+    <value>Create range group</value>
+  </data>
+  <data name="UngroupRange.Name" xml:space="preserve">
+    <value>Ungroup range</value>
+  </data>
+  <data name="ClearOutline.Name" xml:space="preserve">
+    <value>Clear outline</value>
+  </data>
+  <data name="ShowSpecificLevel.Name" xml:space="preserve">
+    <value>Show specific level group</value>
+  </data>
+  <data name="AddCustomName.Name" xml:space="preserve">
+    <value>Add custom names</value>
+  </data>
+  <data name="Grouping.Name" xml:space="preserve">
+    <value>Grouping</value>
+  </data>
+  <data name="Hyperlinks.Name" xml:space="preserve">
+    <value>Hyperlinks</value>
+  </data>
+  <data name="Picture.Name" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="ConfigWorkbookReferenceStyle.Name" xml:space="preserve">
+    <value>Set workbook's reference style</value>
+  </data>
+  <data name="Formulas.Name" xml:space="preserve">
+    <value>Formulas</value>
+  </data>
+  <data name="UseArrayFormula.Name" xml:space="preserve">
+    <value>Use array formulas</value>
+  </data>
+  <data name="UseTableFormula.Name" xml:space="preserve">
+    <value>Use table formulas</value>
+  </data>
+  <data name="DirtyAndCalculation.Name" xml:space="preserve">
+    <value>Dirty and Calculate methods</value>
+  </data>
+  <data name="SetRangeValue.Name" xml:space="preserve">
+    <value>Set values to a range</value>
+  </data>
+  <data name="ToJsonFromJson.Name" xml:space="preserve">
+    <value>ToJson and FromJson</value>
+  </data>
+  <data name="CustomNumberFormat.Name" xml:space="preserve">
+    <value>Set custom number format</value>
+  </data>
+  <data name="DateAndTimeFormat.Name" xml:space="preserve">
+    <value>Set date and time format</value>
+  </data>
+  <data name="Formatting.Name" xml:space="preserve">
+    <value>Formatting</value>
+  </data>
+  <data name="NumberFormats.Name" xml:space="preserve">
+    <value>Set number format</value>
+  </data>
+  <data name="HAlignVAlign.Name" xml:space="preserve">
+    <value>Set horizontal and vertical alignment</value>
+  </data>
+  <data name="ShrinkToFit.Name" xml:space="preserve">
+    <value>Shrink to fit</value>
+  </data>
+  <data name="RotateCellContents.Name" xml:space="preserve">
+    <value>Rotate cell contents</value>
+  </data>
+  <data name="WrapText.Name" xml:space="preserve">
+    <value>Wrap text</value>
+  </data>
+  <data name="AddBordersToCell.Name" xml:space="preserve">
+    <value>Add borders to cell</value>
+  </data>
+  <data name="AddingBordersToRange.Name" xml:space="preserve">
+    <value>Add borders to range</value>
+  </data>
+  <data name="FontColor.Name" xml:space="preserve">
+    <value>Set font color</value>
+  </data>
+  <data name="FontEffect.Name" xml:space="preserve">
+    <value>Set font effect</value>
+  </data>
+  <data name="FontName.Name" xml:space="preserve">
+    <value>Set font name</value>
+  </data>
+  <data name="FontSize.Name" xml:space="preserve">
+    <value>Set font size</value>
+  </data>
+  <data name="FontStyle.Name" xml:space="preserve">
+    <value>Set font style</value>
+  </data>
+  <data name="FontUnderline.Name" xml:space="preserve">
+    <value>Set font underline</value>
+  </data>
+  <data name="LinearGradientFill.Name" xml:space="preserve">
+    <value>Set linear gradient fill</value>
+  </data>
+  <data name="PatternFill.Name" xml:space="preserve">
+    <value>Set pattern fill</value>
+  </data>
+  <data name="RectangularGradientFill.Name" xml:space="preserve">
+    <value>Set rectangular gradient fill</value>
+  </data>
+  <data name="SolidFill.Name" xml:space="preserve">
+    <value>Set solid fill</value>
+  </data>
+  <data name="TextOrientation.Name" xml:space="preserve">
+    <value>Set text orientation</value>
+  </data>
+  <data name="Alignment.Name" xml:space="preserve">
+    <value>Alignment</value>
+  </data>
+  <data name="ApplyStyle.Name" xml:space="preserve">
+    <value>Apply style to range</value>
+  </data>
+  <data name="Borders.Name" xml:space="preserve">
+    <value>Borders</value>
+  </data>
+  <data name="CreateCustomStyle.Name" xml:space="preserve">
+    <value>Create custom style</value>
+  </data>
+  <data name="Fill.Name" xml:space="preserve">
+    <value>Fill</value>
+  </data>
+  <data name="Fonts.Name" xml:space="preserve">
+    <value>Fonts</value>
+  </data>
+  <data name="GetDisplayFormat.Name" xml:space="preserve">
+    <value>Get display format</value>
+  </data>
+  <data name="Protection.Name" xml:space="preserve">
+    <value>Protection</value>
+  </data>
+  <data name="SetRangeFormulaHidden.Name" xml:space="preserve">
+    <value>Hide formula</value>
+  </data>
+  <data name="SetRangeLocked.Name" xml:space="preserve">
+    <value>Lock range</value>
+  </data>
+  <data name="AddComment.Name" xml:space="preserve">
+    <value>Add comment to cell</value>
+  </data>
+  <data name="ClearComment.Name" xml:space="preserve">
+    <value>Clear comments</value>
+  </data>
+  <data name="Comments.Name" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="ConfigCommentLayout.Name" xml:space="preserve">
+    <value>Configure comment's layout</value>
+  </data>
+  <data name="SetRichTextForComment.Name" xml:space="preserve">
+    <value>Set rich text for comment</value>
+  </data>
+  <data name="ConditionalFormatting.Name" xml:space="preserve">
+    <value>Conditional Formatting</value>
+  </data>
+  <data name="CreateAverageRule.Name" xml:space="preserve">
+    <value>Create average rule</value>
+  </data>
+  <data name="CreateCellValueRule.Name" xml:space="preserve">
+    <value>Create cell value rule</value>
+  </data>
+  <data name="CreateDatabBarRule.Name" xml:space="preserve">
+    <value>Create data bar rule</value>
+  </data>
+  <data name="CreateExpressionRule.Name" xml:space="preserve">
+    <value>Create expression rule</value>
+  </data>
+  <data name="CreateIconSetRule.Name" xml:space="preserve">
+    <value>Create icon set rule</value>
+  </data>
+  <data name="CreateMultiRuleForRange.Name" xml:space="preserve">
+    <value>Create multiple rules for a range</value>
+  </data>
+  <data name="CreateThreeColorScaleRule.Name" xml:space="preserve">
+    <value>Create three color scale rule</value>
+  </data>
+  <data name="CreateTopBottomRule.Name" xml:space="preserve">
+    <value>Create top bottom rule</value>
+  </data>
+  <data name="CreateTwoColorScaleRule.Name" xml:space="preserve">
+    <value>Create two color scale rule</value>
+  </data>
+  <data name="CreateUniqueRule.Name" xml:space="preserve">
+    <value>Create unique rule</value>
+  </data>
+  <data name="DeleteConditionalFormatRules.Name" xml:space="preserve">
+    <value>Delete conditional format rules</value>
+  </data>
+  <data name="RootExample.Descrip" xml:space="preserve">
+    <value>GrapeCity Documents for Excel Features</value>
+  </data>
+  <data name="RootExample.Name" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="CreateCustomValidation.Name" xml:space="preserve">
+    <value>Create custom validation</value>
+  </data>
+  <data name="CreateDateValidation.Name" xml:space="preserve">
+    <value>Create date validation</value>
+  </data>
+  <data name="CreateDecimalValidation.Name" xml:space="preserve">
+    <value>Create decimal validation</value>
+  </data>
+  <data name="CreateListValidation.Name" xml:space="preserve">
+    <value>Create list validation</value>
+  </data>
+  <data name="CreateTextLength.Name" xml:space="preserve">
+    <value>Create text length validation</value>
+  </data>
+  <data name="CreateTimeValidation.Name" xml:space="preserve">
+    <value>Create time validation</value>
+  </data>
+  <data name="CreateWholeNumberValidation.Name" xml:space="preserve">
+    <value>Create whole number validation</value>
+  </data>
+  <data name="DataValidation.Name" xml:space="preserve">
+    <value>Data Validation</value>
+  </data>
+  <data name="DeleteValidation.Name" xml:space="preserve">
+    <value>Delete validation</value>
+  </data>
+  <data name="ModifyValidation.Name" xml:space="preserve">
+    <value>Modify validation</value>
+  </data>
+  <data name="AddSeries.Name" xml:space="preserve">
+    <value>Add series for chart</value>
+  </data>
+  <data name="Charts.Name" xml:space="preserve">
+    <value>Charts</value>
+  </data>
+  <data name="ConfigBubbleChartLayout.Name" xml:space="preserve">
+    <value>Configure bubble chart's layout</value>
+  </data>
+  <data name="ConfigDataLabelText.Name" xml:space="preserve">
+    <value>Configure data label's text</value>
+  </data>
+  <data name="ConfigDataPointFormat.Name" xml:space="preserve">
+    <value>Configure data point's format</value>
+  </data>
+  <data name="CreateChart.Name" xml:space="preserve">
+    <value>Create chart</value>
+  </data>
+  <data name="CreateDropLine.Name" xml:space="preserve">
+    <value>Create drop line</value>
+  </data>
+  <data name="CreateHiLoLine.Name" xml:space="preserve">
+    <value>Create high-low line</value>
+  </data>
+  <data name="CreateTrendline.Name" xml:space="preserve">
+    <value>Create trend line</value>
+  </data>
+  <data name="DeleteChart.Name" xml:space="preserve">
+    <value>Delete chart</value>
+  </data>
+  <data name="Series.Name" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="SetVaryColorForColumnChart.Name" xml:space="preserve">
+    <value>Set column chart colors to vary</value>
+  </data>
+  <data name="CreateConnectorLine.Name" xml:space="preserve">
+    <value>Create connector line for pie of pie chart</value>
+  </data>
+  <data name="CreateSeriesLine.Name" xml:space="preserve">
+    <value>Create series line for column chart</value>
+  </data>
+  <data name="ExtendSeries.Name" xml:space="preserve">
+    <value>Add new points for existing series</value>
+  </data>
+  <data name="CreateUpDownBars.Name" xml:space="preserve">
+    <value>Create up down bars for line chart</value>
+  </data>
+  <data name="AccessTableRanges.Name" xml:space="preserve">
+    <value>Access each table range</value>
+  </data>
+  <data name="Axes.Name" xml:space="preserve">
+    <value>Axis</value>
+  </data>
+  <data name="ConfigCategoryAxesFormat.Name" xml:space="preserve">
+    <value>Configure category axis style</value>
+  </data>
+  <data name="ConfigAxisTitle.Name" xml:space="preserve">
+    <value>Configure axis title style</value>
+  </data>
+  <data name="ConfigCategoryAxisUnits.Name" xml:space="preserve">
+    <value>Set data axis units</value>
+  </data>
+  <data name="ConfigDisplayUnitLabel.Name" xml:space="preserve">
+    <value>Configure display unit label style</value>
+  </data>
+  <data name="ConfigGridlines.Name" xml:space="preserve">
+    <value>Configure gridline style</value>
+  </data>
+  <data name="ConfigTickMarkLabel.Name" xml:space="preserve">
+    <value>Set tick mark label style</value>
+  </data>
+  <data name="ConfigValueAxisUnits.Name" xml:space="preserve">
+    <value>Set value axis units</value>
+  </data>
+  <data name="SetAxisScaleType.Name" xml:space="preserve">
+    <value>Set value axis scale type</value>
+  </data>
+  <data name="SetAxisTickMark.Name" xml:space="preserve">
+    <value>Configure axis tick mark layout</value>
+  </data>
+  <data name="ChartJustPlotVisibleCell.Name" xml:space="preserve">
+    <value>Plot only visible cells</value>
+  </data>
+  <data name="ConfigChartAreaFormat.Name" xml:space="preserve">
+    <value>Configure chart area format</value>
+  </data>
+  <data name="ConfigChartFloorStyle.Name" xml:space="preserve">
+    <value>Configure chart floor style</value>
+  </data>
+  <data name="ConfigChartTitleStyle.Name" xml:space="preserve">
+    <value>Configure chart title style</value>
+  </data>
+  <data name="ConfigChartWallStyle.Name" xml:space="preserve">
+    <value>Configure chart walls style</value>
+  </data>
+  <data name="ConfigLegendEntryFontStyle.Name" xml:space="preserve">
+    <value>Configure legend entry font style</value>
+  </data>
+  <data name="ConfigLegendPositionAndLayout.Name" xml:space="preserve">
+    <value>Configure legend position and layout</value>
+  </data>
+  <data name="ConfigPlotAreaFormat.Name" xml:space="preserve">
+    <value>Configure plot area format</value>
+  </data>
+  <data name="BloodPressureTracker.Name" xml:space="preserve">
+    <value>Blood pressure tracker</value>
+  </data>
+  <data name="UseCases.Name" xml:space="preserve">
+    <value>Use Cases</value>
+  </data>
+  <data name="ToDoListWithProgressTracker.Name" xml:space="preserve">
+    <value>To do list with progress tracker</value>
+  </data>
+  <data name="CostAnalysisWithParetoChart.Name" xml:space="preserve">
+    <value>Cost analysis with Pareto chart</value>
+  </data>
+  <data name="DateDynamicFilter.Name" xml:space="preserve">
+    <value>Filter date dynamically</value>
+  </data>
+  <data name="BidTracker.Name" xml:space="preserve">
+    <value>Bid tracker</value>
+  </data>
+  <data name="PersonalAddressBook.Name" xml:space="preserve">
+    <value>Personal address book</value>
+  </data>
+  <data name="CustomerProfitabilityAnalysis.Name" xml:space="preserve">
+    <value>Customer profitability analysis</value>
+  </data>
+  <data name="DateFiltering.Name" xml:space="preserve">
+    <value>Date Filter</value>
+  </data>
+  <data name="FilteringByColor.Name" xml:space="preserve">
+    <value>Filter by color</value>
+  </data>
+  <data name="FilteringByIcon.Name" xml:space="preserve">
+    <value>Filter by icon</value>
+  </data>
+  <data name="NumberFiltering.Name" xml:space="preserve">
+    <value>Number Filter</value>
+  </data>
+  <data name="TextFiltering.Name" xml:space="preserve">
+    <value>Text Filter</value>
+  </data>
+  <data name="ChangeWorksheetFilterRange.Name" xml:space="preserve">
+    <value>Change worksheet filter range</value>
+  </data>
+  <data name="ClearFilter.Name" xml:space="preserve">
+    <value>Clear worksheet filter</value>
+  </data>
+  <data name="DateFilter.Name" xml:space="preserve">
+    <value>Apply date filter</value>
+  </data>
+  <data name="FilterByNoFill.Name" xml:space="preserve">
+    <value>Filter by no fill</value>
+  </data>
+  <data name="FilterByAutomaticFontColor.Name" xml:space="preserve">
+    <value>Filter by automatic font color</value>
+  </data>
+  <data name="FilterByCellColor.Name" xml:space="preserve">
+    <value>Filter by cell color</value>
+  </data>
+  <data name="FilterByFontColor.Name" xml:space="preserve">
+    <value>Filter by font color</value>
+  </data>
+  <data name="FilterByIcon.Name" xml:space="preserve">
+    <value>Filter by icon</value>
+  </data>
+  <data name="FilterByNoIcon.Name" xml:space="preserve">
+    <value>Filter by no icon</value>
+  </data>
+  <data name="MultiSelectFilter.Name" xml:space="preserve">
+    <value>Apply multiple value filter</value>
+  </data>
+  <data name="ReApplyFilter.Name" xml:space="preserve">
+    <value>Reapply filter</value>
+  </data>
+  <data name="Features.Name" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="Samples.Name" xml:space="preserve">
+    <value>Samples</value>
+  </data>
+  <data name="MovieList.Name" xml:space="preserve">
+    <value>Movie list</value>
+  </data>
+  <data name="SimpleInvoice.Name" xml:space="preserve">
+    <value>Simple invoice</value>
+  </data>
+  <data name="CreateHyperlinks.Name" xml:space="preserve">
+    <value>Create hyperlinks</value>
+  </data>
+  <data name="BasicSalesReport.Name" xml:space="preserve">
+    <value>Basic sales report</value>
+  </data>
+  <data name="Axes.Descrip" xml:space="preserve">
+    <value>## Axis
+Charts contain three axis types: 
+- category axis
+- value axis
+- series axis
+
+They are all generated automatically, and you **can not add or delete them in code**.
+
+Examples in the Axis folder demonstrate how to specify axis-related settings such as:
+- axis titles
+- axis units
+- display unit labels
+- gridlines
+- tick marks
+- tick mark labels</value>
+  </data>
+  <data name="Charts.Descrip" xml:space="preserve">
+    <value>## Charts
+**GrapeCity Documents for Excel** provides a comprehensive charting API:
+
+- Add charts to a worksheet using the **IWorksheet.AddChart** method
+-- Returns an instance of **IShape** 
+-- Use the **Chart** property to access the newly added chart
+- Add data series with the **IChart.SeriesCollection.Add** method
+- Cutomize chart titles with the **IChart.ChartTitle** property
+- Cutomize chart legends with the **IChart.Legend** property
+- Access and customize each data series through the **ISeries** interface
+- Customize each data point in a data series using the **IPoint** interface
+- Add, remove, or customize each data label in a series using the **IDataLabel** interface
+- Access and customize a group of series through the **IChartGroup** interface
+- Access and customize value axes, category axes, and series axes using the **IAxis** interface
+
+Over and above the basic usage of each chart feature, you can change the **ISeries.ChartType** to create combination charts. You can even specify whether to plot a series on the primary or secondary axis with the **ISeries.AxisGroup** property.
+
+Each series in a chart is associated with a chart group. Typically there is one chart group for each chart type. Multiple chart groups are created automatically when you use combination charts. 
+
+The **IChartGroup** interface provides options that let you customize the appearance of every series in a group. For example, you can set these properties on certain chart types:
+
+- **StartAngle** for pie charts
+- **GapWidth** for bar or column charts
+- **HasHiLoLines** and **HasUpDownBars** shows or hides stock chart options on a line chart
+
+The **IAxis** interface provides options that let you customize the appearance of chart axes. For example, you can these properties on certain axis types:
+
+- **MinimumScale** and **MaximumScale** for a value axis
+- **TickLabelSpacing** for a category axis
+- **HasMajorGridlines** and **HasMinorGridlines** for a value axis
+
+Many chart objects (chart area, plot area, chart title, legend, series) provide a **Format** property so you can access and modify:
+
+- **fills** solid or gradient 
+- **lines** dashed or transparency</value>
+  </data>
+  <data name="Series.Descrip" xml:space="preserve">
+    <value>## Series
+**Series** is the most frequently used feature in charts. Each chart contains one or more data series, and each series consists of a group of data points. 
+
+These examples demonstrate how to add a series to a chart, and how to specify settings for each series, such as:
+
+- **BubbleScale** and **SizeRepresents** for bubble charts
+- Configure **Series** format
+- Change **Series Type**
+- Add **Secondary Axis**
+- **VaryByCategories** colors for single-series column charts</value>
+  </data>
+  <data name="PersonalNetWorthCalculator.Name" xml:space="preserve">
+    <value>Personal net worth calculator</value>
+  </data>
+  <data name="Comments.Descrip" xml:space="preserve">
+    <value>## Comments
+GrapeCity Documents for Excel enables users to annotate worksheets. They can write comments for cells to add information about the data it contains.
+
+Add comments for a range using the **AddComment** method. It returns an instance of the **IComment** interface. 
+
+Always show comments with the **Visible** property. 
+
+Modify comment layouts with the **Shape** property.
+
+Create rich text using the **TextFrame** property of the **IShape** interface. You can use different font styles for each run.</value>
+  </data>
+  <data name="SpreadSheetsViewer.Name" xml:space="preserve">
+    <value>Spread.Sheets Viewer</value>
+  </data>
+  <data name="UseCases.Descrip" xml:space="preserve">
+    <value>Two more GrapeCity Documents for Excel usage scenarios are as follows:
+- **Code** Use GrapeCity Documents for Excel API code, then export to an Excel file.
+- **Templates** Import an Excel template to the GrapeCity Documents for Excel data model, then use GrapeCity Documents for Excel API code to add content, then export it to an Excel file.</value>
+  </data>
+  <data name="ExcelReporting.Name" xml:space="preserve">
+    <value>Excel Reporting</value>
+  </data>
+  <data name="ExcelTemplates.Name" xml:space="preserve">
+    <value>Excel Templates</value>
+  </data>
+  <data name="HiddenRowColumn.Name" xml:space="preserve">
+    <value>Hide rows and columns</value>
+  </data>
+  <data name="HomeInventory.Name" xml:space="preserve">
+    <value>Home inventory</value>
+  </data>
+  <data name="CollapseGroup.Name" xml:space="preserve">
+    <value>Collapse group</value>
+  </data>
+  <data name="SimplePersonalBudget.Name" xml:space="preserve">
+    <value>Simple personal budget</value>
+  </data>
+  <data name="StudentCalendar.Name" xml:space="preserve">
+    <value>Student calendar</value>
+  </data>
+  <data name="TravelExpenseReport.Name" xml:space="preserve">
+    <value>Travel expense report</value>
+  </data>
+  <data name="ConditionalFormatting.Descrip" xml:space="preserve">
+    <value>## Conditional Formatting
+In order to enable you to highlight important information in rows or columns of a worksheet, GrapeCity Documents for Excel allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule..
+
+GrapeCity Documents for Excel supports all types of conditional formatting rules:
+
+- Cell Value
+- Average
+- Color Scale
+- Data Bar
+- Icon Sets
+- Top Bottom 
+- Unique
+- Expression
+
+Apply conditional formatting rules to a range using the **Add** method of **IRange.FormatConditions**. You can also use other specific Add methods:
+
+- AddAboveAverage
+- AddColorScale
+- AddDatabar
+- AddIconSetCondition
+- AddTop10
+- AddUniqueValues
+
+All of the Add functions return an instance of the **IFormatCondition** interface, or an interface specific to another Add method, such as **IAboveAverage**.</value>
+  </data>
+  <data name="DataValidation.Descrip" xml:space="preserve">
+    <value>## Data Validation
+GrapeCity Documents for Excel lets you validate data by restricting the information format and the values that can be entered in cells of a worksheet. You can create distinct validation scenarios for individual cells or for a range of cells.
+
+GrapeCity Documents for Excel supports all types of validations, including:
+- Whole Number
+- Decimal
+- List
+- Date
+- Time
+- Text length
+- Custom
+
+Add validation for a range using the **Add** method of  **IRange.Validation** property. The method returns an instance of the **IValidation** interface. 
+- To set input and error messages for the validation, use these properties:
+-- InputMessage 
+-- ErrorMessage 
+- To specify whether to show the messages, use these properties:
+-- ShowInputMessage 
+-- ShowError
+- To specify whether to show a drop down list in a list validation:
+-- InCellDropdown property</value>
+  </data>
+  <data name="MonthlyBusinessBudget.Name" xml:space="preserve">
+    <value>Monthly business budget</value>
+  </data>
+  <data name="Filtering.Descrip" xml:space="preserve">
+    <value>## Filtering
+GrapeCity Documents for Excel supports all types of filters, including: 
+- Number Filter
+- Text Filter
+- Date Filter
+- Color Filter
+- Icon Filter
+
+Filter a range using the range's **AutoFilter** method. If you want to apply the filter to multiple columns, you can invoke the AutoFilter method several times.
+
+To re-apply filter conditions when the range's value changes, use the **ApplyFilter** method of the worksheet's **AutoFilter** instance.</value>
+  </data>
+  <data name="FilteringByColor.Descrip" xml:space="preserve">
+    <value>## Filter by color
+The examples in this folder demonstrate how to use the AutoFilter method to create a color filter. You can filter by:
+- font color
+- interior color
+- automatic font color
+- no fill</value>
+  </data>
+  <data name="FilteringByIcon.Descrip" xml:space="preserve">
+    <value>## Filter by icon
+The examples in this folder demonstrate how to use the AutoFilter method to filter by icon.  You can set the **AutoFilterOperator** parameter to: 
+
+- **Icon** and filter by the specified icon
+- **NoIcon** and filter by rows with no icon
+
+Before you can apply an icon filter, you must first create an **IIconSetCondition** instance and an **IFormatCondition** instance for the Range.</value>
+  </data>
+  <data name="SimpleBudget.Name" xml:space="preserve">
+    <value>Simple Budget</value>
+  </data>
+  <data name="TextFiltering.Descrip" xml:space="preserve">
+    <value>## Text Filter
+The example in this folder demonstrates how to use the AutoFilter method to create a text filter. For example, you can filter by rows that contain the letter "e".</value>
+  </data>
+  <data name="Alignment.Descrip" xml:space="preserve">
+    <value>## Alignment
+The examples in this folder demonstrate how to use these alignment settings:
+- HorizontalAlignment (Left, Center, or Right)
+- VerticalAlignment (Top, Center, or Bottom)
+- ReadingOrder (sets text direction to RightToLeft or LeftToRight)
+- ShrinkToFit 
+- Orientation (sets the text rotation angle in degrees)
+- Wrap Text </value>
+  </data>
+  <data name="Borders.Descrip" xml:space="preserve">
+    <value>## Borders
+The examples in this folder demonstrate how to specify border settings for a range. You can set these border options:
+- BorderLineStyle (Dashed, DashDot, Dotted, Double, Medium, Hair, etc.)
+- Color (Green, Red, Blue, Tomato, LimeGreen, etc.)</value>
+  </data>
+  <data name="DateFiltering.Descrip" xml:space="preserve">
+    <value>## Date Filter
+The examples in this folder demonstrate how to use the AutoFilter method to filter by date. They show how you can filter:
+- between two dates
+- all dates in February</value>
+  </data>
+  <data name="Fill.Descrip" xml:space="preserve">
+    <value>## Fill
+The examples in this folder demonstrate how to apply several kinds of fill to a range.
+- Solid fill
+- Pattern fill
+- Linear gradient fill
+- Rectangular gradient fill</value>
+  </data>
+  <data name="Fonts.Descrip" xml:space="preserve">
+    <value>## Fonts
+The examples in this folder demonstrate how to apply font settings to a range:
+- Font color
+- Font size
+- Font name
+- Bold, Italic
+- Underline
+- Strikethrough, Superscript, Subscript</value>
+  </data>
+  <data name="Formatting.Descrip" xml:space="preserve">
+    <value>## Formatting
+GrapeCity Documents for Excel provides a lot of properties to customize the appearance of a range:
+
+- **IRange.NumberFormat** sets the number format
+- **IRange.HorizontalAlignment**,  **IRange.VerticalAlignment**, **IRange.IndentLevel**, etc. set the alignment
+- **IRange.Font** sets the font
+- **IRange.Borders** sets the border
+- **IRange.Interior** sets solid fill, pattern fill, and gradient fill
+- **IRange.Locked** and **IRange.FormulaHidden** sets up protection
+
+You can also create custom styles or use the built-in named styles, and apply named styles to one or more ranges.</value>
+  </data>
+  <data name="Formulas.Descrip" xml:space="preserve">
+    <value>## Formulas
+GrapeCity Documents for Excel lets you create and use formulas. These are expressions that let you calculate the value of a cell quickly and accurately. You can also use built-in functions and operators to generate formulas and calculate values in cells.
+
+The calc engine handles many calculations, for example:
+- Hundreds of built-in Excel functions
+- Array formulas
+- Dirty and Calculate methods
+- Table formula</value>
+  </data>
+  <data name="Grouping.Descrip" xml:space="preserve">
+    <value>## Grouping
+Spreadsheets with tons of data can be a headache to read. You can spend a lot of time and effort trying to visualize, manage, and analyze the information that is relevant to you.
+
+GrapeCity Documents for Excel lets you summarize large amounts of information in groups so that complex spreadsheets are easier to navigate. After rows of data in a spreadsheet are grouped, users can expand and collapse details with the click of a button in the group header row. You can use the following methods and properties to customize your groupings:
+
+- The **Group** method of the range increases the outline level of specific rows
+- The **Ungroup** method of the range decreases the outline level of specific rows
+- The **ShowDetail** Boolean property expands or collapses a group
+- The **ShowLevels** method of the worksheet's Outline instance expands specific level groups</value>
+  </data>
+  <data name="NumberFormat.Descrip" xml:space="preserve">
+    <value>## Number Format
+The Number Format examples demonstrate how to apply a number format to a range. GrapeCity Documents for Excel uses Excel-style number formats.</value>
+  </data>
+  <data name="Protection.Descrip" xml:space="preserve">
+    <value>## Protection 
+The Protection examples demonstrate how to apply security settings to a range, for example:
+- The **FormulaHidden** property keeps formulas in a range from appearing in exported .xlsx files.
+- The **Locked** property protects cells in a range from being modified</value>
+  </data>
+  <data name="AddCustomSlicerStyle.Name" xml:space="preserve">
+    <value>Add a custom slicer style</value>
+  </data>
+  <data name="BloodSugarTracker.Name" xml:space="preserve">
+    <value>Blood sugar tracker</value>
+  </data>
+  <data name="Tutorial.Name" xml:space="preserve">
+    <value>Tutorial</value>
+  </data>
+  <data name="Hyperlinks.Descrip" xml:space="preserve">
+    <value>## Hyperlinks
+Apply hyperlinks to a range using the **Add** method of a worksheet or range's **Hyperlinks** instance. GrapeCity Documents for Excel supports the following types of hyperlink:
+- Link to a web page
+- Link to a specific range in the current document
+- Link to an external file
+- Link to an email address</value>
+  </data>
+  <data name="Picture.Descrip" xml:space="preserve">
+    <value>## Picture
+GrapeCity Documents for Excel allows you to add a picture to a worksheet.
+
+To add a picture to a worksheet, use the **AddPicture** method of the worksheet's **Shapes** collection.</value>
+  </data>
+  <data name="PivotTable.Descrip" xml:space="preserve">
+    <value>## Pivot Table
+A pivot table is a data summarization tool. It can automatically count, total, or average the data stored in a spreadsheet, and display the resulting summarized data in a second table.
+
+Create a pivot cache using the **Create** method of the workbook's **PivotCaches** collection. It returns an instance of the **IPivotCache** interface. 
+
+Create a pivot table using the **CreatePivotTable** method of the pivot cache instance. Or you can opt to use the **Add** method of the worksheet's **PivotTables** collection.
+
+Use the **PivotFieldOrientation** property of each pivot field to specify whether it is a RowField, ColumnField, ValueField, or PageField.</value>
+  </data>
+  <data name="RangeOperations.Descrip" xml:space="preserve">
+    <value>## Range Operations
+A range is a cell or a cluster of cells in a spreadsheet that can be used to execute important operations on cells, rows or columns with the help of **Range** property of the **IWorksheet** interface.
+
+Examples in this folder demonstrate how to:
+- Access cells, rows, and columns
+- Access each area of a range
+- Access ranges in various ways
+- Cut, Copy, and Paste a range
+- Work with a used range of cells
+- Get a row count or column count
+- Hide a row or column
+- Insert or delete cells
+- Insert or delete rows and columns
+- Merge cells
+- Set values to a range
+- Set row height and column width</value>
+  </data>
+  <data name="Shape.Descrip" xml:space="preserve">
+    <value>## Shape
+GrapeCity Documents for Excel lets you embed drawing objects like shapes and pictures in the cells of a worksheet. You can insert arrows, lines, charts, slicers, pictures, and general shapes.
+
+To create a shape for a worksheet, use the **AddShape** method of the worksheet's Shapes collection. Then you can configure the Shape instance using properties like these:
+
+- Configure a shape's fill style using the **Fill** property 
+- Configure a shape's line style using the **Line** property
+- Configure a shape's 3D format using the **ThreeD** property 
+- Configure a shape's rich text using the **TextFrame** property</value>
+  </data>
+  <data name="Slicer.Descrip" xml:space="preserve">
+    <value>## Slicer
+Slicers are visual filters that you can use to filter a table or pivot table.
+
+Use the **Add** method of a workbook's **SlicerCaches** collection to create a slicer cache. It returns an instance of a slicer cache. 
+
+Use the **Add** method of the slicer cashe's **Slicers** collection to create a slicer.
+
+It supports both built-in and custom slicer styles.</value>
+  </data>
+  <data name="Sorting.Descrip" xml:space="preserve">
+    <value>## Sorting
+GrapeCity Documents for Excel supports all types of sorting, including:
+- Sort by value
+- Sort by font color
+- Sort by interior
+- Sort by icon
+- Sort by custom list</value>
+  </data>
+  <data name="Sparklines.Descrip" xml:space="preserve">
+    <value>## Sparklines
+GrapeCity Documents for Excel allows you to highlight specific information and see how it varies over time using Sparklines. Sparklines are small, lightweight charts that are drawn inside cells to quickly visualize data for improved analysis.
+
+Use the **Add** method of a range's **SparklineGroups** collection to create a group of new sparklines. Sparklines only exist inside of a sparkline group. There is no way to create a sparkline outside of a sparkline group.
+
+We support the following types of sparklines:
+- Line
+- Column
+- Win/Loss</value>
+  </data>
+  <data name="SpreadSheetsViewer.Descrip" xml:space="preserve">
+    <value>## Spread.Sheets Viewer
+Examples in this folder demonstrate how to use **GrapeCity Documents for Excel** and **Spread.Sheets**, another Spread product that is included in SpreadJS. GrapeCity Documents for Excel works on the server side to import and export Excel template files. Spread.Sheets works in the browser (client side) as a viewer or editor.
+
+To learn more about **Spread.Sheets**, visit the [Spread.Sheets Home Page](https://www.grapecity.com/en/spreadsheets).
+
+All examples in this folder work as below steps:
+- Open an Excel file with **GrapeCity Documents for Excel** existing on server.
+- Export the whole workbook to a JSON string by calling **Workbook.ToJson**, then transfer the JSON string to client side.
+- At client side, **Spread.Sheets** control will **FromJson** to let you view the result of the excel file on server.
+
+Click the **"Template"** button to download and view the excel file.
+
+In the demo page, you can edit the content in the Spread.Sheets control, then click the **"Export"** button to get the changed Excel file. The "Export" button works by following steps:
+- Spread.Sheets uses **ToJson** to get a JSON string which contains the latest changes, and post the string to server.
+- GrapeCity Documents for Excel at server uses **FromJson** with the JSON string, and then calls **Workbook.Save** to save everything to an excel file.
+- Finally, you can download the changed Excel file.</value>
+  </data>
+  <data name="Tables.Descrip" xml:space="preserve">
+    <value>## Tables
+To more easily manage and analyze data in spreadsheet, you can create table for a range. A table consists of rows and columns that you can format and manage independently in a worksheet. You will learn how to:
+
+- Add or remove a table in a worksheet
+- Apply filtering to a table column
+- Apply sorting to a table column
+- Apply either built-in or custom table styles
+- Access each range of a table
+- Add or remove a table column
+- Perform calculations for a specific table range</value>
+  </data>
+  <data name="Theme.Descrip" xml:space="preserve">
+    <value>## Theme
+GrapeCity Documents for Excel provides you with a set of built-in themes so you can quickly change the overall appearance of a workbook. It also lets you create custom themes and apply them to workbooks.
+
+- Use the **Theme** property of a workbook instance to change the workbook's theme. 
+- Use the **Add** method of a themes class instance to add a custom theme. 
+- Use the built-in properties of the **Themes** class to get a built-in theme instance.
+- Use the **Themes** indexer to get a custom theme instance.</value>
+  </data>
+  <data name="Workbook.Descrip" xml:space="preserve">
+    <value>## Workbook
+A workbook is a spreadsheet document that contains one or more worksheets that are stored within the Worksheets collection.
+
+The examples in this folder demonstrate the following cases:
+- Create  a new workbook
+- Import an Excel file into a workbook
+- Import an Excel file with a password to a workbook
+- Export a workbook to an Excel file
+- Export a workbook to an Excel file with a password
+- Import or export a workbook using ToJson and FromJson</value>
+  </data>
+  <data name="Worksheets.Descrip" xml:space="preserve">
+    <value>## Worksheets
+The examples in this folder demonstrate the following cases:
+- Add a worksheet
+- Delete a worksheet
+- Protect a worksheet
+- Unprotect a worksheet
+- Activate a worksheet
+- Apply settings to a worksheet</value>
+  </data>
+  <data name="ExcelReporting.Descrip" xml:space="preserve">
+    <value>## Excel Reporting
+In this folder, you can explore complete code demonstrating how to generate an Excel file or report at server side. 
+
+Click the **"Run"** button to perform the following actions on the server:
+- Create an empty workbook
+- Execute all of code in the code window
+- Save to an Excel file
+
+Then you can view the results by downloading the Excel file.</value>
+  </data>
+  <data name="ExcelTemplates.Descrip" xml:space="preserve">
+    <value>## Excel Templates
+In some scenarios, you may have your own Excel templates and just want to open and update some of the contents at server side. You can use the extensive GrapeCity Documents for Excel API to open an existing Excel file and then change some of its values, customize its formatting, and whatever else you need to do.
+- Click the **Template** button to download and view the original Excel template
+- Click the **Run** button to run the code and get the changed Excel file</value>
+  </data>
+  <data name="UseSlicerToClearFilter.Name" xml:space="preserve">
+    <value>Use a slicer to clear a filter</value>
+  </data>
+  <data name="Features.Descrip" xml:space="preserve">
+    <value>## Features
+GrapeCity Documents for Excel provides some remarkable features that empower developers to create spreadsheets with:
+- High-performance attributes
+- Custom themes
+- Configurable components
+- Summarized data
+- Custom styles
+- Embedded drawing objects
+- Integrated calculation engine
+- And much more...
+
+You can explore a lot of example code in the Features section that shows you how to use each feature in GrapeCity Documents for Excel.
+
+Click the **"Run"** button to perform the following actions on the server:
+- Create an empty workbook
+- Execute all of the code in the code window
+- Save to an Excel file
+
+Then you can view the results by downloading the Excel file.
+
+**NOTE**: In this demo, Spread.Sheets is in read-only mode. Don't be alarmed if some features are not interactive. Download the fully functional  Excel file to interact with the features.</value>
+  </data>
+  <data name="ProjectCostTracker.Name" xml:space="preserve">
+    <value>Project cost tracker</value>
+  </data>
+  <data name="EventBudget.Name" xml:space="preserve">
+    <value>Event budget</value>
+  </data>
+  <data name="NumberFilter.Name" xml:space="preserve">
+    <value>Apply number filter</value>
+  </data>
+  <data name="NumberFiltering.Descrip" xml:space="preserve">
+    <value>## Number Filter
+The examples in this folder demonstrates how to use number filtering for range.</value>
+  </data>
+  <data name="NumberFormat.Name" xml:space="preserve">
+    <value>Number Format</value>
+  </data>
+  <data name="ConfigValueAxesFormat.Name" xml:space="preserve">
+    <value>Configure value axis style</value>
+  </data>
+  <data name="ChangeSeriesType.Name" xml:space="preserve">
+    <value>Change series type</value>
+  </data>
+  <data name="ConfigDataLabelFormat.Name" xml:space="preserve">
+    <value>Configure data label's format</value>
+  </data>
+  <data name="ConfigMarkerStyle.Name" xml:space="preserve">
+    <value>Configure markers style</value>
+  </data>
+  <data name="ConfigNegativePoint.Name" xml:space="preserve">
+    <value>Configure negative point style</value>
+  </data>
+  <data name="ConfigSeriesFormat.Name" xml:space="preserve">
+    <value>Configure series format</value>
+  </data>
+  <data name="CreateSecondaryAxis.Name" xml:space="preserve">
+    <value>Create secondary axis</value>
+  </data>
+  <data name="DeleteSeries.Name" xml:space="preserve">
+    <value>Delete series</value>
+  </data>
+  <data name="ConfigChartTitleRichText.Name" xml:space="preserve">
+    <value>Configure chart title with rich text</value>
+  </data>
+  <data name="ChartArea.Name" xml:space="preserve">
+    <value>Chart area</value>
+  </data>
+  <data name="ChartLines.Name" xml:space="preserve">
+    <value>Chart lines</value>
+  </data>
+  <data name="ChartTitle.Name" xml:space="preserve">
+    <value>Chart title</value>
+  </data>
+  <data name="ChartWalls.Name" xml:space="preserve">
+    <value>Chart walls</value>
+  </data>
+  <data name="ConfigChartAreaFont.Name" xml:space="preserve">
+    <value>Configure chart area's font</value>
+  </data>
+  <data name="ConfigChartBackWall.Name" xml:space="preserve">
+    <value>Configure chart back wall</value>
+  </data>
+  <data name="ConfigChartSideWall.Name" xml:space="preserve">
+    <value>Configure chart side wall</value>
+  </data>
+  <data name="DataLabel.Name" xml:space="preserve">
+    <value>Data label</value>
+  </data>
+  <data name="DataPoint.Name" xml:space="preserve">
+    <value>Data point</value>
+  </data>
+  <data name="Legend.Name" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="ChartArea.Descrip" xml:space="preserve">
+    <value>## Chart area
+Chart area is the complete chart area, include plot area, chart title and legend.
+
+These examples demonstrate how to configure chart area style and whole chart area font style.</value>
+  </data>
+  <data name="ChartLines.Descrip" xml:space="preserve">
+    <value>## Chart lines
+Chart lines include: **Trendline**, **Dropline** , **High-Low Line** and **Series Line**.
+
+- **Trendline** is for specific series.
+- **Dropline** set for line chart or area chart.
+- **High-Low line** set for line chart.
+- **Series line** set for stacked column or bar charts. Pie-of-pie charts and bar-of-pie charts also have connector lines between their sections
+
+These examples demonstrate how to add these lines and how to configure lines style.</value>
+  </data>
+  <data name="ChartTitle.Descrip" xml:space="preserve">
+    <value>## Chart title
+**Chart title** is the name of the chart.
+
+These examples demonstrate how to display chart name  and how to specify settings for chart title.</value>
+  </data>
+  <data name="ChartWalls.Descrip" xml:space="preserve">
+    <value>**Chart walls** include **back wall** and **side wall**.
+
+These examaple demonstrete how to specity settings for chart walls, include:
+- Configure walls style together
+- Configure back wall and side wall separately</value>
+  </data>
+  <data name="Chart3DFormat.Name" xml:space="preserve">
+    <value>Chart 3D format</value>
+  </data>
+  <data name="ConfigLegendFormat.Name" xml:space="preserve">
+    <value>Configure legend format</value>
+  </data>
+  <data name="ConfigSecondarySection.Name" xml:space="preserve">
+    <value>Configure secondary section for pie of pie chart</value>
+  </data>
+  <data name="DataLabel.Descrip" xml:space="preserve">
+    <value>## Data label
+**Data labels** can display specified series information. Use ShowLegendKey, ShowPercentage, ShowValue, ShowSeriesName, .etc to configure data label layout. These examples demonstrate how to display data labels and specify settings for data labels.</value>
+  </data>
+  <data name="DataPoint.Descrip" xml:space="preserve">
+    <value>## Data point
+**Data points** are a collection of all points in a specific series. These examples demonstrate how to specify settings for data points.</value>
+  </data>
+  <data name="Legend.Descrip" xml:space="preserve">
+    <value>## Legend
+These examples demonstrate how to configure the style and position of chart **legends**.</value>
+  </data>
+  <data name="PlotArea.Descrip" xml:space="preserve">
+    <value>## Plot area
+These examples demonstrate how to specify settings for **plot area**.</value>
+  </data>
+  <data name="PlotArea.Name" xml:space="preserve">
+    <value>Plot area</value>
+  </data>
+  <data name="ChartGallery.Descrip" xml:space="preserve">
+    <value>## Chart gallery
+This chart gallery includes all of the **chart types** available and demonstrates how to configure each chart.</value>
+  </data>
+  <data name="ChartGallery.Name" xml:space="preserve">
+    <value>Chart gallery</value>
+  </data>
+  <data name="AreaChart.Name" xml:space="preserve">
+    <value>Area chart</value>
+  </data>
+  <data name="AreaStacked100.Name" xml:space="preserve">
+    <value>100% Stacked chart</value>
+  </data>
+  <data name="AreaStackedChart.Name" xml:space="preserve">
+    <value>Stacked Area chart</value>
+  </data>
+  <data name="BarClusteredChart.Name" xml:space="preserve">
+    <value>Clustered Bar chart</value>
+  </data>
+  <data name="BarStacked100Chart.Name" xml:space="preserve">
+    <value>100% Stacked Bar chart</value>
+  </data>
+  <data name="BarStackedChart.Name" xml:space="preserve">
+    <value>Stacked Bar chart</value>
+  </data>
+  <data name="ColumnClusteredChart.Name" xml:space="preserve">
+    <value>Clustered Column chart</value>
+  </data>
+  <data name="ColumnStacked100Chart.Name" xml:space="preserve">
+    <value>100% Stacked Column chart</value>
+  </data>
+  <data name="ColumnStackedChart.Name" xml:space="preserve">
+    <value>Stacked Column chart</value>
+  </data>
+  <data name="LineChart.Name" xml:space="preserve">
+    <value>Line chart</value>
+  </data>
+  <data name="LineMarkersChart.Name" xml:space="preserve">
+    <value>Line Markers chart</value>
+  </data>
+  <data name="LineStacked100Chart.Name" xml:space="preserve">
+    <value>100% Stacked Line chart</value>
+  </data>
+  <data name="LineStackedChart.Name" xml:space="preserve">
+    <value>Stacked Line chart</value>
+  </data>
+  <data name="PieChart.Name" xml:space="preserve">
+    <value>Pie chart</value>
+  </data>
+  <data name="Stock_HighLowCloseStockChart.Name" xml:space="preserve">
+    <value>High-Low-Close stock chart</value>
+  </data>
+  <data name="Stock_OpenHighLowCloseStock.Name" xml:space="preserve">
+    <value>Open-High-Low-Close stock chart</value>
+  </data>
+  <data name="Stock_VolumeHighLowCloseStock.Name" xml:space="preserve">
+    <value>Volume-High-Low-Close stock chart</value>
+  </data>
+  <data name="XYScatterChart.Name" xml:space="preserve">
+    <value>Scatter chart</value>
+  </data>
+  <data name="XYScatterLinesChart.Name" xml:space="preserve">
+    <value>Scatter with straight lines and markers</value>
+  </data>
+  <data name="XYScatterSmooth.Name" xml:space="preserve">
+    <value>Scatter with smooth Lines</value>
+  </data>
+  <data name="BubbleChart.Name" xml:space="preserve">
+    <value>Bubble chart</value>
+  </data>
+  <data name="ConfigHeaderFooter.Name" xml:space="preserve">
+    <value>Configure page header footer</value>
+  </data>
+  <data name="ConfigEvenPageHeaderFooter.Name" xml:space="preserve">
+    <value>Configure even page header footer</value>
+  </data>
+  <data name="ConfigFirstPageNumber.Name" xml:space="preserve">
+    <value>Configure first page number</value>
+  </data>
+  <data name="ConfigPageMargins.Name" xml:space="preserve">
+    <value>Configure page margins</value>
+  </data>
+  <data name="ConfigPageOrder.Name" xml:space="preserve">
+    <value>Configure page order</value>
+  </data>
+  <data name="ConfigPageOrientation.Name" xml:space="preserve">
+    <value>Configure page orientation</value>
+  </data>
+  <data name="ConfigPaperScaling.Name" xml:space="preserve">
+    <value>Configure paper scaling</value>
+  </data>
+  <data name="ConfigPaperSize.Name" xml:space="preserve">
+    <value>Configure paper size</value>
+  </data>
+  <data name="ConfigPrintArea.Name" xml:space="preserve">
+    <value>Configure print area</value>
+  </data>
+  <data name="ConfigSheetPrintSettings.Name" xml:space="preserve">
+    <value>Configure sheet print settings</value>
+  </data>
+  <data name="PageSetup.Name" xml:space="preserve">
+    <value>Page Setup</value>
+  </data>
+  <data name="CombinationChart1.Name" xml:space="preserve">
+    <value>Combination chart</value>
+  </data>
+  <data name="CombinationChart2.Name" xml:space="preserve">
+    <value>Combination chart</value>
+  </data>
+  <data name="LineMarkerStackedChart.Name" xml:space="preserve">
+    <value>Stack line with markers chart</value>
+  </data>
+  <data name="Pie_DoughnutChart.Name" xml:space="preserve">
+    <value>Doughnut chart</value>
+  </data>
+  <data name="Stock_VolumeOpenHighLowClose.Name" xml:space="preserve">
+    <value>Volume-Open-High-Low-Close chart</value>
+  </data>
+  <data name="XYScatterSmoothWithMarkers.Name" xml:space="preserve">
+    <value>Scatter with smooth lines and markers</value>
+  </data>
+  <data name="LineMarkerStacked100Chart.Name" xml:space="preserve">
+    <value>100% Stacked line with markers chart</value>
+  </data>
+  <data name="Chart3DFormat.Descrip" xml:space="preserve">
+    <value>## Chart 3D format
+These examples in this folder demonstrate how to set charts 3D format</value>
+  </data>
+  <data name="ConfigMarkersFormat.Name" xml:space="preserve">
+    <value>Configure markers format</value>
+  </data>
+  <data name="Markers.Descrip" xml:space="preserve">
+    <value>## Markers
+These examples demonstrate how to set style and format for **markers**.</value>
+  </data>
+  <data name="Markers.Name" xml:space="preserve">
+    <value>Markers</value>
+  </data>
+  <data name="PageSetup.Descrip" xml:space="preserve">
+    <value>## Page Setup
+GrapeCity Documents for Excel supports page setup. The **PageSetup** object contains all page setup attributes (left margin, bottom margin, paper size, and so on) as properties.</value>
+  </data>
+  <data name="ConfigChart3DFormat.Name" xml:space="preserve">
+    <value>Configure chart 3D format</value>
+  </data>
+  <data name="ConfigFirstPageHeaderFooter.Name" xml:space="preserve">
+    <value>Configure first page header footer</value>
+  </data>
+  <data name="EventPlanningTracker.Name" xml:space="preserve">
+    <value>Event planning tracker</value>
+  </data>
+  <data name="FamilyBudget.Name" xml:space="preserve">
+    <value>Family budget</value>
+  </data>
+  <data name="ConfigPrintTitleColumns.Name" xml:space="preserve">
+    <value>Configure columns to repeat at left</value>
+  </data>
+  <data name="ConfigPrintTitleRows.Name" xml:space="preserve">
+    <value>Configure rows to repeat at top</value>
+  </data>
+  <data name="ConfigPageCenter.Name" xml:space="preserve">
+    <value>Configure page center</value>
+  </data>
+  <data name="ImportExcelFileDataOnly.Name" xml:space="preserve">
+    <value>Only import data from Excel</value>
+  </data>
+  <data name="ImportExcelFileWithoutCalculation.Name" xml:space="preserve">
+    <value>Do not recalculate after opening Excel</value>
+  </data>
+  <data name="PDFExporting.Descrip" xml:space="preserve">
+    <value>## PDF Exporting
+In this folder, you can explore complete code demonstrating how to export an pdf file at server side. 
+
+Click the **"Save as PDF"** button to perform the following actions on the server:
+- Create an empty workbook
+- Execute all of code in the code window
+- Save to an pdf file
+
+Then you can view the pdf in your browser.</value>
+  </data>
+  <data name="PDFExporting.Name" xml:space="preserve">
+    <value>PDF Exporting</value>
+  </data>
+  <data name="SaveWorkbookToPDF.Name" xml:space="preserve">
+    <value>Save workbook to PDF</value>
+  </data>
+  <data name="SaveWorksheetToPDF.Name" xml:space="preserve">
+    <value>Save worksheet to PDF</value>
+  </data>
+  <data name="ConfigurePageSetup.Name" xml:space="preserve">
+    <value>Page settings</value>
+  </data>
+  <data name="SetFontsFolderPath.Name" xml:space="preserve">
+    <value>Set font's folder</value>
+  </data>
+  <data name="ShapeCopy.Name" xml:space="preserve">
+    <value>Copy shape</value>
+  </data>
+  <data name="ShapeCut.Name" xml:space="preserve">
+    <value>Cut shape</value>
+  </data>
+  <data name="ShapeDuplicate.Name" xml:space="preserve">
+    <value>Duplicate shape</value>
+  </data>
+  <data name="ChartCopy.Name" xml:space="preserve">
+    <value>Copy chart</value>
+  </data>
+  <data name="ChartCut.Name" xml:space="preserve">
+    <value>Cut chart</value>
+  </data>
+  <data name="ChartDuplicate.Name" xml:space="preserve">
+    <value>Duplicate chart</value>
+  </data>
+  <data name="PictureCopy.Name" xml:space="preserve">
+    <value>Copy picture</value>
+  </data>
+  <data name="PictureCut.Name" xml:space="preserve">
+    <value>Cut picture</value>
+  </data>
+  <data name="PictureDuplicate.Name" xml:space="preserve">
+    <value>Duplicate picture</value>
+  </data>
+  <data name="SlicerCopy.Name" xml:space="preserve">
+    <value>Copy slicer</value>
+  </data>
+  <data name="SlicerCut.Name" xml:space="preserve">
+    <value>Cut slicer</value>
+  </data>
+  <data name="SlicerDuplicate.Name" xml:space="preserve">
+    <value>Duplicate slicer</value>
+  </data>
+  <data name="ImportCsvFileToWorkbook.Name" xml:space="preserve">
+    <value>Import csv file to workbook</value>
+  </data>
+  <data name="ImportCsvFileToWorkbookWithOptions.Name" xml:space="preserve">
+    <value>Import csv file to workbook with options</value>
+  </data>
+  <data name="SaveWorksheetToCsvFile.Name" xml:space="preserve">
+    <value>Save worksheet to csv file</value>
+  </data>
+  <data name="SaveWorkbookToCsvFile.Name" xml:space="preserve">
+    <value>Save workbook to csv file</value>
+  </data>
+  <data name="SaveWorkbookToCsvFileWithOptions.Name" xml:space="preserve">
+    <value>Save workbook to csv file with options</value>
+  </data>
+  <data name="SaveWorksheetToCsvFileWithOptions.Name" xml:space="preserve">
+    <value>Save worksheet to csv file with options</value>
+  </data>
+  <data name="ConfigureWorkbookView.Name" xml:space="preserve">
+    <value>Configure workbook view</value>
+  </data>
+  <data name="ConfigureWorksheetView.Name" xml:space="preserve">
+    <value>Configure worksheet view</value>
+  </data>
+  <data name="Text.Name" xml:space="preserve">
+    <value>Export text</value>
+  </data>
+  <data name="SaveSparklinesToPDF.Name" xml:space="preserve">
+    <value>Export sparklines</value>
+  </data>
+  <data name="TextStyle.Name" xml:space="preserve">
+    <value>Export font effects</value>
+  </data>
+  <data name="SaveRangeFillToPDF.Name" xml:space="preserve">
+    <value>Export fills</value>
+  </data>
+  <data name="SavePictureToPDF.Name" xml:space="preserve">
+    <value>Export picture</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NumberFormating.Name" xml:space="preserve">
+    <value>Export number formats</value>
+  </data>
+  <data name="Overflow.Name" xml:space="preserve">
+    <value>Export overflow text</value>
+  </data>
+  <data name="ConfigureBlackAndWhite.Name" xml:space="preserve">
+    <value>Black &amp; white</value>
+  </data>
+  <data name="ConfigureDraft.Name" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="ConfigureHeaderFooter.Name" xml:space="preserve">
+    <value>Header footer</value>
+  </data>
+  <data name="ConfigureOritation.Name" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="ConfigurePageBreaks.Name" xml:space="preserve">
+    <value>Page breaks</value>
+  </data>
+  <data name="ConfigurePageOrder.Name" xml:space="preserve">
+    <value>Page order</value>
+  </data>
+  <data name="ConfigurePagination.Name" xml:space="preserve">
+    <value>Pagination</value>
+  </data>
+  <data name="ConfigurePrintArea.Name" xml:space="preserve">
+    <value>Print area</value>
+  </data>
+  <data name="ConfigurePrintPageRange.Name" xml:space="preserve">
+    <value>Print page range</value>
+  </data>
+  <data name="ConfigurePrintTitles.Name" xml:space="preserve">
+    <value>Print titles</value>
+  </data>
+  <data name="ConfigureScaling.Name" xml:space="preserve">
+    <value>Scaling</value>
+  </data>
+  <data name="PdfPageSetup.Descrip" xml:space="preserve">
+    <value>## Page setup
+GrapeCity Documents for Excel allows users to paginate each worksheet using the properties of the IPageSetup interface.
+
+You can customize the page size, print area, print title rows, print title columns; specify horizontal page breaks, vertical page breaks, the maximum number of pages for horizontal and vertical pagination etc. along with zoom and scale factors as per your preferences while exporting a spreadsheet to a PDF file.</value>
+  </data>
+  <data name="PdfPageSetup.Name" xml:space="preserve">
+    <value>Page setup</value>
+  </data>
+  <data name="ConvertExcelToPDF.Name" xml:space="preserve">
+    <value>Convert Excel file to PDF</value>
+  </data>
+  <data name="SaveBorder.Name" xml:space="preserve">
+    <value>Export borders</value>
+  </data>
+  <data name="SaveConditionalFormatting.Name" xml:space="preserve">
+    <value>Export Conditional Formatting</value>
+  </data>
+  <data name="SaveTable.Name" xml:space="preserve">
+    <value>Export table</value>
+  </data>
+  <data name="FinancialKPIs.Name" xml:space="preserve">
+    <value>Financial KPIs</value>
+  </data>
+  <data name="IncomeStatement.Name" xml:space="preserve">
+    <value>Income statement</value>
+  </data>
+  <data name="AnnualFinancialReport.Name" xml:space="preserve">
+    <value>Annual financial report</value>
+  </data>
+  <data name="AgingReport.Name" xml:space="preserve">
+    <value>Aging Report</value>
+  </data>
+  <data name="Text.Descrip" xml:space="preserve">
+    <value>## Export text
+Various of text effect can be exported to pdf file, such as:
+- Text with Excel number formatter
+- Overflow text
+- Font effects: text alignment, wordwrap, text indent, shrink to fit, underline, strikethrough .etc</value>
+  </data>
+  <data name="CellInfo.Name" xml:space="preserve">
+    <value>Use CellInfo helper class</value>
+  </data>
+</root>
