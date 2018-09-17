@@ -354,7 +354,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="1.5.0.4" />
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="2.0.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
