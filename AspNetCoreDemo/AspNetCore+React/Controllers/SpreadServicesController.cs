@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using GrapeCity.Documents.Excel;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.DotNet.PlatformAbstractions;
+using System.Drawing;
 
 namespace SpreadService.WebApi.Controllers
 {
@@ -135,8 +136,8 @@ namespace SpreadService.WebApi.Controllers
 
             var wholeTableStyle = tableStyle.TableStyleElements[TableStyleElementType.WholeTable];
             //Set WholeTable element style.
-            wholeTableStyle.Font.Color = Color.FromRGB(89, 89, 89);
-            wholeTableStyle.Borders.Color = Color.FromRGB(89, 89, 89);
+            wholeTableStyle.Font.Color = Color.FromArgb(89, 89, 89);
+            wholeTableStyle.Borders.Color = Color.FromArgb(89, 89, 89);
             wholeTableStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             wholeTableStyle.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             wholeTableStyle.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
@@ -146,15 +147,15 @@ namespace SpreadService.WebApi.Controllers
 
             var headerRowStyle = tableStyle.TableStyleElements[TableStyleElementType.HeaderRow];
             //Set HeaderRow element style.
-            headerRowStyle.Borders.Color = Color.FromRGB(89, 89, 89);
+            headerRowStyle.Borders.Color = Color.FromArgb(89, 89, 89);
             headerRowStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             headerRowStyle.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             headerRowStyle.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thin;
             headerRowStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
             headerRowStyle.Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
             headerRowStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            headerRowStyle.Interior.Color = Color.FromRGB(131, 95, 1);
-            headerRowStyle.Interior.PatternColor = Color.FromRGB(254, 184, 10);
+            headerRowStyle.Interior.Color = Color.FromArgb(131, 95, 1);
+            headerRowStyle.Interior.PatternColor = Color.FromArgb(254, 184, 10);
 
 
             var totalRowStyle = tableStyle.TableStyleElements[TableStyleElementType.TotalRow];
@@ -166,7 +167,7 @@ namespace SpreadService.WebApi.Controllers
             totalRowStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
             totalRowStyle.Borders[BordersIndex.InsideVertical].LineStyle = BorderLineStyle.Thin;
             totalRowStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
-            totalRowStyle.Interior.Color = Color.FromRGB(131, 95, 1);
+            totalRowStyle.Interior.Color = Color.FromArgb(131, 95, 1);
 
 
 
@@ -174,7 +175,7 @@ namespace SpreadService.WebApi.Controllers
             IStyle titleStyle = workbook.Styles["Title"];
             titleStyle.Font.Name = "Calibri";
             titleStyle.Font.Size = 36;
-            titleStyle.Font.Color = Color.FromRGB(56, 145, 167);
+            titleStyle.Font.Color = Color.FromArgb(56, 145, 167);
             titleStyle.IncludeAlignment = true;
             titleStyle.VerticalAlignment = VerticalAlignment.Center;
 
@@ -189,7 +190,7 @@ namespace SpreadService.WebApi.Controllers
             heading1Style.Font.Color = Color.White;
             heading1Style.Font.Bold = false;
             heading1Style.IncludePatterns = true;
-            heading1Style.Interior.Color = Color.FromRGB(131, 95, 1);
+            heading1Style.Interior.Color = Color.FromArgb(131, 95, 1);
 
 
             IStyle dateStyle = workbook.Styles.Add("Date");
@@ -218,7 +219,7 @@ namespace SpreadService.WebApi.Controllers
             normalStyle.IndentLevel = 1;
             normalStyle.VerticalAlignment = VerticalAlignment.Center;
             normalStyle.WrapText = true;
-            normalStyle.Font.Color = Color.FromRGB(89, 89, 89);
+            normalStyle.Font.Color = Color.FromArgb(89, 89, 89);
 
 
             IStyle currencyStyle = workbook.Styles["Currency"];
@@ -237,7 +238,7 @@ namespace SpreadService.WebApi.Controllers
             percentStyle.Font.Name = "Calibri";
             percentStyle.Font.Size = 20;
             percentStyle.Font.Bold = true;
-            percentStyle.Font.Color = Color.FromRGB(89, 89, 89);
+            percentStyle.Font.Color = Color.FromArgb(89, 89, 89);
 
 
             IStyle comma0Style = workbook.Styles["Comma [0]"];
@@ -257,7 +258,7 @@ namespace SpreadService.WebApi.Controllers
             dataBar.MaxPoint.Value = 0;
 
             dataBar.BarFillType = DataBarFillType.Gradient;
-            dataBar.BarColor.Color = Color.FromRGB(126, 194, 211);
+            dataBar.BarColor.Color = Color.FromArgb(126, 194, 211);
             dataBar.Direction = DataBarDirection.Context;
 
             dataBar.AxisColor.Color = Color.Black;
@@ -301,7 +302,7 @@ namespace SpreadService.WebApi.Controllers
 
             IWorksheet worksheet = workbook.Worksheets[0];
             worksheet.Name = "To-Do List";
-            worksheet.TabColor = Color.FromRGB(148, 112, 135);
+            worksheet.TabColor = Color.FromArgb(148, 112, 135);
             worksheet.SheetView.DisplayGridlines = false;
 
             //Set Value.
@@ -503,18 +504,18 @@ namespace SpreadService.WebApi.Controllers
             //Create customize theme.
             Themes themes = new Themes();
             ITheme theme = themes.Add("test");
-            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromRGB(0, 0, 0);
-            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromRGB(255, 255, 255);
-            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromRGB(37, 28, 34);
-            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromRGB(240, 248, 246);
-            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromRGB(148, 112, 135);
-            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromRGB(71, 166, 181);
-            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromRGB(234, 194, 53);
-            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromRGB(107, 192, 129);
-            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromRGB(233, 115, 61);
-            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromRGB(251, 147, 59);
-            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromRGB(71, 166, 181);
-            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromRGB(148, 112, 135);
+            theme.ThemeColorScheme[ThemeColor.Dark1].RGB = Color.FromArgb(0, 0, 0);
+            theme.ThemeColorScheme[ThemeColor.Light1].RGB = Color.FromArgb(255, 255, 255);
+            theme.ThemeColorScheme[ThemeColor.Dark2].RGB = Color.FromArgb(37, 28, 34);
+            theme.ThemeColorScheme[ThemeColor.Light2].RGB = Color.FromArgb(240, 248, 246);
+            theme.ThemeColorScheme[ThemeColor.Accent1].RGB = Color.FromArgb(148, 112, 135);
+            theme.ThemeColorScheme[ThemeColor.Accent2].RGB = Color.FromArgb(71, 166, 181);
+            theme.ThemeColorScheme[ThemeColor.Accent3].RGB = Color.FromArgb(234, 194, 53);
+            theme.ThemeColorScheme[ThemeColor.Accent4].RGB = Color.FromArgb(107, 192, 129);
+            theme.ThemeColorScheme[ThemeColor.Accent5].RGB = Color.FromArgb(233, 115, 61);
+            theme.ThemeColorScheme[ThemeColor.Accent6].RGB = Color.FromArgb(251, 147, 59);
+            theme.ThemeColorScheme[ThemeColor.Hyperlink].RGB = Color.FromArgb(71, 166, 181);
+            theme.ThemeColorScheme[ThemeColor.FollowedHyperlink].RGB = Color.FromArgb(148, 112, 135);
             theme.ThemeFontScheme.Major[FontLanguageIndex.Latin].Name = "Franklin Gothic Medium";
             theme.ThemeFontScheme.Minor[FontLanguageIndex.Latin].Name = "Bookman Old Style";
 
@@ -570,7 +571,7 @@ namespace SpreadService.WebApi.Controllers
 
             //Set WholeTable element style.
             var wholeTableStyle = tableStyle.TableStyleElements[TableStyleElementType.WholeTable];
-            wholeTableStyle.Borders.Color = Color.FromRGB(179, 35, 23);
+            wholeTableStyle.Borders.Color = Color.FromArgb(179, 35, 23);
             wholeTableStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
             wholeTableStyle.Borders[BordersIndex.EdgeRight].LineStyle = BorderLineStyle.Thin;
             wholeTableStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thin;
@@ -582,7 +583,7 @@ namespace SpreadService.WebApi.Controllers
 
             //Set SecondColumns element style.
             var headerRowStyle = tableStyle.TableStyleElements[TableStyleElementType.HeaderRow];
-            headerRowStyle.Borders.Color = Color.FromRGB(179, 35, 23);
+            headerRowStyle.Borders.Color = Color.FromArgb(179, 35, 23);
             headerRowStyle.Borders[BordersIndex.EdgeTop].LineStyle = BorderLineStyle.Thick;
             headerRowStyle.Borders[BordersIndex.EdgeBottom].LineStyle = BorderLineStyle.Thick;
 
@@ -591,7 +592,7 @@ namespace SpreadService.WebApi.Controllers
             //***********************************Set Named Styles*****************************
             IStyle normalStyle = workbook.Styles["Normal"];
             normalStyle.Font.Name = "Arial";
-            normalStyle.Font.Color = Color.FromRGB(179, 35, 23);
+            normalStyle.Font.Color = Color.FromArgb(179, 35, 23);
             normalStyle.HorizontalAlignment = HorizontalAlignment.Left;
             normalStyle.IndentLevel = 1;
             normalStyle.VerticalAlignment = VerticalAlignment.Center;
@@ -604,13 +605,13 @@ namespace SpreadService.WebApi.Controllers
             titleStyle.Font.Name = "Arial";
             titleStyle.Font.Bold = true;
             titleStyle.Font.Size = 72;
-            titleStyle.Font.Color = Color.FromRGB(179, 35, 23);
+            titleStyle.Font.Color = Color.FromArgb(179, 35, 23);
 
             IStyle heading1Style = workbook.Styles["Heading 1"];
             heading1Style.IncludeBorder = false;
             heading1Style.Font.Name = "Arial";
             heading1Style.Font.Size = 18;
-            heading1Style.Font.Color = Color.FromRGB(179, 35, 23);
+            heading1Style.Font.Color = Color.FromArgb(179, 35, 23);
 
             IStyle dataStyle = workbook.Styles.Add("Data");
             dataStyle.IncludeNumber = true;
@@ -624,7 +625,7 @@ namespace SpreadService.WebApi.Controllers
 
             //****************************************Use NamedStyle**************************
             worksheet.SheetView.DisplayGridlines = false;
-            worksheet.Range["B2:L2"].Interior.Color = Color.FromRGB(217, 217, 217);
+            worksheet.Range["B2:L2"].Interior.Color = Color.FromArgb(217, 217, 217);
             worksheet.Range["B3:B4"].Font.Bold = true;
             worksheet.Range["2:2"].HorizontalAlignment = HorizontalAlignment.Left;
 
