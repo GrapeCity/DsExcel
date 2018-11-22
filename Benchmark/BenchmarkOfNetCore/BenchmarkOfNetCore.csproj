@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="2.0.0.0" />
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="2.0.3" />
   </ItemGroup>
 
   <ItemGroup>
