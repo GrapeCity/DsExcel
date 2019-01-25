@@ -205,6 +205,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Use IRichText interface.
+        /// </summary>
+        internal static string AddTextRun_Name {
+            get {
+                return ResourceManager.GetString("AddTextRun.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add a worksheet.
         /// </summary>
         internal static string AddWorksheet_Name {
@@ -445,6 +454,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ## Cell Rich Text
+        ///GcExcel provides support for applying rich text formatting in the cells of the worksheet. 
+        ///Examples in this folder demonstrate how to:
+        ///- Use IRange.IRichText interface to add and format text runs in a cell.
+        ///- Use IRange.Characters() method to format a range of characters in a cell.
+        ///- Configure font for each text run of rich text cell..
+        /// </summary>
+        internal static string CellRichText_Descrip {
+            get {
+                return ResourceManager.GetString("CellRichText.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cell Rich Text.
+        /// </summary>
+        internal static string CellRichText_Name {
+            get {
+                return ResourceManager.GetString("CellRichText.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set field&apos;s summarize function.
         /// </summary>
         internal static string ChangeDataFieldSummarizeFunction_Name {
@@ -477,6 +509,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string ChangeWorksheetFilterRange_Name {
             get {
                 return ResourceManager.GetString("ChangeWorksheetFilterRange.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use Character method.
+        /// </summary>
+        internal static string CharacterCellText_Name {
+            get {
+                return ResourceManager.GetString("CharacterCellText.Name", resourceCulture);
             }
         }
         
@@ -1174,6 +1215,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Configure text run&apos;s font.
+        /// </summary>
+        internal static string ConfigRunFont_Name {
+            get {
+                return ResourceManager.GetString("ConfigRunFont.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure secondary section for pie of pie chart.
         /// </summary>
         internal static string ConfigSecondarySection_Name {
@@ -1696,6 +1746,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create and modify style based on a style.
+        /// </summary>
+        internal static string CreateStyleBasedOn_Name {
+            get {
+                return ResourceManager.GetString("CreateStyleBasedOn.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create a table.
         /// </summary>
         internal static string CreateTable_Name {
@@ -1795,7 +1854,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GcExcel provides you with the ability to create your own custom functions, allowing you to easily create any custom arithmetic logic you may need..
+        ///   Looks up a localized string similar to ## Custom Function
+        ///GcExcel provides you with the ability to create your own custom functions, allowing you to easily create any custom arithmetic logic you may need..
         /// </summary>
         internal static string CustomFunctions_Descrip {
             get {
@@ -2098,6 +2158,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string ExcelTemplates_Name {
             get {
                 return ResourceManager.GetString("ExcelTemplates.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cell rich text.
+        /// </summary>
+        internal static string ExportCellRichText_Name {
+            get {
+                return ResourceManager.GetString("ExportCellRichText.Name", resourceCulture);
             }
         }
         
@@ -2623,6 +2692,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open and save xlsm file.
+        /// </summary>
+        internal static string ImportXlsmToWorkbook_Name {
+            get {
+                return ResourceManager.GetString("ImportXlsmToWorkbook.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Income statement.
         /// </summary>
         internal static string IncomeStatement_Name {
@@ -2737,6 +2815,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string LineStackedChart_Name {
             get {
                 return ResourceManager.GetString("LineStackedChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load and save json containing shapes.
+        /// </summary>
+        internal static string LoadAndSaveJsonWithShapes_Name {
+            get {
+                return ResourceManager.GetString("LoadAndSaveJsonWithShapes.Name", resourceCulture);
             }
         }
         
@@ -3463,6 +3550,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Set background image for worksheet.
+        /// </summary>
+        internal static string SetBackgroundImage_Name {
+            get {
+                return ResourceManager.GetString("SetBackgroundImage.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set font&apos;s folder.
         /// </summary>
         internal static string SetFontsFolderPath_Name {
@@ -4123,6 +4219,24 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string ValueFilter_Name {
             get {
                 return ResourceManager.GetString("ValueFilter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export vertical text.
+        /// </summary>
+        internal static string VerticalText_Name {
+            get {
+                return ResourceManager.GetString("VerticalText.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Website flow chart.
+        /// </summary>
+        internal static string WebsiteFlowChart_Name {
+            get {
+                return ResourceManager.GetString("WebsiteFlowChart.Name", resourceCulture);
             }
         }
         

@@ -35,7 +35,7 @@ Namespace ExcelReporting
 
             '*******************************Set Table Value & Formulas*************************************
             Dim table As ITable = worksheet.Tables.Add(worksheet.Range("B2:L4"), True)
-            worksheet.Range("B2:L4").Value = {
+            worksheet.Range("B2:L4").Value = New Object(,)  {
                 {"NAME", "WORK", "CELL", "HOME", "EMAIL", "BIRTHDAY", "ADDRESS", "CITY", "STATE", "ZIP", "NOTE"},
                 {"Kim Abercrombie", 1235550123, 1235550123, 1235550123, "someone@example.com", Nothing, "123 N. Maple", "Cherryville", "WA", 98031, ""},
                 {"John Smith", 3215550123, "", "", "someone@example.com", Nothing, "456 E. Aspen", "", "", "", ""}

@@ -4,7 +4,7 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim sheet As IWorksheet = workbook.Worksheets(0)
 
-            sheet.Range("A1:B5").Value = {
+            sheet.Range("A1:B5").Value = New Object(,)  {
                 {1, 2},
                 {3, 4},
                 {5, 6},

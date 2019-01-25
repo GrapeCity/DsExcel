@@ -246,11 +246,11 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            workbook.Open(fileStream)
         ///            Dim worksheet = workbook.ActiveSheet
         ///            &apos;change range B2&apos;s font size.
-        ///            worksheet.Range(&quot;B2&quot;).Font.Size = 22
+        ///            worksheet.Range!B2.Font.Size = 22
         ///            &apos;change range E4&apos;s font style to bold.
-        ///            worksheet.Range(&quot;E4&quot;).Font.Bold = True
+        ///            worksheet.Range!E4.Font.Bold = True
         ///            &apos;change table style.
-        ///            worksheet.Tables(&quot;tblAdmissions&quot;).TableStyle = workbook.TableSt [rest of string was truncated]&quot;;.
+        ///            worksheet.Tables(&quot;tblAdmissions&quot;).TableStyle = workbook.TableStyles(&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_EventBudget {
             get {
@@ -1972,7 +1972,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;create comment for range C3.
-        ///            Dim comment As IComment = worksheet.Range(&quot;C3&quot;).AddComment(&quot;Range C3&apos;s comment.&quot;)
+        ///            Dim comment As IComment = worksheet.Range!C3.AddComment(&quot;Range C3&apos;s comment.&quot;)
         ///            &apos;change comment&apos;s text.
         ///            comment.Text = &quot;Range C3&apos;s new comment.&quot;
         ///        .
@@ -1986,11 +1986,11 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;C3&quot;).AddComment(&quot;Range C3&apos;s comment.&quot;)
-        ///            worksheet.Range(&quot;D4&quot;).AddComment(&quot;Range D4&apos;s comment.&quot;)
-        ///            worksheet.Range(&quot;D5&quot;).AddComment(&quot;Range D5&apos;s comment.&quot;)
+        ///            worksheet.Range!C3.AddComment(&quot;Range C3&apos;s comment.&quot;)
+        ///            worksheet.Range!D4.AddComment(&quot;Range D4&apos;s comment.&quot;)
+        ///            worksheet.Range!D5.AddComment(&quot;Range D5&apos;s comment.&quot;)
         ///            &apos;delete a single cell comment.
-        ///            worksheet.Range(&quot;D5&quot;).Comment.Delete()
+        ///            worksheet.Range!D5.Comment.Delete()
         ///            &apos;clear a range of cells comment.
         ///            worksheet.Range(&quot;C3:D4&quot;).ClearComments()
         ///        .
@@ -2004,14 +2004,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            Dim commentC3 As IComment = worksheet.Range(&quot;C3&quot;).AddComment(&quot;Range C3&apos;s comment.&quot;)
+        ///            Dim commentC3 As IComment = worksheet.Range!C3.AddComment(&quot;Range C3&apos;s comment.&quot;)
         ///            commentC3.Shape.Line.Color.RGB = Color.LightGreen
         ///            commentC3.Shape.Line.Weight = 3
         ///            commentC3.Shape.Line.Style = LineStyle.ThickThin
         ///            commentC3.Shape.Line.DashStyle = LineDashStyle.Solid
         ///            commentC3.Shape.Fill.Color.RGB = Color.Pink
         ///            commentC3.Shape.Width = 100
-        ///            c [rest of string was truncated]&quot;;.
+        ///            comm [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Comments_ConfigCommentLayout {
             get {
@@ -2022,12 +2022,12 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            Dim commentC3 As IComment = worksheet.Range(&quot;C3&quot;).AddComment(&quot;This is a rich text comment:&quot; &amp; vbCrLf)
+        ///            Dim commentC3 As IComment = worksheet.Range!C3.AddComment(&quot;This is a rich text comment:&quot; &amp; vbCrLf)
         ///            &apos;config the paragraph&apos;s style.
         ///            commentC3.Shape.TextFrame.TextRange.Paragraphs(0).Font.Bold = True
         ///            &apos;add runs for the paragraph.
         ///            commentC3.Shape.TextFrame.TextRange.Paragraphs(0).Runs.Add(&quot;Run1 font size is 15.&quot;, 1)
-        ///            commentC3.Shape.TextFrame.TextRange.Paragraphs(0).R [rest of string was truncated]&quot;;.
+        ///            commentC3.Shape.TextFrame.TextRange.Paragraphs(0).Runs [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Comments_SetRichTextForComment {
             get {
@@ -2237,13 +2237,149 @@ namespace GrapeCity.Documents.Excel.Examples {
         
         /// <summary>
         ///   Looks up a localized string similar to 
+        ///            Excel.Workbook.AddCustomFunction(New MyAddFunctionX)
+        ///
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A2&quot;).Value = 1
-        ///            worksheet.Range(&quot;A3&quot;).Value = 2
-        ///            worksheet.Range(&quot;C2&quot;).Value = 0
+        ///            worksheet.Range!A1.Value = 1
+        ///            worksheet.Range!B1.Value = 2
+        ///            worksheet.Range!C1.Formula = &quot;=MyAdd(A1, B1)&quot;
+        ///
+        ///            &apos; Range!C1.Value = 3.
+        ///            Dim result = worksheet.Range!C1.Value
+        ///
+        ///            worksheet.Range(&quot;E1:F2&quot;).Value = New Object(,) {
+        ///                {1, 3},
+        ///                {2, 4}
+        ///            }
+        ///
+        ///            &apos; C [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GrapeCity_Documents_Excel_Examples_VB_Features_CustomFunctions_MyAddFunction {
+            get {
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.CustomFunctions.MyAddFunction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///            Excel.Workbook.AddCustomFunction(New MyConcatenateFunctionX)
+        ///
+        ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        ///            worksheet.Range!A1.Formula = &quot;=MyConcatenate(&quot;&quot;I&quot;&quot;, &quot;&quot; &quot;&quot;, &quot;&quot;live&quot;&quot;, &quot;&quot; &quot;&quot;, &quot;&quot;in&quot;&quot;, &quot;&quot; &quot;&quot;, &quot;&quot;Xi&apos;an&quot;&quot;, &quot;&quot;.&quot;&quot;)&quot;
+        ///            worksheet.Range!A2.Formula = &quot;=MyConcatenate(A1, &quot;&quot;haha.&quot;&quot;)&quot;
+        ///
+        ///            worksheet.Range!B1.Value = 12
+        ///            worksheet.Range!B2.Value = 34
+        ///            worksheet.Range!B3.Formula = &quot;=MyConcatenate(B1, B2)&quot;
+        ///
+        ///            wo [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GrapeCity_Documents_Excel_Examples_VB_Features_CustomFunctions_MyConcatenateFunction {
+            get {
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.CustomFunctions.MyConcatenateFunct" +
+                        "ion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///            Excel.Workbook.AddCustomFunction(New MyConditionalSumFunctionX)
+        ///
+        ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        ///            worksheet.Range(&quot;A1:A10&quot;).Value = New Object(,) {
+        ///                {1}, {2}, {3}, {4}, {5},
+        ///                {6}, {7}, {8}, {9}, {10}
+        ///            }
+        ///            Dim formatConditions As IFormatConditions = worksheet.Range(&quot;A1:A10&quot;).FormatConditions
+        ///            Dim cellValueRule = formatConditions.Add(FormatConditionType.CellValue, FormatConditionOper [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GrapeCity_Documents_Excel_Examples_VB_Features_CustomFunctions_MyConditionalSumFunction {
+            get {
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.CustomFunctions.MyConditionalSumFu" +
+                        "nction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///            Excel.Workbook.AddCustomFunction(New MyIsErrorFunctionX)
+        ///
+        ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        ///
+        ///            worksheet.Range!A1.Value = CalcError.Num
+        ///            worksheet.Range!A2.Value = 100
+        ///
+        ///            worksheet.Range!B1.Formula = &quot;=MyIsError(A1)&quot;
+        ///            worksheet.Range!B2.Formula = &quot;=MyIsError(A2)&quot;
+        ///
+        ///            &apos; Range!B1.Value = True.
+        ///            Dim resultB1 = worksheet.Range!B1.Value
+        ///
+        ///            &apos; Range!B2.Value = False.
+        ///            Dim re [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GrapeCity_Documents_Excel_Examples_VB_Features_CustomFunctions_MyIsErrorFunction {
+            get {
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.CustomFunctions.MyIsErrorFunction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///            Excel.Workbook.AddCustomFunction(New MyIsMergedRangeFunctionX)
+        ///
+        ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        ///
+        ///            worksheet.Range(&quot;A1:B2&quot;).Merge()
+        ///
+        ///            worksheet.Range!C1.Formula = &quot;=MyIsMergedRange(A1)&quot;
+        ///            worksheet.Range!C2.Formula = &quot;=MyIsMergedRange(H2)&quot;
+        ///
+        ///            &apos; A1 is a merged cell, Range!C1.Value = True.
+        ///            Dim resultC1 = worksheet.Range!C1.Value
+        ///
+        ///            &apos; H2 is not a merged cell, Range!C2.Value = False.
+        ///       [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GrapeCity_Documents_Excel_Examples_VB_Features_CustomFunctions_MyIsMergedRangeFunction {
+            get {
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.CustomFunctions.MyIsMergedRangeFun" +
+                        "ction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///            Excel.Workbook.AddCustomFunction(New MySumFunctionX)
+        ///
+        ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        ///            worksheet.Range!A1.Value = 1
+        ///            worksheet.Range!B1.Value = 2
+        ///            worksheet.Range!C1.Formula = &quot;=MySum(A1:B1, 2, {3,4})&quot;
+        ///
+        ///            &apos; Range!C1.Value = 12.
+        ///            Dim result = worksheet.Range!C1.Value
+        ///
+        ///            &apos;    Implementation of MySumFunctionX
+        ///            &apos;
+        ///            &apos;    Public Class MySumFunctionX
+        ///            &apos;         [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GrapeCity_Documents_Excel_Examples_VB_Features_CustomFunctions_MySumFunction {
+            get {
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.CustomFunctions.MySumFunction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        ///            worksheet.Range!A2.Value = 1
+        ///            worksheet.Range!A3.Value = 2
+        ///            worksheet.Range!C2.Value = 0
         ///            &apos;create custom validation, if the expression &quot;=$C$2&quot; result is True, the cell&apos;s validation will be True, otherwise, it is False.
         ///            &apos;when use custom validation, validationOperator and formula2 parameters will be ignored even if you have given.
-        ///            worksheet.Range(&quot;A2:A3&quot;).Valid [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;A2:A3&quot;).Validation.Add [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_CreateCustomValidation {
             get {
@@ -2301,16 +2437,16 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Value = &quot;aaa&quot;
-        ///            worksheet.Range(&quot;A2&quot;).Value = &quot;bbb&quot;
-        ///            worksheet.Range(&quot;A3&quot;).Value = &quot;ccc&quot;
+        ///            worksheet.Range!A1.Value = &quot;aaa&quot;
+        ///            worksheet.Range!A2.Value = &quot;bbb&quot;
+        ///            worksheet.Range!A3.Value = &quot;ccc&quot;
         ///            worksheet.Range(&quot;C2:E4&quot;).Value = {
         ///                {&quot;aaa&quot;, &quot;bbb&quot;, &quot;ccc&quot;},
         ///                {&quot;aaa1&quot;, &quot;bbb1&quot;, &quot;ccc1&quot;},
         ///                {&quot;aaa2&quot;, &quot;bbb2&quot;, &quot;ccc2&quot;}
         ///            }
         ///            &apos;create list validation.
-        ///            worksheet.Range(&quot;C2:E4&quot;).Validation.Add(ValidationType.List [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;C2:E4&quot;).Validation.Add(ValidationType.List, Validat [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_CreateListValidation {
             get {
@@ -2430,14 +2566,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;D3&quot;).Value = &quot;Numbers&quot;
-        ///            worksheet.Range(&quot;D4&quot;).Value = 1
-        ///            worksheet.Range(&quot;D5&quot;).Value = 2
-        ///            worksheet.Range(&quot;D6&quot;).Value = 3
+        ///            worksheet.Range!D3.Value = &quot;Numbers&quot;
+        ///            worksheet.Range!D4.Value = 1
+        ///            worksheet.Range!D5.Value = 2
+        ///            worksheet.Range!D6.Value = 3
         ///            &apos;first time invoke. worksheet&apos;s filter range will be D3:D6.
         ///            worksheet.Range(&quot;D3:D6&quot;).AutoFilter(0, &quot;&lt;&gt;2&quot;)
         ///            &apos;set AutoFilterMode to False. must set this property before, otherwise, subsequent code can not take effort.
-        ///   [rest of string was truncated]&quot;;.
+        ///            wo [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_ChangeWorksheetFilterRange {
             get {
@@ -2681,13 +2817,13 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            worksheet.Columns(0).ColumnWidth = 17
-        ///            Dim rangeA1 As IRange = worksheet.Range(&quot;A1&quot;)
+        ///            Dim rangeA1 As IRange = worksheet.Range!A1
         ///            rangeA1.Value = &quot;Right and top&quot;
         ///            rangeA1.HorizontalAlignment = HorizontalAlignment.Right
         ///            rangeA1.VerticalAlignment = VerticalAlignment.Top
-        ///            Dim rangeA2 As IRange = worksheet.Range(&quot;A2&quot;)
+        ///            Dim rangeA2 As IRange = worksheet.Range!A2
         ///            rangeA2.Value = &quot;Center&quot;
-        ///            rangeA2.HorizontalAlignment = HorizontalAlignmen [rest of string was truncated]&quot;;.
+        ///            rangeA2.HorizontalAlignment = HorizontalAlignment.Cent [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Alignment_HAlignVAlign {
             get {
@@ -2698,7 +2834,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            Dim rangeB2 As IRange = worksheet.Range(&quot;B2&quot;)
+        ///            Dim rangeB2 As IRange = worksheet.Range!B2
         ///            rangeB2.Value = &quot;Rotated Cell Contents&quot;
         ///            rangeB2.HorizontalAlignment = HorizontalAlignment.Center
         ///            rangeB2.VerticalAlignment = VerticalAlignment.Center
@@ -2716,7 +2852,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            Dim rangeB1 As IRange = worksheet.Range(&quot;B1&quot;)
+        ///            Dim rangeB1 As IRange = worksheet.Range!B1
         ///            rangeB1.Value = &quot;The ShrinkToFit property is applied&quot;
         ///            rangeB1.ShrinkToFit = True
         ///        .
@@ -2730,7 +2866,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            Dim rangeC1 As IRange = worksheet.Range(&quot;C1&quot;)
+        ///            Dim rangeC1 As IRange = worksheet.Range!C1
         ///            rangeC1.Value = &quot;The ReadingOrder property is applied to set text direction.&quot;
         ///            rangeC1.ReadingOrder = ReadingOrder.RightToLeft
         ///        .
@@ -2745,7 +2881,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            Dim rangeB3 As IRange = worksheet.Range(&quot;B3&quot;)
+        ///            Dim rangeB3 As IRange = worksheet.Range!B3
         ///            rangeB3.Value = &quot;The WrapText property is applied to wrap the text within a cell&quot;
         ///            rangeB3.WrapText = True
         ///            worksheet.Rows(2).RowHeight = 150
@@ -2761,14 +2897,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;Change to build in name style.
-        ///            worksheet.Range(&quot;A1&quot;).Value = &quot;Bad&quot;
-        ///            worksheet.Range(&quot;A1&quot;).Style = workbook.Styles(&quot;Bad&quot;)
+        ///            worksheet.Range!A1.Value = &quot;Bad&quot;
+        ///            worksheet.Range!A1.Style = workbook.Styles(&quot;Bad&quot;)
         ///            &apos;Change to custom name style.
         ///            &apos;Add custom name style.
         ///            Dim style As IStyle = workbook.Styles.Add(&quot;testStyle&quot;)
         ///            &apos;Config custom name style settings begin.
         ///            &apos;Border
-        ///            style.Borders(BordersIndex.EdgeLeft).LineStyle = [rest of string was truncated]&quot;;.
+        ///            style.Borders(BordersIndex.EdgeLeft).LineStyle = Borde [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_ApplyStyle {
             get {
@@ -2779,14 +2915,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            Dim rangeB2 As IRange = worksheet.Range(&quot;B2&quot;)
+        ///            Dim rangeB2 As IRange = worksheet.Range!B2
         ///            &apos;set left, top, right, bottom borders together.
         ///            rangeB2.Borders.LineStyle = BorderLineStyle.DashDot
         ///            rangeB2.Borders.Color = Color.Green
         ///            &apos;set top border individually.
         ///            rangeB2.Borders(BordersIndex.EdgeTop).LineStyle = BorderLineStyle.Medium
         ///            rangeB2.Borders(BordersIndex.EdgeTop).Color = Color.Red
-        ///             [rest of string was truncated]&quot;;.
+        ///            &apos;se [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Borders_AddBordersToCell {
             get {
@@ -2834,8 +2970,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Interior.Pattern = Pattern.LinearGradient
-        ///            With TryCast(worksheet.Range(&quot;A1&quot;).Interior.Gradient, ILinearGradient)
+        ///            worksheet.Range!A1.Interior.Pattern = Pattern.LinearGradient
+        ///            With TryCast(worksheet.Range!A1.Interior.Gradient, ILinearGradient)
         ///                .ColorStops(0).Color = Color.Red
         ///                .ColorStops(1).Color = Color.Yellow
         ///                .Degree = 90
@@ -2852,7 +2988,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            With worksheet.Range(&quot;A1&quot;).Interior
+        ///            With worksheet.Range!A1.Interior
         ///                .Pattern = Pattern.LightDown
         ///                .Color = Color.Pink
         ///                .PatternColorIndex = 5
@@ -2868,8 +3004,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Interior.Pattern = Pattern.RectangularGradient
-        ///            With TryCast(worksheet.Range(&quot;A1&quot;).Interior.Gradient, IRectangularGradient)
+        ///            worksheet.Range!A1.Interior.Pattern = Pattern.RectangularGradient
+        ///            With TryCast(worksheet.Range!A1.Interior.Gradient, IRectangularGradient)
         ///                .ColorStops(0).Color = Color.Red
         ///                .ColorStops(1).Color = Color.Green
         ///                .Bottom = 0.2
@@ -2889,7 +3025,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A2&quot;).Interior.Color = Color.Green
+        ///            worksheet.Range!A2.Interior.Color = Color.Green
         ///        .
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Fill_SolidFill {
@@ -2901,8 +3037,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Value = &quot;font&quot;
-        ///            worksheet.Range(&quot;A1&quot;).Font.Color = Color.Green
+        ///            worksheet.Range!A1.Value = &quot;font&quot;
+        ///            worksheet.Range!A1.Font.Color = Color.Green
         ///        .
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Fonts_FontColor {
@@ -2914,12 +3050,12 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Value = &quot;Strikethrough&quot;
-        ///            worksheet.Range(&quot;A1&quot;).Font.Strikethrough = True
-        ///            worksheet.Range(&quot;A2&quot;).Value = &quot;Superscript&quot;
-        ///            worksheet.Range(&quot;A2&quot;).Font.Superscript = True
-        ///            worksheet.Range(&quot;A3&quot;).Value = &quot;Subscript&quot;
-        ///            worksheet.Range(&quot;A3&quot;).Font.Subscript = True
+        ///            worksheet.Range!A1.Value = &quot;Strikethrough&quot;
+        ///            worksheet.Range!A1.Font.Strikethrough = True
+        ///            worksheet.Range!A2.Value = &quot;Superscript&quot;
+        ///            worksheet.Range!A2.Font.Superscript = True
+        ///            worksheet.Range!A3.Value = &quot;Subscript&quot;
+        ///            worksheet.Range!A3.Font.Subscript = True
         ///        .
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Fonts_FontEffect {
@@ -2932,11 +3068,11 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;use Name property to set font name.
-        ///            worksheet.Range(&quot;A1&quot;).Value = &quot;Calibri&quot;
-        ///            worksheet.Range(&quot;A1&quot;).Font.Name = &quot;Calibri&quot;
+        ///            worksheet.Range!A1.Value = &quot;Calibri&quot;
+        ///            worksheet.Range!A1.Font.Name = &quot;Calibri&quot;
         ///            &apos;use ThemeFont property to set font name.
-        ///            worksheet.Range(&quot;A2&quot;).Value = &quot;Major theme font&quot;
-        ///            worksheet.Range(&quot;A2&quot;).Font.ThemeFont = ThemeFont.Major
+        ///            worksheet.Range!A2.Value = &quot;Major theme font&quot;
+        ///            worksheet.Range!A2.Font.ThemeFont = ThemeFont.Major
         ///        .
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Fonts_FontName {
@@ -2948,8 +3084,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Value = &quot;Font size is 15&quot;
-        ///            worksheet.Range(&quot;A1&quot;).Font.Size = 15
+        ///            worksheet.Range!A1.Value = &quot;Font size is 15&quot;
+        ///            worksheet.Range!A1.Font.Size = 15
         ///        .
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Fonts_FontSize {
@@ -2961,13 +3097,13 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Value = &quot;Bold&quot;
-        ///            worksheet.Range(&quot;A1&quot;).Font.Bold = True
-        ///            worksheet.Range(&quot;A2&quot;).Value = &quot;Italic&quot;
-        ///            worksheet.Range(&quot;A2&quot;).Font.Italic = True
-        ///            worksheet.Range(&quot;A3&quot;).Value = &quot;Bold Italic&quot;
-        ///            worksheet.Range(&quot;A3&quot;).Font.Bold = True
-        ///            worksheet.Range(&quot;A3&quot;).Font.Italic = True
+        ///            worksheet.Range!A1.Value = &quot;Bold&quot;
+        ///            worksheet.Range!A1.Font.Bold = True
+        ///            worksheet.Range!A2.Value = &quot;Italic&quot;
+        ///            worksheet.Range!A2.Font.Italic = True
+        ///            worksheet.Range!A3.Value = &quot;Bold Italic&quot;
+        ///            worksheet.Range!A3.Font.Bold = True
+        ///            worksheet.Range!A3.Font.Italic = True
         ///        .
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Fonts_FontStyle {
@@ -2979,8 +3115,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Value = &quot;Single Underline&quot;
-        ///            worksheet.Range(&quot;A1&quot;).Font.Underline = UnderlineType.Single
+        ///            worksheet.Range!A1.Value = &quot;Single Underline&quot;
+        ///            worksheet.Range!A1.Font.Underline = UnderlineType.Single
         ///        .
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_Fonts_FontUnderline {
@@ -2994,11 +3130,11 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;Range A1&apos;s displaying color is table style
         ///            worksheet.Tables.Add(worksheet.Range(&quot;A1:E5&quot;), True)
-        ///            Dim color_A1 = worksheet.Range(&quot;A1&quot;).DisplayFormat.Interior.Color
+        ///            Dim color_A1 = worksheet.Range!A1.DisplayFormat.Interior.Color
         ///            &apos;Range A1&apos;s displaying color will be cell style, yellow.
-        ///            worksheet.Range(&quot;A1&quot;).Interior.Color = Color.Yellow
-        ///            Dim color_A1_1 = worksheet.Range(&quot;A1&quot;).DisplayFormat.Interior.Color
-        ///            &apos;Range A1&apos;s di [rest of string was truncated]&quot;;.
+        ///            worksheet.Range!A1.Interior.Color = Color.Yellow
+        ///            Dim color_A1_1 = worksheet.Range!A1.DisplayFormat.Interior.Color
+        ///            &apos;Range A1&apos;s displaying  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_GetDisplayFormat {
             get {
@@ -3031,12 +3167,12 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            worksheet.Range(&quot;A:F&quot;).ColumnWidth = 17
         ///            worksheet.Range(&quot;A1:F1&quot;).Formula = &quot;= Now()&quot;
         ///            &apos;Apply different date formats.
-        ///            worksheet.Range(&quot;A1&quot;).NumberFormat = &quot;m/d/yy&quot;
-        ///            worksheet.Range(&quot;B1&quot;).NumberFormat = &quot;d-mmm-yy&quot;
-        ///            worksheet.Range(&quot;C1&quot;).NumberFormat = &quot;dddd&quot;
+        ///            worksheet.Range!A1.NumberFormat = &quot;m/d/yy&quot;
+        ///            worksheet.Range!B1.NumberFormat = &quot;d-mmm-yy&quot;
+        ///            worksheet.Range!C1.NumberFormat = &quot;dddd&quot;
         ///            &apos;Apply different time formats.
-        ///            worksheet.Range(&quot;D1&quot;).NumberFormat = &quot;m/d/yy h:mm&quot;
-        ///     [rest of string was truncated]&quot;;.
+        ///            worksheet.Range!D1.NumberFormat = &quot;m/d/yy h:mm&quot;
+        ///            work [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_NumberFormat_DateAndTimeFormat {
             get {
@@ -3050,14 +3186,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            worksheet.Range(&quot;A:H&quot;).ColumnWidth = 17
         ///            &apos; Display 111 as 111.
-        ///            worksheet.Range(&quot;A1&quot;).Value = 111
-        ///            worksheet.Range(&quot;A1&quot;).NumberFormat = &quot;#####&quot;
+        ///            worksheet.Range!A1.Value = 111
+        ///            worksheet.Range!A1.NumberFormat = &quot;#####&quot;
         ///            &apos; Display 222 as 00222.
-        ///            worksheet.Range(&quot;B1&quot;).Value = 222
-        ///            worksheet.Range(&quot;B1&quot;).NumberFormat = &quot;00000&quot;
+        ///            worksheet.Range!B1.Value = 222
+        ///            worksheet.Range!B1.NumberFormat = &quot;00000&quot;
         ///            &apos; Display 12345678 as 12,345,678.
-        ///            worksheet.Range(&quot;C1&quot;).Value = 12345678
-        ///           [rest of string was truncated]&quot;;.
+        ///            worksheet.Range!C1.Value = 12345678
+        ///            worksheet.Ran [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_NumberFormat_NumberFormats {
             get {
@@ -3069,9 +3205,9 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;B1&quot;).Formula = &quot;=A1&quot;
+        ///            worksheet.Range!B1.Formula = &quot;=A1&quot;
         ///            &apos;config range B1&apos;s FormulaHidden property.
-        ///            worksheet.Range(&quot;B1&quot;).FormulaHidden = True
+        ///            worksheet.Range!B1.FormulaHidden = True
         ///            &apos;protect worksheet, range B1&apos;s formula will not show in exported xlsx file.
         ///            worksheet.Protection = True
         ///        .
@@ -3087,7 +3223,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;config range B1&apos;s Locked property.
-        ///            worksheet.Range(&quot;B1&quot;).Locked = False
+        ///            worksheet.Range!B1.Locked = False
         ///            &apos;protect worksheet, range B1 can be modified in exported xlsx file.
         ///            worksheet.Protection = True
         ///        .
@@ -3103,14 +3239,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim worksheet1 As IWorksheet = workbook.Worksheets(0)
         ///            Dim worksheet2 As IWorksheet = workbook.Worksheets.Add()
-        ///            worksheet1.Range(&quot;C8&quot;).NumberFormat = &quot;0.0000&quot;
+        ///            worksheet1.Range!C8.NumberFormat = &quot;0.0000&quot;
         ///            worksheet1.Names.Add(&quot;test1&quot;, &quot;=Sheet1!$A$1&quot;)
         ///            worksheet1.Names.Add(&quot;test2&quot;, &quot;=Sheet1!test1*2&quot;)
         ///            workbook.Names.Add(&quot;test3&quot;, &quot;=Sheet1!$A$1&quot;)
-        ///            worksheet1.Range(&quot;A1&quot;).Value = 1
+        ///            worksheet1.Range!A1.Value = 1
         ///            &apos;C6&apos;s value is 1.
-        ///            worksheet1.Range(&quot;C6&quot;).Formula = &quot;=test1&quot;
-        ///    [rest of string was truncated]&quot;;.
+        ///            worksheet1.Range!C6.Formula = &quot;=test1&quot;
+        ///             [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formulas_AddCustomName {
             get {
@@ -3134,14 +3270,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;A1&quot;).Value = 1
-        ///            worksheet.Range(&quot;A2&quot;).Formula = &quot;=A1&quot;
-        ///            worksheet.Range(&quot;A3&quot;).Formula = &quot;=SUM(A1, A2)&quot;
+        ///            worksheet.Range!A1.Value = 1
+        ///            worksheet.Range!A2.Formula = &quot;=A1&quot;
+        ///            worksheet.Range!A3.Formula = &quot;=SUM(A1, A2)&quot;
         ///            &apos;when get value, calc engine will first calculate and cache the result, then returns the cached result.
-        ///            Dim value_A2 = worksheet.Range(&quot;A2&quot;).Value
-        ///            Dim value_A3 = worksheet.Range(&quot;A3&quot;).Value
+        ///            Dim value_A2 = worksheet.Range!A2.Value
+        ///            Dim value_A3 = worksheet.Range!A3.Value
         ///            &apos;disable calc engine.
-        ///            workbook.Ena [rest of string was truncated]&quot;;.
+        ///            workbook.EnableCalculation  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Formulas_DirtyAndCalculation {
             get {
@@ -3287,10 +3423,10 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            worksheet.Range(&quot;A:A&quot;).ColumnWidth = 30
         ///            &apos;add a hyperlink link to web page.
-        ///            worksheet.Range(&quot;A1:B2&quot;).Hyperlinks.Add(worksheet.Range(&quot;A1&quot;), &quot;http://www.google.com/&quot;, Nothing, &quot;open google web site.&quot;, &quot;Google&quot;)
+        ///            worksheet.Range(&quot;A1:B2&quot;).Hyperlinks.Add(worksheet.Range!A1, &quot;http://www.google.com/&quot;, Nothing, &quot;open google web site.&quot;, &quot;Google&quot;)
         ///            &apos;add a hyperlink link to a range in this document.
-        ///            worksheet.Range(&quot;A3:B4&quot;).Hyperlinks.Add(worksheet.Range(&quot;A3&quot;), Nothing, &quot;Sheet1!$C$3:$E$4&quot;, &quot;Go to sheet1 C3:E4&quot;)
-        ///       [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;A3:B4&quot;).Hyperlinks.Add(worksheet.Range!A3, Nothing, &quot;Sheet1!$C$3:$E$4&quot;, &quot;Go to sheet1 C3:E4&quot;)
+        ///             [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Hyperlinks_CreateHyperlinks {
             get {
@@ -3303,10 +3439,10 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         ///            worksheet.Range(&quot;A:A&quot;).ColumnWidth = 30
         ///            &apos;add a hyperlink link to web page.
-        ///            worksheet.Range(&quot;A1:B2&quot;).Hyperlinks.Add(worksheet.Range(&quot;A1&quot;), &quot;http://www.google.com/&quot;, Nothing, &quot;open google web site.&quot;, &quot;Google&quot;)
+        ///            worksheet.Range(&quot;A1:B2&quot;).Hyperlinks.Add(worksheet.Range!A1, &quot;http://www.google.com/&quot;, Nothing, &quot;open google web site.&quot;, &quot;Google&quot;)
         ///            &apos;add a hyperlink link to a range in this document.
-        ///            worksheet.Range(&quot;A3:B4&quot;).Hyperlinks.Add(worksheet.Range(&quot;A3&quot;), Nothing, &quot;Sheet1!$C$3:$E$4&quot;, &quot;Go to sheet1 C3:E4&quot;)
-        ///       [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;A3:B4&quot;).Hyperlinks.Add(worksheet.Range!A3, Nothing, &quot;Sheet1!$C$3:$E$4&quot;, &quot;Go to sheet1 C3:E4&quot;)
+        ///             [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Hyperlinks_DeleteHyperlinks {
             get {
@@ -3651,8 +3787,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///                {9, 10}
         ///            }
         ///            &apos;Add page break
-        ///            sheet.HPageBreaks.Add(sheet.Range(&quot;B3&quot;))
-        ///            sheet.VPageBreaks.Add(sheet.Range(&quot;B3&quot;))
+        ///            sheet.HPageBreaks.Add(sheet.Range!B3)
+        ///            sheet.VPageBreaks.Add(sheet.Range!B3)
         ///        .
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PdfPageSetup_ConfigurePageBreaks {
@@ -3809,11 +3945,11 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim sheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;Single cell border
-        ///            sheet.Range(&quot;B2&quot;).Borders.ThemeColor = ThemeColor.Accent1
-        ///            sheet.Range(&quot;B2&quot;).Borders.LineStyle = BorderLineStyle.SlantDashDot
-        ///            sheet.Range(&quot;B2&quot;).Borders(BordersIndex.DiagonalUp).ThemeColor = ThemeColor.Accent1
-        ///            sheet.Range(&quot;B2&quot;).Borders(BordersIndex.DiagonalUp).LineStyle = BorderLineStyle.SlantDashDot
-        ///            sheet.Range(&quot;B2&quot;).Borders(BordersIndex.DiagonalDown [rest of string was truncated]&quot;;.
+        ///            sheet.Range!B2.Borders.ThemeColor = ThemeColor.Accent1
+        ///            sheet.Range!B2.Borders.LineStyle = BorderLineStyle.SlantDashDot
+        ///            sheet.Range!B2.Borders(BordersIndex.DiagonalUp).ThemeColor = ThemeColor.Accent1
+        ///            sheet.Range!B2.Borders(BordersIndex.DiagonalUp).LineStyle = BorderLineStyle.SlantDashDot
+        ///            sheet.Range!B2.Borders(BordersIndex.DiagonalDown).ThemeColor =  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SaveBorder {
             get {
@@ -3916,10 +4052,10 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim sheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;set style.
-        ///            sheet.Range(&quot;A1&quot;).Value = &quot;Sheet1&quot;
-        ///            sheet.Range(&quot;A1&quot;).Font.Name = &quot;Wide Latin&quot;
-        ///            sheet.Range(&quot;A1&quot;).Font.Color = Color.Red
-        ///            sheet.Range(&quot;A1&quot;).Interior.Color = Color.Green
+        ///            sheet.Range!A1.Value = &quot;Sheet1&quot;
+        ///            sheet.Range!A1.Font.Name = &quot;Wide Latin&quot;
+        ///            sheet.Range!A1.Font.Color = Color.Red
+        ///            sheet.Range!A1.Interior.Color = Color.Green
         ///            &apos;change the path to real export path when save.
         ///            workbook.Save(CurrentDirectory &amp; &quot;dest.pdf&quot;, SaveFileFormat.Pdf)
         ///        .
@@ -3934,10 +4070,10 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim sheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;set style.
-        ///            sheet.Range(&quot;A1&quot;).Value = &quot;Sheet1&quot;
-        ///            sheet.Range(&quot;A1&quot;).Font.Name = &quot;Wide Latin&quot;
-        ///            sheet.Range(&quot;A1&quot;).Font.Color = Color.Red
-        ///            sheet.Range(&quot;A1&quot;).Interior.Color = Color.Green
+        ///            sheet.Range!A1.Value = &quot;Sheet1&quot;
+        ///            sheet.Range!A1.Font.Name = &quot;Wide Latin&quot;
+        ///            sheet.Range!A1.Font.Color = Color.Red
+        ///            sheet.Range!A1.Interior.Color = Color.Green
         ///            &apos;change the path to real export path when save.
         ///            sheet.Save(CurrentDirectory &amp; &quot;dest.pdf&quot;, SaveFileFormat.Pdf)
         ///        .
@@ -3952,14 +4088,14 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim sheet As IWorksheet = workbook.Worksheets(0)
         ///            &apos;set style.
-        ///            sheet.Range(&quot;A1&quot;).Value = &quot;Sheet1&quot;
-        ///            sheet.Range(&quot;A1&quot;).Font.Name = &quot;Wide Latin&quot;
-        ///            sheet.Range(&quot;A1&quot;).Font.Color = Color.Red
-        ///            sheet.Range(&quot;A1&quot;).Interior.Color = Color.Green
+        ///            sheet.Range!A1.Value = &quot;Sheet1&quot;
+        ///            sheet.Range!A1.Font.Name = &quot;Wide Latin&quot;
+        ///            sheet.Range!A1.Font.Color = Color.Red
+        ///            sheet.Range!A1.Interior.Color = Color.Green
         ///            &apos;specify font path.
         ///            workbook.FontsFolderPath = &quot;D:\Fonts&quot;
         ///            &apos;get the used fonts list in workbook, the list are:&quot;Wide Latin&quot;, &quot;Calibri&quot;
-        ///            Dim fonts = workbook. [rest of string was truncated]&quot;;.
+        ///            Dim fonts = workbook.GetUsedFonts [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SetFontsFolderPath {
             get {
@@ -4005,13 +4141,13 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///   Looks up a localized string similar to 
         ///            Dim sheet As IWorksheet = workbook.Worksheets(0)
         ///#Region &quot;Aligment&quot;
-        ///            sheet.Range(&quot;A1&quot;).Value = &quot;Alignment&quot;
-        ///            sheet.Range(&quot;B2&quot;).Value = &quot;Left Alignment&quot;
-        ///            sheet.Range(&quot;B2&quot;).HorizontalAlignment = HorizontalAlignment.Left
-        ///            sheet.Range(&quot;C2&quot;).Value = &quot;Center Alignment&quot;
-        ///            sheet.Range(&quot;C2&quot;).HorizontalAlignment = HorizontalAlignment.Center
-        ///            sheet.Range(&quot;D2&quot;).Value = &quot;Right Alignment&quot;
-        ///            sheet.Range(&quot;D2&quot;).HorizontalAlignmen [rest of string was truncated]&quot;;.
+        ///            sheet.Range!A1.Value = &quot;Alignment&quot;
+        ///            sheet.Range!B2.Value = &quot;Left Alignment&quot;
+        ///            sheet.Range!B2.HorizontalAlignment = HorizontalAlignment.Left
+        ///            sheet.Range!C2.Value = &quot;Center Alignment&quot;
+        ///            sheet.Range!C2.HorizontalAlignment = HorizontalAlignment.Center
+        ///            sheet.Range!D2.Value = &quot;Right Alignment&quot;
+        ///            sheet.Range!D2.HorizontalAlignment = HorizontalAlignme [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_Text_TextStyle {
             get {
@@ -4058,8 +4194,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            &apos;Create a shape in worksheet, picture&apos;s range is Range(&quot;A2:I6&quot;)
         ///            Dim picture As IShape = worksheet.Shapes.AddPicture(stream, ImageType.PNG, 20, 20, 395, 60)
         ///            &apos;Range(&quot;A2:I6&quot;) must contain picture&apos;s range, copy a new picture to Range(&quot;J2:R6&quot;)
-        ///            worksheet.Range(&quot;A2:I6&quot;).Copy(worksheet.Range(&quot;J2&quot;))
-        ///            &apos;worksheet.Range(&quot;A [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;A2:I6&quot;).Copy(worksheet.Range!J2)
+        ///            &apos;worksheet.Range(&quot;A2:I [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Picture_PictureCopy {
             get {
@@ -4074,8 +4210,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            &apos;Create a shape in worksheet, picture&apos;s range is Range(&quot;A2:I6&quot;)
         ///            Dim picture As IShape = worksheet.Shapes.AddPicture(stream, ImageType.PNG, 20, 20, 395, 60)
         ///            &apos;Range(&quot;A2:I6&quot;) must contain picture&apos;s range, cut a new picture to Range(&quot;J2:R6&quot;)
-        ///            worksheet.Range(&quot;A2:I6&quot;).Cut(worksheet.Range(&quot;J2&quot;))
-        ///            &apos;worksheet.Range(&quot;A2: [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;A2:I6&quot;).Cut(worksheet.Range!J2)
+        ///            &apos;worksheet.Range(&quot;A2:I6&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Picture_PictureCut {
             get {
@@ -4235,9 +4371,9 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            &apos;use index to access range A1:B2
         ///            worksheet.Range(0, 0, 2, 2).Value = 5
         ///            &apos;use string to access range.
-        ///            worksheet.Range(&quot;A2&quot;).Interior.Color = Color.LightYellow
+        ///            worksheet.Range!A2.Interior.Color = Color.LightYellow
         ///            worksheet.Range(&quot;C3:D4&quot;).Interior.Color = Color.Tomato
-        ///            worksheet.Range(&quot;A5:B7, C3, H5:N6&quot;).Value = [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;A5:B7, C3, H5:N6&quot;).Value = 2        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_RangeOperations_AccessRange {
             get {
@@ -4270,11 +4406,11 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            worksheet.Range(&quot;B3:D12&quot;).Value = 5
         ///            worksheet.Range(&quot;B3:D12&quot;).Interior.Color = Color.LightGreen
         ///            &apos;Copy
-        ///            worksheet.Range(&quot;B3:D12&quot;).Copy(worksheet.Range(&quot;E5&quot;))
+        ///            worksheet.Range(&quot;B3:D12&quot;).Copy(worksheet.Range!E5)
         ///            &apos;Cut
         ///            worksheet.Range(&quot;B3:D12&quot;).Cut(worksheet.Range(&quot;I5:K14&quot;))
         ///            worksheet.Range(&quot;I1:K2&quot;).Value = 2
-        ///            worksheet.Range(&quot;I [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;I1:K [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_RangeOperations_CutCopyRange {
             get {
@@ -4343,7 +4479,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;E1&quot;).Value = 1
+        ///            worksheet.Range!E1.Value = 1
         ///            &apos;Hidden row 2:6.
         ///            worksheet.Range(&quot;2:6&quot;).Hidden = True
         ///            &apos;Hidden column A:D.
@@ -4368,8 +4504,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            worksheet1.Range(&quot;A1:C3&quot;).Value = data
         ///            worksheet2.Range(&quot;A1:C3&quot;).Value = data
         ///            &apos;Insert cells
-        ///            worksheet1.Range(&quot;A2&quot;).Insert() &apos;Auto
-        ///            worksheet1.Range(&quot;B2&quot;).Insert(InsertShift [rest of string was truncated]&quot;;.
+        ///            worksheet1.Range!A2.Insert() &apos;Auto
+        ///            worksheet1.Range!B2.Insert(InsertShiftDirect [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_RangeOperations_InsertCellsDeleteCells {
             get {
@@ -4605,9 +4741,9 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            &apos;Create a shape in worksheet, shape&apos;s range is Range(&quot;A7:B7&quot;)
         ///            Dim shape As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 1, 1, 100, 100)
         ///            &apos;Range(&quot;A1:D10&quot;) must contain Range(&quot;A7:B7&quot;), copy a new shape to Range(&quot;C1:F7&quot;)
-        ///            worksheet.Range(&quot;A1:D10&quot;).Copy(worksheet.Range(&quot;E1&quot;))
+        ///            worksheet.Range(&quot;A1:D10&quot;).Copy(worksheet.Range!E1)
         ///            &apos;worksheet.Range(&quot;A1:D10&quot;).Copy(worksheet.Range(&quot;E1:I9&quot;))
-        ///            &apos;Cross sheet copy, copy [rest of string was truncated]&quot;;.
+        ///            &apos;Cross sheet copy, copy a  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Shape_ShapeCopy {
             get {
@@ -4621,9 +4757,9 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            &apos;Create a shape in worksheet, shape&apos;s range is Range(&quot;A7:B7&quot;)
         ///            Dim shape As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 1, 1, 100, 100)
         ///            &apos;Range(&quot;A1:D10&quot;) must contain Range(&quot;A7:B7&quot;), cut a new shape to Range(&quot;C1:F7&quot;)
-        ///            worksheet.Range(&quot;A1:D10&quot;).Cut(worksheet.Range(&quot;E1&quot;))
+        ///            worksheet.Range(&quot;A1:D10&quot;).Cut(worksheet.Range!E1)
         ///            &apos;worksheet.Range(&quot;A1:D10&quot;).Cut(worksheet.Range(&quot;E1:I9&quot;))
-        ///            &apos;Cross sheet cut, cut a ne [rest of string was truncated]&quot;;.
+        ///            &apos;Cross sheet cut, cut a new s [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Shape_ShapeCut {
             get {
@@ -5180,12 +5316,12 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            &apos;Change workbook&apos;s theme to builtin theme.
         ///            workbook.Theme = Themes.Berlin
         ///            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        ///            worksheet.Range(&quot;B2&quot;).Value = &quot;Major Font:&quot;
-        ///            worksheet.Range(&quot;B3&quot;).Value = &quot;Minor Font:&quot;
-        ///            worksheet.Range(&quot;C2&quot;).Value = &quot;Trebuchet MS&quot;
-        ///            worksheet.Range(&quot;C3&quot;).Value = &quot;Trebuchet MS&quot;
-        ///            worksheet.Range(&quot;C2&quot;).Font.ThemeFont = ThemeFont.Major
-        ///            worksheet.Range(&quot;C3&quot;).Font.ThemeFo [rest of string was truncated]&quot;;.
+        ///            worksheet.Range!B2.Value = &quot;Major Font:&quot;
+        ///            worksheet.Range!B3.Value = &quot;Minor Font:&quot;
+        ///            worksheet.Range!C2.Value = &quot;Trebuchet MS&quot;
+        ///            worksheet.Range!C3.Value = &quot;Trebuchet MS&quot;
+        ///            worksheet.Range!C2.Font.ThemeFont = ThemeFont.Major
+        ///            worksheet.Range!C3.Font.ThemeFont = ThemeFont.Min [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Theme_ChangeWorkbookTheme {
             get {
@@ -5458,8 +5594,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            &apos;Set worksheet default column width.
         ///            worksheet.StandardWidth = 50
         ///            &apos;Split worksheet to panes.
-        ///            worksheet.SplitPanes(worksheet.Range(&quot;B3&quot;).Row, worksheet.Range(&quot;B3&quot;).Column)
-        ///            Dim worksheet1 As IWorksheet = wo [rest of string was truncated]&quot;;.
+        ///            worksheet.SplitPanes(worksheet.Range!B3.Row, worksheet.Range!B3.Column)
+        ///            Dim worksheet1 As IWorksheet = workbook [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_ConfigWorksheet {
             get {

@@ -83,7 +83,7 @@ Namespace ExcelReporting
 #End Region
 
 #Region "Table"
-            worksheet.Range("B2:F87").Value = {
+            worksheet.Range("B2:F87").Value = New Object(,) {
                 {"DATE", "PRODUCT", "CUSTOMER", "AMOUNT", "QUARTER"},
                 {
                     #1/1/2012#,
@@ -844,7 +844,7 @@ Namespace ExcelReporting
 #End Region
 
 #Region "Table"
-            worksheet3.Range("B2:B32").Value = {
+            worksheet3.Range("B2:B32").Value = New Object(,) {
                 {"PRODUCTS"},
                 {"Product 1"},
                 {"Product 2"},
@@ -879,7 +879,7 @@ Namespace ExcelReporting
             }
 
             Dim table_Products As ITable = worksheet3.Tables.Add(worksheet.Range("B2:B32"), True)
-            worksheet3.Range("C2:C30").Value = {
+            worksheet3.Range("C2:C30").Value = New Object(,) {
                 {"CUSTOMERS"},
                 {"A. Datum Corporation"},
                 {"Adventure Works"},

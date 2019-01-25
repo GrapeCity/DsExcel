@@ -51,7 +51,7 @@ Public MustInherit Class ExampleBase
     End Property
     Friend Property UserAgent As String
     Public Function GetTemplateStream() As Stream
-        Return GetResourceStream("xlsx." & TemplateName)
+        Return GetResourceStream("" & TemplateName)
     End Function
     Public Function GetResourceStream(resourceName As String) As Stream
         If String.IsNullOrEmpty(resourceName) Then
@@ -59,7 +59,7 @@ Public MustInherit Class ExampleBase
         End If
         ' jack updates resource name after changing assembly name to GrapeCity.Documents.Excel
         resourceName = resourceName.Replace("GrapeCity.Documents.Excel", "GrapeCity.Documents.Spread")
-        Dim resource As String = "GrapeCity.Documents.Excel.Examples.VB." & resourceName
+        Dim resource As String = "GrapeCity.Documents.Excel.Examples.VB." & resourceName.Replace("\\", ".")
         Dim assembly = [GetType]().GetTypeInfo().Assembly
         Return assembly.GetManifestResourceStream(resource)
     End Function

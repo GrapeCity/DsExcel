@@ -11,7 +11,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PageSetup
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -33,6 +33,14 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PageSetup
             get
             {
                 return "PageSetup Demo.xlsx";
+            }
+        }
+
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "xlsx\\PageSetup Demo.xlsx", "logo.png" };
             }
         }
     }

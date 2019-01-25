@@ -5,7 +5,7 @@
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.PieOfPie, 250, 20, 360, 230)
-            worksheet.Range("A1:D6").Value = {
+            worksheet.Range("A1:D6").Value = New Object(,)  {
                 {Nothing, "S1", "S2", "S3"},
                 {"Item1", 10, 25, 25},
                 {"Item2", -51, -36, 27},

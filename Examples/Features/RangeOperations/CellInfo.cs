@@ -36,13 +36,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.RangeOperations
             rowIndex = GrapeCity.Documents.Excel.CellInfo.RowNameToIndex("5");
             worksheet.Rows[rowIndex].Interior.Color = Color.LightSkyBlue;
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

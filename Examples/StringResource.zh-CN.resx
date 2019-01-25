@@ -1623,7 +1623,37 @@ Spread表格组件支持以下几种类型的迷你图：
   <data name="MyConditionalSumFunction.Name" xml:space="preserve">
     <value>自定义条件Sum方法</value>
   </data>
-  <data name="MyIsMergedRangeFunction" xml:space="preserve">
+  <data name="MyIsMergedRangeFunction.Name" xml:space="preserve">
     <value>自定义IsMergedRange方法</value>
+  </data>
+  <data name="VerticalText.Name" xml:space="preserve">
+    <value>垂直文本</value>
+  </data>
+  <data name="AddTextRun.Name" xml:space="preserve">
+    <value>Use IRichText interface</value>
+  </data>
+  <data name="CharacterCellText.Name" xml:space="preserve">
+    <value>Use Character method</value>
+  </data>
+  <data name="ConfigRunFont.Name" xml:space="preserve">
+    <value>Configure text run's font</value>
+  </data>
+  <data name="CreateStyleBasedOn.Name" xml:space="preserve">
+    <value>Create and modify style based on a style</value>
+  </data>
+  <data name="ExportCellRichText.Name" xml:space="preserve">
+    <value>Cell rich text</value>
+  </data>
+  <data name="LoadAndSaveJsonWithShapes.Name" xml:space="preserve">
+    <value>Load and save json containing shapes</value>
+  </data>
+  <data name="SetBackgroundImage.Name" xml:space="preserve">
+    <value>Set background image for worksheet</value>
+  </data>
+  <data name="DecisionTreeFlowChart.Name" xml:space="preserve">
+    <value>Decision tree flow chart</value>
+  </data>
+  <data name="WebsiteFlowChart.Name" xml:space="preserve">
+    <value>Website flow chart</value>
   </data>
 </root>

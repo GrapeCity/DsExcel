@@ -27,11 +27,11 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Picture
 
         }
 
-        public override bool IsNew
+        public override string[] UsedResources
         {
             get
             {
-                return true;
+                return new string[] { "logo.png" };
             }
         }
     }

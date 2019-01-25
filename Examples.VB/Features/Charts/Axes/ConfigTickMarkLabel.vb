@@ -8,7 +8,7 @@ Namespace Features.Charts.Axes
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.ColumnClustered, 250, 20, 360, 230)
 
-            worksheet.Range("A1:D6").Value = {
+            worksheet.Range("A1:D6").Value = New Object(,)  {
                 {Nothing, "S1", "S2", "S3"},
                 {1, -25, 25, 25},
                 {2, 51, 36, 27},

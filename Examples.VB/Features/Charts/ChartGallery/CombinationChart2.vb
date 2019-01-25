@@ -5,7 +5,7 @@
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.ColumnClustered, 250, 20, 360, 230)
-            worksheet.Range("A1:C17").Value = {
+            worksheet.Range("A1:C17").Value = New Object(,)  {
                 {"Area 1", "Column 1", "Column 2"},
                 {1350, 120, 75},
                 {1500, 90, 35},

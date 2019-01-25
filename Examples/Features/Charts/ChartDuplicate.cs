@@ -28,13 +28,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts
             GrapeCity.Documents.Excel.Drawing.IShape newShape = shape.Duplicate();
 
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
     }
 }

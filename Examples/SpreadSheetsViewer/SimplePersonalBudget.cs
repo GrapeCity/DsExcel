@@ -11,16 +11,8 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\Simple personal budget.xlsx");
             workbook.Open(fileStream);
-        }
-
-        public override string TemplateName
-        {
-            get
-            {
-                return "Simple personal budget.xlsx";
-            }
         }
 
         public override bool HasTemplate
@@ -44,6 +36,24 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
             get
             {
                 return false;
+            }
+        }
+
+        public override string TemplateName
+        {
+            get
+            {
+                return "Simple personal budget.xlsx";
+            }
+        }
+
+
+        public override bool CanDownloadZip => false;
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "xlsx\\Simple personal budget.xlsx" };
             }
         }
     }

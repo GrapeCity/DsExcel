@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Open an excel file
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\Employee absence schedule.xlsx");
             workbook.Open(fileStream);
         }
 
@@ -37,11 +37,11 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             }
         }
 
-        public override bool IsNew
+        public override string[] UsedResources
         {
             get
             {
-                return true;
+                return new string[] { "xlsx\\Employee absence schedule.xlsx" };
             }
         }
     }

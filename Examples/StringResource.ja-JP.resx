@@ -1,0 +1,2579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessWorksheet.Name" xml:space="preserve">
+    <value>ワークシートへのアクセス</value>
+    <comment>Access a worksheet</comment>
+  </data>
+  <data name="ActivateWorksheet.Name" xml:space="preserve">
+    <value>ワークシートのアクティブ化</value>
+    <comment>Activate a worksheet</comment>
+  </data>
+  <data name="AddCustomTableStyle.Name" xml:space="preserve">
+    <value>カスタムテーブルスタイルの追加</value>
+    <comment>Add a custom table style</comment>
+  </data>
+  <data name="AddCustomThemes.Name" xml:space="preserve">
+    <value>カスタムテーマの追加</value>
+    <comment>Add custom themes</comment>
+  </data>
+  <data name="AddWorksheet.Name" xml:space="preserve">
+    <value>ワークシートの追加</value>
+    <comment>Add a worksheet</comment>
+  </data>
+  <data name="ApplyTableStyle.Name" xml:space="preserve">
+    <value>テーブルへの組み込みスタイルの適用</value>
+    <comment>Apply built-in styles to tables</comment>
+  </data>
+  <data name="ChangeWorkbookTheme.Name" xml:space="preserve">
+    <value>ワークブックテーマの変更</value>
+    <comment>Change workbook themes</comment>
+  </data>
+  <data name="ClearSparklineGroup.Name" xml:space="preserve">
+    <value>スパークライングループのクリア</value>
+    <comment>Clear the sparkline group</comment>
+  </data>
+  <data name="ClearSparklines.Name" xml:space="preserve">
+    <value>スパークラインのクリア</value>
+    <comment>Clear sparklines</comment>
+  </data>
+  <data name="ConfigSparklineSettings.Name" xml:space="preserve">
+    <value>スパークライン設定の構成</value>
+    <comment>Configure sparkline settings</comment>
+  </data>
+  <data name="ConfigWorksheet.Name" xml:space="preserve">
+    <value>ワークシートプロパティの構成</value>
+    <comment>Configure worksheet properties</comment>
+  </data>
+  <data name="CreateNewWorkbook.Name" xml:space="preserve">
+    <value>新しいワークブックの作成</value>
+    <comment>Create new workbook</comment>
+  </data>
+  <data name="CreateSparklines.Name" xml:space="preserve">
+    <value>スパークラインの作成</value>
+    <comment>Create sparklines</comment>
+  </data>
+  <data name="CreateTable.Name" xml:space="preserve">
+    <value>テーブルの作成</value>
+    <comment>Create a table</comment>
+  </data>
+  <data name="CustomSort.Name" xml:space="preserve">
+    <value>カスタムパラメータでリストをソート</value>
+    <comment>Sort list by custom parameter</comment>
+  </data>
+  <data name="DeleteWorksheet.Name" xml:space="preserve">
+    <value>ワークシートの削除</value>
+    <comment>Delete a worksheet</comment>
+  </data>
+  <data name="Filtering.Name" xml:space="preserve">
+    <value>フィルタ処理</value>
+    <comment>Filtering</comment>
+  </data>
+  <data name="GroupExistSparklines.Name" xml:space="preserve">
+    <value>既存のスパークラインのグループ化</value>
+    <comment>Group exist sparklines</comment>
+  </data>
+  <data name="ImportExcelFileToWorkbook.Name" xml:space="preserve">
+    <value>Excel ファイルのインポート</value>
+    <comment>Import Excel file</comment>
+  </data>
+  <data name="ImportExcelFileWithPassword.Name" xml:space="preserve">
+    <value>パスワード付き Excel ファイルのインポート</value>
+    <comment>Import Excel file with password</comment>
+  </data>
+  <data name="InsertDeleteTableRowColumns.Name" xml:space="preserve">
+    <value>テーブル行および列の挿入または削除</value>
+    <comment>Insert or delete table rows and columns</comment>
+  </data>
+  <data name="PerformCalculationsInTable.Name" xml:space="preserve">
+    <value>テーブル内の計算を実行</value>
+    <comment>Perform calculations in the table</comment>
+  </data>
+  <data name="ProtectWorksheet.Name" xml:space="preserve">
+    <value>ワークシートの保護</value>
+    <comment>Protect worksheet</comment>
+  </data>
+  <data name="RemoveTable.Name" xml:space="preserve">
+    <value>テーブルの削除</value>
+    <comment>Remove table</comment>
+  </data>
+  <data name="SaveWorkbookToExcelFile.Name" xml:space="preserve">
+    <value>Excel ファイルに保存</value>
+    <comment>Save to Excel file</comment>
+  </data>
+  <data name="SaveWorkbookWithPassword.Name" xml:space="preserve">
+    <value>パスワード付き Excel ファイルに保存</value>
+    <comment>Save to Excel file with password</comment>
+  </data>
+  <data name="Sorting.Name" xml:space="preserve">
+    <value>ソート</value>
+    <comment>Sorting</comment>
+  </data>
+  <data name="SortRangeByFontColor.Name" xml:space="preserve">
+    <value>フォントの色によるソート</value>
+    <comment>Sort by font color</comment>
+  </data>
+  <data name="SortRangeByIcon.Name" xml:space="preserve">
+    <value>アイコンによるソート</value>
+    <comment>Sort by icon</comment>
+  </data>
+  <data name="SortRangeByInterior.Name" xml:space="preserve">
+    <value>コンテンツによる範囲のソート</value>
+    <comment>Sort range by content</comment>
+  </data>
+  <data name="SortRangeByValue.Name" xml:space="preserve">
+    <value>値による範囲のソート</value>
+    <comment>Sort range by value</comment>
+  </data>
+  <data name="Sparklines.Name" xml:space="preserve">
+    <value>スパークライン</value>
+    <comment>Sparklines</comment>
+  </data>
+  <data name="TableFilter.Name" xml:space="preserve">
+    <value>テーブル範囲のフィルタ</value>
+    <comment>Filter table range</comment>
+  </data>
+  <data name="Tables.Name" xml:space="preserve">
+    <value>テーブル</value>
+    <comment>Tables</comment>
+  </data>
+  <data name="TableSort.Name" xml:space="preserve">
+    <value>テーブル範囲のソート</value>
+    <comment>Sort table range</comment>
+  </data>
+  <data name="TextFilter.Name" xml:space="preserve">
+    <value>テキストフィルタの適用</value>
+    <comment>Apply text filter</comment>
+  </data>
+  <data name="Theme.Name" xml:space="preserve">
+    <value>テーマ</value>
+    <comment>Theme</comment>
+  </data>
+  <data name="UnprotectWorksheet.Name" xml:space="preserve">
+    <value>ワークシートの保護の解除</value>
+    <comment>Unprotect worksheet</comment>
+  </data>
+  <data name="UseDateAxis.Name" xml:space="preserve">
+    <value>日付軸の使用</value>
+    <comment>Use date axis</comment>
+  </data>
+  <data name="ValueFilter.Descrip" xml:space="preserve">
+    <value>値フィルタの作成</value>
+    <comment>Create value filter</comment>
+  </data>
+  <data name="ValueFilter.Name" xml:space="preserve">
+    <value>値フィルタ</value>
+    <comment>Value Filter</comment>
+  </data>
+  <data name="Workbook.Name" xml:space="preserve">
+    <value>ワークブック</value>
+    <comment>Workbook</comment>
+  </data>
+  <data name="Worksheets.Name" xml:space="preserve">
+    <value>ワークシート</value>
+    <comment>Worksheets</comment>
+  </data>
+  <data name="AddSlicersForTable.Name" xml:space="preserve">
+    <value>スライサーをテーブルに追加</value>
+    <comment>Add slicers to tables</comment>
+  </data>
+  <data name="Slicer.Name" xml:space="preserve">
+    <value>スライサー</value>
+    <comment>Slicer</comment>
+  </data>
+  <data name="AddSlicersForPivotTable.Name" xml:space="preserve">
+    <value>スライサーをピボットテーブルに追加</value>
+    <comment>Add slicers to pivot tables</comment>
+  </data>
+  <data name="DoTableFilter.Name" xml:space="preserve">
+    <value>テーブルをスライサーで自動フィルタ処理</value>
+    <comment>Auto-filter table with slicer</comment>
+  </data>
+  <data name="ApplySlicerStyle.Name" xml:space="preserve">
+    <value>スライサーに組み込みスタイルを適用</value>
+    <comment>Apply built-in style to slicer</comment>
+  </data>
+  <data name="UseSlicerDoFilter.Name" xml:space="preserve">
+    <value>スライサーを使用してテーブルをフィルタ処理</value>
+    <comment>Use slicer to filter table</comment>
+  </data>
+  <data name="ConfigSlicerLayout.Name" xml:space="preserve">
+    <value>スライサーレイアウトの構成</value>
+    <comment>Configure slicer layout</comment>
+  </data>
+  <data name="CreateConnectorShape.Name" xml:space="preserve">
+    <value>接続線図形の作成</value>
+    <comment>Create connector shape</comment>
+  </data>
+  <data name="Shape.Name" xml:space="preserve">
+    <value>図形</value>
+    <comment>Shape</comment>
+  </data>
+  <data name="ConnectShapesByConnector.Name" xml:space="preserve">
+    <value>図形を接続線図形で接続</value>
+    <comment>Connect shapes with connector shape</comment>
+  </data>
+  <data name="ConfigShapeWithPictureFill.Name" xml:space="preserve">
+    <value>図形のピクチャ塗りつぶしの設定</value>
+    <comment>Set shape's picture fill</comment>
+  </data>
+  <data name="ConfigShapeWithGradientFill.Name" xml:space="preserve">
+    <value>図形のグラデーション塗りつぶしの設定</value>
+    <comment>Set shape's gradient fill</comment>
+  </data>
+  <data name="ConfigShapeWithPatternFill.Name" xml:space="preserve">
+    <value>図形のパターン塗りつぶしの設定</value>
+    <comment>Set shape's pattern fill</comment>
+  </data>
+  <data name="ConfigShapeWithTextureFill.Name" xml:space="preserve">
+    <value>図形のテクスチャ塗りつぶしの設定</value>
+    <comment>Set shape's texture fill</comment>
+  </data>
+  <data name="ConfigShapeWithSolidFill.Name" xml:space="preserve">
+    <value>図形の単色塗りつぶしの設定</value>
+    <comment>Set shape's solid fill</comment>
+  </data>
+  <data name="ConfigShapeLine.Name" xml:space="preserve">
+    <value>図形のライン形式の設定</value>
+    <comment>Set shape's line format</comment>
+  </data>
+  <data name="ConfigShape3DFormat.Name" xml:space="preserve">
+    <value>図形の 3D 形式の設定</value>
+    <comment>Set shape's 3D format</comment>
+  </data>
+  <data name="SetShapeText.Name" xml:space="preserve">
+    <value>図形のテキストの設定</value>
+    <comment>Set shape's text</comment>
+  </data>
+  <data name="CreatePicture.Name" xml:space="preserve">
+    <value>ピクチャの作成</value>
+    <comment>Create picture</comment>
+  </data>
+  <data name="DeletePicture.Name" xml:space="preserve">
+    <value>ピクチャの削除</value>
+    <comment>Delete picture</comment>
+  </data>
+  <data name="MergeCells.Name" xml:space="preserve">
+    <value>セルの結合</value>
+    <comment>Merge cells</comment>
+  </data>
+  <data name="RangeOperations.Name" xml:space="preserve">
+    <value>範囲の操作</value>
+    <comment>Range Operations</comment>
+  </data>
+  <data name="AccessEachAreaOfRange.Name" xml:space="preserve">
+    <value>範囲内の領域へのアクセス</value>
+    <comment>Access areas in a range</comment>
+  </data>
+  <data name="GetRangeRowCountColumnCount.Name" xml:space="preserve">
+    <value>行と列のカウントの取得</value>
+    <comment>Get row and column count</comment>
+  </data>
+  <data name="AccessCellsRowsColumns.Name" xml:space="preserve">
+    <value>範囲内のセル、行、列へのアクセス</value>
+    <comment>Access cells, rows and columns in a range</comment>
+  </data>
+  <data name="GetWorksheetUsedRange.Name" xml:space="preserve">
+    <value>使用範囲の取得</value>
+    <comment>Get used range</comment>
+  </data>
+  <data name="SetRowHeightColumnWidth.Name" xml:space="preserve">
+    <value>行の高さと列の幅の設定</value>
+    <comment>Set row height and column width</comment>
+  </data>
+  <data name="AccessRange.Name" xml:space="preserve">
+    <value>範囲へのアクセス</value>
+    <comment>Access a range</comment>
+  </data>
+  <data name="InsertCellsDeleteCells.Name" xml:space="preserve">
+    <value>セルの挿入または削除</value>
+    <comment>Insert or delete cells</comment>
+  </data>
+  <data name="InsertDeleteRowsColumns.Name" xml:space="preserve">
+    <value>行および列の挿入または削除</value>
+    <comment>Insert or delete rows and columns</comment>
+  </data>
+  <data name="CutCopyRange.Name" xml:space="preserve">
+    <value>範囲の切り取りまたはコピー</value>
+    <comment>Cut or copy ranges</comment>
+  </data>
+  <data name="GetFeatureRelatedUsedRange.Name" xml:space="preserve">
+    <value>使用範囲の取得の応用</value>
+    <comment>Get used range features</comment>
+  </data>
+  <data name="PivotTable.Name" xml:space="preserve">
+    <value>ピボットテーブル</value>
+    <comment>Pivot Table</comment>
+  </data>
+  <data name="CreatePivotTable.Name" xml:space="preserve">
+    <value>ピボットテーブルの作成</value>
+    <comment>Create pivot tables</comment>
+  </data>
+  <data name="ChangeDataFieldSummarizeFunction.Name" xml:space="preserve">
+    <value>フィールドの集計関数の設定</value>
+    <comment>Set field's summarize function</comment>
+  </data>
+  <data name="ModifySubtotalsForPivotField.Name" xml:space="preserve">
+    <value>ピボットフィールドの小計タイプの変更</value>
+    <comment>Modify pivot field subtotal type</comment>
+  </data>
+  <data name="FilterItemsInPivotTable.Name" xml:space="preserve">
+    <value>ピボットテーブル内の項目のフィルタ</value>
+    <comment>Filter items in pivot tables</comment>
+  </data>
+  <data name="RefreshPivotTable.Name" xml:space="preserve">
+    <value>ピボットテーブルの更新</value>
+    <comment>Refresh pivot table</comment>
+  </data>
+  <data name="DeleteHyperlinks.Name" xml:space="preserve">
+    <value>ハイパーリンクの削除</value>
+    <comment>Delete hyperlinks</comment>
+  </data>
+  <data name="CreateRangeGroup.Name" xml:space="preserve">
+    <value>範囲グループの作成</value>
+    <comment>Create range group</comment>
+  </data>
+  <data name="UngroupRange.Name" xml:space="preserve">
+    <value>範囲のグループ解除</value>
+    <comment>Ungroup range</comment>
+  </data>
+  <data name="ClearOutline.Name" xml:space="preserve">
+    <value>アウトラインのクリア</value>
+    <comment>Clear outline</comment>
+  </data>
+  <data name="ShowSpecificLevel.Name" xml:space="preserve">
+    <value>特定のレベルのグループを表示</value>
+    <comment>Show specific level group</comment>
+  </data>
+  <data name="AddCustomName.Name" xml:space="preserve">
+    <value>カスタム名の追加</value>
+    <comment>Add custom names</comment>
+  </data>
+  <data name="Grouping.Name" xml:space="preserve">
+    <value>グループ化</value>
+    <comment>Grouping</comment>
+  </data>
+  <data name="Hyperlinks.Name" xml:space="preserve">
+    <value>ハイパーリンク</value>
+    <comment>Hyperlinks</comment>
+  </data>
+  <data name="Picture.Name" xml:space="preserve">
+    <value>ピクチャ</value>
+    <comment>Picture</comment>
+  </data>
+  <data name="ConfigWorkbookReferenceStyle.Name" xml:space="preserve">
+    <value>ワークブックの参照スタイルの設定</value>
+    <comment>Set workbook's reference style</comment>
+  </data>
+  <data name="Formulas.Name" xml:space="preserve">
+    <value>数式</value>
+    <comment>Formulas</comment>
+  </data>
+  <data name="UseArrayFormula.Name" xml:space="preserve">
+    <value>配列式の使用</value>
+    <comment>Use array formulas</comment>
+  </data>
+  <data name="UseTableFormula.Name" xml:space="preserve">
+    <value>テーブル式の使用</value>
+    <comment>Use table formulas</comment>
+  </data>
+  <data name="DirtyAndCalculation.Name" xml:space="preserve">
+    <value>Dirty メソッドと Calculate メソッド</value>
+    <comment>Dirty and Calculate methods</comment>
+  </data>
+  <data name="SetRangeValue.Name" xml:space="preserve">
+    <value>範囲に値を設定</value>
+    <comment>Set values to a range</comment>
+  </data>
+  <data name="ToJsonFromJson.Name" xml:space="preserve">
+    <value>ToJson と FromJson</value>
+    <comment>ToJson and FromJson</comment>
+  </data>
+  <data name="CustomNumberFormat.Name" xml:space="preserve">
+    <value>カスタム数値書式の設定</value>
+    <comment>Set custom number format</comment>
+  </data>
+  <data name="DateAndTimeFormat.Name" xml:space="preserve">
+    <value>日付/時刻書式の設定</value>
+    <comment>Set date and time format</comment>
+  </data>
+  <data name="Formatting.Name" xml:space="preserve">
+    <value>書式設定</value>
+    <comment>Formatting</comment>
+  </data>
+  <data name="NumberFormats.Name" xml:space="preserve">
+    <value>数値書式の設定</value>
+    <comment>Set number format</comment>
+  </data>
+  <data name="HAlignVAlign.Name" xml:space="preserve">
+    <value>水平方向と垂直方向の配置の設定</value>
+    <comment>Set horizontal and vertical alignment</comment>
+  </data>
+  <data name="ShrinkToFit.Name" xml:space="preserve">
+    <value>縮小して全体を表示</value>
+    <comment>Shrink to fit</comment>
+  </data>
+  <data name="RotateCellContents.Name" xml:space="preserve">
+    <value>セルコンテンツの回転</value>
+    <comment>Rotate cell contents</comment>
+  </data>
+  <data name="WrapText.Name" xml:space="preserve">
+    <value>テキストの折り返し</value>
+    <comment>Wrap text</comment>
+  </data>
+  <data name="AddBordersToCell.Name" xml:space="preserve">
+    <value>セルに境界線を追加</value>
+    <comment>Add borders to cell</comment>
+  </data>
+  <data name="AddingBordersToRange.Name" xml:space="preserve">
+    <value>範囲に境界線を追加</value>
+    <comment>Add borders to range</comment>
+  </data>
+  <data name="FontColor.Name" xml:space="preserve">
+    <value>フォント色の設定</value>
+    <comment>Set font color</comment>
+  </data>
+  <data name="FontEffect.Name" xml:space="preserve">
+    <value>フォント効果の設定</value>
+    <comment>Set font effect</comment>
+  </data>
+  <data name="FontName.Name" xml:space="preserve">
+    <value>フォント名の設定</value>
+    <comment>Set font name</comment>
+  </data>
+  <data name="FontSize.Name" xml:space="preserve">
+    <value>フォントサイズの設定</value>
+    <comment>Set font size</comment>
+  </data>
+  <data name="FontStyle.Name" xml:space="preserve">
+    <value>フォントスタイルの設定</value>
+    <comment>Set font style</comment>
+  </data>
+  <data name="FontUnderline.Name" xml:space="preserve">
+    <value>フォント下線の設定</value>
+    <comment>Set font underline</comment>
+  </data>
+  <data name="LinearGradientFill.Name" xml:space="preserve">
+    <value>直線グラデーション塗りつぶしの設定</value>
+    <comment>Set linear gradient fill</comment>
+  </data>
+  <data name="PatternFill.Name" xml:space="preserve">
+    <value>パターン塗りつぶしの設定</value>
+    <comment>Set pattern fill</comment>
+  </data>
+  <data name="RectangularGradientFill.Name" xml:space="preserve">
+    <value>四角形グラデーション塗りつぶしの設定</value>
+    <comment>Set rectangular gradient fill</comment>
+  </data>
+  <data name="SolidFill.Name" xml:space="preserve">
+    <value>単色塗りつぶしの設定</value>
+    <comment>Set solid fill</comment>
+  </data>
+  <data name="TextOrientation.Name" xml:space="preserve">
+    <value>テキスト方向の設定</value>
+    <comment>Set text orientation</comment>
+  </data>
+  <data name="Alignment.Name" xml:space="preserve">
+    <value>配置</value>
+    <comment>Alignment</comment>
+  </data>
+  <data name="ApplyStyle.Name" xml:space="preserve">
+    <value>範囲にスタイルを適用</value>
+    <comment>Apply style to range</comment>
+  </data>
+  <data name="Borders.Name" xml:space="preserve">
+    <value>境界線</value>
+    <comment>Borders</comment>
+  </data>
+  <data name="CreateCustomStyle.Name" xml:space="preserve">
+    <value>カスタムスタイルの作成</value>
+    <comment>Create custom style</comment>
+  </data>
+  <data name="Fill.Name" xml:space="preserve">
+    <value>塗りつぶし</value>
+    <comment>Fill</comment>
+  </data>
+  <data name="Fonts.Name" xml:space="preserve">
+    <value>フォント</value>
+    <comment>Fonts</comment>
+  </data>
+  <data name="GetDisplayFormat.Name" xml:space="preserve">
+    <value>表示形式の取得</value>
+    <comment>Get display format</comment>
+  </data>
+  <data name="Protection.Name" xml:space="preserve">
+    <value>保護</value>
+    <comment>Protection</comment>
+  </data>
+  <data name="SetRangeFormulaHidden.Name" xml:space="preserve">
+    <value>数式の非表示</value>
+    <comment>Hide formula</comment>
+  </data>
+  <data name="SetRangeLocked.Name" xml:space="preserve">
+    <value>範囲のロック</value>
+    <comment>Lock range</comment>
+  </data>
+  <data name="AddComment.Name" xml:space="preserve">
+    <value>セルにコメントを追加</value>
+    <comment>Add comment to cell</comment>
+  </data>
+  <data name="ClearComment.Name" xml:space="preserve">
+    <value>コメントのクリア</value>
+    <comment>Clear comments</comment>
+  </data>
+  <data name="Comments.Name" xml:space="preserve">
+    <value>コメント</value>
+    <comment>Comments</comment>
+  </data>
+  <data name="ConfigCommentLayout.Name" xml:space="preserve">
+    <value>コメントのレイアウトの構成</value>
+    <comment>Configure comment's layout</comment>
+  </data>
+  <data name="SetRichTextForComment.Name" xml:space="preserve">
+    <value>コメントにリッチテキストを設定</value>
+    <comment>Set rich text for comment</comment>
+  </data>
+  <data name="ConditionalFormatting.Name" xml:space="preserve">
+    <value>条件付き書式設定</value>
+    <comment>Conditional Formatting</comment>
+  </data>
+  <data name="CreateAverageRule.Name" xml:space="preserve">
+    <value>平均ルールの作成</value>
+    <comment>Create average rule</comment>
+  </data>
+  <data name="CreateCellValueRule.Name" xml:space="preserve">
+    <value>セル値ルールの作成</value>
+    <comment>Create cell value rule</comment>
+  </data>
+  <data name="CreateDatabBarRule.Name" xml:space="preserve">
+    <value>データバールールの作成</value>
+    <comment>Create data bar rule</comment>
+  </data>
+  <data name="CreateExpressionRule.Name" xml:space="preserve">
+    <value>式ルールの作成</value>
+    <comment>Create expression rule</comment>
+  </data>
+  <data name="CreateIconSetRule.Name" xml:space="preserve">
+    <value>アイコン設定ルールの作成</value>
+    <comment>Create icon set rule</comment>
+  </data>
+  <data name="CreateMultiRuleForRange.Name" xml:space="preserve">
+    <value>1 つの範囲に複数のルールを作成</value>
+    <comment>Create multiple rules for a range</comment>
+  </data>
+  <data name="CreateThreeColorScaleRule.Name" xml:space="preserve">
+    <value>3 色スケールルールの作成</value>
+    <comment>Create three color scale rule</comment>
+  </data>
+  <data name="CreateTopBottomRule.Name" xml:space="preserve">
+    <value>上位/下位ルールの作成</value>
+    <comment>Create top bottom rule</comment>
+  </data>
+  <data name="CreateTwoColorScaleRule.Name" xml:space="preserve">
+    <value>2 色スケールルールの作成</value>
+    <comment>Create two color scale rule</comment>
+  </data>
+  <data name="CreateUniqueRule.Name" xml:space="preserve">
+    <value>一意ルールの作成</value>
+    <comment>Create unique rule</comment>
+  </data>
+  <data name="DeleteConditionalFormatRules.Name" xml:space="preserve">
+    <value>条件付き書式設定ルールの削除</value>
+    <comment>Delete conditional format rules</comment>
+  </data>
+  <data name="RootExample.Descrip" xml:space="preserve">
+    <value>DioDocs for Excel の機能</value>
+    <comment>GrapeCity Documents for Excel Features</comment>
+  </data>
+  <data name="RootExample.Name" xml:space="preserve">
+    <value>すべて</value>
+    <comment>All</comment>
+  </data>
+  <data name="CreateCustomValidation.Name" xml:space="preserve">
+    <value>カスタム検証の作成</value>
+    <comment>Create custom validation</comment>
+  </data>
+  <data name="CreateDateValidation.Name" xml:space="preserve">
+    <value>日付検証の作成</value>
+    <comment>Create date validation</comment>
+  </data>
+  <data name="CreateDecimalValidation.Name" xml:space="preserve">
+    <value>小数点検証の作成</value>
+    <comment>Create decimal validation</comment>
+  </data>
+  <data name="CreateListValidation.Name" xml:space="preserve">
+    <value>リスト検証の作成</value>
+    <comment>Create list validation</comment>
+  </data>
+  <data name="CreateTextLength.Name" xml:space="preserve">
+    <value>テキスト長さ検証の作成</value>
+    <comment>Create text length validation</comment>
+  </data>
+  <data name="CreateTimeValidation.Name" xml:space="preserve">
+    <value>時間検証の作成</value>
+    <comment>Create time validation</comment>
+  </data>
+  <data name="CreateWholeNumberValidation.Name" xml:space="preserve">
+    <value>整数検証の作成</value>
+    <comment>Create whole number validation</comment>
+  </data>
+  <data name="DataValidation.Name" xml:space="preserve">
+    <value>データ検証</value>
+    <comment>Data Validation</comment>
+  </data>
+  <data name="DeleteValidation.Name" xml:space="preserve">
+    <value>検証の削除</value>
+    <comment>Delete validation</comment>
+  </data>
+  <data name="ModifyValidation.Name" xml:space="preserve">
+    <value>検証の変更</value>
+    <comment>Modify validation</comment>
+  </data>
+  <data name="AddSeries.Name" xml:space="preserve">
+    <value>チャートの系列の追加</value>
+    <comment>Add series for chart</comment>
+  </data>
+  <data name="Charts.Name" xml:space="preserve">
+    <value>チャート</value>
+    <comment>Charts</comment>
+  </data>
+  <data name="ConfigBubbleChartLayout.Name" xml:space="preserve">
+    <value>バブルチャートのレイアウトの構成</value>
+    <comment>Configure bubble chart's layout</comment>
+  </data>
+  <data name="ConfigDataLabelText.Name" xml:space="preserve">
+    <value>データラベルのテキストの構成</value>
+    <comment>Configure data label's text</comment>
+  </data>
+  <data name="ConfigDataPointFormat.Name" xml:space="preserve">
+    <value>データポイントの書式の構成</value>
+    <comment>Configure data point's format</comment>
+  </data>
+  <data name="CreateChart.Name" xml:space="preserve">
+    <value>チャートの作成</value>
+    <comment>Create chart</comment>
+  </data>
+  <data name="CreateDropLine.Name" xml:space="preserve">
+    <value>ドロップラインの作成</value>
+    <comment>Create drop line</comment>
+  </data>
+  <data name="CreateHiLoLine.Name" xml:space="preserve">
+    <value>高値 - 安値ラインの作成</value>
+    <comment>Create high-low line</comment>
+  </data>
+  <data name="CreateTrendline.Name" xml:space="preserve">
+    <value>傾向線の作成</value>
+    <comment>Create trend line</comment>
+  </data>
+  <data name="DeleteChart.Name" xml:space="preserve">
+    <value>チャートの削除</value>
+    <comment>Delete chart</comment>
+  </data>
+  <data name="Series.Name" xml:space="preserve">
+    <value>系列</value>
+    <comment>Series</comment>
+  </data>
+  <data name="SetVaryColorForColumnChart.Name" xml:space="preserve">
+    <value>縦棒グラフの色を可変に設定</value>
+    <comment>Set column chart colors to vary</comment>
+  </data>
+  <data name="CreateConnectorLine.Name" xml:space="preserve">
+    <value>円グラフセグメントの接続線の作成</value>
+    <comment>Create connector line for pie of pie chart</comment>
+  </data>
+  <data name="CreateSeriesLine.Name" xml:space="preserve">
+    <value>縦棒グラフの系列線の作成</value>
+    <comment>Create series line for column chart</comment>
+  </data>
+  <data name="ExtendSeries.Name" xml:space="preserve">
+    <value>既存の系列線への新しいポイントの追加</value>
+    <comment>Add new points for existing series</comment>
+  </data>
+  <data name="CreateUpDownBars.Name" xml:space="preserve">
+    <value>折れ線グラフのローソクの作成</value>
+    <comment>Create up down bars for line chart</comment>
+  </data>
+  <data name="AccessTableRanges.Name" xml:space="preserve">
+    <value>各テーブル範囲へのアクセス</value>
+    <comment>Access each table range</comment>
+  </data>
+  <data name="Axes.Name" xml:space="preserve">
+    <value>軸</value>
+    <comment>Axis</comment>
+  </data>
+  <data name="ConfigCategoryAxesFormat.Name" xml:space="preserve">
+    <value>カテゴリ軸スタイルの構成</value>
+    <comment>Configure category axis style</comment>
+  </data>
+  <data name="ConfigAxisTitle.Name" xml:space="preserve">
+    <value>軸タイトルスタイルの構成</value>
+    <comment>Configure axis title style</comment>
+  </data>
+  <data name="ConfigCategoryAxisUnits.Name" xml:space="preserve">
+    <value>データ軸単位の設定</value>
+    <comment>Set data axis units</comment>
+  </data>
+  <data name="ConfigDisplayUnitLabel.Name" xml:space="preserve">
+    <value>表示単位ラベルスタイルの構成</value>
+    <comment>Configure display unit label style</comment>
+  </data>
+  <data name="ConfigGridlines.Name" xml:space="preserve">
+    <value>グリッド線スタイルの構成</value>
+    <comment>Configure gridline style</comment>
+  </data>
+  <data name="ConfigTickMarkLabel.Name" xml:space="preserve">
+    <value>目盛りマークラベルスタイルの設定</value>
+    <comment>Set tick mark label style</comment>
+  </data>
+  <data name="ConfigValueAxisUnits.Name" xml:space="preserve">
+    <value>値軸単位の設定</value>
+    <comment>Set value axis units</comment>
+  </data>
+  <data name="SetAxisScaleType.Name" xml:space="preserve">
+    <value>値軸スケールタイプの設定</value>
+    <comment>Set value axis scale type</comment>
+  </data>
+  <data name="SetAxisTickMark.Name" xml:space="preserve">
+    <value>軸目盛りマークレイアウトの構成</value>
+    <comment>Configure axis tick mark layout</comment>
+  </data>
+  <data name="ChartJustPlotVisibleCell.Name" xml:space="preserve">
+    <value>表示されているセルのみをプロット</value>
+    <comment>Plot only visible cells</comment>
+  </data>
+  <data name="ConfigChartAreaFormat.Name" xml:space="preserve">
+    <value>チャート領域の書式設定の構成</value>
+    <comment>Configure chart area format</comment>
+  </data>
+  <data name="ConfigChartFloorStyle.Name" xml:space="preserve">
+    <value>チャート床面スタイルの構成</value>
+    <comment>Configure chart floor style</comment>
+  </data>
+  <data name="ConfigChartTitleStyle.Name" xml:space="preserve">
+    <value>チャートタイトルスタイルの構成</value>
+    <comment>Configure chart title style</comment>
+  </data>
+  <data name="ConfigChartWallStyle.Name" xml:space="preserve">
+    <value>チャート壁面スタイルの構成</value>
+    <comment>Configure chart walls style</comment>
+  </data>
+  <data name="ConfigLegendEntryFontStyle.Name" xml:space="preserve">
+    <value>凡例エントリのフォントスタイルの構成</value>
+    <comment>Configure legend entry font style</comment>
+  </data>
+  <data name="ConfigLegendPositionAndLayout.Name" xml:space="preserve">
+    <value>凡例の位置とレイアウトの構成</value>
+    <comment>Configure legend position and layout</comment>
+  </data>
+  <data name="ConfigPlotAreaFormat.Name" xml:space="preserve">
+    <value>プロット領域の書式設定の構成</value>
+    <comment>Configure plot area format</comment>
+  </data>
+  <data name="BloodPressureTracker.Name" xml:space="preserve">
+    <value>血圧ログ</value>
+    <comment>Blood pressure tracker</comment>
+  </data>
+  <data name="UseCases.Name" xml:space="preserve">
+    <value>ユースケース</value>
+    <comment>Use Cases</comment>
+  </data>
+  <data name="ToDoListWithProgressTracker.Name" xml:space="preserve">
+    <value>進行状況表示付き To Do リスト</value>
+    <comment>To do list with progress tracker</comment>
+  </data>
+  <data name="CostAnalysisWithParetoChart.Name" xml:space="preserve">
+    <value>パレート図によるコスト分析</value>
+    <comment>Cost analysis with Pareto chart</comment>
+  </data>
+  <data name="DateDynamicFilter.Name" xml:space="preserve">
+    <value>日付の動的フィルタ処理</value>
+    <comment>Filter date dynamically</comment>
+  </data>
+  <data name="BidTracker.Name" xml:space="preserve">
+    <value>入札管理</value>
+    <comment>Bid tracker</comment>
+  </data>
+  <data name="PersonalAddressBook.Name" xml:space="preserve">
+    <value>個人用アドレス帳</value>
+    <comment>Personal address book</comment>
+  </data>
+  <data name="CustomerProfitabilityAnalysis.Name" xml:space="preserve">
+    <value>顧客採算性分析</value>
+    <comment>Customer profitability analysis</comment>
+  </data>
+  <data name="DateFiltering.Name" xml:space="preserve">
+    <value>日付フィルタ</value>
+    <comment>Date Filter</comment>
+  </data>
+  <data name="FilteringByColor.Name" xml:space="preserve">
+    <value>色に基づくフィルタ</value>
+    <comment>Filter by color</comment>
+  </data>
+  <data name="FilteringByIcon.Name" xml:space="preserve">
+    <value>アイコンに基づくフィルタ</value>
+    <comment>Filter by icon</comment>
+  </data>
+  <data name="NumberFiltering.Name" xml:space="preserve">
+    <value>数値フィルタ</value>
+    <comment>Number Filter</comment>
+  </data>
+  <data name="TextFiltering.Name" xml:space="preserve">
+    <value>テキストフィルタ</value>
+    <comment>Text Filter</comment>
+  </data>
+  <data name="ChangeWorksheetFilterRange.Name" xml:space="preserve">
+    <value>ワークシートフィルタ範囲の変更</value>
+    <comment>Change worksheet filter range</comment>
+  </data>
+  <data name="ClearFilter.Name" xml:space="preserve">
+    <value>ワークシートフィルタのクリア</value>
+    <comment>Clear worksheet filter</comment>
+  </data>
+  <data name="DateFilter.Name" xml:space="preserve">
+    <value>日付フィルタの適用</value>
+    <comment>Apply date filter</comment>
+  </data>
+  <data name="FilterByNoFill.Name" xml:space="preserve">
+    <value>塗りつぶしなしに基づくフィルタ</value>
+    <comment>Filter by no fill</comment>
+  </data>
+  <data name="FilterByAutomaticFontColor.Name" xml:space="preserve">
+    <value>自動フォント色に基づくフィルタ</value>
+    <comment>Filter by automatic font color</comment>
+  </data>
+  <data name="FilterByCellColor.Name" xml:space="preserve">
+    <value>セル色に基づくフィルタ</value>
+    <comment>Filter by cell color</comment>
+  </data>
+  <data name="FilterByFontColor.Name" xml:space="preserve">
+    <value>フォント色に基づくフィルタ</value>
+    <comment>Filter by font color</comment>
+  </data>
+  <data name="FilterByIcon.Name" xml:space="preserve">
+    <value>アイコンに基づくフィルタ</value>
+    <comment>Filter by icon</comment>
+  </data>
+  <data name="FilterByNoIcon.Name" xml:space="preserve">
+    <value>アイコンなしに基づくフィルタ</value>
+    <comment>Filter by no icon</comment>
+  </data>
+  <data name="MultiSelectFilter.Name" xml:space="preserve">
+    <value>複数値フィルタの適用</value>
+    <comment>Apply multiple value filter</comment>
+  </data>
+  <data name="ReApplyFilter.Name" xml:space="preserve">
+    <value>フィルタの再適用</value>
+    <comment>Reapply filter</comment>
+  </data>
+  <data name="Features.Name" xml:space="preserve">
+    <value>機能</value>
+    <comment>Features</comment>
+  </data>
+  <data name="Samples.Name" xml:space="preserve">
+    <value>サンプル</value>
+    <comment>Samples</comment>
+  </data>
+  <data name="MovieList.Name" xml:space="preserve">
+    <value>ムービーリスト</value>
+    <comment>Movie list</comment>
+  </data>
+  <data name="SimpleInvoice.Name" xml:space="preserve">
+    <value>単純な請求書</value>
+    <comment>Simple invoice</comment>
+  </data>
+  <data name="CreateHyperlinks.Name" xml:space="preserve">
+    <value>ハイパーリンクの作成</value>
+    <comment>Create hyperlinks</comment>
+  </data>
+  <data name="BasicSalesReport.Name" xml:space="preserve">
+    <value>基本的な売上レポート</value>
+    <comment>Basic sales report</comment>
+  </data>
+  <data name="Axes.Descrip" xml:space="preserve">
+    <value>## 軸
+チャートには 3 つの軸タイプがあります。
+- カテゴリ軸
+- 値軸
+- 系列軸
+
+これらはすべて自動的に生成され、**コード内で追加または削除することはできません**。
+
+Axis フォルダ内の例は、次のような軸関連の設定を指定する方法を示します。
+- 軸タイトル
+- 軸単位
+- 表示単位ラベル
+- グリッド線
+- 目盛りマーク
+- 目盛りマークラベル</value>
+    <comment>## Axis
+Charts contain three axis types: 
+- category axis
+- value axis
+- series axis
+
+They are all generated automatically, and you **can not add or delete them in code**.
+
+Examples in the Axis folder demonstrate how to specify axis-related settings such as:
+- axis titles
+- axis units
+- display unit labels
+- gridlines
+- tick marks
+- tick mark labels</comment>
+  </data>
+  <data name="Charts.Descrip" xml:space="preserve">
+    <value>## チャート
+**DioDocs for Excel** は、総合的なチャート作成 API を提供します。
+
+- **IWorksheet.AddChart** メソッドを使用して、ワークシートにチャートを追加します
+-- **IShape** のインスタンスを返します 
+-- **Chart** プロパティを使用して、新しく追加されたチャートにアクセスします
+- **IChart.SeriesCollection.Add** メソッドを使用して、データ系列を追加します
+- **IChart.ChartTitle** プロパティを使用して、チャートのタイトルをカスタマイズします
+- **IChart.Legend** プロパティを使用して、チャートの凡例をカスタマイズします
+- **ISeries** インタフェースを使用して、各データ系列にアクセスおよびカスタマイズします
+- **IPoint** インタフェースを使用して、データ系列内の各データポイントをカスタマイズします
+- **IDataLabel** インタフェースを使用して、系列内の各データラベルを追加、削除、またはカスタマイズします
+- **IChartGroup** インタフェースを使用して、系列グループにアクセスおよびカスタマイズします
+- **IAxis** インタフェースを使用して、値軸、カテゴリ軸、系列軸にアクセスおよびカスタマイズします
+
+各チャート機能の基本的な使用方法に加えて、**ISeries.ChartType** を変更して複合チャートを作成できます。**ISeries.AxisGroup** プロパティを使用して、主軸または副軸に系列をプロットするかどうかを指定することもできます。
+
+チャートの各系列は、それぞれ 1 つのチャートグループに関連付けられます。通常は、チャートタイプごとに 1 つのチャートグループがあります。複合チャートを使用すると、複数のチャートグループが自動的に作成されます。
+
+**IChartGroup** インタフェースは、グループ内のすべての系列の外観をカスタマイズするためのオプションを提供します。たとえば、以下のプロパティを特定のチャートタイプに対して設定できます。
+
+- 円グラフに **StartAngle**
+- 横棒または縦棒グラフに **GapWidth**
+- 折れ線グラフの株価チャートオプションを表示または非表示にするために **HasHiLoLines** および **HasUpDownBars**
+
+**IAxis** インタフェースは、チャート軸の外観をカスタマイズするためのオプションを提供します。たとえば、以下のプロパティを特定の軸タイプに対して設定できます。
+
+- 値軸に **MinimumScale** および **MaximumScale**
+- カテゴリ軸に **TickLabelSpacing**
+- 値軸に **HasMajorGridlines** および **HasMinorGridlines**
+
+多くのチャートオブジェクト（チャート領域、プロット領域、チャートタイトル、凡例、系列）には **Format** プロパティがあり、次の要素にアクセスして変更できます。
+
+- 単色またはグラデーションの**塗りつぶし** 
+- 破線または透過の**線**</value>
+    <comment>## Charts
+**GrapeCity Documents for Excel** provides a comprehensive charting API:
+
+- Add charts to a worksheet using the **IWorksheet.AddChart** method
+-- Returns an instance of **IShape** 
+-- Use the **Chart** property to access the newly added chart
+- Add data series with the **IChart.SeriesCollection.Add** method
+- Cutomize chart titles with the **IChart.ChartTitle** property
+- Cutomize chart legends with the **IChart.Legend** property
+- Access and customize each data series through the **ISeries** interface
+- Customize each data point in a data series using the **IPoint** interface
+- Add, remove, or customize each data label in a series using the **IDataLabel** interface
+- Access and customize a group of series through the **IChartGroup** interface
+- Access and customize value axes, category axes, and series axes using the **IAxis** interface
+
+Over and above the basic usage of each chart feature, you can change the **ISeries.ChartType** to create combination charts. You can even specify whether to plot a series on the primary or secondary axis with the **ISeries.AxisGroup** property.
+
+Each series in a chart is associated with a chart group. Typically there is one chart group for each chart type. Multiple chart groups are created automatically when you use combination charts. 
+
+The **IChartGroup** interface provides options that let you customize the appearance of every series in a group. For example, you can set these properties on certain chart types:
+
+- **StartAngle** for pie charts
+- **GapWidth** for bar or column charts
+- **HasHiLoLines** and **HasUpDownBars** shows or hides stock chart options on a line chart
+
+The **IAxis** interface provides options that let you customize the appearance of chart axes. For example, you can these properties on certain axis types:
+
+- **MinimumScale** and **MaximumScale** for a value axis
+- **TickLabelSpacing** for a category axis
+- **HasMajorGridlines** and **HasMinorGridlines** for a value axis
+
+Many chart objects (chart area, plot area, chart title, legend, series) provide a **Format** property so you can access and modify:
+
+- **fills** solid or gradient 
+- **lines** dashed or transparency</comment>
+  </data>
+  <data name="Series.Descrip" xml:space="preserve">
+    <value>## 系列
+**系列**は、チャートで最も頻繁に使用される機能です。各グラフには 1 つ以上のデータ系列が含まれ、各系列は一連のデータポイントで構成されます。
+
+以下の例は、チャートに系列を追加する方法および各系列の設定を指定する方法を示します。
+
+- バブルチャートの **BubbleScale** および **SizeRepresents**
+- **系列**書式設定の構成
+- **系列タイプ**の変更
+- **副軸**の追加
+- 単一系列縦棒グラフの **VaryByCategories** 色</value>
+    <comment>## Series
+**Series** is the most frequently used feature in charts. Each chart contains one or more data series, and each series consists of a group of data points. 
+
+These examples demonstrate how to add a series to a chart, and how to specify settings for each series, such as:
+
+- **BubbleScale** and **SizeRepresents** for bubble charts
+- Configure **Series** format
+- Change **Series Type**
+- Add **Secondary Axis**
+- **VaryByCategories** colors for single-series column charts</comment>
+  </data>
+  <data name="PersonalNetWorthCalculator.Name" xml:space="preserve">
+    <value>個人純資産計算器</value>
+    <comment>Personal net worth calculator</comment>
+  </data>
+  <data name="Comments.Descrip" xml:space="preserve">
+    <value>## コメント
+DioDocs for Excel ではワークシートに注釈を付けることができます。セルについてコメントを書き込み、そこに含まれるデータに関する情報を追加できます。
+
+**AddComment** メソッドを使用して、範囲にコメントを追加します。このメソッドは、**IComment** インタフェースのインスタンスを返します。
+
+**Visible** プロパティを使用して常にコメントを表示します。
+
+**Shape** プロパティを使用してコメントレイアウトを変更します。
+
+**IShape** インタフェースの **TextFrame** プロパティを使用して、リッチテキストを作成します。実行のたびに異なるフォントスタイルを使用できます。</value>
+    <comment>## Comments
+GrapeCity Documents for Excel enables users to annotate worksheets. They can write comments for cells to add information about the data it contains.
+
+Add comments for a range using the **AddComment** method. It returns an instance of the **IComment** interface. 
+
+Always show comments with the **Visible** property. 
+
+Modify comment layouts with the **Shape** property.
+
+Create rich text using the **TextFrame** property of the **IShape** interface. You can use different font styles for each run.</comment>
+  </data>
+  <data name="SpreadSheetsViewer.Name" xml:space="preserve">
+    <value>Spread.Sheets ビューア</value>
+    <comment>Spread.Sheets Viewer</comment>
+  </data>
+  <data name="UseCases.Descrip" xml:space="preserve">
+    <value>DioDocs for Excel を使用するシナリオがさらに 2 つあります。
+- **Code** DioDocs for Excel API コードを使用し、Excel ファイルにエクスポートします。
+- **Templates** Excel テンプレートを DioDocs for Excel データモデルにインポートし、DioDocs for Excel API コードを使用してコンテンツを追加し、Excel ファイルにエクスポートします。</value>
+    <comment>Two more GrapeCity Documents for Excel usage scenarios are as follows:
+- **Code** Use GrapeCity Documents for Excel API code, then export to an Excel file.
+- **Templates** Import an Excel template to the GrapeCity Documents for Excel data model, then use GrapeCity Documents for Excel API code to add content, then export it to an Excel file.</comment>
+  </data>
+  <data name="ExcelReporting.Name" xml:space="preserve">
+    <value>Excel レポート作成</value>
+    <comment>Excel Reporting</comment>
+  </data>
+  <data name="ExcelTemplates.Name" xml:space="preserve">
+    <value>Excel テンプレート</value>
+    <comment>Excel Templates</comment>
+  </data>
+  <data name="HiddenRowColumn.Name" xml:space="preserve">
+    <value>行と列の非表示</value>
+    <comment>Hide rows and columns</comment>
+  </data>
+  <data name="HomeInventory.Name" xml:space="preserve">
+    <value>家財目録</value>
+    <comment>Home inventory</comment>
+  </data>
+  <data name="CollapseGroup.Name" xml:space="preserve">
+    <value>グループの折りたたみ</value>
+    <comment>Collapse group</comment>
+  </data>
+  <data name="SimplePersonalBudget.Name" xml:space="preserve">
+    <value>シンプルな家計簿</value>
+    <comment>Simple personal budget</comment>
+  </data>
+  <data name="StudentCalendar.Name" xml:space="preserve">
+    <value>受講カレンダー</value>
+    <comment>Student calendar</comment>
+  </data>
+  <data name="TravelExpenseReport.Name" xml:space="preserve">
+    <value>旅費精算書</value>
+    <comment>Travel expense report</comment>
+  </data>
+  <data name="ConditionalFormatting.Descrip" xml:space="preserve">
+    <value>## 条件付き書式設定
+DioDocs for Excel では、ワークシートの行または列の重要な情報を強調表示できるように、個々のセルまたはセル範囲に対してセルの値に基づく条件付き書式設定ルールを作成できます。書式設定条件がセルの値と一致する場合は true と見なされ、セルは指定されたルールに従って書式設定されます。
+
+DioDocs for Excel では、以下のような、さまざまな条件付き書式設定ルールがサポートされています。
+
+- セル値
+- 平均
+- カラースケール
+- データバー
+- アイコンセット
+- 上位/下位 
+- 一意
+- 式
+
+**IRange.FormatConditions** の **Add** メソッドを使用して、条件付き書式設定ルールを範囲に適用します。特定の Add メソッドを使用することもできます。
+
+- AddAboveAverage
+- AddColorScale
+- AddDatabar
+- AddIconSetCondition
+- AddTop10
+- AddUniqueValues
+
+すべての Add 関数は、**IFormatCondition** インタフェースのインスタンスを返すか、別の Add メソッドに固有のインタフェース（**IAboveAverage** など）を返します。</value>
+    <comment>## Conditional Formatting
+In order to enable you to highlight important information in rows or columns of a worksheet, GrapeCity Documents for Excel allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule..
+
+GrapeCity Documents for Excel supports all types of conditional formatting rules:
+
+- Cell Value
+- Average
+- Color Scale
+- Data Bar
+- Icon Sets
+- Top Bottom 
+- Unique
+- Expression
+
+Apply conditional formatting rules to a range using the **Add** method of **IRange.FormatConditions**. You can also use other specific Add methods:
+
+- AddAboveAverage
+- AddColorScale
+- AddDatabar
+- AddIconSetCondition
+- AddTop10
+- AddUniqueValues
+
+All of the Add functions return an instance of the **IFormatCondition** interface, or an interface specific to another Add method, such as **IAboveAverage**.</comment>
+  </data>
+  <data name="DataValidation.Descrip" xml:space="preserve">
+    <value>## データ検証
+DioDocs for Excel では、ワークシートのセルに入力できる情報の形式と値を制限することで、データを検証できます。個々のセルまたはセル範囲に対して、個別の検証シナリオを作成できます。
+
+DioDocs for Excel では、以下のような、さまざまな検証がサポートされています。
+- 整数
+- 10 進数
+- リスト
+- 日付
+- 時刻
+- テキストの長さ
+- カスタム
+
+**IRange.Validation** プロパティの **Add** メソッドを使用して、範囲の検証を追加します。このメソッドは、**IValidation** インタフェースのインスタンスを返します。
+- 検証の入力メッセージとエラーメッセージを設定するには、次のプロパティを使用します
+-- InputMessage 
+-- ErrorMessage 
+- メッセージを表示するかどうかを指定するには、次のプロパティを使用します
+-- ShowInputMessage 
+-- ShowError
+- リスト検証にドロップダウンリストを表示するかどうかを指定するには
+-- InCellDropdown プロパティ</value>
+    <comment>## Data Validation
+GrapeCity Documents for Excel lets you validate data by restricting the information format and the values that can be entered in cells of a worksheet. You can create distinct validation scenarios for individual cells or for a range of cells.
+
+GrapeCity Documents for Excel supports all types of validations, including:
+- Whole Number
+- Decimal
+- List
+- Date
+- Time
+- Text length
+- Custom
+
+Add validation for a range using the **Add** method of  **IRange.Validation** property. The method returns an instance of the **IValidation** interface. 
+- To set input and error messages for the validation, use these properties:
+-- InputMessage 
+-- ErrorMessage 
+- To specify whether to show the messages, use these properties:
+-- ShowInputMessage 
+-- ShowError
+- To specify whether to show a drop down list in a list validation:
+-- InCellDropdown property</comment>
+  </data>
+  <data name="MonthlyBusinessBudget.Name" xml:space="preserve">
+    <value>月次企業予算</value>
+    <comment>Monthly business budget</comment>
+  </data>
+  <data name="Filtering.Descrip" xml:space="preserve">
+    <value>## フィルタ処理
+DioDocs for Excel では、以下のような、さまざまなフィルタがサポートされています。
+- 数値フィルタ
+- テキストフィルタ
+- 日付フィルタ
+- 色フィルタ
+- アイコンフィルタ
+
+範囲の **AutoFilter** メソッドを使用して、範囲をフィルタ処理します。フィルタを複数の列に適用する場合は、AutoFilter メソッドを複数回呼び出します。
+
+範囲の値が変更されたときにフィルタ条件を再適用するには、ワークシートの **AutoFilter** インスタンスの **ApplyFilter** メソッドを使用します。</value>
+    <comment>## Filtering
+GrapeCity Documents for Excel supports all types of filters, including: 
+- Number Filter
+- Text Filter
+- Date Filter
+- Color Filter
+- Icon Filter
+
+Filter a range using the range's **AutoFilter** method. If you want to apply the filter to multiple columns, you can invoke the AutoFilter method several times.
+
+To re-apply filter conditions when the range's value changes, use the **ApplyFilter** method of the worksheet's **AutoFilter** instance.</comment>
+  </data>
+  <data name="FilteringByColor.Descrip" xml:space="preserve">
+    <value>## 色に基づくフィルタ
+このフォルダ内の例は、AutoFilter メソッドを使用して色フィルタを生成する方法を示します。以下に基づいてフィルタ処理できます。
+- フォントの色
+- セル背景色
+- 自動設定のフォントの色
+- 塗りつぶしなし</value>
+    <comment>## Filter by color
+The examples in this folder demonstrate how to use the AutoFilter method to create a color filter. You can filter by:
+- font color
+- interior color
+- automatic font color
+- no fill</comment>
+  </data>
+  <data name="FilteringByIcon.Descrip" xml:space="preserve">
+    <value>## アイコンに基づくフィルタ
+このフォルダ内の例は、AutoFilter メソッドを使用してアイコンに基づいてフィルタ処理する方法を示します。**AutoFilterOperator** パラメータは、次の値に設定できます。
+
+- **Icon** に設定して、指定したアイコンに基づいてフィルタ処理できます
+- **NoIcon** に設定して、アイコンがない行に基づいてフィルタ処理できます
+
+アイコンフィルタを適用する前に、その範囲に対して **IIconSetCondition** インスタンスと **IFormatCondition** インスタンスを作成する必要があります。</value>
+    <comment>## Filter by icon
+The examples in this folder demonstrate how to use the AutoFilter method to filter by icon.  You can set the **AutoFilterOperator** parameter to: 
+
+- **Icon** and filter by the specified icon
+- **NoIcon** and filter by rows with no icon
+
+Before you can apply an icon filter, you must first create an **IIconSetCondition** instance and an **IFormatCondition** instance for the Range.</comment>
+  </data>
+  <data name="SimpleBudget.Name" xml:space="preserve">
+    <value>簡単な予算</value>
+    <comment>Simple Budget</comment>
+  </data>
+  <data name="TextFiltering.Descrip" xml:space="preserve">
+    <value>## テキストフィルタ
+このフォルダ内の例は、AutoFilter メソッドを使用してテキストフィルタを生成する方法を示します。たとえば、文字「e」を含む行に基づいてフィルタ処理できます。</value>
+    <comment>## Text Filter
+The example in this folder demonstrates how to use the AutoFilter method to create a text filter. For example, you can filter by rows that contain the letter "e".</comment>
+  </data>
+  <data name="Alignment.Descrip" xml:space="preserve">
+    <value>## 配置
+このフォルダ内の例は、以下の配置設定を使用する方法を示します。
+- HorizontalAlignment（左、中央、右）
+- VerticalAlignment（上、中央、下）
+- ReadingOrder（テキストの方向を RightToLeft または LeftToRight に設定）
+- ShrinkToFit 
+- Orientation（テキストの回転角度を度単位で設定）
+- テキストの折り返し </value>
+    <comment>## Alignment
+The examples in this folder demonstrate how to use these alignment settings:
+- HorizontalAlignment (Left, Center, or Right)
+- VerticalAlignment (Top, Center, or Bottom)
+- ReadingOrder (sets text direction to RightToLeft or LeftToRight)
+- ShrinkToFit 
+- Orientation (sets the text rotation angle in degrees)
+- Wrap Text</comment>
+  </data>
+  <data name="Borders.Descrip" xml:space="preserve">
+    <value>## 境界線
+このフォルダ内の例は、範囲に境界線を設定する方法を示します。次の境界線オプションを設定できます。
+- BorderLineStyle（Dashed、DashDot、Dotted、Double、Medium、Hair など）
+- Color（Green、Red、Blue、Tomato、LimeGreen など）</value>
+    <comment>## Borders
+The examples in this folder demonstrate how to specify border settings for a range. You can set these border options:
+- BorderLineStyle (Dashed, DashDot, Dotted, Double, Medium, Hair, etc.)
+- Color (Green, Red, Blue, Tomato, LimeGreen, etc.)</comment>
+  </data>
+  <data name="DateFiltering.Descrip" xml:space="preserve">
+    <value>## 日付フィルタ
+このフォルダ内の例は、AutoFilter メソッドを使用して日付に基づいてフィルタ処理する方法を示します。次のような方法でフィルタ処理できます。
+- 2 つの日付の間
+- 2 月のすべての日付</value>
+    <comment>## Date Filter
+The examples in this folder demonstrate how to use the AutoFilter method to filter by date. They show how you can filter:
+- between two dates
+- all dates in February</comment>
+  </data>
+  <data name="Fill.Descrip" xml:space="preserve">
+    <value>## 塗りつぶし
+このフォルダ内の例は、範囲にさまざまな種類の塗りつぶしを適用する方法を示します。
+- 単色塗りつぶし
+- パターン塗りつぶし
+- 直線グラデーション塗りつぶし
+- 四角形グラデーション塗りつぶし</value>
+    <comment>## Fill
+The examples in this folder demonstrate how to apply several kinds of fill to a range.
+- Solid fill
+- Pattern fill
+- Linear gradient fill
+- Rectangular gradient fill</comment>
+  </data>
+  <data name="Fonts.Descrip" xml:space="preserve">
+    <value>## フォント
+このフォルダ内の例は、範囲にフォント設定を適用する方法を示します。
+- フォントの色
+- フォントサイズ
+- フォント名
+- 太字、斜体
+- 下線
+- 取り消し線、上付き文字、下付き文字</value>
+    <comment>## Fonts
+The examples in this folder demonstrate how to apply font settings to a range:
+- Font color
+- Font size
+- Font name
+- Bold, Italic
+- Underline
+- Strikethrough, Superscript, Subscript</comment>
+  </data>
+  <data name="Formatting.Descrip" xml:space="preserve">
+    <value>## 書式設定
+DioDocs for Excel には、範囲の外観をカスタマイズするためのプロパティが数多く用意されています。
+
+- **IRange.NumberFormat** は、数値書式を設定します
+- **IRange.HorizontalAlignment**、**IRange.VerticalAlignment**、**IRange.IndentLevel** などは、配置を設定します
+- **IRange.Font** は、フォントを設定します
+- **IRange.Borders** は、境界線を設定します
+- **IRange.Interior** は、単色塗りつぶし、パターン塗りつぶし、グラデーション塗りつぶしを設定します
+- **IRange.Locked** と **IRange.FormulaHidden** は、保護を設定します
+
+カスタムスタイルを作成したり、組み込みの名前付きスタイルを使用して、名前付きスタイルを 1 つ以上の範囲に適用することもできます。</value>
+    <comment>## Formatting
+GrapeCity Documents for Excel provides a lot of properties to customize the appearance of a range:
+
+- **IRange.NumberFormat** sets the number format
+- **IRange.HorizontalAlignment**,  **IRange.VerticalAlignment**, **IRange.IndentLevel**, etc. set the alignment
+- **IRange.Font** sets the font
+- **IRange.Borders** sets the border
+- **IRange.Interior** sets solid fill, pattern fill, and gradient fill
+- **IRange.Locked** and **IRange.FormulaHidden** sets up protection
+
+You can also create custom styles or use the built-in named styles, and apply named styles to one or more ranges.</comment>
+  </data>
+  <data name="Formulas.Descrip" xml:space="preserve">
+    <value>## 数式
+DioDocs for Excel では、数式を作成して使用することができます。これらの式で、セルの値を迅速かつ正確に計算できます。組み込みの関数と演算子を使用して式を生成し、セル内で値を計算することもできます。
+
+計算エンジンは、次のような多くの計算を処理します。
+- 数百個の組み込み Excel 関数
+- 配列式
+- Dirty メソッドと Calculate メソッド
+- テーブル式</value>
+    <comment>## Formulas
+GrapeCity Documents for Excel lets you create and use formulas. These are expressions that let you calculate the value of a cell quickly and accurately. You can also use built-in functions and operators to generate formulas and calculate values in cells.
+
+The calc engine handles many calculations, for example:
+- Hundreds of built-in Excel functions
+- Array formulas
+- Dirty and Calculate methods
+- Table formula</comment>
+  </data>
+  <data name="Grouping.Descrip" xml:space="preserve">
+    <value>## グループ化
+膨大な量のデータが入ったスプレッドシートは、読むことすら頭が痛いものです。自分に関係がある情報を視覚化し、管理し、分析しようとすると、多くの時間と労力を費やすことになります。
+
+DioDocs for Excel を使用すると、大量の情報をいくつかのグループにまとめて、複雑なスプレッドシートを簡単にナビゲーションできます。スプレッドシート内のデータ行がグループ化されると、グループヘッダー行のボタンをクリックして、詳細を展開したり折りたたんだりできます。次のメソッドとプロパティを使用して、グループ化をカスタマイズできます。
+
+- 範囲の **Group** メソッドは、特定の行のアウトラインレベルを上げます
+- 範囲の **Ungroup** メソッドは、特定の行のアウトラインレベルを下げます
+- **ShowDetail** Boolean プロパティは、グループを展開または折りたたみます
+- ワークシートの Outline インスタンスの **ShowLevels** メソッドは、特定のレベルグループを展開します</value>
+    <comment>## Grouping
+Spreadsheets with tons of data can be a headache to read. You can spend a lot of time and effort trying to visualize, manage, and analyze the information that is relevant to you.
+
+GrapeCity Documents for Excel lets you summarize large amounts of information in groups so that complex spreadsheets are easier to navigate. After rows of data in a spreadsheet are grouped, users can expand and collapse details with the click of a button in the group header row. You can use the following methods and properties to customize your groupings:
+
+- The **Group** method of the range increases the outline level of specific rows
+- The **Ungroup** method of the range decreases the outline level of specific rows
+- The **ShowDetail** Boolean property expands or collapses a group
+- The **ShowLevels** method of the worksheet's Outline instance expands specific level groups</comment>
+  </data>
+  <data name="NumberFormat.Descrip" xml:space="preserve">
+    <value>## 数値形式
+数値形式の例では、範囲に数値書式を適用する方法を示します。DioDocs for Excel は、Excel スタイルの数値書式を使用します。</value>
+    <comment>## Number Format
+The Number Format examples demonstrate how to apply a number format to a range. GrapeCity Documents for Excel uses Excel-style number formats.</comment>
+  </data>
+  <data name="Protection.Descrip" xml:space="preserve">
+    <value>## 保護 
+保護の例では、次のように、範囲にセキュリティ設定を適用する方法を示します。
+- **FormulaHidden** プロパティは、範囲内の数式が、エクスポートされた .xlsx ファイルに表示されないようにします。
+- **Locked** プロパティは、範囲内のセルが変更されないように保護します</value>
+    <comment>## Protection 
+The Protection examples demonstrate how to apply security settings to a range, for example:
+- The **FormulaHidden** property keeps formulas in a range from appearing in exported .xlsx files.
+- The **Locked** property protects cells in a range from being modified</comment>
+  </data>
+  <data name="AddCustomSlicerStyle.Name" xml:space="preserve">
+    <value>カスタムスライサースタイルの追加</value>
+    <comment>Add a custom slicer style</comment>
+  </data>
+  <data name="BloodSugarTracker.Name" xml:space="preserve">
+    <value>血糖値ログ</value>
+    <comment>Blood sugar tracker</comment>
+  </data>
+  <data name="Tutorial.Name" xml:space="preserve">
+    <value>チュートリアル</value>
+    <comment>Tutorial</comment>
+  </data>
+  <data name="Hyperlinks.Descrip" xml:space="preserve">
+    <value>## ハイパーリンク
+範囲にハイパーリンクを適用するには、ワークシートの **Add** メソッドまたは範囲の **Hyperlinks** インスタンスを使用します。DioDocs for Excel は、次の種類のハイパーリンクをサポートしています。
+- Web ページへのリンク
+- 現在のドキュメント内の特定の範囲へのリンク
+- 外部ファイルへのリンク
+- 電子メールアドレスへのリンク</value>
+    <comment>## Hyperlinks
+Apply hyperlinks to a range using the **Add** method of a worksheet or range's **Hyperlinks** instance. GrapeCity Documents for Excel supports the following types of hyperlink:
+- Link to a web page
+- Link to a specific range in the current document
+- Link to an external file
+- Link to an email address</comment>
+  </data>
+  <data name="Picture.Descrip" xml:space="preserve">
+    <value>## ピクチャ
+DioDocs for Excel を使用すると、ワークシートにピクチャを追加できます。
+
+ワークシートにピクチャを追加するには、ワークシートの **Shapes** コレクションの **AddPicture** メソッドを使用します。</value>
+    <comment>## Picture
+GrapeCity Documents for Excel allows you to add a picture to a worksheet.
+
+To add a picture to a worksheet, use the **AddPicture** method of the worksheet's **Shapes** collection.</comment>
+  </data>
+  <data name="PivotTable.Descrip" xml:space="preserve">
+    <value>## ピボットテーブル
+ピボットテーブルはデータ集計ツールです。スプレッドシートに保存されているデータを自動的にカウント、合計、または平均し、その結果として生成される集計データを別の表に表示できます。
+
+ワークブックの **PivotCaches** コレクションの **Create**メソッドを使用して、ピボットキャッシュを作成します。このメソッドは、**IPivotCache** インタフェースのインスタンスを返します。
+
+ピボットキャッシュインスタンスの **CreatePivotTable** メソッドを使用して、ピボットテーブルを作成します。または、ワークシートの **PivotTables** コレクションの **Add** メソッドを使用することもできます。
+
+各ピボットフィールドの **PivotFieldOrientation** プロパティを使用して、それが RowField、ColumnField、ValueField、PageField のどれであるかを指定します。</value>
+    <comment>## Pivot Table
+A pivot table is a data summarization tool. It can automatically count, total, or average the data stored in a spreadsheet, and display the resulting summarized data in a second table.
+
+Create a pivot cache using the **Create** method of the workbook's **PivotCaches** collection. It returns an instance of the **IPivotCache** interface. 
+
+Create a pivot table using the **CreatePivotTable** method of the pivot cache instance. Or you can opt to use the **Add** method of the worksheet's **PivotTables** collection.
+
+Use the **PivotFieldOrientation** property of each pivot field to specify whether it is a RowField, ColumnField, ValueField, or PageField.</comment>
+  </data>
+  <data name="RangeOperations.Descrip" xml:space="preserve">
+    <value>## 範囲の操作
+範囲とは、スプレッドシート内の 1 つのセルまたはセルの集まりのことで、**IWorksheet** インタフェースの **Range** プロパティを使用して、セル、行、または列に対して重要な操作を実行するために使用します。
+
+このフォルダ内の例は、以下の方法を示します。
+- セル、行、列へのアクセス
+- 範囲の各領域へのアクセス
+- 範囲へのさまざまなアクセス方法
+- 範囲の切り取り、コピー、貼り付け
+- セルの使用範囲の操作
+- 行数または列数の取得
+- 行または列の非表示
+- セルの挿入または削除
+- 行および列の挿入または削除
+- セルの結合
+- 範囲に値を設定
+- 行の高さと列の幅の設定</value>
+    <comment>## Range Operations
+A range is a cell or a cluster of cells in a spreadsheet that can be used to execute important operations on cells, rows or columns with the help of **Range** property of the **IWorksheet** interface.
+
+Examples in this folder demonstrate how to:
+- Access cells, rows, and columns
+- Access each area of a range
+- Access ranges in various ways
+- Cut, Copy, and Paste a range
+- Work with a used range of cells
+- Get a row count or column count
+- Hide a row or column
+- Insert or delete cells
+- Insert or delete rows and columns
+- Merge cells
+- Set values to a range
+- Set row height and column width</comment>
+  </data>
+  <data name="Shape.Descrip" xml:space="preserve">
+    <value>## 図形
+DioDocs for Excel では、ワークシートのセルに図形やピクチャなどの描画オブジェクトを埋め込むことができます。矢印、線、チャート、スライサー、ピクチャ、および一般的な図形を挿入できます。
+
+ワークシートで図形を作成するには、ワークシートの Shapes コレクションの **AddShape** メソッドを使用します。次に、以下のようにプロパティを使用して、Shape インスタンスを設定します。
+
+- **Fill** プロパティを使用して、図形の塗りつぶしスタイルを設定します 
+- **Line** プロパティを使用して、図形の線スタイルを設定します
+- **ThreeD** プロパティを使用して、図形の 3D 形式を設定します 
+- **TextFrame** プロパティを使用して、図形のリッチテキストを設定します</value>
+    <comment>## Shape
+GrapeCity Documents for Excel lets you embed drawing objects like shapes and pictures in the cells of a worksheet. You can insert arrows, lines, charts, slicers, pictures, and general shapes.
+
+To create a shape for a worksheet, use the **AddShape** method of the worksheet's Shapes collection. Then you can configure the Shape instance using properties like these:
+
+- Configure a shape's fill style using the **Fill** property 
+- Configure a shape's line style using the **Line** property
+- Configure a shape's 3D format using the **ThreeD** property 
+- Configure a shape's rich text using the **TextFrame** property</comment>
+  </data>
+  <data name="Slicer.Descrip" xml:space="preserve">
+    <value>## スライサー
+スライサーは、テーブルまたはピボットテーブルのフィルタ処理に使用できるビジュアルフィルタです。
+
+ワークブックの **SlicerCaches** コレクションの **Add** メソッドを使用して、スライサーキャッシュを作成します。このメソッドは、スライサーキャッシュのインスタンスを返します。
+
+スライサーを作成するには、スライサーキャッシュの **Slicers** コレクションの **Add** メソッドを使用します。
+
+これは、組み込みのスライサースタイルとカスタムスライサースタイルの両方をサポートします。</value>
+    <comment>## Slicer
+Slicers are visual filters that you can use to filter a table or pivot table.
+
+Use the **Add** method of a workbook's **SlicerCaches** collection to create a slicer cache. It returns an instance of a slicer cache. 
+
+Use the **Add** method of the slicer cashe's **Slicers** collection to create a slicer.
+
+It supports both built-in and custom slicer styles.</comment>
+  </data>
+  <data name="Sorting.Descrip" xml:space="preserve">
+    <value>## ソート
+DioDocs for Excel では、以下のような、さまざまなソートがサポートされています。
+- 値によるソート
+- フォントの色によるソート
+- セル背景によるソート
+- アイコンによるソート
+- カスタムリストによるソート</value>
+    <comment>## Sorting
+GrapeCity Documents for Excel supports all types of sorting, including:
+- Sort by value
+- Sort by font color
+- Sort by interior
+- Sort by icon
+- Sort by custom list</comment>
+  </data>
+  <data name="Sparklines.Descrip" xml:space="preserve">
+    <value>## スパークライン
+DioDocs for Excel では、スパークラインを使用して、特定の情報を強調表示したり、データが時間の経過と共にどのように変化するかを表示できます。スパークラインは、セル内に描画される小型・軽量チャートで、データをすばやく視覚化して分析機能を強化します。
+
+範囲の **SparklineGroups** コレクションの **Add** メソッドを使用して、新しいスパークライングループを作成します。スパークラインは、スパークライングループ内にのみ存在します。スパークライングループの外にスパークラインを作成する方法はありません。
+
+次の種類のスパークラインがサポートされます。
+- 線
+- 縦棒
+- 勝敗</value>
+    <comment>## Sparklines
+GrapeCity Documents for Excel allows you to highlight specific information and see how it varies over time using Sparklines. Sparklines are small, lightweight charts that are drawn inside cells to quickly visualize data for improved analysis.
+
+Use the **Add** method of a range's **SparklineGroups** collection to create a group of new sparklines. Sparklines only exist inside of a sparkline group. There is no way to create a sparkline outside of a sparkline group.
+
+We support the following types of sparklines:
+- Line
+- Column
+- Win/Loss</comment>
+  </data>
+  <data name="SpreadSheetsViewer.Descrip" xml:space="preserve">
+    <value>## Spread.Sheets ビューア
+このフォルダ内の例は、**DioDocs for Excel** と **Spread.Sheets** の使用方法を示します。Spread.Sheets は、SpreadJS に含まれる別のスプレッドシート製品です。DioDocs for Excel はサーバー側で動作し、Excel テンプレートファイルをインポートおよびエクスポートします。Spread.Sheets は、ビューアまたはエディタとしてブラウザ内（クライアント側）で機能します。
+
+**Spread.Sheets** の詳細については、[SpreadJS 製品情報ページ](https://www.grapecity.co.jp/developer/spreadjs) を参照してください。
+
+このフォルダ内のすべての例は、次の手順で動作します。
+- サーバー上に存在する **DioDocs for Excel** で Excel ファイルを開きます。
+- **Workbook.ToJson** を呼び出してワークブック全体を JSON 文字列にエクスポートし、その JSON 文字列をクライアント側に転送します。
+- クライアント側では、**Spread.Sheets** コントロールが **FromJson** を使用して、サーバー上の Excel ファイルの結果を表示します。
+
+**［テンプレート］**ボタンをクリックすると、Excel ファイルをダウンロードして表示できます。
+
+デモページでは、Spread.Sheets コントロールの内容を編集し、**［エクスポート］**ボタンをクリックして、変更された Excel ファイルを取得できます。［エクスポート］ボタンは次の手順で機能します。
+- Spread.Sheets が **ToJson** を使用して、最新の変更内容を含む JSON 文字列を取得し、その文字列をサーバーに送信します。
+- サーバーの DioDocs for Excel が JSON 文字列に **FromJson** を使用し、**Workbook.Save** を呼び出して Excel ファイルにすべての内容を保存します。
+- これで、変更された Excel ファイルをダウンロードできます。</value>
+    <comment>## Spread.Sheets Viewer
+Examples in this folder demonstrate how to use **GrapeCity Documents for Excel** and **Spread.Sheets**, another Spread product that is included in SpreadJS. GrapeCity Documents for Excel works on the server side to import and export Excel template files. Spread.Sheets works in the browser (client side) as a viewer or editor.
+
+To learn more about **Spread.Sheets**, visit the [Spread.Sheets Home Page](https://www.grapecity.com/en/spreadsheets).
+
+All examples in this folder work as below steps:
+- Open an Excel file with **GrapeCity Documents for Excel** existing on server.
+- Export the whole workbook to a JSON string by calling **Workbook.ToJson**, then transfer the JSON string to client side.
+- At client side, **Spread.Sheets** control will **FromJson** to let you view the result of the excel file on server.
+
+Click the **"Template"** button to download and view the excel file.
+
+In the demo page, you can edit the content in the Spread.Sheets control, then click the **"Export"** button to get the changed Excel file. The "Export" button works by following steps:
+- Spread.Sheets uses **ToJson** to get a JSON string which contains the latest changes, and post the string to server.
+- GrapeCity Documents for Excel at server uses **FromJson** with the JSON string, and then calls **Workbook.Save** to save everything to an excel file.
+- Finally, you can download the changed Excel file.</comment>
+  </data>
+  <data name="Tables.Descrip" xml:space="preserve">
+    <value>## テーブル
+範囲としてテーブルを作成すると、スプレッドシートのデータをより簡単に管理および分析できます。テーブルは行と列で構成され、これらをワークシート内で独立して書式設定および管理できます。次の方法を学習します。
+
+- ワークシート内のテーブルの追加または削除
+- テーブル列へのフィルタの適用
+- テーブル列へのソートの適用
+- 組み込みテーブルスタイルまたはカスタムテーブルスタイルの適用
+- テーブルの各範囲へのアクセス
+- テーブル列の追加または削除
+- 特定のテーブル範囲の計算の実行</value>
+    <comment>## Tables
+To more easily manage and analyze data in spreadsheet, you can create table for a range. A table consists of rows and columns that you can format and manage independently in a worksheet. You will learn how to:
+
+- Add or remove a table in a worksheet
+- Apply filtering to a table column
+- Apply sorting to a table column
+- Apply either built-in or custom table styles
+- Access each range of a table
+- Add or remove a table column
+- Perform calculations for a specific table range</comment>
+  </data>
+  <data name="Theme.Descrip" xml:space="preserve">
+    <value>## テーマ
+DioDocs for Excel には、ワークブック全体の外観をすばやく変更できる組み込みテーマが用意されています。カスタムテーマを作成してワークブックに適用することもできます。
+
+- ワークブックインスタンスの **Theme** プロパティを使用して、ワークブックのテーマを変更します。
+- テーマクラスインスタンスの **Add** メソッドを使用して、カスタムテーマを追加します。
+- **Themes** クラスの組み込みプロパティを使用して、組み込みテーマインスタンスを取得します。
+- **Themes** インデクサを使用して、カスタムテーマインスタンスを取得します。</value>
+    <comment>## Theme
+GrapeCity Documents for Excel provides you with a set of built-in themes so you can quickly change the overall appearance of a workbook. It also lets you create custom themes and apply them to workbooks.
+
+- Use the **Theme** property of a workbook instance to change the workbook's theme. 
+- Use the **Add** method of a themes class instance to add a custom theme. 
+- Use the built-in properties of the **Themes** class to get a built-in theme instance.
+- Use the **Themes** indexer to get a custom theme instance.</comment>
+  </data>
+  <data name="Workbook.Descrip" xml:space="preserve">
+    <value>## ワークブック
+ワークブックとは、Worksheets コレクションに格納された 1 つ以上のワークシートを含むスプレッドシートドキュメントのことです。
+
+このフォルダ内の例は、次の方法を具体的に示します。
+- 新しいワークブックの作成
+- ワークブックへの Excel ファイルのインポート
+- ワークブックへのパスワード付き Excel ファイルのインポート
+- Excel ファイルへのワークブックのエクスポート
+- パスワード付き Excel ファイルへのワークブックのエクスポート
+- ToJson と FromJson を使用したワークブックのインポートとエクスポート</value>
+    <comment>## Workbook
+A workbook is a spreadsheet document that contains one or more worksheets that are stored within the Worksheets collection.
+
+The examples in this folder demonstrate the following cases:
+- Create  a new workbook
+- Import an Excel file into a workbook
+- Import an Excel file with a password to a workbook
+- Export a workbook to an Excel file
+- Export a workbook to an Excel file with a password
+- Import or export a workbook using ToJson and FromJson</comment>
+  </data>
+  <data name="Worksheets.Descrip" xml:space="preserve">
+    <value>## ワークシート
+このフォルダ内の例は、次の方法を具体的に示します。
+- ワークシートの追加
+- ワークシートの削除
+- ワークシートの保護
+- ワークシートの保護の解除
+- ワークシートのアクティブ化
+- ワークシートへの設定の適用</value>
+    <comment>## Worksheets
+The examples in this folder demonstrate the following cases:
+- Add a worksheet
+- Delete a worksheet
+- Protect a worksheet
+- Unprotect a worksheet
+- Activate a worksheet
+- Apply settings to a worksheet</comment>
+  </data>
+  <data name="ExcelReporting.Descrip" xml:space="preserve">
+    <value>## Excel レポート作成
+このフォルダでは、サーバー側で Excel ファイルまたはレポートを生成する方法を示す完全なコードについて説明します。
+
+**［実行］**ボタンをクリックすると、サーバーで次のアクションが実行されます。
+- 空のワークブックを作成する
+- コードウィンドウ内のすべてのコードを実行する
+- Excel ファイルに保存する
+
+その後、Excel ファイルをダウンロードして結果を表示できます。</value>
+    <comment>## Excel Reporting
+In this folder, you can explore complete code demonstrating how to generate an Excel file or report at server side. 
+
+Click the **"Run"** button to perform the following actions on the server:
+- Create an empty workbook
+- Execute all of code in the code window
+- Save to an Excel file
+
+Then you can view the results by downloading the Excel file.</comment>
+  </data>
+  <data name="ExcelTemplates.Descrip" xml:space="preserve">
+    <value>## Excel テンプレート
+シナリオによっては、独自の Excel テンプレートがあり、サーバー側でそのコンテンツの一部を開いて更新したい場合があります。強力な DioDocs for Excel API を使用すると、既存の Excel ファイルを開き、その値の一部を変更したり、書式をカスタマイズするなど、必要な作業を行うことができます。
+- **［テンプレート］**ボタンをクリックすると、オリジナルの Excel テンプレートをダウンロードして表示できます。
+- **［実行］**ボタンをクリックすると、コードが実行され、変更された Excel ファイルを取得できます。</value>
+    <comment>## Excel Templates
+In some scenarios, you may have your own Excel templates and just want to open and update some of the contents at server side. You can use the extensive GrapeCity Documents for Excel API to open an existing Excel file and then change some of its values, customize its formatting, and whatever else you need to do.
+- Click the **Template** button to download and view the original Excel template
+- Click the **Run** button to run the code and get the changed Excel file</comment>
+  </data>
+  <data name="UseSlicerToClearFilter.Name" xml:space="preserve">
+    <value>スライサーを使用してフィルタをクリア</value>
+    <comment>Use a slicer to clear a filter</comment>
+  </data>
+  <data name="Features.Descrip" xml:space="preserve">
+    <value>## 機能
+DioDocs for Excel には、開発者がスプレッドシートを作成する際に役立つすばらしい機能が用意されています。
+- 高性能な属性
+- カスタムテーマ
+- 構成可能なコンポーネント
+- 集計データ
+- カスタムスタイル
+- 描画オブジェクトの埋め込み
+- 統合計算エンジン
+- その他...
+
+機能セクションには、DioDocs for Excel の各機能を使用する方法を説明する多数のサンプルコードが用意されています。
+
+**［実行］**ボタンをクリックすると、サーバーで次のアクションが実行されます。
+- 空のワークブックを作成する
+- コードウィンドウ内のすべてのコードを実行する
+- Excel ファイルに保存する
+
+その後、Excel ファイルをダウンロードして結果を表示できます。
+
+**メモ**：このデモの Spread.Sheets は読み取り専用モードです。対話式になっていない機能があっても問題はありません。完全に機能する Excel ファイルをダウンロードすると、それらの機能を対話式に使用できます。</value>
+    <comment>## Features
+GrapeCity Documents for Excel provides some remarkable features that empower developers to create spreadsheets with:
+- High-performance attributes
+- Custom themes
+- Configurable components
+- Summarized data
+- Custom styles
+- Embedded drawing objects
+- Integrated calculation engine
+- And much more...
+
+You can explore a lot of example code in the Features section that shows you how to use each feature in GrapeCity Documents for Excel.
+
+Click the **"Run"** button to perform the following actions on the server:
+- Create an empty workbook
+- Execute all of the code in the code window
+- Save to an Excel file
+
+Then you can view the results by downloading the Excel file.
+
+**NOTE**: In this demo, Spread.Sheets is in read-only mode. Don't be alarmed if some features are not interactive. Download the fully functional  Excel file to interact with the features.</comment>
+  </data>
+  <data name="ProjectCostTracker.Name" xml:space="preserve">
+    <value>プロジェクトコストトラッカー</value>
+    <comment>Project cost tracker</comment>
+  </data>
+  <data name="EventBudget.Name" xml:space="preserve">
+    <value>イベント予算</value>
+    <comment>Event budget</comment>
+  </data>
+  <data name="NumberFilter.Name" xml:space="preserve">
+    <value>数値フィルタの適用</value>
+    <comment>Apply number filter</comment>
+  </data>
+  <data name="NumberFiltering.Descrip" xml:space="preserve">
+    <value>## 数値フィルタ
+このフォルダ内の例は、範囲に対して数値フィルタを使用する方法を示します。</value>
+    <comment>## Number Filter
+The examples in this folder demonstrates how to use number filtering for range.</comment>
+  </data>
+  <data name="NumberFormat.Name" xml:space="preserve">
+    <value>数値形式</value>
+    <comment>Number Format</comment>
+  </data>
+  <data name="ConfigValueAxesFormat.Name" xml:space="preserve">
+    <value>値軸スタイルの構成</value>
+    <comment>Configure value axis style</comment>
+  </data>
+  <data name="ChangeSeriesType.Name" xml:space="preserve">
+    <value>チャート系列タイプ</value>
+    <comment>Change series type</comment>
+  </data>
+  <data name="ConfigDataLabelFormat.Name" xml:space="preserve">
+    <value>データラベルの書式の構成</value>
+    <comment>Configure data label's format</comment>
+  </data>
+  <data name="ConfigMarkerStyle.Name" xml:space="preserve">
+    <value>マーカースタイルの構成</value>
+    <comment>Configure markers style</comment>
+  </data>
+  <data name="ConfigNegativePoint.Name" xml:space="preserve">
+    <value>負のポイントスタイルの構成</value>
+    <comment>Configure negative point style</comment>
+  </data>
+  <data name="ConfigSeriesFormat.Name" xml:space="preserve">
+    <value>系列の書式設定の構成</value>
+    <comment>Configure series format</comment>
+  </data>
+  <data name="CreateSecondaryAxis.Name" xml:space="preserve">
+    <value>副軸の作成</value>
+    <comment>Create secondary axis</comment>
+  </data>
+  <data name="DeleteSeries.Name" xml:space="preserve">
+    <value>系列の削除</value>
+    <comment>Delete series</comment>
+  </data>
+  <data name="ConfigChartTitleRichText.Name" xml:space="preserve">
+    <value>リッチテキスト付きチャートタイトルの構成</value>
+    <comment>Configure chart title with rich text</comment>
+  </data>
+  <data name="ChartArea.Name" xml:space="preserve">
+    <value>チャート領域</value>
+    <comment>Chart area</comment>
+  </data>
+  <data name="ChartLines.Name" xml:space="preserve">
+    <value>グラフ線</value>
+    <comment>Chart lines</comment>
+  </data>
+  <data name="ChartTitle.Name" xml:space="preserve">
+    <value>チャートタイトル</value>
+    <comment>Chart title</comment>
+  </data>
+  <data name="ChartWalls.Name" xml:space="preserve">
+    <value>チャート壁面</value>
+    <comment>Chart walls</comment>
+  </data>
+  <data name="ConfigChartAreaFont.Name" xml:space="preserve">
+    <value>チャート領域のフォントの構成</value>
+    <comment>Configure chart area's font</comment>
+  </data>
+  <data name="ConfigChartBackWall.Name" xml:space="preserve">
+    <value>チャートの背壁の構成</value>
+    <comment>Configure chart back wall</comment>
+  </data>
+  <data name="ConfigChartSideWall.Name" xml:space="preserve">
+    <value>チャートの側壁の構成</value>
+    <comment>Configure chart side wall</comment>
+  </data>
+  <data name="DataLabel.Name" xml:space="preserve">
+    <value>データラベル</value>
+    <comment>Data label</comment>
+  </data>
+  <data name="DataPoint.Name" xml:space="preserve">
+    <value>データポイント</value>
+    <comment>Data point</comment>
+  </data>
+  <data name="Legend.Name" xml:space="preserve">
+    <value>凡例</value>
+    <comment>Legend</comment>
+  </data>
+  <data name="ChartArea.Descrip" xml:space="preserve">
+    <value>## チャート領域
+チャート領域は、プロット領域、チャートタイトル、および凡例から成るチャート領域全体です。
+
+以下の例は、チャート領域のスタイルとチャート領域全体のフォントスタイルを構成する方法を示します。</value>
+    <comment>## Chart area
+Chart area is the complete chart area, include plot area, chart title and legend.
+
+These examples demonstrate how to configure chart area style and whole chart area font style.</comment>
+  </data>
+  <data name="ChartLines.Descrip" xml:space="preserve">
+    <value>## グラフ線
+グラフ線には、**傾向線**、**ドロップライン**、**高値-安値ライン**、**系列線**があります。
+
+- **傾向線**は、特定の系列に使用されます。
+- **ドロップライン**は、折れ線グラフまたは面グラフに設定されます。
+- **高値-安値ライン**は、折れ線グラフに設定されます。
+- **系列線**は、積層縦棒グラフまたは積層横棒グラフに設定されます。補助円グラフ付き円グラフと補助縦棒グラフ付き円グラフも、セクション間に接続線があります。
+
+以下の例は、これらの線を追加する方法と、線のスタイルを設定する方法を示します。</value>
+    <comment>## Chart lines
+Chart lines include: **Trendline**, **Dropline** , **High-Low Line** and **Series Line**.
+
+- **Trendline** is for specific series.
+- **Dropline** set for line chart or area chart.
+- **High-Low line** set for line chart.
+- **Series line** set for stacked column or bar charts. Pie-of-pie charts and bar-of-pie charts also have connector lines between their sections
+
+These examples demonstrate how to add these lines and how to configure lines style.</comment>
+  </data>
+  <data name="ChartTitle.Descrip" xml:space="preserve">
+    <value>## チャートタイトル
+**チャートタイトル**は、グラフの名前のことです。
+
+以下の例は、グラフ名を表示する方法と、チャートタイトルの設定を行う方法を示します。</value>
+    <comment>## Chart title
+**Chart title** is the name of the chart.
+
+These examples demonstrate how to display chart name  and how to specify settings for chart title.</comment>
+  </data>
+  <data name="ChartWalls.Descrip" xml:space="preserve">
+    <value>**チャートの壁面**には、**背壁**と**側壁**があります。
+
+以下の例では、次のようなチャート壁面設定の指定方法を示します。
+- 壁面スタイルをまとめて構成する
+- 背壁と側壁を別々に構成する</value>
+    <comment>**Chart walls** include **back wall** and **side wall**.
+
+These examaple demonstrete how to specity settings for chart walls, include:
+- Configure walls style together
+- Configure back wall and side wall separately</comment>
+  </data>
+  <data name="Chart3DFormat.Name" xml:space="preserve">
+    <value>チャートの 3D 書式設定</value>
+    <comment>Chart 3D format</comment>
+  </data>
+  <data name="ConfigLegendFormat.Name" xml:space="preserve">
+    <value>凡例の書式設定の構成</value>
+    <comment>Configure legend format</comment>
+  </data>
+  <data name="ConfigSecondarySection.Name" xml:space="preserve">
+    <value>補助円グラフ付き円グラフの第 2 セクションの構成</value>
+    <comment>Configure secondary section for pie of pie chart</comment>
+  </data>
+  <data name="DataLabel.Descrip" xml:space="preserve">
+    <value>## データラベル
+**データラベル**は、指定された系列の情報を表示できます。ShowLegendKey、ShowPercentage、ShowValue、ShowSeriesName などを使用して、データラベルのレイアウトを構成します。以下の例は、データラベルを表示し、データラベルの設定を指定する方法を示します。</value>
+    <comment>## Data label
+**Data labels** can display specified series information. Use ShowLegendKey, ShowPercentage, ShowValue, ShowSeriesName, .etc to configure data label layout. These examples demonstrate how to display data labels and specify settings for data labels.</comment>
+  </data>
+  <data name="DataPoint.Descrip" xml:space="preserve">
+    <value>## データポイント
+**データポイント**は、特定の系列のすべてのポイントのコレクションです。以下の例は、データポイントの設定を指定する方法を示します。</value>
+    <comment>## Data point
+**Data points** are a collection of all points in a specific series. These examples demonstrate how to specify settings for data points.</comment>
+  </data>
+  <data name="Legend.Descrip" xml:space="preserve">
+    <value>## 凡例
+以下の例は、チャートの**凡例**のスタイルと位置を設定する方法を示します。</value>
+    <comment>## Legend
+These examples demonstrate how to configure the style and position of chart **legends**.</comment>
+  </data>
+  <data name="PlotArea.Descrip" xml:space="preserve">
+    <value>## プロット領域
+以下の例は、**プロット領域**の設定を指定する方法を示します。</value>
+    <comment>## Plot area
+These examples demonstrate how to specify settings for **plot area**.</comment>
+  </data>
+  <data name="PlotArea.Name" xml:space="preserve">
+    <value>プロット領域</value>
+    <comment>Plot area</comment>
+  </data>
+  <data name="ChartGallery.Descrip" xml:space="preserve">
+    <value>## チャートギャラリー
+このチャートギャラリーには、使用可能なすべての**チャートタイプ**が含まれており、各グラフの設定方法が示されています。</value>
+    <comment>## Chart gallery
+This chart gallery includes all of the **chart types** available and demonstrates how to configure each chart.</comment>
+  </data>
+  <data name="ChartGallery.Name" xml:space="preserve">
+    <value>チャートギャラリー</value>
+    <comment>Chart gallery</comment>
+  </data>
+  <data name="AreaChart.Name" xml:space="preserve">
+    <value>面グラフ</value>
+    <comment>Area chart</comment>
+  </data>
+  <data name="AreaStacked100.Name" xml:space="preserve">
+    <value>100% 積層グラフ</value>
+    <comment>100% Stacked chart</comment>
+  </data>
+  <data name="AreaStackedChart.Name" xml:space="preserve">
+    <value>積層エリアグラフ</value>
+    <comment>Stacked Area chart</comment>
+  </data>
+  <data name="BarClusteredChart.Name" xml:space="preserve">
+    <value>集合横棒グラフ</value>
+    <comment>Clustered Bar chart</comment>
+  </data>
+  <data name="BarStacked100Chart.Name" xml:space="preserve">
+    <value>100 % 積層横棒グラフ</value>
+    <comment>100% Stacked Bar chart</comment>
+  </data>
+  <data name="BarStackedChart.Name" xml:space="preserve">
+    <value>積層横棒グラフ</value>
+    <comment>Stacked Bar chart</comment>
+  </data>
+  <data name="ColumnClusteredChart.Name" xml:space="preserve">
+    <value>集合縦棒グラフ</value>
+    <comment>Clustered Column chart</comment>
+  </data>
+  <data name="ColumnStacked100Chart.Name" xml:space="preserve">
+    <value>100 % 積層縦棒グラフ</value>
+    <comment>100% Stacked Column chart</comment>
+  </data>
+  <data name="ColumnStackedChart.Name" xml:space="preserve">
+    <value>積層縦棒グラフ</value>
+    <comment>Stacked Column chart</comment>
+  </data>
+  <data name="LineChart.Name" xml:space="preserve">
+    <value>折れ線グラフ</value>
+    <comment>Line chart</comment>
+  </data>
+  <data name="LineMarkersChart.Name" xml:space="preserve">
+    <value>ラインマーカーチャート</value>
+    <comment>Line Markers chart</comment>
+  </data>
+  <data name="LineStacked100Chart.Name" xml:space="preserve">
+    <value>100 % 積層折れ線グラフ</value>
+    <comment>100% Stacked Line chart</comment>
+  </data>
+  <data name="LineStackedChart.Name" xml:space="preserve">
+    <value>積層折れ線グラフ</value>
+    <comment>Stacked Line chart</comment>
+  </data>
+  <data name="PieChart.Name" xml:space="preserve">
+    <value>円グラフ</value>
+    <comment>Pie chart</comment>
+  </data>
+  <data name="Stock_HighLowCloseStockChart.Name" xml:space="preserve">
+    <value>高値-安値-終値株価チャート</value>
+    <comment>High-Low-Close stock chart</comment>
+  </data>
+  <data name="Stock_OpenHighLowCloseStock.Name" xml:space="preserve">
+    <value>始値-高値-安値-終値株価チャート</value>
+    <comment>Open-High-Low-Close stock chart</comment>
+  </data>
+  <data name="Stock_VolumeHighLowCloseStock.Name" xml:space="preserve">
+    <value>出来高-高値-安値-終値株価チャート</value>
+    <comment>Volume-High-Low-Close stock chart</comment>
+  </data>
+  <data name="XYScatterChart.Name" xml:space="preserve">
+    <value>散布図</value>
+    <comment>Scatter chart</comment>
+  </data>
+  <data name="XYScatterLinesChart.Name" xml:space="preserve">
+    <value>散布図（直線とマーカー）</value>
+    <comment>Scatter with straight lines and markers</comment>
+  </data>
+  <data name="XYScatterSmooth.Name" xml:space="preserve">
+    <value>散布図（平滑線）</value>
+    <comment>Scatter with smooth Lines</comment>
+  </data>
+  <data name="BubbleChart.Name" xml:space="preserve">
+    <value>バブルチャート</value>
+    <comment>Bubble chart</comment>
+  </data>
+  <data name="ConfigHeaderFooter.Name" xml:space="preserve">
+    <value>ページのヘッダー/フッターの構成</value>
+    <comment>Configure page header footer</comment>
+  </data>
+  <data name="ConfigEvenPageHeaderFooter.Name" xml:space="preserve">
+    <value>偶数ページのヘッダー/フッターの構成</value>
+    <comment>Configure even page header footer</comment>
+  </data>
+  <data name="ConfigFirstPageNumber.Name" xml:space="preserve">
+    <value>先頭ページ番号の構成</value>
+    <comment>Configure first page number</comment>
+  </data>
+  <data name="ConfigPageMargins.Name" xml:space="preserve">
+    <value>ページ余白の構成</value>
+    <comment>Configure page margins</comment>
+  </data>
+  <data name="ConfigPageOrder.Name" xml:space="preserve">
+    <value>ページの順序の構成</value>
+    <comment>Configure page order</comment>
+  </data>
+  <data name="ConfigPageOrientation.Name" xml:space="preserve">
+    <value>ページの向きの構成</value>
+    <comment>Configure page orientation</comment>
+  </data>
+  <data name="ConfigPaperScaling.Name" xml:space="preserve">
+    <value>用紙の拡大縮小の構成</value>
+    <comment>Configure paper scaling</comment>
+  </data>
+  <data name="ConfigPaperSize.Name" xml:space="preserve">
+    <value>用紙サイズの構成</value>
+    <comment>Configure paper size</comment>
+  </data>
+  <data name="ConfigPrintArea.Name" xml:space="preserve">
+    <value>印刷範囲の構成</value>
+    <comment>Configure print area</comment>
+  </data>
+  <data name="ConfigSheetPrintSettings.Name" xml:space="preserve">
+    <value>用紙の印刷設定の構成</value>
+    <comment>Configure sheet print settings</comment>
+  </data>
+  <data name="PageSetup.Name" xml:space="preserve">
+    <value>ページ設定</value>
+    <comment>Page Setup</comment>
+  </data>
+  <data name="CombinationChart1.Name" xml:space="preserve">
+    <value>複合チャート</value>
+    <comment>Combination chart</comment>
+  </data>
+  <data name="CombinationChart2.Name" xml:space="preserve">
+    <value>複合チャート</value>
+    <comment>Combination chart</comment>
+  </data>
+  <data name="LineMarkerStackedChart.Name" xml:space="preserve">
+    <value>マーカー付き積層折れ線グラフ</value>
+    <comment>Stack line with markers chart</comment>
+  </data>
+  <data name="Pie_DoughnutChart.Name" xml:space="preserve">
+    <value>ドーナツグラフ</value>
+    <comment>Doughnut chart</comment>
+  </data>
+  <data name="Stock_VolumeOpenHighLowClose.Name" xml:space="preserve">
+    <value>出来高-始値-高値-安値-終値チャート</value>
+    <comment>Volume-Open-High-Low-Close chart</comment>
+  </data>
+  <data name="XYScatterSmoothWithMarkers.Name" xml:space="preserve">
+    <value>散布図（平滑線とマーカー）</value>
+    <comment>Scatter with smooth lines and markers</comment>
+  </data>
+  <data name="LineMarkerStacked100Chart.Name" xml:space="preserve">
+    <value>マーカー付き 100 % 積層折れ線グラフ</value>
+    <comment>100% Stacked line with markers chart</comment>
+  </data>
+  <data name="Chart3DFormat.Descrip" xml:space="preserve">
+    <value>## チャートの 3D 書式設定
+このフォルダ内の例は、チャートの 3D 書式設定を行う方法を示します。</value>
+    <comment>## Chart 3D format
+These examples in this folder demonstrate how to set charts 3D format</comment>
+  </data>
+  <data name="ConfigMarkersFormat.Name" xml:space="preserve">
+    <value>マーカーの書式設定の構成</value>
+    <comment>Configure markers format</comment>
+  </data>
+  <data name="Markers.Descrip" xml:space="preserve">
+    <value>## マーカー
+以下の例は、**マーカー**のスタイルと書式を設定する方法を示します。</value>
+    <comment>## Markers
+These examples demonstrate how to set style and format for **markers**.</comment>
+  </data>
+  <data name="Markers.Name" xml:space="preserve">
+    <value>マーカー</value>
+    <comment>Markers</comment>
+  </data>
+  <data name="PageSetup.Descrip" xml:space="preserve">
+    <value>## ページ設定
+DioDocs for Excel はページ設定をサポートしています。**PageSetup** オブジェクトには、すべてのページ設定属性（左余白、下余白、用紙サイズなど）がプロパティとして含まれています。</value>
+    <comment>## Page Setup
+GrapeCity Documents for Excel supports page setup. The **PageSetup** object contains all page setup attributes (left margin, bottom margin, paper size, and so on) as properties.</comment>
+  </data>
+  <data name="ConfigChart3DFormat.Name" xml:space="preserve">
+    <value>チャートの 3D 書式設定の構成</value>
+    <comment>Configure chart 3D format</comment>
+  </data>
+  <data name="ConfigFirstPageHeaderFooter.Name" xml:space="preserve">
+    <value>先頭ページのヘッダー/フッターの構成</value>
+    <comment>Configure first page header footer</comment>
+  </data>
+  <data name="EventPlanningTracker.Name" xml:space="preserve">
+    <value>イベント企画トラッカー</value>
+    <comment>Event planning tracker</comment>
+  </data>
+  <data name="FamilyBudget.Name" xml:space="preserve">
+    <value>家計簿</value>
+    <comment>Family budget</comment>
+  </data>
+  <data name="ConfigPrintTitleColumns.Name" xml:space="preserve">
+    <value>左端で繰り返す列を構成</value>
+    <comment>Configure columns to repeat at left</comment>
+  </data>
+  <data name="ConfigPrintTitleRows.Name" xml:space="preserve">
+    <value>上部で繰り返す行を構成</value>
+    <comment>Configure rows to repeat at top</comment>
+  </data>
+  <data name="ConfigPageCenter.Name" xml:space="preserve">
+    <value>ページ中央の構成</value>
+    <comment>Configure page center</comment>
+  </data>
+  <data name="ImportExcelFileDataOnly.Name" xml:space="preserve">
+    <value>Excel からデータのみをインポート</value>
+    <comment>Only import data from Excel</comment>
+  </data>
+  <data name="ImportExcelFileWithoutCalculation.Name" xml:space="preserve">
+    <value>Excel を開いた後に再計算しない</value>
+    <comment>Do not recalculate after opening Excel</comment>
+  </data>
+  <data name="PDFExporting.Descrip" xml:space="preserve">
+    <value>## PDF のエクスポート
+このフォルダでは、サーバー側で PDF ファイルをエクスポートする方法を示す完全なコードについて説明します。
+
+**［PDF として保存］**ボタンをクリックすると、サーバーで次のアクションが実行されます。
+- 空のワークブックを作成する
+- コードウィンドウ内のすべてのコードを実行する
+- PDF ファイルに保存する
+
+これで、ブラウザで PDF を表示できます。</value>
+    <comment>## PDF Exporting
+In this folder, you can explore complete code demonstrating how to export an pdf file at server side. 
+
+Click the **"Save as PDF"** button to perform the following actions on the server:
+- Create an empty workbook
+- Execute all of code in the code window
+- Save to an pdf file
+
+Then you can view the pdf in your browser.</comment>
+  </data>
+  <data name="PDFExporting.Name" xml:space="preserve">
+    <value>PDF のエクスポート</value>
+    <comment>PDF Exporting</comment>
+  </data>
+  <data name="SaveWorkbookToPDF.Name" xml:space="preserve">
+    <value>ワークブックを PDF に保存</value>
+    <comment>Save workbook to PDF</comment>
+  </data>
+  <data name="SaveWorksheetToPDF.Name" xml:space="preserve">
+    <value>ワークシートを PDF に保存</value>
+    <comment>Save worksheet to PDF</comment>
+  </data>
+  <data name="ConfigurePageSetup.Name" xml:space="preserve">
+    <value>ページ設定</value>
+    <comment>Page settings</comment>
+  </data>
+  <data name="SetFontsFolderPath.Name" xml:space="preserve">
+    <value>フォントのフォルダの設定</value>
+    <comment>Set font's folder</comment>
+  </data>
+  <data name="ShapeCopy.Name" xml:space="preserve">
+    <value>図形のコピー</value>
+    <comment>Copy shape</comment>
+  </data>
+  <data name="ShapeCut.Name" xml:space="preserve">
+    <value>図形の切り取り</value>
+    <comment>Cut shape</comment>
+  </data>
+  <data name="ShapeDuplicate.Name" xml:space="preserve">
+    <value>図形の複製</value>
+    <comment>Duplicate shape</comment>
+  </data>
+  <data name="ChartCopy.Name" xml:space="preserve">
+    <value>チャートのコピー</value>
+    <comment>Copy chart</comment>
+  </data>
+  <data name="ChartCut.Name" xml:space="preserve">
+    <value>チャートの切り取り</value>
+    <comment>Cut chart</comment>
+  </data>
+  <data name="ChartDuplicate.Name" xml:space="preserve">
+    <value>チャートの複製</value>
+    <comment>Duplicate chart</comment>
+  </data>
+  <data name="PictureCopy.Name" xml:space="preserve">
+    <value>ピクチャのコピー</value>
+    <comment>Copy picture</comment>
+  </data>
+  <data name="PictureCut.Name" xml:space="preserve">
+    <value>ピクチャの切り取り</value>
+    <comment>Cut picture</comment>
+  </data>
+  <data name="PictureDuplicate.Name" xml:space="preserve">
+    <value>ピクチャの複製</value>
+    <comment>Duplicate picture</comment>
+  </data>
+  <data name="SlicerCopy.Name" xml:space="preserve">
+    <value>スライサーのコピー</value>
+    <comment>Copy slicer</comment>
+  </data>
+  <data name="SlicerCut.Name" xml:space="preserve">
+    <value>スライサーの切り取り</value>
+    <comment>Cut slicer</comment>
+  </data>
+  <data name="SlicerDuplicate.Name" xml:space="preserve">
+    <value>スライサーの複製</value>
+    <comment>Duplicate slicer</comment>
+  </data>
+  <data name="ImportCsvFileToWorkbook.Name" xml:space="preserve">
+    <value>CSV ファイルをワークブックにインポート</value>
+    <comment>Import csv file to workbook</comment>
+  </data>
+  <data name="ImportCsvFileToWorkbookWithOptions.Name" xml:space="preserve">
+    <value>CSV ファイルをワークブックにインポート（オプション付き）</value>
+    <comment>Import csv file to workbook with options</comment>
+  </data>
+  <data name="SaveWorksheetToCsvFile.Name" xml:space="preserve">
+    <value>ワークシートを CSV ファイルに保存</value>
+    <comment>Save worksheet to csv file</comment>
+  </data>
+  <data name="SaveWorkbookToCsvFile.Name" xml:space="preserve">
+    <value>ワークブックを CSV ファイルに保存</value>
+    <comment>Save workbook to csv file</comment>
+  </data>
+  <data name="SaveWorkbookToCsvFileWithOptions.Name" xml:space="preserve">
+    <value>ワークブックを CSV ファイルに保存（オプション付き）</value>
+    <comment>Save workbook to csv file with options</comment>
+  </data>
+  <data name="SaveWorksheetToCsvFileWithOptions.Name" xml:space="preserve">
+    <value>ワークシートを CSV ファイルに保存（オプション付き）</value>
+    <comment>Save worksheet to csv file with options</comment>
+  </data>
+  <data name="ConfigureWorkbookView.Name" xml:space="preserve">
+    <value>ワークブックビューの構成</value>
+    <comment>Configure workbook view</comment>
+  </data>
+  <data name="ConfigureWorksheetView.Name" xml:space="preserve">
+    <value>ワークシートビューの構成</value>
+    <comment>Configure worksheet view</comment>
+  </data>
+  <data name="Text.Name" xml:space="preserve">
+    <value>テキストのエクスポート</value>
+    <comment>Export text</comment>
+  </data>
+  <data name="SaveSparklinesToPDF.Name" xml:space="preserve">
+    <value>スパークラインのエクスポート</value>
+    <comment>Export sparklines</comment>
+  </data>
+  <data name="TextStyle.Name" xml:space="preserve">
+    <value>フォント効果のエクスポート</value>
+    <comment>Export font effects</comment>
+  </data>
+  <data name="SaveRangeFillToPDF.Name" xml:space="preserve">
+    <value>塗りつぶしのエクスポート</value>
+    <comment>Export fills</comment>
+  </data>
+  <data name="SavePictureToPDF.Name" xml:space="preserve">
+    <value>ピクチャのエクスポート</value>
+    <comment>Export picture</comment>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NumberFormating.Name" xml:space="preserve">
+    <value>数値書式のエクスポート</value>
+    <comment>Export number formats</comment>
+  </data>
+  <data name="Overflow.Name" xml:space="preserve">
+    <value>オーバーフローテキストのエクスポート</value>
+    <comment>Export overflow text</comment>
+  </data>
+  <data name="ConfigureBlackAndWhite.Name" xml:space="preserve">
+    <value>黒 &amp; 白</value>
+    <comment>Black &amp; white</comment>
+  </data>
+  <data name="ConfigureDraft.Name" xml:space="preserve">
+    <value>下書き</value>
+    <comment>Draft</comment>
+  </data>
+  <data name="ConfigureHeaderFooter.Name" xml:space="preserve">
+    <value>ヘッダー/フッター</value>
+    <comment>Header footer</comment>
+  </data>
+  <data name="ConfigureOritation.Name" xml:space="preserve">
+    <value>向き</value>
+    <comment>Orientation</comment>
+  </data>
+  <data name="ConfigurePageBreaks.Name" xml:space="preserve">
+    <value>ページ区切り</value>
+    <comment>Page breaks</comment>
+  </data>
+  <data name="ConfigurePageOrder.Name" xml:space="preserve">
+    <value>ページの順序</value>
+    <comment>Page order</comment>
+  </data>
+  <data name="ConfigurePagination.Name" xml:space="preserve">
+    <value>改ページ設定</value>
+    <comment>Pagination</comment>
+  </data>
+  <data name="ConfigurePrintArea.Name" xml:space="preserve">
+    <value>印刷範囲</value>
+    <comment>Print area</comment>
+  </data>
+  <data name="ConfigurePrintPageRange.Name" xml:space="preserve">
+    <value>ページ範囲の印刷</value>
+    <comment>Print page range</comment>
+  </data>
+  <data name="ConfigurePrintTitles.Name" xml:space="preserve">
+    <value>印刷タイトル</value>
+    <comment>Print titles</comment>
+  </data>
+  <data name="ConfigureScaling.Name" xml:space="preserve">
+    <value>スケーリング</value>
+    <comment>Scaling</comment>
+  </data>
+  <data name="PdfPageSetup.Descrip" xml:space="preserve">
+    <value>## ページ設定
+DioDocs for Excel では、IPageSetup インタフェースのプロパティを使用して、各ワークシートの改ページ設定を行うことができます。
+
+ページサイズ、印刷範囲、印刷タイトル行、印刷タイトル列をカスタマイズできます。また、スプレッドシートを PDF ファイルにエクスポートする際に、水平方向のページ区切り、垂直方向のページ区切り、最大ページ数などの水平および垂直改ページ設定を拡大/縮小率と共に必要に応じて指定できます。</value>
+    <comment>## Page setup
+GrapeCity Documents for Excel allows users to paginate each worksheet using the properties of the IPageSetup interface.
+
+You can customize the page size, print area, print title rows, print title columns; specify horizontal page breaks, vertical page breaks, the maximum number of pages for horizontal and vertical pagination etc. along with zoom and scale factors as per your preferences while exporting a spreadsheet to a PDF file.</comment>
+  </data>
+  <data name="PdfPageSetup.Name" xml:space="preserve">
+    <value>ページ設定</value>
+    <comment>Page setup</comment>
+  </data>
+  <data name="ConvertExcelToPDF.Name" xml:space="preserve">
+    <value>Excel ファイルを PDF に変換</value>
+    <comment>Convert Excel file to PDF</comment>
+  </data>
+  <data name="SaveBorder.Name" xml:space="preserve">
+    <value>境界線のエクスポート</value>
+    <comment>Export borders</comment>
+  </data>
+  <data name="SaveConditionalFormatting.Name" xml:space="preserve">
+    <value>条件付き書式設定のエクスポート</value>
+    <comment>Export Conditional Formatting</comment>
+  </data>
+  <data name="SaveTable.Name" xml:space="preserve">
+    <value>テーブルのエクスポート</value>
+    <comment>Export table</comment>
+  </data>
+  <data name="FinancialKPIs.Name" xml:space="preserve">
+    <value>財務 KPI</value>
+    <comment>Financial KPIs</comment>
+  </data>
+  <data name="IncomeStatement.Name" xml:space="preserve">
+    <value>損益計算書</value>
+    <comment>Income statement</comment>
+  </data>
+  <data name="AnnualFinancialReport.Name" xml:space="preserve">
+    <value>年次財務報告書</value>
+    <comment>Annual financial report</comment>
+  </data>
+  <data name="AgingReport.Name" xml:space="preserve">
+    <value>延滞金レポート</value>
+    <comment>Aging Report</comment>
+  </data>
+  <data name="Text.Descrip" xml:space="preserve">
+    <value>## テキストのエクスポート
+以下のようなさまざまなテキスト効果を PDF ファイルにエクスポートできます。
+- Excel の数値フォーマッタ付きテキスト
+- オーバーフローテキスト
+- フォント効果：テキストの配置、ワードラップ、テキストインデント、縮小して全体を表示、下線、取り消し線など</value>
+    <comment>## Export text
+Various of text effect can be exported to pdf file, such as:
+- Text with Excel number formatter
+- Overflow text
+- Font effects: text alignment, wordwrap, text indent, shrink to fit, underline, strikethrough .etc</comment>
+  </data>
+  <data name="CellInfo.Name" xml:space="preserve">
+    <value>CellInfo ヘルパークラスの使用</value>
+    <comment>Use CellInfo helper class</comment>
+  </data>
+  <data name="CustomFunctions.Descrip" xml:space="preserve">
+    <value>## カスタム関数
+DioDocs for Excel には独自のカスタム関数を作成する機能があり、必要なカスタム演算ロジックを簡単に作成できます。</value>
+  </data>
+  <data name="CustomFunctions.Name" xml:space="preserve">
+    <value>カスタム関数</value>
+  </data>
+  <data name="VerticalText.Name" xml:space="preserve">
+    <value>縦書きテキスト</value>
+    <comment>Export vertical text</comment>
+  </data>
+  <data name="AddTextRun.Name" xml:space="preserve">
+    <value>Use IRichText interface</value>
+  </data>
+  <data name="CharacterCellText.Name" xml:space="preserve">
+    <value>Use Character method</value>
+  </data>
+  <data name="ConfigRunFont.Name" xml:space="preserve">
+    <value>Configure text run's font</value>
+  </data>
+  <data name="CreateStyleBasedOn.Name" xml:space="preserve">
+    <value>Create and modify style based on a style</value>
+  </data>
+  <data name="ExportCellRichText.Name" xml:space="preserve">
+    <value>Cell rich text</value>
+  </data>
+  <data name="LoadAndSaveJsonWithShapes.Name" xml:space="preserve">
+    <value>Load and save json containing shapes</value>
+  </data>
+  <data name="SetBackgroundImage.Name" xml:space="preserve">
+    <value>Set background image for worksheet</value>
+  </data>
+  <data name="DecisionTreeFlowChart.Name" xml:space="preserve">
+    <value>Decision tree flow chart</value>
+  </data>
+  <data name="WebsiteFlowChart.Name" xml:space="preserve">
+    <value>Website flow chart</value>
+  </data>
+</root>

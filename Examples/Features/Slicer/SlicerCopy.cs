@@ -51,13 +51,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Slicer
             //worksheet.Range["H3:J16"].Copy(worksheet2.Range["K3:M16"]);
 
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
     }
 }

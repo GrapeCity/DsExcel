@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            Stream stream = this.GetTemplateStream();
+            Stream stream = this.GetResourceStream("xlsx\\Information.csv");
 
             //Open csv file stream.
             workbook.Open(stream, OpenFileFormat.Csv);
@@ -38,12 +38,11 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
                 return true;
             }
         }
-
-        public override bool IsNew
+        public override string[] UsedResources
         {
             get
             {
-                return true;
+                return new string[] { "xlsx\\Information.csv"};
             }
         }
     }

@@ -3,7 +3,7 @@
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             'Open an excel file
-            Dim fileStream = GetTemplateStream()
+            Dim fileStream = GetResourceStream("Employee absence schedule.xlsx")
             workbook.Open(fileStream)
         End Sub
         Public Overrides ReadOnly Property TemplateName As String

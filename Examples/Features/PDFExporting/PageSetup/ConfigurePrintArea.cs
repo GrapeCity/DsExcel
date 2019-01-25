@@ -47,13 +47,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.PdfPageSetup
                 return false;
             }
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
     }
 }

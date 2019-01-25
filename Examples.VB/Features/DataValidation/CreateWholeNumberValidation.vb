@@ -6,7 +6,7 @@ Namespace Features.DataValidation
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            worksheet.Range("C2:E4").Value = {
+            worksheet.Range("C2:E4").Value = New Object(,)  {
                 {1, 3, 5},
                 {7, 9, 11},
                 {13, 15, 17}

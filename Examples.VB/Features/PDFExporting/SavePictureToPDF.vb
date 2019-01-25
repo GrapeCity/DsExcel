@@ -6,8 +6,7 @@ Namespace Features.PDFExporting
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
             worksheet.PageSetup.Orientation = PageOrientation.Landscape
 
-            Dim assembly = [GetType]().GetTypeInfo().Assembly
-            Dim stream As IO.Stream = assembly.GetManifestResourceStream("GrapeCity.Documents.Excel.Examples.logo.png")
+            Dim stream As IO.Stream = GetResourceStream("logo.png")
             Dim picture As IShape = worksheet.Shapes.AddPicture(stream, ImageType.PNG, 20, 20, 690, 100)
         End Sub
         Public Overrides ReadOnly Property SavePdf As Boolean

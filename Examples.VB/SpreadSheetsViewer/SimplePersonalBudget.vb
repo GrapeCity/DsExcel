@@ -3,7 +3,7 @@
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Workbook)
             'Load template file
-            Dim fileStream = GetTemplateStream()
+            Dim fileStream = GetResourceStream("Simple personal budget.xlsx")
             workbook.Open(fileStream)
         End Sub
         Public Overrides ReadOnly Property TemplateName As String

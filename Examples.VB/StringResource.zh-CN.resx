@@ -1602,4 +1602,7 @@ Spread表格组件支持以下几种类型的迷你图：
   <data name="CellInfo.Name" xml:space="preserve">
     <value>使用CellInfo</value>
   </data>
+  <data name="VerticalText.Name" xml:space="preserve">
+    <value>垂直文本</value>
+  </data>
 </root>

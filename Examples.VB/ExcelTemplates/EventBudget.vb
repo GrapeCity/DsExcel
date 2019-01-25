@@ -3,7 +3,8 @@
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Workbook)
             'Load template file Event budget.xlsx from resource
-            Dim fileStream = GetTemplateStream()
+            Dim fileStream = GetResourceStream("Event budget.xlsx")
+
             workbook.Open(fileStream)
 
             Dim worksheet = workbook.ActiveSheet

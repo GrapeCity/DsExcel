@@ -84,6 +84,7 @@
     <None Remove="Resource\xlsx\AgingReport.xlsx" />
     <None Remove="Resource\xlsx\Annual financial report.xlsx" />
     <None Remove="Resource\xlsx\Blood sugar tracker.xlsx" />
+    <None Remove="Resource\xlsx\DecisionTreeFlowChart.xlsx" />
     <None Remove="Resource\xlsx\Employee absence schedule.xlsx" />
     <None Remove="Resource\xlsx\Event budget.xlsx" />
     <None Remove="Resource\xlsx\Event planning tracker.xlsx" />
@@ -104,6 +105,7 @@
     <None Remove="Resource\xlsx\Simple personal budget.xlsx" />
     <None Remove="Resource\xlsx\Student calendar %28Mon%29.xlsx" />
     <None Remove="Resource\xlsx\Travel expense report.xlsx" />
+    <None Remove="Resource\xlsx\WebsiteFlowChart.xlsx" />
     <None Remove="StringResource.resx.resolve" />
     <None Remove="UpdateCodeResources.bat" />
   </ItemGroup>
@@ -280,6 +282,7 @@
     <EmbeddedResource Include="Resource\xlsx\Annual financial report.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\DecisionTreeFlowChart.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Employee absence schedule.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -338,7 +341,11 @@
     <EmbeddedResource Include="Resource\xlsx\Travel expense report.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\WebsiteFlowChart.xlsx" />
     <EmbeddedResource Include="Tutorial\Tutorial_en-US.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+	<EmbeddedResource Include="Tutorial\Tutorial_ja-JP.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
@@ -354,7 +361,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="2.0.3" />
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="2.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
@@ -389,6 +396,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Update="StringResource.zh-CN.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+	<EmbeddedResource Update="StringResource.ja-JP.resx">
       <Generator></Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="StringResource.resx">

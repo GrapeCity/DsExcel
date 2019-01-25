@@ -6,11 +6,11 @@ Namespace Features.Formulas
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            worksheet.Range("E4:J5").Value = {
+            worksheet.Range("E4:J5").Value = New Object(,)  {
                 {1, 2, 3},
                 {4, 5, 6}
             }
-            worksheet.Range("I6:J8").Value = {
+            worksheet.Range("I6:J8").Value = New Object(,)  {
                 {2, 2},
                 {3, 3},
                 {4, 4}

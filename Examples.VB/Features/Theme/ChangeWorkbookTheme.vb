@@ -14,7 +14,7 @@
             worksheet.Range!C2.Font.ThemeFont = ThemeFont.Major
             worksheet.Range!C3.Font.ThemeFont = ThemeFont.Minor
 
-            worksheet.Range("E2:E13").Value = {"Light1", "Dark1", "Light2", "Dark2", "Accent1", "Accent2", "Accent3", "Accent4", "Accent5", "Accent6", "Hyperlink", "FollowedHyperlink"}
+            worksheet.Range("E2:E13").Value = New Object() {"Light1", "Dark1", "Light2", "Dark2", "Accent1", "Accent2", "Accent3", "Accent4", "Accent5", "Accent6", "Hyperlink", "FollowedHyperlink"}
 
             worksheet.Range!F2.Interior.ThemeColor = ThemeColor.Light1
             worksheet.Range!F3.Interior.ThemeColor = ThemeColor.Dark1

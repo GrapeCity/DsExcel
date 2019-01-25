@@ -33,7 +33,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Hyperlinks
 
             //add a hyperlink link to external file.
             //change the path to real picture file path.
-            string path = this.CurrentDirectory + "external.xlsx";
+            string path = "external.xlsx";
             worksheet.Range["A7:B8"].Hyperlinks.Add(worksheet.Range["A7"],
                                                 path,
                                                 null,

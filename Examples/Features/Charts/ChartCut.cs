@@ -34,13 +34,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts
             //worksheet.Range["G1:M21"].Cut(worksheet2.Range["N1:T21"]);
 
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

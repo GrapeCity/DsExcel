@@ -12,8 +12,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             IWorksheet worksheet = workbook.Worksheets[0];
 
             worksheet.PageSetup.Orientation = PageOrientation.Landscape;
-            var assembly = this.GetType().GetTypeInfo().Assembly;
-            System.IO.Stream stream = assembly.GetManifestResourceStream("GrapeCity.Documents.Excel.Examples.Resource.logo.png");
+            System.IO.Stream stream = this.GetResourceStream("logo.png");
             GrapeCity.Documents.Excel.Drawing.IShape picture = worksheet.Shapes.AddPicture(stream, GrapeCity.Documents.Excel.Drawing.ImageType.PNG, 20, 20, 690, 100);
 
         }
@@ -34,12 +33,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             }
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
+        public override string[] UsedResources => new string[] { "logo.png" };
     }
 }

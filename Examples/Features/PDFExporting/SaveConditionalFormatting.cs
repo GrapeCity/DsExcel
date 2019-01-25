@@ -70,13 +70,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
                 return false;
             }
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
     }
 }

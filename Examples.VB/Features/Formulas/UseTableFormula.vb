@@ -7,7 +7,7 @@ Namespace Features.Formulas
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             worksheet.Range("A:E").ColumnWidth = 15
-            worksheet.Range("A1:E3").Value = {
+            worksheet.Range("A1:E3").Value = New Object(,)  {
                 {"SalesPerson", "Region", "SalesAmount", "ComPct", "ComAmt"},
                 {"Joe", "North", 260, 0.1, Nothing},
                 {"Nia", "South", 660, 0.15, Nothing}

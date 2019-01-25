@@ -9,7 +9,7 @@ Namespace Features.DataValidation
             worksheet.Range!A1.Value = "aaa"
             worksheet.Range!A2.Value = "bbb"
             worksheet.Range!A3.Value = "ccc"
-            worksheet.Range("C2:E4").Value = {
+            worksheet.Range("C2:E4").Value = New Object(,)  {
                 {"aaa", "bbb", "ccc"},
                 {"aaa1", "bbb1", "ccc1"},
                 {"aaa2", "bbb2", "ccc2"}

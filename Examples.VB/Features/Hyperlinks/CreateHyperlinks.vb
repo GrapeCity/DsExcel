@@ -17,7 +17,7 @@
 
             'add a hyperlink link to external file.
             'change the path to real picture file path.
-            Dim path As String = CurrentDirectory & "external.xlsx"
+            Dim path As String = "external.xlsx"
             worksheet.Range("A7:B8").Hyperlinks.Add(worksheet.Range!A7, path, Nothing, "link to external.xlsx file.", "External.xlsx")
         End Sub
     End Class

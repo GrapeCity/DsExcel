@@ -38,7 +38,7 @@ Namespace ExcelReporting
 
             '------------------------Set Table Values-------------------
             Dim table As ITable = worksheet.Tables.Add(worksheet.Range("B3:K7"), True)
-            worksheet.Range("B3:K7").Value = {
+            worksheet.Range("B3:K7").Value = New Object(,)  {
                 {"NO.", "YEAR", "TITLE", "REVIEW", "STARRING ACTORS", "DIRECTOR", "GENRE", "RATING", "FORMAT", "COMMENTS"},
                 {1, 1994, "Forrest Gump", "5 Stars", "Tom Hanks, Robin Wright, Gary Sinise", "Robert Zemeckis", "Drama", "PG-13", "DVD", "Based on the 1986 novel of the same name by Winston Groom"},
                 {2, 1946, "It’s a Wonderful Life", "2 Stars", "James Stewart, Donna Reed, Lionel Barrymore ", "Frank Capra", "Drama", "G", "VHS", "Colorized version"},

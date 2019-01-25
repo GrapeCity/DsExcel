@@ -6,7 +6,7 @@
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.Column3D, 250, 20, 350, 250)
 
-            worksheet.Range("A1:D6").Value = {
+            worksheet.Range("A1:D6").Value = New Object(,)  {
                 {Nothing, "S1", "S2", "S3"},
                 {"Item1", 10, 25, 25},
                 {"Item2", -51, -36, 27},

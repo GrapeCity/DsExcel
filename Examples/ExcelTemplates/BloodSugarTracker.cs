@@ -10,7 +10,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file Monthly business budget.xlsx from resource
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\Blood sugar tracker.xlsx");
 
             workbook.Open(fileStream);
 
@@ -112,19 +112,20 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
             }
         }
 
-        public override bool HasTemplate
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool ShowViewer
         {
             get
             {
                 return false;
+            }
+        }
+        
+
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "xlsx\\Blood sugar tracker.xlsx" };
             }
         }
     }

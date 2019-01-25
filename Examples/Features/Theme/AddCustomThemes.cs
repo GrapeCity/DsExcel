@@ -72,13 +72,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Theme
             worksheet.Range["F13"].Interior.ThemeColor = ThemeColor.FollowedHyperlink;
 
         }
-
-        public override bool IsUpdate
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
     }
 }

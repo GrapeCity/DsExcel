@@ -13,7 +13,7 @@ Namespace Features.PDFExporting
             sheet.Range!A1.Interior.Color = Color.Green
 
             'specify font path.
-            workbook.FontsFolderPath = "D:\Fonts"
+            GrapeCity.Documents.Excel.Workbook.FontsFolderPath = "D:\Fonts"
 
             'get the used fonts list in workbook, the list are:"Wide Latin", "Calibri"
             Dim fonts = workbook.GetUsedFonts()

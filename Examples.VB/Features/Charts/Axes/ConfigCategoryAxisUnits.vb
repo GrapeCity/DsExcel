@@ -4,11 +4,10 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
             worksheet.Range("A2:A6").NumberFormat = "m/d/yyyy"
-            worksheet.Range("A1:D6").Value = {
+            worksheet.Range("A1:D6").Value = New Object(,) {
                 {Nothing, "S1", "S2", "S3"},
                 {
-                    #10/7/2015#,
-                    10,
+                    #10/7/2015#, 10,
                     25,
                     25
                 },

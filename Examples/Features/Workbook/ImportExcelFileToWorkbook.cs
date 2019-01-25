@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Change the path to the real file path when open.
-            workbook.Open(this.CurrentDirectory + "source.xlsx", OpenFileFormat.Xlsx);
+            workbook.Open(this.CurrentDirectory + "source.xlsx");
 
         }
 
@@ -26,14 +26,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
             get
             {
                 return false;
-            }
-        }
-
-        public override bool IsUpdate
-        {
-            get
-            {
-                return true;
             }
         }
     }

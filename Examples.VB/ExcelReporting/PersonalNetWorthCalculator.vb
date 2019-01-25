@@ -36,7 +36,7 @@ Namespace ExcelReporting
             Dim assetsTable As ITable = worksheet.Tables.Add(worksheet.Range("B9:D30"), True)
             assetsTable.Name = "Assets"
             worksheet.Range!B8.Value = "Assets"
-            worksheet.Range("B9:D30").Value = {
+            worksheet.Range("B9:D30").Value = New Object(,)  {
                 {"Category", "Item", "Value"},
                 {"Real Estate", "Home", 560000},
                 {"Real Estate", "Other", 255000},
@@ -64,7 +64,7 @@ Namespace ExcelReporting
             Dim debtsTable As ITable = worksheet.Tables.Add(worksheet.Range("B34:C44"), True)
             debtsTable.Name = "Debts"
             worksheet.Range("B33").Value = "Debts"
-            worksheet.Range("B34:C44").Value = {
+            worksheet.Range("B34:C44").Value = New Object(,)  {
                 {"Category", "Value"},
                 {"Mortgages", 400000},
                 {"Home equity loans", 50000},

@@ -98,13 +98,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.Text
                 return false;
             }
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

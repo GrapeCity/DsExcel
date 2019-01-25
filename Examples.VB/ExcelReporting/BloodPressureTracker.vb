@@ -59,7 +59,7 @@ Namespace ExcelReporting
             'initialize worksheet's values.
             worksheet.Name = "BLOOD PRESSURE DATA"
             worksheet.Range!B2.Value = "BLOOD PRESSURE TRACKER"
-            worksheet.Range("B4:F13").Value = {
+            worksheet.Range("B4:F13").Value = New Object(,)  {
                 {"NAME", Nothing, Nothing, Nothing, Nothing},
                 {Nothing, Nothing, Nothing, Nothing, Nothing},
                 {Nothing, Nothing, Nothing, "Systolic", "Diastolic"},
@@ -77,7 +77,7 @@ Namespace ExcelReporting
 
 #Region "Table"
             'initialize table data.
-            worksheet.Range("B36:H44").Value = {
+            worksheet.Range("B36:H44").Value = New Object(,)  {
                 {"TIME", "DATE", "AM/PM", "SYSTOLIC", "DIASTOLIC", "HEART RATE", "NOTES"},
                 {
                     New TimeSpan(10, 0, 0),

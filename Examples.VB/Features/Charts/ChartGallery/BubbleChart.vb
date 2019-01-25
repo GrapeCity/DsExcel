@@ -5,7 +5,7 @@
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.Bubble, 250, 20, 360, 230)
-            worksheet.Range("A1:C10").Value = {
+            worksheet.Range("A1:C10").Value = New Object(,)  {
                 {"Blue", Nothing, Nothing},
                 {125, 750, 3},
                 {25, 625, 7},

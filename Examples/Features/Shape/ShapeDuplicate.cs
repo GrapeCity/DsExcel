@@ -22,24 +22,9 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Shape
         {
             get
             {
-                return false;
-            }
-        }
-
-        public override bool ShowScreenshot
-        {
-            get
-            {
                 return true;
             }
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
     }
 }

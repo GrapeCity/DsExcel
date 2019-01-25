@@ -6,7 +6,7 @@
 
             'Create chart, chart's range is Range("G1:M21")
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.ColumnClustered, 300, 10, 300, 300)
-            worksheet.Range("A1:D6").Value = {
+            worksheet.Range("A1:D6").Value = New Object(,)  {
                 {Nothing, "S1", "S2", "S3"},
                 {"Item1", 10, 25, 25},
                 {"Item2", -51, -36, 27},

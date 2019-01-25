@@ -3,7 +3,7 @@
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Workbook)
             'Load template file Financial KPIs.xlsx from resource
-            Dim fileStream = GetTemplateStream()
+            Dim fileStream = GetResourceStream("Financial KPIs.xlsx")
             workbook.Open(fileStream)
 
             Dim worksheet = workbook.ActiveSheet

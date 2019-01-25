@@ -69,14 +69,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.CustomFunctions
             }
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public class MyIsMergedRangeFunctionX : CustomFunction
         {
             public MyIsMergedRangeFunctionX()

@@ -1,0 +1,1 @@
+dotnet BuildTools\UpdateVBCodeResources.dll .\

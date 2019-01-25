@@ -30,14 +30,14 @@ Public Class Tutorial
     Public Overrides Sub Execute(workbook As Workbook)
         Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '-----------------------------Set Value------------------------------
-        worksheet.Range("B3:C7").Value = {
+        worksheet.Range("B3:C7").Value = New Object(,)  {
             {"ITEM", "AMOUNT"},
             {"Income 1", 2500},
             {"Income 2", 1000},
             {"Income 3", 250},
             {"Other", 250}
         }
-        worksheet.Range("B10:C23").Value = {
+        worksheet.Range("B10:C23").Value = New Object(,)  {
             {"ITEM", "AMOUNT"},
             {"Rent/mortgage", 800},
             {"Electric", 120},

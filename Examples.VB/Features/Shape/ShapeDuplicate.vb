@@ -12,11 +12,6 @@
         End Sub
         Public Overrides ReadOnly Property ShowViewer As Boolean
             Get
-                Return False
-            End Get
-        End Property
-        Public Overrides ReadOnly Property ShowScreenshot As Boolean
-            Get
                 Return True
             End Get
         End Property

@@ -49,6 +49,14 @@ namespace GrapeCity.Documents.Excel.Examples
             }
         }
 
+        public virtual bool CanDownloadZip
+        {
+            get
+            {
+                return true;
+            }
+        }
+
         public virtual bool ShowViewer
         {
             get
@@ -98,14 +106,24 @@ namespace GrapeCity.Documents.Excel.Examples
                 return false;
             }
         }
+        
+
+        public virtual String[] UsedResources
+        {
+            get
+            {
+                return null;
+            }
+        }
 
         internal string UserAgent
         {
             get; set;
         }
+
         public Stream GetTemplateStream()
         {
-            return this.GetResourceStream("xlsx." + this.TemplateName);
+            return this.GetResourceStream("xlsx\\" + this.TemplateName);
         }
 
         public Stream GetResourceStream(string resourceName)
@@ -117,7 +135,7 @@ namespace GrapeCity.Documents.Excel.Examples
             // jack updates resource name after changing assembly name to GrapeCity.Documents.Excel
             resourceName = resourceName.Replace("GrapeCity.Documents.Excel", "GrapeCity.Documents.Spread");
 
-            string resource = "GrapeCity.Documents.Excel.Examples.Resource." + resourceName;
+            string resource = "GrapeCity.Documents.Excel.Examples.Resource." + resourceName.Replace("\\", ".");
             var assembly = this.GetType().GetTypeInfo().Assembly;
             return assembly.GetManifestResourceStream(resource);
         }

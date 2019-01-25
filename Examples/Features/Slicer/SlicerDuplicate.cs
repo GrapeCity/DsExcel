@@ -45,13 +45,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Slicer
             GrapeCity.Documents.Excel.Drawing.IShape newShape = slicer.Shape.Duplicate();
 
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
     }
 }

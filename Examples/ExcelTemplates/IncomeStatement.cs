@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file Income statement.xlsx from resource
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\Income statement.xlsx");
 
             workbook.Open(fileStream);
 
@@ -70,14 +70,6 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
             }
         }
 
-        public override bool HasTemplate
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool ShowViewer
         {
             get
@@ -85,12 +77,12 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
                 return false;
             }
         }
-
-        public override bool IsNew
+        
+        public override string[] UsedResources
         {
             get
             {
-                return true;
+                return new string[] { "xlsx\\Income statement.xlsx" };
             }
         }
     }

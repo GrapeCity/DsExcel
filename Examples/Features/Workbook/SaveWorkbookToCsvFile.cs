@@ -41,14 +41,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
             }
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool SaveCsv
         {
             get

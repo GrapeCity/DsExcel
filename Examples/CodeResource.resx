@@ -2471,7 +2471,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file Monthly business budget.xlsx from resource
-            var fileStream = this.GetTemplateStream("Blood sugar tracker.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Blood sugar tracker.xlsx");
 
             workbook.Open(fileStream);
 
@@ -2570,7 +2570,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file Event budget.xlsx from resource
-            var fileStream = this.GetTemplateStream("Event budget.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Event budget.xlsx");
 
             workbook.Open(fileStream);
 
@@ -2607,7 +2607,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file Financial KPIs.xlsx from resource
-            var fileStream = this.GetTemplateStream("Financial KPIs.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Financial KPIs.xlsx");
 
             workbook.Open(fileStream);
 
@@ -2707,7 +2707,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file Income statement.xlsx from resource
-            var fileStream = this.GetTemplateStream("Income statement.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Income statement.xlsx");
 
             workbook.Open(fileStream);
 
@@ -2765,8 +2765,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file Monthly business budget.xlsx from resource
-            var fileStream = this.GetTemplateStream("Monthly business budget.xlsx");
-
+            var fileStream = this.GetResourceStream("xlsx\\Monthly business budget.xlsx");
             workbook.Open(fileStream);
 
             var worksheet = workbook.ActiveSheet;
@@ -2825,7 +2824,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file Simple invoice.xlsx from resource
-            var fileStream = this.GetTemplateStream("Simple invoice.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Simple invoice.xlsx");
 
             workbook.Open(fileStream);
 
@@ -2835,6 +2834,113 @@
             worksheet.Range["E09:H09"].Value = new object[] { "DD1-001", "Item 3", 5.60, 12 };
             worksheet.Range["E10:H10"].Value = new object[] { "DD2-001", "Item 3", 8.5, 14 };
             worksheet.Range["E11:H11"].Value = new object[] { "DD3-001", "Item 3", 9.6, 16 };
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CellRichText.AddTextRun" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            IRange b2 = worksheet.Range["B2"]; 
+
+            // customize the 'GrapeCity' run
+            ITextRun run1 = b2.RichText.Add("GrapeCity");
+            run1.Font.Name = "Agency FB";
+            run1.Font.Size = 26;
+            run1.Font.ThemeColor = ThemeColor.Accent1;
+            run1.Font.Bold = true;
+
+            // customize the 'Documents' run
+            ITextRun run2 = b2.RichText.Add(" Documents");
+            run2.Font.ThemeColor = ThemeColor.Accent2;
+            run2.Font.Name = "Arial Black";
+            run2.Font.Size = 20;
+
+            // customize the 'for' run
+            ITextRun run3 = b2.RichText.Add(" for ");
+            run3.Font.Italic = true;
+
+            // customize the 'Excel' run
+            ITextRun run4 = b2.RichText.Add("Excel");
+            run4.Font.Color = System.Drawing.Color.Blue;
+            run4.Font.Bold = true;
+            run4.Font.Size = 26;
+            run4.Font.Underline = UnderlineType.Double;
+
+            b2.EntireRow.RowHeight = 42;
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CellRichText.CharacterCellText" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            IRange b2 = worksheet.Range["B2"];
+            b2.Value = "GrapeCity Documents for Excel";
+            b2.Font.Size = 26;
+            b2.EntireRow.RowHeight = 42;
+
+            // customize the 'GrapeCity' run
+            ITextRun run1 = b2.Characters(0, 9);
+            run1.Font.Name = "Agency FB";
+            run1.Font.ThemeColor = ThemeColor.Accent1;
+            run1.Font.Bold = true;
+
+            // customize the 'Documents' run
+            ITextRun run2 = b2.Characters(10, 9);
+            run2.Font.ThemeColor = ThemeColor.Accent2;
+            run2.Font.Name = "Arial Black";
+            run2.Font.Underline = UnderlineType.Single;
+
+            // customize the 'for' run
+            ITextRun run3 = b2.Characters(20, 3);
+            run3.Font.Italic = true;
+
+            // customize the 'Excel' run
+            ITextRun run4 = b2.Characters(24, 5);
+            run4.Font.Color = System.Drawing.Color.Blue;
+            run4.Font.Bold = true;
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CellRichText.ConfigRunFont" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            IRange a2 = worksheet.Range["A2"];
+            a2.Font.Size = 18;
+            a2.Font.Bold = true;
+            a2.VerticalAlignment = VerticalAlignment.Center;
+
+            a2.EntireRow.RowHeight = 42;
+            a2.EntireColumn.ColumnWidth = 40;
+            a2.Value = "Perfect square trinomial";
+
+            ITextRun run1 = a2.Characters(8, 7);
+            run1.Font.Italic = true;
+            run1.Font.ThemeColor = ThemeColor.Accent1;
+
+            IRange b2 = worksheet.Range["B2"];
+            b2.Font.Size = 26;
+            b2.EntireColumn.ColumnWidth = 60;
+
+            b2.Value = "(a+b)2 = a2+2ab+b2";
+            
+            ITextRun superRun1 = b2.Characters(5, 1);
+            superRun1.Font.Superscript = true;
+            superRun1.Font.Color = System.Drawing.Color.Red;
+
+            ITextRun superRun2 = b2.Characters(10, 1);
+            superRun2.Font.Superscript = true;
+            superRun2.Font.Color = System.Drawing.Color.Green;
+
+            ITextRun superRun3 = b2.Characters(17, 1);
+            superRun3.Font.Superscript = true;
+            superRun3.Font.Color = System.Drawing.Color.Blue;
+           
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Charts.ChartCopy" xml:space="preserve">
@@ -5225,6 +5331,443 @@
             worksheet.Range["E2:E7"].FormatConditions.Delete();
         </value>
   </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CustomFunctions.MyAddFunction" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            GrapeCity.Documents.Excel.Workbook.AddCustomFunction(new MyAddFunctionX());
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+            worksheet.Range["A1"].Value = 1;
+            worksheet.Range["B1"].Value = 2;
+            worksheet.Range["C1"].Formula = "=MyAdd(A1, B1)";
+            //Range["C1"]'s value is 3.
+            var result = worksheet.Range["C1"].Value;
+
+            worksheet.Range["E1:F2"].Value = new object[,] { { 1, 3},
+                                                             { 2, 4}};
+
+            //Custom function use in array formula.
+            worksheet.Range["G1:G2"].FormulaArray = "=MyAdd(E1:E2, F1:F2)";
+
+            //Range["G1"]'s value is 4, Range["G2"]'s value is 6.
+            var resultG1 = worksheet.Range["G1"].Value;
+            var resultG2 = worksheet.Range["G2"].Value;
+
+            /* Implementation of MyAddFunctionX
+
+            public class MyAddFunctionX : CustomFunction
+            {
+                public MyAddFunctionX()
+                    : base("MyAdd", FunctionValueType.Number, new Parameter[] { new Parameter(FunctionValueType.Number), new Parameter(FunctionValueType.Number) })
+                {
+
+                }
+
+                public override object Evaluate(object[] arguments, ICalcContext context)
+                {
+                    return (double)arguments[0] + (double)arguments[1];
+                }
+            }
+
+            */
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CustomFunctions.MyConcatenateFunction" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            GrapeCity.Documents.Excel.Workbook.AddCustomFunction(new MyConcatenateFunctionX());
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+            worksheet.Range["A1"].Formula = "=MyConcatenate(\"I\", \" \", \"live\", \" \", \"in\", \" \", \"Xi'an\", \".\")";
+            worksheet.Range["A2"].Formula = "=MyConcatenate(A1, \"haha.\")";
+
+            worksheet.Range["B1"].Value = 12;
+            worksheet.Range["B2"].Value = 34;
+            worksheet.Range["B3"].Formula = "=MyConcatenate(B1, B2)";
+
+            worksheet.Range["M5:N5"].FormulaArray = "=CONCATENATE({\"aa\",\"bb\"}, 12, 34)";
+
+            //"I live in Xi'an."
+            var resultA1 = worksheet.Range["A1"].Value;
+            //"I live in Xi'an.haha."
+            var resultA2 = worksheet.Range["A2"].Value;
+            //"1234"
+            var resultB3 = worksheet.Range["B3"].Value;
+            //"aa1234"
+            var resultM5 = worksheet.Range["M5"].Value;
+            //"bb1234"
+            var resultN5 = worksheet.Range["N5"].Value;
+
+            /* Implementation of MyAddFunctionX
+
+            public class MyConcatenateFunctionX : CustomFunction
+            {
+                public MyConcatenateFunctionX()
+                    : base("MyConcatenate", FunctionValueType.Text, CreateParameters())
+                {
+
+                }
+
+                private static Parameter[] CreateParameters()
+                {
+                    Parameter[] parameters = new Parameter[254];
+                    for (int i = 0; i &lt; 254; i++)
+                    {
+                        parameters[i] = new Parameter(FunctionValueType.Variant);
+                    }
+
+                    return parameters;
+                }
+
+                public override object Evaluate(object[] arguments, ICalcContext context)
+                {
+                    StringBuilder sb = new StringBuilder();
+
+                    string result = string.Empty;
+                    foreach (var argument in arguments)
+                    {
+                        if (argument is CalcError)
+                        {
+                            return argument;
+                        }
+                        if (argument is string || argument is double)
+                        {
+                            sb.Append(argument);
+                        }
+                    }
+
+                    return sb.ToString();
+                }
+
+            }
+
+            */
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CustomFunctions.MyConditionalSumFunction" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            GrapeCity.Documents.Excel.Workbook.AddCustomFunction(new MyConditionalSumFunctionX());
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+            worksheet.Range["A1:A10"].Value = new object[,] {
+                                                                {1 },
+                                                                {2 },
+                                                                {3 },
+                                                                {4 },
+                                                                {5 },
+                                                                {6 },
+                                                                {7 },
+                                                                {8 },
+                                                                {9 },
+                                                                {10 }};
+            IFormatCondition cellValueRule = worksheet.Range["A1:A10"].FormatConditions.Add(FormatConditionType.CellValue, FormatConditionOperator.Greater, 5) as IFormatCondition;
+            cellValueRule.Interior.Color = System.Drawing.Color.Red;
+
+            //Sum cells value which display format interior color are red.
+            worksheet.Range["C1"].Formula = "=MyConditionalSum(A1:A10)";
+
+            //Range["C1"]'s value is 40.
+            var result = worksheet.Range["C1"].Value;
+
+
+            /* Implementation of MyConditionalSumFunctionX
+            
+            public class MyConditionalSumFunctionX : CustomFunction
+            {
+                public MyConditionalSumFunctionX() : base("MyConditionalSum", FunctionValueType.Number, CreateParameters())
+                {
+
+                }
+
+                private static Parameter[] CreateParameters()
+                {
+                    Parameter[] parameters = new Parameter[254];
+                    for (int i = 0; i &lt; 254; i++)
+                    {
+                        parameters[i] = new Parameter(FunctionValueType.Object, true);
+                    }
+
+                    return parameters;
+                }
+
+                public override object Evaluate(object[] arguments, ICalcContext context)
+                {
+                    double sum = 0d;
+                    foreach (var argument in arguments)
+                    {
+                        foreach (var item in Enumerate(argument))
+                        {
+                            if (item is CalcError)
+                            {
+                                return item;
+                            }
+                            if (item is double)
+                            {
+                                sum += (double)item;
+                            }
+                        }
+                    }
+
+                    return sum;
+                }
+
+                private static IEnumerable&lt;object&gt; Enumerate(object obj)
+                {
+                    if (obj is IEnumerable&lt;object&gt;)
+                    {
+                        foreach (var item in obj as IEnumerable&lt;object&gt;)
+                        {
+                            foreach (var item2 in Enumerate(item))
+                            {
+                                yield return item2;
+                            }
+                        }
+                    }
+                    else if (obj is object[,])
+                    {
+                        var array = obj as object[,];
+                        int rowCount = array.GetLength(0);
+                        int colCount = array.GetLength(1);
+                        for (int i = 0; i &lt; rowCount; i++)
+                        {
+                            for (int j = 0; j &lt; colCount; j++)
+                            {
+                                yield return array[i, j];
+                            }
+                        }
+                    }
+                    else if (obj is CalcReference)
+                    {
+                        foreach (var item in Enumerate(obj as CalcReference))
+                        {
+                            yield return item;
+                        }
+                    }
+
+                    yield return obj;
+                }
+
+                private static IEnumerable&lt;object&gt; Enumerate(CalcReference reference)
+                {
+                    foreach (var range in reference.GetRanges())
+                    {
+                        int rowCount = range.Rows.Count;
+                        int colCount = range.Columns.Count;
+                        for (int i = 0; i &lt; rowCount; i++)
+                        {
+                            for (int j = 0; j &lt; colCount; j++)
+                            {
+                                if (range.Cells[i, j].DisplayFormat.Interior.Color == System.Drawing.Color.Red)
+                                {
+                                    yield return range.Cells[i, j].Value;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            */
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CustomFunctions.MyIsErrorFunction" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            GrapeCity.Documents.Excel.Workbook.AddCustomFunction(new MyIsErrorFunctionX());
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            worksheet.Range["A1"].Value = CalcError.Num;
+            worksheet.Range["A2"].Value = 100;
+
+            worksheet.Range["B1"].Formula = "=MyIsError(A1)";
+            worksheet.Range["B2"].Formula = "=MyIsError(A2)";
+
+            //Range["B1"]'s value is true.
+            var resultB1 = worksheet.Range["B1"].Value;
+
+            //Range["B2"]'s value is false.
+            var resultB2 = worksheet.Range["B2"].Value;
+
+
+            /* Implementation of MyIsErrorFunctionX
+  
+            public class MyIsErrorFunctionX : CustomFunction
+            {
+                public MyIsErrorFunctionX()
+                    : base("MyIsError", FunctionValueType.Boolean, new Parameter[] { new Parameter(FunctionValueType.Variant) })
+                {
+
+                }
+
+                public override object Evaluate(object[] arguments, ICalcContext context)
+                {
+                    if (arguments[0] is CalcError)
+                    {
+                        if ((CalcError)arguments[0] != CalcError.None &amp;&amp; (CalcError)arguments[0] != CalcError.GettingData)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+
+                    return false;
+                }
+            }
+
+            */
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CustomFunctions.MyIsMergedRangeFunction" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            GrapeCity.Documents.Excel.Workbook.AddCustomFunction(new MyIsMergedRangeFunctionX());
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            worksheet.Range["A1:B2"].Merge();
+
+            worksheet.Range["C1"].Formula = "=MyIsMergedRange(A1)";
+            worksheet.Range["C2"].Formula = "=MyIsMergedRange(H2)";
+
+            //A1 is a merged cell, Range["C1"]'s value is true.
+            var resultC1 = worksheet.Range["C1"].Value;
+
+            //H2 is not a merged cell, Range["C2"]'s value is false.
+            var resultC2 = worksheet.Range["C2"].Value;
+
+
+            /* Implementation of MyIsErrorFunctionX
+            
+            public class MyIsMergedRangeFunctionX : CustomFunction
+            {
+                public MyIsMergedRangeFunctionX()
+                    : base("MyIsMergedRange", FunctionValueType.Boolean, new Parameter[] { new Parameter(FunctionValueType.Object, true) })
+                {
+
+                }
+
+                public override object Evaluate(object[] arguments, ICalcContext context)
+                {
+                    if (arguments[0] is CalcReference)
+                    {
+                        IEnumerable&lt;IRange&gt; ranges = (arguments[0] as CalcReference).GetRanges();
+
+                        foreach (var range in ranges)
+                        {
+                            return range.MergeCells;
+                        }
+                    }
+
+                    return false;
+                }
+            }              
+
+            */
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.CustomFunctions.MySumFunction" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            GrapeCity.Documents.Excel.Workbook.AddCustomFunction(new MySumFunctionX());
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+            worksheet.Range["A1"].Value = 1;
+            worksheet.Range["B1"].Value = 2;
+            worksheet.Range["C1"].Formula = "=MySum(A1:B1, 2, {3,4})";
+            
+            //Range["C1"]'s value is 12.
+            var result = worksheet.Range["C1"].Value;
+
+
+
+            /* Implementation of MySumFunctionX
+            
+            public class MySumFunctionX : CustomFunction
+            {
+                public MySumFunctionX() : base("MYSUM", FunctionValueType.Number, CreateParameters())
+                {
+
+                }
+
+                private static Parameter[] CreateParameters()
+                {
+                    Parameter[] parameters = new Parameter[254];
+                    for (int i = 0; i &lt; 254; i++)
+                    {
+                        parameters[i] = new Parameter(FunctionValueType.Object);
+                    }
+
+                    return parameters;
+                }
+
+                public override object Evaluate(object[] arguments, ICalcContext context)
+                {
+                    double sum = 0d;
+                    foreach (var argument in arguments)
+                    {
+                        foreach (var item in Enumerate(argument))
+                        {
+                            if (item is CalcError)
+                            {
+                                return item;
+                            }
+                            if (item is double)
+                            {
+                                sum += (double)item;
+                            }
+                        }
+                    }
+
+                    return sum;
+                }
+
+                private static IEnumerable&lt;object&gt; Enumerate(object obj)
+                {
+                    if (obj is IEnumerable&lt;object&gt;)
+                    {
+                        foreach (var item in obj as IEnumerable&lt;object&gt;)
+                        {
+                            foreach (var item2 in Enumerate(item))
+                            {
+                                yield return item2;
+                            }
+                        }
+                    }
+                    else if (obj is object[,])
+                    {
+                        var array = obj as object[,];
+                        int rowCount = array.GetLength(0);
+                        int colCount = array.GetLength(1);
+                        for (int i = 0; i &lt; rowCount; i++)
+                        {
+                            for (int j = 0; j &lt; colCount; j++)
+                            {
+                                yield return array[i, j];
+                            }
+                        }
+                    }
+
+                    if (obj != null)
+                    {
+                        yield return obj;
+                    }
+                }
+            }
+
+            */
+        </value>
+  </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.DataValidation.CreateCustomValidation" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
@@ -5894,7 +6437,6 @@
             worksheet.Range["A1"].Value = "Bad";
             worksheet.Range["A1"].Style = workbook.Styles["Bad"];
 
-
             //Change to custom name style.
             //Add custom name style.
             IStyle style = workbook.Styles.Add("testStyle");
@@ -5948,9 +6490,11 @@
             //Config custom name style settings end.
 
             //Set range's style to custom name style.
-            worksheet.Range["A2"].Value = "My test style";
+            worksheet.Range["A2"].Value = "my test style";
             worksheet.Range["A2"].Style = worksheet.Workbook.Styles["testStyle"];
 
+            worksheet.Range["A2"].RowHeightInPixel = 60;
+            worksheet.Range["A2"].ColumnWidthInPixel = 150;
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Formatting.CreateCustomStyle" xml:space="preserve">
@@ -6012,6 +6556,26 @@
             //Set range's style to custom name style.
             worksheet.Range["A1"].Value = "My test style";
             worksheet.Range["A1"].Style = worksheet.Workbook.Styles["testStyle"];
+
+            worksheet.Range["A2"].RowHeightInPixel = 60;
+            worksheet.Range["A2"].ColumnWidthInPixel = 150;
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.Formatting.CreateStyleBasedOn" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+            worksheet.Range["A1"].Style = workbook.Styles["Good"];
+            worksheet.Range["A1"].Value = "Good";
+
+            // Create and modify a style based on current existing style
+            IStyle myGood = workbook.Styles.Add("MyGood", workbook.Styles["Good"]);
+            myGood.Font.Bold = true;
+            myGood.Font.Italic = true;
+
+            worksheet.Range["B1"].Style = workbook.Styles["MyGood"];
+            worksheet.Range["B1"].Value = "MyGood";
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Formatting.GetDisplayFormat" xml:space="preserve">
@@ -6634,7 +7198,7 @@
 
             //add a hyperlink link to external file.
             //change the path to real picture file path.
-            string path = this.CurrentDirectory + "external.xlsx";
+            string path = "external.xlsx";
             worksheet.Range["A7:B8"].Hyperlinks.Add(worksheet.Range["A7"],
                                                 path,
                                                 null,
@@ -6671,7 +7235,7 @@
 
             //add a hyperlink link to external file.
             //change the path to real picture file path.
-            string path = this.CurrentDirectory + "external.xlsx";
+            string path = "external.xlsx";
             worksheet.Range["A7:B8"].Hyperlinks.Add(worksheet.Range["A7"],
                                                 path,
                                                 null,
@@ -6689,7 +7253,7 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6710,7 +7274,7 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6733,7 +7297,7 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6748,7 +7312,7 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6771,21 +7335,20 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
             //Set center, default is false.
             worksheet.PageSetup.CenterHorizontally = true;
             worksheet.PageSetup.CenterVertically = true;
-
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.PageSetup.ConfigPageMargins" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6793,40 +7356,37 @@
             worksheet.PageSetup.TopMargin = 36;
             worksheet.PageSetup.BottomMargin = 36;
             worksheet.PageSetup.RightMargin = 72;
-
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.PageSetup.ConfigPageOrder" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
             //Set page order, default is DownThenOver.
             worksheet.PageSetup.Order = Order.OverThenDown;
-
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.PageSetup.ConfigPageOrientation" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
             //Set page orientation, default is portrait.
             worksheet.PageSetup.Orientation = PageOrientation.Landscape;
-
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.PageSetup.ConfigPaperScaling" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6846,20 +7406,19 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
             //Set A4 paper size
             worksheet.PageSetup.PaperSize = PaperSize.A4;
-
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.PageSetup.ConfigPrintArea" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Print Area.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Print Area.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6874,7 +7433,7 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Print Title Columns.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Print Title Columns.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6887,7 +7446,7 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Print Title Rows.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Print Title Rows.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6900,7 +7459,7 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            var fileStream = this.GetTemplateStream("PageSetup Demo.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\PageSetup Demo.xlsx");
             workbook.Open(fileStream);
             IWorksheet worksheet = workbook.Worksheets[0];
 
@@ -6918,7 +7477,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Open an excel file
-            var fileStream = this.GetTemplateStream("Employee absence schedule.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Employee absence schedule.xlsx");
             workbook.Open(fileStream);
         </value>
   </data>
@@ -7032,8 +7591,7 @@
             IWorksheet worksheet = workbook.Worksheets[0];
 
             worksheet.PageSetup.Orientation = PageOrientation.Landscape;
-            var assembly = this.GetType().GetTypeInfo().Assembly;
-            System.IO.Stream stream = assembly.GetManifestResourceStream("GrapeCity.Documents.Excel.Examples.Resource.logo.png");
+            System.IO.Stream stream = this.GetResourceStream("logo.png");
             GrapeCity.Documents.Excel.Drawing.IShape picture = worksheet.Shapes.AddPicture(stream, GrapeCity.Documents.Excel.Drawing.ImageType.PNG, 20, 20, 690, 100);
 
         </value>
@@ -7473,6 +8031,46 @@
             sheet.PageSetup.Zoom = 200;
         </value>
   </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.PDFExporting.Text.ExportCellRichText" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            IRange a1 = worksheet.Range["A1"];
+            a1.Value = "Perfect square trinomial";
+            a1.Font.Size = 26;
+            a1.Font.Bold = true;
+            a1.VerticalAlignment = VerticalAlignment.Bottom;
+
+            a1.EntireRow.RowHeight = 42;
+            a1.EntireColumn.ColumnWidth = 50;
+
+            ITextRun run1 = a1.Characters(8, 7);
+            run1.Font.Italic = true;
+            run1.Font.ThemeColor = ThemeColor.Accent1;
+
+            IRange b1 = worksheet.Range["B1"];
+            b1.Font.Size = 22;
+            b1.EntireColumn.ColumnWidth = 40;
+
+            b1.Value = "(a+b)2 = a2+2ab+b2";
+            b1.VerticalAlignment = VerticalAlignment.Center;
+            
+            ITextRun superRun1 = b1.Characters(5, 1);
+            superRun1.Font.Superscript = true;
+            superRun1.Font.Color = System.Drawing.Color.Red;
+
+            ITextRun superRun2 = b1.Characters(10, 1);
+            superRun2.Font.Superscript = true;
+            superRun2.Font.Color = System.Drawing.Color.Green;
+
+            ITextRun superRun3 = b1.Characters(17, 1);
+            superRun3.Font.Superscript = true;
+            superRun3.Font.Color = System.Drawing.Color.Blue;
+           
+        </value>
+  </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.PDFExporting.Text.NumberFormating" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
@@ -7585,6 +8183,23 @@
 
             sheet.Range["A1:D19"].Borders.LineStyle = BorderLineStyle.Thin;
             sheet.PageSetup.PaperSize = PaperSize.A3;
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.PDFExporting.Text.VerticalText" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            IWorksheet sheet = workbook.Worksheets[0];
+
+            sheet.Range["A1"].Font.Name = "@Meiryo";
+            sheet.Range["A1"].Value = "日本語（にほんご、にっぽんご）は、主として、日本列島で使用されてきた言語である。GrapeCity";
+            sheet.Range["A1"].HorizontalAlignment = HorizontalAlignment.Right;
+            sheet.Range["A1"].VerticalAlignment = VerticalAlignment.Top;
+            sheet.Range["A1"].Orientation = -90;
+            sheet.Range["A1"].WrapText = true;
+
+            sheet.Range["A1"].ColumnWidth = 27;
+            sheet.Range["A1"].RowHeight = 190;
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Picture.CreatePicture" xml:space="preserve">
@@ -7929,16 +8544,31 @@
             var range = worksheet.Range["A5:B7"];
 
             //set value for cell A7.
-            var cell = range.Cells[4];
-            cell.Value = 1;
+            range.Cells[4].Value = "A7";
+
+            //cell is B6
+            range.Cells[1, 1].Value = "B6";
+
+            //row count is 3 and range is A6:B6.
+            var rowCount = range.Rows.Count;
+            var row = range.Rows[1].ToString();
 
             //set interior color for row range A6:B6.
-            var row = range.Rows[1];
-            row.Interior.Color = Color.LightBlue;
+            range.Rows[1].Interior.Color = Color.LightBlue;
+
+            //column count is 2 and range is B5:B7.
+            var columnCount = range.Columns.Count;
+            var column = range.Columns[1].ToString();
 
             //set values for column range B5:B7.
-            var column = range.Columns[1];
-            column.Value = 2;
+            range.Columns[1].Interior.Color = Color.LightSkyBlue;
+
+            //entire rows are from row 5 to row 7
+            var entirerow = range.EntireRow.ToString();
+
+            //entire columns are from column A to column B
+            var entireColumn = range.EntireColumn.ToString();
+
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.RangeOperations.AccessEachAreaOfRange" xml:space="preserve">
@@ -7967,8 +8597,10 @@
 
             IWorksheet worksheet = workbook.Worksheets[0];
 
-            //use index to access range, Range A1.
+            //use index to access cell A1.
             worksheet.Range[0, 0].Interior.Color = Color.LightGreen;
+
+            //use index to access range A1:B2
             worksheet.Range[0, 0, 2, 2].Value = 5;
 
             //use string to access range.
@@ -7976,8 +8608,62 @@
             worksheet.Range["C3:D4"].Interior.Color = Color.Tomato;
             worksheet.Range["A5:B7, C3, H5:N6"].Value = 2;
 
+            //use index to access rows
+            worksheet.Rows[2].Interior.Color = Color.LightSalmon;
+
+            //use string to access rows
+            worksheet.Range["4:4"].Interior.Color = Color.LightSkyBlue;
+
+            //use index to access columns
+            worksheet.Columns[2].Interior.Color = Color.LightSalmon;
+
+            //use string to access columns
+            worksheet.Range["D:D"].Interior.Color = Color.LightSkyBlue;
+
             //use Cells to access range.
             worksheet.Cells[5].Interior.Color = Color.LightBlue;
+            worksheet.Cells[5, 5].Interior.Color = Color.LightYellow;
+
+            //access all rows in worksheet
+            var allRows = worksheet.Rows.ToString();
+
+            //access all columns in worksheet
+            var allColumns = worksheet.Columns.ToString();
+
+            //access the entire sheet range
+            var entireSheet = worksheet.Cells.ToString();
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.RangeOperations.CellInfo" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            // cell's value B2
+            string cell = GrapeCity.Documents.Excel.CellInfo.CellIndexToName(1, 1);
+            worksheet.Range[cell].Interior.Color = Color.LightBlue;
+
+            int rowIndex, columnIndex;
+            // rowIndex is 3 and columnIndex is 2
+            GrapeCity.Documents.Excel.CellInfo.CellNameToIndex("C4", out rowIndex, out columnIndex);
+            worksheet.Range[rowIndex, columnIndex].Interior.Color = Color.LightCoral;
+
+            // column is D
+            string column = GrapeCity.Documents.Excel.CellInfo.ColumnIndexToName(3);
+            worksheet.Range[String.Format("{0}:{0}", column)].Interior.Color = Color.LightGreen;
+
+            // columnIndex is 4
+            columnIndex = GrapeCity.Documents.Excel.CellInfo.ColumnNameToIndex("E");
+            worksheet.Columns[columnIndex].Interior.Color = Color.LightSalmon;
+
+            // row is 3
+            string row = GrapeCity.Documents.Excel.CellInfo.RowIndexToName(2);
+            worksheet.Range[String.Format("{0}:{0}", row)].Interior.Color = Color.LightSteelBlue;
+
+            // rowIndex is 4
+            rowIndex = GrapeCity.Documents.Excel.CellInfo.RowNameToIndex("5");
+            worksheet.Rows[rowIndex].Interior.Color = Color.LightSkyBlue;
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.RangeOperations.CutCopyRange" xml:space="preserve">
@@ -8305,7 +8991,7 @@
             shape.Width = 500;
             shape.Height = 200;
 
-            shape.TextFrame.TextRange.Font.Color.RGB = GrapeCity.Documents.Excel.Color.FromArgb(0, 255, 0);
+            shape.TextFrame.TextRange.Font.Color.RGB = Color.FromArgb(0, 255, 0);
             shape.TextFrame.TextRange.Font.Bold = true;
             shape.TextFrame.TextRange.Font.Italic = true;
             shape.TextFrame.TextRange.Font.Size = 20;
@@ -9556,7 +10242,7 @@
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
-            Stream stream = this.GetTemplateStream("Information.csv");
+            Stream stream = this.GetResourceStream("xlsx\\Information.csv");
 
             //Open csv file stream.
             workbook.Open(stream, OpenFileFormat.Csv);
@@ -9593,7 +10279,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Change the path to the real file path when open.
-            workbook.Open(this.CurrentDirectory + "source.xlsx", OpenFileFormat.Xlsx);
+            workbook.Open(this.CurrentDirectory + "source.xlsx");
 
         </value>
   </data>
@@ -9622,6 +10308,41 @@
 
             workbook.Open(this.CurrentDirectory + "source.xlsx", options);
 
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.Workbook.ImportXlsmToWorkbook" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            // GcExcel supports open xlsm file
+            workbook.Open(this.CurrentDirectory + "macros.xlsm");
+
+            // Macros can be preserved after saving
+            workbook.Save(this.CurrentDirectory + "macros-exported.xlsm");
+
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.Workbook.LoadAndSaveJsonWithShapes" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            GrapeCity.Documents.Excel.Workbook workbookWithShape = new GrapeCity.Documents.Excel.Workbook();
+
+            IWorksheet worksheet = workbookWithShape.Worksheets[0];
+
+            // Add a shape in worksheet
+            GrapeCity.Documents.Excel.Drawing.IShape shape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 1, 1, 200, 100);
+            shape.Line.DashStyle = GrapeCity.Documents.Excel.Drawing.LineDashStyle.Dash;
+            shape.Line.Style = GrapeCity.Documents.Excel.Drawing.LineStyle.Single;
+            shape.Line.Weight = 2;
+            shape.Line.Color.ObjectThemeColor = ThemeColor.Accent6;
+            shape.Line.Transparency = 0.3;
+
+            // jsonString contains shapes
+            String jsonString = workbookWithShape.ToJson();
+
+            // GcExcel can load json string contains shapes now
+            workbook.FromJson(jsonString);
         </value>
   </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Workbook.SaveWorkbookToCsvFile" xml:space="preserve">
@@ -9677,7 +10398,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //change the path to real export path when save.
-            workbook.Save(this.CurrentDirectory + "dest.xlsx", SaveFileFormat.Xlsx);
+            workbook.Save(this.CurrentDirectory + "dest.xlsx");
 
         </value>
   </data>
@@ -9864,6 +10585,20 @@
 
         </value>
   </data>
+  <data name="GrapeCity.Documents.Excel.Examples.Features.Worksheets.SetBackgroundImage" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            //Use sheet index to get worksheet.
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            Stream stream = this.GetResourceStream("logo.png");
+            byte[] imageBytes = new byte[stream.Length];
+            stream.Read(imageBytes, 0, imageBytes.Length);
+            //Set a background image for worksheet
+            worksheet.BackgroundPicture = imageBytes;
+        </value>
+  </data>
   <data name="GrapeCity.Documents.Excel.Examples.Features.Worksheets.UnprotectWorksheet" xml:space="preserve">
     <value>   //create a new workbook
    var workbook = new GrapeCity.Documents.Excel.Workbook();
@@ -9883,7 +10618,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file
-            var fileStream = this.GetTemplateStream("AgingReport.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\AgingReport.xlsx");
             workbook.Open(fileStream);
         </value>
   </data>
@@ -9892,7 +10627,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file
-            var fileStream = this.GetTemplateStream("Annual financial report.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Annual financial report.xlsx");
             workbook.Open(fileStream);
         </value>
   </data>
@@ -9901,7 +10636,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file
-            var fileStream = this.GetTemplateStream("Family budget.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Family budget.xlsx");
             workbook.Open(fileStream);
         </value>
   </data>
@@ -9910,7 +10645,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file
-            var fileStream = this.GetTemplateStream("Home inventory.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Home inventory.xlsx");
             workbook.Open(fileStream);
         </value>
   </data>
@@ -9919,7 +10654,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file
-            var fileStream = this.GetTemplateStream("Project cost tracker.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Project cost tracker.xlsx");
             workbook.Open(fileStream);
         </value>
   </data>
@@ -9928,7 +10663,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file
-            var fileStream = this.GetTemplateStream("Simple personal budget.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Simple personal budget.xlsx");
             workbook.Open(fileStream);
         </value>
   </data>
@@ -9937,7 +10672,7 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file
-            var fileStream = this.GetTemplateStream("Student calendar (Mon).xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Student calendar (Mon).xlsx");
             workbook.Open(fileStream);
         </value>
   </data>
@@ -9946,7 +10681,16 @@
    var workbook = new GrapeCity.Documents.Excel.Workbook();
 
             //Load template file
-            var fileStream = this.GetTemplateStream("Travel expense report.xlsx");
+            var fileStream = this.GetResourceStream("xlsx\\Travel expense report.xlsx");
+            workbook.Open(fileStream);
+        </value>
+  </data>
+  <data name="GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer.WebsiteFlowChart" xml:space="preserve">
+    <value>   //create a new workbook
+   var workbook = new GrapeCity.Documents.Excel.Workbook();
+
+            //Load template file
+            var fileStream = this.GetResourceStream("xlsx\\WebsiteFlowChart.xlsx");
             workbook.Open(fileStream);
         </value>
   </data>

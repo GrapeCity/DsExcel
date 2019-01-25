@@ -5,7 +5,7 @@
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.BarStacked, 250, 20, 360, 230)
-            worksheet.Range("A1:C4").Value = {
+            worksheet.Range("A1:C4").Value = New Object(,)  {
                 {103, 121, 109},
                 {56, 94, 115},
                 {116, 89, 99},

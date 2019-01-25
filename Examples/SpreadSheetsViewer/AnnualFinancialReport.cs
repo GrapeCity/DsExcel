@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\Annual financial report.xlsx");
             workbook.Open(fileStream);
         }
 
@@ -44,12 +44,13 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
                 return false;
             }
         }
+        public override bool CanDownloadZip => false;
 
-        public override bool IsNew
+        public override string[] UsedResources
         {
             get
             {
-                return true;
+                return new string[] { "xlsx\\Annual financial report.xlsx" };
             }
         }
     }

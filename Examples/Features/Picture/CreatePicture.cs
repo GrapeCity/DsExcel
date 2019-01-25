@@ -15,5 +15,13 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Picture
             GrapeCity.Documents.Excel.Drawing.IShape picture = worksheet.Shapes.AddPicture(stream, GrapeCity.Documents.Excel.Drawing.ImageType.PNG, 20, 20, 790, 120);
 
         }
+
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "logo.png" };
+            }
+        }
     }
 }

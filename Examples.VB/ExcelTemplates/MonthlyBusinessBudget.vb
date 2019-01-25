@@ -5,7 +5,7 @@ Namespace ExcelTemplates
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Workbook)
             'Load template file Monthly business budget.xlsx from resource
-            Dim fileStream = GetTemplateStream()
+            Dim fileStream = GetResourceStream("Monthly business budget.xlsx")
             workbook.Open(fileStream)
 
             Dim worksheet = workbook.ActiveSheet

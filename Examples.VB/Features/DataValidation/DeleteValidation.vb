@@ -5,7 +5,7 @@ Namespace Features.DataValidation
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
-            worksheet.Range("C2:E4").Value = {
+            worksheet.Range("C2:E4").Value = New Object(,)  {
                 {
                     New TimeSpan(13, 0, 0),
                     New TimeSpan(13, 29, 59),

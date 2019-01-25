@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\AgingReport.xlsx");
             workbook.Open(fileStream);
         }
 
@@ -45,12 +45,15 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
             }
         }
 
-        public override bool IsNew
+        public override bool CanDownloadZip => false;
+
+        public override string[] UsedResources
         {
             get
             {
-                return true;
+                return new string[] { "xlsx\\AgingReport.xlsx" };
             }
         }
     }
+
 }

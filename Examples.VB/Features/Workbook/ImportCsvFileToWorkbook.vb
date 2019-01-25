@@ -3,7 +3,7 @@ Namespace Features.Workbook
     Public Class ImportCsvFileToWorkbook
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
-            Dim stream As Stream = GetTemplateStream()
+            Dim stream As Stream = GetResourceStream("Information.csv")
             'Open csv file stream.
             workbook.Open(stream, OpenFileFormat.Csv)
         End Sub

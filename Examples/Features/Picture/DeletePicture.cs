@@ -23,5 +23,14 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Picture
             //delete picture.
             picture.Delete();
         }
+
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "logo.png" };
+            }
+        }
+
     }
 }

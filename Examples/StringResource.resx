@@ -1752,7 +1752,8 @@ Various of text effect can be exported to pdf file, such as:
     <value>Use CellInfo helper class</value>
   </data>
   <data name="CustomFunctions.Descrip" xml:space="preserve">
-    <value>GcExcel provides you with the ability to create your own custom functions, allowing you to easily create any custom arithmetic logic you may need.</value>
+    <value>## Custom Function
+GcExcel provides you with the ability to create your own custom functions, allowing you to easily create any custom arithmetic logic you may need.</value>
   </data>
   <data name="CustomFunctions.Name" xml:space="preserve">
     <value>Custom Function</value>
@@ -1774,5 +1775,46 @@ Various of text effect can be exported to pdf file, such as:
   </data>
   <data name="MyIsMergedRangeFunction.Name" xml:space="preserve">
     <value>MyIsMergedRangeFunction</value>
+  </data>
+  <data name="VerticalText.Name" xml:space="preserve">
+    <value>Export vertical text</value>
+  </data>
+  <data name="CellRichText.Descrip" xml:space="preserve">
+    <value>## Cell Rich Text
+GcExcel provides support for applying rich text formatting in the cells of the worksheet. 
+Examples in this folder demonstrate how to:
+- Use IRange.IRichText interface to add and format text runs in a cell.
+- Use IRange.Characters() method to format a range of characters in a cell.
+- Configure font for each text run of rich text cell.</value>
+  </data>
+  <data name="CellRichText.Name" xml:space="preserve">
+    <value>Cell Rich Text</value>
+  </data>
+  <data name="CharacterCellText.Name" xml:space="preserve">
+    <value>Use Character method</value>
+  </data>
+  <data name="AddTextRun.Name" xml:space="preserve">
+    <value>Use IRichText interface</value>
+  </data>
+  <data name="ConfigRunFont.Name" xml:space="preserve">
+    <value>Configure text run's font</value>
+  </data>
+  <data name="CreateStyleBasedOn.Name" xml:space="preserve">
+    <value>Create and modify style based on a style</value>
+  </data>
+  <data name="ExportCellRichText.Name" xml:space="preserve">
+    <value>Cell rich text</value>
+  </data>
+  <data name="ImportXlsmToWorkbook.Name" xml:space="preserve">
+    <value>Open and save xlsm file</value>
+  </data>
+  <data name="LoadAndSaveJsonWithShapes.Name" xml:space="preserve">
+    <value>Load and save json containing shapes</value>
+  </data>
+  <data name="SetBackgroundImage.Name" xml:space="preserve">
+    <value>Set background image for worksheet</value>
+  </data>
+  <data name="WebsiteFlowChart.Name" xml:space="preserve">
+    <value>Website flow chart</value>
   </data>
 </root>

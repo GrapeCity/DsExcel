@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\Family budget.xlsx");
             workbook.Open(fileStream);
         }
 
@@ -42,6 +42,14 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
             get
             {
                 return false;
+            }
+        }
+        public override bool CanDownloadZip => false;
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "xlsx\\Family budget.xlsx" };
             }
         }
     }

@@ -29,5 +29,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Shape
                 return true;
             }
         }
+
     }
 }

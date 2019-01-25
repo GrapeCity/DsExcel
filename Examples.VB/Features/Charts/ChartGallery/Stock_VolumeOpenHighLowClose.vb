@@ -5,7 +5,7 @@
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.StockVOHLC, 300, 20, 360, 230)
-            worksheet.Range("A1:F23").Value = {
+            worksheet.Range("A1:F23").Value = New Object(,)  {
                 {Nothing, "Volume", "Open", "High", "Low", "Close"},
                 {
                     #9/1/2019#,

@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Load template file Financial KPIs.xlsx from resource
-            var fileStream = this.GetTemplateStream();
+            var fileStream = this.GetResourceStream("xlsx\\Financial KPIs.xlsx");
 
             workbook.Open(fileStream);
 
@@ -112,14 +112,6 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
             }
         }
 
-        public override bool HasTemplate
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool ShowViewer
         {
             get
@@ -127,12 +119,12 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelTemplates
                 return false;
             }
         }
-
-        public override bool IsNew
+        
+        public override string[] UsedResources
         {
             get
             {
-                return true;
+                return new string[] { "xlsx\\Financial KPIs.xlsx" };
             }
         }
     }

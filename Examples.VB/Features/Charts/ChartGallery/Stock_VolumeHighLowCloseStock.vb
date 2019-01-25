@@ -7,7 +7,7 @@ Namespace Features.Charts.ChartGallery
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.StockVHLC, 350, 20, 360, 230)
-            worksheet.Range("A1:E17").Value = {
+            worksheet.Range("A1:E17").Value = New Object(,)  {
                 {Nothing, "Volume", "High", "Low", "Close"},
                 {
                     #9/1/2019#,

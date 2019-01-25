@@ -10,7 +10,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //change the path to real export path when save.
-            workbook.Save(this.CurrentDirectory + "dest.xlsx", SaveFileFormat.Xlsx);
+            workbook.Save(this.CurrentDirectory + "dest.xlsx");
 
         }
 
@@ -29,13 +29,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
                 return false;
             }
         }
-
-        public override bool IsUpdate
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
     }
 }

@@ -236,5 +236,13 @@ namespace GrapeCity.Documents.Excel.Examples.ExcelReporting
                 return false;
             }
         }
+
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "movie.png", "list.png" };
+            }
+        }
     }
 }

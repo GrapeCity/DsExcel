@@ -42,14 +42,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Worksheets
                 return true;
             }
         }
-
-        public override bool IsUpdate
-        {
-            get
-            {
-                return true;
-            }
-        }
-
     }
 }

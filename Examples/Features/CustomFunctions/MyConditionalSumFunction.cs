@@ -149,14 +149,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.CustomFunctions
                 return false;
             }
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
+        
 
         public class MyConditionalSumFunctionX : CustomFunction
         {

@@ -39,13 +39,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.RangeOperations
             var entireColumn = range.EntireColumn.ToString();
 
         }
-
-        public override bool IsUpdate
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

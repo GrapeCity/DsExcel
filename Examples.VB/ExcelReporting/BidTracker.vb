@@ -30,7 +30,7 @@ Namespace ExcelReporting
 
             '**************************Set Table Value & Formulas*********************
             Dim table As ITable = worksheet.Tables.Add(worksheet.Range("B2:H9"), True)
-            worksheet.Range("B2:H9").Value = {
+            worksheet.Range("B2:H9").Value = New Object(,)  {
                 {"BID #", "DESCRIPTION", "DATE RECEIVED", "AMOUNT", "PERCENT COMPLETE", "DEADLINE", "DAYS LEFT"},
                 {1, "Bid number 1", Nothing, 2000, 0.5, Nothing, Nothing},
                 {2, "Bid number 2", Nothing, 3500, 0.25, Nothing, Nothing},

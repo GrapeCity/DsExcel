@@ -5,14 +5,14 @@
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.XYScatterSmooth, 250, 20, 360, 230)
-            worksheet.Range("A1:B5").Value = {
+            worksheet.Range("A1:B5").Value = New Object(,)  {
                 {4, 2},
                 {6, 1},
                 {1, 2},
                 {7, 4},
                 {4, 4}
             }
-            worksheet.Range("A7:B11").Value = {
+            worksheet.Range("A7:B11").Value = New Object(,)  {
                 {9, 5},
                 {7, 8},
                 {9, 8},

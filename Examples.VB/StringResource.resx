@@ -1751,4 +1751,7 @@ Various of text effect can be exported to pdf file, such as:
   <data name="CellInfo.Name" xml:space="preserve">
     <value>Use CellInfo helper class</value>
   </data>
+  <data name="VerticalText.Name" xml:space="preserve">
+    <value>Export vertical text</value>
+  </data>
 </root>

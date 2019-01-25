@@ -6,7 +6,7 @@ Namespace Features.RangeOperations
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            worksheet.Range("A1:B2").Value = {
+            worksheet.Range("A1:B2").Value = New Object(,)  {
                 {1, 2},
                 {"aaa", "bbb"}
             }

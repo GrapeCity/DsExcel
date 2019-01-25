@@ -48,13 +48,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
                 return false;
             }
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

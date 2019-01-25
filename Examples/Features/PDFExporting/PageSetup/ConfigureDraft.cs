@@ -45,11 +45,11 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.PdfPageSetup
             }
         }
 
-        public override bool IsNew
+        public override string[] UsedResources
         {
             get
             {
-                return true;
+                return new string[] { "logo.png" };
             }
         }
     }

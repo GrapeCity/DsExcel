@@ -47,13 +47,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.RangeOperations
             //access the entire sheet range
             var entireSheet = worksheet.Cells.ToString();
         }
-
-        public override bool IsUpdate
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

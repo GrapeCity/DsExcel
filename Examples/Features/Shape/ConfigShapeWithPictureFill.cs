@@ -39,5 +39,13 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Shape
                 return true;
             }
         }
+
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "logo.png" };
+            }
+        }
     }
 }

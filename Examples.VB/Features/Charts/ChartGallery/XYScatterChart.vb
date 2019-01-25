@@ -5,7 +5,7 @@
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.XYScatter, 250, 20, 360, 230)
-            worksheet.Range("A1:D7").Value = {
+            worksheet.Range("A1:D7").Value = New Object(,)  {
                 {"Blue", Nothing, "Red", Nothing},
                 {55, 964, 67, 475},
                 {20, 825, 10, 163},
