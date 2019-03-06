@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GrapeCity.Documents.Excel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
-      <HintPath>packages\GrapeCity.Documents.Excel.2.1.0\lib\netstandard2.0\GrapeCity.Documents.Excel.dll</HintPath>
+    <Reference Include="GrapeCity.Documents.Excel, Version=2.1.1.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
+      <HintPath>packages\GrapeCity.Documents.Excel.2.1.1\lib\netstandard2.0\GrapeCity.Documents.Excel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
