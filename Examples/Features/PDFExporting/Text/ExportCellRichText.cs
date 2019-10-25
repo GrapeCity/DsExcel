@@ -44,8 +44,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.Text
            
         }
 
-        public override bool IsNew => true;
-
         public override bool SavePdf => true;
 
         public override bool ShowViewer => false;

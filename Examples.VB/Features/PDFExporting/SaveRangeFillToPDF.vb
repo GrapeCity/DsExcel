@@ -10,7 +10,7 @@ Namespace Features.PDFExporting
             rangeA1B2.Merge()
             rangeA1B2.Interior.Pattern = Pattern.LinearGradient
 
-            Dim gradientA1B2 As ILinearGradient = TryCast(rangeA1B2.Interior.Gradient, ILinearGradient)
+            Dim gradientA1B2 = TryCast(rangeA1B2.Interior.Gradient, ILinearGradient)
             gradientA1B2.ColorStops(0).Color = Color.Red
             gradientA1B2.ColorStops(1).Color = Color.Yellow
             gradientA1B2.Degree = 90
@@ -25,7 +25,7 @@ Namespace Features.PDFExporting
             rangeG1H2.Merge()
             rangeG1H2.Interior.Pattern = Pattern.RectangularGradient
 
-            Dim gradientG1H2 As IRectangularGradient = TryCast(rangeG1H2.Interior.Gradient, IRectangularGradient)
+            Dim gradientG1H2 = TryCast(rangeG1H2.Interior.Gradient, IRectangularGradient)
             gradientG1H2.ColorStops(0).Color = Color.Red
             gradientG1H2.ColorStops(1).Color = Color.Green
             gradientG1H2.Bottom = 0.2

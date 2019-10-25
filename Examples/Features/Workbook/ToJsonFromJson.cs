@@ -12,7 +12,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
 
             //GrapeCity Documents for Excel import an excel file.
             //change the path to real source file path.
-            string source = this.CurrentDirectory + "source.xlsx";
+            string source = System.IO.Path.Combine(this.CurrentDirectory, "source.xlsx");
             workbook.Open(source);
             //GrapeCity Documents for Excel export to a json string.
             var jsonstr = workbook.ToJson();
@@ -24,7 +24,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
             workbook.FromJson(jsonstr);
             //GrapeCity Documents for Excel export workbook to an excel file.
             //change the path to real export file path.
-            string export = this.CurrentDirectory + "export.xlsx";
+            string export = System.IO.Path.Combine(this.CurrentDirectory, "export.xlsx");
             workbook.Save(export);
 
         }

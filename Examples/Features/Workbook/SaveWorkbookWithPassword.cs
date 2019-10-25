@@ -9,10 +9,12 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Change the path to real export path when save.
-            XlsxSaveOptions options = new XlsxSaveOptions();
-            options.Password = "123456";
+            XlsxSaveOptions options = new XlsxSaveOptions
+            {
+                Password = "123456"
+            };
 
-            workbook.Save(this.CurrentDirectory + "dest.xlsx", options);
+            workbook.Save(System.IO.Path.Combine(this.CurrentDirectory, "dest.xlsx"), options);
 
         }
 

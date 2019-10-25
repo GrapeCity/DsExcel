@@ -556,7 +556,7 @@
     <value>删除条件格式</value>
   </data>
   <data name="RootExample.Descrip" xml:space="preserve">
-    <value>Spread表格组件功能列表</value>
+    <value>GcExcel功能列表</value>
   </data>
   <data name="RootExample.Name" xml:space="preserve">
     <value>All</value>
@@ -798,7 +798,7 @@
 坐标轴的示例程序展示了如何设置坐标轴的各种属性，比如轴标题，轴单位，轴显示单位标签，网格线，刻度线和刻度线标签等等。</value>
   </data>
   <data name="Charts.Descrip" xml:space="preserve">
-    <value>**Spread表格组件**提供了一套非常完整的图表API，通过这些图表API你可以：
+    <value>**GcExcel**提供了一套非常完整的图表API，通过这些图表API你可以：
 
 - 使用**IWorksheet.Shapes.AddChart**方法来向工作表中添加一个图表， 它会返回一个 **IShape** 的实例，然后进一步通过**IShape**接口的**Chart**的属性来访问所添加的图表
 - 使用 **IChart.SeriesCollection.Add**方法来为图表添加数据系列
@@ -809,6 +809,7 @@
 - 通过**IDataLabel**接口来访问和定制数据标签
 - 通过**IChartGroup**接口来批量修改和更新一组数据系列
 - 通过**IAxis**接口来修改和定制横向轴，纵向轴和系列轴
+- 通过**IChart.Shapes.AddXXX**方法来为图表添加子图形
 
 除了上面那些图表基础特性，你还可以通过改变数据系列的图表类型来创建组合型图表，同时你可以通过**ISeries.AxisGroup**属性来指定一个数据系列是显示在主轴还是辅轴上。
 
@@ -833,15 +834,15 @@
     <value>个人净资产计算器</value>
   </data>
   <data name="Comments.Descrip" xml:space="preserve">
-    <value>Spread表格组件允许用户为工作表上的单元格添加批注，这样可以为单元格内容指定一些额外的信息，你可以使用**IRange.AddComment**来为单元格或区域添加批注，它会返回一个**IComment**实例，如果要修改批注的布局，可以通过**IComment.Shape**与批注关联的形状。如果需要使用富文本的批注，可以通过**IShape.TextFrame**属性。</value>
+    <value>GcExcel允许用户为工作表上的单元格添加批注，这样可以为单元格内容指定一些额外的信息，你可以使用**IRange.AddComment**来为单元格或区域添加批注，它会返回一个**IComment**实例，如果要修改批注的布局，可以通过**IComment.Shape**与批注关联的形状。如果需要使用富文本的批注，可以通过**IShape.TextFrame**属性。</value>
   </data>
   <data name="SpreadSheetsViewer.Name" xml:space="preserve">
     <value>SpreadJS表格控件视图</value>
   </data>
   <data name="UseCases.Descrip" xml:space="preserve">
-    <value>Another two of Spread表格组件 useage scenario are as follows:
-- Use Spread表格组件 API programming, then export to an excel file -**Programming** Part.
-- Import excel template to Spread表格组件 data model, then use Spread表格组件 API programming, make contents more abundantly, then export to an excel file - **Templates** Part.</value>
+    <value>Another two of GcExcel useage scenario are as follows:
+- Use GcExcel API programming, then export to an excel file -**Programming** Part.
+- Import excel template to GcExcel data model, then use GcExcel API programming, make contents more abundantly, then export to an excel file - **Templates** Part.</value>
   </data>
   <data name="ExcelReporting.Name" xml:space="preserve">
     <value>创建Excel文档</value>
@@ -868,9 +869,9 @@
     <value>差旅费用报告</value>
   </data>
   <data name="ConditionalFormatting.Descrip" xml:space="preserve">
-    <value>Spread表格组件允许用户为单元格或区域设置条件格式，这样就可以对工作表中的重要信息进行高亮和提醒，当单元格中的内容符合设定的条件后，这些单元格就会自动应用条件格式中的样式。
+    <value>GcExcel允许用户为单元格或区域设置条件格式，这样就可以对工作表中的重要信息进行高亮和提醒，当单元格中的内容符合设定的条件后，这些单元格就会自动应用条件格式中的样式。
 
-Spread表格组件支持Excel中所有类型的条件格式：
+GcExcel支持Excel中所有类型的条件格式：
 
 - 值类型条件格式
 - 平均值条件格式
@@ -891,7 +892,7 @@ Spread表格组件支持Excel中所有类型的条件格式：
 - AddUniqueValues</value>
   </data>
   <data name="DataValidation.Descrip" xml:space="preserve">
-    <value>Spread表格组件支持为区域设置数据验证，这样用户能限制单元格的内容和格式，你可以单独为每个单元格创建数据验证，同时也可以为一片区域设置统一的数据验证，Spread表格组件支持Excel所有的数据验证类型，包括：整型，小数，日期，时间，文本和自定义数据验证。
+    <value>GcExcel支持为区域设置数据验证，这样用户能限制单元格的内容和格式，你可以单独为每个单元格创建数据验证，同时也可以为一片区域设置统一的数据验证，GcExcel支持Excel所有的数据验证类型，包括：整型，小数，日期，时间，文本和自定义数据验证。
 
 
 通过**IRange.Validation.Add**可以为单元格或区域添加数据验证，这个方法会返回一个**IValidation**类型的实例，通过此接口你可以继续：
@@ -903,7 +904,7 @@ Spread表格组件支持Excel中所有类型的条件格式：
     <value>月度预算</value>
   </data>
   <data name="Filtering.Descrip" xml:space="preserve">
-    <value>Spread表格组件支持Excel所有类型的过滤：
+    <value>GcExcel支持Excel所有类型的过滤：
 - 数字型过滤
 - 文本型过滤
 - 日期型过滤
@@ -971,7 +972,7 @@ Spread表格组件支持Excel中所有类型的条件格式：
 - 上标和下标</value>
   </data>
   <data name="Formatting.Descrip" xml:space="preserve">
-    <value>Spread表格组件提供了丰富的API来设置区域的样式：
+    <value>GcExcel提供了丰富的API来设置区域的样式：
 
 - **IRange.NumberFormat** 设置数字格式
 - **IRange.HorizontalAlignment**,  **IRange.VerticalAlignment**, **IRange.IndentLevel** 等设置对齐
@@ -983,9 +984,9 @@ Spread表格组件支持Excel中所有类型的条件格式：
 你可以创建自定义命名样式或者使用内置的命名样式，将它们设置到某片区域。</value>
   </data>
   <data name="Formulas.Descrip" xml:space="preserve">
-    <value>在Spread表格组件中，用户可以像在Excel中一样为单元格设置公式和表达式，当表达式中所依赖的区域的值发生变化后，也会同步计算和更新，Spread表格组件提供了450多个内置的函数，可以帮助用户创建非常实用和复杂的公式。
+    <value>在GcExcel中，用户可以像在Excel中一样为单元格设置公式和表达式，当表达式中所依赖的区域的值发生变化后，也会同步计算和更新，GcExcel提供了450多个内置的函数，可以帮助用户创建非常实用和复杂的公式。
 
-Spread表格组件的计算引擎提供给用户以下能力：
+GcExcel的计算引擎提供给用户以下能力：
 - 450+内置函数
 - 自定义名称
 - 数组公式
@@ -993,7 +994,7 @@ Spread表格组件的计算引擎提供给用户以下能力：
 - 表格公式</value>
   </data>
   <data name="Grouping.Descrip" xml:space="preserve">
-    <value>拥有大量数据的电子表格经常让人很头疼，你需要花大量的时间去查找，管理和分析这些数据，Spread表格组件让你可以对大量的数据进行分组，这样再复杂的电子表格也很容易导航到你关心的数据。在数据分组后，用户可以通过下列属性或方法对数据进行分组，取消分组，展开和收缩分组：
+    <value>拥有大量数据的电子表格经常让人很头疼，你需要花大量的时间去查找，管理和分析这些数据，GcExcel让你可以对大量的数据进行分组，这样再复杂的电子表格也很容易导航到你关心的数据。在数据分组后，用户可以通过下列属性或方法对数据进行分组，取消分组，展开和收缩分组：
 
 
 
@@ -1003,7 +1004,7 @@ Spread表格组件的计算引擎提供给用户以下能力：
 -  **ShowLevels**属性可以展开指定层级的分组</value>
   </data>
   <data name="NumberFormat.Descrip" xml:space="preserve">
-    <value>Spread表格组件全面支持Excel的各种数字格式，你可以为单元格或一片区域指定某种格式。</value>
+    <value>GcExcel全面支持Excel的各种数字格式，你可以为单元格或一片区域指定某种格式。</value>
   </data>
   <data name="Protection.Descrip" xml:space="preserve">
     <value>本示例中的程序讲解了如何设置工作表保护：
@@ -1020,21 +1021,21 @@ Spread表格组件的计算引擎提供给用户以下能力：
     <value>入门教程</value>
   </data>
   <data name="Hyperlinks.Descrip" xml:space="preserve">
-    <value>可以使用 **IRange.Hyperliks.Add**方法为单元格或区域添加超链接，Spread表格组件支持下面几种类型的超链接：
+    <value>可以使用**IWorksheet.Hyperlinks.Add**或者 **IRange.Hyperliks.Add**方法为区域添加超链接，可以使用**IWorksheet.Hyperlinks.Add**方法为图形添加超链接。GcExcel支持下面几种类型的超链接：
 - 链接到一个网页
 - 链接到一片区域
 - 链接到一个外部文件
 - 链接到一个邮件地址</value>
   </data>
   <data name="Picture.Descrip" xml:space="preserve">
-    <value>Spread表格组件允许用户在工作表中插入图片，并对图片进行各种设置。</value>
+    <value>GcExcel允许用户在工作表中插入图片，并对图片进行各种设置。</value>
   </data>
   <data name="PivotTable.Descrip" xml:space="preserve">
     <value>数据透视表是一个数据分析和总结的工具，使用它可以对工作表中存储的数据进行自动地计数，求和和取平均值，并在相应的表格中显示这些分析总结后的数据。
 创建数据透视表前应该先调用**Workbook.PivotCaches.Create**方法创建一个数据缓存，然后以此数据缓存为基础再调用**IWorksheet.PivotTables.Add**方法进一步创建数据透视表，同时可以使用**PivotFieldOrientation**属性来指定透视透视表的字段是行字段，列字段，值字段还是页面字段。</value>
   </data>
   <data name="RangeOperations.Descrip" xml:space="preserve">
-    <value>区域(Range)是 Spread表格组件中最重要概念，**IWorksheet.Range**也是用户最常用的一个属性，大部分的特性都要通过IRange接口来使用：
+    <value>区域(Range)是 GcExcel中最重要概念，**IWorksheet.Range**也是用户最常用的一个属性，大部分的特性都要通过IRange接口来使用：
 
 在本示例中，你将学会如何：
 - 访问单元格，行和列
@@ -1051,7 +1052,7 @@ Spread表格组件的计算引擎提供给用户以下能力：
 - 设置行高和列宽</value>
   </data>
   <data name="Shape.Descrip" xml:space="preserve">
-    <value>Spread表格组件让你可以将一张图片或各种形状嵌入到工作表中，你可以嵌入箭头，直线，以及更多常用的形状， 你需要调用**IWorksheet.Shapes.AddShape**方法来添加一个形状，它会返回一个**IShape**的实例，然后你可以通过下面几种方法配置形状：
+    <value>GcExcel让你可以将一张图片或各种形状嵌入到工作表中，你可以嵌入箭头，直线，以及更多常用的形状， 你需要调用**IWorksheet.Shapes.AddShape**方法来添加一个形状，它会返回一个**IShape**的实例，然后你可以通过下面几种方法配置形状：
 
 - 通过**IShape.Fill**属性来配置各种填充效果
 - 通过**IShape.Line**属性来配置形状的线条
@@ -1062,7 +1063,7 @@ Spread表格组件的计算引擎提供给用户以下能力：
     <value>切片器是一种可视化的过滤器，通过它可以对表格或者数据透视表进行过滤操作。创建切片器之前先要为切片器创建切片缓存，每个切片器可以设置一个内置或自定义的切片器样式。</value>
   </data>
   <data name="Sorting.Descrip" xml:space="preserve">
-    <value>Spread表格组件支持Excel所有排序方式，比如：
+    <value>GcExcel支持Excel所有排序方式，比如：
 - 按自定义排序
 - 按字体颜色排序
 - 按图标排序
@@ -1070,26 +1071,26 @@ Spread表格组件的计算引擎提供给用户以下能力：
 - 按值排序</value>
   </data>
   <data name="Sparklines.Descrip" xml:space="preserve">
-    <value>Spread表格组件允许你使用迷你图来高亮并显示数据的变化趋势，迷你图是一种可以显示在单元格中的轻量级的图表，通过它可以快速地进行数据可视化。
-在Spread表格组件中可以通过**IRange.SparklineGroups.Add**方法来添加一个迷你图组，每个迷你图必须存在于一个迷你图组中，它不可以独立于迷你图组而存在。
-Spread表格组件支持以下几种类型的迷你图：
+    <value>GcExcel允许你使用迷你图来高亮并显示数据的变化趋势，迷你图是一种可以显示在单元格中的轻量级的图表，通过它可以快速地进行数据可视化。
+在GcExcel中可以通过**IRange.SparklineGroups.Add**方法来添加一个迷你图组，每个迷你图必须存在于一个迷你图组中，它不可以独立于迷你图组而存在。
+GcExcel支持以下几种类型的迷你图：
 - 折线图
 - 柱状图
 - 盈亏图</value>
   </data>
   <data name="SpreadSheetsViewer.Descrip" xml:space="preserve">
-    <value>本示例中的程序代码讲解了如何前后端配合使用**Spread表格组件**和**SpreadJS表格控件**，**SpreadJS表格控件**是葡萄城的一款纯前端电子表格控件, Spread表格组件工作在服务器端负责导入和导出Excel文件，SpreadJS表格控件则工作在浏览器中负责展示和编辑Excel文件的内容。
+    <value>本示例中的程序代码讲解了如何前后端配合使用**GcExcel**和**SpreadJS表格控件**，**SpreadJS表格控件**是葡萄城的一款纯前端电子表格控件, GcExcel工作在服务器端负责导入和导出Excel文件，SpreadJS表格控件则工作在浏览器中负责展示和编辑Excel文件的内容。
 
 本示例中所有页面的工作过程为：
-- 在服务端Spread表格组件先打开一个Excel文件
-- 在服务端调用Spread.Servcices的**Workbook.ToJson**方法将Spread表格组件的当前状态序列化到一个JSON字符串中，然后将这个JSON串发送到客户端
+- 在服务端GcExcel先打开一个Excel文件
+- 在服务端调用Spread.Servcices的**Workbook.ToJson**方法将GcExcel的当前状态序列化到一个JSON字符串中，然后将这个JSON串发送到客户端
 - 在客户端浏览器中，SpreadJS表格控件控件则会将服务端传回来JSON串作为参数调用**fromJSON**方法，这样服务端Excel文件的内容就可以完全展示在SpreadJS表格控件中了
 
 点击**Template**按钮可以查看服务端原始Excel文件。
 
 对于这里面的每个示例页面，你都可以编辑SpreadJS表格控件中的内容，然后点击**导出**按钮来取得改变后的Excel文件，**导出**按钮的工作过程为：
 - 在浏览器中SpreadJS表格控件先使用它的**toJSON**方法将SpreadJS表格控件当前的状态序列化到一个JSON字符串（如果你已修改了SpreadJS表格控件的内容，那么它将包含最新的内容），然后将这个字符串发送到服务器端
-- 在服务器端，Spread表格组件会调用它的**Workbook.FromJson**方法将JSON字符串反序列化回来，然后在使用**Workbook.Save**方法保存为一个Excel文件
+- 在服务器端，GcExcel会调用它的**Workbook.FromJson**方法将JSON字符串反序列化回来，然后在使用**Workbook.Save**方法保存为一个Excel文件
 - 最后你将能下载并查看已修改的最新的Excel文件
 
 想更多了解**SpreadJS表格控件**，可以访问SpreadJS表格控件官方主页[http://www.gcpowertools.com.cn/products/spreadjs/](http://www.gcpowertools.com.cn/products/spreadjs/)</value>
@@ -1106,7 +1107,7 @@ Spread表格组件支持以下几种类型的迷你图：
 - 对表格的特定区域使用公式进行分析和计算</value>
   </data>
   <data name="Theme.Descrip" xml:space="preserve">
-    <value>Spread表格组件提供了一整套内置的主题，让你可以快速地改变整个工作簿的样式，同时也允许你创建自定义的主题，并将它应用给工作簿。本示例中的程序讲解了如何在Spread表格组件中使用主题，包括设置主题，如何自定义主题等。</value>
+    <value>GcExcel提供了一整套内置的主题，让你可以快速地改变整个工作簿的样式，同时也允许你创建自定义的主题，并将它应用给工作簿。本示例中的程序讲解了如何在GcExcel中使用主题，包括设置主题，如何自定义主题等。</value>
   </data>
   <data name="Workbook.Descrip" xml:space="preserve">
     <value>一个工作簿就代表了整个电子表格文档，它包含了若干的工作表，本示例中的代码讲解了如何使用工作簿：
@@ -1115,7 +1116,9 @@ Spread表格组件支持以下几种类型的迷你图：
 - 使用工作簿导入有密码保护的Excel文件
 - 导出工作簿为Excel文件
 - 导出工作簿为密码保护的Excel文件
-- 工作簿序列化，反序列化JSON</value>
+- 工作簿序列化，反序列化JSON
+- 保护工作薄
+- 取消工作表保护</value>
   </data>
   <data name="Worksheets.Descrip" xml:space="preserve">
     <value>本示例中的代码讲解了：
@@ -1124,10 +1127,11 @@ Spread表格组件支持以下几种类型的迷你图：
 - 保护工作表
 - 取消工作表保护
 - 激活工作表
-- 配置工作表</value>
+- 配置工作表
+- 添加一个图表工作表</value>
   </data>
   <data name="ExcelReporting.Descrip" xml:space="preserve">
-    <value>在此类示例中，你可以发现很多完整的使用Spread表格组件的程序代码，这些示例模拟真实场景，让这些代码运行在服务端并最终生成一个Excel文件或报表，所以在点击**运行**按钮后，在服务端会执行以下操作：
+    <value>在此类示例中，你可以发现很多完整的使用GcExcel的程序代码，这些示例模拟真实场景，让这些代码运行在服务端并最终生成一个Excel文件或报表，所以在点击**运行**按钮后，在服务端会执行以下操作：
 - 创建一个空的工作簿实例
 - 执行代码窗口中的所有代码
 - 将工作簿保存为一个Excel文件
@@ -1135,7 +1139,7 @@ Spread表格组件支持以下几种类型的迷你图：
 然后，你就可以在浏览器中下载并查看保存的结果了</value>
   </data>
   <data name="ExcelTemplates.Descrip" xml:space="preserve">
-    <value>在实际开发场景中，你也许已经有自己的Excel模板了，你只是想在服务器端能打开并对文件做一些修改，此时你就可以使用Spread表格组件先在服务器端打开这个Excel文件，然后继续使用Spread表格组件丰富的API来修改文件内容，定制一些样式，做任何你想做的修改。
+    <value>在实际开发场景中，你也许已经有自己的Excel模板了，你只是想在服务器端能打开并对文件做一些修改，此时你就可以使用GcExcel先在服务器端打开这个Excel文件，然后继续使用GcExcel丰富的API来修改文件内容，定制一些样式，做任何你想做的修改。
 
 点击 **模板**按钮可以查看原Excel文件， 点击 **运行**按钮后，可以查看执行完代码窗口中的代码后被修改的Excel文件。</value>
   </data>
@@ -1143,7 +1147,7 @@ Spread表格组件支持以下几种类型的迷你图：
     <value>使用切片器清除过滤</value>
   </data>
   <data name="Features.Descrip" xml:space="preserve">
-    <value>**Spread表格组件**提供了大量Excel的特性让用户能够在电子表格中存储大量数据，改变主题，设置计算公式，分析数据，添加表格，图表，形状，图片，条件格式，迷你图等。在本示例中，你将会发现大量的程序代码说明每个特性的使用方法。</value>
+    <value>**GcExcel**提供了大量Excel的特性让用户能够在电子表格中存储大量数据，改变主题，设置计算公式，分析数据，添加表格，图表，形状，图片，条件格式，迷你图等。在本示例中，你将会发现大量的程序代码说明每个特性的使用方法。</value>
   </data>
   <data name="ProjectCostTracker.Name" xml:space="preserve">
     <value>工程成本跟踪</value>
@@ -1402,7 +1406,7 @@ Spread表格组件支持以下几种类型的迷你图：
     <value>标记</value>
   </data>
   <data name="PageSetup.Descrip" xml:space="preserve">
-    <value>Spread表格组件支持对打印页面设置，**页面设置**包含所有页面设置属性（如左边距，下边距，纸张大小等）。</value>
+    <value>GcExcel支持对打印页面设置，**页面设置**包含所有页面设置属性（如左边距，下边距，纸张大小等）。</value>
   </data>
   <data name="ConfigChart3DFormat.Name" xml:space="preserve">
     <value>设置图表的3D样式</value>
@@ -1429,7 +1433,7 @@ Spread表格组件支持以下几种类型的迷你图：
     <value>导入Excel后不重新计算</value>
   </data>
   <data name="PDFExporting.Descrip" xml:space="preserve">
-    <value>在此类示例中，你可以发现很多完整的使用Spread表格组件的程序代码，这些示例模拟真实场景，让这些代码运行在服务端并最终生成一个Excel文件或报表，所以在点击**运行**按钮后，在服务端会执行以下操作：
+    <value>在此类示例中，你可以发现很多完整的使用GcExcel的程序代码，这些示例模拟真实场景，让这些代码运行在服务端并最终生成一个Excel文件或报表，所以在点击**运行**按钮后，在服务端会执行以下操作：
 - 创建一个空的工作簿实例
 - 执行代码窗口中的所有代码
 - 将工作簿保存为一个PDF文件
@@ -1629,31 +1633,766 @@ Spread表格组件支持以下几种类型的迷你图：
   <data name="VerticalText.Name" xml:space="preserve">
     <value>垂直文本</value>
   </data>
-  <data name="AddTextRun.Name" xml:space="preserve">
-    <value>Use IRichText interface</value>
+  <data name="CellRichText.Descrip" xml:space="preserve">
+    <value>## 单元格富文本
+在GcExcel中可以为单元格应用富文本，文件夹中的demo包括：
+- 使用IRange.RichText接口为单元格添加和格式化富文本
+- 使用IRange.Characters()方法格式化单元格中的一部分文本
+- 如何为富文本中的Tex Run设置不同的字体</value>
+  </data>
+  <data name="CellRichText.Name" xml:space="preserve">
+    <value>单元格富文本</value>
   </data>
   <data name="CharacterCellText.Name" xml:space="preserve">
-    <value>Use Character method</value>
+    <value>使用Character方法</value>
+  </data>
+  <data name="AddTextRun.Name" xml:space="preserve">
+    <value>使用IRichText接口</value>
   </data>
   <data name="ConfigRunFont.Name" xml:space="preserve">
-    <value>Configure text run's font</value>
+    <value>设置Text Run的字体</value>
   </data>
   <data name="CreateStyleBasedOn.Name" xml:space="preserve">
-    <value>Create and modify style based on a style</value>
+    <value>基于现有style创建新style</value>
   </data>
   <data name="ExportCellRichText.Name" xml:space="preserve">
     <value>Cell rich text</value>
   </data>
+  <data name="ImportXlsmToWorkbook.Name" xml:space="preserve">
+    <value>Open and save xlsm file</value>
+  </data>
   <data name="LoadAndSaveJsonWithShapes.Name" xml:space="preserve">
-    <value>Load and save json containing shapes</value>
+    <value>加载和保存含有shape的json</value>
   </data>
   <data name="SetBackgroundImage.Name" xml:space="preserve">
-    <value>Set background image for worksheet</value>
-  </data>
-  <data name="DecisionTreeFlowChart.Name" xml:space="preserve">
-    <value>Decision tree flow chart</value>
+    <value>设置工作表背景图片</value>
   </data>
   <data name="WebsiteFlowChart.Name" xml:space="preserve">
-    <value>Website flow chart</value>
+    <value>网站流程图</value>
+  </data>
+  <data name="PDFToExcel.Name" xml:space="preserve">
+    <value>Extract text from PDF</value>
+  </data>
+  <data name="PrintManager.Descrip" xml:space="preserve">
+    <value>## 自定义分页
+GcExcel引入PrintManage类来自定义分页和打印，该功能可以实现将Excel的特定部分打印到PDF文档，以及从PageInfo对象中获取分页结果。分页结果是通过调用PrintManager.Paginate方法产生的一个页面列表，可以对分页结果进行下列操作： 
+
+- 添加/删除/修改页面。
+- 更改页码，页数，页面内容和页面设置。</value>
+  </data>
+  <data name="PrintManager.Name" xml:space="preserve">
+    <value>自定义分页</value>
+  </data>
+  <data name="CustomPageInfos.Name" xml:space="preserve">
+    <value>自定义页面信息</value>
+  </data>
+  <data name="RenderExcelRangesInsideAPDF.Name" xml:space="preserve">
+    <value>将工作表数据渲染到PDF页面上（高级用法）</value>
+  </data>
+  <data name="SaveMultipleWorkbooksToPDF.Name" xml:space="preserve">
+    <value>保存多个工作簿到一个PDF文档</value>
+  </data>
+  <data name="ControlAdjustingPageBreaks.Name" xml:space="preserve">
+    <value>控制是否调整分页符</value>
+  </data>
+  <data name="ConfigPrintTailRows.Name" xml:space="preserve">
+    <value>设置页面底部重复行</value>
+  </data>
+  <data name="ConfigPrintTailColumns.Name" xml:space="preserve">
+    <value>设置页面右侧重复列</value>
+  </data>
+  <data name="ConfigurePrintTails.Name" xml:space="preserve">
+    <value>打印页脚</value>
+  </data>
+  <data name="CopyPasteOptions.Name" xml:space="preserve">
+    <value>复制粘贴的选项</value>
+  </data>
+  <data name="CopyWorksheet.Name" xml:space="preserve">
+    <value>复制工作表</value>
+  </data>
+  <data name="MoveWorksheet.Name" xml:space="preserve">
+    <value>移动工作表</value>
+  </data>
+  <data name="CutCopyRangeBetweenWorkbooks.Name" xml:space="preserve">
+    <value>多工作簿之间剪切/拷贝区域</value>
+  </data>
+  <data name="ShrinkToFitForWrappedText.Name" xml:space="preserve">
+    <value>折行文本缩小字体填充</value>
+  </data>
+  <data name="PrintSpecificPages.Name" xml:space="preserve">
+    <value>打印指定的页面</value>
+  </data>
+  <data name="KeepTogether.Name" xml:space="preserve">
+    <value>不可分割数据</value>
+  </data>
+  <data name="PrintMultipleWorksheetsToOnePage.Name" xml:space="preserve">
+    <value>将多个工作表打印到一个页面上</value>
+  </data>
+  <data name="ManageHeadersOnDifferentPages.Name" xml:space="preserve">
+    <value>不同页面的重复标题不一样</value>
+  </data>
+  <data name="CopyWorksheetBetweenWorkbooks.Name" xml:space="preserve">
+    <value>在工作薄之间复制工作表</value>
+  </data>
+  <data name="MoveWorksheetBetweenWorkbooks.Name" xml:space="preserve">
+    <value>在工作薄之间移动工作表</value>
+  </data>
+  <data name="FindAndReplace.Descrip" xml:space="preserve">
+    <value>## 查找和替换
+此话题包含以下示例:
+- 在一片区域中查找
+- 在一片区域中替换</value>
+  </data>
+  <data name="FindAndReplace.Name" xml:space="preserve">
+    <value>查找和替换</value>
+  </data>
+  <data name="FindBasicUsage.Name" xml:space="preserve">
+    <value>查找的基本用法</value>
+  </data>
+  <data name="FindDisplayFormat.Name" xml:space="preserve">
+    <value>按格式查找</value>
+  </data>
+  <data name="FindLookAtSearchOrderDirectionMatchCase.Name" xml:space="preserve">
+    <value>使用高级选项查找</value>
+  </data>
+  <data name="FindMatchByte.Name" xml:space="preserve">
+    <value>查找时设置全角半角匹配</value>
+  </data>
+  <data name="FindWithAfter.Name" xml:space="preserve">
+    <value>枚举所有查找到的结果</value>
+  </data>
+  <data name="FindWithLookIn.Name" xml:space="preserve">
+    <value>在不同的层面查找</value>
+  </data>
+  <data name="ReplaceBasicUsage.Name" xml:space="preserve">
+    <value>替换的基本用法</value>
+  </data>
+  <data name="ReplaceCustomWrapSearch.Name" xml:space="preserve">
+    <value>使用循环查找进行替换</value>
+  </data>
+  <data name="ReplaceWithOptions.Name" xml:space="preserve">
+    <value>替换的高级选项</value>
+  </data>
+  <data name="ImportOleObjectsToWorkbookAndExport.Name" xml:space="preserve">
+    <value>导入和导出 OLE 对象</value>
+  </data>
+  <data name="AutoFit.Name" xml:space="preserve">
+    <value>自适应行高和列宽</value>
+  </data>
+  <data name="BasicShapes.Name" xml:space="preserve">
+    <value>基础图形</value>
+  </data>
+  <data name="CustomShape.Name" xml:space="preserve">
+    <value>自定义图形</value>
+  </data>
+  <data name="ExportFlowChart.Name" xml:space="preserve">
+    <value>导出FlowChart</value>
+  </data>
+  <data name="ExportShape.Descrip" xml:space="preserve">
+    <value>## 导出图形
+GrapeCity Documents for Excel 支持导出图形到PDF文件中.
+
+- 导出基本/自定义图形.
+- 导出带文本的图形.
+- 导出各种填充样式的图形
+- 导出组合图形.</value>
+  </data>
+  <data name="ExportShape.Name" xml:space="preserve">
+    <value>导出图形</value>
+  </data>
+  <data name="SavePivotTable.Name" xml:space="preserve">
+    <value>导出透视表</value>
+  </data>
+  <data name="SetBuiltinStyle.Name" xml:space="preserve">
+    <value>设置内建透视表样式</value>
+  </data>
+  <data name="SetCustomPivotStyle.Name" xml:space="preserve">
+    <value>设置自定义透视表样式</value>
+  </data>
+  <data name="SetNumberFormatForField.Name" xml:space="preserve">
+    <value>为透视表区域设置数字格式</value>
+  </data>
+  <data name="SetShapeNotToPrint.Name" xml:space="preserve">
+    <value>设置不导出图形</value>
+  </data>
+  <data name="SetShowTableStyles.Name" xml:space="preserve">
+    <value>设置某些区域样式是否显示</value>
+  </data>
+  <data name="ShapeWithGradientAndPatternFill.Name" xml:space="preserve">
+    <value>各种填充样式</value>
+  </data>
+  <data name="ShapeWithLine.Name" xml:space="preserve">
+    <value>各种边线样式</value>
+  </data>
+  <data name="ShapeWithPictureOrTextureFill.Name" xml:space="preserve">
+    <value>图片与纹理填充</value>
+  </data>
+  <data name="ShapeWithRotation.Name" xml:space="preserve">
+    <value>旋转图形</value>
+  </data>
+  <data name="ShapeWithText.Name" xml:space="preserve">
+    <value>带文本的图形</value>
+  </data>
+  <data name="DrawRangeInsideAPDF.Name" xml:space="preserve">
+    <value>将工作表数据渲染到PDF页面上（基础用法）</value>
+  </data>
+  <data name="ConvertRangeToImage.Name" xml:space="preserve">
+    <value>将区域数据保存成图片</value>
+  </data>
+  <data name="ConvertShapeToImage.Name" xml:space="preserve">
+    <value>将图形保存成图片</value>
+  </data>
+  <data name="ConvertSheetToImage.Name" xml:space="preserve">
+    <value>将工作表保存成图片</value>
+  </data>
+  <data name="SaveSheetBackgroundToPDF.Name" xml:space="preserve">
+    <value>将表格背景图片保存到PDF</value>
+  </data>
+  <data name="SetSecurityOptionsToPDF.Name" xml:space="preserve">
+    <value>设置PDF文档的安全选项</value>
+  </data>
+  <data name="SetDocumentPropertiesToPDF.Name" xml:space="preserve">
+    <value>设置PDF文档的文档设置</value>
+  </data>
+  <data name="ProtectWorkbook.Name" xml:space="preserve">
+    <value>保护工作薄</value>
+  </data>
+  <data name="UnprotectWorkbook.Name" xml:space="preserve">
+    <value>取消保护工作薄</value>
+  </data>
+  <data name="AddUserShapes.Name" xml:space="preserve">
+    <value>在图表中添加用户形状</value>
+  </data>
+  <data name="AddSubtotal.Name" xml:space="preserve">
+    <value>插入分类汇总</value>
+  </data>
+  <data name="AddSubtotalAdvanced.Name" xml:space="preserve">
+    <value>插入分类汇总（使用高级选项）</value>
+  </data>
+  <data name="HideGrandTotalsInPivotTable.Name" xml:space="preserve">
+    <value>总计的可见性</value>
+  </data>
+  <data name="RemoveSubtotal.Name" xml:space="preserve">
+    <value>删除分类汇总</value>
+  </data>
+  <data name="RowAxisLayoutInPivotTable.Name" xml:space="preserve">
+    <value>报表布局</value>
+  </data>
+  <data name="SetPivotFieldNameInPivotTable.Name" xml:space="preserve">
+    <value>重命名透视表字段</value>
+  </data>
+  <data name="ShapeGroup.Name" xml:space="preserve">
+    <value>组合</value>
+  </data>
+  <data name="AddSubtotal.Descrip" xml:space="preserve">
+    <value>使用 IRange.Subtotal 添加分类汇总</value>
+  </data>
+  <data name="AddSubtotalAdvanced.Descrip" xml:space="preserve">
+    <value>使用 IRange.Subtotal 添加分类汇总（带有高级选项）</value>
+  </data>
+  <data name="HideGrandTotalsInPivotTable.Descrip" xml:space="preserve">
+    <value>使用 RowGrand 和 ColumnGrand 设置行和列上总计的可见性</value>
+  </data>
+  <data name="RemoveSubtotal.Descrip" xml:space="preserve">
+    <value>使用 IRange.RemoveSubtotal 删除分类汇总</value>
+  </data>
+  <data name="RowAxisLayoutInPivotTable.Descrip" xml:space="preserve">
+    <value>使用 IPivotTable.SetRowAxisLayout 改变报表布局</value>
+  </data>
+  <data name="SetPivotFieldNameInPivotTable.Descrip" xml:space="preserve">
+    <value>使用 IPivotField.Name 属性重命名报表字段</value>
+  </data>
+  <data name="ShapeGroup.Descrip" xml:space="preserve">
+    <value>使用 IShapeRange.Group 组合图形</value>
+  </data>
+  <data name="SaveSlicer.Descrip" xml:space="preserve">
+    <value>将切片器导出到 pdf</value>
+  </data>
+  <data name="SaveSlicer.Name" xml:space="preserve">
+    <value>导出切片器</value>
+  </data>
+  <data name="AddChartSheet.Name" xml:space="preserve">
+    <value>添加一个图表工作表</value>
+  </data>
+  <data name="AddSunburstChart.Name" xml:space="preserve">
+    <value>添加一个旭日图表</value>
+  </data>
+  <data name="NewCharts.Descrip" xml:space="preserve">
+    <value>## Excel 2016 新的图表
+GcExcel通过调用 **IShapes.AddChart**方法和设置不同的**ChartType**来添加Excel 2016新的图表，GcExcel新支持下面几种类型的图表：
+- 旭日图表
+- 树状图表
+- 漏斗图表
+- 瀑布图表
+- 箱线图表
+- 直方图表
+- 柏拉图表</value>
+  </data>
+  <data name="NewCharts.Name" xml:space="preserve">
+    <value>Excel 2016 新的图表</value>
+  </data>
+  <data name="AddTreeMapChart.Name" xml:space="preserve">
+    <value>添加一个树状图表</value>
+  </data>
+  <data name="AddFunnelChart.Name" xml:space="preserve">
+    <value>添加一个漏斗图表</value>
+  </data>
+  <data name="AddWaterfallChart.Name" xml:space="preserve">
+    <value>添加一个瀑布图表</value>
+  </data>
+  <data name="ConfigAdjustmentPoints.Name" xml:space="preserve">
+    <value>调整点</value>
+  </data>
+  <data name="ConfigureBestFitRowColumn.Name" xml:space="preserve">
+    <value>自适应行高列宽</value>
+  </data>
+  <data name="Tag.Name" xml:space="preserve">
+    <value>标签(表/行/列/单元格)</value>
+  </data>
+  <data name="AddBoxWhiskerChart.Descrip" xml:space="preserve">
+    <value>该示例用来展示如果创建一个箱线图表</value>
+  </data>
+  <data name="AddBoxWhiskerChart.Name" xml:space="preserve">
+    <value>添加一个箱线图表</value>
+  </data>
+  <data name="AddFunnelChart.Descrip" xml:space="preserve">
+    <value>该示例用来展示如果创建一个漏斗图表</value>
+  </data>
+  <data name="AddHistogramChart.Descrip" xml:space="preserve">
+    <value>该示例用来展示如果创建一个直方图表</value>
+  </data>
+  <data name="AddHistogramChart.Name" xml:space="preserve">
+    <value>添加一个直方图表</value>
+  </data>
+  <data name="AddParetoChart.Descrip" xml:space="preserve">
+    <value>该示例用来展示如果创建一个柏拉图表</value>
+  </data>
+  <data name="AddParetoChart.Name" xml:space="preserve">
+    <value>添加一个柏拉图表</value>
+  </data>
+  <data name="AddSunburstChart.Descrip" xml:space="preserve">
+    <value>该示例用来展示如果创建一个旭日图表</value>
+  </data>
+  <data name="AddTreeMapChart.Descrip" xml:space="preserve">
+    <value>该示例用来展示如果创建一个树状图表</value>
+  </data>
+  <data name="AddWaterfallChart.Descrip" xml:space="preserve">
+    <value>该示例用来展示如果创建一个瀑布图表</value>
+  </data>
+  <data name="CreateShapeWithHyperlink.Name" xml:space="preserve">
+    <value>创建带有超链接的形状</value>
+  </data>
+  <data name="ExportChart.Descrip" xml:space="preserve">
+    <value>## 导出图表
+GrapeCity Documents for Excel 支持导出图表到PDF文件中
+- 柱形图
+- 折线图
+- 饼图
+- 条形图
+- 面积图
+- X Y(散点图)
+- 股价图
+- 雷达图
+- 组合图</value>
+  </data>
+  <data name="ExportChart.Name" xml:space="preserve">
+    <value>导出图表</value>
+  </data>
+  <data name="AreaChartPdf.Name" xml:space="preserve">
+    <value>面积图</value>
+  </data>
+  <data name="BarChartPdf.Name" xml:space="preserve">
+    <value>条形图</value>
+  </data>
+  <data name="ChartGalleryPdf.Name" xml:space="preserve">
+    <value>导出 Chart Gallery</value>
+  </data>
+  <data name="ColumnChartPdf.Name" xml:space="preserve">
+    <value>柱形图</value>
+  </data>
+  <data name="ComboChartPdf.Name" xml:space="preserve">
+    <value>组合图</value>
+  </data>
+  <data name="LineChartPdf.Name" xml:space="preserve">
+    <value>折线图</value>
+  </data>
+  <data name="PieChartPdf.Name" xml:space="preserve">
+    <value>饼图</value>
+  </data>
+  <data name="RadarChartPdf.Name" xml:space="preserve">
+    <value>雷达图</value>
+  </data>
+  <data name="StockChartPdf.Name" xml:space="preserve">
+    <value>股价图</value>
+  </data>
+  <data name="XYScatterChartPdf.Name" xml:space="preserve">
+    <value>X Y(散点图)</value>
+  </data>
+  <data name="AddChartSheet.Descrip" xml:space="preserve">
+    <value>该示例用来展示如果创建一个图表工作表。</value>
+  </data>
+  <data name="AddUserShapes.Descrip" xml:space="preserve">
+    <value>在图表中添加图片，形状等。这些插入的图片或者形状称为此图表的用户形状。</value>
+  </data>
+  <data name="ProtectWorkbook.Descrip" xml:space="preserve">
+    <value>使用IWorkbook.Protect函数来保护工作薄。</value>
+  </data>
+  <data name="SaveSheetBackgroundToPDF.Descrip" xml:space="preserve">
+    <value>GcExcel支持将工作表背景图像导出到PDF。</value>
+  </data>
+  <data name="SetDocumentPropertiesToPDF.Descrip" xml:space="preserve">
+    <value>GcExcel支持在保存PDF时设置文档属性。</value>
+  </data>
+  <data name="SetSecurityOptionsToPDF.Descrip" xml:space="preserve">
+    <value>GcExcel支持在保存PDF时设置文档的安全选项。</value>
+  </data>
+  <data name="UnprotectWorkbook.Descrip" xml:space="preserve">
+    <value>使用IWorkbook.Unprotect方法来取消工作薄的保护。</value>
+  </data>
+  <data name="CreateShapeWithHyperlink.Descrip" xml:space="preserve">
+    <value>此示例演示如何向形状添加超链接。</value>
+  </data>
+  <data name="ShapeUngroup.Descrip" xml:space="preserve">
+    <value>使用 IShape.Ungroup 取消组合</value>
+  </data>
+  <data name="ShapeUngroup.Name" xml:space="preserve">
+    <value>取消组合</value>
+  </data>
+  <data name="AddButtonCellType.Descrip" xml:space="preserve">
+    <value>本示例展示如何为单元格设置按钮类型</value>
+  </data>
+  <data name="AddButtonCellType.Name" xml:space="preserve">
+    <value>按钮单元格</value>
+  </data>
+  <data name="AddCheckBoxCellType.Descrip" xml:space="preserve">
+    <value>本示例展示如何为单元格设置复选框类型</value>
+  </data>
+  <data name="AddCheckBoxCellType.Name" xml:space="preserve">
+    <value>复选框单元格</value>
+  </data>
+  <data name="AddComboBoxCellType.Descrip" xml:space="preserve">
+    <value>本示例展示如何为单元格设置普通组合框类型</value>
+  </data>
+  <data name="AddComboBoxCellType.Name" xml:space="preserve">
+    <value>普通组合框单元格</value>
+  </data>
+  <data name="AddHyperlinkCellType.Descrip" xml:space="preserve">
+    <value>本示例展示如何为单元格设置超链接类型</value>
+  </data>
+  <data name="AddHyperlinkCellType.Name" xml:space="preserve">
+    <value>超链接单元格</value>
+  </data>
+  <data name="AddRowColumnCellType.Descrip" xml:space="preserve">
+    <value>本示例展示如何为行列创建单元格类型</value>
+  </data>
+  <data name="AddRowColumnCellType.Name" xml:space="preserve">
+    <value>为 行列设置单元格类型</value>
+  </data>
+  <data name="AddSheetCellType.Descrip" xml:space="preserve">
+    <value>本示例展示如何为整个工作表创建单元格类型</value>
+  </data>
+  <data name="AddSheetCellType.Name" xml:space="preserve">
+    <value>为工作表设置单元格类型</value>
+  </data>
+  <data name="CellType.Descrip" xml:space="preserve">
+    <value>## 单元格类型
+本示例中的程序讲解了如何设置单元格类型，GeExcel支持下面几类单元格类型:
+- 按钮单元格
+- 复选框单元格
+- 普通组合框单元格
+- 超链接单元格</value>
+  </data>
+  <data name="CellType.Name" xml:space="preserve">
+    <value>单元格类型</value>
+  </data>
+  <data name="Dependents.Descrip" xml:space="preserve">
+    <value>本示例展示如何获取从属单元格</value>
+  </data>
+  <data name="Dependents.Name" xml:space="preserve">
+    <value>丛属单元格</value>
+  </data>
+  <data name="Precedents.Descrip" xml:space="preserve">
+    <value>本示例展示如何获取引用单元格</value>
+  </data>
+  <data name="Precedents.Name" xml:space="preserve">
+    <value>引用单元格</value>
+  </data>
+  <data name="Precedentsanddependents.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何获取引用单元格和从属单元格</value>
+    <comment>The examples in this folder demonstrate how to get the precedents or dependents of a cell.</comment>
+  </data>
+  <data name="Precedentsanddependents.Name" xml:space="preserve">
+    <value>引用单元格和从属单元格</value>
+  </data>
+  <data name="GetAllPrecedents.Descrip" xml:space="preserve">
+    <value>通过一个循环获取一个单元格的所有引用单元格（包括直接引用和间接引用）</value>
+  </data>
+  <data name="GetAllPrecedents.Name" xml:space="preserve">
+    <value>获取所有的引用单元格</value>
+  </data>
+  <data name="AreaChartPdf.Descrip" xml:space="preserve">
+    <value>导出面积图到PDF文档</value>
+  </data>
+  <data name="BarChartPdf.Descrip" xml:space="preserve">
+    <value>导出条形图到PDF文档</value>
+  </data>
+  <data name="ChartGalleryPdf.Descrip" xml:space="preserve">
+    <value>导入包含多个图表的xlsx文件，导出PDF文档</value>
+  </data>
+  <data name="ColumnChartPdf.Descrip" xml:space="preserve">
+    <value>导出柱形图到PDF文档</value>
+  </data>
+  <data name="ComboChartPdf.Descrip" xml:space="preserve">
+    <value>导出组合图到PDF文档</value>
+  </data>
+  <data name="ConfigAdjustmentPoints.Descrip" xml:space="preserve">
+    <value>使用IShape.Adjustment来获取/设置形状的调整点</value>
+  </data>
+  <data name="ConfigureBestFitRowColumn.Descrip" xml:space="preserve">
+    <value>设置IPageSetup.BestFitRow/BestFitColumn，使导出的PDF文件为自适应行高列宽</value>
+  </data>
+  <data name="LineChartPdf.Descrip" xml:space="preserve">
+    <value>导出折线图到PDF文档</value>
+  </data>
+  <data name="PieChartPdf.Descrip" xml:space="preserve">
+    <value>导出饼图到PDF文档</value>
+  </data>
+  <data name="RadarChartPdf.Descrip" xml:space="preserve">
+    <value>导出雷达图到PDF文档</value>
+  </data>
+  <data name="StockChartPdf.Descrip" xml:space="preserve">
+    <value>导出股票图到PDF文档</value>
+  </data>
+  <data name="Tag.Descrip" xml:space="preserve">
+    <value>Tag可以提供在行、列、单元格以及工作表上存储用户数据的能力</value>
+  </data>
+  <data name="XYScatterChartPdf.Descrip" xml:space="preserve">
+    <value>导出XY散点图到PDF文档</value>
+  </data>
+  <data name="CellStyle.Name" xml:space="preserve">
+    <value>单元格样式</value>
+  </data>
+  <data name="CustomObject.Name" xml:space="preserve">
+    <value>自定义对象</value>
+  </data>
+  <data name="DataSet.Name" xml:space="preserve">
+    <value>数据集</value>
+  </data>
+  <data name="DataSource.Descrip" xml:space="preserve">
+    <value>##数据源
+模板API可以直接将Excel模板与来自以下对象的数据绑定：
+
+-**DataSet / DataTable：**可以处理任何类型的数据库中的数据源
+-**自定义对象：**这些是用户定义的对象。 可以处理来自Json String / File / XML等的数据源。也就是说，任何可以序列化为自定义对象的数据源。
+-**变量：**代码中用户定义的变量。
+-**数组/列表：**代码中用户定义的数组/列表。</value>
+  </data>
+  <data name="DataSource.Name" xml:space="preserve">
+    <value>数据源</value>
+  </data>
+  <data name="DataTable.Name" xml:space="preserve">
+    <value>数据表</value>
+  </data>
+  <data name="DataTemplate.Name" xml:space="preserve">
+    <value>数据模板</value>
+  </data>
+  <data name="ExpressionTemplate.Name" xml:space="preserve">
+    <value>表达式模板</value>
+  </data>
+  <data name="FinancialDashboard.Name" xml:space="preserve">
+    <value>财务报表</value>
+  </data>
+  <data name="FunctionTemplate.Name" xml:space="preserve">
+    <value>函数模板</value>
+  </data>
+  <data name="InlineTemplate.Name" xml:space="preserve">
+    <value>内联模板</value>
+  </data>
+  <data name="JsonFile.Name" xml:space="preserve">
+    <value>Json文件</value>
+  </data>
+  <data name="MergeCell.Name" xml:space="preserve">
+    <value>合并单元格</value>
+  </data>
+  <data name="Properties.Descrip" xml:space="preserve">
+    <value>##属性
+GcExcel使用括号**（**和**）**来组织所有模板属性。 属性以键值格式设置。 多个属性使用逗号分隔。
+
+属性名称和值不区分大小写。
+
+例如：（context = A1）等于（Context = a1）。
+
+属性名称和预定义值支持全名和简写。
+
+例如：（E = H）等于（expansion = horizontal）。
+
+该模板提供了许多属性：
+
+-**C(context)：**单元格上下文
+-**E(expansion)：**扩展类型
+-**G(group)：**群组类型
+-**R(range)：**在指定范围内为模板设置后备上下文
+-**S(sort)：**排序类型
+-**PB(pagebreak)：**在报告文件中添加分页符</value>
+  </data>
+  <data name="Properties.Name" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="PurchaseOrder.Name" xml:space="preserve">
+    <value>采购订单</value>
+  </data>
+  <data name="Sales.Name" xml:space="preserve">
+    <value>销售报告</value>
+  </data>
+  <data name="SetContext.Name" xml:space="preserve">
+    <value>设置上下文</value>
+  </data>
+  <data name="SetExpansionType.Name" xml:space="preserve">
+    <value>设置扩展类型</value>
+  </data>
+  <data name="SetGroupType.Name" xml:space="preserve">
+    <value>设置分组类型</value>
+  </data>
+  <data name="SetPagebreak.Name" xml:space="preserve">
+    <value>设置分页</value>
+  </data>
+  <data name="SetRange.Name" xml:space="preserve">
+    <value>设置范围</value>
+  </data>
+  <data name="SetSortType.Name" xml:space="preserve">
+    <value>设置排序类型</value>
+  </data>
+  <data name="SheetTemplate.Name" xml:space="preserve">
+    <value>工作表模板</value>
+  </data>
+  <data name="ShippingAndDeliveryOrder.Name" xml:space="preserve">
+    <value>运输和交货单</value>
+  </data>
+  <data name="Style.Descrip" xml:space="preserve">
+    <value>##样式
+模板支持**单元格样式**和应用于单元格的**合并样式**。 数据将根据单元格上应用的样式增长。</value>
+  </data>
+  <data name="Style.Name" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="TablixReport.Name" xml:space="preserve">
+    <value>Tablix报告</value>
+  </data>
+  <data name="TemplateCell.Descrip" xml:space="preserve">
+    <value>##模板单元格
+GcExcel使用**“ {{” **和**“}}” **作为模板标记。
+
+在这些标记之间，用户可以使用数据字段，函数字段，表达式字段和许多属性。
+
+模板支持各种模板单元格：
+
+-**数据模板：**代表数据字段的模板
+-**函数模板：**代表函数的模板
+-**表达式模板：**表示表达式的模板
+-**内联模板：**用于文本的内联模板
+-**工作表模板：**工作表名称中的模板</value>
+  </data>
+  <data name="TemplateCell.Name" xml:space="preserve">
+    <value>模板单元格</value>
+  </data>
+  <data name="Template.Descrip" xml:space="preserve">
+    <value>##模板
+GcExcel（GrapeCity Documents for Excel）支持模板功能，它具有全面的语法和API，可将Excel文档绑定到数据并生成具有高级布局的Excel报告。
+
+借助灵活的语法以及用于数据扩展和公式的简便表示法，新的模板语法和API可以轻松定义Excel模板，并生成支持多种用例的Excel报告。
+
+在本节中，您将学习如何使用 **GcExcel模板** 的功能。而且，有一些用户示例可让您全面了解模板和报告。
+
+单击 **“运行”** 按钮在服务器上执行以下操作：
+-创建一个空的工作簿
+-执行代码窗口中的所有代码
+-保存到Excel文件
+
+然后，您可以通过下载Excel文件来查看结果。
+
+**注意**：在此演示中，Spread.Sheets处于只读模式。您可以下载对应的Excel文件并进行交互。</value>
+  </data>
+  <data name="Templates.Name" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="TemplateSamples.Descrip" xml:space="preserve">
+    <value>##模板示例
+用户示例，让您全面了解**GcExcel模板**和生成的报告。</value>
+  </data>
+  <data name="TemplateSamples.Name" xml:space="preserve">
+    <value>模板样例</value>
+  </data>
+  <data name="Travel.Name" xml:space="preserve">
+    <value>旅行报告</value>
+  </data>
+  <data name="Variable.Name" xml:space="preserve">
+    <value>变量</value>
+  </data>
+  <data name="CellStyle.Descrip" xml:space="preserve">
+    <value>用户可以在模板中直接使用Excel的单元格样式。
+
+随着数据的增长，样式将应用于单元格。</value>
+  </data>
+  <data name="CustomObject.Descrip" xml:space="preserve">
+    <value>用户可以将 **自定义对象** 用作GcExcel模板的数据源，并将其字段和属性作为模板中的数据字段。</value>
+  </data>
+  <data name="DataSet.Descrip" xml:space="preserve">
+    <value>用户可以将.Net **DataSet**用作GcExcel模板的数据源。</value>
+  </data>
+  <data name="DataTable.Descrip" xml:space="preserve">
+    <value>用户可以使用.Net **DataTable**作为GcExcel模板的数据源。</value>
+  </data>
+  <data name="DataTemplate.Descrip" xml:space="preserve">
+    <value>表示数据源中的数据字段的模板。</value>
+  </data>
+  <data name="ExpressionTemplate.Descrip" xml:space="preserve">
+    <value>表达式形式的模板</value>
+  </data>
+  <data name="FunctionTemplate.Descrip" xml:space="preserve">
+    <value>函数形式的模板</value>
+  </data>
+  <data name="InlineTemplate.Descrip" xml:space="preserve">
+    <value>用于文本中的内联模板。</value>
+  </data>
+  <data name="JsonFile.Descrip" xml:space="preserve">
+    <value>用户可以使用json文件作为GcExcel模板的数据源。 在此之前，用户应从文件中读取数据并将其序列化为自定义对象。
+实际上，用户可以使用可以序列化到自定义对象的任何数据作为数据源。</value>
+  </data>
+  <data name="MergeCell.Descrip" xml:space="preserve">
+    <value>用户可以在模板中使用合并单元格。
+
+GcExcel将尝试理解模板中合并单元格的含义，并生成预期的报告。</value>
+  </data>
+  <data name="SetContext.Descrip" xml:space="preserve">
+    <value>用户可以使用 **C(context)** 属性来显式设置模板的上下文。</value>
+  </data>
+  <data name="SetExpansionType.Descrip" xml:space="preserve">
+    <value>用户可以使用 **E(expansion)** 属性设置模板的扩展类型。</value>
+  </data>
+  <data name="SetGroupType.Descrip" xml:space="preserve">
+    <value>用户可以使用 **G(group)** 属性设置模板的组类型。</value>
+  </data>
+  <data name="SetPagebreak.Descrip" xml:space="preserve">
+    <value>用户可以在模板上使用 **PB(pagebreak)** 属性为报表动态插入分页符。</value>
+  </data>
+  <data name="SetRange.Descrip" xml:space="preserve">
+    <value>用户可以使用 **R(range)** 属性设置当前模板的范围。
+
+在指定范围内，如果模板单元格既没有默认上下文也没有显式上下文，它将以当前模板为上下文。</value>
+  </data>
+  <data name="SetSortType.Descrip" xml:space="preserve">
+    <value>用户可以使用 **S(sort)** 属性来设置模板的排序类型。</value>
+  </data>
+  <data name="SheetTemplate.Descrip" xml:space="preserve">
+    <value>工作表名称中的模板。</value>
+  </data>
+  <data name="Variable.Descrip" xml:space="preserve">
+    <value>用户可以使用代码中定义的**变量**作为GcExcel模板的数据源。</value>
+  </data>
+  <data name="Showcase.Name" xml:space="preserve">
+    <value>功能集合</value>
+  </data>
+  <data name="DepartmentBudget.Name" xml:space="preserve">
+    <value>部门预算</value>
   </data>
 </root>

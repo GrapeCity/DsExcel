@@ -3,9 +3,10 @@
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             'Change the path to real export path when save.
-            Dim options As New XlsxSaveOptions
-            options.Password = "123456"
-            workbook.Save(CurrentDirectory & "dest.xlsx", options)
+            Dim options As New XlsxSaveOptions With {
+                .Password = "123456"
+            }
+            workbook.Save(IO.Path.Combine(CurrentDirectory, "dest.xlsx"), options)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

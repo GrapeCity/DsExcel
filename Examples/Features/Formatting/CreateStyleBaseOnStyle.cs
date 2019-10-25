@@ -21,7 +21,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formatting
             worksheet.Range["B1"].Style = workbook.Styles["MyGood"];
             worksheet.Range["B1"].Value = "MyGood";
         }
-
-        public override bool IsNew => true;
     }
 }

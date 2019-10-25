@@ -9,10 +9,12 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Change the path to the real file path when open.
-            XlsxOpenOptions options = new XlsxOpenOptions();
-            options.Password = "123456";
+            XlsxOpenOptions options = new XlsxOpenOptions
+            {
+                Password = "123456"
+            };
 
-            workbook.Open(this.CurrentDirectory + "source.xlsx", options);
+            workbook.Open(System.IO.Path.Combine(this.CurrentDirectory, "source.xlsx"), options);
 
         }
 

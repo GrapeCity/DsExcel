@@ -25,10 +25,10 @@
             worksheet.Range!F8.Interior.ThemeColor = ThemeColor.Accent3
             worksheet.Range!F9.Interior.ThemeColor = ThemeColor.Accent4
 
-            worksheet.Range("F10").Interior.ThemeColor = ThemeColor.Accent5
-            worksheet.Range("F11").Interior.ThemeColor = ThemeColor.Accent6
-            worksheet.Range("F12").Interior.ThemeColor = ThemeColor.Hyperlink
-            worksheet.Range("F13").Interior.ThemeColor = ThemeColor.FollowedHyperlink
+            worksheet.Range!F10.Interior.ThemeColor = ThemeColor.Accent5
+            worksheet.Range!F11.Interior.ThemeColor = ThemeColor.Accent6
+            worksheet.Range!F12.Interior.ThemeColor = ThemeColor.Hyperlink
+            worksheet.Range!F13.Interior.ThemeColor = ThemeColor.FollowedHyperlink
 
             worksheet.Range("B:F").ColumnWidth = 15
         End Sub

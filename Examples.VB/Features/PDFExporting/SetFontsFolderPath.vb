@@ -13,13 +13,13 @@ Namespace Features.PDFExporting
             sheet.Range!A1.Interior.Color = Color.Green
 
             'specify font path.
-            GrapeCity.Documents.Excel.Workbook.FontsFolderPath = "D:\Fonts"
+            Excel.Workbook.FontsFolderPath = "D:\Fonts"
 
             'get the used fonts list in workbook, the list are:"Wide Latin", "Calibri"
             Dim fonts = workbook.GetUsedFonts()
 
             'change the path to real export path when save.
-            sheet.Save(CurrentDirectory & "dest.pdf", SaveFileFormat.Pdf)
+            sheet.Save(IO.Path.Combine(CurrentDirectory, "dest.pdf"), SaveFileFormat.Pdf)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

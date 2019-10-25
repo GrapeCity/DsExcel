@@ -469,7 +469,7 @@
     <value>Set solid fill</value>
   </data>
   <data name="TextOrientation.Name" xml:space="preserve">
-    <value>Set text orientation</value>
+    <value>Set text reading order</value>
   </data>
   <data name="Alignment.Name" xml:space="preserve">
     <value>Alignment</value>
@@ -649,7 +649,7 @@
     <value>Configure axis title style</value>
   </data>
   <data name="ConfigCategoryAxisUnits.Name" xml:space="preserve">
-    <value>Set data axis units</value>
+    <value>Set date axis units</value>
   </data>
   <data name="ConfigDisplayUnitLabel.Name" xml:space="preserve">
     <value>Configure display unit label style</value>
@@ -808,13 +808,14 @@ Examples in the Axis folder demonstrate how to specify axis-related settings suc
 -- Returns an instance of **IShape** 
 -- Use the **Chart** property to access the newly added chart
 - Add data series with the **IChart.SeriesCollection.Add** method
-- Cutomize chart titles with the **IChart.ChartTitle** property
-- Cutomize chart legends with the **IChart.Legend** property
+- Customize chart titles with the **IChart.ChartTitle** property
+- Customize chart legends with the **IChart.Legend** property
 - Access and customize each data series through the **ISeries** interface
 - Customize each data point in a data series using the **IPoint** interface
 - Add, remove, or customize each data label in a series using the **IDataLabel** interface
 - Access and customize a group of series through the **IChartGroup** interface
 - Access and customize value axes, category axes, and series axes using the **IAxis** interface
+- Add user shapes to a chart using the **IChart.Shapes.AddXXX** method
 
 Over and above the basic usage of each chart feature, you can change the **ISeries.ChartType** to create combination charts. You can even specify whether to plot a series on the primary or secondary axis with the **ISeries.AxisGroup** property.
 
@@ -1080,7 +1081,7 @@ The Protection examples demonstrate how to apply security settings to a range, f
   </data>
   <data name="Hyperlinks.Descrip" xml:space="preserve">
     <value>## Hyperlinks
-Apply hyperlinks to a range using the **Add** method of a worksheet or range's **Hyperlinks** instance. GrapeCity Documents for Excel supports the following types of hyperlink:
+Apply hyperlinks to a range using the **IWorksheet.Hyperlinks.Add** or **IRange.Hyperlinks.Add** method. Apply hyperlinks to a shape using the **IWorksheet.Hyperlinks.Add** method. GrapeCity Documents for Excel supports the following types of hyperlink:
 - Link to a web page
 - Link to a specific range in the current document
 - Link to an external file
@@ -1137,7 +1138,7 @@ Slicers are visual filters that you can use to filter a table or pivot table.
 
 Use the **Add** method of a workbook's **SlicerCaches** collection to create a slicer cache. It returns an instance of a slicer cache. 
 
-Use the **Add** method of the slicer cashe's **Slicers** collection to create a slicer.
+Use the **Add** method of the slicer cache's **Slicers** collection to create a slicer.
 
 It supports both built-in and custom slicer styles.</value>
   </data>
@@ -1210,7 +1211,9 @@ The examples in this folder demonstrate the following cases:
 - Import an Excel file with a password to a workbook
 - Export a workbook to an Excel file
 - Export a workbook to an Excel file with a password
-- Import or export a workbook using ToJson and FromJson</value>
+- Import or export a workbook using ToJson and FromJson
+- Protect a workbook
+- Unprotect a workbook</value>
   </data>
   <data name="Worksheets.Descrip" xml:space="preserve">
     <value>## Worksheets
@@ -1220,7 +1223,8 @@ The examples in this folder demonstrate the following cases:
 - Protect a worksheet
 - Unprotect a worksheet
 - Activate a worksheet
-- Apply settings to a worksheet</value>
+- Apply settings to a worksheet
+- Add a chart sheet</value>
   </data>
   <data name="ExcelReporting.Descrip" xml:space="preserve">
     <value>## Excel Reporting
@@ -1364,7 +1368,7 @@ These examples demonstrate how to display chart name  and how to specify setting
   <data name="ChartWalls.Descrip" xml:space="preserve">
     <value>**Chart walls** include **back wall** and **side wall**.
 
-These examaple demonstrete how to specity settings for chart walls, include:
+These examples demonstrate how to specify settings for chart walls, include:
 - Configure walls style together
 - Configure back wall and side wall separately</value>
   </data>
@@ -1666,9 +1670,6 @@ Then you can view the pdf in your browser.</value>
   <data name="SavePictureToPDF.Name" xml:space="preserve">
     <value>Export picture</value>
   </data>
-  <data name="String1" xml:space="preserve">
-    <value />
-  </data>
   <data name="NumberFormating.Name" xml:space="preserve">
     <value>Export number formats</value>
   </data>
@@ -1715,7 +1716,7 @@ GrapeCity Documents for Excel allows users to paginate each worksheet using the 
 You can customize the page size, print area, print title rows, print title columns; specify horizontal page breaks, vertical page breaks, the maximum number of pages for horizontal and vertical pagination etc. along with zoom and scale factors as per your preferences while exporting a spreadsheet to a PDF file.</value>
   </data>
   <data name="PdfPageSetup.Name" xml:space="preserve">
-    <value>Page setup</value>
+    <value>Page Setup</value>
   </data>
   <data name="ConvertExcelToPDF.Name" xml:space="preserve">
     <value>Convert Excel file to PDF</value>
@@ -1816,5 +1817,1785 @@ Examples in this folder demonstrate how to:
   </data>
   <data name="WebsiteFlowChart.Name" xml:space="preserve">
     <value>Website flow chart</value>
+  </data>
+  <data name="PDFToExcel.Name" xml:space="preserve">
+    <value>Extract text from PDF</value>
+  </data>
+  <data name="PrintManager.Descrip" xml:space="preserve">
+    <value>## PrintManager
+GcExcel introduces PrintManager class to control pagination and spreadsheet content while exporting the spreadsheets to PDF. The feature can help control printing of specific parts of Excel to PDF documents, providing the users specific API that gets the pagination result in the PageInfo object - a list of pages generated from the excel file through PrintManager.Paginate method, and then perform operations like :
+
+- Add/delete/modify pages.
+- Change page number, page count, page content and page settings.</value>
+  </data>
+  <data name="PrintManager.Name" xml:space="preserve">
+    <value>PrintManager</value>
+  </data>
+  <data name="CustomPageInfos.Name" xml:space="preserve">
+    <value>Custom pageInfos</value>
+  </data>
+  <data name="RenderExcelRangesInsideAPDF.Name" xml:space="preserve">
+    <value>Render sheet ranges inside a pdf(Advanced usage)</value>
+  </data>
+  <data name="SaveMultipleWorkbooksToPDF.Name" xml:space="preserve">
+    <value>Save multiple workbooks to one pdf</value>
+  </data>
+  <data name="CopyPasteOptions.Name" xml:space="preserve">
+    <value>Paste options of copy</value>
+  </data>
+  <data name="ControlAdjustingPageBreaks.Name" xml:space="preserve">
+    <value>Control adjustment of page breaks</value>
+  </data>
+  <data name="ConfigPrintTailRows.Name" xml:space="preserve">
+    <value>Configure rows to repeat at bottom</value>
+  </data>
+  <data name="ConfigPrintTailColumns.Name" xml:space="preserve">
+    <value>Configure columns to repeat at right</value>
+  </data>
+  <data name="ExportShape.Descrip" xml:space="preserve">
+    <value>## Export shape
+GrapeCity Documents for Excel supports exporting shapes to PDF file.
+
+- Export basic/custom shapes.
+- Export shapes with text.
+- Export shapes with different fill.
+- Export grouped shapes.</value>
+  </data>
+  <data name="ExportShape.Name" xml:space="preserve">
+    <value>Export Shape</value>
+  </data>
+  <data name="BasicShapes.Name" xml:space="preserve">
+    <value>Basic shapes</value>
+  </data>
+  <data name="CustomShape.Name" xml:space="preserve">
+    <value>Custom shapes</value>
+  </data>
+  <data name="ExportFlowChart.Name" xml:space="preserve">
+    <value>FlowChart</value>
+  </data>
+  <data name="ShapeWithText.Name" xml:space="preserve">
+    <value>Shape with text</value>
+  </data>
+  <data name="SetShapeNotToPrint.Name" xml:space="preserve">
+    <value>Do not print shapes</value>
+  </data>
+  <data name="ConfigurePrintTails.Name" xml:space="preserve">
+    <value>Print tails</value>
+  </data>
+  <data name="CopyWorksheet.Name" xml:space="preserve">
+    <value>Copy worksheet</value>
+  </data>
+  <data name="MoveWorksheet.Name" xml:space="preserve">
+    <value>Move worksheet</value>
+  </data>
+  <data name="CutCopyRangeBetweenWorkbooks.Name" xml:space="preserve">
+    <value>Cut or copy range between workbooks</value>
+  </data>
+  <data name="ShrinkToFitForWrappedText.Name" xml:space="preserve">
+    <value>Shrink to fit for wrapped text</value>
+  </data>
+  <data name="ShapeWithPictureOrTextureFill.Name" xml:space="preserve">
+    <value>Shape with picture/texture fill</value>
+  </data>
+  <data name="KeepTogether.Name" xml:space="preserve">
+    <value>Keep together certain data</value>
+  </data>
+  <data name="PrintMultipleWorksheetsToOnePage.Name" xml:space="preserve">
+    <value>Print multiple worksheets to one page</value>
+  </data>
+  <data name="ManageHeadersOnDifferentPages.Name" xml:space="preserve">
+    <value>Repeat different headers in different pages</value>
+  </data>
+  <data name="CopyWorksheetBetweenWorkbooks.Name" xml:space="preserve">
+    <value>Copy worksheet between workbooks</value>
+  </data>
+  <data name="MoveWorksheetBetweenWorkbooks.Name" xml:space="preserve">
+    <value>Move worksheet between workbooks</value>
+  </data>
+  <data name="ShapeWithGradientAndPatternFill.Name" xml:space="preserve">
+    <value>Shape with different fills</value>
+  </data>
+  <data name="ShapeWithRotation.Name" xml:space="preserve">
+    <value>Shape with rotation</value>
+  </data>
+  <data name="ShapeWithLine.Name" xml:space="preserve">
+    <value>Shape with line format</value>
+  </data>
+  <data name="AutoFit.Name" xml:space="preserve">
+    <value>Auto fit column width and row height</value>
+  </data>
+  <data name="SavePivotTable.Name" xml:space="preserve">
+    <value>Export pivot table</value>
+  </data>
+  <data name="SetNumberFormatForField.Name" xml:space="preserve">
+    <value>Set number format for Fields</value>
+  </data>
+  <data name="PrintSpecificPages.Name" xml:space="preserve">
+    <value>Print specific pages</value>
+  </data>
+  <data name="FindAndReplace.Descrip" xml:space="preserve">
+    <value>## Find and Replace
+The examples in this folder demonstrate the following cases:
+- Find in a Range
+- Replace in a Range</value>
+  </data>
+  <data name="FindAndReplace.Name" xml:space="preserve">
+    <value>Find and Replace</value>
+  </data>
+  <data name="FindBasicUsage.Name" xml:space="preserve">
+    <value>Find (basic usage)</value>
+  </data>
+  <data name="FindDisplayFormat.Name" xml:space="preserve">
+    <value>Find (with cell format)</value>
+  </data>
+  <data name="FindLookAtSearchOrderDirectionMatchCase.Name" xml:space="preserve">
+    <value>Find (with options)</value>
+  </data>
+  <data name="FindMatchByte.Name" xml:space="preserve">
+    <value>Find (match byte)</value>
+  </data>
+  <data name="FindWithAfter.Name" xml:space="preserve">
+    <value>Find (enumerate all occurrences)</value>
+  </data>
+  <data name="FindWithLookIn.Name" xml:space="preserve">
+    <value>Find (look in different places)</value>
+  </data>
+  <data name="ReplaceBasicUsage.Name" xml:space="preserve">
+    <value>Replace (basic usage)</value>
+  </data>
+  <data name="ReplaceCustomWrapSearch.Name" xml:space="preserve">
+    <value>Replace (search in loop)</value>
+  </data>
+  <data name="ReplaceWithOptions.Name" xml:space="preserve">
+    <value>Replace (with options)</value>
+  </data>
+  <data name="ImportOleObjectsToWorkbookAndExport.Name" xml:space="preserve">
+    <value>Import and export OLE objects</value>
+  </data>
+  <data name="SetCustomPivotStyle.Name" xml:space="preserve">
+    <value>Set custom pivot style</value>
+  </data>
+  <data name="SetShowTableStyles.Name" xml:space="preserve">
+    <value>Set if some style would be showed</value>
+  </data>
+  <data name="SetBuiltinStyle.Name" xml:space="preserve">
+    <value>Set built-in pivot style</value>
+  </data>
+  <data name="DrawRangeInsideAPDF.Name" xml:space="preserve">
+    <value>Render sheet ranges inside a pdf(Basic usage)</value>
+  </data>
+  <data name="ConvertRangeToImage.Name" xml:space="preserve">
+    <value>Convert range to image</value>
+  </data>
+  <data name="ConvertShapeToImage.Name" xml:space="preserve">
+    <value>Convert shape to image</value>
+  </data>
+  <data name="ConvertSheetToImage.Name" xml:space="preserve">
+    <value>Convert sheet to image</value>
+  </data>
+  <data name="AccessCellsRowsColumns.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to access the Cells/Rows/Columns/EntireRow/EntireColumn object in a sheet range.</value>
+  </data>
+  <data name="AccessEachAreaOfRange.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to acess each area in a range when the range contains multiple areas.</value>
+  </data>
+  <data name="AccessRange.Descrip" xml:space="preserve">
+    <value>Range refers to an array of cells defined in a spreadsheet. GcExcel allows users to define a range and then access the rows and columns within the range to perform certain tasks like formatting of cells, merging of cells, insertion or deletion of cells along with other useful operations.</value>
+  </data>
+  <data name="CellInfo.Descrip" xml:space="preserve">
+    <value>CellInfo class can help users to convert a cell address to its row/column coordinates, column name to index, and row name to index.</value>
+  </data>
+  <data name="CopyPasteOptions.Descrip" xml:space="preserve">
+    <value>Users can choose from several paste options while copying the data from the cell range. Users can also combine the two different paste options.</value>
+  </data>
+  <data name="CutCopyRange.Descrip" xml:space="preserve">
+    <value>GcExcel .NET provides users with the ability to cut or copy a cell or a range of cells from a specific area and paste it into another area within the same worksheet or in other worksheets. Also, users can choose from multiple paste options and also combine different paste options while copying the data from the cell range.</value>
+  </data>
+  <data name="CutCopyRangeBetweenWorkbooks.Descrip" xml:space="preserve">
+    <value>Besides cut or copy range within a workbook, GcExcel also has the ability to cut or copy a range between different workbooks.</value>
+  </data>
+  <data name="GetFeatureRelatedUsedRange.Descrip" xml:space="preserve">
+    <value>Customer can get a used range specific with related features, such as Data, DataValidation, Hyperlink, Sparkline and so on. More details can be referred by UsedRangeType enum.</value>
+  </data>
+  <data name="GetRangeRowCountColumnCount.Descript" xml:space="preserve">
+    <value>Customer can get the count cells in a specific range by using IRange.Count or IRange.Cells.Count, can get the count of rows in a specific range by using IRange.Rows.Count, and get the count of columns in a specific range by using IRange.Columns.Count</value>
+  </data>
+  <data name="GetWorksheetUsedRange.Descrip" xml:space="preserve">
+    <value>A used range includes any cell that has ever been used. For example, cell A1 contains a value, cell A2 has a sparkline or hyperlink, then the cell will be treated as used range.</value>
+  </data>
+  <data name="HAlignVAlign.Descrip" xml:space="preserve">
+    <value>You can set different values of horizontal and vertical alignments for the content in a cell of range.</value>
+  </data>
+  <data name="HiddenRowColumn.Descrip" xml:space="preserve">
+    <value>You can choose whether to hide or show rows and columns in a worksheet by using the Hidden property of the IRange interface.</value>
+  </data>
+  <data name="InsertCellsDeleteCells.Descrip" xml:space="preserve">
+    <value>GcExcel enables you to insert and delete a cell or a range of cells in order to help customization of worksheets as per your requirements.</value>
+  </data>
+  <data name="InsertDeleteRowsColumns.Descrip" xml:space="preserve">
+    <value>GcExcel provides you with the ability to insert or delete rows and columns in a worksheet.</value>
+  </data>
+  <data name="MergeCells.Descrip" xml:space="preserve">
+    <value>GcExcel allow you to merge several cells into a single cell using Merge method of IRange. When a cell range is merged, the data of top left cell stays in the final merged cell, and the data of other cells in the given range is lost.</value>
+  </data>
+  <data name="RotateCellContents.Descrip" xml:space="preserve">
+    <value>You can rotate the content of a cell by setting IRange.Orientation property.</value>
+  </data>
+  <data name="SetRangeValue.Descrip" xml:space="preserve">
+    <value>GcExcel allows users to specify custom values for the cell range by using the properties and methods of the IRange interface.</value>
+  </data>
+  <data name="SetRowHeightColumnWidth.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set height(in point) for rows and set width(number of single digital character width) for columns.</value>
+  </data>
+  <data name="ShrinkToFit.Descrip" xml:space="preserve">
+    <value>You can make the text of a cell shrink to fit in the available column with by setting IRange.ShrinkToFit to true.</value>
+  </data>
+  <data name="TextOrientation.Descrip" xml:space="preserve">
+    <value>You can set the reading order of text in a cell.</value>
+  </data>
+  <data name="AccessTableRanges.Descrip" xml:space="preserve">
+    <value>You can get the range of different table parts conveniently by using ITable.HeaderRange, ITable.DataRange and ITable.TotalsRange in GcExcel.</value>
+  </data>
+  <data name="AddBordersToCell.Descrip" xml:space="preserve">
+    <value>You can set different kinds of border style and color to a cell.</value>
+  </data>
+  <data name="AddCustomTableStyle.Descrip" xml:space="preserve">
+    <value>In GcExcel .NET, you can create custom table style elements and apply them to a table.</value>
+  </data>
+  <data name="AddingBordersToRange.Descrip" xml:space="preserve">
+    <value>You can set different kinds of border style and color to a range.</value>
+  </data>
+  <data name="ApplyStyle.Descrip" xml:space="preserve">
+    <value>You can get a built-in named style from IWorksheet.Styles collection then apply the style to a cell or range.</value>
+  </data>
+  <data name="ApplyTableStyle.Descrip" xml:space="preserve">
+    <value>You can format a table using any of the predefined table styles provided by GcExcel .NET.</value>
+  </data>
+  <data name="ChangeWorksheetFilterRange.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to change the filtering range in a worksheet.</value>
+  </data>
+  <data name="ClearFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to clear filtering in a worksheet.</value>
+  </data>
+  <data name="CreateAverageRule.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create an average rule on a range.</value>
+  </data>
+  <data name="CreateCellValueRule.Descrip" xml:space="preserve">
+    <value>The cell value rule compares values entered in the cells with the condition specified in the conditional formatting rule. This sample demonstrates how to add a cell value rule.</value>
+  </data>
+  <data name="CreateCustomStyle.Descrip" xml:space="preserve">
+    <value>You can create a named style, configure it as per your preferences and then apply it to a cell or range.</value>
+  </data>
+  <data name="CreateCustomValidation.Descip" xml:space="preserve">
+    <value>You can use the Add method of the IValidation interface to apply data validation to individual cells or a range of cells in a spreadsheet. A single cell can have only one validation rule and if you try to apply validation on a cell that already possesses a validation rule, it will throw an exception. You can add a custom validation rule to validate data in a worksheet by applying custom validation.</value>
+  </data>
+  <data name="CreateDatabBarRule.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a data bar rule on a range.</value>
+  </data>
+  <data name="CreateDateValidation.Descrip" xml:space="preserve">
+    <value>You can validate data entered in date format in cells or a range of cells by applying the date validation in a worksheet.</value>
+  </data>
+  <data name="CreateDecimalValidation.Descrip" xml:space="preserve">
+    <value>You can validate your data and ensure users add only decimal numbers in cells or a range of cells by applying the decimal validation in a worksheet.</value>
+  </data>
+  <data name="CreateExpressionRule.Descrip" xml:space="preserve">
+    <value>The expression rule in conditional formatting is used to set the expression rule's formula. This rule can be added using the properties and methods of the IFormatCondition interface.</value>
+  </data>
+  <data name="CreateIconSetRule.Descrip" xml:space="preserve">
+    <value>The icon sets rule in conditional formatting displays the icons on the basis of values entered in the cells. Each value represents a distinct icon that appears in a cell if it matches the icon sets rule applied on it. This rule can be added using the properties and methods of the IIconSetCondition interface.</value>
+  </data>
+  <data name="CreateListValidation.Descrip" xml:space="preserve">
+    <value>You can also validate lists inserted in cells or a range of cells by applying the list validation in your worksheet .</value>
+  </data>
+  <data name="CreateMultiRuleForRange.Descrip" xml:space="preserve">
+    <value>You can apply multilple conditional formatting to one range, each conditional formatting will take effect by the order of their priorities, you can use StopIfTrue to stop applying subsequent condional formatting.</value>
+  </data>
+  <data name="CreateStyleBasedOn.Descrip" xml:space="preserve">
+    <value>With GcExcel.NET, you don't always need to create a custom named style right from the scratch. Instead, you can modify an existing style (via getting the existing style from the Styles collection) as per your specific preferences and save the new style as another workbook style that can be used as and when required.</value>
+  </data>
+  <data name="CreateTable.Descrip" xml:space="preserve">
+    <value>In GcExcel .NET, you can create tables in spreadsheets using the Add method of the ITables interface, or simply transform a cell range into a table by specifying the existing data lying in a worksheet.</value>
+  </data>
+  <data name="CreateTextLength.Descrip" xml:space="preserve">
+    <value>You can validate the length of the text entered in cells or a range of cells by applying the text length validation in a worksheet.</value>
+  </data>
+  <data name="CreateThreeColorScaleRule.Descrip" xml:space="preserve">
+    <value>The color scale rule uses a sliding color scale to format cells or a range of cells. For instance, if numeric cell value 1 is represented with color yellow and 50 with green, then 25 would be light green. This rule can be added using the properties and methods of the IColorScale interface.</value>
+  </data>
+  <data name="CreateTimeValidation.Descrip" xml:space="preserve">
+    <value>You can validate the time entered in cells or a range of cells by applying the time validation in a worksheet.</value>
+  </data>
+  <data name="CreateTopBottomRule.Descrip" xml:space="preserve">
+    <value>The top bottom rule checks whether the values in the top or bottom of a cell range match with the required values in the cell. In case the values don't match, the data is considered as invalid. This rule can be added using the properties and methods of the ITop10 interface.</value>
+  </data>
+  <data name="CreateTwoColorScaleRule.Descrip" xml:space="preserve">
+    <value>The color scale rule uses a sliding color scale to format cells or a range of cells. For instance, if numeric cell value 1 is represented with color yellow and 50 with green, then 25 would be light green. This rule can be added using the properties and methods of the IColorScale interface.</value>
+  </data>
+  <data name="CreateUniqueRule.Descrip" xml:space="preserve">
+    <value>The unique rule in conditional formatting is applied to check whether the value entered in a cell is a unique value in that particular range. This is possible only when the duplication option is set to false. To check for the duplicate values, the duplicate rule is applied separately.</value>
+  </data>
+  <data name="CreateWholeNumberValidation.Descrip" xml:space="preserve">
+    <value>You can validate your data and ensure users add only whole numbers in cells or a range of cells by applying the whole number validation in a worksheet.</value>
+  </data>
+  <data name="CustomNumberFormat.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set a custom number format to a cell.</value>
+  </data>
+  <data name="DateAndTimeFormat.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set a kind of date/time format to a cell.</value>
+  </data>
+  <data name="DateDynamicFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how dynamic date filters can be applied to display results that match the specified date criteria taking into account the current system date that automatically gets updated everyday.</value>
+  </data>
+  <data name="DateFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how date filters can be applied to a range to display only those results that are falling within the specified dates.</value>
+  </data>
+  <data name="DeleteConditionalFormatRules.Descrip" xml:space="preserve">
+    <value>If you want to delete the formatting rule applied to the cell range in a worksheet, you can do it by using the Delete method of IFormatCondition interface</value>
+  </data>
+  <data name="DeleteValidation.Descrip" xml:space="preserve">
+    <value>You can delete the applied validation rule using the Delete method of the IValidation interface.</value>
+  </data>
+  <data name="FilterByAutomaticFontColor.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how you can apply filters by cell automatic font color on a column to display results containing cells with automatic font color.</value>
+  </data>
+  <data name="FilterByCellColor.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how you can apply filters by cell colors on a column to display results containing cells with distinct fill shades.</value>
+  </data>
+  <data name="FilterByFontColor.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how you can apply filters by font color on a column to display results containing cells with specific font color.</value>
+  </data>
+  <data name="FilterByIcon.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how you can apply filters by icon to display results that contain a specific icon in the cells.</value>
+  </data>
+  <data name="FilterByNoFill.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how you can apply filters by no fill on a column to display results containing cells with no fill color.</value>
+  </data>
+  <data name="FilterByNoIcon.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how you can apply filters by no icon to display results where cells do not possess an icon.</value>
+  </data>
+  <data name="FontColor.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set font color of a cell.</value>
+  </data>
+  <data name="FontEffect.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set various kinds of font effect of a cell.</value>
+  </data>
+  <data name="FontName.Descrip" xml:space="preserve">
+    <value>This sample deonstrates how to set font name and theme font name of a cell.</value>
+  </data>
+  <data name="FontSize.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set font size of a cell.</value>
+  </data>
+  <data name="FontStyle.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set font bold and italic of a cell.</value>
+  </data>
+  <data name="FontUnderline.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set different kinds of underline of a cell.</value>
+  </data>
+  <data name="GetDisplayFormat.Descrip" xml:space="preserve">
+    <value>You can get the displaying style of a cell by using IRange.DisplayFormat property, the displaying style of a cell may come from its style, table style if the cell is in a table, conditional format if the cell match criterion and so on.</value>
+  </data>
+  <data name="InsertDeleteTableRowColumns.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to add and delete columns and rows in a table.</value>
+  </data>
+  <data name="LinearGradientFill.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set a linear gradient fill to a cell.</value>
+  </data>
+  <data name="ModifyValidation.Descrip" xml:space="preserve">
+    <value>You can change the validation rule for a range by setting properties of the IValidation interface (Type property, Formula1 property, Formula2 property, and many more).</value>
+  </data>
+  <data name="MultiSelectFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how multi select filters can be applied to quickly filter data based on cell values with multiple selections.</value>
+  </data>
+  <data name="NumberFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how you can apply number filters to display data that meets the specified criteria applied on a column containing numeric cell values.</value>
+  </data>
+  <data name="NumberFormats.Descrip" xml:space="preserve">
+    <value>GcExcel supports all kinds of Excel like number formats.</value>
+  </data>
+  <data name="PatternFill.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set a pattern fill to a cell.</value>
+  </data>
+  <data name="PerformCalculationsInTable.Descrip" xml:space="preserve">
+    <value>You can show the total row of a table and set type of TotalsCalculation for a specific table column.</value>
+  </data>
+  <data name="ReApplyFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to re-apply the filter after cell changed.</value>
+  </data>
+  <data name="RectangularGradientFill.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set a rectangular gradient fill to a cell.</value>
+  </data>
+  <data name="RemoveTable.Descrip" xml:space="preserve">
+    <value>In GcExcel .NET, you can delete tables in spreadsheets using the Delete Method of the ITable Interface.</value>
+  </data>
+  <data name="SetRangeFormulaHidden.Descrip" xml:space="preserve">
+    <value>When the IRange.FormulaHidden is true, the formula will not display in the exported Excel file.</value>
+  </data>
+  <data name="SetRangeLocked.Descrip" xml:space="preserve">
+    <value>IRange.Locked determines whether the cell can be modified in exported Excel when the sheet is protected.</value>
+  </data>
+  <data name="SolidFill.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to set a solid fill to a cell.</value>
+  </data>
+  <data name="TableFilter.Descrip" xml:space="preserve">
+    <value>When you have a lot of data to handle, you can create as many tables on a spreadsheet as you want and apply separate filters on columns of each of the table to manage information in an effective manner.</value>
+  </data>
+  <data name="TableSort.Descrip" xml:space="preserve">
+    <value>GcExcel .NET provides an option to apply sorting on a specific table in the worksheet. To accomplish this, you can use the Sort property of the ITable interface. The Apply method is used to apply the selected sort state and display the results.</value>
+  </data>
+  <data name="TextFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how text filters are applied to display rows with cell values that either match to the specified text or regular expression value in the column on which the filter is applied.</value>
+  </data>
+  <data name="WrapText.Descrip" xml:space="preserve">
+    <value>You can wrap the text of cell by using IRange.WrapText property.</value>
+  </data>
+  <data name="MyAddFunction.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to implement a custom function add numbers.</value>
+  </data>
+  <data name="MyConcatenateFunction.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to implement a custom function to concatenate text of each cell.</value>
+  </data>
+  <data name="MyConditionalSumFunction.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to implement a custom function to calculate sum of those cells which are filled in Red background color.</value>
+  </data>
+  <data name="MyIsErrorFunction.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to implement a custom function to determine if the cell is a calc error.</value>
+  </data>
+  <data name="MyIsMergedRangeFunction.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to implement a custom function to determine if the cell is merged.</value>
+  </data>
+  <data name="MySumFunction.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to implement your own sum function.</value>
+  </data>
+  <data name="AreaChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add an area chart in GcExcel.</value>
+  </data>
+  <data name="AreaStacked100.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add an 100% stacked area chart in GcExcel.</value>
+  </data>
+  <data name="AreaStackedChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add an stacked area chart in GcExcel.</value>
+  </data>
+  <data name="ConfigAxisTitle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and customize the axis title, you can change  the title text, font size, font color, etc.</value>
+  </data>
+  <data name="ConfigCategoryAxesFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure the format of category axis, such as to customize the line style, line color, fill color, etc.</value>
+  </data>
+  <data name="ConfigCategoryAxisUnits.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure date axis, such as axis' maximum/minimum scale, major/minor unit, etc.</value>
+  </data>
+  <data name="ConfigChart3DFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure three-D properties of a chart.</value>
+  </data>
+  <data name="ConfigChartAreaFont.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure font of chart area.</value>
+  </data>
+  <data name="ConfigChartAreaFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure formats of chart area.</value>
+  </data>
+  <data name="ConfigChartBackWall.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure the back wall of a three-D chart.</value>
+  </data>
+  <data name="ConfigChartFloorStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure the floor of a three-D chart.</value>
+  </data>
+  <data name="ConfigChartSideWall.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure the side wall of a three-D chart.</value>
+  </data>
+  <data name="ConfigChartWallStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure all walls of a three-D chart.</value>
+  </data>
+  <data name="ConfigDisplayUnitLabel.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and configure display unit label of a axis, such as the fill and border of label, as well as common font settings.</value>
+  </data>
+  <data name="ConfigGridlines.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure gridlines, you can show or hide the major and minor gridlines of each axis, you can also configure different properties of gridlines, such as line style, color and weight, etc.</value>
+  </data>
+  <data name="ConfigTickMarkLabel.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure the tick labels of axis, you can  customize the fill and border of tick labels, can also set different font properties, such as font size, font name, font style, etc. </value>
+  </data>
+  <data name="ConfigValueAxesFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure the format of value axis, such as to customize the line style, line color, fill color, etc.</value>
+  </data>
+  <data name="ConfigValueAxisUnits.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure value axis, such as axis' maximum/minimum scale, major/minor unit, etc.</value>
+  </data>
+  <data name="CreateCustomValidation.Descrip" xml:space="preserve">
+    <value>You can add a custom validation rule to validate data in a worksheet by applying custom validation.</value>
+  </data>
+  <data name="FindBasicUsage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to find the first occurrence of some text in a range.</value>
+  </data>
+  <data name="FindDisplayFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to find a cell by specific format.</value>
+  </data>
+  <data name="FindLookAtSearchOrderDirectionMatchCase.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to find cell with options.</value>
+  </data>
+  <data name="FindMatchByte.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to find double-byte characters in a range.</value>
+  </data>
+  <data name="FindWithAfter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to find all occurrences of matched cells in a range.</value>
+  </data>
+  <data name="FindWithLookIn.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to find cells in different places.</value>
+  </data>
+  <data name="ReplaceBasicUsage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to replace cell's content in a range.</value>
+  </data>
+  <data name="ReplaceCustomWrapSearch.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to search and replace cell content in a loop.</value>
+  </data>
+  <data name="ReplaceWithOptions.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to replace cell's content with options.</value>
+  </data>
+  <data name="SetAxisScaleType.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to use logarithmic scale for a value axis. </value>
+  </data>
+  <data name="SetAxisTickMark.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure tick mark of axis.</value>
+  </data>
+  <data name="AddComment.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a comment for a cell.</value>
+  </data>
+  <data name="AddSeries.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a series in a chart.</value>
+  </data>
+  <data name="AddTextRun.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create cell rich text by adding and configuring runs.</value>
+  </data>
+  <data name="BarClusteredChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a clustered bar chart in GcExcel.</value>
+  </data>
+  <data name="BarStacked100Chart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a 100% stacked bar chart in GcExcel.</value>
+  </data>
+  <data name="BarStackedChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a stacked bar chart in GcExcel.</value>
+  </data>
+  <data name="BubbleChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a bubble chart in GcExcel.</value>
+  </data>
+  <data name="ChangeSeriesType.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to change chart type of a data series.</value>
+  </data>
+  <data name="CharacterCellText.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create cell rich text by Characters() method.</value>
+  </data>
+  <data name="ChartCopy.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to copy a chart.</value>
+  </data>
+  <data name="ChartCut.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to cut a chart.</value>
+  </data>
+  <data name="ChartDuplicate.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to duplicate a chart.</value>
+  </data>
+  <data name="ChartJustPlotVisibleCell.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to plot visible cells in plot area of a chart.</value>
+  </data>
+  <data name="ClearComment.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to delete and clear comments.</value>
+  </data>
+  <data name="ColumnClusteredChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a clustered column chart in GcExcel.</value>
+  </data>
+  <data name="ColumnStacked100Chart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a 100% stacked column chart in GcExcel.</value>
+  </data>
+  <data name="ColumnStackedChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a stacked column chart in GcExcel.</value>
+  </data>
+  <data name="CombinationChart1.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a combination chart(column and line markers) in GcExcel.</value>
+  </data>
+  <data name="CombinationChart2.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a combination chart(column stacked and area) in GcExcel.</value>
+  </data>
+  <data name="ConfigBubbleChartLayout.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to customize bubble chart(BubbleScale, SizeRepresents, ShowNegativeBubbles).</value>
+  </data>
+  <data name="ConfigChartTitleRichText.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure chart title with rich text format.</value>
+  </data>
+  <data name="ConfigChartTitleStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure different formats(fill, border, font, etc) of a chart title.</value>
+  </data>
+  <data name="ConfigCommentLayout.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to format and customize a comment.</value>
+  </data>
+  <data name="ConfigDataLabelFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and customize data labels of a chart.</value>
+  </data>
+  <data name="ConfigDataLabelText.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure the displaying content of data labels in chart.</value>
+  </data>
+  <data name="ConfigDataPointFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to format a data point of a series in chart.</value>
+  </data>
+  <data name="ConfigLegendEntryFontStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure font properties of a legend entry.</value>
+  </data>
+  <data name="ConfigLegendFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to format legend of a chart.</value>
+  </data>
+  <data name="ConfigLegendPositionAndLayout.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to change the position of legend in a chart.</value>
+  </data>
+  <data name="ConfigMarkersFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to format the markers(fill and border) of a series.</value>
+  </data>
+  <data name="ConfigMarkerStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to customize the style and size of markers.</value>
+  </data>
+  <data name="ConfigNegativePoint.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set the color for negative data points.</value>
+  </data>
+  <data name="ConfigPlotAreaFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to format plot area(fill and border).</value>
+  </data>
+  <data name="ConfigRunFont.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to display superscript effect in a cell.</value>
+  </data>
+  <data name="ConfigSecondarySection.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure secondary plot for pie of pie chart.</value>
+  </data>
+  <data name="ConfigSeriesFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to format a data series.</value>
+  </data>
+  <data name="CreateChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a chart in GcExcel.</value>
+  </data>
+  <data name="CreateConnectorLine.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and customize connection lines for pie of pie chart.</value>
+  </data>
+  <data name="CreateDropLine.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and customize drop lines for line chart.</value>
+  </data>
+  <data name="CreateHiLoLine.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and customize high-low lines for line chart.</value>
+  </data>
+  <data name="CreateSecondaryAxis.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to make a data series use secondary axis.</value>
+  </data>
+  <data name="CreateSeriesLine.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and customize series lines.</value>
+  </data>
+  <data name="CreateTrendline.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and customize trend lines.</value>
+  </data>
+  <data name="CreateUpDownBars.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show and customize up/down bars for line chart.</value>
+  </data>
+  <data name="DeleteChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to delete a chart in GcExcel.</value>
+  </data>
+  <data name="DeleteSeries.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to delete a data series from chart.</value>
+  </data>
+  <data name="ExtendSeries.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to extend the reference of each series in chart.</value>
+  </data>
+  <data name="LineChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a line chart in GcExcel.</value>
+  </data>
+  <data name="LineMarkersChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a line chart with markers in GcExcel.</value>
+  </data>
+  <data name="LineMarkerStacked100Chart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a 100% stacked line with markers chart in GcExcel.</value>
+  </data>
+  <data name="LineMarkerStackedChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a stacked line with markers chart in GcExcel.</value>
+  </data>
+  <data name="LineStacked100Chart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a 100% stacked line chart in GcExcel.</value>
+  </data>
+  <data name="LineStackedChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a stacked line chart in GcExcel.</value>
+  </data>
+  <data name="PieChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a pie chart in GcExcel.</value>
+  </data>
+  <data name="Pie_DoughnutChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a doughnut chart in GcExcel.</value>
+  </data>
+  <data name="SetRichTextForComment.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create a rich text comment for a cell.</value>
+  </data>
+  <data name="SetVaryColorForColumnChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to make each data series render vary colors.</value>
+  </data>
+  <data name="Stock_HighLowCloseStockChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a high-low-close stock chart in GcExcel.</value>
+  </data>
+  <data name="Stock_OpenHighLowCloseStock.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a open-high-low-close stock chart in GcExcel.</value>
+  </data>
+  <data name="Stock_VolumeHighLowCloseStock.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a volume-high-low-close stock chart in GcExcel.</value>
+  </data>
+  <data name="Stock_VolumeOpenHighLowClose.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a volume-open-high-low-close stock chart in GcExcel.</value>
+  </data>
+  <data name="XYScatterChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a scatter chart in GcExcel.</value>
+  </data>
+  <data name="XYScatterLinesChart.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a scatter chart with straight lines in GcExcel.</value>
+  </data>
+  <data name="XYScatterSmooth.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a scatter chart with smooth lines in GcExcel.</value>
+  </data>
+  <data name="XYScatterSmoothWithMarkers.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a scatter chart with smooth lines and markers in GcExcel.</value>
+  </data>
+  <data name="AddCustomName.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to add custom names and set formula to a range in a worksheet.</value>
+  </data>
+  <data name="BasicShapes.Descrip" xml:space="preserve">
+    <value>GcExcel can export spreadsheets that contain preset shapes, basic shapes, connector arrows , shape with text etc. into a PDF file.</value>
+  </data>
+  <data name="ClearOutline.Descrip" xml:space="preserve">
+    <value>You can clear the outline level of the specified rows or columns using the ClearOutline method of the IRange interface</value>
+  </data>
+  <data name="CollapseGroup.Descrip" xml:space="preserve">
+    <value>You can collapse a group by setting the ShowDetail property of the IRange interface to boolean false. Refer to the following example code to collapse a group in a worksheet.</value>
+  </data>
+  <data name="ConfigEvenPageHeaderFooter.Descrip" xml:space="preserve">
+    <value>If you want a different header and footer for all the even pages, you first need to set the OddAndEvenPagesHeaderFooter property to true. When this is done, you can use the properties of the IPageSetup interface in order to configure the even page header and footer.</value>
+  </data>
+  <data name="ConfigFirstPageHeaderFooter.Descrip" xml:space="preserve">
+    <value>If you want a different header and footer in your first page, you first need to set the DifferentFirstPageHeaderFooter property of the IPageSetup interface to true. When this is done, you can use the properties of the IPageSetup interface in order to configure the first page header and footer</value>
+  </data>
+  <data name="ConfigFirstPageNumber.Descrip" xml:space="preserve">
+    <value>You can use the FirstPageNumber property of the IPageSetup interface in order to configure the number for your first page as per your choice.</value>
+  </data>
+  <data name="ConfigHeaderFooter.Descrip" xml:space="preserve">
+    <value>In GcExcel, you can use the LeftHeader property, LeftFooter property, CenterFooter property, RightHeader property, CenterHeader property, and the RightFooter property of the IPageSetup interface in order to configure header and footer for a page.</value>
+  </data>
+  <data name="ConfigPageCenter.Descrip" xml:space="preserve">
+    <value>You can use the CenterHorizontally property and the CenterVertically property of the IPageSetup interface in order to configure the center of your page according to your preferences.</value>
+  </data>
+  <data name="ConfigPageMargins.Descrip" xml:space="preserve">
+    <value>You can use the TopMargin property, RightMargin property and BottomMargin property of the IPageSetup interface in order to configure margins for a page.</value>
+  </data>
+  <data name="ConfigPageOrder.Descrip" xml:space="preserve">
+    <value>You can use the Order property of the IPageSetup interface in order to configure the order of the page as per your choice.</value>
+  </data>
+  <data name="ConfigPageOrientation.Descrip" xml:space="preserve">
+    <value>You can use the Orientation property of the IPageSetup interface in order to set the orientation for a page to Portrait or Landscape as per your preferences.</value>
+  </data>
+  <data name="ConfigPaperScaling.Descrip" xml:space="preserve">
+    <value>You can use the IsPercentScale property in order to control how to the spreadsheet is scaled; the FitToPagesTall property and the FitToPagesWide property in order to set its size; and the Zoom property in order to adjust the size of the paper that will be used for printing.You can use the IsPercentScale property in order to control how to the spreadsheet is scaled; the FitToPagesTall property and the FitToPagesWide property in order to set its size; and the Zoom property in order to adjust the size of the paper that will be used for printing.</value>
+  </data>
+  <data name="ConfigPaperSize.Descrip" xml:space="preserve">
+    <value>You can use the PaperSize property in order to set the paper size for the paper that will be used for printing.</value>
+  </data>
+  <data name="ConfigPrintArea.Descrip" xml:space="preserve">
+    <value>GcExcel .NET supports customized printing by allowing users to select a range of cells in order to configure the desired print area in a worksheet.</value>
+  </data>
+  <data name="ConfigPrintTailColumns.Descrip" xml:space="preserve">
+    <value>You can configure columns in a worksheet in order to repeat them at the right by using the PrintTailColumns property of the IPageSetup interface.</value>
+  </data>
+  <data name="ConfigPrintTailRows.Descrip" xml:space="preserve">
+    <value>You can configure rows in a worksheet in order to repeat them at the bottom using the PrintTailRows property of the IPageSetup interface.</value>
+  </data>
+  <data name="ConfigPrintTitleColumns.Descrip" xml:space="preserve">
+    <value>You can configure columns in a worksheet in order to repeat them at the left by using the PrintTitleColumns property.</value>
+  </data>
+  <data name="ConfigPrintTitleRows.Descrip" xml:space="preserve">
+    <value>You can configure rows in a worksheet in order to repeat them at the top by using the PrintTitleRows property.</value>
+  </data>
+  <data name="ConfigSheetPrintSettings.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to customize the print settings of a worksheet, such as whether to print grid lines and headings.</value>
+  </data>
+  <data name="ConfigureBlackAndWhite.Descrip" xml:space="preserve">
+    <value>GcExcel can export spreadsheet of black and white effect to PDF file.</value>
+  </data>
+  <data name="ConfigureDraft.Descrip" xml:space="preserve">
+    <value>GcExcel can export spreadsheet of draft effect to PDF file.</value>
+  </data>
+  <data name="ConfigureHeaderFooter.Descrip" xml:space="preserve">
+    <value>The header/footer settings of PageSetup will be applied in the exported PDF file.</value>
+  </data>
+  <data name="ConfigureOritation.Descrip" xml:space="preserve">
+    <value>The orientation setting of PageSetup will be applied in the exported PDF file.</value>
+  </data>
+  <data name="ConfigurePageBreaks.Descrip" xml:space="preserve">
+    <value>The page break settings will be applied in the exported PDF file.</value>
+  </data>
+  <data name="ConfigurePageOrder.Descrip" xml:space="preserve">
+    <value>GcExcel will do pagination according to the page order setting of PageSetupand and export pages to PDF file.</value>
+  </data>
+  <data name="ConfigurePageSetup.Descrip" xml:space="preserve">
+    <value>All page setup settings will applied in the exported PDF file.</value>
+  </data>
+  <data name="ConfigurePagination.Descrip" xml:space="preserve">
+    <value>GcExcel will first do pagination and then export each page to PDF file.</value>
+  </data>
+  <data name="ConfigurePrintArea.Descrip" xml:space="preserve">
+    <value>GcExcel will only export the specified area to PDF if PageSetup.PrintArea is set.</value>
+  </data>
+  <data name="ConfigurePrintPageRange.Descrip" xml:space="preserve">
+    <value>GcExcel will only export the specified pages to PDF if PageSetup.PrintPageRange is set.</value>
+  </data>
+  <data name="ConfigurePrintTails.Descrip" xml:space="preserve">
+    <value>The tail rows and columns will be applied in the exported PDF file.</value>
+  </data>
+  <data name="ConfigurePrintTitles.Descrip" xml:space="preserve">
+    <value>The title rows and columns will be applied in the exported PDF file.</value>
+  </data>
+  <data name="ConfigureScaling.Descrip" xml:space="preserve">
+    <value>The scale settings will be applied in the exported PDF file.</value>
+  </data>
+  <data name="ConfigWorkbookReferenceStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how reference style can be set in a workbook.</value>
+  </data>
+  <data name="CreateHyperlinks.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to insert hyperlinks to an external file, to a web page, to a range within the worksheet and to an email address.</value>
+  </data>
+  <data name="CreateRangeGroup.Descrip" xml:space="preserve">
+    <value>You can apply row/column grouping by using the Group method of the IRange interface and specifying the rows/columns you want to apply grouping on. Refer to the following example code to apply row/column grouping in a worksheet.</value>
+  </data>
+  <data name="CustomPageInfos.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to customize the page settings of any page and then export to PDF file.</value>
+  </data>
+  <data name="CustomShape.Descrip" xml:space="preserve">
+    <value>GcExcel can export spreadsheets that contain custom shapes into a PDF file.</value>
+  </data>
+  <data name="DeleteHyperlinks.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to delete hyperlinks</value>
+  </data>
+  <data name="DirtyAndCalculation.Descrip" xml:space="preserve">
+    <value>GcExcel allow users to disable calculation engine, dirty and re-calculate the formula of a specific range.</value>
+  </data>
+  <data name="DrawRangeInsideAPDF.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to allow users to render Excel ranges inside the PDF file</value>
+  </data>
+  <data name="ExportCellRichText.Descrip" xml:space="preserve">
+    <value>GcExcel can export rich text cell to PDF file.</value>
+  </data>
+  <data name="ExportFlowChart.Descrip" xml:space="preserve">
+    <value>In this example, GcExcel first opens an Excel file that contains some shapes, then export it to a PDF file.</value>
+  </data>
+  <data name="KeepTogether.Descrip" xml:space="preserve">
+    <value>This example code demonstrates how to keep adjacent rows together in one page when exporting to PDF file.</value>
+  </data>
+  <data name="ManageHeadersOnDifferentPages.Descrip" xml:space="preserve">
+    <value>Refer to the following example code in order to export different headers on different pages while exporting to a PDF file.</value>
+  </data>
+  <data name="NumberFormating.Descrip" xml:space="preserve">
+    <value>GcExcel can export cell text with different number format to PDF file.</value>
+  </data>
+  <data name="Overflow.Descrip" xml:space="preserve">
+    <value>GcExcel can export the overflow cell to PDF file.</value>
+  </data>
+  <data name="PrintMultipleWorksheetsToOnePage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to allow users to export multiple worksheets to a single page in the PDF file.</value>
+  </data>
+  <data name="PrintSpecificPages.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to export some specific pages to the PDF file.</value>
+  </data>
+  <data name="RenderExcelRangesInsideAPDF.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to allow users to render Excel ranges inside the PDF file along with some custom textual information at runtime to the specified location on the page.</value>
+  </data>
+  <data name="SaveMultipleWorkbooksToPDF.Descrip" xml:space="preserve">
+    <value>GcExcel allows users to save multiple workbooks into a single PDF file.</value>
+  </data>
+  <data name="SetShapeNotToPrint.Descrip" xml:space="preserve">
+    <value>The IsPrintable property of the IShape interface can be used to get or set whether the object will be printed in the PDF document.</value>
+  </data>
+  <data name="ShapeWithGradientAndPatternFill.Descrip" xml:space="preserve">
+    <value>GcExcel can export shapes with gradient or pattern fill to PDF file.</value>
+  </data>
+  <data name="ShapeWithLine.Descrip" xml:space="preserve">
+    <value>GcExcel can export shapes with varying kind of border settings to PDF file.</value>
+  </data>
+  <data name="ShapeWithPictureOrTextureFill.Descrip" xml:space="preserve">
+    <value>GcExcel can export shapes with picture or texture fill to PDF file.</value>
+  </data>
+  <data name="ShapeWithRotation.Descrip" xml:space="preserve">
+    <value>GcExcel can export rotated shapes to PDF file.</value>
+  </data>
+  <data name="ShapeWithText.Descrip" xml:space="preserve">
+    <value>GcExcel can export shape with rich text to PDF file.</value>
+  </data>
+  <data name="ShowSpecificLevel.Descrip" xml:space="preserve">
+    <value>You can also choose to display specified levels of row or column groups using the ShowLevels method of the IOutline interface.</value>
+  </data>
+  <data name="TextStyle.Descrip" xml:space="preserve">
+    <value>GcExcel can export various kind of font effect to PDF, such as text underline, strikethrough, bold, etc.</value>
+  </data>
+  <data name="UngroupRange.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to ungroup row and column in a worksheet.</value>
+  </data>
+  <data name="UseArrayFormula.Descrip" xml:space="preserve">
+    <value>Array formula is a formula that can execute multiple calculations on individual cells or a range of cells to display a column or a row of subtotals. Refer to the following example code to set array formula and get entire array.</value>
+  </data>
+  <data name="UseTableFormula.Descrip" xml:space="preserve">
+    <value>Table formula refers to a formula that is used as a structured reference in the worksheet instead of using it as an explicit cell reference. Refer to the following example code to set table formula in your spreadsheets.</value>
+  </data>
+  <data name="CustomObject.Name" xml:space="preserve">
+    <value>Custom object</value>
+  </data>
+  <data name="CellStyle.Name" xml:space="preserve">
+    <value>Cell style</value>
+  </data>
+  <data name="DataSet.Name" xml:space="preserve">
+    <value>DataSet</value>
+  </data>
+  <data name="DataSource.Name" xml:space="preserve">
+    <value>Data source</value>
+  </data>
+  <data name="DataTable.Name" xml:space="preserve">
+    <value>DataTable</value>
+  </data>
+  <data name="DataTemplate.Name" xml:space="preserve">
+    <value>Data template</value>
+  </data>
+  <data name="InlineTemplate.Name" xml:space="preserve">
+    <value>Inline template</value>
+  </data>
+  <data name="ExpressionTemplate.Name" xml:space="preserve">
+    <value>Expression template</value>
+  </data>
+  <data name="FunctionTemplate.Name" xml:space="preserve">
+    <value>Function template</value>
+  </data>
+  <data name="JsonFile.Name" xml:space="preserve">
+    <value>Json file</value>
+  </data>
+  <data name="MergeCell.Name" xml:space="preserve">
+    <value>Merge cell</value>
+  </data>
+  <data name="Properties.Name" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="SetContext.Name" xml:space="preserve">
+    <value>Set context</value>
+  </data>
+  <data name="SetExpansionType.Name" xml:space="preserve">
+    <value>Set expansion type</value>
+  </data>
+  <data name="SetGroupType" xml:space="preserve">
+    <value>Set group type</value>
+  </data>
+  <data name="SetPagebreak.Name" xml:space="preserve">
+    <value>Set pagebreak</value>
+  </data>
+  <data name="SetRange.Name" xml:space="preserve">
+    <value>Set range</value>
+  </data>
+  <data name="SetSortType.Name" xml:space="preserve">
+    <value>Set sort type</value>
+  </data>
+  <data name="SheetTemplate.Name" xml:space="preserve">
+    <value>Sheet template</value>
+  </data>
+  <data name="Style.Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="TemplateCell.Name" xml:space="preserve">
+    <value>Template cell</value>
+  </data>
+  <data name="Templates.Name" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="Variable.Name" xml:space="preserve">
+    <value>Variable</value>
+  </data>
+  <data name="SaveSheetBackgroundToPDF.Name" xml:space="preserve">
+    <value>Export sheet background image</value>
+  </data>
+  <data name="SetSecurityOptionsToPDF.Name" xml:space="preserve">
+    <value>Set security options for PDF document</value>
+  </data>
+  <data name="SetDocumentPropertiesToPDF.Name" xml:space="preserve">
+    <value>Set document properties for PDF document</value>
+  </data>
+  <data name="ProtectWorkbook.Name" xml:space="preserve">
+    <value>Protect workbook</value>
+  </data>
+  <data name="UnprotectWorkbook.Name" xml:space="preserve">
+    <value>Unprotect workbook</value>
+  </data>
+  <data name="AddUserShapes.Name" xml:space="preserve">
+    <value>Add user shapes</value>
+  </data>
+  <data name="AddSubtotal.Name" xml:space="preserve">
+    <value>Add subtotal</value>
+  </data>
+  <data name="AddSubtotalAdvanced.Name" xml:space="preserve">
+    <value>Add subtotal (with advanced options)</value>
+  </data>
+  <data name="HideGrandTotalsInPivotTable.Name" xml:space="preserve">
+    <value>Grand total visibility</value>
+  </data>
+  <data name="RemoveSubtotal.Name" xml:space="preserve">
+    <value>Remove subtotals</value>
+  </data>
+  <data name="RowAxisLayoutInPivotTable.Name" xml:space="preserve">
+    <value>Change row axis layout</value>
+  </data>
+  <data name="SetPivotFieldNameInPivotTable.Name" xml:space="preserve">
+    <value>Rename a pivot field</value>
+  </data>
+  <data name="ShapeGroup.Name" xml:space="preserve">
+    <value>Group shapes</value>
+  </data>
+  <data name="AddSubtotal.Descrip" xml:space="preserve">
+    <value>Add subtotal to a range with IRange.Subtotal</value>
+  </data>
+  <data name="AddSubtotalAdvanced.Descrip" xml:space="preserve">
+    <value>Add subtotal to a range with IRange.Subtotal (Advanced)</value>
+  </data>
+  <data name="HideGrandTotalsInPivotTable.Descrip" xml:space="preserve">
+    <value>Set visibility of row and column grand totals with RowGrand and ColumnGrand</value>
+  </data>
+  <data name="RemoveSubtotal.Descrip" xml:space="preserve">
+    <value>Remove subtotals with IRange.RemoveSubtotal</value>
+  </data>
+  <data name="RowAxisLayoutInPivotTable.Descrip" xml:space="preserve">
+    <value>Set row axis layout to tabular with IPivotTable.SetRowAxisLayout</value>
+  </data>
+  <data name="SetPivotFieldNameInPivotTable.Descrip" xml:space="preserve">
+    <value>Rename a pivot field with IPivotField.Name property</value>
+  </data>
+  <data name="ShapeGroup.Descrip" xml:space="preserve">
+    <value>Group shapes with IShapeRange.Group</value>
+  </data>
+  <data name="SaveSlicer.Descrip" xml:space="preserve">
+    <value>Slicers can be exported to pdf</value>
+  </data>
+  <data name="SaveSlicer.Name" xml:space="preserve">
+    <value>Export slicers</value>
+  </data>
+  <data name="AddChartSheet.Name" xml:space="preserve">
+    <value>Add a chart sheet</value>
+  </data>
+  <data name="NewCharts.Descrip" xml:space="preserve">
+    <value>## Excel 2016 New Charts
+GrapeCity Documents for Excel adds Excel 2016 new charts by calling **IShapes.AddChart** method and setting different **ChartType** . GrapeCity Documents for Excel supports the following types of new charts:
+- Sunburst
+- Treemap
+- Funnel
+- Waterfall
+- Box&amp;Whisker
+- Histogram
+- Pareto</value>
+  </data>
+  <data name="NewCharts.Name" xml:space="preserve">
+    <value>Excel 2016 New Charts</value>
+  </data>
+  <data name="AddSunburstChart.Name" xml:space="preserve">
+    <value>Add a sunburst chart</value>
+  </data>
+  <data name="AddTreeMapChart.Name" xml:space="preserve">
+    <value>Add a treemap chart</value>
+  </data>
+  <data name="AddFunnelChart.Name" xml:space="preserve">
+    <value>Add a funnel chart</value>
+  </data>
+  <data name="AddWaterfallChart.Name" xml:space="preserve">
+    <value>Add a waterfall chart</value>
+  </data>
+  <data name="ConfigAdjustmentPoints.Name" xml:space="preserve">
+    <value>Adjustment points</value>
+  </data>
+  <data name="ConfigureBestFitRowColumn.Name" xml:space="preserve">
+    <value>BestFit row &amp; column</value>
+  </data>
+  <data name="Tag.Name" xml:space="preserve">
+    <value>Tag of sheet/row/column/cell</value>
+  </data>
+  <data name="AddBoxWhiskerChart.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a box&amp;whisker chart.</value>
+  </data>
+  <data name="AddBoxWhiskerChart.Name" xml:space="preserve">
+    <value>Add a box&amp;whisker chart</value>
+  </data>
+  <data name="AddFunnelChart.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a funnel chart.</value>
+  </data>
+  <data name="AddHistogramChart.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a histogram chart.</value>
+  </data>
+  <data name="AddHistogramChart.Name" xml:space="preserve">
+    <value>Add a histogram chart</value>
+  </data>
+  <data name="AddParetoChart.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a pareto chart.</value>
+  </data>
+  <data name="AddParetoChart.Name" xml:space="preserve">
+    <value>Add a pareto chart</value>
+  </data>
+  <data name="AddSunburstChart.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a sunburst chart.</value>
+  </data>
+  <data name="AddTreeMapChart.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a treemap chart.</value>
+  </data>
+  <data name="AddWaterfallChart.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a waterfall chart.</value>
+  </data>
+  <data name="CreateShapeWithHyperlink.Name" xml:space="preserve">
+    <value>Create hyperlinks on shape</value>
+  </data>
+  <data name="ExportChart.Descrip" xml:space="preserve">
+    <value>## Export chart
+GrapeCity Documents for Excel supports exporting charts to PDF file.
+
+- Column
+- Line
+- Pie
+- Bar
+- Area
+- X Y(Scatter)
+- Stock
+- Radar
+- Combo</value>
+  </data>
+  <data name="ExportChart.Name" xml:space="preserve">
+    <value>Export Chart</value>
+  </data>
+  <data name="AreaChartPdf.Name" xml:space="preserve">
+    <value>Area chart</value>
+  </data>
+  <data name="BarChartPdf.Name" xml:space="preserve">
+    <value>Bar chart</value>
+  </data>
+  <data name="ChartGalleryPdf.Name" xml:space="preserve">
+    <value>Export chart gallery</value>
+  </data>
+  <data name="ColumnChartPdf.Name" xml:space="preserve">
+    <value>Column chart</value>
+  </data>
+  <data name="ComboChartPdf.Name" xml:space="preserve">
+    <value>Combo chart</value>
+  </data>
+  <data name="LineChartPdf.Name" xml:space="preserve">
+    <value>Line chart</value>
+  </data>
+  <data name="PieChartPdf.Name" xml:space="preserve">
+    <value>Pie chart</value>
+  </data>
+  <data name="RadarChartPdf.Name" xml:space="preserve">
+    <value>Radar chart</value>
+  </data>
+  <data name="StockChartPdf.Name" xml:space="preserve">
+    <value>Stock chart</value>
+  </data>
+  <data name="XYScatterChartPdf.Name" xml:space="preserve">
+    <value>X Y(Scatter) chart</value>
+  </data>
+  <data name="AddUserShapes.Descrip" xml:space="preserve">
+    <value>Insert pictures, shapes into a chart. These inserted pictures or shapes are called the user shapes of this chart.</value>
+  </data>
+  <data name="AddChartSheet.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create a chart sheet.</value>
+  </data>
+  <data name="CreateShapeWithHyperlink.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to add a hyperlink to a shape.</value>
+  </data>
+  <data name="ProtectWorkbook.Descrip" xml:space="preserve">
+    <value>Using IWorkbook.Protect method to protect a workbook.</value>
+  </data>
+  <data name="SaveSheetBackgroundToPDF.Descrip" xml:space="preserve">
+    <value>GrapeCity Documents for Excel supports exporting the sheet background image to PDF.</value>
+  </data>
+  <data name="SetDocumentPropertiesToPDF.Descrip" xml:space="preserve">
+    <value>GrapeCity Documents for Excel supports setting the document properties when saving PDF.</value>
+  </data>
+  <data name="SetSecurityOptionsToPDF.Descrip" xml:space="preserve">
+    <value>GrapeCity Documents for Excel supports setting the security options when saving PDF.</value>
+  </data>
+  <data name="UnprotectWorkbook.Descrip" xml:space="preserve">
+    <value>Using IWorkbook.Unprotect method to unprotect a workbook.</value>
+  </data>
+  <data name="AddCheckBoxCellType.Name" xml:space="preserve">
+    <value>Checkbox cell type</value>
+  </data>
+  <data name="CellType.Name" xml:space="preserve">
+    <value>Cell type</value>
+  </data>
+  <data name="AddButtonCellType.Name" xml:space="preserve">
+    <value>Button cell type</value>
+  </data>
+  <data name="AddComboBoxCellType.Name" xml:space="preserve">
+    <value>Combobox cell type</value>
+  </data>
+  <data name="AddHyperlinkCellType.Name" xml:space="preserve">
+    <value>Hyperlink cell type</value>
+  </data>
+  <data name="ShapeUngroup.Descrip" xml:space="preserve">
+    <value>Ungroup shape with IShape.Ungroup</value>
+  </data>
+  <data name="ShapeUngroup.Name" xml:space="preserve">
+    <value>Ungroup shape</value>
+  </data>
+  <data name="AddRowColumnCellType.Name" xml:space="preserve">
+    <value>Set cell type for row/column</value>
+  </data>
+  <data name="AddSheetCellType.Name" xml:space="preserve">
+    <value>Set cell type for the sheet</value>
+  </data>
+  <data name="AddButtonCellType.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create the button cell type for a cell.</value>
+  </data>
+  <data name="AddCheckBoxCellType.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create the checkbox cell type for a cell.</value>
+  </data>
+  <data name="AddComboBoxCellType.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create the combobox cell type for a cell.</value>
+  </data>
+  <data name="AddHyperlinkCellType.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create the hyperlink cell type for a cell.</value>
+  </data>
+  <data name="AddRowColumnCellType.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create the cell type for row/column.</value>
+  </data>
+  <data name="AddSheetCellType.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to create the cell type for the whole worksheet.</value>
+  </data>
+  <data name="CellType.Descrip" xml:space="preserve">
+    <value>## CellType
+The examples in this folder demonstrate how to create cell types. Following cell types are supported:
+- Button cell type
+- Checkbox cell type
+- Combobox cell type
+- Hyperlink cell type</value>
+  </data>
+  <data name="SetGroupType.Name" xml:space="preserve">
+    <value>Set group type</value>
+  </data>
+  <data name="Dependents.Name" xml:space="preserve">
+    <value>Dependents</value>
+  </data>
+  <data name="Precedents.Name" xml:space="preserve">
+    <value>Precedents</value>
+  </data>
+  <data name="Precedentsanddependents.Name" xml:space="preserve">
+    <value>Precedents &amp; dependents</value>
+  </data>
+  <data name="Dependents.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to get the dependents of a cell.</value>
+  </data>
+  <data name="Precedents.Descrip" xml:space="preserve">
+    <value>This sample demonstrates how to get the precedents of a cell.</value>
+  </data>
+  <data name="Precedentsanddependents.Descrip" xml:space="preserve">
+    <value>The examples in this folder demonstrate how to get the precedents or dependents of a cell.</value>
+  </data>
+  <data name="GetAllPrecedents.Descrip" xml:space="preserve">
+    <value>Get all the precedents with a loop.</value>
+  </data>
+  <data name="GetAllPrecedents.Name" xml:space="preserve">
+    <value>Get all the precedents</value>
+  </data>
+  <data name="AreaChartPdf.Descrip" xml:space="preserve">
+    <value>Export area chart to PDF file</value>
+  </data>
+  <data name="BarChartPdf.Descrip" xml:space="preserve">
+    <value>Export bar chart to PDF file</value>
+  </data>
+  <data name="ChartGalleryPdf.Descrip" xml:space="preserve">
+    <value>In this example, GcExcel first opens an Excel file that contains some charts, then export it to a PDF file.</value>
+  </data>
+  <data name="ColumnChartPdf.Descrip" xml:space="preserve">
+    <value>Export column chart to PDF file</value>
+  </data>
+  <data name="ComboChartPdf.Descrip" xml:space="preserve">
+    <value>Export combo chart to PDF file</value>
+  </data>
+  <data name="ConfigAdjustmentPoints.Descrip" xml:space="preserve">
+    <value>Use IShape.Adjustments to get/set adjustment points for shapes.</value>
+  </data>
+  <data name="ConfigureBestFitRowColumn.Descrip" xml:space="preserve">
+    <value>Set best fit row/column to auto fit row height/column width when exporting PDF</value>
+  </data>
+  <data name="LineChartPdf.Descrip" xml:space="preserve">
+    <value>Export line chart to PDF file</value>
+  </data>
+  <data name="PieChartPdf.Descrip" xml:space="preserve">
+    <value>Export pie chart to PDF file</value>
+  </data>
+  <data name="RadarChartPdf.Descrip" xml:space="preserve">
+    <value>Export radar chart to PDF file</value>
+  </data>
+  <data name="StockChartPdf.Descrip" xml:space="preserve">
+    <value>Export stock chart to PDF file</value>
+  </data>
+  <data name="Tag.Descrip" xml:space="preserve">
+    <value>Tag provides the ability to store private data in cell/row/column/sheet.</value>
+  </data>
+  <data name="XYScatterChartPdf.Descrip" xml:space="preserve">
+    <value>Export XYScatter chart to PDF file</value>
+  </data>
+  <data name="FinancialDashboard.Name" xml:space="preserve">
+    <value>Financial dashboard</value>
+  </data>
+  <data name="TemplateSamples.Name" xml:space="preserve">
+    <value>Template samples</value>
+  </data>
+  <data name="Sales.Name" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="PurchaseOrder.Name" xml:space="preserve">
+    <value>Purchase order</value>
+  </data>
+  <data name="ShippingAndDeliveryOrder.Name" xml:space="preserve">
+    <value>Shipping &amp; delivery order</value>
+  </data>
+  <data name="TablixReport.Name" xml:space="preserve">
+    <value>Tablix report</value>
+  </data>
+  <data name="Travel.Name" xml:space="preserve">
+    <value>Travel</value>
+  </data>
+  <data name="DataSource.Descrip" xml:space="preserve">
+    <value>## Data source
+The template API can bind Excel templates directly with data from following objects:
+
+- **DataSet/DataTable:** Can handle data source from any type of DB
+- **Custom Object:** These are user defined objects. Can handle data source from Json String/File/XML, etc. That is, any data souce that can be serialized as a custom object.
+- **Variable:** User defined variable in code.
+- **Array/List:** User defined array/list in code.</value>
+  </data>
+  <data name="Properties.Descrip" xml:space="preserve">
+    <value>## Properties
+GcExcel use parenthese **(** and **)** to organize all template properties. Property is set in key-value format. Multiple properties are separated using comma.
+
+Property name and value are case-insensitive. 
+
+For example: (context=A1) is equal to (Context = a1).
+
+Property name and predefined value support full name and shorthand. 
+
+For example: (E = H) is equal to (expansion = horizontal).
+
+The template provides lots of properties:
+
+- **C(context):** Cell context
+- **E(expansion):** Expansion type
+- **G(group):** Group type
+- **R(range):** Set a fallback context for the templates in the specified range
+- **S(sort):** Sort type
+- **PB(pagebreak):** Add a pagebreak in report file</value>
+  </data>
+  <data name="Style.Descrip" xml:space="preserve">
+    <value>## Style
+The templates support **cell style** and **merged styles** applied on the cell. The data will grow as per the style applied on the cells.</value>
+  </data>
+  <data name="TemplateCell.Descrip" xml:space="preserve">
+    <value>## Template cell
+GcExcel use **“{{”** and **“}}”** as markers of template.
+
+Between these markers, user can use data field, function field, expression field and lots of properties.
+
+The template supports kinds of template cells:
+
+- **data template:** a template representing a data field
+- **function template:** a template representing a function
+- **expression template:** a template representing an expression
+- **inline template:** inline template for use with text
+- **sheet template:** template in the sheet name</value>
+  </data>
+  <data name="Templates.Descrip" xml:space="preserve">
+    <value>## Templates
+GcExcel(GrapeCity Documents for Excel) introduces new templates support with comprehensive syntax and API to bind Excel documents to data and generate Excel reports with advanced layouts.
+
+With flexible syntax and easy notations for data expansion and formulas, the new template syntax and API will make it easy to define Excel templates and generate Excel reports supporting numerous use cases.
+
+In this section, you'll learn how to use features of **GcExcel Template**. And also, there are several user samples for you to have a entire vision of templates and reports.
+
+Click the **"Run"** button to perform the following actions on the server:
+- Create an empty workbook
+- Execute all of the code in the code window
+- Save to an Excel file
+
+Then you can view the results by downloading the Excel file.
+
+**NOTE**: In this demo, Spread.Sheets is in read-only mode. Don't be alarmed if some features are not interactive. Download the fully functional  Excel file to interact with the features.</value>
+  </data>
+  <data name="TemplateSamples.Descrip" xml:space="preserve">
+    <value>## Template samples
+User samples for you to have an entire vision of **GcExcel Templates** and generated reports.</value>
+  </data>
+  <data name="CellStyle.Descrip" xml:space="preserve">
+    <value>User can directly use Excel's cell style in the template. 
+
+The style will be applied to the cells as per the data grow.</value>
+  </data>
+  <data name="CustomObject.Descrip" xml:space="preserve">
+    <value>User can use **custom object** as the data source of GcExcel Template, and take its fields and properties as data field in template.</value>
+  </data>
+  <data name="DataSet.Descrip" xml:space="preserve">
+    <value>User can use .Net **DataSet** as the data source of GcExcel Template.</value>
+  </data>
+  <data name="DataTable.Descrip" xml:space="preserve">
+    <value>User can use .Net **DataTable** as the data source of GcExcel Template.</value>
+  </data>
+  <data name="DataTemplate.Descrip" xml:space="preserve">
+    <value>Bind data with a template which consists of a data field of data source.</value>
+  </data>
+  <data name="ExpressionTemplate.Descrip" xml:space="preserve">
+    <value>Bind data with a template which consists of expression fields.</value>
+  </data>
+  <data name="FunctionTemplate.Descrip" xml:space="preserve">
+    <value>Bind data with a template which consists of formula functions.</value>
+  </data>
+  <data name="InlineTemplate.Descrip" xml:space="preserve">
+    <value>Bind data with a template which consists of inline fields.</value>
+  </data>
+  <data name="JsonFile.Descrip" xml:space="preserve">
+    <value>User can use a json file as the data source of GcExcel Template. Before this, user should read data from the file and serialize it to an custom object.
+Actually, user can use any data which can be serialized to an custom object as the data souce.</value>
+  </data>
+  <data name="MergeCell.Descrip" xml:space="preserve">
+    <value>User can use merge cells in the template. 
+
+GcExcel will try to understand the meanings of merge cell in template, and generate expected report.</value>
+  </data>
+  <data name="SetContext.Descrip" xml:space="preserve">
+    <value>User can use **C(context)** property to set a template's context explicitly.</value>
+  </data>
+  <data name="SetExpansionType.Descrip" xml:space="preserve">
+    <value>User can use **E(expansion)** property to set a template's expansion type.</value>
+  </data>
+  <data name="SetGroupType.Descrip" xml:space="preserve">
+    <value>User can use **G(group)** property to set a template's group type.</value>
+  </data>
+  <data name="SetPagebreak.Descrip" xml:space="preserve">
+    <value>User can use **PB(pagebreak)** property on a template to insert a pagebreak dynamically for the report.</value>
+  </data>
+  <data name="SetRange.Descrip" xml:space="preserve">
+    <value>User can use **R(range)** property to set a range for the current template.
+
+In the specified range, if a template cell has no default context nor explicit context, it will take the current template as its context.</value>
+  </data>
+  <data name="SetSortType.Descrip" xml:space="preserve">
+    <value>User can use **S(sort)** property to set a template's sort type.</value>
+  </data>
+  <data name="SheetTemplate.Descrip" xml:space="preserve">
+    <value>Bind data with a template, that has template field in the name of the worksheet.</value>
+  </data>
+  <data name="Variable.Descrip" xml:space="preserve">
+    <value>User can use **variable** defined in code as the data source of GcExcel Template.</value>
+  </data>
+  <data name="ChangeDataFieldSummarizeFunction.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to change the consolidation function of pivot table data field.</value>
+  </data>
+  <data name="ConvertExcelToPDF.Descrip" xml:space="preserve">
+    <value>Refer to the following code to see how to convert an Excel file to PDF document with GcExcel.</value>
+  </data>
+  <data name="ConvertRangeToImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to convert a spreadsheet range to an image.</value>
+  </data>
+  <data name="ConvertShapeToImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to convert a shape in spreadsheet to an image.</value>
+  </data>
+  <data name="ConvertSheetToImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to convert a worksheet to an image.</value>
+  </data>
+  <data name="CreatePicture.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create a picture object in worksheet.</value>
+  </data>
+  <data name="CreatePivotTable.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create a pivot table in GcExcel.</value>
+  </data>
+  <data name="DeletePicture.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to delete a picture object in worksheet.</value>
+  </data>
+  <data name="FilterItemsInPivotTable.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to hide some row fields in pivot table.</value>
+  </data>
+  <data name="ModifySubtotalsForPivotField.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set different subtotal functions for pivot table fields.</value>
+  </data>
+  <data name="PictureCopy.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to copy pictures in worksheet.</value>
+  </data>
+  <data name="PictureCut.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to cut pictures in worksheet.</value>
+  </data>
+  <data name="PictureDuplicate.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to duplicate a picture.</value>
+  </data>
+  <data name="RefreshPivotTable.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to refresh pivot table when some cell value changes.</value>
+  </data>
+  <data name="SaveBorder.Descrip" xml:space="preserve">
+    <value>GcExcel can export all kinds of Excel borders to PDF.</value>
+  </data>
+  <data name="SaveConditionalFormatting.Descrip" xml:space="preserve">
+    <value>GcExcel can export a spreadsheet with conditional formats to PDF.</value>
+  </data>
+  <data name="SavePictureToPDF.Descrip" xml:space="preserve">
+    <value>GcExcel can export a spreadsheet with pictures to PDF.</value>
+  </data>
+  <data name="SavePivotTable.Descrip" xml:space="preserve">
+    <value>GcExcel can export a spreadsheet with pivot tables to PDF.</value>
+  </data>
+  <data name="SaveRangeFillToPDF.Descrip" xml:space="preserve">
+    <value>GcExcel can export a spreadsheet range with different kinds of fills(solid, gradient, pattern) to PDF.</value>
+  </data>
+  <data name="SaveSparklinesToPDF.Descrip" xml:space="preserve">
+    <value>GcExcel can export a spreadsheet with sparklines to PDF.</value>
+  </data>
+  <data name="SaveTable.Descrip" xml:space="preserve">
+    <value>GcExcel can export a spreadsheet with tables to PDF.</value>
+  </data>
+  <data name="SaveWorkbookToPDF.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to export a workbook to PDF document.</value>
+  </data>
+  <data name="SaveWorksheetToPDF.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to export a single worksheet to PDF document.</value>
+  </data>
+  <data name="SetBuiltinStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set a built-in style for pivot table.</value>
+  </data>
+  <data name="SetCustomPivotStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to customize a pivot table style</value>
+  </data>
+  <data name="SetFontsFolderPath.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set the fonts folder path before saving to PDF document.</value>
+  </data>
+  <data name="SetNumberFormatForField.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set number format for a pivot field.</value>
+  </data>
+  <data name="SetShowTableStyles.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to show or hide some of table style elements.</value>
+  </data>
+  <data name="ShrinkToFitForWrappedText.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to shrink to fit the wrapped text when exporting to PDF.</value>
+  </data>
+  <data name="VerticalText.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to set japanese vertical text and export it to a PDF document to see effect.</value>
+  </data>
+  <data name="AddCustomSlicerStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create a custom slicer style.</value>
+  </data>
+  <data name="AddCustomThemes.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create custom theme and apply it to a workbook.</value>
+  </data>
+  <data name="AddSlicersForPivotTable.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create slicer for a pivot table.</value>
+  </data>
+  <data name="AddSlicersForTable.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create slicer for a table.</value>
+  </data>
+  <data name="ApplySlicerStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to apply a slicer style.</value>
+  </data>
+  <data name="ChangeWorkbookTheme.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to change the theme of a workbook.</value>
+  </data>
+  <data name="ClearSparklineGroup.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to clear sparkline groups.</value>
+  </data>
+  <data name="ClearSparklines.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to clear sparklines.</value>
+  </data>
+  <data name="ConfigShape3DFormat.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure three-D properties of a shape.</value>
+  </data>
+  <data name="ConfigShapeLine.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to format the border of a shape.</value>
+  </data>
+  <data name="ConfigShapeWithGradientFill.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set gradient fill for a shape.</value>
+  </data>
+  <data name="ConfigShapeWithPatternFill.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set pattern fill for a shape.</value>
+  </data>
+  <data name="ConfigShapeWithPictureFill.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set picture fill for a shape.</value>
+  </data>
+  <data name="ConfigShapeWithSolidFill.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set solid fill for a shape.</value>
+  </data>
+  <data name="ConfigShapeWithTextureFill.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set texture fill for a shape.</value>
+  </data>
+  <data name="ConfigSlicerLayout.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to config the layout of a slicer object.</value>
+  </data>
+  <data name="ConfigSparklineSettings.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure sparklines, such as line weight, marker color and series color.</value>
+  </data>
+  <data name="ConfigureWorkbookView.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure a workbook view, such as such as whether to display scrollbars, whether to show tabs, and so on.</value>
+  </data>
+  <data name="ConnectShapesByConnector.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to connect two shapes with a connector.</value>
+  </data>
+  <data name="CreateNewWorkbook.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create a workbook.</value>
+  </data>
+  <data name="CreateSparklines.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create sparklines in a worksheet.</value>
+  </data>
+  <data name="CustomSort.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create a custom sort for a range.</value>
+  </data>
+  <data name="DoTableFilter.Descrip" xml:space="preserve">
+    <value>The state of a slicer will be synchronized with table filter.</value>
+  </data>
+  <data name="GroupExistSparklines.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to group current sparklines.</value>
+  </data>
+  <data name="ImportCsvFileToWorkbook.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to load a csv file.</value>
+  </data>
+  <data name="ImportCsvFileToWorkbookWithOptions.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to load a csv file with options.</value>
+  </data>
+  <data name="ImportExcelFileDataOnly.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to only load data from Excel file.</value>
+  </data>
+  <data name="ImportExcelFileToWorkbook.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to open an Excel file.</value>
+  </data>
+  <data name="ImportExcelFileWithoutCalculation.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to avoid recalculating formulas after opening an Excel file.</value>
+  </data>
+  <data name="ImportExcelFileWithPassword.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to open a password protected Excel file.</value>
+  </data>
+  <data name="ImportOleObjectsToWorkbookAndExport.Descrip" xml:space="preserve">
+    <value>GcExcel can open an Excel file with ole objects.</value>
+  </data>
+  <data name="ImportXlsmToWorkbook.Descrip" xml:space="preserve">
+    <value>GcExcel can open xlsm files, and all macros and form controls will be preserved after exporting to xlsm again.</value>
+  </data>
+  <data name="LoadAndSaveJsonWithShapes.Descrip" xml:space="preserve">
+    <value>GcExcel can load and save ssjson file with shapes in it.</value>
+  </data>
+  <data name="SaveWorkbookToCsvFile.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to save  a workbook to csv file.</value>
+  </data>
+  <data name="SaveWorkbookToCsvFileWithOptions.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to save  a workbook to csv file with options.</value>
+  </data>
+  <data name="SaveWorkbookToExcelFile.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to save  a workbook to Excel file.</value>
+  </data>
+  <data name="SaveWorkbookWithPassword.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to save  a workbook to password protected  Excel file.</value>
+  </data>
+  <data name="SetShapeText.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add rich text for a shape.</value>
+  </data>
+  <data name="ShapeCopy.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to copy a shape object.</value>
+  </data>
+  <data name="ShapeCut.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to cut a shape object</value>
+  </data>
+  <data name="ShapeDuplicate.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to duplicate a shape object.</value>
+  </data>
+  <data name="SlicerCopy.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to copy a slicer object</value>
+  </data>
+  <data name="SlicerCut.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to cut a slicer object</value>
+  </data>
+  <data name="SlicerDuplicate.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to duplicate a slicer object</value>
+  </data>
+  <data name="SortRangeByFontColor.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to sort a range by font color.</value>
+  </data>
+  <data name="SortRangeByIcon.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to sort a range by conditional formatting icons.</value>
+  </data>
+  <data name="SortRangeByInterior.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to sort a range by interior.</value>
+  </data>
+  <data name="SortRangeByValue.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to sort a range by value.</value>
+  </data>
+  <data name="ToJsonFromJson.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to load from json and save to json file. </value>
+  </data>
+  <data name="UseDateAxis.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure date axis of sparkline.</value>
+  </data>
+  <data name="UseSlicerDoFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to use slicer to do filtering.</value>
+  </data>
+  <data name="UseSlicerToClearFilter.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to clear all filters on data with slicer.</value>
+  </data>
+  <data name="AccessWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to get worksheet object.</value>
+  </data>
+  <data name="ActivateWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to activate a worksheet.</value>
+  </data>
+  <data name="AddWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a new worksheet.</value>
+  </data>
+  <data name="AutoFit.Descrip" xml:space="preserve">
+    <value>Refer to the following example code in order to automatically fit the row height and column width in a worksheet.</value>
+  </data>
+  <data name="ConfigureWorksheetView.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to configure the worksheet view object, such as whether to display grid line, or the zoom factor and so on.</value>
+  </data>
+  <data name="ConfigWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to configure a worksheet.</value>
+  </data>
+  <data name="ControlAdjustingPageBreaks.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to add, delete and adjust page breaks within a worksheet.</value>
+  </data>
+  <data name="CopyWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to copy a worksheet within workbook.</value>
+  </data>
+  <data name="CopyWorksheetBetweenWorkbooks.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to copy a worksheet between different workbooks.</value>
+  </data>
+  <data name="DeleteWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to delete a worksheet from workbook.</value>
+  </data>
+  <data name="MoveWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to move a worksheet to the end of all worksheets.</value>
+  </data>
+  <data name="MoveWorksheetBetweenWorkbooks.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to move a worksheet into a different workbook</value>
+  </data>
+  <data name="ProtectWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to protect a worksheet and configure the protect settings.</value>
+  </data>
+  <data name="SaveWorksheetToCsvFile.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to save a single worksheet to csv file.</value>
+  </data>
+  <data name="SaveWorksheetToCsvFileWithOptions.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to save a single worksheet to csv file with options.</value>
+  </data>
+  <data name="SetBackgroundImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to set a background image for worksheet.</value>
+  </data>
+  <data name="UnprotectWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to unprotect a worksheet.</value>
+  </data>
+  <data name="Showcase.Descrip" xml:space="preserve">
+    <value>In this folder, you can explore complete code demonstrating how to generate an Excel file, or  you may have your own Excel files and just want to open and update some of its contents at server side
+
+Click the **"Run"** button to perform the following actions on the server:
+- Create an empty workbook or open an existing Excel file.
+- Execute all of code in the code window
+- Save to an Excel file</value>
+  </data>
+  <data name="Showcase.Name" xml:space="preserve">
+    <value>Showcase</value>
+  </data>
+  <data name="GetRangeRowCountColumnCount.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to get rows/columns/cells count in a specific range.</value>
+  </data>
+  <data name="DepartmentBudget.Name" xml:space="preserve">
+    <value>Department Budget</value>
   </data>
 </root>

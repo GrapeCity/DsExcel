@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //Change the path to the real file path when open.
-            workbook.Open(this.CurrentDirectory + "source.xlsx");
+            workbook.Open(System.IO.Path.Combine(this.CurrentDirectory, "source.xlsx"));
 
         }
 

@@ -20,7 +20,7 @@ namespace GrapeCity.Documents.Excel.Examples
         {
             get
             {
-                return this.GetType().FullName;
+                return this.GetType().FullName.ToLower();
             }
         }
 
@@ -91,6 +91,30 @@ namespace GrapeCity.Documents.Excel.Examples
             }
         }
 
+        public virtual bool SavePageInfos
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        public virtual bool SaveAsImages
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        public virtual bool SaveWorkbooks
+        {
+            get
+            {
+                return false;
+            }
+        }
+
         public virtual bool SaveCsv
         {
             get
@@ -106,9 +130,20 @@ namespace GrapeCity.Documents.Excel.Examples
                 return false;
             }
         }
-        
+
 
         public virtual String[] UsedResources
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// List of class names which current object refereced
+        /// </summary>
+        public virtual String[] Refs
         {
             get
             {
@@ -138,6 +173,19 @@ namespace GrapeCity.Documents.Excel.Examples
             string resource = "GrapeCity.Documents.Excel.Examples.Resource." + resourceName.Replace("\\", ".");
             var assembly = this.GetType().GetTypeInfo().Assembly;
             return assembly.GetManifestResourceStream(resource);
+        }
+
+        public string GetResourceText(string resourceName)
+        {
+            string resourceText = string.Empty;
+
+            using (Stream stream = this.GetResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                resourceText = reader.ReadToEnd();
+            }
+
+            return resourceText;
         }
 
         public virtual string TemplateName
@@ -203,12 +251,24 @@ namespace GrapeCity.Documents.Excel.Examples
             this.AfterExecute(workbook, userAgents);
         }
 
+        public void ExecuteExample(MemoryStream stream, GrapeCity.Documents.Excel.Workbook workbook, string[] userAgents)
+        {
+            this.BeforeExecute(workbook, userAgents);
+            this.Execute(workbook, stream);
+            this.AfterExecute(workbook, userAgents);
+        }
+
         protected virtual void BeforeExecute(GrapeCity.Documents.Excel.Workbook workbook, string[] userAgents)
         {
 
         }
 
         public virtual void Execute(GrapeCity.Documents.Excel.Workbook workbook)
+        {
+
+        }
+
+        public virtual void Execute(GrapeCity.Documents.Excel.Workbook workbook, MemoryStream outputStream)
         {
 
         }
@@ -231,6 +291,18 @@ namespace GrapeCity.Documents.Excel.Examples
 
         private string GetExampleCode()
         {
+            string streamCode = null;
+            if (this.SavePageInfos)
+            {
+                streamCode = "   //create a pdf file stream";
+                streamCode += string.Format("\r\n   FileStream outputStream = new FileStream(\"{0}.pdf\", FileMode.Create);\r\n\r\n", this.GetShortID());
+            }
+            else if (this.SaveAsImages)
+            {
+                streamCode = "   //create a png file stream";
+                streamCode += string.Format("\r\n   FileStream outputStream = new FileStream(\"{0}.png\", FileMode.Create);\r\n\r\n", this.GetShortID());
+            }
+
             string code = CodeResource.ResourceManager.GetString(this.GetType().FullName);
             if (!string.IsNullOrWhiteSpace(code))
             {
@@ -239,48 +311,70 @@ namespace GrapeCity.Documents.Excel.Examples
 
             if (this.SavePdf)
             {
-                code += "\r\n   //save to an pdf file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.pdf\", SaveFileFormat.Pdf);", this.GetShortID());
+                code += "\r\n   //save to a pdf file";
+                code += string.Format("\r\n   workbook.Save(\"{0}.pdf\");", this.GetShortID());
+            }
+            else if (this.SavePageInfos || this.SaveAsImages)
+            {
+                code += "\r\n   //close the pdf stream";
+                code += string.Format("\r\n   outputStream.Close();");
             }
             else if (this.SaveCsv)
             {
-                code += "\r\n   //save to an csv file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.csv\", SaveFileFormat.Csv);", this.GetShortID());
+                code += "\r\n   //save to a csv file";
+                code += string.Format("\r\n   workbook.Save(\"{0}.csv\");", this.GetShortID());
             }
-            else if(this.CanDownload)
+            else if (this.CanDownload)
             {
                 code += "\r\n   //save to an excel file";
                 code += string.Format("\r\n   workbook.Save(\"{0}.xlsx\");", this.GetShortID());
             }
-            return code;
+            return streamCode + code;
         }
 
         private string GetExampleCodeVB()
         {
+            string streamCode = null;
+            if (this.SavePageInfos)
+            {
+                streamCode = "   ' Create a pdf file stream";
+                streamCode += string.Format("\r\n   Dim outputStream = File.Create(\"{0}.pdf\")\r\n\r\n", this.GetShortID());
+            }
+            else if (this.SaveAsImages)
+            {
+                streamCode = "   ' Create a png file stream";
+                streamCode += string.Format("\r\n   Dim outputStream = File.Create(\"{0}.png\")\r\n\r\n", this.GetShortID());
+            }
+
             string code = CodeResource_VB.ResourceManager.GetString(this.GetType().FullName.Replace("GrapeCity.Documents.Excel.Examples", "GrapeCity.Documents.Excel.Examples.VB"));
             if (!string.IsNullOrWhiteSpace(code))
             {
                 code = Regex.Replace(code, "[\r\n][^\r\n]\\s{8}", "\n");
             }
 
-            code = "   'Create a new Workbook" + Environment.NewLine + "   Dim workbook = new Workbook()" + code;
+            code = "   ' Create a new Workbook" + Environment.NewLine + "   Dim workbook As New Workbook" + code;
 
             if (this.SavePdf)
             {
-                code += "\r\n  'save to an pdf file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.pdf\", SaveFileFormat.Pdf)", this.GetShortID());
+                code += "\r\n  ' save to a pdf file";
+                code += string.Format("\r\n   workbook.Save(\"{0}.pdf\")", this.GetShortID());
             }
             else if (this.SaveCsv)
             {
-                code += "\r\n  'save to an csv file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.csv\", SaveFileFormat.Csv)", this.GetShortID());
+                code += "\r\n  ' save to a csv file";
+                code += string.Format("\r\n   workbook.Save(\"{0}.csv\")", this.GetShortID());
+            }
+            else if (this.SavePageInfos || this.SaveAsImages)
+            {
+                code += "\r\n   ' close the pdf stream";
+                code += string.Format("\r\n   outputStream.Close()");
             }
             else if (this.CanDownload)
             {
-                code += "\r\n  'save to an excel file";
+                code += "\r\n  ' save to an excel file";
                 code += string.Format("\r\n   workbook.Save(\"{0}.xlsx\")", this.GetShortID());
             }
-            return code;
+            return streamCode + code;
         }
 
         public string GetShortID()
@@ -346,7 +440,7 @@ namespace GrapeCity.Documents.Excel.Examples
         {
             get
             {
-                return this._namespace;
+                return this._namespace.ToLower();
             }
         }
 
@@ -425,7 +519,12 @@ namespace GrapeCity.Documents.Excel.Examples
 
         private ExampleBase FindExample(ExampleBase example, string id)
         {
-            if (example.ID == id)
+            if(id == null)
+            {
+                return null;
+            }
+
+            if (example.GetShortID().ToLower() == id.ToLower())
             {
                 return example;
             }

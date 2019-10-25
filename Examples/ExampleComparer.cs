@@ -10,33 +10,33 @@ namespace GrapeCity.Documents.Excel.Examples
         public ExampleComparer()
         {
             // root children orders
-            _sortOrders.Add("Tutorial", "a");
-            _sortOrders.Add("Features", "b");
-            _sortOrders.Add("SpreadSheetsViewer", "c");
-            _sortOrders.Add("ExcelReporting", "d");
-            _sortOrders.Add("ExcelTemplates", "e");
+            _sortOrders.Add("Tutorial".ToLower(), "a");
+            _sortOrders.Add("Features".ToLower(), "b");
+            _sortOrders.Add("Showcase".ToLower(), "c");
+            _sortOrders.Add("Templates".ToLower(), "d");
+            _sortOrders.Add("SpreadSheetsViewer".ToLower(), "e");
 
             // Features children orders
-            _sortOrders.Add("RangeOperations", "a");
-            _sortOrders.Add("Formatting", "b");
-            _sortOrders.Add("Tables", "c");
-            _sortOrders.Add("ConditionalFormatting", "d");
-            _sortOrders.Add("DataValidation", "e");
-            _sortOrders.Add("Formulas", "f");
-            _sortOrders.Add("Grouping", "g");
-            _sortOrders.Add("Filtering", "h");
-            _sortOrders.Add("Sorting", "i");
-            _sortOrders.Add("Sparklines", "j");
-            _sortOrders.Add("Charts", "k");
-            _sortOrders.Add("Shape", "l");
-            _sortOrders.Add("Picture", "m");
-            _sortOrders.Add("Slicer", "n");
-            _sortOrders.Add("Comments", "o");
-            _sortOrders.Add("PivotTable", "p");
-            _sortOrders.Add("Hyperlinks", "q");
-            _sortOrders.Add("Theme", "r");
-            _sortOrders.Add("Workbook", "s");
-            _sortOrders.Add("Worksheets", "t");
+            _sortOrders.Add("RangeOperations".ToLower(), "a");
+            _sortOrders.Add("Formatting".ToLower(), "b");
+            _sortOrders.Add("Tables".ToLower(), "c");
+            _sortOrders.Add("ConditionalFormatting".ToLower(), "d");
+            _sortOrders.Add("DataValidation".ToLower(), "e");
+            _sortOrders.Add("Formulas".ToLower(), "f");
+            _sortOrders.Add("Grouping".ToLower(), "g");
+            _sortOrders.Add("Filtering".ToLower(), "h");
+            _sortOrders.Add("Sorting".ToLower(), "i");
+            _sortOrders.Add("Sparklines".ToLower(), "j");
+            _sortOrders.Add("Charts".ToLower(), "k");
+            _sortOrders.Add("Shape".ToLower(), "l");
+            _sortOrders.Add("Picture".ToLower(), "m");
+            _sortOrders.Add("Slicer".ToLower(), "n");
+            _sortOrders.Add("Comments".ToLower(), "o");
+            _sortOrders.Add("PivotTable".ToLower(), "p");
+            _sortOrders.Add("Hyperlinks".ToLower(), "q");
+            _sortOrders.Add("Theme".ToLower(), "r");
+            _sortOrders.Add("Workbook".ToLower(), "s");
+            _sortOrders.Add("Worksheets".ToLower(), "t");
         }
 
         public int Compare(ExampleBase x, ExampleBase y)

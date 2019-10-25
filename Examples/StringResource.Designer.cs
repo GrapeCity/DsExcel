@@ -61,11 +61,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to access the Cells/Rows/Columns/EntireRow/EntireColumn object in a sheet range..
+        /// </summary>
+        internal static string AccessCellsRowsColumns_Descrip {
+            get {
+                return ResourceManager.GetString("AccessCellsRowsColumns.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Access cells, rows and columns in a range.
         /// </summary>
         internal static string AccessCellsRowsColumns_Name {
             get {
                 return ResourceManager.GetString("AccessCellsRowsColumns.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to acess each area in a range when the range contains multiple areas..
+        /// </summary>
+        internal static string AccessEachAreaOfRange_Descrip {
+            get {
+                return ResourceManager.GetString("AccessEachAreaOfRange.Descrip", resourceCulture);
             }
         }
         
@@ -79,11 +97,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Range refers to an array of cells defined in a spreadsheet. GcExcel allows users to define a range and then access the rows and columns within the range to perform certain tasks like formatting of cells, merging of cells, insertion or deletion of cells along with other useful operations..
+        /// </summary>
+        internal static string AccessRange_Descrip {
+            get {
+                return ResourceManager.GetString("AccessRange.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Access a range.
         /// </summary>
         internal static string AccessRange_Name {
             get {
                 return ResourceManager.GetString("AccessRange.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can get the range of different table parts conveniently by using ITable.HeaderRange, ITable.DataRange and ITable.TotalsRange in GcExcel..
+        /// </summary>
+        internal static string AccessTableRanges_Descrip {
+            get {
+                return ResourceManager.GetString("AccessTableRanges.Descrip", resourceCulture);
             }
         }
         
@@ -97,11 +133,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to get worksheet object..
+        /// </summary>
+        internal static string AccessWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("AccessWorksheet.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Access a worksheet.
         /// </summary>
         internal static string AccessWorksheet_Name {
             get {
                 return ResourceManager.GetString("AccessWorksheet.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to activate a worksheet..
+        /// </summary>
+        internal static string ActivateWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("ActivateWorksheet.Descrip", resourceCulture);
             }
         }
         
@@ -115,11 +169,119 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can set different kinds of border style and color to a cell..
+        /// </summary>
+        internal static string AddBordersToCell_Descrip {
+            get {
+                return ResourceManager.GetString("AddBordersToCell.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add borders to cell.
         /// </summary>
         internal static string AddBordersToCell_Name {
             get {
                 return ResourceManager.GetString("AddBordersToCell.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a box&amp;whisker chart..
+        /// </summary>
+        internal static string AddBoxWhiskerChart_Descrip {
+            get {
+                return ResourceManager.GetString("AddBoxWhiskerChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a box&amp;whisker chart.
+        /// </summary>
+        internal static string AddBoxWhiskerChart_Name {
+            get {
+                return ResourceManager.GetString("AddBoxWhiskerChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create the button cell type for a cell..
+        /// </summary>
+        internal static string AddButtonCellType_Descrip {
+            get {
+                return ResourceManager.GetString("AddButtonCellType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Button cell type.
+        /// </summary>
+        internal static string AddButtonCellType_Name {
+            get {
+                return ResourceManager.GetString("AddButtonCellType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a chart sheet..
+        /// </summary>
+        internal static string AddChartSheet_Descrip {
+            get {
+                return ResourceManager.GetString("AddChartSheet.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a chart sheet.
+        /// </summary>
+        internal static string AddChartSheet_Name {
+            get {
+                return ResourceManager.GetString("AddChartSheet.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create the checkbox cell type for a cell..
+        /// </summary>
+        internal static string AddCheckBoxCellType_Descrip {
+            get {
+                return ResourceManager.GetString("AddCheckBoxCellType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Checkbox cell type.
+        /// </summary>
+        internal static string AddCheckBoxCellType_Name {
+            get {
+                return ResourceManager.GetString("AddCheckBoxCellType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create the combobox cell type for a cell..
+        /// </summary>
+        internal static string AddComboBoxCellType_Descrip {
+            get {
+                return ResourceManager.GetString("AddComboBoxCellType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Combobox cell type.
+        /// </summary>
+        internal static string AddComboBoxCellType_Name {
+            get {
+                return ResourceManager.GetString("AddComboBoxCellType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a comment for a cell..
+        /// </summary>
+        internal static string AddComment_Descrip {
+            get {
+                return ResourceManager.GetString("AddComment.Descrip", resourceCulture);
             }
         }
         
@@ -133,11 +295,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to add custom names and set formula to a range in a worksheet..
+        /// </summary>
+        internal static string AddCustomName_Descrip {
+            get {
+                return ResourceManager.GetString("AddCustomName.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add custom names.
         /// </summary>
         internal static string AddCustomName_Name {
             get {
                 return ResourceManager.GetString("AddCustomName.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create a custom slicer style..
+        /// </summary>
+        internal static string AddCustomSlicerStyle_Descrip {
+            get {
+                return ResourceManager.GetString("AddCustomSlicerStyle.Descrip", resourceCulture);
             }
         }
         
@@ -151,11 +331,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to In GcExcel .NET, you can create custom table style elements and apply them to a table..
+        /// </summary>
+        internal static string AddCustomTableStyle_Descrip {
+            get {
+                return ResourceManager.GetString("AddCustomTableStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add a custom table style.
         /// </summary>
         internal static string AddCustomTableStyle_Name {
             get {
                 return ResourceManager.GetString("AddCustomTableStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create custom theme and apply it to a workbook..
+        /// </summary>
+        internal static string AddCustomThemes_Descrip {
+            get {
+                return ResourceManager.GetString("AddCustomThemes.Descrip", resourceCulture);
             }
         }
         
@@ -169,11 +367,119 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a funnel chart..
+        /// </summary>
+        internal static string AddFunnelChart_Descrip {
+            get {
+                return ResourceManager.GetString("AddFunnelChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a funnel chart.
+        /// </summary>
+        internal static string AddFunnelChart_Name {
+            get {
+                return ResourceManager.GetString("AddFunnelChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a histogram chart..
+        /// </summary>
+        internal static string AddHistogramChart_Descrip {
+            get {
+                return ResourceManager.GetString("AddHistogramChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a histogram chart.
+        /// </summary>
+        internal static string AddHistogramChart_Name {
+            get {
+                return ResourceManager.GetString("AddHistogramChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create the hyperlink cell type for a cell..
+        /// </summary>
+        internal static string AddHyperlinkCellType_Descrip {
+            get {
+                return ResourceManager.GetString("AddHyperlinkCellType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hyperlink cell type.
+        /// </summary>
+        internal static string AddHyperlinkCellType_Name {
+            get {
+                return ResourceManager.GetString("AddHyperlinkCellType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can set different kinds of border style and color to a range..
+        /// </summary>
+        internal static string AddingBordersToRange_Descrip {
+            get {
+                return ResourceManager.GetString("AddingBordersToRange.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add borders to range.
         /// </summary>
         internal static string AddingBordersToRange_Name {
             get {
                 return ResourceManager.GetString("AddingBordersToRange.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a pareto chart..
+        /// </summary>
+        internal static string AddParetoChart_Descrip {
+            get {
+                return ResourceManager.GetString("AddParetoChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a pareto chart.
+        /// </summary>
+        internal static string AddParetoChart_Name {
+            get {
+                return ResourceManager.GetString("AddParetoChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create the cell type for row/column..
+        /// </summary>
+        internal static string AddRowColumnCellType_Descrip {
+            get {
+                return ResourceManager.GetString("AddRowColumnCellType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set cell type for row/column.
+        /// </summary>
+        internal static string AddRowColumnCellType_Name {
+            get {
+                return ResourceManager.GetString("AddRowColumnCellType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a series in a chart..
+        /// </summary>
+        internal static string AddSeries_Descrip {
+            get {
+                return ResourceManager.GetString("AddSeries.Descrip", resourceCulture);
             }
         }
         
@@ -187,11 +493,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create the cell type for the whole worksheet..
+        /// </summary>
+        internal static string AddSheetCellType_Descrip {
+            get {
+                return ResourceManager.GetString("AddSheetCellType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set cell type for the sheet.
+        /// </summary>
+        internal static string AddSheetCellType_Name {
+            get {
+                return ResourceManager.GetString("AddSheetCellType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create slicer for a pivot table..
+        /// </summary>
+        internal static string AddSlicersForPivotTable_Descrip {
+            get {
+                return ResourceManager.GetString("AddSlicersForPivotTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add slicers to pivot tables.
         /// </summary>
         internal static string AddSlicersForPivotTable_Name {
             get {
                 return ResourceManager.GetString("AddSlicersForPivotTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create slicer for a table..
+        /// </summary>
+        internal static string AddSlicersForTable_Descrip {
+            get {
+                return ResourceManager.GetString("AddSlicersForTable.Descrip", resourceCulture);
             }
         }
         
@@ -205,11 +547,137 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add subtotal to a range with IRange.Subtotal.
+        /// </summary>
+        internal static string AddSubtotal_Descrip {
+            get {
+                return ResourceManager.GetString("AddSubtotal.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add subtotal.
+        /// </summary>
+        internal static string AddSubtotal_Name {
+            get {
+                return ResourceManager.GetString("AddSubtotal.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add subtotal to a range with IRange.Subtotal (Advanced).
+        /// </summary>
+        internal static string AddSubtotalAdvanced_Descrip {
+            get {
+                return ResourceManager.GetString("AddSubtotalAdvanced.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add subtotal (with advanced options).
+        /// </summary>
+        internal static string AddSubtotalAdvanced_Name {
+            get {
+                return ResourceManager.GetString("AddSubtotalAdvanced.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a sunburst chart..
+        /// </summary>
+        internal static string AddSunburstChart_Descrip {
+            get {
+                return ResourceManager.GetString("AddSunburstChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a sunburst chart.
+        /// </summary>
+        internal static string AddSunburstChart_Name {
+            get {
+                return ResourceManager.GetString("AddSunburstChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create cell rich text by adding and configuring runs..
+        /// </summary>
+        internal static string AddTextRun_Descrip {
+            get {
+                return ResourceManager.GetString("AddTextRun.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Use IRichText interface.
         /// </summary>
         internal static string AddTextRun_Name {
             get {
                 return ResourceManager.GetString("AddTextRun.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a treemap chart..
+        /// </summary>
+        internal static string AddTreeMapChart_Descrip {
+            get {
+                return ResourceManager.GetString("AddTreeMapChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a treemap chart.
+        /// </summary>
+        internal static string AddTreeMapChart_Name {
+            get {
+                return ResourceManager.GetString("AddTreeMapChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert pictures, shapes into a chart. These inserted pictures or shapes are called the user shapes of this chart..
+        /// </summary>
+        internal static string AddUserShapes_Descrip {
+            get {
+                return ResourceManager.GetString("AddUserShapes.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add user shapes.
+        /// </summary>
+        internal static string AddUserShapes_Name {
+            get {
+                return ResourceManager.GetString("AddUserShapes.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a waterfall chart..
+        /// </summary>
+        internal static string AddWaterfallChart_Descrip {
+            get {
+                return ResourceManager.GetString("AddWaterfallChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a waterfall chart.
+        /// </summary>
+        internal static string AddWaterfallChart_Name {
+            get {
+                return ResourceManager.GetString("AddWaterfallChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a new worksheet..
+        /// </summary>
+        internal static string AddWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("AddWorksheet.Descrip", resourceCulture);
             }
         }
         
@@ -266,11 +734,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to apply a slicer style..
+        /// </summary>
+        internal static string ApplySlicerStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ApplySlicerStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Apply built-in style to slicer.
         /// </summary>
         internal static string ApplySlicerStyle_Name {
             get {
                 return ResourceManager.GetString("ApplySlicerStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can get a built-in named style from IWorksheet.Styles collection then apply the style to a cell or range..
+        /// </summary>
+        internal static string ApplyStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ApplyStyle.Descrip", resourceCulture);
             }
         }
         
@@ -284,11 +770,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can format a table using any of the predefined table styles provided by GcExcel .NET..
+        /// </summary>
+        internal static string ApplyTableStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ApplyTableStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Apply built-in styles to tables.
         /// </summary>
         internal static string ApplyTableStyle_Name {
             get {
                 return ResourceManager.GetString("ApplyTableStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add an area chart in GcExcel..
+        /// </summary>
+        internal static string AreaChart_Descrip {
+            get {
+                return ResourceManager.GetString("AreaChart.Descrip", resourceCulture);
             }
         }
         
@@ -302,6 +806,33 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export area chart to PDF file.
+        /// </summary>
+        internal static string AreaChartPdf_Descrip {
+            get {
+                return ResourceManager.GetString("AreaChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area chart.
+        /// </summary>
+        internal static string AreaChartPdf_Name {
+            get {
+                return ResourceManager.GetString("AreaChartPdf.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add an 100% stacked area chart in GcExcel..
+        /// </summary>
+        internal static string AreaStacked100_Descrip {
+            get {
+                return ResourceManager.GetString("AreaStacked100.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 100% Stacked chart.
         /// </summary>
         internal static string AreaStacked100_Name {
@@ -311,11 +842,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add an stacked area chart in GcExcel..
+        /// </summary>
+        internal static string AreaStackedChart_Descrip {
+            get {
+                return ResourceManager.GetString("AreaStackedChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stacked Area chart.
         /// </summary>
         internal static string AreaStackedChart_Name {
             get {
                 return ResourceManager.GetString("AreaStackedChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code in order to automatically fit the row height and column width in a worksheet..
+        /// </summary>
+        internal static string AutoFit_Descrip {
+            get {
+                return ResourceManager.GetString("AutoFit.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto fit column width and row height.
+        /// </summary>
+        internal static string AutoFit_Name {
+            get {
+                return ResourceManager.GetString("AutoFit.Name", resourceCulture);
             }
         }
         
@@ -352,6 +910,33 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export bar chart to PDF file.
+        /// </summary>
+        internal static string BarChartPdf_Descrip {
+            get {
+                return ResourceManager.GetString("BarChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bar chart.
+        /// </summary>
+        internal static string BarChartPdf_Name {
+            get {
+                return ResourceManager.GetString("BarChartPdf.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a clustered bar chart in GcExcel..
+        /// </summary>
+        internal static string BarClusteredChart_Descrip {
+            get {
+                return ResourceManager.GetString("BarClusteredChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clustered Bar chart.
         /// </summary>
         internal static string BarClusteredChart_Name {
@@ -361,11 +946,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a 100% stacked bar chart in GcExcel..
+        /// </summary>
+        internal static string BarStacked100Chart_Descrip {
+            get {
+                return ResourceManager.GetString("BarStacked100Chart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 100% Stacked Bar chart.
         /// </summary>
         internal static string BarStacked100Chart_Name {
             get {
                 return ResourceManager.GetString("BarStacked100Chart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a stacked bar chart in GcExcel..
+        /// </summary>
+        internal static string BarStackedChart_Descrip {
+            get {
+                return ResourceManager.GetString("BarStackedChart.Descrip", resourceCulture);
             }
         }
         
@@ -384,6 +987,24 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string BasicSalesReport_Name {
             get {
                 return ResourceManager.GetString("BasicSalesReport.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export spreadsheets that contain preset shapes, basic shapes, connector arrows , shape with text etc. into a PDF file..
+        /// </summary>
+        internal static string BasicShapes_Descrip {
+            get {
+                return ResourceManager.GetString("BasicShapes.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Basic shapes.
+        /// </summary>
+        internal static string BasicShapes_Name {
+            get {
+                return ResourceManager.GetString("BasicShapes.Name", resourceCulture);
             }
         }
         
@@ -436,11 +1057,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a bubble chart in GcExcel..
+        /// </summary>
+        internal static string BubbleChart_Descrip {
+            get {
+                return ResourceManager.GetString("BubbleChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bubble chart.
         /// </summary>
         internal static string BubbleChart_Name {
             get {
                 return ResourceManager.GetString("BubbleChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CellInfo class can help users to convert a cell address to its row/column coordinates, column name to index, and row name to index..
+        /// </summary>
+        internal static string CellInfo_Descrip {
+            get {
+                return ResourceManager.GetString("CellInfo.Descrip", resourceCulture);
             }
         }
         
@@ -477,11 +1116,72 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User can directly use Excel&apos;s cell style in the template. 
+        ///
+        ///The style will be applied to the cells as per the data grow..
+        /// </summary>
+        internal static string CellStyle_Descrip {
+            get {
+                return ResourceManager.GetString("CellStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cell style.
+        /// </summary>
+        internal static string CellStyle_Name {
+            get {
+                return ResourceManager.GetString("CellStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## CellType
+        ///The examples in this folder demonstrate how to create cell types. Following cell types are supported:
+        ///- Button cell type
+        ///- Checkbox cell type
+        ///- Combobox cell type
+        ///- Hyperlink cell type.
+        /// </summary>
+        internal static string CellType_Descrip {
+            get {
+                return ResourceManager.GetString("CellType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cell type.
+        /// </summary>
+        internal static string CellType_Name {
+            get {
+                return ResourceManager.GetString("CellType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to change the consolidation function of pivot table data field..
+        /// </summary>
+        internal static string ChangeDataFieldSummarizeFunction_Descrip {
+            get {
+                return ResourceManager.GetString("ChangeDataFieldSummarizeFunction.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set field&apos;s summarize function.
         /// </summary>
         internal static string ChangeDataFieldSummarizeFunction_Name {
             get {
                 return ResourceManager.GetString("ChangeDataFieldSummarizeFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to change chart type of a data series..
+        /// </summary>
+        internal static string ChangeSeriesType_Descrip {
+            get {
+                return ResourceManager.GetString("ChangeSeriesType.Descrip", resourceCulture);
             }
         }
         
@@ -495,6 +1195,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to change the theme of a workbook..
+        /// </summary>
+        internal static string ChangeWorkbookTheme_Descrip {
+            get {
+                return ResourceManager.GetString("ChangeWorkbookTheme.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change workbook themes.
         /// </summary>
         internal static string ChangeWorkbookTheme_Name {
@@ -504,11 +1213,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to change the filtering range in a worksheet..
+        /// </summary>
+        internal static string ChangeWorksheetFilterRange_Descrip {
+            get {
+                return ResourceManager.GetString("ChangeWorksheetFilterRange.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change worksheet filter range.
         /// </summary>
         internal static string ChangeWorksheetFilterRange_Name {
             get {
                 return ResourceManager.GetString("ChangeWorksheetFilterRange.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create cell rich text by Characters() method..
+        /// </summary>
+        internal static string CharacterCellText_Descrip {
+            get {
+                return ResourceManager.GetString("CharacterCellText.Descrip", resourceCulture);
             }
         }
         
@@ -562,6 +1289,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to copy a chart..
+        /// </summary>
+        internal static string ChartCopy_Descrip {
+            get {
+                return ResourceManager.GetString("ChartCopy.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copy chart.
         /// </summary>
         internal static string ChartCopy_Name {
@@ -571,11 +1307,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to cut a chart..
+        /// </summary>
+        internal static string ChartCut_Descrip {
+            get {
+                return ResourceManager.GetString("ChartCut.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cut chart.
         /// </summary>
         internal static string ChartCut_Name {
             get {
                 return ResourceManager.GetString("ChartCut.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to duplicate a chart..
+        /// </summary>
+        internal static string ChartDuplicate_Descrip {
+            get {
+                return ResourceManager.GetString("ChartDuplicate.Descrip", resourceCulture);
             }
         }
         
@@ -604,6 +1358,33 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string ChartGallery_Name {
             get {
                 return ResourceManager.GetString("ChartGallery.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In this example, GcExcel first opens an Excel file that contains some charts, then export it to a PDF file..
+        /// </summary>
+        internal static string ChartGalleryPdf_Descrip {
+            get {
+                return ResourceManager.GetString("ChartGalleryPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export chart gallery.
+        /// </summary>
+        internal static string ChartGalleryPdf_Name {
+            get {
+                return ResourceManager.GetString("ChartGalleryPdf.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to plot visible cells in plot area of a chart..
+        /// </summary>
+        internal static string ChartJustPlotVisibleCell_Descrip {
+            get {
+                return ResourceManager.GetString("ChartJustPlotVisibleCell.Descrip", resourceCulture);
             }
         }
         
@@ -650,9 +1431,9 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///-- Returns an instance of **IShape** 
         ///-- Use the **Chart** property to access the newly added chart
         ///- Add data series with the **IChart.SeriesCollection.Add** method
-        ///- Cutomize chart titles with the **IChart.ChartTitle** property
-        ///- Cutomize chart legends with the **IChart.Legend** property
-        ///- Access and customize each data series through the **ISeri [rest of string was truncated]&quot;;.
+        ///- Customize chart titles with the **IChart.ChartTitle** property
+        ///- Customize chart legends with the **IChart.Legend** property
+        ///- Access and customize each data series through the **ISe [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Charts_Descrip {
             get {
@@ -693,7 +1474,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// <summary>
         ///   Looks up a localized string similar to **Chart walls** include **back wall** and **side wall**.
         ///
-        ///These examaple demonstrete how to specity settings for chart walls, include:
+        ///These examples demonstrate how to specify settings for chart walls, include:
         ///- Configure walls style together
         ///- Configure back wall and side wall separately.
         /// </summary>
@@ -713,11 +1494,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to delete and clear comments..
+        /// </summary>
+        internal static string ClearComment_Descrip {
+            get {
+                return ResourceManager.GetString("ClearComment.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clear comments.
         /// </summary>
         internal static string ClearComment_Name {
             get {
                 return ResourceManager.GetString("ClearComment.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to clear filtering in a worksheet..
+        /// </summary>
+        internal static string ClearFilter_Descrip {
+            get {
+                return ResourceManager.GetString("ClearFilter.Descrip", resourceCulture);
             }
         }
         
@@ -731,11 +1530,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can clear the outline level of the specified rows or columns using the ClearOutline method of the IRange interface.
+        /// </summary>
+        internal static string ClearOutline_Descrip {
+            get {
+                return ResourceManager.GetString("ClearOutline.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clear outline.
         /// </summary>
         internal static string ClearOutline_Name {
             get {
                 return ResourceManager.GetString("ClearOutline.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to clear sparkline groups..
+        /// </summary>
+        internal static string ClearSparklineGroup_Descrip {
+            get {
+                return ResourceManager.GetString("ClearSparklineGroup.Descrip", resourceCulture);
             }
         }
         
@@ -749,11 +1566,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to clear sparklines..
+        /// </summary>
+        internal static string ClearSparklines_Descrip {
+            get {
+                return ResourceManager.GetString("ClearSparklines.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clear sparklines.
         /// </summary>
         internal static string ClearSparklines_Name {
             get {
                 return ResourceManager.GetString("ClearSparklines.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can collapse a group by setting the ShowDetail property of the IRange interface to boolean false. Refer to the following example code to collapse a group in a worksheet..
+        /// </summary>
+        internal static string CollapseGroup_Descrip {
+            get {
+                return ResourceManager.GetString("CollapseGroup.Descrip", resourceCulture);
             }
         }
         
@@ -767,11 +1602,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export column chart to PDF file.
+        /// </summary>
+        internal static string ColumnChartPdf_Descrip {
+            get {
+                return ResourceManager.GetString("ColumnChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Column chart.
+        /// </summary>
+        internal static string ColumnChartPdf_Name {
+            get {
+                return ResourceManager.GetString("ColumnChartPdf.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a clustered column chart in GcExcel..
+        /// </summary>
+        internal static string ColumnClusteredChart_Descrip {
+            get {
+                return ResourceManager.GetString("ColumnClusteredChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clustered Column chart.
         /// </summary>
         internal static string ColumnClusteredChart_Name {
             get {
                 return ResourceManager.GetString("ColumnClusteredChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a 100% stacked column chart in GcExcel..
+        /// </summary>
+        internal static string ColumnStacked100Chart_Descrip {
+            get {
+                return ResourceManager.GetString("ColumnStacked100Chart.Descrip", resourceCulture);
             }
         }
         
@@ -785,11 +1656,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a stacked column chart in GcExcel..
+        /// </summary>
+        internal static string ColumnStackedChart_Descrip {
+            get {
+                return ResourceManager.GetString("ColumnStackedChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stacked Column chart.
         /// </summary>
         internal static string ColumnStackedChart_Name {
             get {
                 return ResourceManager.GetString("ColumnStackedChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a combination chart(column and line markers) in GcExcel..
+        /// </summary>
+        internal static string CombinationChart1_Descrip {
+            get {
+                return ResourceManager.GetString("CombinationChart1.Descrip", resourceCulture);
             }
         }
         
@@ -803,11 +1692,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a combination chart(column stacked and area) in GcExcel..
+        /// </summary>
+        internal static string CombinationChart2_Descrip {
+            get {
+                return ResourceManager.GetString("CombinationChart2.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Combination chart.
         /// </summary>
         internal static string CombinationChart2_Name {
             get {
                 return ResourceManager.GetString("CombinationChart2.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export combo chart to PDF file.
+        /// </summary>
+        internal static string ComboChartPdf_Descrip {
+            get {
+                return ResourceManager.GetString("ComboChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Combo chart.
+        /// </summary>
+        internal static string ComboChartPdf_Name {
+            get {
+                return ResourceManager.GetString("ComboChartPdf.Name", resourceCulture);
             }
         }
         
@@ -864,11 +1780,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Use IShape.Adjustments to get/set adjustment points for shapes..
+        /// </summary>
+        internal static string ConfigAdjustmentPoints_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigAdjustmentPoints.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adjustment points.
+        /// </summary>
+        internal static string ConfigAdjustmentPoints_Name {
+            get {
+                return ResourceManager.GetString("ConfigAdjustmentPoints.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and customize the axis title, you can change  the title text, font size, font color, etc..
+        /// </summary>
+        internal static string ConfigAxisTitle_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigAxisTitle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure axis title style.
         /// </summary>
         internal static string ConfigAxisTitle_Name {
             get {
                 return ResourceManager.GetString("ConfigAxisTitle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to customize bubble chart(BubbleScale, SizeRepresents, ShowNegativeBubbles)..
+        /// </summary>
+        internal static string ConfigBubbleChartLayout_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigBubbleChartLayout.Descrip", resourceCulture);
             }
         }
         
@@ -882,6 +1834,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure the format of category axis, such as to customize the line style, line color, fill color, etc..
+        /// </summary>
+        internal static string ConfigCategoryAxesFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigCategoryAxesFormat.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure category axis style.
         /// </summary>
         internal static string ConfigCategoryAxesFormat_Name {
@@ -891,11 +1852,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Set data axis units.
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure date axis, such as axis&apos; maximum/minimum scale, major/minor unit, etc..
+        /// </summary>
+        internal static string ConfigCategoryAxisUnits_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigCategoryAxisUnits.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set date axis units.
         /// </summary>
         internal static string ConfigCategoryAxisUnits_Name {
             get {
                 return ResourceManager.GetString("ConfigCategoryAxisUnits.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure three-D properties of a chart..
+        /// </summary>
+        internal static string ConfigChart3DFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChart3DFormat.Descrip", resourceCulture);
             }
         }
         
@@ -909,11 +1888,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure font of chart area..
+        /// </summary>
+        internal static string ConfigChartAreaFont_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChartAreaFont.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure chart area&apos;s font.
         /// </summary>
         internal static string ConfigChartAreaFont_Name {
             get {
                 return ResourceManager.GetString("ConfigChartAreaFont.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure formats of chart area..
+        /// </summary>
+        internal static string ConfigChartAreaFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChartAreaFormat.Descrip", resourceCulture);
             }
         }
         
@@ -927,11 +1924,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure the back wall of a three-D chart..
+        /// </summary>
+        internal static string ConfigChartBackWall_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChartBackWall.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure chart back wall.
         /// </summary>
         internal static string ConfigChartBackWall_Name {
             get {
                 return ResourceManager.GetString("ConfigChartBackWall.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure the floor of a three-D chart..
+        /// </summary>
+        internal static string ConfigChartFloorStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChartFloorStyle.Descrip", resourceCulture);
             }
         }
         
@@ -945,11 +1960,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure the side wall of a three-D chart..
+        /// </summary>
+        internal static string ConfigChartSideWall_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChartSideWall.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure chart side wall.
         /// </summary>
         internal static string ConfigChartSideWall_Name {
             get {
                 return ResourceManager.GetString("ConfigChartSideWall.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure chart title with rich text format..
+        /// </summary>
+        internal static string ConfigChartTitleRichText_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChartTitleRichText.Descrip", resourceCulture);
             }
         }
         
@@ -963,11 +1996,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure different formats(fill, border, font, etc) of a chart title..
+        /// </summary>
+        internal static string ConfigChartTitleStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChartTitleStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure chart title style.
         /// </summary>
         internal static string ConfigChartTitleStyle_Name {
             get {
                 return ResourceManager.GetString("ConfigChartTitleStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure all walls of a three-D chart..
+        /// </summary>
+        internal static string ConfigChartWallStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigChartWallStyle.Descrip", resourceCulture);
             }
         }
         
@@ -981,11 +2032,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to format and customize a comment..
+        /// </summary>
+        internal static string ConfigCommentLayout_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigCommentLayout.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure comment&apos;s layout.
         /// </summary>
         internal static string ConfigCommentLayout_Name {
             get {
                 return ResourceManager.GetString("ConfigCommentLayout.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and customize data labels of a chart..
+        /// </summary>
+        internal static string ConfigDataLabelFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigDataLabelFormat.Descrip", resourceCulture);
             }
         }
         
@@ -999,11 +2068,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure the displaying content of data labels in chart..
+        /// </summary>
+        internal static string ConfigDataLabelText_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigDataLabelText.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure data label&apos;s text.
         /// </summary>
         internal static string ConfigDataLabelText_Name {
             get {
                 return ResourceManager.GetString("ConfigDataLabelText.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to format a data point of a series in chart..
+        /// </summary>
+        internal static string ConfigDataPointFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigDataPointFormat.Descrip", resourceCulture);
             }
         }
         
@@ -1017,11 +2104,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and configure display unit label of a axis, such as the fill and border of label, as well as common font settings..
+        /// </summary>
+        internal static string ConfigDisplayUnitLabel_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigDisplayUnitLabel.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure display unit label style.
         /// </summary>
         internal static string ConfigDisplayUnitLabel_Name {
             get {
                 return ResourceManager.GetString("ConfigDisplayUnitLabel.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you want a different header and footer for all the even pages, you first need to set the OddAndEvenPagesHeaderFooter property to true. When this is done, you can use the properties of the IPageSetup interface in order to configure the even page header and footer..
+        /// </summary>
+        internal static string ConfigEvenPageHeaderFooter_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigEvenPageHeaderFooter.Descrip", resourceCulture);
             }
         }
         
@@ -1035,11 +2140,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to If you want a different header and footer in your first page, you first need to set the DifferentFirstPageHeaderFooter property of the IPageSetup interface to true. When this is done, you can use the properties of the IPageSetup interface in order to configure the first page header and footer.
+        /// </summary>
+        internal static string ConfigFirstPageHeaderFooter_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigFirstPageHeaderFooter.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure first page header footer.
         /// </summary>
         internal static string ConfigFirstPageHeaderFooter_Name {
             get {
                 return ResourceManager.GetString("ConfigFirstPageHeaderFooter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can use the FirstPageNumber property of the IPageSetup interface in order to configure the number for your first page as per your choice..
+        /// </summary>
+        internal static string ConfigFirstPageNumber_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigFirstPageNumber.Descrip", resourceCulture);
             }
         }
         
@@ -1053,11 +2176,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure gridlines, you can show or hide the major and minor gridlines of each axis, you can also configure different properties of gridlines, such as line style, color and weight, etc..
+        /// </summary>
+        internal static string ConfigGridlines_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigGridlines.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure gridline style.
         /// </summary>
         internal static string ConfigGridlines_Name {
             get {
                 return ResourceManager.GetString("ConfigGridlines.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In GcExcel, you can use the LeftHeader property, LeftFooter property, CenterFooter property, RightHeader property, CenterHeader property, and the RightFooter property of the IPageSetup interface in order to configure header and footer for a page..
+        /// </summary>
+        internal static string ConfigHeaderFooter_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigHeaderFooter.Descrip", resourceCulture);
             }
         }
         
@@ -1071,11 +2212,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure font properties of a legend entry..
+        /// </summary>
+        internal static string ConfigLegendEntryFontStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigLegendEntryFontStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure legend entry font style.
         /// </summary>
         internal static string ConfigLegendEntryFontStyle_Name {
             get {
                 return ResourceManager.GetString("ConfigLegendEntryFontStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to format legend of a chart..
+        /// </summary>
+        internal static string ConfigLegendFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigLegendFormat.Descrip", resourceCulture);
             }
         }
         
@@ -1089,11 +2248,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to change the position of legend in a chart..
+        /// </summary>
+        internal static string ConfigLegendPositionAndLayout_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigLegendPositionAndLayout.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure legend position and layout.
         /// </summary>
         internal static string ConfigLegendPositionAndLayout_Name {
             get {
                 return ResourceManager.GetString("ConfigLegendPositionAndLayout.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to format the markers(fill and border) of a series..
+        /// </summary>
+        internal static string ConfigMarkersFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigMarkersFormat.Descrip", resourceCulture);
             }
         }
         
@@ -1107,11 +2284,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to customize the style and size of markers..
+        /// </summary>
+        internal static string ConfigMarkerStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigMarkerStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure markers style.
         /// </summary>
         internal static string ConfigMarkerStyle_Name {
             get {
                 return ResourceManager.GetString("ConfigMarkerStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set the color for negative data points..
+        /// </summary>
+        internal static string ConfigNegativePoint_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigNegativePoint.Descrip", resourceCulture);
             }
         }
         
@@ -1125,11 +2320,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can use the CenterHorizontally property and the CenterVertically property of the IPageSetup interface in order to configure the center of your page according to your preferences..
+        /// </summary>
+        internal static string ConfigPageCenter_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPageCenter.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure page center.
         /// </summary>
         internal static string ConfigPageCenter_Name {
             get {
                 return ResourceManager.GetString("ConfigPageCenter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can use the TopMargin property, RightMargin property and BottomMargin property of the IPageSetup interface in order to configure margins for a page..
+        /// </summary>
+        internal static string ConfigPageMargins_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPageMargins.Descrip", resourceCulture);
             }
         }
         
@@ -1143,11 +2356,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can use the Order property of the IPageSetup interface in order to configure the order of the page as per your choice..
+        /// </summary>
+        internal static string ConfigPageOrder_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPageOrder.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure page order.
         /// </summary>
         internal static string ConfigPageOrder_Name {
             get {
                 return ResourceManager.GetString("ConfigPageOrder.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can use the Orientation property of the IPageSetup interface in order to set the orientation for a page to Portrait or Landscape as per your preferences..
+        /// </summary>
+        internal static string ConfigPageOrientation_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPageOrientation.Descrip", resourceCulture);
             }
         }
         
@@ -1161,11 +2392,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can use the IsPercentScale property in order to control how to the spreadsheet is scaled; the FitToPagesTall property and the FitToPagesWide property in order to set its size; and the Zoom property in order to adjust the size of the paper that will be used for printing.You can use the IsPercentScale property in order to control how to the spreadsheet is scaled; the FitToPagesTall property and the FitToPagesWide property in order to set its size; and the Zoom property in order to adjust the size of the p [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ConfigPaperScaling_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPaperScaling.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure paper scaling.
         /// </summary>
         internal static string ConfigPaperScaling_Name {
             get {
                 return ResourceManager.GetString("ConfigPaperScaling.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can use the PaperSize property in order to set the paper size for the paper that will be used for printing..
+        /// </summary>
+        internal static string ConfigPaperSize_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPaperSize.Descrip", resourceCulture);
             }
         }
         
@@ -1179,11 +2428,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to format plot area(fill and border)..
+        /// </summary>
+        internal static string ConfigPlotAreaFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPlotAreaFormat.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure plot area format.
         /// </summary>
         internal static string ConfigPlotAreaFormat_Name {
             get {
                 return ResourceManager.GetString("ConfigPlotAreaFormat.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel .NET supports customized printing by allowing users to select a range of cells in order to configure the desired print area in a worksheet..
+        /// </summary>
+        internal static string ConfigPrintArea_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPrintArea.Descrip", resourceCulture);
             }
         }
         
@@ -1197,11 +2464,65 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can configure columns in a worksheet in order to repeat them at the right by using the PrintTailColumns property of the IPageSetup interface..
+        /// </summary>
+        internal static string ConfigPrintTailColumns_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPrintTailColumns.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configure columns to repeat at right.
+        /// </summary>
+        internal static string ConfigPrintTailColumns_Name {
+            get {
+                return ResourceManager.GetString("ConfigPrintTailColumns.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can configure rows in a worksheet in order to repeat them at the bottom using the PrintTailRows property of the IPageSetup interface..
+        /// </summary>
+        internal static string ConfigPrintTailRows_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPrintTailRows.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configure rows to repeat at bottom.
+        /// </summary>
+        internal static string ConfigPrintTailRows_Name {
+            get {
+                return ResourceManager.GetString("ConfigPrintTailRows.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can configure columns in a worksheet in order to repeat them at the left by using the PrintTitleColumns property..
+        /// </summary>
+        internal static string ConfigPrintTitleColumns_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPrintTitleColumns.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure columns to repeat at left.
         /// </summary>
         internal static string ConfigPrintTitleColumns_Name {
             get {
                 return ResourceManager.GetString("ConfigPrintTitleColumns.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can configure rows in a worksheet in order to repeat them at the top by using the PrintTitleRows property..
+        /// </summary>
+        internal static string ConfigPrintTitleRows_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigPrintTitleRows.Descrip", resourceCulture);
             }
         }
         
@@ -1215,11 +2536,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to display superscript effect in a cell..
+        /// </summary>
+        internal static string ConfigRunFont_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigRunFont.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure text run&apos;s font.
         /// </summary>
         internal static string ConfigRunFont_Name {
             get {
                 return ResourceManager.GetString("ConfigRunFont.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure secondary plot for pie of pie chart..
+        /// </summary>
+        internal static string ConfigSecondarySection_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigSecondarySection.Descrip", resourceCulture);
             }
         }
         
@@ -1233,11 +2572,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to format a data series..
+        /// </summary>
+        internal static string ConfigSeriesFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigSeriesFormat.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure series format.
         /// </summary>
         internal static string ConfigSeriesFormat_Name {
             get {
                 return ResourceManager.GetString("ConfigSeriesFormat.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure three-D properties of a shape..
+        /// </summary>
+        internal static string ConfigShape3DFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigShape3DFormat.Descrip", resourceCulture);
             }
         }
         
@@ -1251,11 +2608,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to format the border of a shape..
+        /// </summary>
+        internal static string ConfigShapeLine_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigShapeLine.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set shape&apos;s line format.
         /// </summary>
         internal static string ConfigShapeLine_Name {
             get {
                 return ResourceManager.GetString("ConfigShapeLine.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set gradient fill for a shape..
+        /// </summary>
+        internal static string ConfigShapeWithGradientFill_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigShapeWithGradientFill.Descrip", resourceCulture);
             }
         }
         
@@ -1269,11 +2644,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set pattern fill for a shape..
+        /// </summary>
+        internal static string ConfigShapeWithPatternFill_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigShapeWithPatternFill.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set shape&apos;s pattern fill.
         /// </summary>
         internal static string ConfigShapeWithPatternFill_Name {
             get {
                 return ResourceManager.GetString("ConfigShapeWithPatternFill.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set picture fill for a shape..
+        /// </summary>
+        internal static string ConfigShapeWithPictureFill_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigShapeWithPictureFill.Descrip", resourceCulture);
             }
         }
         
@@ -1287,11 +2680,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set solid fill for a shape..
+        /// </summary>
+        internal static string ConfigShapeWithSolidFill_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigShapeWithSolidFill.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set shape&apos;s solid fill.
         /// </summary>
         internal static string ConfigShapeWithSolidFill_Name {
             get {
                 return ResourceManager.GetString("ConfigShapeWithSolidFill.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set texture fill for a shape..
+        /// </summary>
+        internal static string ConfigShapeWithTextureFill_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigShapeWithTextureFill.Descrip", resourceCulture);
             }
         }
         
@@ -1305,11 +2716,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to customize the print settings of a worksheet, such as whether to print grid lines and headings..
+        /// </summary>
+        internal static string ConfigSheetPrintSettings_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigSheetPrintSettings.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure sheet print settings.
         /// </summary>
         internal static string ConfigSheetPrintSettings_Name {
             get {
                 return ResourceManager.GetString("ConfigSheetPrintSettings.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to config the layout of a slicer object..
+        /// </summary>
+        internal static string ConfigSlicerLayout_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigSlicerLayout.Descrip", resourceCulture);
             }
         }
         
@@ -1323,11 +2752,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure sparklines, such as line weight, marker color and series color..
+        /// </summary>
+        internal static string ConfigSparklineSettings_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigSparklineSettings.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure sparkline settings.
         /// </summary>
         internal static string ConfigSparklineSettings_Name {
             get {
                 return ResourceManager.GetString("ConfigSparklineSettings.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure the tick labels of axis, you can  customize the fill and border of tick labels, can also set different font properties, such as font size, font name, font style, etc. .
+        /// </summary>
+        internal static string ConfigTickMarkLabel_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigTickMarkLabel.Descrip", resourceCulture);
             }
         }
         
@@ -1341,11 +2788,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Set best fit row/column to auto fit row height/column width when exporting PDF.
+        /// </summary>
+        internal static string ConfigureBestFitRowColumn_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigureBestFitRowColumn.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BestFit row &amp; column.
+        /// </summary>
+        internal static string ConfigureBestFitRowColumn_Name {
+            get {
+                return ResourceManager.GetString("ConfigureBestFitRowColumn.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export spreadsheet of black and white effect to PDF file..
+        /// </summary>
+        internal static string ConfigureBlackAndWhite_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigureBlackAndWhite.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Black &amp; white.
         /// </summary>
         internal static string ConfigureBlackAndWhite_Name {
             get {
                 return ResourceManager.GetString("ConfigureBlackAndWhite.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export spreadsheet of draft effect to PDF file..
+        /// </summary>
+        internal static string ConfigureDraft_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigureDraft.Descrip", resourceCulture);
             }
         }
         
@@ -1359,11 +2842,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The header/footer settings of PageSetup will be applied in the exported PDF file..
+        /// </summary>
+        internal static string ConfigureHeaderFooter_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigureHeaderFooter.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Header footer.
         /// </summary>
         internal static string ConfigureHeaderFooter_Name {
             get {
                 return ResourceManager.GetString("ConfigureHeaderFooter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The orientation setting of PageSetup will be applied in the exported PDF file..
+        /// </summary>
+        internal static string ConfigureOritation_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigureOritation.Descrip", resourceCulture);
             }
         }
         
@@ -1377,11 +2878,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The page break settings will be applied in the exported PDF file..
+        /// </summary>
+        internal static string ConfigurePageBreaks_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigurePageBreaks.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Page breaks.
         /// </summary>
         internal static string ConfigurePageBreaks_Name {
             get {
                 return ResourceManager.GetString("ConfigurePageBreaks.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel will do pagination according to the page order setting of PageSetupand and export pages to PDF file..
+        /// </summary>
+        internal static string ConfigurePageOrder_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigurePageOrder.Descrip", resourceCulture);
             }
         }
         
@@ -1395,11 +2914,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All page setup settings will applied in the exported PDF file..
+        /// </summary>
+        internal static string ConfigurePageSetup_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigurePageSetup.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Page settings.
         /// </summary>
         internal static string ConfigurePageSetup_Name {
             get {
                 return ResourceManager.GetString("ConfigurePageSetup.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel will first do pagination and then export each page to PDF file..
+        /// </summary>
+        internal static string ConfigurePagination_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigurePagination.Descrip", resourceCulture);
             }
         }
         
@@ -1413,11 +2950,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel will only export the specified area to PDF if PageSetup.PrintArea is set..
+        /// </summary>
+        internal static string ConfigurePrintArea_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigurePrintArea.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Print area.
         /// </summary>
         internal static string ConfigurePrintArea_Name {
             get {
                 return ResourceManager.GetString("ConfigurePrintArea.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel will only export the specified pages to PDF if PageSetup.PrintPageRange is set..
+        /// </summary>
+        internal static string ConfigurePrintPageRange_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigurePrintPageRange.Descrip", resourceCulture);
             }
         }
         
@@ -1431,11 +2986,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The tail rows and columns will be applied in the exported PDF file..
+        /// </summary>
+        internal static string ConfigurePrintTails_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigurePrintTails.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Print tails.
+        /// </summary>
+        internal static string ConfigurePrintTails_Name {
+            get {
+                return ResourceManager.GetString("ConfigurePrintTails.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The title rows and columns will be applied in the exported PDF file..
+        /// </summary>
+        internal static string ConfigurePrintTitles_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigurePrintTitles.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Print titles.
         /// </summary>
         internal static string ConfigurePrintTitles_Name {
             get {
                 return ResourceManager.GetString("ConfigurePrintTitles.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The scale settings will be applied in the exported PDF file..
+        /// </summary>
+        internal static string ConfigureScaling_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigureScaling.Descrip", resourceCulture);
             }
         }
         
@@ -1449,11 +3040,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure a workbook view, such as such as whether to display scrollbars, whether to show tabs, and so on..
+        /// </summary>
+        internal static string ConfigureWorkbookView_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigureWorkbookView.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure workbook view.
         /// </summary>
         internal static string ConfigureWorkbookView_Name {
             get {
                 return ResourceManager.GetString("ConfigureWorkbookView.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to configure the worksheet view object, such as whether to display grid line, or the zoom factor and so on..
+        /// </summary>
+        internal static string ConfigureWorksheetView_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigureWorksheetView.Descrip", resourceCulture);
             }
         }
         
@@ -1467,11 +3076,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure the format of value axis, such as to customize the line style, line color, fill color, etc..
+        /// </summary>
+        internal static string ConfigValueAxesFormat_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigValueAxesFormat.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Configure value axis style.
         /// </summary>
         internal static string ConfigValueAxesFormat_Name {
             get {
                 return ResourceManager.GetString("ConfigValueAxesFormat.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure value axis, such as axis&apos; maximum/minimum scale, major/minor unit, etc..
+        /// </summary>
+        internal static string ConfigValueAxisUnits_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigValueAxisUnits.Descrip", resourceCulture);
             }
         }
         
@@ -1485,11 +3112,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how reference style can be set in a workbook..
+        /// </summary>
+        internal static string ConfigWorkbookReferenceStyle_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigWorkbookReferenceStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set workbook&apos;s reference style.
         /// </summary>
         internal static string ConfigWorkbookReferenceStyle_Name {
             get {
                 return ResourceManager.GetString("ConfigWorkbookReferenceStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to configure a worksheet..
+        /// </summary>
+        internal static string ConfigWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("ConfigWorksheet.Descrip", resourceCulture);
             }
         }
         
@@ -1503,11 +3148,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to connect two shapes with a connector..
+        /// </summary>
+        internal static string ConnectShapesByConnector_Descrip {
+            get {
+                return ResourceManager.GetString("ConnectShapesByConnector.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Connect shapes with connector shape.
         /// </summary>
         internal static string ConnectShapesByConnector_Name {
             get {
                 return ResourceManager.GetString("ConnectShapesByConnector.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to add, delete and adjust page breaks within a worksheet..
+        /// </summary>
+        internal static string ControlAdjustingPageBreaks_Descrip {
+            get {
+                return ResourceManager.GetString("ControlAdjustingPageBreaks.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Control adjustment of page breaks.
+        /// </summary>
+        internal static string ControlAdjustingPageBreaks_Name {
+            get {
+                return ResourceManager.GetString("ControlAdjustingPageBreaks.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following code to see how to convert an Excel file to PDF document with GcExcel..
+        /// </summary>
+        internal static string ConvertExcelToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("ConvertExcelToPDF.Descrip", resourceCulture);
             }
         }
         
@@ -1521,11 +3202,128 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to convert a spreadsheet range to an image..
+        /// </summary>
+        internal static string ConvertRangeToImage_Descrip {
+            get {
+                return ResourceManager.GetString("ConvertRangeToImage.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convert range to image.
+        /// </summary>
+        internal static string ConvertRangeToImage_Name {
+            get {
+                return ResourceManager.GetString("ConvertRangeToImage.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to convert a shape in spreadsheet to an image..
+        /// </summary>
+        internal static string ConvertShapeToImage_Descrip {
+            get {
+                return ResourceManager.GetString("ConvertShapeToImage.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convert shape to image.
+        /// </summary>
+        internal static string ConvertShapeToImage_Name {
+            get {
+                return ResourceManager.GetString("ConvertShapeToImage.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to convert a worksheet to an image..
+        /// </summary>
+        internal static string ConvertSheetToImage_Descrip {
+            get {
+                return ResourceManager.GetString("ConvertSheetToImage.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convert sheet to image.
+        /// </summary>
+        internal static string ConvertSheetToImage_Name {
+            get {
+                return ResourceManager.GetString("ConvertSheetToImage.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Users can choose from several paste options while copying the data from the cell range. Users can also combine the two different paste options..
+        /// </summary>
+        internal static string CopyPasteOptions_Descrip {
+            get {
+                return ResourceManager.GetString("CopyPasteOptions.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paste options of copy.
+        /// </summary>
+        internal static string CopyPasteOptions_Name {
+            get {
+                return ResourceManager.GetString("CopyPasteOptions.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to copy a worksheet within workbook..
+        /// </summary>
+        internal static string CopyWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("CopyWorksheet.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy worksheet.
+        /// </summary>
+        internal static string CopyWorksheet_Name {
+            get {
+                return ResourceManager.GetString("CopyWorksheet.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to copy a worksheet between different workbooks..
+        /// </summary>
+        internal static string CopyWorksheetBetweenWorkbooks_Descrip {
+            get {
+                return ResourceManager.GetString("CopyWorksheetBetweenWorkbooks.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy worksheet between workbooks.
+        /// </summary>
+        internal static string CopyWorksheetBetweenWorkbooks_Name {
+            get {
+                return ResourceManager.GetString("CopyWorksheetBetweenWorkbooks.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cost analysis with Pareto chart.
         /// </summary>
         internal static string CostAnalysisWithParetoChart_Name {
             get {
                 return ResourceManager.GetString("CostAnalysisWithParetoChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create an average rule on a range..
+        /// </summary>
+        internal static string CreateAverageRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateAverageRule.Descrip", resourceCulture);
             }
         }
         
@@ -1539,6 +3337,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The cell value rule compares values entered in the cells with the condition specified in the conditional formatting rule. This sample demonstrates how to add a cell value rule..
+        /// </summary>
+        internal static string CreateCellValueRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateCellValueRule.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create cell value rule.
         /// </summary>
         internal static string CreateCellValueRule_Name {
@@ -1548,11 +3355,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a chart in GcExcel..
+        /// </summary>
+        internal static string CreateChart_Descrip {
+            get {
+                return ResourceManager.GetString("CreateChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create chart.
         /// </summary>
         internal static string CreateChart_Name {
             get {
                 return ResourceManager.GetString("CreateChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and customize connection lines for pie of pie chart..
+        /// </summary>
+        internal static string CreateConnectorLine_Descrip {
+            get {
+                return ResourceManager.GetString("CreateConnectorLine.Descrip", resourceCulture);
             }
         }
         
@@ -1575,11 +3400,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can create a named style, configure it as per your preferences and then apply it to a cell or range..
+        /// </summary>
+        internal static string CreateCustomStyle_Descrip {
+            get {
+                return ResourceManager.GetString("CreateCustomStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create custom style.
         /// </summary>
         internal static string CreateCustomStyle_Name {
             get {
                 return ResourceManager.GetString("CreateCustomStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can use the Add method of the IValidation interface to apply data validation to individual cells or a range of cells in a spreadsheet. A single cell can have only one validation rule and if you try to apply validation on a cell that already possesses a validation rule, it will throw an exception. You can add a custom validation rule to validate data in a worksheet by applying custom validation..
+        /// </summary>
+        internal static string CreateCustomValidation_Descip {
+            get {
+                return ResourceManager.GetString("CreateCustomValidation.Descip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can add a custom validation rule to validate data in a worksheet by applying custom validation..
+        /// </summary>
+        internal static string CreateCustomValidation_Descrip {
+            get {
+                return ResourceManager.GetString("CreateCustomValidation.Descrip", resourceCulture);
             }
         }
         
@@ -1593,11 +3445,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to create a data bar rule on a range..
+        /// </summary>
+        internal static string CreateDatabBarRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateDatabBarRule.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create data bar rule.
         /// </summary>
         internal static string CreateDatabBarRule_Name {
             get {
                 return ResourceManager.GetString("CreateDatabBarRule.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can validate data entered in date format in cells or a range of cells by applying the date validation in a worksheet..
+        /// </summary>
+        internal static string CreateDateValidation_Descrip {
+            get {
+                return ResourceManager.GetString("CreateDateValidation.Descrip", resourceCulture);
             }
         }
         
@@ -1611,11 +3481,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can validate your data and ensure users add only decimal numbers in cells or a range of cells by applying the decimal validation in a worksheet..
+        /// </summary>
+        internal static string CreateDecimalValidation_Descrip {
+            get {
+                return ResourceManager.GetString("CreateDecimalValidation.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create decimal validation.
         /// </summary>
         internal static string CreateDecimalValidation_Name {
             get {
                 return ResourceManager.GetString("CreateDecimalValidation.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and customize drop lines for line chart..
+        /// </summary>
+        internal static string CreateDropLine_Descrip {
+            get {
+                return ResourceManager.GetString("CreateDropLine.Descrip", resourceCulture);
             }
         }
         
@@ -1629,11 +3517,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The expression rule in conditional formatting is used to set the expression rule&apos;s formula. This rule can be added using the properties and methods of the IFormatCondition interface..
+        /// </summary>
+        internal static string CreateExpressionRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateExpressionRule.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create expression rule.
         /// </summary>
         internal static string CreateExpressionRule_Name {
             get {
                 return ResourceManager.GetString("CreateExpressionRule.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and customize high-low lines for line chart..
+        /// </summary>
+        internal static string CreateHiLoLine_Descrip {
+            get {
+                return ResourceManager.GetString("CreateHiLoLine.Descrip", resourceCulture);
             }
         }
         
@@ -1647,11 +3553,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to insert hyperlinks to an external file, to a web page, to a range within the worksheet and to an email address..
+        /// </summary>
+        internal static string CreateHyperlinks_Descrip {
+            get {
+                return ResourceManager.GetString("CreateHyperlinks.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create hyperlinks.
         /// </summary>
         internal static string CreateHyperlinks_Name {
             get {
                 return ResourceManager.GetString("CreateHyperlinks.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The icon sets rule in conditional formatting displays the icons on the basis of values entered in the cells. Each value represents a distinct icon that appears in a cell if it matches the icon sets rule applied on it. This rule can be added using the properties and methods of the IIconSetCondition interface..
+        /// </summary>
+        internal static string CreateIconSetRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateIconSetRule.Descrip", resourceCulture);
             }
         }
         
@@ -1665,11 +3589,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can also validate lists inserted in cells or a range of cells by applying the list validation in your worksheet ..
+        /// </summary>
+        internal static string CreateListValidation_Descrip {
+            get {
+                return ResourceManager.GetString("CreateListValidation.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create list validation.
         /// </summary>
         internal static string CreateListValidation_Name {
             get {
                 return ResourceManager.GetString("CreateListValidation.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can apply multilple conditional formatting to one range, each conditional formatting will take effect by the order of their priorities, you can use StopIfTrue to stop applying subsequent condional formatting..
+        /// </summary>
+        internal static string CreateMultiRuleForRange_Descrip {
+            get {
+                return ResourceManager.GetString("CreateMultiRuleForRange.Descrip", resourceCulture);
             }
         }
         
@@ -1683,11 +3625,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create a workbook..
+        /// </summary>
+        internal static string CreateNewWorkbook_Descrip {
+            get {
+                return ResourceManager.GetString("CreateNewWorkbook.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create new workbook.
         /// </summary>
         internal static string CreateNewWorkbook_Name {
             get {
                 return ResourceManager.GetString("CreateNewWorkbook.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create a picture object in worksheet..
+        /// </summary>
+        internal static string CreatePicture_Descrip {
+            get {
+                return ResourceManager.GetString("CreatePicture.Descrip", resourceCulture);
             }
         }
         
@@ -1701,11 +3661,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create a pivot table in GcExcel..
+        /// </summary>
+        internal static string CreatePivotTable_Descrip {
+            get {
+                return ResourceManager.GetString("CreatePivotTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create pivot tables.
         /// </summary>
         internal static string CreatePivotTable_Name {
             get {
                 return ResourceManager.GetString("CreatePivotTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can apply row/column grouping by using the Group method of the IRange interface and specifying the rows/columns you want to apply grouping on. Refer to the following example code to apply row/column grouping in a worksheet..
+        /// </summary>
+        internal static string CreateRangeGroup_Descrip {
+            get {
+                return ResourceManager.GetString("CreateRangeGroup.Descrip", resourceCulture);
             }
         }
         
@@ -1719,11 +3697,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to make a data series use secondary axis..
+        /// </summary>
+        internal static string CreateSecondaryAxis_Descrip {
+            get {
+                return ResourceManager.GetString("CreateSecondaryAxis.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create secondary axis.
         /// </summary>
         internal static string CreateSecondaryAxis_Name {
             get {
                 return ResourceManager.GetString("CreateSecondaryAxis.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and customize series lines..
+        /// </summary>
+        internal static string CreateSeriesLine_Descrip {
+            get {
+                return ResourceManager.GetString("CreateSeriesLine.Descrip", resourceCulture);
             }
         }
         
@@ -1737,11 +3733,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to add a hyperlink to a shape..
+        /// </summary>
+        internal static string CreateShapeWithHyperlink_Descrip {
+            get {
+                return ResourceManager.GetString("CreateShapeWithHyperlink.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create hyperlinks on shape.
+        /// </summary>
+        internal static string CreateShapeWithHyperlink_Name {
+            get {
+                return ResourceManager.GetString("CreateShapeWithHyperlink.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create sparklines in a worksheet..
+        /// </summary>
+        internal static string CreateSparklines_Descrip {
+            get {
+                return ResourceManager.GetString("CreateSparklines.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create sparklines.
         /// </summary>
         internal static string CreateSparklines_Name {
             get {
                 return ResourceManager.GetString("CreateSparklines.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to With GcExcel.NET, you don&apos;t always need to create a custom named style right from the scratch. Instead, you can modify an existing style (via getting the existing style from the Styles collection) as per your specific preferences and save the new style as another workbook style that can be used as and when required..
+        /// </summary>
+        internal static string CreateStyleBasedOn_Descrip {
+            get {
+                return ResourceManager.GetString("CreateStyleBasedOn.Descrip", resourceCulture);
             }
         }
         
@@ -1755,11 +3787,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to In GcExcel .NET, you can create tables in spreadsheets using the Add method of the ITables interface, or simply transform a cell range into a table by specifying the existing data lying in a worksheet..
+        /// </summary>
+        internal static string CreateTable_Descrip {
+            get {
+                return ResourceManager.GetString("CreateTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create a table.
         /// </summary>
         internal static string CreateTable_Name {
             get {
                 return ResourceManager.GetString("CreateTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can validate the length of the text entered in cells or a range of cells by applying the text length validation in a worksheet..
+        /// </summary>
+        internal static string CreateTextLength_Descrip {
+            get {
+                return ResourceManager.GetString("CreateTextLength.Descrip", resourceCulture);
             }
         }
         
@@ -1773,11 +3823,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The color scale rule uses a sliding color scale to format cells or a range of cells. For instance, if numeric cell value 1 is represented with color yellow and 50 with green, then 25 would be light green. This rule can be added using the properties and methods of the IColorScale interface..
+        /// </summary>
+        internal static string CreateThreeColorScaleRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateThreeColorScaleRule.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create three color scale rule.
         /// </summary>
         internal static string CreateThreeColorScaleRule_Name {
             get {
                 return ResourceManager.GetString("CreateThreeColorScaleRule.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can validate the time entered in cells or a range of cells by applying the time validation in a worksheet..
+        /// </summary>
+        internal static string CreateTimeValidation_Descrip {
+            get {
+                return ResourceManager.GetString("CreateTimeValidation.Descrip", resourceCulture);
             }
         }
         
@@ -1791,11 +3859,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The top bottom rule checks whether the values in the top or bottom of a cell range match with the required values in the cell. In case the values don&apos;t match, the data is considered as invalid. This rule can be added using the properties and methods of the ITop10 interface..
+        /// </summary>
+        internal static string CreateTopBottomRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateTopBottomRule.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create top bottom rule.
         /// </summary>
         internal static string CreateTopBottomRule_Name {
             get {
                 return ResourceManager.GetString("CreateTopBottomRule.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and customize trend lines..
+        /// </summary>
+        internal static string CreateTrendline_Descrip {
+            get {
+                return ResourceManager.GetString("CreateTrendline.Descrip", resourceCulture);
             }
         }
         
@@ -1809,11 +3895,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The color scale rule uses a sliding color scale to format cells or a range of cells. For instance, if numeric cell value 1 is represented with color yellow and 50 with green, then 25 would be light green. This rule can be added using the properties and methods of the IColorScale interface..
+        /// </summary>
+        internal static string CreateTwoColorScaleRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateTwoColorScaleRule.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create two color scale rule.
         /// </summary>
         internal static string CreateTwoColorScaleRule_Name {
             get {
                 return ResourceManager.GetString("CreateTwoColorScaleRule.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The unique rule in conditional formatting is applied to check whether the value entered in a cell is a unique value in that particular range. This is possible only when the duplication option is set to false. To check for the duplicate values, the duplicate rule is applied separately..
+        /// </summary>
+        internal static string CreateUniqueRule_Descrip {
+            get {
+                return ResourceManager.GetString("CreateUniqueRule.Descrip", resourceCulture);
             }
         }
         
@@ -1827,11 +3931,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show and customize up/down bars for line chart..
+        /// </summary>
+        internal static string CreateUpDownBars_Descrip {
+            get {
+                return ResourceManager.GetString("CreateUpDownBars.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create up down bars for line chart.
         /// </summary>
         internal static string CreateUpDownBars_Name {
             get {
                 return ResourceManager.GetString("CreateUpDownBars.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can validate your data and ensure users add only whole numbers in cells or a range of cells by applying the whole number validation in a worksheet..
+        /// </summary>
+        internal static string CreateWholeNumberValidation_Descrip {
+            get {
+                return ResourceManager.GetString("CreateWholeNumberValidation.Descrip", resourceCulture);
             }
         }
         
@@ -1873,11 +3995,83 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set a custom number format to a cell..
+        /// </summary>
+        internal static string CustomNumberFormat_Descrip {
+            get {
+                return ResourceManager.GetString("CustomNumberFormat.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set custom number format.
         /// </summary>
         internal static string CustomNumberFormat_Name {
             get {
                 return ResourceManager.GetString("CustomNumberFormat.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use **custom object** as the data source of GcExcel Template, and take its fields and properties as data field in template..
+        /// </summary>
+        internal static string CustomObject_Descrip {
+            get {
+                return ResourceManager.GetString("CustomObject.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom object.
+        /// </summary>
+        internal static string CustomObject_Name {
+            get {
+                return ResourceManager.GetString("CustomObject.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to customize the page settings of any page and then export to PDF file..
+        /// </summary>
+        internal static string CustomPageInfos_Descrip {
+            get {
+                return ResourceManager.GetString("CustomPageInfos.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom pageInfos.
+        /// </summary>
+        internal static string CustomPageInfos_Name {
+            get {
+                return ResourceManager.GetString("CustomPageInfos.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export spreadsheets that contain custom shapes into a PDF file..
+        /// </summary>
+        internal static string CustomShape_Descrip {
+            get {
+                return ResourceManager.GetString("CustomShape.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom shapes.
+        /// </summary>
+        internal static string CustomShape_Name {
+            get {
+                return ResourceManager.GetString("CustomShape.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create a custom sort for a range..
+        /// </summary>
+        internal static string CustomSort_Descrip {
+            get {
+                return ResourceManager.GetString("CustomSort.Descrip", resourceCulture);
             }
         }
         
@@ -1891,11 +4085,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel .NET provides users with the ability to cut or copy a cell or a range of cells from a specific area and paste it into another area within the same worksheet or in other worksheets. Also, users can choose from multiple paste options and also combine different paste options while copying the data from the cell range..
+        /// </summary>
+        internal static string CutCopyRange_Descrip {
+            get {
+                return ResourceManager.GetString("CutCopyRange.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cut or copy ranges.
         /// </summary>
         internal static string CutCopyRange_Name {
             get {
                 return ResourceManager.GetString("CutCopyRange.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Besides cut or copy range within a workbook, GcExcel also has the ability to cut or copy a range between different workbooks..
+        /// </summary>
+        internal static string CutCopyRangeBetweenWorkbooks_Descrip {
+            get {
+                return ResourceManager.GetString("CutCopyRangeBetweenWorkbooks.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cut or copy range between workbooks.
+        /// </summary>
+        internal static string CutCopyRangeBetweenWorkbooks_Name {
+            get {
+                return ResourceManager.GetString("CutCopyRangeBetweenWorkbooks.Name", resourceCulture);
             }
         }
         
@@ -1938,6 +4159,84 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User can use .Net **DataSet** as the data source of GcExcel Template..
+        /// </summary>
+        internal static string DataSet_Descrip {
+            get {
+                return ResourceManager.GetString("DataSet.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DataSet.
+        /// </summary>
+        internal static string DataSet_Name {
+            get {
+                return ResourceManager.GetString("DataSet.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Data source
+        ///The template API can bind Excel templates directly with data from following objects:
+        ///
+        ///- **DataSet/DataTable:** Can handle data source from any type of DB
+        ///- **Custom Object:** These are user defined objects. Can handle data source from Json String/File/XML, etc. That is, any data souce that can be serialized as a custom object.
+        ///- **Variable:** User defined variable in code.
+        ///- **Array/List:** User defined array/list in code..
+        /// </summary>
+        internal static string DataSource_Descrip {
+            get {
+                return ResourceManager.GetString("DataSource.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data source.
+        /// </summary>
+        internal static string DataSource_Name {
+            get {
+                return ResourceManager.GetString("DataSource.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use .Net **DataTable** as the data source of GcExcel Template..
+        /// </summary>
+        internal static string DataTable_Descrip {
+            get {
+                return ResourceManager.GetString("DataTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DataTable.
+        /// </summary>
+        internal static string DataTable_Name {
+            get {
+                return ResourceManager.GetString("DataTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bind data with a template which consists of a data field of data source..
+        /// </summary>
+        internal static string DataTemplate_Descrip {
+            get {
+                return ResourceManager.GetString("DataTemplate.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data template.
+        /// </summary>
+        internal static string DataTemplate_Name {
+            get {
+                return ResourceManager.GetString("DataTemplate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ## Data Validation
         ///GrapeCity Documents for Excel lets you validate data by restricting the information format and the values that can be entered in cells of a worksheet. You can create distinct validation scenarios for individual cells or for a range of cells.
         ///
@@ -1968,6 +4267,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set a kind of date/time format to a cell..
+        /// </summary>
+        internal static string DateAndTimeFormat_Descrip {
+            get {
+                return ResourceManager.GetString("DateAndTimeFormat.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set date and time format.
         /// </summary>
         internal static string DateAndTimeFormat_Name {
@@ -1977,11 +4285,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how dynamic date filters can be applied to display results that match the specified date criteria taking into account the current system date that automatically gets updated everyday..
+        /// </summary>
+        internal static string DateDynamicFilter_Descrip {
+            get {
+                return ResourceManager.GetString("DateDynamicFilter.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filter date dynamically.
         /// </summary>
         internal static string DateDynamicFilter_Name {
             get {
                 return ResourceManager.GetString("DateDynamicFilter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how date filters can be applied to a range to display only those results that are falling within the specified dates..
+        /// </summary>
+        internal static string DateFilter_Descrip {
+            get {
+                return ResourceManager.GetString("DateFilter.Descrip", resourceCulture);
             }
         }
         
@@ -2016,11 +4342,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to delete a chart in GcExcel..
+        /// </summary>
+        internal static string DeleteChart_Descrip {
+            get {
+                return ResourceManager.GetString("DeleteChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete chart.
         /// </summary>
         internal static string DeleteChart_Name {
             get {
                 return ResourceManager.GetString("DeleteChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you want to delete the formatting rule applied to the cell range in a worksheet, you can do it by using the Delete method of IFormatCondition interface.
+        /// </summary>
+        internal static string DeleteConditionalFormatRules_Descrip {
+            get {
+                return ResourceManager.GetString("DeleteConditionalFormatRules.Descrip", resourceCulture);
             }
         }
         
@@ -2034,11 +4378,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to delete hyperlinks.
+        /// </summary>
+        internal static string DeleteHyperlinks_Descrip {
+            get {
+                return ResourceManager.GetString("DeleteHyperlinks.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete hyperlinks.
         /// </summary>
         internal static string DeleteHyperlinks_Name {
             get {
                 return ResourceManager.GetString("DeleteHyperlinks.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to delete a picture object in worksheet..
+        /// </summary>
+        internal static string DeletePicture_Descrip {
+            get {
+                return ResourceManager.GetString("DeletePicture.Descrip", resourceCulture);
             }
         }
         
@@ -2052,11 +4414,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to delete a data series from chart..
+        /// </summary>
+        internal static string DeleteSeries_Descrip {
+            get {
+                return ResourceManager.GetString("DeleteSeries.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete series.
         /// </summary>
         internal static string DeleteSeries_Name {
             get {
                 return ResourceManager.GetString("DeleteSeries.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can delete the applied validation rule using the Delete method of the IValidation interface..
+        /// </summary>
+        internal static string DeleteValidation_Descrip {
+            get {
+                return ResourceManager.GetString("DeleteValidation.Descrip", resourceCulture);
             }
         }
         
@@ -2070,11 +4450,56 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to delete a worksheet from workbook..
+        /// </summary>
+        internal static string DeleteWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("DeleteWorksheet.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete a worksheet.
         /// </summary>
         internal static string DeleteWorksheet_Name {
             get {
                 return ResourceManager.GetString("DeleteWorksheet.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department Budget.
+        /// </summary>
+        internal static string DepartmentBudget_Name {
+            get {
+                return ResourceManager.GetString("DepartmentBudget.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to get the dependents of a cell..
+        /// </summary>
+        internal static string Dependents_Descrip {
+            get {
+                return ResourceManager.GetString("Dependents.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dependents.
+        /// </summary>
+        internal static string Dependents_Name {
+            get {
+                return ResourceManager.GetString("Dependents.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel allow users to disable calculation engine, dirty and re-calculate the formula of a specific range..
+        /// </summary>
+        internal static string DirtyAndCalculation_Descrip {
+            get {
+                return ResourceManager.GetString("DirtyAndCalculation.Descrip", resourceCulture);
             }
         }
         
@@ -2088,11 +4513,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The state of a slicer will be synchronized with table filter..
+        /// </summary>
+        internal static string DoTableFilter_Descrip {
+            get {
+                return ResourceManager.GetString("DoTableFilter.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Auto-filter table with slicer.
         /// </summary>
         internal static string DoTableFilter_Name {
             get {
                 return ResourceManager.GetString("DoTableFilter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to allow users to render Excel ranges inside the PDF file.
+        /// </summary>
+        internal static string DrawRangeInsideAPDF_Descrip {
+            get {
+                return ResourceManager.GetString("DrawRangeInsideAPDF.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Render sheet ranges inside a pdf(Basic usage).
+        /// </summary>
+        internal static string DrawRangeInsideAPDF_Name {
+            get {
+                return ResourceManager.GetString("DrawRangeInsideAPDF.Name", resourceCulture);
             }
         }
         
@@ -2162,11 +4614,118 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export rich text cell to PDF file..
+        /// </summary>
+        internal static string ExportCellRichText_Descrip {
+            get {
+                return ResourceManager.GetString("ExportCellRichText.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cell rich text.
         /// </summary>
         internal static string ExportCellRichText_Name {
             get {
                 return ResourceManager.GetString("ExportCellRichText.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Export chart
+        ///GrapeCity Documents for Excel supports exporting charts to PDF file.
+        ///
+        ///- Column
+        ///- Line
+        ///- Pie
+        ///- Bar
+        ///- Area
+        ///- X Y(Scatter)
+        ///- Stock
+        ///- Radar
+        ///- Combo.
+        /// </summary>
+        internal static string ExportChart_Descrip {
+            get {
+                return ResourceManager.GetString("ExportChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export Chart.
+        /// </summary>
+        internal static string ExportChart_Name {
+            get {
+                return ResourceManager.GetString("ExportChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In this example, GcExcel first opens an Excel file that contains some shapes, then export it to a PDF file..
+        /// </summary>
+        internal static string ExportFlowChart_Descrip {
+            get {
+                return ResourceManager.GetString("ExportFlowChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FlowChart.
+        /// </summary>
+        internal static string ExportFlowChart_Name {
+            get {
+                return ResourceManager.GetString("ExportFlowChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Export shape
+        ///GrapeCity Documents for Excel supports exporting shapes to PDF file.
+        ///
+        ///- Export basic/custom shapes.
+        ///- Export shapes with text.
+        ///- Export shapes with different fill.
+        ///- Export grouped shapes..
+        /// </summary>
+        internal static string ExportShape_Descrip {
+            get {
+                return ResourceManager.GetString("ExportShape.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export Shape.
+        /// </summary>
+        internal static string ExportShape_Name {
+            get {
+                return ResourceManager.GetString("ExportShape.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bind data with a template which consists of expression fields..
+        /// </summary>
+        internal static string ExpressionTemplate_Descrip {
+            get {
+                return ResourceManager.GetString("ExpressionTemplate.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expression template.
+        /// </summary>
+        internal static string ExpressionTemplate_Name {
+            get {
+                return ResourceManager.GetString("ExpressionTemplate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to extend the reference of each series in chart..
+        /// </summary>
+        internal static string ExtendSeries_Descrip {
+            get {
+                return ResourceManager.GetString("ExtendSeries.Descrip", resourceCulture);
             }
         }
         
@@ -2243,11 +4802,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how you can apply filters by cell automatic font color on a column to display results containing cells with automatic font color..
+        /// </summary>
+        internal static string FilterByAutomaticFontColor_Descrip {
+            get {
+                return ResourceManager.GetString("FilterByAutomaticFontColor.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filter by automatic font color.
         /// </summary>
         internal static string FilterByAutomaticFontColor_Name {
             get {
                 return ResourceManager.GetString("FilterByAutomaticFontColor.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how you can apply filters by cell colors on a column to display results containing cells with distinct fill shades..
+        /// </summary>
+        internal static string FilterByCellColor_Descrip {
+            get {
+                return ResourceManager.GetString("FilterByCellColor.Descrip", resourceCulture);
             }
         }
         
@@ -2261,11 +4838,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how you can apply filters by font color on a column to display results containing cells with specific font color..
+        /// </summary>
+        internal static string FilterByFontColor_Descrip {
+            get {
+                return ResourceManager.GetString("FilterByFontColor.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filter by font color.
         /// </summary>
         internal static string FilterByFontColor_Name {
             get {
                 return ResourceManager.GetString("FilterByFontColor.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how you can apply filters by icon to display results that contain a specific icon in the cells..
+        /// </summary>
+        internal static string FilterByIcon_Descrip {
+            get {
+                return ResourceManager.GetString("FilterByIcon.Descrip", resourceCulture);
             }
         }
         
@@ -2279,11 +4874,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how you can apply filters by no fill on a column to display results containing cells with no fill color..
+        /// </summary>
+        internal static string FilterByNoFill_Descrip {
+            get {
+                return ResourceManager.GetString("FilterByNoFill.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filter by no fill.
         /// </summary>
         internal static string FilterByNoFill_Name {
             get {
                 return ResourceManager.GetString("FilterByNoFill.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how you can apply filters by no icon to display results where cells do not possess an icon..
+        /// </summary>
+        internal static string FilterByNoIcon_Descrip {
+            get {
+                return ResourceManager.GetString("FilterByNoIcon.Descrip", resourceCulture);
             }
         }
         
@@ -2372,11 +4985,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to hide some row fields in pivot table..
+        /// </summary>
+        internal static string FilterItemsInPivotTable_Descrip {
+            get {
+                return ResourceManager.GetString("FilterItemsInPivotTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filter items in pivot tables.
         /// </summary>
         internal static string FilterItemsInPivotTable_Name {
             get {
                 return ResourceManager.GetString("FilterItemsInPivotTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Financial dashboard.
+        /// </summary>
+        internal static string FinancialDashboard_Name {
+            get {
+                return ResourceManager.GetString("FinancialDashboard.Name", resourceCulture);
             }
         }
         
@@ -2390,6 +5021,144 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ## Find and Replace
+        ///The examples in this folder demonstrate the following cases:
+        ///- Find in a Range
+        ///- Replace in a Range.
+        /// </summary>
+        internal static string FindAndReplace_Descrip {
+            get {
+                return ResourceManager.GetString("FindAndReplace.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find and Replace.
+        /// </summary>
+        internal static string FindAndReplace_Name {
+            get {
+                return ResourceManager.GetString("FindAndReplace.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to find the first occurrence of some text in a range..
+        /// </summary>
+        internal static string FindBasicUsage_Descrip {
+            get {
+                return ResourceManager.GetString("FindBasicUsage.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find (basic usage).
+        /// </summary>
+        internal static string FindBasicUsage_Name {
+            get {
+                return ResourceManager.GetString("FindBasicUsage.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to find a cell by specific format..
+        /// </summary>
+        internal static string FindDisplayFormat_Descrip {
+            get {
+                return ResourceManager.GetString("FindDisplayFormat.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find (with cell format).
+        /// </summary>
+        internal static string FindDisplayFormat_Name {
+            get {
+                return ResourceManager.GetString("FindDisplayFormat.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to find cell with options..
+        /// </summary>
+        internal static string FindLookAtSearchOrderDirectionMatchCase_Descrip {
+            get {
+                return ResourceManager.GetString("FindLookAtSearchOrderDirectionMatchCase.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find (with options).
+        /// </summary>
+        internal static string FindLookAtSearchOrderDirectionMatchCase_Name {
+            get {
+                return ResourceManager.GetString("FindLookAtSearchOrderDirectionMatchCase.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to find double-byte characters in a range..
+        /// </summary>
+        internal static string FindMatchByte_Descrip {
+            get {
+                return ResourceManager.GetString("FindMatchByte.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find (match byte).
+        /// </summary>
+        internal static string FindMatchByte_Name {
+            get {
+                return ResourceManager.GetString("FindMatchByte.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to find all occurrences of matched cells in a range..
+        /// </summary>
+        internal static string FindWithAfter_Descrip {
+            get {
+                return ResourceManager.GetString("FindWithAfter.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find (enumerate all occurrences).
+        /// </summary>
+        internal static string FindWithAfter_Name {
+            get {
+                return ResourceManager.GetString("FindWithAfter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to find cells in different places..
+        /// </summary>
+        internal static string FindWithLookIn_Descrip {
+            get {
+                return ResourceManager.GetString("FindWithLookIn.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find (look in different places).
+        /// </summary>
+        internal static string FindWithLookIn_Name {
+            get {
+                return ResourceManager.GetString("FindWithLookIn.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set font color of a cell..
+        /// </summary>
+        internal static string FontColor_Descrip {
+            get {
+                return ResourceManager.GetString("FontColor.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set font color.
         /// </summary>
         internal static string FontColor_Name {
@@ -2399,11 +5168,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set various kinds of font effect of a cell..
+        /// </summary>
+        internal static string FontEffect_Descrip {
+            get {
+                return ResourceManager.GetString("FontEffect.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set font effect.
         /// </summary>
         internal static string FontEffect_Name {
             get {
                 return ResourceManager.GetString("FontEffect.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample deonstrates how to set font name and theme font name of a cell..
+        /// </summary>
+        internal static string FontName_Descrip {
+            get {
+                return ResourceManager.GetString("FontName.Descrip", resourceCulture);
             }
         }
         
@@ -2442,6 +5229,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set font size of a cell..
+        /// </summary>
+        internal static string FontSize_Descrip {
+            get {
+                return ResourceManager.GetString("FontSize.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set font size.
         /// </summary>
         internal static string FontSize_Name {
@@ -2451,11 +5247,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set font bold and italic of a cell..
+        /// </summary>
+        internal static string FontStyle_Descrip {
+            get {
+                return ResourceManager.GetString("FontStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set font style.
         /// </summary>
         internal static string FontStyle_Name {
             get {
                 return ResourceManager.GetString("FontStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set different kinds of underline of a cell..
+        /// </summary>
+        internal static string FontUnderline_Descrip {
+            get {
+                return ResourceManager.GetString("FontUnderline.Descrip", resourceCulture);
             }
         }
         
@@ -2522,11 +5336,65 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bind data with a template which consists of formula functions..
+        /// </summary>
+        internal static string FunctionTemplate_Descrip {
+            get {
+                return ResourceManager.GetString("FunctionTemplate.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Function template.
+        /// </summary>
+        internal static string FunctionTemplate_Name {
+            get {
+                return ResourceManager.GetString("FunctionTemplate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get all the precedents with a loop..
+        /// </summary>
+        internal static string GetAllPrecedents_Descrip {
+            get {
+                return ResourceManager.GetString("GetAllPrecedents.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get all the precedents.
+        /// </summary>
+        internal static string GetAllPrecedents_Name {
+            get {
+                return ResourceManager.GetString("GetAllPrecedents.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can get the displaying style of a cell by using IRange.DisplayFormat property, the displaying style of a cell may come from its style, table style if the cell is in a table, conditional format if the cell match criterion and so on..
+        /// </summary>
+        internal static string GetDisplayFormat_Descrip {
+            get {
+                return ResourceManager.GetString("GetDisplayFormat.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Get display format.
         /// </summary>
         internal static string GetDisplayFormat_Name {
             get {
                 return ResourceManager.GetString("GetDisplayFormat.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer can get a used range specific with related features, such as Data, DataValidation, Hyperlink, Sparkline and so on. More details can be referred by UsedRangeType enum..
+        /// </summary>
+        internal static string GetFeatureRelatedUsedRange_Descrip {
+            get {
+                return ResourceManager.GetString("GetFeatureRelatedUsedRange.Descrip", resourceCulture);
             }
         }
         
@@ -2540,6 +5408,24 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to get rows/columns/cells count in a specific range..
+        /// </summary>
+        internal static string GetRangeRowCountColumnCount_Descrip {
+            get {
+                return ResourceManager.GetString("GetRangeRowCountColumnCount.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer can get the count cells in a specific range by using IRange.Count or IRange.Cells.Count, can get the count of rows in a specific range by using IRange.Rows.Count, and get the count of columns in a specific range by using IRange.Columns.Count.
+        /// </summary>
+        internal static string GetRangeRowCountColumnCount_Descript {
+            get {
+                return ResourceManager.GetString("GetRangeRowCountColumnCount.Descript", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Get row and column count.
         /// </summary>
         internal static string GetRangeRowCountColumnCount_Name {
@@ -2549,11 +5435,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A used range includes any cell that has ever been used. For example, cell A1 contains a value, cell A2 has a sparkline or hyperlink, then the cell will be treated as used range..
+        /// </summary>
+        internal static string GetWorksheetUsedRange_Descrip {
+            get {
+                return ResourceManager.GetString("GetWorksheetUsedRange.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Get used range.
         /// </summary>
         internal static string GetWorksheetUsedRange_Name {
             get {
                 return ResourceManager.GetString("GetWorksheetUsedRange.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to group current sparklines..
+        /// </summary>
+        internal static string GroupExistSparklines_Descrip {
+            get {
+                return ResourceManager.GetString("GroupExistSparklines.Descrip", resourceCulture);
             }
         }
         
@@ -2588,6 +5492,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can set different values of horizontal and vertical alignments for the content in a cell of range..
+        /// </summary>
+        internal static string HAlignVAlign_Descrip {
+            get {
+                return ResourceManager.GetString("HAlignVAlign.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set horizontal and vertical alignment.
         /// </summary>
         internal static string HAlignVAlign_Name {
@@ -2597,11 +5510,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can choose whether to hide or show rows and columns in a worksheet by using the Hidden property of the IRange interface..
+        /// </summary>
+        internal static string HiddenRowColumn_Descrip {
+            get {
+                return ResourceManager.GetString("HiddenRowColumn.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hide rows and columns.
         /// </summary>
         internal static string HiddenRowColumn_Name {
             get {
                 return ResourceManager.GetString("HiddenRowColumn.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set visibility of row and column grand totals with RowGrand and ColumnGrand.
+        /// </summary>
+        internal static string HideGrandTotalsInPivotTable_Descrip {
+            get {
+                return ResourceManager.GetString("HideGrandTotalsInPivotTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grand total visibility.
+        /// </summary>
+        internal static string HideGrandTotalsInPivotTable_Name {
+            get {
+                return ResourceManager.GetString("HideGrandTotalsInPivotTable.Name", resourceCulture);
             }
         }
         
@@ -2616,7 +5556,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         
         /// <summary>
         ///   Looks up a localized string similar to ## Hyperlinks
-        ///Apply hyperlinks to a range using the **Add** method of a worksheet or range&apos;s **Hyperlinks** instance. GrapeCity Documents for Excel supports the following types of hyperlink:
+        ///Apply hyperlinks to a range using the **IWorksheet.Hyperlinks.Add** or **IRange.Hyperlinks.Add** method. Apply hyperlinks to a shape using the **IWorksheet.Hyperlinks.Add** method. GrapeCity Documents for Excel supports the following types of hyperlink:
         ///- Link to a web page
         ///- Link to a specific range in the current document
         ///- Link to an external file
@@ -2638,11 +5578,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to load a csv file..
+        /// </summary>
+        internal static string ImportCsvFileToWorkbook_Descrip {
+            get {
+                return ResourceManager.GetString("ImportCsvFileToWorkbook.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Import csv file to workbook.
         /// </summary>
         internal static string ImportCsvFileToWorkbook_Name {
             get {
                 return ResourceManager.GetString("ImportCsvFileToWorkbook.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to load a csv file with options..
+        /// </summary>
+        internal static string ImportCsvFileToWorkbookWithOptions_Descrip {
+            get {
+                return ResourceManager.GetString("ImportCsvFileToWorkbookWithOptions.Descrip", resourceCulture);
             }
         }
         
@@ -2656,11 +5614,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to only load data from Excel file..
+        /// </summary>
+        internal static string ImportExcelFileDataOnly_Descrip {
+            get {
+                return ResourceManager.GetString("ImportExcelFileDataOnly.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Only import data from Excel.
         /// </summary>
         internal static string ImportExcelFileDataOnly_Name {
             get {
                 return ResourceManager.GetString("ImportExcelFileDataOnly.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to open an Excel file..
+        /// </summary>
+        internal static string ImportExcelFileToWorkbook_Descrip {
+            get {
+                return ResourceManager.GetString("ImportExcelFileToWorkbook.Descrip", resourceCulture);
             }
         }
         
@@ -2674,6 +5650,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to avoid recalculating formulas after opening an Excel file..
+        /// </summary>
+        internal static string ImportExcelFileWithoutCalculation_Descrip {
+            get {
+                return ResourceManager.GetString("ImportExcelFileWithoutCalculation.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do not recalculate after opening Excel.
         /// </summary>
         internal static string ImportExcelFileWithoutCalculation_Name {
@@ -2683,11 +5668,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to open a password protected Excel file..
+        /// </summary>
+        internal static string ImportExcelFileWithPassword_Descrip {
+            get {
+                return ResourceManager.GetString("ImportExcelFileWithPassword.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Import Excel file with password.
         /// </summary>
         internal static string ImportExcelFileWithPassword_Name {
             get {
                 return ResourceManager.GetString("ImportExcelFileWithPassword.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can open an Excel file with ole objects..
+        /// </summary>
+        internal static string ImportOleObjectsToWorkbookAndExport_Descrip {
+            get {
+                return ResourceManager.GetString("ImportOleObjectsToWorkbookAndExport.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import and export OLE objects.
+        /// </summary>
+        internal static string ImportOleObjectsToWorkbookAndExport_Name {
+            get {
+                return ResourceManager.GetString("ImportOleObjectsToWorkbookAndExport.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can open xlsm files, and all macros and form controls will be preserved after exporting to xlsm again..
+        /// </summary>
+        internal static string ImportXlsmToWorkbook_Descrip {
+            get {
+                return ResourceManager.GetString("ImportXlsmToWorkbook.Descrip", resourceCulture);
             }
         }
         
@@ -2710,11 +5731,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bind data with a template which consists of inline fields..
+        /// </summary>
+        internal static string InlineTemplate_Descrip {
+            get {
+                return ResourceManager.GetString("InlineTemplate.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inline template.
+        /// </summary>
+        internal static string InlineTemplate_Name {
+            get {
+                return ResourceManager.GetString("InlineTemplate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel enables you to insert and delete a cell or a range of cells in order to help customization of worksheets as per your requirements..
+        /// </summary>
+        internal static string InsertCellsDeleteCells_Descrip {
+            get {
+                return ResourceManager.GetString("InsertCellsDeleteCells.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Insert or delete cells.
         /// </summary>
         internal static string InsertCellsDeleteCells_Name {
             get {
                 return ResourceManager.GetString("InsertCellsDeleteCells.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel provides you with the ability to insert or delete rows and columns in a worksheet..
+        /// </summary>
+        internal static string InsertDeleteRowsColumns_Descrip {
+            get {
+                return ResourceManager.GetString("InsertDeleteRowsColumns.Descrip", resourceCulture);
             }
         }
         
@@ -2728,11 +5785,57 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to add and delete columns and rows in a table..
+        /// </summary>
+        internal static string InsertDeleteTableRowColumns_Descrip {
+            get {
+                return ResourceManager.GetString("InsertDeleteTableRowColumns.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Insert or delete table rows and columns.
         /// </summary>
         internal static string InsertDeleteTableRowColumns_Name {
             get {
                 return ResourceManager.GetString("InsertDeleteTableRowColumns.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use a json file as the data source of GcExcel Template. Before this, user should read data from the file and serialize it to an custom object.
+        ///Actually, user can use any data which can be serialized to an custom object as the data souce..
+        /// </summary>
+        internal static string JsonFile_Descrip {
+            get {
+                return ResourceManager.GetString("JsonFile.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Json file.
+        /// </summary>
+        internal static string JsonFile_Name {
+            get {
+                return ResourceManager.GetString("JsonFile.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This example code demonstrates how to keep adjacent rows together in one page when exporting to PDF file..
+        /// </summary>
+        internal static string KeepTogether_Descrip {
+            get {
+                return ResourceManager.GetString("KeepTogether.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep together certain data.
+        /// </summary>
+        internal static string KeepTogether_Name {
+            get {
+                return ResourceManager.GetString("KeepTogether.Name", resourceCulture);
             }
         }
         
@@ -2756,11 +5859,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set a linear gradient fill to a cell..
+        /// </summary>
+        internal static string LinearGradientFill_Descrip {
+            get {
+                return ResourceManager.GetString("LinearGradientFill.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set linear gradient fill.
         /// </summary>
         internal static string LinearGradientFill_Name {
             get {
                 return ResourceManager.GetString("LinearGradientFill.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a line chart in GcExcel..
+        /// </summary>
+        internal static string LineChart_Descrip {
+            get {
+                return ResourceManager.GetString("LineChart.Descrip", resourceCulture);
             }
         }
         
@@ -2774,11 +5895,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export line chart to PDF file.
+        /// </summary>
+        internal static string LineChartPdf_Descrip {
+            get {
+                return ResourceManager.GetString("LineChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Line chart.
+        /// </summary>
+        internal static string LineChartPdf_Name {
+            get {
+                return ResourceManager.GetString("LineChartPdf.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a line chart with markers in GcExcel..
+        /// </summary>
+        internal static string LineMarkersChart_Descrip {
+            get {
+                return ResourceManager.GetString("LineMarkersChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Line Markers chart.
         /// </summary>
         internal static string LineMarkersChart_Name {
             get {
                 return ResourceManager.GetString("LineMarkersChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a 100% stacked line with markers chart in GcExcel..
+        /// </summary>
+        internal static string LineMarkerStacked100Chart_Descrip {
+            get {
+                return ResourceManager.GetString("LineMarkerStacked100Chart.Descrip", resourceCulture);
             }
         }
         
@@ -2792,11 +5949,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a stacked line with markers chart in GcExcel..
+        /// </summary>
+        internal static string LineMarkerStackedChart_Descrip {
+            get {
+                return ResourceManager.GetString("LineMarkerStackedChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stack line with markers chart.
         /// </summary>
         internal static string LineMarkerStackedChart_Name {
             get {
                 return ResourceManager.GetString("LineMarkerStackedChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a 100% stacked line chart in GcExcel..
+        /// </summary>
+        internal static string LineStacked100Chart_Descrip {
+            get {
+                return ResourceManager.GetString("LineStacked100Chart.Descrip", resourceCulture);
             }
         }
         
@@ -2810,6 +5985,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a stacked line chart in GcExcel..
+        /// </summary>
+        internal static string LineStackedChart_Descrip {
+            get {
+                return ResourceManager.GetString("LineStackedChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stacked Line chart.
         /// </summary>
         internal static string LineStackedChart_Name {
@@ -2819,11 +6003,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel can load and save ssjson file with shapes in it..
+        /// </summary>
+        internal static string LoadAndSaveJsonWithShapes_Descrip {
+            get {
+                return ResourceManager.GetString("LoadAndSaveJsonWithShapes.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Load and save json containing shapes.
         /// </summary>
         internal static string LoadAndSaveJsonWithShapes_Name {
             get {
                 return ResourceManager.GetString("LoadAndSaveJsonWithShapes.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code in order to export different headers on different pages while exporting to a PDF file..
+        /// </summary>
+        internal static string ManageHeadersOnDifferentPages_Descrip {
+            get {
+                return ResourceManager.GetString("ManageHeadersOnDifferentPages.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Repeat different headers in different pages.
+        /// </summary>
+        internal static string ManageHeadersOnDifferentPages_Name {
+            get {
+                return ResourceManager.GetString("ManageHeadersOnDifferentPages.Name", resourceCulture);
             }
         }
         
@@ -2847,6 +6058,35 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User can use merge cells in the template. 
+        ///
+        ///GcExcel will try to understand the meanings of merge cell in template, and generate expected report..
+        /// </summary>
+        internal static string MergeCell_Descrip {
+            get {
+                return ResourceManager.GetString("MergeCell.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Merge cell.
+        /// </summary>
+        internal static string MergeCell_Name {
+            get {
+                return ResourceManager.GetString("MergeCell.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel allow you to merge several cells into a single cell using Merge method of IRange. When a cell range is merged, the data of top left cell stays in the final merged cell, and the data of other cells in the given range is lost..
+        /// </summary>
+        internal static string MergeCells_Descrip {
+            get {
+                return ResourceManager.GetString("MergeCells.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Merge cells.
         /// </summary>
         internal static string MergeCells_Name {
@@ -2856,11 +6096,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set different subtotal functions for pivot table fields..
+        /// </summary>
+        internal static string ModifySubtotalsForPivotField_Descrip {
+            get {
+                return ResourceManager.GetString("ModifySubtotalsForPivotField.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Modify pivot field subtotal type.
         /// </summary>
         internal static string ModifySubtotalsForPivotField_Name {
             get {
                 return ResourceManager.GetString("ModifySubtotalsForPivotField.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can change the validation rule for a range by setting properties of the IValidation interface (Type property, Formula1 property, Formula2 property, and many more)..
+        /// </summary>
+        internal static string ModifyValidation_Descrip {
+            get {
+                return ResourceManager.GetString("ModifyValidation.Descrip", resourceCulture);
             }
         }
         
@@ -2883,11 +6141,56 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to move a worksheet to the end of all worksheets..
+        /// </summary>
+        internal static string MoveWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("MoveWorksheet.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move worksheet.
+        /// </summary>
+        internal static string MoveWorksheet_Name {
+            get {
+                return ResourceManager.GetString("MoveWorksheet.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to move a worksheet into a different workbook.
+        /// </summary>
+        internal static string MoveWorksheetBetweenWorkbooks_Descrip {
+            get {
+                return ResourceManager.GetString("MoveWorksheetBetweenWorkbooks.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move worksheet between workbooks.
+        /// </summary>
+        internal static string MoveWorksheetBetweenWorkbooks_Name {
+            get {
+                return ResourceManager.GetString("MoveWorksheetBetweenWorkbooks.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Movie list.
         /// </summary>
         internal static string MovieList_Name {
             get {
                 return ResourceManager.GetString("MovieList.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how multi select filters can be applied to quickly filter data based on cell values with multiple selections..
+        /// </summary>
+        internal static string MultiSelectFilter_Descrip {
+            get {
+                return ResourceManager.GetString("MultiSelectFilter.Descrip", resourceCulture);
             }
         }
         
@@ -2901,11 +6204,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to implement a custom function add numbers..
+        /// </summary>
+        internal static string MyAddFunction_Descrip {
+            get {
+                return ResourceManager.GetString("MyAddFunction.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MyAddFunction.
         /// </summary>
         internal static string MyAddFunction_Name {
             get {
                 return ResourceManager.GetString("MyAddFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to implement a custom function to concatenate text of each cell..
+        /// </summary>
+        internal static string MyConcatenateFunction_Descrip {
+            get {
+                return ResourceManager.GetString("MyConcatenateFunction.Descrip", resourceCulture);
             }
         }
         
@@ -2919,11 +6240,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to implement a custom function to calculate sum of those cells which are filled in Red background color..
+        /// </summary>
+        internal static string MyConditionalSumFunction_Descrip {
+            get {
+                return ResourceManager.GetString("MyConditionalSumFunction.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MyConditionalSumFunction.
         /// </summary>
         internal static string MyConditionalSumFunction_Name {
             get {
                 return ResourceManager.GetString("MyConditionalSumFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to implement a custom function to determine if the cell is a calc error..
+        /// </summary>
+        internal static string MyIsErrorFunction_Descrip {
+            get {
+                return ResourceManager.GetString("MyIsErrorFunction.Descrip", resourceCulture);
             }
         }
         
@@ -2937,6 +6276,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to implement a custom function to determine if the cell is merged..
+        /// </summary>
+        internal static string MyIsMergedRangeFunction_Descrip {
+            get {
+                return ResourceManager.GetString("MyIsMergedRangeFunction.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MyIsMergedRangeFunction.
         /// </summary>
         internal static string MyIsMergedRangeFunction_Name {
@@ -2946,11 +6294,55 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to implement your own sum function..
+        /// </summary>
+        internal static string MySumFunction_Descrip {
+            get {
+                return ResourceManager.GetString("MySumFunction.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MySumFunction.
         /// </summary>
         internal static string MySumFunction_Name {
             get {
                 return ResourceManager.GetString("MySumFunction.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Excel 2016 New Charts
+        ///GrapeCity Documents for Excel adds Excel 2016 new charts by calling **IShapes.AddChart** method and setting different **ChartType** . GrapeCity Documents for Excel supports the following types of new charts:
+        ///- Sunburst
+        ///- Treemap
+        ///- Funnel
+        ///- Waterfall
+        ///- Box&amp;Whisker
+        ///- Histogram
+        ///- Pareto.
+        /// </summary>
+        internal static string NewCharts_Descrip {
+            get {
+                return ResourceManager.GetString("NewCharts.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Excel 2016 New Charts.
+        /// </summary>
+        internal static string NewCharts_Name {
+            get {
+                return ResourceManager.GetString("NewCharts.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how you can apply number filters to display data that meets the specified criteria applied on a column containing numeric cell values..
+        /// </summary>
+        internal static string NumberFilter_Descrip {
+            get {
+                return ResourceManager.GetString("NumberFilter.Descrip", resourceCulture);
             }
         }
         
@@ -3002,6 +6394,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export cell text with different number format to PDF file..
+        /// </summary>
+        internal static string NumberFormating_Descrip {
+            get {
+                return ResourceManager.GetString("NumberFormating.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export number formats.
         /// </summary>
         internal static string NumberFormating_Name {
@@ -3011,11 +6412,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel supports all kinds of Excel like number formats..
+        /// </summary>
+        internal static string NumberFormats_Descrip {
+            get {
+                return ResourceManager.GetString("NumberFormats.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set number format.
         /// </summary>
         internal static string NumberFormats_Name {
             get {
                 return ResourceManager.GetString("NumberFormats.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export the overflow cell to PDF file..
+        /// </summary>
+        internal static string Overflow_Descrip {
+            get {
+                return ResourceManager.GetString("Overflow.Descrip", resourceCulture);
             }
         }
         
@@ -3044,6 +6463,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string PageSetup_Name {
             get {
                 return ResourceManager.GetString("PageSetup.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set a pattern fill to a cell..
+        /// </summary>
+        internal static string PatternFill_Descrip {
+            get {
+                return ResourceManager.GetString("PatternFill.Descrip", resourceCulture);
             }
         }
         
@@ -3095,11 +6523,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Page setup.
+        ///   Looks up a localized string similar to Page Setup.
         /// </summary>
         internal static string PdfPageSetup_Name {
             get {
                 return ResourceManager.GetString("PdfPageSetup.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extract text from PDF.
+        /// </summary>
+        internal static string PDFToExcel_Name {
+            get {
+                return ResourceManager.GetString("PDFToExcel.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can show the total row of a table and set type of TotalsCalculation for a specific table column..
+        /// </summary>
+        internal static string PerformCalculationsInTable_Descrip {
+            get {
+                return ResourceManager.GetString("PerformCalculationsInTable.Descrip", resourceCulture);
             }
         }
         
@@ -3152,11 +6598,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to copy pictures in worksheet..
+        /// </summary>
+        internal static string PictureCopy_Descrip {
+            get {
+                return ResourceManager.GetString("PictureCopy.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copy picture.
         /// </summary>
         internal static string PictureCopy_Name {
             get {
                 return ResourceManager.GetString("PictureCopy.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to cut pictures in worksheet..
+        /// </summary>
+        internal static string PictureCut_Descrip {
+            get {
+                return ResourceManager.GetString("PictureCut.Descrip", resourceCulture);
             }
         }
         
@@ -3170,11 +6634,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to duplicate a picture..
+        /// </summary>
+        internal static string PictureDuplicate_Descrip {
+            get {
+                return ResourceManager.GetString("PictureDuplicate.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Duplicate picture.
         /// </summary>
         internal static string PictureDuplicate_Name {
             get {
                 return ResourceManager.GetString("PictureDuplicate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a doughnut chart in GcExcel..
+        /// </summary>
+        internal static string Pie_DoughnutChart_Descrip {
+            get {
+                return ResourceManager.GetString("Pie_DoughnutChart.Descrip", resourceCulture);
             }
         }
         
@@ -3188,11 +6670,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a pie chart in GcExcel..
+        /// </summary>
+        internal static string PieChart_Descrip {
+            get {
+                return ResourceManager.GetString("PieChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pie chart.
         /// </summary>
         internal static string PieChart_Name {
             get {
                 return ResourceManager.GetString("PieChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export pie chart to PDF file.
+        /// </summary>
+        internal static string PieChartPdf_Descrip {
+            get {
+                return ResourceManager.GetString("PieChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pie chart.
+        /// </summary>
+        internal static string PieChartPdf_Name {
+            get {
+                return ResourceManager.GetString("PieChartPdf.Name", resourceCulture);
             }
         }
         
@@ -3239,11 +6748,137 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to get the precedents of a cell..
+        /// </summary>
+        internal static string Precedents_Descrip {
+            get {
+                return ResourceManager.GetString("Precedents.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Precedents.
+        /// </summary>
+        internal static string Precedents_Name {
+            get {
+                return ResourceManager.GetString("Precedents.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The examples in this folder demonstrate how to get the precedents or dependents of a cell..
+        /// </summary>
+        internal static string Precedentsanddependents_Descrip {
+            get {
+                return ResourceManager.GetString("Precedentsanddependents.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Precedents &amp; dependents.
+        /// </summary>
+        internal static string Precedentsanddependents_Name {
+            get {
+                return ResourceManager.GetString("Precedentsanddependents.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## PrintManager
+        ///GcExcel introduces PrintManager class to control pagination and spreadsheet content while exporting the spreadsheets to PDF. The feature can help control printing of specific parts of Excel to PDF documents, providing the users specific API that gets the pagination result in the PageInfo object - a list of pages generated from the excel file through PrintManager.Paginate method, and then perform operations like :
+        ///
+        ///- Add/delete/modify pages.
+        ///- Change page number, page count, page content  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PrintManager_Descrip {
+            get {
+                return ResourceManager.GetString("PrintManager.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PrintManager.
+        /// </summary>
+        internal static string PrintManager_Name {
+            get {
+                return ResourceManager.GetString("PrintManager.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to allow users to export multiple worksheets to a single page in the PDF file..
+        /// </summary>
+        internal static string PrintMultipleWorksheetsToOnePage_Descrip {
+            get {
+                return ResourceManager.GetString("PrintMultipleWorksheetsToOnePage.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Print multiple worksheets to one page.
+        /// </summary>
+        internal static string PrintMultipleWorksheetsToOnePage_Name {
+            get {
+                return ResourceManager.GetString("PrintMultipleWorksheetsToOnePage.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to export some specific pages to the PDF file..
+        /// </summary>
+        internal static string PrintSpecificPages_Descrip {
+            get {
+                return ResourceManager.GetString("PrintSpecificPages.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Print specific pages.
+        /// </summary>
+        internal static string PrintSpecificPages_Name {
+            get {
+                return ResourceManager.GetString("PrintSpecificPages.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Project cost tracker.
         /// </summary>
         internal static string ProjectCostTracker_Name {
             get {
                 return ResourceManager.GetString("ProjectCostTracker.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Properties
+        ///GcExcel use parenthese **(** and **)** to organize all template properties. Property is set in key-value format. Multiple properties are separated using comma.
+        ///
+        ///Property name and value are case-insensitive. 
+        ///
+        ///For example: (context=A1) is equal to (Context = a1).
+        ///
+        ///Property name and predefined value support full name and shorthand. 
+        ///
+        ///For example: (E = H) is equal to (expansion = horizontal).
+        ///
+        ///The template provides lots of properties:
+        ///
+        ///- **C(context):** Cell context
+        ///- **E(expansion) [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Properties_Descrip {
+            get {
+                return ResourceManager.GetString("Properties.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Properties.
+        /// </summary>
+        internal static string Properties_Name {
+            get {
+                return ResourceManager.GetString("Properties.Name", resourceCulture);
             }
         }
         
@@ -3269,11 +6904,65 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Using IWorkbook.Protect method to protect a workbook..
+        /// </summary>
+        internal static string ProtectWorkbook_Descrip {
+            get {
+                return ResourceManager.GetString("ProtectWorkbook.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Protect workbook.
+        /// </summary>
+        internal static string ProtectWorkbook_Name {
+            get {
+                return ResourceManager.GetString("ProtectWorkbook.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to protect a worksheet and configure the protect settings..
+        /// </summary>
+        internal static string ProtectWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("ProtectWorksheet.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Protect worksheet.
         /// </summary>
         internal static string ProtectWorksheet_Name {
             get {
                 return ResourceManager.GetString("ProtectWorksheet.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purchase order.
+        /// </summary>
+        internal static string PurchaseOrder_Name {
+            get {
+                return ResourceManager.GetString("PurchaseOrder.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export radar chart to PDF file.
+        /// </summary>
+        internal static string RadarChartPdf_Descrip {
+            get {
+                return ResourceManager.GetString("RadarChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Radar chart.
+        /// </summary>
+        internal static string RadarChartPdf_Name {
+            get {
+                return ResourceManager.GetString("RadarChartPdf.Name", resourceCulture);
             }
         }
         
@@ -3307,11 +6996,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to re-apply the filter after cell changed..
+        /// </summary>
+        internal static string ReApplyFilter_Descrip {
+            get {
+                return ResourceManager.GetString("ReApplyFilter.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reapply filter.
         /// </summary>
         internal static string ReApplyFilter_Name {
             get {
                 return ResourceManager.GetString("ReApplyFilter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set a rectangular gradient fill to a cell..
+        /// </summary>
+        internal static string RectangularGradientFill_Descrip {
+            get {
+                return ResourceManager.GetString("RectangularGradientFill.Descrip", resourceCulture);
             }
         }
         
@@ -3325,6 +7032,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to refresh pivot table when some cell value changes..
+        /// </summary>
+        internal static string RefreshPivotTable_Descrip {
+            get {
+                return ResourceManager.GetString("RefreshPivotTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Refresh pivot table.
         /// </summary>
         internal static string RefreshPivotTable_Name {
@@ -3334,11 +7050,110 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove subtotals with IRange.RemoveSubtotal.
+        /// </summary>
+        internal static string RemoveSubtotal_Descrip {
+            get {
+                return ResourceManager.GetString("RemoveSubtotal.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove subtotals.
+        /// </summary>
+        internal static string RemoveSubtotal_Name {
+            get {
+                return ResourceManager.GetString("RemoveSubtotal.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In GcExcel .NET, you can delete tables in spreadsheets using the Delete Method of the ITable Interface..
+        /// </summary>
+        internal static string RemoveTable_Descrip {
+            get {
+                return ResourceManager.GetString("RemoveTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove table.
         /// </summary>
         internal static string RemoveTable_Name {
             get {
                 return ResourceManager.GetString("RemoveTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to allow users to render Excel ranges inside the PDF file along with some custom textual information at runtime to the specified location on the page..
+        /// </summary>
+        internal static string RenderExcelRangesInsideAPDF_Descrip {
+            get {
+                return ResourceManager.GetString("RenderExcelRangesInsideAPDF.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Render sheet ranges inside a pdf(Advanced usage).
+        /// </summary>
+        internal static string RenderExcelRangesInsideAPDF_Name {
+            get {
+                return ResourceManager.GetString("RenderExcelRangesInsideAPDF.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to replace cell&apos;s content in a range..
+        /// </summary>
+        internal static string ReplaceBasicUsage_Descrip {
+            get {
+                return ResourceManager.GetString("ReplaceBasicUsage.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replace (basic usage).
+        /// </summary>
+        internal static string ReplaceBasicUsage_Name {
+            get {
+                return ResourceManager.GetString("ReplaceBasicUsage.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to search and replace cell content in a loop..
+        /// </summary>
+        internal static string ReplaceCustomWrapSearch_Descrip {
+            get {
+                return ResourceManager.GetString("ReplaceCustomWrapSearch.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replace (search in loop).
+        /// </summary>
+        internal static string ReplaceCustomWrapSearch_Name {
+            get {
+                return ResourceManager.GetString("ReplaceCustomWrapSearch.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to replace cell&apos;s content with options..
+        /// </summary>
+        internal static string ReplaceWithOptions_Descrip {
+            get {
+                return ResourceManager.GetString("ReplaceWithOptions.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replace (with options).
+        /// </summary>
+        internal static string ReplaceWithOptions_Name {
+            get {
+                return ResourceManager.GetString("ReplaceWithOptions.Name", resourceCulture);
             }
         }
         
@@ -3361,11 +7176,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can rotate the content of a cell by setting IRange.Orientation property..
+        /// </summary>
+        internal static string RotateCellContents_Descrip {
+            get {
+                return ResourceManager.GetString("RotateCellContents.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rotate cell contents.
         /// </summary>
         internal static string RotateCellContents_Name {
             get {
                 return ResourceManager.GetString("RotateCellContents.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set row axis layout to tabular with IPivotTable.SetRowAxisLayout.
+        /// </summary>
+        internal static string RowAxisLayoutInPivotTable_Descrip {
+            get {
+                return ResourceManager.GetString("RowAxisLayoutInPivotTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change row axis layout.
+        /// </summary>
+        internal static string RowAxisLayoutInPivotTable_Name {
+            get {
+                return ResourceManager.GetString("RowAxisLayoutInPivotTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sales.
+        /// </summary>
+        internal static string Sales_Name {
+            get {
+                return ResourceManager.GetString("Sales.Name", resourceCulture);
             }
         }
         
@@ -3379,11 +7230,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export all kinds of Excel borders to PDF..
+        /// </summary>
+        internal static string SaveBorder_Descrip {
+            get {
+                return ResourceManager.GetString("SaveBorder.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export borders.
         /// </summary>
         internal static string SaveBorder_Name {
             get {
                 return ResourceManager.GetString("SaveBorder.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export a spreadsheet with conditional formats to PDF..
+        /// </summary>
+        internal static string SaveConditionalFormatting_Descrip {
+            get {
+                return ResourceManager.GetString("SaveConditionalFormatting.Descrip", resourceCulture);
             }
         }
         
@@ -3397,11 +7266,65 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel allows users to save multiple workbooks into a single PDF file..
+        /// </summary>
+        internal static string SaveMultipleWorkbooksToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SaveMultipleWorkbooksToPDF.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save multiple workbooks to one pdf.
+        /// </summary>
+        internal static string SaveMultipleWorkbooksToPDF_Name {
+            get {
+                return ResourceManager.GetString("SaveMultipleWorkbooksToPDF.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export a spreadsheet with pictures to PDF..
+        /// </summary>
+        internal static string SavePictureToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SavePictureToPDF.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export picture.
         /// </summary>
         internal static string SavePictureToPDF_Name {
             get {
                 return ResourceManager.GetString("SavePictureToPDF.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export a spreadsheet with pivot tables to PDF..
+        /// </summary>
+        internal static string SavePivotTable_Descrip {
+            get {
+                return ResourceManager.GetString("SavePivotTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export pivot table.
+        /// </summary>
+        internal static string SavePivotTable_Name {
+            get {
+                return ResourceManager.GetString("SavePivotTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export a spreadsheet range with different kinds of fills(solid, gradient, pattern) to PDF..
+        /// </summary>
+        internal static string SaveRangeFillToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SaveRangeFillToPDF.Descrip", resourceCulture);
             }
         }
         
@@ -3415,11 +7338,65 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GrapeCity Documents for Excel supports exporting the sheet background image to PDF..
+        /// </summary>
+        internal static string SaveSheetBackgroundToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SaveSheetBackgroundToPDF.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export sheet background image.
+        /// </summary>
+        internal static string SaveSheetBackgroundToPDF_Name {
+            get {
+                return ResourceManager.GetString("SaveSheetBackgroundToPDF.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Slicers can be exported to pdf.
+        /// </summary>
+        internal static string SaveSlicer_Descrip {
+            get {
+                return ResourceManager.GetString("SaveSlicer.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export slicers.
+        /// </summary>
+        internal static string SaveSlicer_Name {
+            get {
+                return ResourceManager.GetString("SaveSlicer.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export a spreadsheet with sparklines to PDF..
+        /// </summary>
+        internal static string SaveSparklinesToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SaveSparklinesToPDF.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export sparklines.
         /// </summary>
         internal static string SaveSparklinesToPDF_Name {
             get {
                 return ResourceManager.GetString("SaveSparklinesToPDF.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export a spreadsheet with tables to PDF..
+        /// </summary>
+        internal static string SaveTable_Descrip {
+            get {
+                return ResourceManager.GetString("SaveTable.Descrip", resourceCulture);
             }
         }
         
@@ -3433,11 +7410,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to save  a workbook to csv file..
+        /// </summary>
+        internal static string SaveWorkbookToCsvFile_Descrip {
+            get {
+                return ResourceManager.GetString("SaveWorkbookToCsvFile.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save workbook to csv file.
         /// </summary>
         internal static string SaveWorkbookToCsvFile_Name {
             get {
                 return ResourceManager.GetString("SaveWorkbookToCsvFile.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to save  a workbook to csv file with options..
+        /// </summary>
+        internal static string SaveWorkbookToCsvFileWithOptions_Descrip {
+            get {
+                return ResourceManager.GetString("SaveWorkbookToCsvFileWithOptions.Descrip", resourceCulture);
             }
         }
         
@@ -3451,11 +7446,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to save  a workbook to Excel file..
+        /// </summary>
+        internal static string SaveWorkbookToExcelFile_Descrip {
+            get {
+                return ResourceManager.GetString("SaveWorkbookToExcelFile.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save to Excel file.
         /// </summary>
         internal static string SaveWorkbookToExcelFile_Name {
             get {
                 return ResourceManager.GetString("SaveWorkbookToExcelFile.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to export a workbook to PDF document..
+        /// </summary>
+        internal static string SaveWorkbookToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SaveWorkbookToPDF.Descrip", resourceCulture);
             }
         }
         
@@ -3469,11 +7482,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to save  a workbook to password protected  Excel file..
+        /// </summary>
+        internal static string SaveWorkbookWithPassword_Descrip {
+            get {
+                return ResourceManager.GetString("SaveWorkbookWithPassword.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save to Excel file with password.
         /// </summary>
         internal static string SaveWorkbookWithPassword_Name {
             get {
                 return ResourceManager.GetString("SaveWorkbookWithPassword.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to save a single worksheet to csv file..
+        /// </summary>
+        internal static string SaveWorksheetToCsvFile_Descrip {
+            get {
+                return ResourceManager.GetString("SaveWorksheetToCsvFile.Descrip", resourceCulture);
             }
         }
         
@@ -3487,11 +7518,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to save a single worksheet to csv file with options..
+        /// </summary>
+        internal static string SaveWorksheetToCsvFileWithOptions_Descrip {
+            get {
+                return ResourceManager.GetString("SaveWorksheetToCsvFileWithOptions.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save worksheet to csv file with options.
         /// </summary>
         internal static string SaveWorksheetToCsvFileWithOptions_Name {
             get {
                 return ResourceManager.GetString("SaveWorksheetToCsvFileWithOptions.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to export a single worksheet to PDF document..
+        /// </summary>
+        internal static string SaveWorksheetToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SaveWorksheetToPDF.Descrip", resourceCulture);
             }
         }
         
@@ -3532,11 +7581,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to use logarithmic scale for a value axis. .
+        /// </summary>
+        internal static string SetAxisScaleType_Descrip {
+            get {
+                return ResourceManager.GetString("SetAxisScaleType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set value axis scale type.
         /// </summary>
         internal static string SetAxisScaleType_Name {
             get {
                 return ResourceManager.GetString("SetAxisScaleType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure tick mark of axis..
+        /// </summary>
+        internal static string SetAxisTickMark_Descrip {
+            get {
+                return ResourceManager.GetString("SetAxisTickMark.Descrip", resourceCulture);
             }
         }
         
@@ -3550,11 +7617,119 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to set a background image for worksheet..
+        /// </summary>
+        internal static string SetBackgroundImage_Descrip {
+            get {
+                return ResourceManager.GetString("SetBackgroundImage.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set background image for worksheet.
         /// </summary>
         internal static string SetBackgroundImage_Name {
             get {
                 return ResourceManager.GetString("SetBackgroundImage.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set a built-in style for pivot table..
+        /// </summary>
+        internal static string SetBuiltinStyle_Descrip {
+            get {
+                return ResourceManager.GetString("SetBuiltinStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set built-in pivot style.
+        /// </summary>
+        internal static string SetBuiltinStyle_Name {
+            get {
+                return ResourceManager.GetString("SetBuiltinStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use **C(context)** property to set a template&apos;s context explicitly..
+        /// </summary>
+        internal static string SetContext_Descrip {
+            get {
+                return ResourceManager.GetString("SetContext.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set context.
+        /// </summary>
+        internal static string SetContext_Name {
+            get {
+                return ResourceManager.GetString("SetContext.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to customize a pivot table style.
+        /// </summary>
+        internal static string SetCustomPivotStyle_Descrip {
+            get {
+                return ResourceManager.GetString("SetCustomPivotStyle.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set custom pivot style.
+        /// </summary>
+        internal static string SetCustomPivotStyle_Name {
+            get {
+                return ResourceManager.GetString("SetCustomPivotStyle.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GrapeCity Documents for Excel supports setting the document properties when saving PDF..
+        /// </summary>
+        internal static string SetDocumentPropertiesToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SetDocumentPropertiesToPDF.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set document properties for PDF document.
+        /// </summary>
+        internal static string SetDocumentPropertiesToPDF_Name {
+            get {
+                return ResourceManager.GetString("SetDocumentPropertiesToPDF.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use **E(expansion)** property to set a template&apos;s expansion type..
+        /// </summary>
+        internal static string SetExpansionType_Descrip {
+            get {
+                return ResourceManager.GetString("SetExpansionType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set expansion type.
+        /// </summary>
+        internal static string SetExpansionType_Name {
+            get {
+                return ResourceManager.GetString("SetExpansionType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set the fonts folder path before saving to PDF document..
+        /// </summary>
+        internal static string SetFontsFolderPath_Descrip {
+            get {
+                return ResourceManager.GetString("SetFontsFolderPath.Descrip", resourceCulture);
             }
         }
         
@@ -3568,11 +7743,130 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Set group type.
+        /// </summary>
+        internal static string SetGroupType {
+            get {
+                return ResourceManager.GetString("SetGroupType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use **G(group)** property to set a template&apos;s group type..
+        /// </summary>
+        internal static string SetGroupType_Descrip {
+            get {
+                return ResourceManager.GetString("SetGroupType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set group type.
+        /// </summary>
+        internal static string SetGroupType_Name {
+            get {
+                return ResourceManager.GetString("SetGroupType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set number format for a pivot field..
+        /// </summary>
+        internal static string SetNumberFormatForField_Descrip {
+            get {
+                return ResourceManager.GetString("SetNumberFormatForField.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set number format for Fields.
+        /// </summary>
+        internal static string SetNumberFormatForField_Name {
+            get {
+                return ResourceManager.GetString("SetNumberFormatForField.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use **PB(pagebreak)** property on a template to insert a pagebreak dynamically for the report..
+        /// </summary>
+        internal static string SetPagebreak_Descrip {
+            get {
+                return ResourceManager.GetString("SetPagebreak.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set pagebreak.
+        /// </summary>
+        internal static string SetPagebreak_Name {
+            get {
+                return ResourceManager.GetString("SetPagebreak.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rename a pivot field with IPivotField.Name property.
+        /// </summary>
+        internal static string SetPivotFieldNameInPivotTable_Descrip {
+            get {
+                return ResourceManager.GetString("SetPivotFieldNameInPivotTable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rename a pivot field.
+        /// </summary>
+        internal static string SetPivotFieldNameInPivotTable_Name {
+            get {
+                return ResourceManager.GetString("SetPivotFieldNameInPivotTable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use **R(range)** property to set a range for the current template.
+        ///
+        ///In the specified range, if a template cell has no default context nor explicit context, it will take the current template as its context..
+        /// </summary>
+        internal static string SetRange_Descrip {
+            get {
+                return ResourceManager.GetString("SetRange.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set range.
+        /// </summary>
+        internal static string SetRange_Name {
+            get {
+                return ResourceManager.GetString("SetRange.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to When the IRange.FormulaHidden is true, the formula will not display in the exported Excel file..
+        /// </summary>
+        internal static string SetRangeFormulaHidden_Descrip {
+            get {
+                return ResourceManager.GetString("SetRangeFormulaHidden.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hide formula.
         /// </summary>
         internal static string SetRangeFormulaHidden_Name {
             get {
                 return ResourceManager.GetString("SetRangeFormulaHidden.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IRange.Locked determines whether the cell can be modified in exported Excel when the sheet is protected..
+        /// </summary>
+        internal static string SetRangeLocked_Descrip {
+            get {
+                return ResourceManager.GetString("SetRangeLocked.Descrip", resourceCulture);
             }
         }
         
@@ -3586,11 +7880,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel allows users to specify custom values for the cell range by using the properties and methods of the IRange interface..
+        /// </summary>
+        internal static string SetRangeValue_Descrip {
+            get {
+                return ResourceManager.GetString("SetRangeValue.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set values to a range.
         /// </summary>
         internal static string SetRangeValue_Name {
             get {
                 return ResourceManager.GetString("SetRangeValue.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to create a rich text comment for a cell..
+        /// </summary>
+        internal static string SetRichTextForComment_Descrip {
+            get {
+                return ResourceManager.GetString("SetRichTextForComment.Descrip", resourceCulture);
             }
         }
         
@@ -3604,6 +7916,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to set height(in point) for rows and set width(number of single digital character width) for columns..
+        /// </summary>
+        internal static string SetRowHeightColumnWidth_Descrip {
+            get {
+                return ResourceManager.GetString("SetRowHeightColumnWidth.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set row height and column width.
         /// </summary>
         internal static string SetRowHeightColumnWidth_Name {
@@ -3613,11 +7934,101 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GrapeCity Documents for Excel supports setting the security options when saving PDF..
+        /// </summary>
+        internal static string SetSecurityOptionsToPDF_Descrip {
+            get {
+                return ResourceManager.GetString("SetSecurityOptionsToPDF.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set security options for PDF document.
+        /// </summary>
+        internal static string SetSecurityOptionsToPDF_Name {
+            get {
+                return ResourceManager.GetString("SetSecurityOptionsToPDF.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The IsPrintable property of the IShape interface can be used to get or set whether the object will be printed in the PDF document..
+        /// </summary>
+        internal static string SetShapeNotToPrint_Descrip {
+            get {
+                return ResourceManager.GetString("SetShapeNotToPrint.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do not print shapes.
+        /// </summary>
+        internal static string SetShapeNotToPrint_Name {
+            get {
+                return ResourceManager.GetString("SetShapeNotToPrint.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add rich text for a shape..
+        /// </summary>
+        internal static string SetShapeText_Descrip {
+            get {
+                return ResourceManager.GetString("SetShapeText.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set shape&apos;s text.
         /// </summary>
         internal static string SetShapeText_Name {
             get {
                 return ResourceManager.GetString("SetShapeText.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to show or hide some of table style elements..
+        /// </summary>
+        internal static string SetShowTableStyles_Descrip {
+            get {
+                return ResourceManager.GetString("SetShowTableStyles.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set if some style would be showed.
+        /// </summary>
+        internal static string SetShowTableStyles_Name {
+            get {
+                return ResourceManager.GetString("SetShowTableStyles.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User can use **S(sort)** property to set a template&apos;s sort type..
+        /// </summary>
+        internal static string SetSortType_Descrip {
+            get {
+                return ResourceManager.GetString("SetSortType.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set sort type.
+        /// </summary>
+        internal static string SetSortType_Name {
+            get {
+                return ResourceManager.GetString("SetSortType.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to make each data series render vary colors..
+        /// </summary>
+        internal static string SetVaryColorForColumnChart_Descrip {
+            get {
+                return ResourceManager.GetString("SetVaryColorForColumnChart.Descrip", resourceCulture);
             }
         }
         
@@ -3656,11 +8067,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to copy a shape object..
+        /// </summary>
+        internal static string ShapeCopy_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeCopy.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copy shape.
         /// </summary>
         internal static string ShapeCopy_Name {
             get {
                 return ResourceManager.GetString("ShapeCopy.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to cut a shape object.
+        /// </summary>
+        internal static string ShapeCut_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeCut.Descrip", resourceCulture);
             }
         }
         
@@ -3674,11 +8103,205 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to duplicate a shape object..
+        /// </summary>
+        internal static string ShapeDuplicate_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeDuplicate.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Duplicate shape.
         /// </summary>
         internal static string ShapeDuplicate_Name {
             get {
                 return ResourceManager.GetString("ShapeDuplicate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group shapes with IShapeRange.Group.
+        /// </summary>
+        internal static string ShapeGroup_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeGroup.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group shapes.
+        /// </summary>
+        internal static string ShapeGroup_Name {
+            get {
+                return ResourceManager.GetString("ShapeGroup.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ungroup shape with IShape.Ungroup.
+        /// </summary>
+        internal static string ShapeUngroup_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeUngroup.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ungroup shape.
+        /// </summary>
+        internal static string ShapeUngroup_Name {
+            get {
+                return ResourceManager.GetString("ShapeUngroup.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export shapes with gradient or pattern fill to PDF file..
+        /// </summary>
+        internal static string ShapeWithGradientAndPatternFill_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeWithGradientAndPatternFill.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shape with different fills.
+        /// </summary>
+        internal static string ShapeWithGradientAndPatternFill_Name {
+            get {
+                return ResourceManager.GetString("ShapeWithGradientAndPatternFill.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export shapes with varying kind of border settings to PDF file..
+        /// </summary>
+        internal static string ShapeWithLine_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeWithLine.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shape with line format.
+        /// </summary>
+        internal static string ShapeWithLine_Name {
+            get {
+                return ResourceManager.GetString("ShapeWithLine.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export shapes with picture or texture fill to PDF file..
+        /// </summary>
+        internal static string ShapeWithPictureOrTextureFill_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeWithPictureOrTextureFill.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shape with picture/texture fill.
+        /// </summary>
+        internal static string ShapeWithPictureOrTextureFill_Name {
+            get {
+                return ResourceManager.GetString("ShapeWithPictureOrTextureFill.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export rotated shapes to PDF file..
+        /// </summary>
+        internal static string ShapeWithRotation_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeWithRotation.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shape with rotation.
+        /// </summary>
+        internal static string ShapeWithRotation_Name {
+            get {
+                return ResourceManager.GetString("ShapeWithRotation.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export shape with rich text to PDF file..
+        /// </summary>
+        internal static string ShapeWithText_Descrip {
+            get {
+                return ResourceManager.GetString("ShapeWithText.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shape with text.
+        /// </summary>
+        internal static string ShapeWithText_Name {
+            get {
+                return ResourceManager.GetString("ShapeWithText.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bind data with a template, that has template field in the name of the worksheet..
+        /// </summary>
+        internal static string SheetTemplate_Descrip {
+            get {
+                return ResourceManager.GetString("SheetTemplate.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sheet template.
+        /// </summary>
+        internal static string SheetTemplate_Name {
+            get {
+                return ResourceManager.GetString("SheetTemplate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping &amp; delivery order.
+        /// </summary>
+        internal static string ShippingAndDeliveryOrder_Name {
+            get {
+                return ResourceManager.GetString("ShippingAndDeliveryOrder.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In this folder, you can explore complete code demonstrating how to generate an Excel file, or  you may have your own Excel files and just want to open and update some of its contents at server side
+        ///
+        ///Click the **&quot;Run&quot;** button to perform the following actions on the server:
+        ///- Create an empty workbook or open an existing Excel file.
+        ///- Execute all of code in the code window
+        ///- Save to an Excel file.
+        /// </summary>
+        internal static string Showcase_Descrip {
+            get {
+                return ResourceManager.GetString("Showcase.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Showcase.
+        /// </summary>
+        internal static string Showcase_Name {
+            get {
+                return ResourceManager.GetString("Showcase.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can also choose to display specified levels of row or column groups using the ShowLevels method of the IOutline interface..
+        /// </summary>
+        internal static string ShowSpecificLevel_Descrip {
+            get {
+                return ResourceManager.GetString("ShowSpecificLevel.Descrip", resourceCulture);
             }
         }
         
@@ -3692,11 +8315,38 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can make the text of a cell shrink to fit in the available column with by setting IRange.ShrinkToFit to true..
+        /// </summary>
+        internal static string ShrinkToFit_Descrip {
+            get {
+                return ResourceManager.GetString("ShrinkToFit.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shrink to fit.
         /// </summary>
         internal static string ShrinkToFit_Name {
             get {
                 return ResourceManager.GetString("ShrinkToFit.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to shrink to fit the wrapped text when exporting to PDF..
+        /// </summary>
+        internal static string ShrinkToFitForWrappedText_Descrip {
+            get {
+                return ResourceManager.GetString("ShrinkToFitForWrappedText.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shrink to fit for wrapped text.
+        /// </summary>
+        internal static string ShrinkToFitForWrappedText_Name {
+            get {
+                return ResourceManager.GetString("ShrinkToFitForWrappedText.Name", resourceCulture);
             }
         }
         
@@ -3733,7 +8383,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///
         ///Use the **Add** method of a workbook&apos;s **SlicerCaches** collection to create a slicer cache. It returns an instance of a slicer cache. 
         ///
-        ///Use the **Add** method of the slicer cashe&apos;s **Slicers** collection to create a slicer.
+        ///Use the **Add** method of the slicer cache&apos;s **Slicers** collection to create a slicer.
         ///
         ///It supports both built-in and custom slicer styles..
         /// </summary>
@@ -3753,11 +8403,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to copy a slicer object.
+        /// </summary>
+        internal static string SlicerCopy_Descrip {
+            get {
+                return ResourceManager.GetString("SlicerCopy.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copy slicer.
         /// </summary>
         internal static string SlicerCopy_Name {
             get {
                 return ResourceManager.GetString("SlicerCopy.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to cut a slicer object.
+        /// </summary>
+        internal static string SlicerCut_Descrip {
+            get {
+                return ResourceManager.GetString("SlicerCut.Descrip", resourceCulture);
             }
         }
         
@@ -3771,11 +8439,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to duplicate a slicer object.
+        /// </summary>
+        internal static string SlicerDuplicate_Descrip {
+            get {
+                return ResourceManager.GetString("SlicerDuplicate.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Duplicate slicer.
         /// </summary>
         internal static string SlicerDuplicate_Name {
             get {
                 return ResourceManager.GetString("SlicerDuplicate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how to set a solid fill to a cell..
+        /// </summary>
+        internal static string SolidFill_Descrip {
+            get {
+                return ResourceManager.GetString("SolidFill.Descrip", resourceCulture);
             }
         }
         
@@ -3813,11 +8499,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to sort a range by font color..
+        /// </summary>
+        internal static string SortRangeByFontColor_Descrip {
+            get {
+                return ResourceManager.GetString("SortRangeByFontColor.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sort by font color.
         /// </summary>
         internal static string SortRangeByFontColor_Name {
             get {
                 return ResourceManager.GetString("SortRangeByFontColor.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to sort a range by conditional formatting icons..
+        /// </summary>
+        internal static string SortRangeByIcon_Descrip {
+            get {
+                return ResourceManager.GetString("SortRangeByIcon.Descrip", resourceCulture);
             }
         }
         
@@ -3831,11 +8535,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to sort a range by interior..
+        /// </summary>
+        internal static string SortRangeByInterior_Descrip {
+            get {
+                return ResourceManager.GetString("SortRangeByInterior.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sort range by content.
         /// </summary>
         internal static string SortRangeByInterior_Name {
             get {
                 return ResourceManager.GetString("SortRangeByInterior.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to sort a range by value..
+        /// </summary>
+        internal static string SortRangeByValue_Descrip {
+            get {
+                return ResourceManager.GetString("SortRangeByValue.Descrip", resourceCulture);
             }
         }
         
@@ -3895,11 +8617,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a high-low-close stock chart in GcExcel..
+        /// </summary>
+        internal static string Stock_HighLowCloseStockChart_Descrip {
+            get {
+                return ResourceManager.GetString("Stock_HighLowCloseStockChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to High-Low-Close stock chart.
         /// </summary>
         internal static string Stock_HighLowCloseStockChart_Name {
             get {
                 return ResourceManager.GetString("Stock_HighLowCloseStockChart.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a open-high-low-close stock chart in GcExcel..
+        /// </summary>
+        internal static string Stock_OpenHighLowCloseStock_Descrip {
+            get {
+                return ResourceManager.GetString("Stock_OpenHighLowCloseStock.Descrip", resourceCulture);
             }
         }
         
@@ -3913,11 +8653,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a volume-high-low-close stock chart in GcExcel..
+        /// </summary>
+        internal static string Stock_VolumeHighLowCloseStock_Descrip {
+            get {
+                return ResourceManager.GetString("Stock_VolumeHighLowCloseStock.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Volume-High-Low-Close stock chart.
         /// </summary>
         internal static string Stock_VolumeHighLowCloseStock_Name {
             get {
                 return ResourceManager.GetString("Stock_VolumeHighLowCloseStock.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a volume-open-high-low-close stock chart in GcExcel..
+        /// </summary>
+        internal static string Stock_VolumeOpenHighLowClose_Descrip {
+            get {
+                return ResourceManager.GetString("Stock_VolumeOpenHighLowClose.Descrip", resourceCulture);
             }
         }
         
@@ -3931,11 +8689,20 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Export stock chart to PDF file.
         /// </summary>
-        internal static string String1 {
+        internal static string StockChartPdf_Descrip {
             get {
-                return ResourceManager.GetString("String1", resourceCulture);
+                return ResourceManager.GetString("StockChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stock chart.
+        /// </summary>
+        internal static string StockChartPdf_Name {
+            get {
+                return ResourceManager.GetString("StockChartPdf.Name", resourceCulture);
             }
         }
         
@@ -3945,6 +8712,34 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string StudentCalendar_Name {
             get {
                 return ResourceManager.GetString("StudentCalendar.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Style
+        ///The templates support **cell style** and **merged styles** applied on the cell. The data will grow as per the style applied on the cells..
+        /// </summary>
+        internal static string Style_Descrip {
+            get {
+                return ResourceManager.GetString("Style.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Style.
+        /// </summary>
+        internal static string Style_Name {
+            get {
+                return ResourceManager.GetString("Style.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to When you have a lot of data to handle, you can create as many tables on a spreadsheet as you want and apply separate filters on columns of each of the table to manage information in an effective manner..
+        /// </summary>
+        internal static string TableFilter_Descrip {
+            get {
+                return ResourceManager.GetString("TableFilter.Descrip", resourceCulture);
             }
         }
         
@@ -3985,11 +8780,118 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GcExcel .NET provides an option to apply sorting on a specific table in the worksheet. To accomplish this, you can use the Sort property of the ITable interface. The Apply method is used to apply the selected sort state and display the results..
+        /// </summary>
+        internal static string TableSort_Descrip {
+            get {
+                return ResourceManager.GetString("TableSort.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sort table range.
         /// </summary>
         internal static string TableSort_Name {
             get {
                 return ResourceManager.GetString("TableSort.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tablix report.
+        /// </summary>
+        internal static string TablixReport_Name {
+            get {
+                return ResourceManager.GetString("TablixReport.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tag provides the ability to store private data in cell/row/column/sheet..
+        /// </summary>
+        internal static string Tag_Descrip {
+            get {
+                return ResourceManager.GetString("Tag.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tag of sheet/row/column/cell.
+        /// </summary>
+        internal static string Tag_Name {
+            get {
+                return ResourceManager.GetString("Tag.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Template cell
+        ///GcExcel use **“{{”** and **“}}”** as markers of template.
+        ///
+        ///Between these markers, user can use data field, function field, expression field and lots of properties.
+        ///
+        ///The template supports kinds of template cells:
+        ///
+        ///- **data template:** a template representing a data field
+        ///- **function template:** a template representing a function
+        ///- **expression template:** a template representing an expression
+        ///- **inline template:** inline template for use with text
+        ///- **sheet template:** template  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TemplateCell_Descrip {
+            get {
+                return ResourceManager.GetString("TemplateCell.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Template cell.
+        /// </summary>
+        internal static string TemplateCell_Name {
+            get {
+                return ResourceManager.GetString("TemplateCell.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Templates
+        ///GcExcel(GrapeCity Documents for Excel) introduces new templates support with comprehensive syntax and API to bind Excel documents to data and generate Excel reports with advanced layouts.
+        ///
+        ///With flexible syntax and easy notations for data expansion and formulas, the new template syntax and API will make it easy to define Excel templates and generate Excel reports supporting numerous use cases.
+        ///
+        ///In this section, you&apos;ll learn how to use features of **GcExcel Template**. And also, there are se [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Templates_Descrip {
+            get {
+                return ResourceManager.GetString("Templates.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Templates.
+        /// </summary>
+        internal static string Templates_Name {
+            get {
+                return ResourceManager.GetString("Templates.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ## Template samples
+        ///User samples for you to have an entire vision of **GcExcel Templates** and generated reports..
+        /// </summary>
+        internal static string TemplateSamples_Descrip {
+            get {
+                return ResourceManager.GetString("TemplateSamples.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Template samples.
+        /// </summary>
+        internal static string TemplateSamples_Name {
+            get {
+                return ResourceManager.GetString("TemplateSamples.Name", resourceCulture);
             }
         }
         
@@ -4012,6 +8914,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         internal static string Text_Name {
             get {
                 return ResourceManager.GetString("Text.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how text filters are applied to display rows with cell values that either match to the specified text or regular expression value in the column on which the filter is applied..
+        /// </summary>
+        internal static string TextFilter_Descrip {
+            get {
+                return ResourceManager.GetString("TextFilter.Descrip", resourceCulture);
             }
         }
         
@@ -4044,11 +8955,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Set text orientation.
+        ///   Looks up a localized string similar to You can set the reading order of text in a cell..
+        /// </summary>
+        internal static string TextOrientation_Descrip {
+            get {
+                return ResourceManager.GetString("TextOrientation.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set text reading order.
         /// </summary>
         internal static string TextOrientation_Name {
             get {
                 return ResourceManager.GetString("TextOrientation.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GcExcel can export various kind of font effect to PDF, such as text underline, strikethrough, bold, etc..
+        /// </summary>
+        internal static string TextStyle_Descrip {
+            get {
+                return ResourceManager.GetString("TextStyle.Descrip", resourceCulture);
             }
         }
         
@@ -4095,11 +9024,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to load from json and save to json file. .
+        /// </summary>
+        internal static string ToJsonFromJson_Descrip {
+            get {
+                return ResourceManager.GetString("ToJsonFromJson.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ToJson and FromJson.
         /// </summary>
         internal static string ToJsonFromJson_Name {
             get {
                 return ResourceManager.GetString("ToJsonFromJson.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Travel.
+        /// </summary>
+        internal static string Travel_Name {
+            get {
+                return ResourceManager.GetString("Travel.Name", resourceCulture);
             }
         }
         
@@ -4122,6 +9069,15 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to ungroup row and column in a worksheet..
+        /// </summary>
+        internal static string UngroupRange_Descrip {
+            get {
+                return ResourceManager.GetString("UngroupRange.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ungroup range.
         /// </summary>
         internal static string UngroupRange_Name {
@@ -4131,11 +9087,47 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Using IWorkbook.Unprotect method to unprotect a workbook..
+        /// </summary>
+        internal static string UnprotectWorkbook_Descrip {
+            get {
+                return ResourceManager.GetString("UnprotectWorkbook.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unprotect workbook.
+        /// </summary>
+        internal static string UnprotectWorkbook_Name {
+            get {
+                return ResourceManager.GetString("UnprotectWorkbook.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to unprotect a worksheet..
+        /// </summary>
+        internal static string UnprotectWorksheet_Descrip {
+            get {
+                return ResourceManager.GetString("UnprotectWorksheet.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unprotect worksheet.
         /// </summary>
         internal static string UnprotectWorksheet_Name {
             get {
                 return ResourceManager.GetString("UnprotectWorksheet.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Array formula is a formula that can execute multiple calculations on individual cells or a range of cells to display a column or a row of subtotals. Refer to the following example code to set array formula and get entire array..
+        /// </summary>
+        internal static string UseArrayFormula_Descrip {
+            get {
+                return ResourceManager.GetString("UseArrayFormula.Descrip", resourceCulture);
             }
         }
         
@@ -4169,11 +9161,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to configure date axis of sparkline..
+        /// </summary>
+        internal static string UseDateAxis_Descrip {
+            get {
+                return ResourceManager.GetString("UseDateAxis.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Use date axis.
         /// </summary>
         internal static string UseDateAxis_Name {
             get {
                 return ResourceManager.GetString("UseDateAxis.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to use slicer to do filtering..
+        /// </summary>
+        internal static string UseSlicerDoFilter_Descrip {
+            get {
+                return ResourceManager.GetString("UseSlicerDoFilter.Descrip", resourceCulture);
             }
         }
         
@@ -4187,11 +9197,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to clear all filters on data with slicer..
+        /// </summary>
+        internal static string UseSlicerToClearFilter_Descrip {
+            get {
+                return ResourceManager.GetString("UseSlicerToClearFilter.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Use a slicer to clear a filter.
         /// </summary>
         internal static string UseSlicerToClearFilter_Name {
             get {
                 return ResourceManager.GetString("UseSlicerToClearFilter.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table formula refers to a formula that is used as a structured reference in the worksheet instead of using it as an explicit cell reference. Refer to the following example code to set table formula in your spreadsheets..
+        /// </summary>
+        internal static string UseTableFormula_Descrip {
+            get {
+                return ResourceManager.GetString("UseTableFormula.Descrip", resourceCulture);
             }
         }
         
@@ -4223,6 +9251,33 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User can use **variable** defined in code as the data source of GcExcel Template..
+        /// </summary>
+        internal static string Variable_Descrip {
+            get {
+                return ResourceManager.GetString("Variable.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Variable.
+        /// </summary>
+        internal static string Variable_Name {
+            get {
+                return ResourceManager.GetString("Variable.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to set japanese vertical text and export it to a PDF document to see effect..
+        /// </summary>
+        internal static string VerticalText_Descrip {
+            get {
+                return ResourceManager.GetString("VerticalText.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export vertical text.
         /// </summary>
         internal static string VerticalText_Name {
@@ -4250,7 +9305,9 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///- Import an Excel file with a password to a workbook
         ///- Export a workbook to an Excel file
         ///- Export a workbook to an Excel file with a password
-        ///- Import or export a workbook using ToJson and FromJson.
+        ///- Import or export a workbook using ToJson and FromJson
+        ///- Protect a workbook
+        ///- Unprotect a workb [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Workbook_Descrip {
             get {
@@ -4275,7 +9332,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///- Protect a worksheet
         ///- Unprotect a worksheet
         ///- Activate a worksheet
-        ///- Apply settings to a worksheet.
+        ///- Apply settings to a worksheet
+        ///- Add a chart sheet.
         /// </summary>
         internal static string Worksheets_Descrip {
             get {
@@ -4293,11 +9351,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can wrap the text of cell by using IRange.WrapText property..
+        /// </summary>
+        internal static string WrapText_Descrip {
+            get {
+                return ResourceManager.GetString("WrapText.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Wrap text.
         /// </summary>
         internal static string WrapText_Name {
             get {
                 return ResourceManager.GetString("WrapText.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a scatter chart in GcExcel..
+        /// </summary>
+        internal static string XYScatterChart_Descrip {
+            get {
+                return ResourceManager.GetString("XYScatterChart.Descrip", resourceCulture);
             }
         }
         
@@ -4311,6 +9387,33 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export XYScatter chart to PDF file.
+        /// </summary>
+        internal static string XYScatterChartPdf_Descrip {
+            get {
+                return ResourceManager.GetString("XYScatterChartPdf.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to X Y(Scatter) chart.
+        /// </summary>
+        internal static string XYScatterChartPdf_Name {
+            get {
+                return ResourceManager.GetString("XYScatterChartPdf.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a scatter chart with straight lines in GcExcel..
+        /// </summary>
+        internal static string XYScatterLinesChart_Descrip {
+            get {
+                return ResourceManager.GetString("XYScatterLinesChart.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Scatter with straight lines and markers.
         /// </summary>
         internal static string XYScatterLinesChart_Name {
@@ -4320,11 +9423,29 @@ namespace GrapeCity.Documents.Excel.Examples {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a scatter chart with smooth lines in GcExcel..
+        /// </summary>
+        internal static string XYScatterSmooth_Descrip {
+            get {
+                return ResourceManager.GetString("XYScatterSmooth.Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Scatter with smooth Lines.
         /// </summary>
         internal static string XYScatterSmooth_Name {
             get {
                 return ResourceManager.GetString("XYScatterSmooth.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refer to the following example code to see how to add a scatter chart with smooth lines and markers in GcExcel..
+        /// </summary>
+        internal static string XYScatterSmoothWithMarkers_Descrip {
+            get {
+                return ResourceManager.GetString("XYScatterSmoothWithMarkers.Descrip", resourceCulture);
             }
         }
         

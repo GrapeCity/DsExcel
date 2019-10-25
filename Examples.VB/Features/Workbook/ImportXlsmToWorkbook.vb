@@ -4,9 +4,9 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
 
             'GcExcel supports open xlsm file
-            workbook.Open(Me.CurrentDirectory & "macros.xlsm")
+            workbook.Open(IO.Path.Combine(CurrentDirectory, "macros.xlsm"))
             'Macros can be preserved after saving
-            workbook.Save(Me.CurrentDirectory & "macros-exported.xlsm")
+            workbook.Save(IO.Path.Combine(CurrentDirectory, "macros-exported.xlsm"))
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

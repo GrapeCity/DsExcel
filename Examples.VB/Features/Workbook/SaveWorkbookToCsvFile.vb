@@ -2,7 +2,7 @@
     Public Class SaveWorkbookToCsvFile
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
-            Dim data = {
+            Dim data As Object(,) = {
                 {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
                 {"Bob", "NewYork", #6/8/1968#, "male", 80, 180},
                 {"Betty", "NewYork", #7/3/1972#, "female", 72, 168},

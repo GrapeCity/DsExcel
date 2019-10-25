@@ -10,7 +10,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.Text
         {
             IWorksheet sheet = workbook.Worksheets[0];
 
-            sheet.Range["A1"].Font.Name = "@Meiryo";
+            sheet.Range["A1"].Font.Name = "@MS UI Gothic";
             sheet.Range["A1"].Value = "日本語（にほんご、にっぽんご）は、主として、日本列島で使用されてきた言語である。GrapeCity";
             sheet.Range["A1"].HorizontalAlignment = HorizontalAlignment.Right;
             sheet.Range["A1"].VerticalAlignment = VerticalAlignment.Top;
@@ -34,14 +34,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.Text
             get
             {
                 return false;
-            }
-        }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
             }
         }
     }

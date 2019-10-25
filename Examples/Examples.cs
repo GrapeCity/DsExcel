@@ -22,6 +22,31 @@ namespace GrapeCity.Documents.Excel.Examples
                 return _rootExample;
             }
         }
+
+        public static ExampleBase[] GetAllExamples()
+        {
+            List<ExampleBase> examples = new List<ExampleBase>();
+            examples.Add(RootExample);
+            foreach (var child in RootExample.Children)
+            {
+                GetExamples(child, examples);
+            }
+
+            return examples.ToArray();
+        }
+       
+        private static void GetExamples(ExampleBase example, List<ExampleBase> examples)
+        {
+            examples.Add(example);
+            if (example is FolderExample)
+            {
+                FolderExample folderExample = example as FolderExample;
+                foreach (var child in folderExample.Children)
+                {
+                    GetExamples(child, examples);
+                }
+            }
+        }
     }
 
     public class RootExample : FolderExample

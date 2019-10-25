@@ -42,7 +42,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.CellRichText
             superRun3.Font.Color = System.Drawing.Color.Blue;
            
         }
-
-        public override bool IsNew => true;
     }
 }

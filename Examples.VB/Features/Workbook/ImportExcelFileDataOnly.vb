@@ -4,9 +4,10 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             'Use XlsxOpenOptions.ImportFlags to control what you want to import from excel, ImportFlags.Data means only the data will be imported
             'Change the path to the real file path when open.
-            Dim options As New XlsxOpenOptions
-            options.ImportFlags = ImportFlags.Data
-            workbook.Open(CurrentDirectory & "source.xlsx", options)
+            Dim options As New XlsxOpenOptions With {
+                .ImportFlags = ImportFlags.Data
+            }
+            workbook.Open(IO.Path.Combine(CurrentDirectory, "source.xlsx"), options)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

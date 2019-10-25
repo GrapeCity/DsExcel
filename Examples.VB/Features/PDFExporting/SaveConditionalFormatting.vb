@@ -33,8 +33,8 @@ Namespace Features.PDFExporting
             cf1.ColorScaleCriteria(2).FormatColor.Color = Color.FromArgb(99, 190, 123)
 
             'Data bar
-            sheet.Range("C14").Value = -5
-            sheet.Range("C17").Value = -8
+            sheet.Range!C14.Value = -5
+            sheet.Range!C17.Value = -8
 
             Dim cf2 As IDataBar = sheet.Range("C10:C19").FormatConditions.AddDatabar()
             cf2.MinPoint.Type = ConditionValueTypes.AutomaticMin

@@ -2,7 +2,7 @@
     Public Class CreatePivotTable
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
-            Dim sourceData = {
+            Dim sourceData As Object(,) = {
                 {"Order ID", "Product", "Category", "Amount", "Date", "Country"},
                 {1, "Carrots", "Vegetables", 4270, #1/6/2018#, "United States"},
                 {2, "Broccoli", "Vegetables", 8239, #1/7/2018#, "United Kingdom"},
@@ -32,15 +32,12 @@
             worksheet.Range("H:O").ColumnWidth = 12
 
             'config pivot table's fields
-            Dim field_Category = pivottable.PivotFields("Category")
-            field_Category.Orientation = PivotFieldOrientation.RowField
-            Dim field_Product = pivottable.PivotFields("Product")
-            field_Product.Orientation = PivotFieldOrientation.ColumnField
-            Dim field_Amount = pivottable.PivotFields("Amount")
-            field_Amount.Orientation = PivotFieldOrientation.DataField
-            Dim field_Country = pivottable.PivotFields("Country")
-            field_Country.Orientation = PivotFieldOrientation.PageField
+            pivottable.PivotFields!Category.Orientation = PivotFieldOrientation.RowField
+            pivottable.PivotFields!Product.Orientation = PivotFieldOrientation.ColumnField
+            pivottable.PivotFields!Amount.Orientation = PivotFieldOrientation.DataField
+            pivottable.PivotFields!Country.Orientation = PivotFieldOrientation.PageField
         End Sub
+
         Public Overrides ReadOnly Property ShowViewer As Boolean
             Get
                 Return False
@@ -52,4 +49,5 @@
             End Get
         End Property
     End Class
+
 End Namespace

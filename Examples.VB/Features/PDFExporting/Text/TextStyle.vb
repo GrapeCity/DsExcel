@@ -41,26 +41,26 @@
 
             'Indent
             sheet.Range!A9.Value = "Indent"
-            sheet.Range("B10").Value = "Left Indent"
-            sheet.Range("B10").IndentLevel = 3
-            sheet.Range("C10").Value = "Right Indent"
-            sheet.Range("C10").IndentLevel = 3
-            sheet.Range("C10").HorizontalAlignment = HorizontalAlignment.Right
+            sheet.Range!B10.Value = "Left Indent"
+            sheet.Range!B10.IndentLevel = 3
+            sheet.Range!C10.Value = "Right Indent"
+            sheet.Range!C10.IndentLevel = 3
+            sheet.Range!C10.HorizontalAlignment = HorizontalAlignment.Right
 
             'Shrink to fit
-            sheet.Range("A12").Value = "Shrink to fit"
-            sheet.Range("B13").Value = "This is a test string for ""Shrink to fit"""
-            sheet.Range("B13").ShrinkToFit = True
+            sheet.Range!A12.Value = "Shrink to fit"
+            sheet.Range!B13.Value = "This is a test string for ""Shrink to fit"""
+            sheet.Range!B13.ShrinkToFit = True
 
             'Underline
-            sheet.Range("A15").Value = "Underline"
-            sheet.Range("B16").Value = "Single Underline"
-            sheet.Range("B16").Font.Underline = UnderlineType.Single
+            sheet.Range!A15.Value = "Underline"
+            sheet.Range!B16.Value = "Single Underline"
+            sheet.Range!B16.Font.Underline = UnderlineType.Single
 
             'Strikthrough
-            sheet.Range("A18").Value = "Strikthrough"
-            sheet.Range("B19").Value = "Strikthrough"
-            sheet.Range("B19").Font.Strikethrough = True
+            sheet.Range!A18.Value = "Strikthrough"
+            sheet.Range!B19.Value = "Strikthrough"
+            sheet.Range!B19.Font.Strikethrough = True
 
             'Other settings
             sheet.Columns(0).Font.Bold = True

@@ -4,19 +4,22 @@
     <RootNamespace>GrapeCity.Documents.Excel.Examples.VB</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>GrapeCity.Documents.Excel.Examples.VB</AssemblyName>
+    <OptionStrict>On</OptionStrict>
+    <PostBuildEvent></PostBuildEvent>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
-    <WarningsAsErrors />
+    <NoWarn></NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
-    <WarningsAsErrors />
+    <NoWarn></NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="CodeResource.Designer.cs" />
     <None Remove="Resource\list.png" />
     <None Remove="Resource\logo.png" />
     <None Remove="Resource\movie.png" />
@@ -72,27 +75,42 @@
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Workbook.ConfigureWorkbookView.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Worksheets.ConfigureWorksheetView.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Worksheets.ConfigWorksheet.png" />
+    <None Remove="Resource\TimeSheet.pdf" />
     <None Remove="Resource\xlsx\AgingReport.xlsx" />
     <None Remove="Resource\xlsx\Annual financial report.xlsx" />
+    <None Remove="Resource\xlsx\Any year calendar (Ion theme)1.xlsx" />
+    <None Remove="Resource\xlsx\Any year calendar1.xlsx" />
     <None Remove="Resource\xlsx\Blood sugar tracker.xlsx" />
+    <None Remove="Resource\xlsx\ControlAdjustingPageBreaks.xlsx" />
+    <None Remove="Resource\xlsx\CustomShapes.xlsx" />
+    <None Remove="Resource\xlsx\DecisionTreeFlowChart.xlsx" />
     <None Remove="Resource\xlsx\Employee absence schedule.xlsx" />
     <None Remove="Resource\xlsx\Event budget.xlsx" />
     <None Remove="Resource\xlsx\Event planning tracker.xlsx" />
+    <None Remove="Resource\xlsx\ExcelRangeInsidePDF.xlsx" />
     <None Remove="Resource\xlsx\Family budget.xlsx" />
     <None Remove="Resource\xlsx\Financial KPIs.xlsx" />
+    <None Remove="Resource\xlsx\Flowcharts.xlsx" />
     <None Remove="Resource\xlsx\Home inventory.xlsx" />
     <None Remove="Resource\xlsx\Income statement.xlsx" />
     <None Remove="Resource\xlsx\Information.csv" />
+    <None Remove="Resource\xlsx\KeepTogether.xlsx" />
     <None Remove="Resource\xlsx\Monthly business budget.xlsx" />
+    <None Remove="Resource\xlsx\Multiple sheets one page.xlsx" />
+    <None Remove="Resource\xlsx\MultipleHeaders.xlsx" />
+    <None Remove="Resource\xlsx\OleTemplates.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Demo.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Print Area.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Print Title Columns.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Print Title Rows.xlsx" />
+    <None Remove="Resource\xlsx\PrintSpecificPDFPages.xlsx" />
     <None Remove="Resource\xlsx\Project cost tracker.xlsx" />
+    <None Remove="Resource\xlsx\RepeatTails.xlsx" />
     <None Remove="Resource\xlsx\Simple invoice.xlsx" />
     <None Remove="Resource\xlsx\Simple personal budget.xlsx" />
     <None Remove="Resource\xlsx\Student calendar (Mon).xlsx" />
     <None Remove="Resource\xlsx\Travel expense report.xlsx" />
+    <None Remove="Resource\xlsx\WebsiteFlowChart.xlsx" />
     <None Remove="Tutorial\Tutorial_en-US.md" />
     <None Remove="Tutorial\Tutorial_zh-CN.md" />
   </ItemGroup>
@@ -263,15 +281,27 @@
     <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Worksheets.ConfigWorksheet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\TimeSheet.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\AgingReport.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Annual financial report.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Any year calendar (Ion theme)1.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\Any year calendar1.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Blood sugar tracker.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\ControlAdjustingPageBreaks.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\CustomShapes.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\DecisionTreeFlowChart.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Employee absence schedule.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -281,12 +311,16 @@
     <EmbeddedResource Include="Resource\xlsx\Event planning tracker.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\ExcelRangeInsidePDF.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Family budget.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Financial KPIs.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Flowcharts.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Home inventory.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -296,9 +330,19 @@
     <EmbeddedResource Include="Resource\xlsx\Information.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\KeepTogether.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Monthly business budget.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Multiple sheets one page.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\MultipleHeaders.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\OleTemplates.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\PageSetup Demo.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -311,7 +355,13 @@
     <EmbeddedResource Include="Resource\xlsx\PageSetup Print Title Rows.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\PrintSpecificPDFPages.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Project cost tracker.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\RepeatTails.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Simple invoice.xlsx">
@@ -321,23 +371,27 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Student calendar (Mon).xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\Travel expense report.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\WebsiteFlowChart.xlsx" />
     <EmbeddedResource Include="Tutorial\Tutorial_en-US.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Tutorial\Tutorial_zh-CN.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resource\xlsx\Student calendar %28Mon%29.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resource\xlsx\Travel expense report.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <EmbeddedResource Update="CodeResource.resx">
+      <LastGenOutput>CodeResource.Designer.vb</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ExcelReporting\" />
     <Folder Include="ExcelTemplates\" />
+    <Folder Include="SpreadSheetsViewer\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -345,6 +399,12 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CodeResource_VB.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource\xlsx\Any year calendar %28Ion theme%291.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource\xlsx\Student calendar %28Mon%29.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Update="StringResource.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
@@ -354,11 +414,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="2.1.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="$(GcExcelVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="CodeResource.Designer.vb">
+      <DependentUpon>CodeResource.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Update="CodeResource_VB.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -378,4 +443,9 @@
     <Import Include="GrapeCity.Documents.Excel" />
     <Import Include="GrapeCity.Documents.Excel.Drawing" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)'=='Debug'">
+    <Exec Command="call $(ProjectDir)UpdateCodeResourcesAndCopy.bat" />
+  </Target>
+
 </Project>

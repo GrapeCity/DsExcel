@@ -4,7 +4,7 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            Dim b2 As IRange = worksheet.Range("B2")
+            Dim b2 As IRange = worksheet.Range!B2
             b2.Value = "GrapeCity Documents for Excel"
             b2.Font.Size = 26
             b2.EntireRow.RowHeight = 42

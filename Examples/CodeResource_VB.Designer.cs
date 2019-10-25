@@ -74,7 +74,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_BasicSalesReport {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.BasicSalesReport", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.BasicSalesReport", resourceCulture);
             }
         }
         
@@ -92,7 +92,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_BidTracker {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.BidTracker", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.BidTracker", resourceCulture);
             }
         }
         
@@ -110,7 +110,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_BloodPressureTracker {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.BloodPressureTracker", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.BloodPressureTracker", resourceCulture);
             }
         }
         
@@ -128,7 +128,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_CostAnalysisWithParetoChart {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.CostAnalysisWithParetoChart", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.CostAnalysisWithParetoChart", resourceCulture);
             }
         }
         
@@ -144,7 +144,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_CustomerProfitabilityAnalysis {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.CustomerProfitabilityAnalysi" +
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.CustomerProfitabilityAnalysi" +
                         "s", resourceCulture);
             }
         }
@@ -164,7 +164,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_MovieList {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.MovieList", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.MovieList", resourceCulture);
             }
         }
         
@@ -182,7 +182,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_PersonalAddressBook {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.PersonalAddressBook", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.PersonalAddressBook", resourceCulture);
             }
         }
         
@@ -200,7 +200,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_PersonalNetWorthCalculator {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.PersonalNetWorthCalculator", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.PersonalNetWorthCalculator", resourceCulture);
             }
         }
         
@@ -215,7 +215,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_ToDoListWithProgressTracker {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelReporting.ToDoListWithProgressTracker", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.ToDoListWithProgressTracker", resourceCulture);
             }
         }
         
@@ -235,7 +235,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_BloodSugarTracker {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelTemplates.BloodSugarTracker", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.BloodSugarTracker", resourceCulture);
             }
         }
         
@@ -254,7 +254,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_EventBudget {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelTemplates.EventBudget", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.EventBudget", resourceCulture);
             }
         }
         
@@ -276,7 +276,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_FinancialKPIs {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelTemplates.FinancialKPIs", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.FinancialKPIs", resourceCulture);
             }
         }
         
@@ -294,7 +294,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_IncomeStatement {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelTemplates.IncomeStatement", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.IncomeStatement", resourceCulture);
             }
         }
         
@@ -312,7 +312,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_MonthlyBusinessBudget {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelTemplates.MonthlyBusinessBudget", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.MonthlyBusinessBudget", resourceCulture);
             }
         }
         
@@ -330,7 +330,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_SimpleInvoice {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.ExcelTemplates.SimpleInvoice", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Showcase.SimpleInvoice", resourceCulture);
             }
         }
         
@@ -984,7 +984,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///                {1300, 80, 80},
         ///                {1750, 90, 100},
         ///                {1640, 120, 130},
-        ///                {1700, 120, 95},        /// [rest of string was truncated]&quot;;.
+        ///                {1700, 120, 95},
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_CombinationChart2 {
             get {
@@ -3914,7 +3915,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            Next i
         ///            &apos;Set data.
         ///            sheet.Range(&quot;A1:N50&quot;).Value = data
-        ///            sheet.Range(&quot;A2:N4&quot;).Value = &quot;TitleRows&quot;        /// [rest of string was truncated]&quot;;.
+        ///            sheet.Range(&quot;A2:N4&quot;).Value = &quot;TitleRows&quot;
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PdfPageSetup_ConfigurePrintTitles {
             get {
@@ -4373,7 +4375,8 @@ namespace GrapeCity.Documents.Excel.Examples {
         ///            &apos;use string to access range.
         ///            worksheet.Range!A2.Interior.Color = Color.LightYellow
         ///            worksheet.Range(&quot;C3:D4&quot;).Interior.Color = Color.Tomato
-        ///            worksheet.Range(&quot;A5:B7, C3, H5:N6&quot;).Value = 2        /// [rest of string was truncated]&quot;;.
+        ///            worksheet.Range(&quot;A5:B7, C3, H5:N6&quot;).Value = 2
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_VB_Features_RangeOperations_AccessRange {
             get {

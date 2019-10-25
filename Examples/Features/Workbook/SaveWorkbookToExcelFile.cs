@@ -10,7 +10,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             //change the path to real export path when save.
-            workbook.Save(this.CurrentDirectory + "dest.xlsx");
+            workbook.Save(System.IO.Path.Combine(this.CurrentDirectory, "dest.xlsx"));
 
         }
 

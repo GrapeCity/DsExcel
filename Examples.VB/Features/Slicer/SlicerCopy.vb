@@ -4,7 +4,7 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            Dim sourceData = {
+            Dim sourceData As Object(,) = {
                 {"Order ID", "Product", "Category", "Amount", "Date", "Country"},
                 {1, "Carrots", "Vegetables", 4270, #1/6/2018#, "United States"},
                 {2, "Broccoli", "Vegetables", 8239, #1/7/2018#, "United Kingdom"},

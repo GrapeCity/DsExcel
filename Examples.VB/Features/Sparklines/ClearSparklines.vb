@@ -2,7 +2,7 @@
     Public Class ClearSparklines
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
-            Dim data = {
+            Dim data As Object(,) = {
                 {"Number", "Date", "Customer", "Description", "Trend", "0-30 Days", "30-60 Days", "60-90 Days", ">90 Days", "Amount"},
                 {"1001", #5/21/2017#, "Customer A", "Invoice 1001", Nothing, 1200.15, 1916.18, 1105.23, 1806.53, Nothing},
                 {"1002", #3/18/2017#, "Customer B", "Invoice 1002", Nothing, 896.23, 1005.53, 1800.56, 1150.49, Nothing},

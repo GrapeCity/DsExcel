@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
@@ -59,5 +58,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
                 return false;
             }
         }
+
     }
 }

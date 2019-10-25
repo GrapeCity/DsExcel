@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>GrapeCity.Documents.Excel.Examples</RootNamespace>
@@ -19,14 +19,40 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="ExcelTemplates\AnnualFinancialReport.cs" />
+    <Compile Remove="Showcase\ExcelTemplates\AnnualFinancialReport.cs" />
+    <Compile Remove="Features\PDFExporting\ConvertPageToImage.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="CodeResource_VB.Designer.vb" />
+    <None Remove="Resource\Acme-Financial Report 2018.pdf" />
     <None Remove="Resource\Annual financial report.csv" />
+    <None Remove="Resource\Fonts\AGENCYR.TTF" />
+    <None Remove="Resource\Fonts\arial.ttf" />
+    <None Remove="Resource\Fonts\arialbd.ttf" />
+    <None Remove="Resource\Fonts\ariali.ttf" />
+    <None Remove="Resource\Fonts\calibri.ttf" />
+    <None Remove="Resource\Fonts\calibrib.ttf" />
+    <None Remove="Resource\Fonts\calibrii.ttf" />
+    <None Remove="Resource\Fonts\calibriz.ttf" />
+    <None Remove="Resource\Fonts\cambria.ttc" />
+    <None Remove="Resource\Fonts\cambriab.ttf" />
+    <None Remove="Resource\Fonts\GARA.TTF" />
+    <None Remove="Resource\Fonts\GARABD.TTF" />
+    <None Remove="Resource\Fonts\GILB____.TTF" />
+    <None Remove="Resource\Fonts\GIL_____.TTF" />
+    <None Remove="Resource\Fonts\GOTHIC.TTF" />
+    <None Remove="Resource\Fonts\GOTHICB.TTF" />
+    <None Remove="Resource\Fonts\impact.ttf" />
+    <None Remove="Resource\Fonts\micross.ttf" />
+    <None Remove="Resource\Fonts\msgothic.ttc" />
+    <None Remove="Resource\Fonts\symbol.ttf" />
+    <None Remove="Resource\Fonts\times.ttf" />
+    <None Remove="Resource\Fonts\timesbd.ttf" />
+    <None Remove="Resource\Fonts\timesi.ttf" />
     <None Remove="Resource\list.png" />
     <None Remove="Resource\logo.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.AddUserShapes.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Axes.ConfigDisplayUnitLabel.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Chart3DFormat.ConfigChart3DFormat.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Chart3DFormat.ConfigChartBackWall.png" />
@@ -44,6 +70,11 @@
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.DataPoint.ConfigNegativePoint.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.DataPoint.ConfigSecondarySection.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Markers.ConfigMarkerStyle.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddBoxWhiskerChart.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddFunnelChart.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddHistogramChart.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddParetoChart.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddWaterfallChart.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Series.SetVaryColorForColumnChart.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Comments.SetRichTextForComment.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Filtering.DateFiltering.DateDynamicFilter.png" />
@@ -58,12 +89,20 @@
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Formatting.Fill.PatternFill.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Formatting.Fill.RectangularGradientFill.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Formatting.Fonts.FontEffect.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.CustomShape.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.ExportFlowChart.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.ShapeWithGradientAndPatternFill.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.ShapeWithPictureOrTextureFill.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.ShapeWithText.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.ChangeDataFieldSummarizeFunction.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.ChangeDataFiledSummarizeFunction.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.CreatePivotTable.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.FilterItemsInPivotTable.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.HideGrandTotalsInPivotTable.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.ModifySubtotalsForPivotField.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.RefreshPivotTable.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.RowAxisLayoutInPivotTable.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.SetPivotFieldNameInPivotTable.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigShape3DFormat.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigShapeLine.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigShapeWithGradientFill.png" />
@@ -80,34 +119,197 @@
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Workbook.ConfigureWorkbookView.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Worksheets.ConfigureWorksheetView.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Worksheets.ConfigWorksheet.png" />
+    <None Remove="Resource\Template_FamilyInfo.json" />
+    <None Remove="Resource\TimeSheet.pdf" />
     <None Remove="Resource\Tutorial.md" />
+    <None Remove="Resource\xlsx\Acme-Financial Report 2018.pdf" />
     <None Remove="Resource\xlsx\AgingReport.xlsx" />
     <None Remove="Resource\xlsx\Annual financial report.xlsx" />
+    <None Remove="Resource\xlsx\Any year calendar %28Ion theme%291.xlsx" />
+    <None Remove="Resource\xlsx\Any year calendar1.xlsx" />
     <None Remove="Resource\xlsx\Blood sugar tracker.xlsx" />
+    <None Remove="Resource\xlsx\Budget summary report1.xlsx" />
+    <None Remove="Resource\xlsx\Chart Gallery.xlsx" />
+    <None Remove="Resource\xlsx\ControlAdjustingPageBreaks.xlsx" />
+    <None Remove="Resource\xlsx\CustomShapes.xlsx" />
     <None Remove="Resource\xlsx\DecisionTreeFlowChart.xlsx" />
     <None Remove="Resource\xlsx\Employee absence schedule.xlsx" />
     <None Remove="Resource\xlsx\Event budget.xlsx" />
     <None Remove="Resource\xlsx\Event planning tracker.xlsx" />
+    <None Remove="Resource\xlsx\ExcelRangeInsidePDF.xlsx" />
     <None Remove="Resource\xlsx\Family budget.xlsx" />
     <None Remove="Resource\xlsx\Financial KPIs.xlsx" />
+    <None Remove="Resource\xlsx\FinancialReport.xlsx" />
+    <None Remove="Resource\xlsx\Flowcharts.xlsx" />
     <None Remove="Resource\xlsx\Home inventory.xlsx" />
     <None Remove="Resource\xlsx\Income statement.xlsx" />
     <None Remove="Resource\xlsx\Information.csv" />
+    <None Remove="Resource\xlsx\KeepTogether.xlsx" />
     <None Remove="Resource\xlsx\Monthly business budget.xlsx" />
+    <None Remove="Resource\xlsx\Multiple sheets one page.xlsx" />
+    <None Remove="Resource\xlsx\MultipleHeaders.xlsx" />
+    <None Remove="Resource\xlsx\OleTemplates.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Demo.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Demo2.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Print Area.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Print Title Columns.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Print Title Rows.xlsx" />
+    <None Remove="Resource\xlsx\PrintSpecificPDFPages.xlsx" />
     <None Remove="Resource\xlsx\Project cost tracker.xlsx" />
+    <None Remove="Resource\xlsx\RepeatColumnsAtRight.xlsx" />
+    <None Remove="Resource\xlsx\RepeatRowsAtBottom.xlsx" />
+    <None Remove="Resource\xlsx\RepeatTails.xlsx" />
+    <None Remove="Resource\xlsx\ShrinkToFit.xlsx" />
     <None Remove="Resource\xlsx\Simple invoice.xlsx" />
     <None Remove="Resource\movie.png" />
     <None Remove="Resource\xlsx\Simple personal budget.xlsx" />
     <None Remove="Resource\xlsx\Student calendar %28Mon%29.xlsx" />
+    <None Remove="Resource\xlsx\Template_CellStyle.xlsx" />
+    <None Remove="Resource\xlsx\Template_DataTemplate.xlsx" />
+    <None Remove="Resource\xlsx\Template_DepartmentBudget.xlsx" />
+    <None Remove="Resource\xlsx\Template_ExpressionTemplate.xlsx" />
+    <None Remove="Resource\xlsx\Template_FamilyInfo.xlsx" />
+    <None Remove="Resource\xlsx\Template_FinancialDashboard.xlsx" />
+    <None Remove="Resource\xlsx\Template_FunctionTemplate.xlsx" />
+    <None Remove="Resource\xlsx\Template_InlineTemplate.xlsx" />
+    <None Remove="Resource\xlsx\Template_MergeCell.xlsx" />
+    <None Remove="Resource\xlsx\Template_PurchaseOrder.xlsx" />
+    <None Remove="Resource\xlsx\Template_Sales.xlsx" />
+    <None Remove="Resource\xlsx\Template_SalesDataGroup.xlsx" />
+    <None Remove="Resource\xlsx\Template_Score.xlsx" />
+    <None Remove="Resource\xlsx\Template_Scores.xlsx" />
+    <None Remove="Resource\xlsx\Template_SetContext.xlsx" />
+    <None Remove="Resource\xlsx\Template_SetExpansionType.xlsx" />
+    <None Remove="Resource\xlsx\Template_SetGroupType.xlsx" />
+    <None Remove="Resource\xlsx\Template_SetPagebreak.xlsx" />
+    <None Remove="Resource\xlsx\Template_SetRange.xlsx" />
+    <None Remove="Resource\xlsx\Template_SetSortType.xlsx" />
+    <None Remove="Resource\xlsx\Template_SheetTemplate.xlsx" />
+    <None Remove="Resource\xlsx\Template_ShippingAndDeliveryOrder.xlsx" />
+    <None Remove="Resource\xlsx\Template_StudentInfo.xlsx" />
+    <None Remove="Resource\xlsx\Template_TablixReport.xlsx" />
+    <None Remove="Resource\xlsx\Template_Travel.xlsx" />
     <None Remove="Resource\xlsx\Travel expense report.xlsx" />
     <None Remove="Resource\xlsx\WebsiteFlowChart.xlsx" />
     <None Remove="StringResource.resx.resolve" />
     <None Remove="UpdateCodeResources.bat" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\Acme-Financial Report 2018.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\AGENCYR.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\arial.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\arialbd.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\ariali.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\calibri.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\calibrib.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\calibrii.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\calibriz.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\cambria.ttc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\cambriab.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\GARA.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\GARABD.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\GILB____.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\GIL_____.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\GOTHIC.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\GOTHICB.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\impact.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\micross.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\msgothic.ttc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\symbol.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\times.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\timesbd.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Fonts\timesi.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.AddUserShapes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddBoxWhiskerChart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddFunnelChart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddHistogramChart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddParetoChart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddWaterfallChart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.CustomShape.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.ExportFlowChart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.ShapeWithGradientAndPatternFill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.ShapeWithPictureOrTextureFill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PDFExporting.ExportShape.ShapeWithText.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.HideGrandTotalsInPivotTable.png" />
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.RowAxisLayoutInPivotTable.png" />
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.SetPivotFieldNameInPivotTable.png" />
+    <EmbeddedResource Include="Resource\Template_FamilyInfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\TimeSheet.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -282,6 +484,15 @@
     <EmbeddedResource Include="Resource\xlsx\Annual financial report.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Any year calendar (Ion theme)1.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\Any year calendar1.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Chart Gallery.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\ControlAdjustingPageBreaks.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\CustomShapes.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\DecisionTreeFlowChart.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Employee absence schedule.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -301,6 +512,10 @@
     <EmbeddedResource Include="Resource\xlsx\Financial KPIs.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\FinancialReport.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Flowcharts.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Home inventory.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -310,9 +525,19 @@
     <EmbeddedResource Include="Resource\xlsx\Information.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\KeepTogether.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Monthly business budget.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Multiple sheets one page.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\MultipleHeaders.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\OleTemplates.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\PageSetup Demo.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -325,7 +550,13 @@
     <EmbeddedResource Include="Resource\xlsx\PageSetup Print Title Rows.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\PrintSpecificPDFPages.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Project cost tracker.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\RepeatTails.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Simple invoice.xlsx">
@@ -338,6 +569,81 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Student calendar (Mon).xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\Template_CellStyle.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_DataTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_DepartmentBudget.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_ExpressionTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_FamilyInfo.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_FinancialDashboard.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_FunctionTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_InlineTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_MergeCell.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_PurchaseOrder.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_Sales.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SalesDataGroup.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_Score.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_Scores.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SetContext.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SetExpansionType.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SetGroupType.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SetPagebreak.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SetRange.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SetSortType.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SheetTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_ShippingAndDeliveryOrder.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_StudentInfo.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_TablixReport.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_Travel.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Travel expense report.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -361,8 +667,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="2.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="$(GcExcelVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -392,6 +698,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CodeResource_VB.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resource\xlsx\Any year calendar %28Ion theme%291.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resource\xlsx\Student calendar %28Mon%29.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -415,5 +724,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)'=='Debug'">
+    <Exec Command="call $(ProjectDir)UpdateCodeResources.bat" />
+  </Target>
 
 </Project>

@@ -3,7 +3,7 @@
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             'Change the path to the real file path when open.
-            workbook.Open(CurrentDirectory & "source.xlsx", OpenFileFormat.Xlsx)
+            workbook.Open(IO.Path.Combine(CurrentDirectory, "source.xlsx"), OpenFileFormat.Xlsx)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

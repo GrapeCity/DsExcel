@@ -12,10 +12,12 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
             //opening an Excel file.
             //Change the path to the real file path when open.
 
-            XlsxOpenOptions options = new XlsxOpenOptions();
-            options.DoNotRecalculateAfterOpened = true;
+            XlsxOpenOptions options = new XlsxOpenOptions
+            {
+                DoNotRecalculateAfterOpened = true
+            };
 
-            workbook.Open(this.CurrentDirectory + "source.xlsx", options);
+            workbook.Open(System.IO.Path.Combine(this.CurrentDirectory, "source.xlsx"), options);
 
         }
 

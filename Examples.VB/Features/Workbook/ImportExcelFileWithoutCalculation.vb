@@ -5,9 +5,10 @@
             'When XlsxOpenOptions.DoNotRecalculateAfterOpened means GrapeCity Documents for Excel will just read all the cached values without calculating again after
             'opening an Excel file.
             'Change the path to the real file path when open.
-            Dim options As New XlsxOpenOptions
-            options.DoNotRecalculateAfterOpened = True
-            workbook.Open(CurrentDirectory & "source.xlsx", options)
+            Dim options As New XlsxOpenOptions With {
+                .DoNotRecalculateAfterOpened = True
+            }
+            workbook.Open(IO.Path.Combine(CurrentDirectory, "source.xlsx"), options)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

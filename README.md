@@ -17,8 +17,8 @@ These projects use the non-licensed version of GcExcel. The non-licensed version
 * When you save a file, a new worksheet with watermark will be added stating that this was generated using a non-licensed evaluation version.
 
 # Other Resources
-* Online Demo: [http://demos.componentone.com/gcdocs/gcexcel/](http://demos.componentone.com/gcdocs/gcexcel/#/)
-* Product Home Site: [https://www.grapecity.com/en/documents-api-excel](https://www.grapecity.com/en/documents-api-excel)
+* Online Demo: [https://www.grapecity.com/documents-api-excel/demos/](https://www.grapecity.com/documents-api-excel/demos/)
+* Product Home Site: [https://www.grapecity.com/documents-api-excel](https://www.grapecity.com/documents-api-excel)
 * Nuget Package: [https://www.nuget.org/packages/GrapeCity.Documents.Excel/](https://www.nuget.org/packages/GrapeCity.Documents.Excel/)
 * .NET Core SDK: [https://www.microsoft.com/net/core](https://www.microsoft.com/net/core)
 * 中文版在线演示站点：[http://demo.gcpowertools.com.cn/spread/services/#/](http://demo.gcpowertools.com.cn/spread/services/#/)

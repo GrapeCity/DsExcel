@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
@@ -8,17 +9,8 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            //Open an excel file
-            var fileStream = this.GetResourceStream("xlsx\\Employee absence schedule.xlsx");
+            Stream fileStream = this.GetResourceStream("xlsx\\Employee absence schedule.xlsx");
             workbook.Open(fileStream);
-        }
-
-        public override string TemplateName
-        {
-            get
-            {
-                return "Employee absence schedule.xlsx";
-            }
         }
 
         public override bool SavePdf
@@ -36,7 +28,13 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
                 return false;
             }
         }
-
+        public override string TemplateName
+        {
+            get
+            {
+                return "Employee absence schedule.xlsx";
+            }
+        }
         public override string[] UsedResources
         {
             get

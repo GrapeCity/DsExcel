@@ -1,4 +1,5 @@
 ﻿Namespace Features.PDFExporting
+
     Public Class SaveTable
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
@@ -45,11 +46,6 @@
         Public Overrides ReadOnly Property ShowViewer As Boolean
             Get
                 Return False
-            End Get
-        End Property
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
             End Get
         End Property
     End Class

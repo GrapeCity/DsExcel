@@ -10,10 +10,12 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
         {
             //Use XlsxOpenOptions.ImportFlags to control what you want to import from excel, ImportFlags.Data means only the data will be imported
             //Change the path to the real file path when open.
-            XlsxOpenOptions options = new XlsxOpenOptions();
-            options.ImportFlags = ImportFlags.Data;
+            XlsxOpenOptions options = new XlsxOpenOptions
+            {
+                ImportFlags = ImportFlags.Data
+            };
 
-            workbook.Open(this.CurrentDirectory + "source.xlsx", options);
+            workbook.Open(System.IO.Path.Combine(this.CurrentDirectory, "source.xlsx"), options);
 
         }
 

@@ -2,7 +2,7 @@
     Public Class SaveSparklinesToPDF
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
-            Dim data = {
+            Dim data As Object(,) = {
                 {"Customer", "0-30 Days", "30-60 Days", "60-90 Days", ">90 Days"},
                 {"Customer A", 1200.15, 1916.18, 1105.23, 1806.53},
                 {"Customer B", 896.23, 1005.53, 1800.56, 1150.49},

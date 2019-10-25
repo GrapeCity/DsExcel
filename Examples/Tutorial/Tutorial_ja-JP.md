@@ -1,26 +1,27 @@
-﻿# DioDocs for Excel スプレッドシート API の開始
+﻿# DioDocs for Excel ライブラリの利用手順
 
-このチュートリアルでは、実例を作成しながら、DioDocs for Excel の機能について基本的な知識を習得します。このチュートリアルを完了すると、簡単な予算 Excel ファイルが完成します。
+このチュートリアルでは、実例を作成しながら、DioDocs for Excel の機能について基本的な知識を習得します。  
+このチュートリアルを完了すると、簡単な収支計算をするシートの Excel ファイルが完成します。
 
 ## 準備
 
-1. [.NET Core](https://www.microsoft.com/net/core) をインストールします。このチュートリアルでは .NET Core を使用しますが、.NET Framework や Mono のプロジェクトでも同様の方法を使用できます。
+1. <a href="https://docs.microsoft.com/ja-jp/dotnet/core/" target="_blank">.NET Core</a> をインストールします。このチュートリアルでは .NET Core を使用しますが、.NET Framework のプロジェクトでも同様の方法を使用できます。
 
 2. **Visual Studio** で .NET Core コンソールアプリケーションを作成します。または、**dotnet CLI** を使用します。
 > ```csharp
 > dotnet new console
 > ```
 
-3. Visual Studio または dotnet CLI を使用して、**DioDocs for Excel** NuGet パッケージをインストールします。
+3. Visual Studio または dotnet CLI を使用して、**DioDocs for Excel** のNuGet パッケージをインストールします。
 > **Visual Studio**
 > - プロジェクトファイルを右クリックし、［NuGet パッケージの管理］をクリックします。
-> - パッケージソースとして **nuget.org** を選択し、「GrapeCity.Documents.Excel」を検索し、［インストール］をクリックします。
+> - パッケージソースとして **nuget.org** を選択後、「**GrapeCity.DioDocs.Excel.ja**」を検索し、［インストール］をクリックします。
 >
 > **dotnet CLI** 
 > - プロジェクトフォルダでコマンドウィンドウを開きます。
 > - 次のコマンドを実行します。
 > ```csharp
-> dotnet add package GrapeCity.Documents.Excel
+> dotnet add package GrapeCity.DioDocs.Excel.ja
 > ```
 
 ## 名前空間の追加
@@ -43,7 +44,7 @@ Imports GrapeCity.Documents.Excel.Drawing;
 
 ## ワークブックの作成
 
-DioDocs for Excel API を使用して Excel ファイルを作成する最初の手順として、新しいワークブックを作成します。
+Excel ファイルを作成する最初の手順です。DioDocs for Excel を使用して、新しいワークブックを作成してシートを取得します。
 
 - C#
 ```csharp
@@ -65,90 +66,90 @@ Dim worksheet As IWorksheet = workbook.Worksheets(0)
 ```csharp
 worksheet.Range["B3:C7"].Value = new object[,]
 {
-    { "ITEM", "AMOUNT" },
-    { "Income 1", 2500 },
-    { "Income 2", 1000 },
-    { "Income 3", 250 },
-    { "Other", 250 },
+    { "項目", "金額" },
+    { "収入 1", 240000 },
+    { "収入 2", 70000 },
+    { "収入 3", 18000 },
+    { "雑収入", 5000 },
 };
 
 worksheet.Range["B10:C23"].Value = new object[,]
 {
-    { "ITEM", "AMOUNT" },
-    { "Rent/mortgage", 800 },
-    { "Electric", 120 },
-    { "Gas", 50 },
-    { "Cell phone", 45 },
-    { "Groceries", 500 },
-    { "Car payment", 273 },
-    { "Auto expenses", 120 },
-    { "Student loans", 50 },
-    { "Credit cards", 100 },
-    { "Auto Insurance", 78 },
-    { "Personal care", 50 },
-    { "Entertainment", 100 },
-    { "Miscellaneous", 50 },
+    { "項目", "金額" },
+    { "家賃", 80000 },
+    { "電気", 12000 },
+    { "ガソリン", 5000 },
+    { "携帯電話料金", 4500 },
+    { "食料品", 50000 },
+    { "車ローン", 27300 },
+    { "交通費", 12000 },
+    { "奨学金返済", 5000 },
+    { "クレジットカード", 10000 },
+    { "自動車保険", 7800 },
+    { "医療費", 5000 },
+    { "娯楽", 10000 },
+    { "雑費", 5000 },
 };
 
 worksheet.Range["B2:C2"].Merge();
-worksheet.Range["B2"].Value = "MONTHLY INCOME";
+worksheet.Range["B2"].Value = "収入";
 worksheet.Range["B9:C9"].Merge();
-worksheet.Range["B9"].Value = "MONTHLY EXPENSES";
+worksheet.Range["B9"].Value = "支出";
 worksheet.Range["E2:G2"].Merge();
-worksheet.Range["E2"].Value = "PERCENTAGE OF INCOME SPENT";
+worksheet.Range["E2"].Value = "支出の割合";
 worksheet.Range["E5:G5"].Merge();
-worksheet.Range["E5"].Value = "SUMMARY";
+worksheet.Range["E5"].Value = "合計";
 worksheet.Range["E3:F3"].Merge();
-worksheet.Range["E9"].Value = "BALANCE";
-worksheet.Range["E6"].Value = "Total Monthly Income";
-worksheet.Range["E7"].Value = "Total Monthly Expenses";
+worksheet.Range["E9"].Value = "収支";
+worksheet.Range["E6"].Value = "収入合計";
+worksheet.Range["E7"].Value = "支出合計";
+
 ```
 
 - VB
 ```vbnet
 worksheet.Range("B3:C7").Value = {
-    {"ITEM", "AMOUNT"},
-    {"Income 1", 2500},
-    {"Income 2", 1000},
-    {"Income 3", 250},
-    {"Other", 250}
+    { "項目", "金額" },
+    { "収入 1", 240000 },
+    { "収入 2", 70000 },
+    { "収入 3", 18000 },
+    { "雑収入", 5000 }
 }
 worksheet.Range("B10:C23").Value = {
-    {"ITEM", "AMOUNT"},
-    {"Rent/mortgage", 800},
-    {"Electric", 120},
-    {"Gas", 50},
-    {"Cell phone", 45},
-    {"Groceries", 500},
-    {"Car payment", 273},
-    {"Auto expenses", 120},
-    {"Student loans", 50},
-    {"Credit cards", 100},
-    {"Auto Insurance", 78},
-    {"Personal care", 50},
-    {"Entertainment", 100},
-    {"Miscellaneous", 50}
+    { "項目", "金額" },
+    { "家賃", 80000 },
+    { "電気", 12000 },
+    { "ガソリン", 5000 },
+    { "携帯電話料金", 4500 },
+    { "食料品", 50000 },
+    { "車ローン", 27300 },
+    { "交通費", 12000 },
+    { "奨学金返済", 5000 },
+    { "クレジットカード", 10000 },
+    { "自動車保険", 7800 },
+    { "医療費", 5000 },
+    { "娯楽", 10000 },
+    { "雑費", 5000 }
 }
 
 worksheet.Range("B2:C2").Merge()
-worksheet.Range!B2.Value = "MONTHLY INCOME"
+worksheet.Range!B2.Value = "収入"
 worksheet.Range("B9:C9").Merge()
-worksheet.Range!B9.Value = "MONTHLY EXPENSES"
+worksheet.Range!B9.Value = "支出"
 worksheet.Range("E2:G2").Merge()
-worksheet.Range!E2.Value = "PERCENTAGE OF INCOME SPENT"
+worksheet.Range!E2.Value = "支出の割合"
 worksheet.Range("E5:G5").Merge()
-worksheet.Range!E5.Value = "SUMMARY"
+worksheet.Range!E5.Value = "合計"
 worksheet.Range("E3:F3").Merge()
-worksheet.Range!E9.Value = "BALANCE"
-worksheet.Range!E6.Value = "Total Monthly Income"
-worksheet.Range!E7.Value = "Total Monthly Expenses"
+worksheet.Range!E9.Value = "収支"
+worksheet.Range!E6.Value = "収入合計"
+worksheet.Range!E7.Value = "支出合計"
 ```
 
 ## 行の高さと列の幅の設定
 
-行の高さと列の幅をカスタマイズして、レイアウトやデータ表示を見栄えよくします。ワークシートのデフォルトの行の高さと列の幅を設定するには、"StandardHeight" と "StandardWidth" を使用します。
-
-```csharp
+行の高さと列の幅をカスタマイズして、レイアウトやデータ表示を見栄えよくします。ワークシートのデフォルトの行の高さと列の幅を設定するには、`StandardHeight` と `StandardWidth` を使用します。
+  
 - C#
 ```csharp
 worksheet.StandardHeight = 26.25;
@@ -210,8 +211,8 @@ expensesTable.TableStyle = workbook.TableStyles("TableStyleMedium4")
 
 - C#
 ```csharp
-worksheet.Names.Add("TotalMonthlyIncome", "=SUM(tblIncome[AMOUNT])");
-worksheet.Names.Add("TotalMonthlyExpenses", "=SUM(tblExpenses[AMOUNT])");
+worksheet.Names.Add("TotalMonthlyIncome", "=SUM(tblIncome[金額])");
+worksheet.Names.Add("TotalMonthlyExpenses", "=SUM(tblExpenses[金額])");
 
 worksheet.Range["E3"].Formula = "=TotalMonthlyExpenses";
 worksheet.Range["G3"].Formula = "=TotalMonthlyExpenses/TotalMonthlyIncome";
@@ -222,8 +223,8 @@ worksheet.Range["G9"].Formula = "=TotalMonthlyIncome-TotalMonthlyExpenses";
 
 - VB
 ```vbnet
-worksheet.Names.Add("TotalMonthlyIncome", "=SUM(tblIncome[AMOUNT])")
-worksheet.Names.Add("TotalMonthlyExpenses", "=SUM(tblExpenses[AMOUNT])")
+worksheet.Names.Add("TotalMonthlyIncome", "=SUM(tblIncome[金額])")
+worksheet.Names.Add("TotalMonthlyExpenses", "=SUM(tblExpenses[金額])")
 
 worksheet.Range!E3.Formula = "=TotalMonthlyExpenses"
 worksheet.Range!G3.Formula = "=TotalMonthlyExpenses/TotalMonthlyIncome"
@@ -247,7 +248,7 @@ IStyle currencyStyle = workbook.Styles["Currency"];
 currencyStyle.IncludeAlignment = true;
 currencyStyle.HorizontalAlignment = HorizontalAlignment.Left;
 currencyStyle.VerticalAlignment = VerticalAlignment.Bottom;
-currencyStyle.NumberFormat = "$#,##0.00";
+currencyStyle.NumberFormat = "#,##0 円";
 
 IStyle heading1Style = workbook.Styles["Heading 1"];
 heading1Style.IncludeAlignment = true;
@@ -296,7 +297,7 @@ Dim currencyStyle As IStyle = workbook.Styles("Currency")
 currencyStyle.IncludeAlignment = True
 currencyStyle.HorizontalAlignment = HorizontalAlignment.Left
 currencyStyle.VerticalAlignment = VerticalAlignment.Bottom
-currencyStyle.NumberFormat = "$#,##0.00"
+currencyStyle.NumberFormat = "#,##0 円"
 
 Dim heading1Style As IStyle = workbook.Styles("Heading 1")
 heading1Style.IncludeAlignment = True
@@ -384,12 +385,12 @@ category_axis.TickLabels.Font.Color.RGB = Color.Black;
 IAxis series_axis = shape.Chart.Axes.Item(AxisType.Value);
 series_axis.Format.Line.Weight = 1;
 series_axis.Format.Line.Color.RGB = Color.Black;
-series_axis.TickLabels.NumberFormat = "$###0";
+series_axis.TickLabels.NumberFormat = "###0";
 series_axis.TickLabels.Font.Size = 11;
 series_axis.TickLabels.Font.Color.RGB = Color.Black;
 
 ISeries chartSeries = shape.Chart.SeriesCollection.NewSeries();
-chartSeries.Formula = "=SERIES(\"Simple Budget\",{\"Income\",\"Expenses\"},'Sheet1'!$G$6:$G$7,1)";
+chartSeries.Formula = "=SERIES(\"収支バランス\",{\"収入\",\"支出\"},'Sheet1'!$G$6:$G$7,1)";
 chartSeries.Points[0].Format.Fill.Color.RGB = Color.FromArgb(176, 21, 19);
 chartSeries.Points[1].Format.Fill.Color.RGB = Color.FromArgb(234, 99, 18);
 chartSeries.DataLabels.Font.Size = 11;
@@ -413,12 +414,12 @@ category_axis.TickLabels.Font.Color.RGB = Color.Black
 Dim series_axis As IAxis = shape.Chart.Axes.Item(AxisType.Value)
 series_axis.Format.Line.Weight = 1
 series_axis.Format.Line.Color.RGB = Color.Black
-series_axis.TickLabels.NumberFormat = "$###0"
+series_axis.TickLabels.NumberFormat = "###0"
 series_axis.TickLabels.Font.Size = 11
 series_axis.TickLabels.Font.Color.RGB = Color.Black
 
 Dim chartSeries As ISeries = shape.Chart.SeriesCollection.NewSeries()
-chartSeries.Formula = "=SERIES(""Simple Budget"",{""Income"",""Expenses""},'Sheet1'!$G$6:$G$7,1)"
+chartSeries.Formula = "=SERIES(""収支バランス"",{""収入"",""支出""},'Sheet1'!$G$6:$G$7,1)"
 chartSeries.Points(0).Format.Fill.Color.RGB = Color.FromArgb(176, 21, 19)
 chartSeries.Points(1).Format.Fill.Color.RGB = Color.FromArgb(234, 99, 18)
 chartSeries.DataLabels.Font.Size = 11
@@ -440,4 +441,4 @@ workbook.Save("SimpleBudget.xlsx");
 workbook.Save("SimpleBudget.xlsx")
 ```
 
-保存された [SimpleBudget.xlsx](api/examples/xlsx/GrapeCity.Documents.Excel.Examples.Tutorial?fileName=SimpleBudget) をダウンロードして表示できます。[チュートリアルのソースプロジェクト](GrapeCity.Documents.Excel.Tutorial.zip) をダウンロードしてご自身でコードを実行する場合は、事前に [.NET Core](https://www.microsoft.com/net/core) をお使いのマシンにインストールしてください。
+上記のコードを実行して保存したExcelファイル（ [SimpleBudget.xlsx](api/examples/xlsx/GrapeCity.Documents.Excel.Examples.Tutorial?fileName=SimpleBudget) ）をダウンロードして実行結果を確認できます。[チュートリアルのソースプロジェクト](GrapeCity.Documents.Excel.Tutorial.zip) をダウンロードしてご自身でコードを実行する場合は、事前に <a href="https://docs.microsoft.com/ja-jp/dotnet/core/" target="_blank">.NET Core</a> のSDKまたはランタイムをお使いのマシンにインストールしてください。

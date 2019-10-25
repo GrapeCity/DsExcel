@@ -18,7 +18,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             sheet.Range["A1"].Interior.Color = Color.Green;
 
             //change the path to real export path when save.
-            sheet.Save(this.CurrentDirectory + "dest.pdf", SaveFileFormat.Pdf);
+            sheet.Save(System.IO.Path.Combine(this.CurrentDirectory, "dest.pdf"), SaveFileFormat.Pdf);
         }
 
         public override bool CanDownload

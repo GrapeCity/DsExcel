@@ -4,7 +4,7 @@ Namespace Features.Sorting
     Public Class SortRangeByFontColor
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
-            Dim data = {
+            Dim data As Object(,) = {
                 {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
                 {"Richard", "New York", #6/8/1968#, "Blue", 67, 165},
                 {"Nia", "New York", #7/3/1972#, "Brown", 62, 134},

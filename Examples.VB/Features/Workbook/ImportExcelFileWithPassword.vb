@@ -3,9 +3,10 @@
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             'Change the path to the real file path when open.
-            Dim options As New XlsxOpenOptions
-            options.Password = "123456"
-            workbook.Open(CurrentDirectory & "source.xlsx", options)
+            Dim options As New XlsxOpenOptions With {
+                .Password = "123456"
+            }
+            workbook.Open(IO.Path.Combine(CurrentDirectory, "source.xlsx"), options)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

@@ -18,4 +18,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Grouping
             worksheet.Range["1:20"].ClearOutline();
         }
     }
+
 }

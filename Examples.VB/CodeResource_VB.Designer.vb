@@ -66,16 +66,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''
-        '''#Region &quot;theme&quot;
+        '''            &apos;			#Region &quot;theme&quot;
         '''            &apos;create a custom theme.
         '''            Dim themes As New Themes
         '''            Dim theme As ITheme = themes.Add(&quot;testTheme&quot;)
         '''            theme.ThemeColorScheme(ThemeColor.Light1).RGB = Color.FromArgb(255, 255, 255)
         '''            theme.ThemeColorScheme(ThemeColor.Dark1).RGB = Color.FromArgb(0, 0, 0)
         '''            theme.ThemeColorScheme(ThemeColor.Light2).RGB = Color.FromArgb(255, 255, 255)
-        '''            theme.ThemeColorScheme(ThemeColor.Dark2).RGB = Color.FromArgb(0, 0, 0)
-        '''        [rest of string was truncated]&quot;;.
+        '''            theme.ThemeColorScheme(ThemeColor.Dark2).RGB = Color.FromArgb(0,  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_BasicSalesReport() As String
             Get
@@ -86,6 +84,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
         '''            &apos;***********************Set RowHeight &amp; ColumnWidth***************
         '''            worksheet.StandardHeight = 30
         '''            worksheet.Range(&quot;1:1&quot;).RowHeight = 57.75
@@ -93,7 +92,7 @@ Namespace My.Resources
         '''            worksheet.Range(&quot;A:A&quot;).ColumnWidth = 2.71
         '''            worksheet.Range(&quot;B:B&quot;).ColumnWidth = 11.71
         '''            worksheet.Range(&quot;C:C&quot;).ColumnWidth = 28
-        '''            worksheet.Range(&quot;D:D&quot;).ColumnWidth =  [rest of string was truncated]&quot;;.
+        '''            worksheet.Range(&quot;D:D&quot;).ColumnWidth  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_BidTracker() As String
             Get
@@ -105,14 +104,14 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''#Region &quot;theme&quot;
+        '''            &apos;			#Region &quot;theme&quot;
         '''            &apos;create a custom theme.
         '''            Dim themes As New Themes
         '''            Dim theme As ITheme = themes.Add(&quot;testTheme&quot;)
         '''            theme.ThemeColorScheme(ThemeColor.Light1).RGB = Color.FromArgb(255, 255, 255)
         '''            theme.ThemeColorScheme(ThemeColor.Dark1).RGB = Color.FromArgb(0, 0, 0)
         '''            theme.ThemeColorScheme(ThemeColor.Light2).RGB = Color.FromArgb(222, 222, 212)
-        '''            theme.ThemeCo [rest of string was truncated]&quot;;.
+        '''          [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_BloodPressureTracker() As String
             Get
@@ -122,15 +121,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data(,) As Object = {
         '''                {&quot;Cost Center&quot;, &quot;Annual Cost&quot;, &quot;Percent of Total&quot;, &quot;Cumulative Percent&quot;},
         '''                {&quot;Parts and materials&quot;, 1325000, Nothing, Nothing},
         '''                {&quot;Manufacturing equipment&quot;, 900500, Nothing, Nothing},
         '''                {&quot;Salaries&quot;, 575000, Nothing, Nothing},
         '''                {&quot;Maintenance&quot;, 395000, Nothing, Nothing},
         '''                {&quot;Office lease&quot;, 295000, Nothing, Nothing},
-        '''                {&quot;Warehouse lease&quot;, 250000, Nothing, Nothing},
-        '''           [rest of string was truncated]&quot;;.
+        '''                {&quot;Warehouse lease&quot;, 250000, Nothing, Nothing} [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_CostAnalysisWithParetoChart() As String
             Get
@@ -140,13 +138,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data(,) As Object = {
         '''                {Nothing, &quot;[Segment Name]&quot;, &quot;[Segment Name]&quot;, &quot;[Segment Name]&quot;, &quot;Overall&quot;},
         '''                {&quot;Customer Activity:&quot;, Nothing, Nothing, Nothing, Nothing},
         '''                {&quot;Number of active customers—Beginning of period&quot;, 5, 8, 8, Nothing},
         '''                {&quot;Number of customers added&quot;, 2, 4, 4, Nothing},
         '''                {&quot;Number of customers lost/terminated&quot;, -1, -2, -2, Nothing},
-        '''                {&quot;Number of active customers—End of period&quot;, Nothing, Nothing, Not [rest of string was truncated]&quot;;.
+        '''                {&quot;Number of active customers—End of period&quot;, Nothing, [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_CustomerProfitabilityAnalysis() As String
             Get
@@ -162,12 +160,13 @@ Namespace My.Resources
         '''            &apos;------------------Set RowHeight &amp; ColumnWidth----------------
         '''            worksheet.StandardHeight = 43.5
         '''            worksheet.StandardWidth = 8.43
+        '''
         '''            worksheet.Range(&quot;1:1&quot;).RowHeight = 171
         '''            worksheet.Range(&quot;2:2&quot;).RowHeight = 12.75
         '''            worksheet.Range(&quot;3:3&quot;).RowHeight = 22.5
         '''            worksheet.Range(&quot;4:7&quot;).RowHeight = 43.75
         '''            worksheet.Range(&quot;A:A&quot;).ColumnWidth = 2.887
-        '''         [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_MovieList() As String
             Get
@@ -177,16 +176,19 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
+        '''
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''
         '''
         '''            &apos;***************************Set RowHeight &amp; Width****************************
         '''            worksheet.StandardHeight = 30
         '''            worksheet.Range(&quot;3:4&quot;).RowHeight = 30.25
-        '''            worksheet.Range(&quot;1:1&quot;).RowHeight = 103.5
+        '''            worksheet.Range(&quot;1:1&quot;).RowHeight = 103.50
         '''            worksheet.Range(&quot;2:2&quot;).RowHeight = 38.25
         '''            worksheet.Range(&quot;A:A&quot;).ColumnWidth = 2.625
         '''            worksheet.Range(&quot;B:B&quot;).ColumnWidth = 22.25
-        '''            worksheet.Range(&quot;C:E&quot;) [rest of string was truncated]&quot;;.
+        '''            worksheet.Range [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_PersonalAddressBook() As String
             Get
@@ -201,11 +203,12 @@ Namespace My.Resources
         '''            &apos;-------------------------Set RowHeight &amp; Width-----------------------------------
         '''            worksheet.StandardHeight = 30
         '''            worksheet.StandardWidth = 8.43
+        '''
         '''            worksheet.Range(&quot;1:1&quot;).RowHeight = 278.25
         '''            worksheet.Range(&quot;2:4&quot;).RowHeight = 30.25
         '''            worksheet.Range(&quot;8:8&quot;).RowHeight = 55.5
         '''            worksheet.Range(&quot;9:30&quot;).RowHeight = 30.25
-        '''            worksheet.Range(&quot;33:33&quot;).RowHe [rest of string was truncated]&quot;;.
+        '''            worksheet.Range(&quot;33:33&quot;).Row [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_PersonalNetWorthCalculator() As String
             Get
@@ -215,12 +218,12 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data(,) As Object = {
         '''                {&quot;TASK&quot;, &quot;PRIORITY&quot;, &quot;STATUS&quot;, &quot;START DATE&quot;, &quot;DUE DATE&quot;, &quot;% COMPLETE&quot;, &quot;DONE?&quot;, &quot;NOTES&quot;},
         '''                {&quot;First Thing I Need To Do&quot;, &quot;Normal&quot;, &quot;Not Started&quot;, Nothing, Nothing, 0, Nothing, Nothing},
         '''                {&quot;Other Thing I Need To Finish&quot;, &quot;High&quot;, &quot;In Progress&quot;, Nothing, Nothing, 0.5, Nothing, Nothing},
         '''                {&quot;Something Else To Get Done&quot;, &quot;Low&quot;, &quot;Complete&quot;, Nothing, Nothing, 1, Nothing, Nothing},
-        '''                {&quot;More Errands And Things&quot;,  [rest of string was truncated]&quot;;.
+        '''                {&quot;More Errands  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelReporting_ToDoListWithProgressTracker() As String
             Get
@@ -234,6 +237,7 @@ Namespace My.Resources
         '''            Dim fileStream = GetResourceStream(&quot;Blood sugar tracker.xlsx&quot;)
         '''
         '''            workbook.Open(fileStream)
+        '''
         '''            Dim worksheet = workbook.ActiveSheet
         '''
         '''            &apos;insert 19 rows  
@@ -242,7 +246,7 @@ Namespace My.Resources
         '''            &apos;Change the rows(2~5) RowHeight
         '''            worksheet.Rows(1).RowHeight = 34.5
         '''            worksheet.Rows(2).RowHeight = 15.75
-        '''            worksheet.Rows(3).RowHeigh [rest of string was truncated]&quot;;.
+        '''            worksheet.Rows(3).RowHeight =  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_BloodSugarTracker() As String
             Get
@@ -266,7 +270,7 @@ Namespace My.Resources
         '''            worksheet.Range!E4.Font.Bold = True
         '''
         '''            &apos;change table style.
-        '''            worksheet.Tables(&quot;tblAdmissions&quot;). [rest of string was truncated]&quot;;.
+        '''            worksheet.Tables!tblAdmissions.TableStyl [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_EventBudget() As String
             Get
@@ -278,19 +282,20 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            &apos;Load template file Financial KPIs.xlsx from resource
         '''            Dim fileStream = GetResourceStream(&quot;Financial KPIs.xlsx&quot;)
+        '''
         '''            workbook.Open(fileStream)
         '''
         '''            Dim worksheet = workbook.ActiveSheet
         '''
         '''            &apos;set values
-        '''            Dim ProData = {
+        '''            Dim ProData(,) As Object = {
         '''                {1483550, 121386},
         '''                {0.4336, 0.32},
         '''                {0.1236, -0.0438},
         '''                {12.36, -0.0438}
         '''            }
-        '''            Dim ProData1 = {0.14, 0.0029, 0.0361, 0.0361}
-        '''       [rest of string was truncated]&quot;;.
+        '''
+        '''            Dim ProData1() As Object = {0.14, 0.0029,  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_FinancialKPIs() As String
             Get
@@ -302,14 +307,15 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            &apos;Load template file Income statement.xlsx from resource
         '''            Dim fileStream = GetResourceStream(&quot;Income statement.xlsx&quot;)
+        '''
         '''            workbook.Open(fileStream)
         '''
         '''            Dim worksheet = workbook.ActiveSheet
         '''
         '''            &apos;set values
-        '''            Dim RevData = {
+        '''            Dim RevData(,) As Object = {
         '''                {454597, 687802, 469902, 335846, 776667, 806250, 552036, 346734, 787205, 720496, 686963, 835688},
-        '''                {821687, 679306, 568503, 715827, 627459, 822625, 271114, 797991, 823966, 304521, 758 [rest of string was truncated]&quot;;.
+        '''                {821687, 679306, 568503, 715827, 627459, 822625, 271114, 797991, 823966, 30 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_IncomeStatement() As String
             Get
@@ -326,11 +332,11 @@ Namespace My.Resources
         '''            Dim worksheet = workbook.ActiveSheet
         '''
         '''            &apos; change table style to TableStyleMedium14
-        '''            Dim totalsTable = worksheet.Tables(&quot;TotalsTable&quot;)
+        '''            Dim totalsTable = worksheet.Tables!TotalsTable
         '''            totalsTable.TableStyle = workbook.TableStyles(&quot;TableStyleMedium14&quot;)
         '''
         '''            &apos; change chart type to column stacked
-        '''   [rest of string was truncated]&quot;;.
+        '''            [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_MonthlyBusinessBudget() As String
             Get
@@ -342,15 +348,15 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            &apos;Load template file Simple invoice.xlsx from resource
         '''            Dim fileStream = GetResourceStream(&quot;Simple invoice.xlsx&quot;)
+        '''
         '''            workbook.Open(fileStream)
         '''
         '''            Dim worksheet = workbook.ActiveSheet
         '''
         '''            &apos; fill some new items
-        '''            worksheet.Range(&quot;E09:H09&quot;).Value = New Object(,)  {&quot;DD1-001&quot;, &quot;Item 3&quot;, 5.6, 12}
-        '''            worksheet.Range(&quot;E10:H10&quot;).Value = New Object(,)  {&quot;DD2-001&quot;, &quot;Item 3&quot;, 8.5, 14}
-        '''            worksheet.Range(&quot;E11:H11&quot;).Value = New Object(,)  {&quot;DD3-001&quot;, &quot;Item 3&quot;, 9.6, 16}
-        '''  [rest of string was truncated]&quot;;.
+        '''            worksheet.Range(&quot;E09:H09&quot;).Value = New Object() {&quot;DD1-001&quot;, &quot;Item 3&quot;, 5.60, 12}
+        '''            worksheet.Range(&quot;E10:H10&quot;).Value = New Object() {&quot;DD2-001&quot;, &quot;Item 3&quot;, 8.5, 14}
+        '''            worksheet.Range(&quot;E11:H11&quot;).Value = New Object [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_ExcelTemplates_SimpleInvoice() As String
             Get
@@ -362,7 +368,7 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim b2 As IRange = worksheet.Range(&quot;B2&quot;)
+        '''            Dim b2 As IRange = worksheet.Range!B2
         '''
         '''            Dim run1 As ITextRun = b2.RichText.Add(&quot;GrapeCity&quot;)
         '''            run1.Font.Name = &quot;Agency FB&quot;
@@ -372,7 +378,7 @@ Namespace My.Resources
         '''
         '''            Dim run2 As ITextRun = b2.RichText.Add(&quot; Documents&quot;)
         '''            run2.Font.ThemeColor = ThemeColor.Accent2
-        '''            run2.Font.Name = &quot;Ari [rest of string was truncated]&quot;;.
+        '''            run2.Font.Name = &quot;Arial  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_CellRichText_AddTextRun() As String
             Get
@@ -384,7 +390,7 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim b2 As IRange = worksheet.Range(&quot;B2&quot;)
+        '''            Dim b2 As IRange = worksheet.Range!B2
         '''            b2.Value = &quot;GrapeCity Documents for Excel&quot;
         '''            b2.Font.Size = 26
         '''            b2.EntireRow.RowHeight = 42
@@ -395,7 +401,7 @@ Namespace My.Resources
         '''            run1.Font.Bold = True
         '''
         '''            Dim run2 As ITextRun = b2.Characters(10, 9)
-        '''            [rest of string was truncated]&quot;;.
+        '''            ru [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_CellRichText_CharacterCellText() As String
             Get
@@ -407,7 +413,7 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim a2 As IRange = worksheet.Range(&quot;A2&quot;)
+        '''            Dim a2 As IRange = worksheet.Range!A2
         '''            a2.Font.Size = 18
         '''            a2.Font.Bold = True
         '''            a2.VerticalAlignment = VerticalAlignment.Center
@@ -417,11 +423,33 @@ Namespace My.Resources
         '''            a2.Value = &quot;Perfect square trinomial&quot;
         '''            Dim run1 As ITextRun = a2.Characters(8, 7)
         '''            run1.Font.Italic = True
-        '''            run1.Font.ThemeCol [rest of string was truncated]&quot;;.
+        '''            run1.Font.ThemeColor  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_CellRichText_ConfigRunFont() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.CellRichText.ConfigRunFont", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            worksheet.Range(&quot;A1:C10&quot;).Value = New Object(,) {
+        '''                {&quot;Task&quot;, &quot;Worker 1&quot;, &quot;Worker 2&quot;},
+        '''                {&quot;Task 1&quot;, 7, 10},
+        '''                {&quot;Task 2&quot;, 5, 1},
+        '''                {&quot;Task 3&quot;, 3, 6},
+        '''                {&quot;Task 4&quot;, 10, 5},
+        '''                {&quot;Task 5&quot;, 4, 4},
+        '''                {&quot;Task 6&quot;, 5, 8},
+        '''                {&quot;Task 7&quot;, 8, 7},
+        '''                {&quot;Task 8&quot;, 2, 5},
+        '''                {&quot;Task 9&quot;, 6, 4}
+        '''            }        ''' [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_AddUserShapes() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.AddUserShapes", resourceCulture)
             End Get
         End Property
         
@@ -439,7 +467,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart.S [rest of string was truncated]&quot;;.
+        '''           [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_ConfigAxisTitle() As String
             Get
@@ -462,7 +490,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.Series [rest of string was truncated]&quot;;.
+        '''            sha [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_ConfigCategoryAxesFormat() As String
             Get
@@ -475,11 +503,10 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''            worksheet.Range(&quot;A2:A6&quot;).NumberFormat = &quot;m/d/yyyy&quot;
-        '''            worksheet.Range(&quot;A1:D6&quot;).Value = New Object(,)  {
+        '''            worksheet.Range(&quot;A1:D6&quot;).Value = New Object(,) {
         '''                {Nothing, &quot;S1&quot;, &quot;S2&quot;, &quot;S3&quot;},
         '''                {
-        '''                    #10/7/2015#,
-        '''                    10,
+        '''                    #10/7/2015#, 10,
         '''                    25,
         '''                    25
         '''                },
@@ -488,7 +515,7 @@ Namespace My.Resources
         '''                    51,
         '''                    36,
         '''                    27
-        '''            [rest of string was truncated]&quot;;.
+        '''                }, [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_ConfigCategoryAxisUnits() As String
             Get
@@ -512,7 +539,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.C [rest of string was truncated]&quot;;.
+        '''     [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_ConfigDisplayUnitLabel() As String
             Get
@@ -535,7 +562,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Cha [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_ConfigGridlines() As String
             Get
@@ -558,7 +585,7 @@ Namespace My.Resources
         '''                {5, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(worksh [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollec [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_ConfigTickMarkLabel() As String
             Get
@@ -581,7 +608,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.Series [rest of string was truncated]&quot;;.
+        '''            sha [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_ConfigValueAxesFormat() As String
             Get
@@ -604,7 +631,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 55, 69}
         '''            }
         '''
-        '''            shape.Cha [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_ConfigValueAxisUnits() As String
             Get
@@ -625,7 +652,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 8, 20, 11}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:D5 [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add(workshe [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_SetAxisScaleType() As String
             Get
@@ -648,7 +675,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.Series [rest of string was truncated]&quot;;.
+        '''            sha [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Axes_SetAxisTickMark() As String
             Get
@@ -671,7 +698,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.Se [rest of string was truncated]&quot;;.
+        '''            [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Chart3DFormat_ConfigChart3DFormat() As String
             Get
@@ -694,7 +721,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.Seri [rest of string was truncated]&quot;;.
+        '''            s [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Chart3DFormat_ConfigChartBackWall() As String
             Get
@@ -717,7 +744,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.Seri [rest of string was truncated]&quot;;.
+        '''            s [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Chart3DFormat_ConfigChartFloorStyle() As String
             Get
@@ -740,7 +767,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.Seri [rest of string was truncated]&quot;;.
+        '''            s [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Chart3DFormat_ConfigChartSideWall() As String
             Get
@@ -763,7 +790,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.Seri [rest of string was truncated]&quot;;.
+        '''            s [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Chart3DFormat_ConfigChartWallStyle() As String
             Get
@@ -786,7 +813,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartArea_ConfigChartAreaFont() As String
             Get
@@ -809,7 +836,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartArea_ConfigChartAreaFormat() As String
             Get
@@ -830,7 +857,7 @@ Namespace My.Resources
         '''                {&quot;Item2&quot;, -51, -36, 27},
         '''                {&quot;Item3&quot;, 52, -85, -30},
         '''                {&quot;Item4&quot;, 22, 65, 65},
-        '''                 [rest of string was truncated]&quot;;.
+        '''  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartCopy() As String
             Get
@@ -850,7 +877,7 @@ Namespace My.Resources
         '''                {&quot;Item2&quot;, -51, -36, 27},
         '''                {&quot;Item3&quot;, 52, -85, -30},
         '''                {&quot;Item4&quot;, 22, 65, 65},
-        '''                 [rest of string was truncated]&quot;;.
+        '''  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartCut() As String
             Get
@@ -870,7 +897,7 @@ Namespace My.Resources
         '''                {&quot;Item2&quot;, -51, -36, 27},
         '''                {&quot;Item3&quot;, 52, -85, -30},
         '''                {&quot;Item4&quot;, 22, 65, 65},
-        '''                 [rest of string was truncated]&quot;;.
+        '''  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartDuplicate() As String
             Get
@@ -889,7 +916,7 @@ Namespace My.Resources
         '''                {&quot;Feb&quot;, 44.6420211591501, 52.2280901938606},
         '''                {&quot;Mar&quot;, 45.2174930051225, 49.8093056416248},
         '''                {&quot;Apr&quot;, 62, 37.3065749226828},
-        '''                {&quot; [rest of string was truncated]&quot;;.
+        '''    [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_AreaChart() As String
             Get
@@ -909,8 +936,7 @@ Namespace My.Resources
         '''                {24.32, 37.3, 42.73},
         '''                {58.34, 34.43, 28.34},
         '''                {31.89, 69.78, 46.88},
-        '''                {41.79, 63.94, 56.24},
-        '''              [rest of string was truncated]&quot;;.
+        '''                {41.79, 63.94, 56.24}, [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_AreaStacked100() As String
             Get
@@ -932,7 +958,7 @@ Namespace My.Resources
         '''                {58.34, 34.43, 28.34},
         '''                {31.89, 69.78, 46.88},
         '''                {41.79, 63.94, 56.24},
-        '''                 [rest of string was truncated]&quot;;.
+        '''  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_AreaStackedChart() As String
             Get
@@ -953,7 +979,7 @@ Namespace My.Resources
         '''
         '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:D2&quot;), RowCol.Columns)
         '''            shape.Chart.ChartTitle.Text = &quot;Bar Clustered Chart&quot;
-        '''            shape.Chart.Legend.Position = L [rest of string was truncated]&quot;;.
+        '''            shape.Chart.Lege [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_BarClusteredChart() As String
             Get
@@ -976,7 +1002,7 @@ Namespace My.Resources
         '''            }
         '''
         '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B5&quot;), RowCol.Columns)
-        '''            shape.Chart.ChartTitle.Text = &quot;Bar Stacked 100 C [rest of string was truncated]&quot;;.
+        '''            shape.Chart.ChartTitle.Text = &quot;Ba [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_BarStacked100Chart() As String
             Get
@@ -998,7 +1024,7 @@ Namespace My.Resources
         '''            }
         '''
         '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:C4&quot;), RowCol.Columns)
-        '''            shape.Chart.ChartTitle.Text = &quot;Bar Stacked Char [rest of string was truncated]&quot;;.
+        '''            shape.Chart.ChartTitle.Text = &quot;B [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_BarStackedChart() As String
             Get
@@ -1021,7 +1047,7 @@ Namespace My.Resources
         '''                {&quot;Red&quot;, Nothing, Nothing},
         '''                {125, 500, 10},
         '''                {25, 250, 1},
-        '''                 [rest of string was truncated]&quot;;.
+        '''  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_BubbleChart() As String
             Get
@@ -1065,7 +1091,7 @@ Namespace My.Resources
         '''            }
         '''
         '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B6&quot;), RowCol.Columns)
-        '''            shape.Chart.ChartTit [rest of string was truncated]&quot;;.
+        '''            shape [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_ColumnStacked100Chart() As String
             Get
@@ -1088,7 +1114,7 @@ Namespace My.Resources
         '''                {125, 138, 136}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:C6&quot;), RowCol [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_ColumnStackedChart() As String
             Get
@@ -1112,7 +1138,7 @@ Namespace My.Resources
         '''                {76, 110},
         '''                {128, 50},
         '''                {114, 140},
-        '''                { [rest of string was truncated]&quot;;.
+        '''   [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_CombinationChart1() As String
             Get
@@ -1134,7 +1160,7 @@ Namespace My.Resources
         '''                {1300, 80, 80},
         '''                {1750, 90, 100},
         '''                {1640, 120, 130},
-        '''                {1700, 120, 95} [rest of string was truncated]&quot;;.
+        '''                 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_CombinationChart2() As String
             Get
@@ -1156,9 +1182,7 @@ Namespace My.Resources
         '''                {58.34, 34.43, 28.34},
         '''                {31.89, 69.78, 46.88},
         '''                {41.79, 63.94, 56.24}
-        '''            }
-        '''
-        '''         [rest of string was truncated]&quot;;.
+        '''           [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_LineChart() As String
             Get
@@ -1182,7 +1206,7 @@ Namespace My.Resources
         '''                {65, 35}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add( [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_LineMarkersChart() As String
             Get
@@ -1205,7 +1229,7 @@ Namespace My.Resources
         '''            }
         '''
         '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:C5&quot;), RowCol.Columns)
-        '''            shape.Char [rest of string was truncated]&quot;;.
+        '''        [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_LineMarkerStacked100Chart() As String
             Get
@@ -1226,8 +1250,7 @@ Namespace My.Resources
         '''                {24.32, 37.3, 42.73},
         '''                {58.34, 34.43, 28.34},
         '''                {31.89, 69.78, 46.88},
-        '''                {41.79, 63.94, 56.24}
-        '''            [rest of string was truncated]&quot;;.
+        '''                {41.79, 63.94, 56.2 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_LineMarkerStackedChart() As String
             Get
@@ -1250,7 +1273,7 @@ Namespace My.Resources
         '''            }
         '''
         '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:C5&quot;), RowCol.Columns)
-        '''            shape.Chart.Chart [rest of string was truncated]&quot;;.
+        '''            sh [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_LineStacked100Chart() As String
             Get
@@ -1272,9 +1295,7 @@ Namespace My.Resources
         '''                {58.34, 34.43, 28.34},
         '''                {31.89, 69.78, 46.88},
         '''                {41.79, 63.94, 56.24}
-        '''            }
-        '''
-        '''  [rest of string was truncated]&quot;;.
+        '''    [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_LineStackedChart() As String
             Get
@@ -1298,7 +1319,7 @@ Namespace My.Resources
         '''            }
         '''
         '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B6&quot;), RowCol.Columns)
-        '''            shape.Chart. [rest of string was truncated]&quot;;.
+        '''          [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_Pie_DoughnutChart() As String
             Get
@@ -1321,7 +1342,7 @@ Namespace My.Resources
         '''
         '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B4&quot;), RowCol.Columns)
         '''            shape.Chart.ChartTitle.Text = &quot;Pie Chart&quot;
-        '''            shape. [rest of string was truncated]&quot;;.
+        '''    [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_PieChart() As String
             Get
@@ -1344,8 +1365,7 @@ Namespace My.Resources
         '''                },
         '''                {
         '''                    #9/2/2019#,
-        '''                    102.45,
-        '''    [rest of string was truncated]&quot;;.
+        '''                  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_Stock_HighLowCloseStockChart() As String
             Get
@@ -1369,7 +1389,7 @@ Namespace My.Resources
         '''                    100.94
         '''                },
         '''                {
-        '''                    #9/2/20 [rest of string was truncated]&quot;;.
+        '''             [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_Stock_OpenHighLowCloseStock() As String
             Get
@@ -1393,7 +1413,7 @@ Namespace My.Resources
         '''                    100.94
         '''                },
         '''                {
-        '''                    #9/2/2 [rest of string was truncated]&quot;;.
+        '''            [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_Stock_VolumeHighLowCloseStock() As String
             Get
@@ -1416,8 +1436,7 @@ Namespace My.Resources
         '''                    105.76,
         '''                    92.38,
         '''                    100.94
-        '''                },
-        '''        [rest of string was truncated]&quot;;.
+        '''             [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_Stock_VolumeOpenHighLowClose() As String
             Get
@@ -1439,7 +1458,6 @@ Namespace My.Resources
         '''                {182, 596, 46, 196},
         '''                {190, 384, 100, 377},
         '''                {140, 503, 92, 47}
-        '''            }
         '''   [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_XYScatterChart() As String
@@ -1465,7 +1483,7 @@ Namespace My.Resources
         '''                {125, 500}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(wo [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCo [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_XYScatterLinesChart() As String
             Get
@@ -1489,8 +1507,7 @@ Namespace My.Resources
         '''            worksheet.Range(&quot;A7:B11&quot;).Value = New Object(,)  {
         '''                {9, 5},
         '''                {7, 8},
-        '''                {9, 8},
-        '''                [rest of string was truncated]&quot;;.
+        '''           [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_XYScatterSmooth() As String
             Get
@@ -1514,9 +1531,7 @@ Namespace My.Resources
         '''            worksheet.Range(&quot;A7:B11&quot;).Value = New Object(,)  {
         '''                {9, 5},
         '''                {7, 8},
-        '''                {9, 8},
-        '''                {5, 9},
-        ''' [rest of string was truncated]&quot;;.
+        '''                {9, [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartGallery_XYScatterSmoothWithMarkers() As String
             Get
@@ -1538,7 +1553,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart.Series [rest of string was truncated]&quot;;.
+        '''            sha [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartLines_CreateConnectorLine() As String
             Get
@@ -1561,7 +1576,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.SeriesCo [rest of string was truncated]&quot;;.
+        '''            shape [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartLines_CreateDropLine() As String
             Get
@@ -1583,7 +1598,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart.SeriesCo [rest of string was truncated]&quot;;.
+        '''            shape [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartLines_CreateHiLoLine() As String
             Get
@@ -1605,7 +1620,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartLines_CreateSeriesLine() As String
             Get
@@ -1627,7 +1642,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartLines_CreateTrendline() As String
             Get
@@ -1648,7 +1663,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart.SeriesColl [rest of string was truncated]&quot;;.
+        '''            shape.C [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartLines_CreateUpDownBars() As String
             Get
@@ -1670,7 +1685,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 50, 50}
         '''            }
-        '''            shape.Chart.S [rest of string was truncated]&quot;;.
+        '''           [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartTitle_ConfigChartTitleRichText() As String
             Get
@@ -1692,7 +1707,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 50, 50}
         '''            }
-        '''            shape.Chart.S [rest of string was truncated]&quot;;.
+        '''           [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_ChartTitle_ConfigChartTitleStyle() As String
             Get
@@ -1715,7 +1730,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            &apos;create c [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_CreateChart() As String
             Get
@@ -1735,9 +1750,7 @@ Namespace My.Resources
         '''                {&quot;Item3&quot;, 50},
         '''                {&quot;Item3&quot;, 40}
         '''            }
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B5&quot;), RowCol.Columns, True, True)
-        '''
-        '''         [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B5&quot;), RowCol.Columns, True, Tr [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_DataLabel_ConfigDataLabelFormat() As String
             Get
@@ -1758,7 +1771,7 @@ Namespace My.Resources
         '''                {&quot;Item3&quot;, 50, 80},
         '''                {&quot;Item3&quot;, 40, 70}
         '''            }
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B5&quot;), RowCol.Columns, T [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B5&quot;), Ro [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_DataLabel_ConfigDataLabelText() As String
             Get
@@ -1780,7 +1793,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_DataPoint_ConfigDataPointFormat() As String
             Get
@@ -1802,7 +1815,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_DataPoint_ConfigNegativePoint() As String
             Get
@@ -1824,7 +1837,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart.Series [rest of string was truncated]&quot;;.
+        '''            sha [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_DataPoint_ConfigSecondarySection() As String
             Get
@@ -1847,7 +1860,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Cha [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_DeleteChart() As String
             Get
@@ -1869,7 +1882,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Legend_ConfigLegendEntryFontStyle() As String
             Get
@@ -1891,7 +1904,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart.S [rest of string was truncated]&quot;;.
+        '''           [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Legend_ConfigLegendFormat() As String
             Get
@@ -1913,7 +1926,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 30, 30}
         '''            }
         '''
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Legend_ConfigLegendPositionAndLayout() As String
             Get
@@ -1936,7 +1949,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 40}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B6&quot;), RowCol.Co [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1: [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Markers_ConfigMarkersFormat() As String
             Get
@@ -1959,11 +1972,166 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 40}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B6&quot;), RowCol.Co [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1: [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Markers_ConfigMarkerStyle() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.Markers.ConfigMarkerStyle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.Range(&quot;A1:D16&quot;).Value = New Object(,) {
+        '''                {&quot;Course&quot;, &quot;SchoolA&quot;, &quot;SchoolB&quot;, &quot;SchoolC&quot;},
+        '''                {&quot;English&quot;, 63, 53, 45},
+        '''                {&quot;Physics&quot;, 61, 55, 65},
+        '''                {&quot;English&quot;, 63, 50, 65},
+        '''                {&quot;Math&quot;, 62, 51, 64},
+        '''                {&quot;English&quot;, 46, 53, 66},
+        '''                {&quot;English&quot;, 58, 56, 67},
+        '''                {&quot;Math&quot;, 60, 51, 67},
+        '''                {&quot;Math&quot;, 62,  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_NewCharts_AddBoxWhiskerChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.NewCharts.AddBoxWhiskerChar"& _ 
+                        "t", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.Range(&quot;A1:B7&quot;).Value = New Object(,) {
+        '''                {&quot;Stage&quot;, &quot;Amount&quot;},
+        '''                {&quot;Prospects&quot;, 500},
+        '''                {&quot;Qualified prospects&quot;, 425},
+        '''                {&quot;Needs analysis&quot;, 200},
+        '''                {&quot;Price quotes&quot;, 150},
+        '''                {&quot;Negotiations&quot;, 100},
+        '''                {&quot;Closed sales&quot;, 90}
+        '''            }
+        '''            worksheet.Range(&quot;A:A&quot;).Columns.AutoFit()
+        '''
+        '''            &apos;Create a funne [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_NewCharts_AddFunnelChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.NewCharts.AddFunnelChart", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.Range(&quot;A1:B11&quot;).Value = New Object(,) {
+        '''                {&quot;Complaint&quot;, &quot;Count&quot;},
+        '''                {&quot;Too noisy&quot;, 27},
+        '''                {&quot;Overpriced&quot;, 789},
+        '''                {&quot;Food is tasteless&quot;, 65},
+        '''                {&quot;Food is not fresh&quot;, 9},
+        '''                {&quot;Food is too salty&quot;, 15},
+        '''                {&quot;Not clean&quot;, 30},
+        '''                {&quot;Unfriendly staff&quot;, 12},
+        '''                {&quot;Wait time&quot;, 109},
+        '''                { [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_NewCharts_AddHistogramChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.NewCharts.AddHistogramChart"& _ 
+                        "", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.Range(&quot;A1:B11&quot;).Value = New Object(,) {
+        '''                {&quot;Complaint&quot;, &quot;Count&quot;},
+        '''                {&quot;Too noisy&quot;, 27},
+        '''                {&quot;Overpriced&quot;, 789},
+        '''                {&quot;Food is tasteless&quot;, 65},
+        '''                {&quot;Food is not fresh&quot;, 9},
+        '''                {&quot;Food is too salty&quot;, 15},
+        '''                {&quot;Not clean&quot;, 30},
+        '''                {&quot;Unfriendly staff&quot;, 12},
+        '''                {&quot;Wait time&quot;, 109},
+        '''                { [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_NewCharts_AddParetoChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.NewCharts.AddParetoChart", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.Range(&quot;A1:D16&quot;).Value = New Object(,) {
+        '''                {&quot;Quarter&quot;, &quot;Month&quot;, &quot;Week&quot;, &quot;Output&quot;},
+        '''                {&quot;1st&quot;, &quot;Jan&quot;, Nothing, 3.5},
+        '''                {Nothing, &quot;Feb&quot;, &quot;Week1&quot;, 1.2},
+        '''                {Nothing, Nothing, &quot;Week2&quot;, 0.8},
+        '''                {Nothing, Nothing, &quot;Week3&quot;, 0.6},
+        '''                {Nothing, Nothing, &quot;Week4&quot;, 0.5},
+        '''                {Nothing, &quot;Mar&quot;, Nothing, 1.7},
+        '''                {&quot;2st&quot;,  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_NewCharts_AddSunburstChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.NewCharts.AddSunburstChart", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.Range(&quot;A1:D16&quot;).Value = New Object(,) {
+        '''                {&quot;Quarter&quot;, &quot;Month&quot;, &quot;Week&quot;, &quot;Output&quot;},
+        '''                {&quot;1st&quot;, &quot;Jan&quot;, Nothing, 3.5},
+        '''                {Nothing, &quot;Feb&quot;, &quot;Week1&quot;, 1.2},
+        '''                {Nothing, Nothing, &quot;Week2&quot;, 0.8},
+        '''                {Nothing, Nothing, &quot;Week3&quot;, 0.6},
+        '''                {Nothing, Nothing, &quot;Week4&quot;, 0.5},
+        '''                {Nothing, &quot;Mar&quot;, Nothing, 1.7},
+        '''                {&quot;2st&quot;,  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_NewCharts_AddTreeMapChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.NewCharts.AddTreeMapChart", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.Range(&quot;A1:B8&quot;).Value = New Object(,) {
+        '''                {&quot;Starting Amt&quot;, 130},
+        '''                {&quot;Measurement 1&quot;, 25},
+        '''                {&quot;Measurement 2&quot;, -75},
+        '''                {&quot;Subtotal&quot;, 80},
+        '''                {&quot;Measurement 3&quot;, 45},
+        '''                {&quot;Measurement 4&quot;, -65},
+        '''                {&quot;Measurement 5&quot;, 80},
+        '''                {&quot;Total&quot;, 140}
+        '''            }
+        '''            worksheet.Range(&quot;A:A&quot;).Columns.AutoFit()
+        '''
+        ''' [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_NewCharts_AddWaterfallChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Charts.NewCharts.AddWaterfallChart"& _ 
+                        "", resourceCulture)
             End Get
         End Property
         
@@ -1981,7 +2149,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Cha [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_PlotArea_ChartJustPlotVisibleCell() As String
             Get
@@ -2003,7 +2171,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 30},
         '''                {&quot;Item5&quot;, 23, 40, 69}
         '''            }
-        '''            shape.Chart.S [rest of string was truncated]&quot;;.
+        '''           [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_PlotArea_ConfigPlotAreaFormat() As String
             Get
@@ -2026,7 +2194,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            &apos;Add seri [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Series_AddSeries() As String
             Get
@@ -2048,7 +2216,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            &apos;Add seri [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Series_ChangeSeriesType() As String
             Get
@@ -2069,7 +2237,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart.SeriesCo [rest of string was truncated]&quot;;.
+        '''            shape [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Series_ConfigBubbleChartLayout() As String
             Get
@@ -2092,7 +2260,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
         '''
-        '''            shape.Cha [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Series_ConfigSeriesFormat() As String
             Get
@@ -2114,7 +2282,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 60, 100}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(wor [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCol [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Series_CreateSecondaryAxis() As String
             Get
@@ -2135,7 +2303,7 @@ Namespace My.Resources
         '''                {&quot;Item4&quot;, 22, 65, 65},
         '''                {&quot;Item5&quot;, 23, 69, 69}
         '''            }
-        '''            shape.Chart [rest of string was truncated]&quot;;.
+        '''         [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Series_DeleteSeries() As String
             Get
@@ -2155,8 +2323,7 @@ Namespace My.Resources
         '''                {&quot;Item3&quot;, 52, 40, -30}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:D4&quot;), RowCol.Columns, True, True)
-        '''    [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:D4&quot;), RowCol.Columns, T [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Series_ExtendSeries() As String
             Get
@@ -2178,7 +2345,7 @@ Namespace My.Resources
         '''                {&quot;Item5&quot;, 23}
         '''            }
         '''
-        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A1:B6&quot;), RowCo [rest of string was truncated]&quot;;.
+        '''            shape.Chart.SeriesCollection.Add(worksheet.Range( [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Charts_Series_SetVaryColorForColumnChart() As String
             Get
@@ -2269,13 +2436,12 @@ Namespace My.Resources
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            worksheet.Range(&quot;B:C&quot;).ColumnWidth = 17
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
-        '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''  [rest of string was truncated]&quot;;.
+        '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateAverageRule() As String
             Get
@@ -2290,13 +2456,12 @@ Namespace My.Resources
         '''
         '''            worksheet.Range(&quot;B:C&quot;).ColumnWidth = 17
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
-        '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        ''' [rest of string was truncated]&quot;;.
+        '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateCellValueRule() As String
             Get
@@ -2309,13 +2474,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateDatabBarRule() As String
             Get
@@ -2328,13 +2493,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateExpressionRule() As String
             Get
@@ -2347,13 +2512,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateIconSetRule() As String
             Get
@@ -2366,13 +2531,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateMultiRuleForRange() As String
             Get
@@ -2385,13 +2550,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateThreeColorScaleRule() As String
             Get
@@ -2404,13 +2569,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateTopBottomRule() As String
             Get
@@ -2423,13 +2588,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateTwoColorScaleRule() As String
             Get
@@ -2442,13 +2607,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 80, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 72, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 71, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 80, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_CreateUniqueRule() As String
             Get
@@ -2461,13 +2626,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_ConditionalFormatting_DeleteConditionalFormatRules() As String
             Get
@@ -2649,7 +2814,7 @@ Namespace My.Resources
         '''                {
         '''                    #12/31/2020#,
         '''                    #12/13/2019#,
-        '''                    #1 [rest of string was truncated]&quot;;.
+        '''        [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_CreateDateValidation() As String
             Get
@@ -2671,7 +2836,7 @@ Namespace My.Resources
         '''            worksheet.Range(&quot;C2:E4&quot;).Validation.Add(ValidationType.Decimal, ValidationAlertStyle.Stop, ValidationOperator.Between, 3.4, 102.8)
         '''
         '''            Dim validation As IValidation = worksheet.Range(&quot;C2:E4&quot;).Validation
-        '''            val [rest of string was truncated]&quot;;.
+        ''' [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_CreateDecimalValidation() As String
             Get
@@ -2694,7 +2859,7 @@ Namespace My.Resources
         '''            }
         '''
         '''            &apos;create list validation.
-        '''            worksheet.Range(&quot;C2:E4&quot;).Validation.Add(ValidationType.List, Val [rest of string was truncated]&quot;;.
+        '''            worksheet.Range(&quot;C2:E4&quot;).Validation.Add(Validatio [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_CreateListValidation() As String
             Get
@@ -2716,7 +2881,7 @@ Namespace My.Resources
         '''            &apos;create text length validation, text length between 2 and 3.
         '''            worksheet.Range(&quot;C2:E4&quot;).Validation.Add(ValidationType.TextLength, ValidationAlertStyle.Stop, ValidationOperator.Between, 2, 3)
         '''
-        '''            &apos;judge if Range(&quot;C2:E4&quot;) h [rest of string was truncated]&quot;;.
+        '''            &apos;judge if R [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_CreateTextLength() As String
             Get
@@ -2739,7 +2904,7 @@ Namespace My.Resources
         '''                    New TimeSpan(16, 30, 0)
         '''                },
         '''                {
-        '''                    New Tim [rest of string was truncated]&quot;;.
+        '''             [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_CreateTimeValidation() As String
             Get
@@ -2761,7 +2926,7 @@ Namespace My.Resources
         '''            &apos;add whole number validation.
         '''            worksheet.Range(&quot;C2:E4&quot;).Validation.Add(ValidationType.Whole, ValidationAlertStyle.Stop, ValidationOperator.Between, 1, 8)
         '''            Dim validation As IValidation = worksheet.Range(&quot;C2:E4&quot;).Validation
-        '''            validation.IgnoreB [rest of string was truncated]&quot;;.
+        '''            val [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_CreateWholeNumberValidation() As String
             Get
@@ -2785,7 +2950,7 @@ Namespace My.Resources
         '''                    New TimeSpan(16, 30, 0)
         '''                },
         '''                {
-        '''                    New Tim [rest of string was truncated]&quot;;.
+        '''             [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_DeleteValidation() As String
             Get
@@ -2808,7 +2973,7 @@ Namespace My.Resources
         '''                    New TimeSpan(16, 30, 0)
         '''                },
         '''                {
-        '''                    New Tim [rest of string was truncated]&quot;;.
+        '''             [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_DataValidation_ModifyValidation() As String
             Get
@@ -2841,13 +3006,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_ClearFilter() As String
             Get
@@ -2859,13 +3024,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_DateFiltering_DateDynamicFilter() As String
             Get
@@ -2878,13 +3043,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_DateFiltering_DateFilter() As String
             Get
@@ -2897,13 +3062,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_FilteringByColor_FilterByAutomaticFontColor() As String
             Get
@@ -2916,13 +3081,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_FilteringByColor_FilterByCellColor() As String
             Get
@@ -2935,13 +3100,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_FilteringByColor_FilterByFontColor() As String
             Get
@@ -2954,13 +3119,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_FilteringByColor_FilterByNoFill() As String
             Get
@@ -2973,13 +3138,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_FilteringByIcon_FilterByIcon() As String
             Get
@@ -2992,13 +3157,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_FilteringByIcon_FilterByNoIcon() As String
             Get
@@ -3011,13 +3176,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_MultiSelectFilter() As String
             Get
@@ -3029,13 +3194,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_NumberFiltering_NumberFilter() As String
             Get
@@ -3048,13 +3213,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_ReApplyFilter() As String
             Get
@@ -3066,18 +3231,217 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;H [rest of string was truncated]&quot;;.
+        '''                {&quot;Damon&quot;, &quot;Washington&quot;, # [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Filtering_TextFiltering_TextFilter() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Filtering.TextFiltering.TextFilter"& _ 
                         "", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''            Const CorrectWord = &quot;Macro&quot;
+        '''            worksheet.Range(&quot;A1:D5&quot;).Value = CorrectWord
+        '''
+        '''            Const MisspelledWord = &quot;marco&quot;
+        '''            worksheet.Range(&quot;A2,C3,D1&quot;).Value = MisspelledWord
+        '''
+        '''            &apos; Find the first misspelled word
+        '''            Dim searchRange As IRange = worksheet.Range(&quot;A1:D5&quot;)
+        '''            Dim firstMisspelled = searchRange.Find(MisspelledWord)
+        '''
+        '''            &apos; Mark it [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_FindBasicUsage() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.FindBasicUsage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''            worksheet.Range(&quot;A1:C3&quot;).Value = &quot;Text&quot;
+        '''
+        '''            With worksheet.Range!B2
+        '''                .Interior.Color = System.Drawing.Color.Red
+        '''                .Font.Color = System.Drawing.Color.White
+        '''                .Value = &quot;B2&quot;
+        '''            End With
+        '''
+        '''            With worksheet.Range!A2
+        '''                .Interior.Color = System.Drawing.Color.Orange
+        '''                .Font.Color = System.Drawing.Colo [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_FindDisplayFormat() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.FindDisplayFormat", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''
+        '''            &apos; Add day to date		
+        '''            &apos; Day    Date	    Result
+        '''            &apos; 1      2019-05-01	2019-05-02
+        '''            worksheet.Range(&quot;A2:C2&quot;).Value = {&quot;Day&quot;, &quot;Date&quot;, &quot;Result&quot;}
+        '''            With worksheet.Range
+        '''                !A1.Value = &quot;Add day to date&quot;
+        '''                !A3.Value = 1
+        '''                !B3.Formula = &quot;=DATE(2019,5,1)&quot;
+        '''                !B3.NumberFormat = &quot;yyyy-mm-dd;@&quot;
+        '''              [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_FindLookAtSearchOrderDirectionMatchCase() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.FindLookAtSearchOrd"& _ 
+                        "erDirectionMatchCase", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos; This option is valid when culture is ja-JP or zh-CN.
+        '''            workbook.Culture = Globalization.CultureInfo.GetCultureInfo(&quot;ja-JP&quot;)
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''            worksheet.Range(&quot;A1:A4&quot;).Value = {
+        '''                &quot;Mario Games&quot;, &quot;スーパーマリオブラザーズ&quot;,
+        '''                &quot;ﾏﾘｵ&amp;ﾙｲｰｼﾞRPG3 DX&quot;, &quot;マリオ＆ルイージRPG1 DX&quot;
+        '''            }
+        '''
+        '''            &apos; Find the first cell that contains &quot;マリオ&quot; (match width) 
+        '''            &apos; and mark it  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_FindMatchByte() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.FindMatchByte", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''            Const CorrectWord = &quot;Macro&quot;
+        '''            worksheet.Range(&quot;A1:D5&quot;).Value = CorrectWord
+        '''
+        '''            Const MisspelledWord = &quot;marco&quot;
+        '''            worksheet.Range(&quot;A2,C3,D1&quot;).Value = MisspelledWord
+        '''
+        '''            &apos; Find all misspelled words and mark them with red background
+        '''            Dim searchRange As IRange = worksheet.Range(&quot;A1:D5&quot;)
+        '''            Dim misspelledCell As IRange = Nothing
+        '''           [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_FindWithAfter() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.FindWithAfter", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''
+        '''            &apos; Add day to date		
+        '''            &apos; Day    Date	    Result
+        '''            &apos; 1      2019-05-01	2019-05-02
+        '''            worksheet.Range(&quot;A2:C2&quot;).Value = {&quot;Day&quot;, &quot;Date&quot;, &quot;Result&quot;}
+        '''            With worksheet.Range
+        '''                !A1.Value = &quot;Add day to date&quot;
+        '''                !A3.Value = 1
+        '''                !A3.AddComment(&quot;Enter the day offset&quot;)
+        '''                !B3.Formula = &quot;=DATE(2019,5,1)&quot;
+        '''         [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_FindWithLookIn() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.FindWithLookIn", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''            worksheet.Range(&quot;A1:A3&quot;).Value = {
+        '''                &quot;Render Excel ranges inside PDF in .NET Core&quot;,
+        '''                &quot;Control pagination when printing Excel document to PDF in .NET Core (Support Team)&quot;,
+        '''                &quot;How to format Pivot table styles in .NET Core (Support Team)&quot;
+        '''            }
+        '''
+        '''            &apos; Replace &quot;.NET Core&quot; with &quot;.NET 5&quot;
+        '''            worksheet.UsedRange.Replace(&quot;.NET Core&quot;,  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_ReplaceBasicUsage() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.ReplaceBasicUsage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''            worksheet.Range(&quot;A1:A8&quot;).Value = {
+        '''                &quot;Whats new in GcExcel v2 sp2&quot;, &quot;Render Excel ranges inside PDF in .NET Core&quot;,
+        '''                &quot;Control pagination when printing Excel document to PDF in .NET Core (Support Team)&quot;,
+        '''                &quot;How to format Pivot table styles in .NET Core (Support Team)&quot;,
+        '''                &quot;Controlling page breaks when editing Excel files in .NET Core (Support [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_ReplaceCustomWrapSearch() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.ReplaceCustomWrapSe"& _ 
+                        "arch", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Prepare data
+        '''
+        '''            &apos; Skew matrix generator		
+        '''            &apos; Input:
+        '''            &apos; DegX    135     
+        '''            &apos; DegY    45      
+        '''            &apos; 
+        '''            &apos; Output:
+        '''            &apos; M11 1	    M12	1
+        '''            &apos; M21 -1	M22	1
+        '''            &apos; M31 0	    M32	0
+        '''            worksheet.Range(&quot;A2:A4&quot;).Value = {&quot;Input:&quot;, &quot;DegX&quot;, &quot;DegY&quot;}
+        '''            worksheet.Range(&quot;A7:A9&quot;).Value = {&quot;M11&quot;, &quot;M21&quot;, &quot;M31&quot;}
+        '''            works [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_FindAndReplace_ReplaceWithOptions() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.FindAndReplace.ReplaceWithOptions", resourceCulture)
             End Get
         End Property
         
@@ -3237,6 +3601,142 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim cellType As New ButtonCellType With {
+        '''                .Text = &quot;Hello&quot;,
+        '''                .ButtonBackColor = &quot;Azure&quot;,
+        '''                .MarginLeft = 10,
+        '''                .MarginRight = 10
+        '''            }
+        '''
+        '''            worksheet.Range!C5.CellType = cellType
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_CellType_AddButtonCellType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formatting.CellType.AddButtonCellT"& _ 
+                        "ype", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim cellType As New CheckBoxCellType With {
+        '''                .Caption = &quot;Caption&quot;,
+        '''                .TextTrue = &quot;True&quot;,
+        '''                .TextFalse = &quot;False&quot;,
+        '''                .TextIndeterminate = &quot;Indeterminate&quot;,
+        '''                .IsThreeState = True,
+        '''                .TextAlign = CheckBoxAlign.Right
+        '''            }
+        '''
+        '''            worksheet.Range(&quot;C5:C6&quot;).CellType = cellType
+        '''            worksheet.Range(&quot;C5&quot;).Value = True
+        '''      [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_CellType_AddCheckBoxCellType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formatting.CellType.AddCheckBoxCel"& _ 
+                        "lType", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim cellType As New ComboBoxCellType With {
+        '''                .EditorValueType = EditorValueType.Value
+        '''            }
+        '''
+        '''            cellType.Items.Add(New ComboBoxCellItem With {
+        '''                .Value = &quot;US&quot;,
+        '''                .Text = &quot;United States&quot;
+        '''            })
+        '''
+        '''            cellType.Items.Add(New ComboBoxCellItem With {
+        '''                .Value = &quot;CN&quot;,
+        '''                .Text = &quot;China&quot;
+        '''            })
+        '''
+        '''            cellTy [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_CellType_AddComboBoxCellType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formatting.CellType.AddComboBoxCel"& _ 
+                        "lType", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim cellType As New HyperLinkCellType With {
+        '''                .Text = &quot;Goole&quot;,
+        '''                .LinkColor = &quot;Blue&quot;,
+        '''                .LinkToolTip = &quot;Search by google&quot;,
+        '''                .VisitedLinkColor = &quot;Green&quot;,
+        '''                .Target = HyperLinkTargetType.Blank
+        '''            }
+        '''
+        '''            With worksheet.Range!C5
+        '''                .CellType = cellType
+        '''                .Value = &quot;http://www.google.com&quot;
+        '''            End With        ''' [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_CellType_AddHyperlinkCellType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formatting.CellType.AddHyperlinkCe"& _ 
+                        "llType", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            worksheet.Columns(3).ColumnWidthInPixel = 100
+        '''
+        '''            Dim cellType As New CheckBoxCellType With {
+        '''                .Caption = &quot;CheckBox&quot;,
+        '''                .TextTrue = &quot;True&quot;,
+        '''                .TextFalse = &quot;False&quot;,
+        '''                .IsThreeState = True,
+        '''                .TextAlign = CheckBoxAlign.Right
+        '''            }
+        '''
+        '''            worksheet.Columns(3).CellType = cellType
+        '''            worksheet.Range(&quot;D1:D10&quot;).Value = True [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_CellType_AddRowColumnCellType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formatting.CellType.AddRowColumnCe"& _ 
+                        "llType", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            Dim buttonCellType As New ButtonCellType With {
+        '''                .Text = &quot;Button&quot;,
+        '''                .ButtonBackColor = &quot;Azure&quot;,
+        '''                .MarginLeft = 10,
+        '''                .MarginRight = 10
+        '''            }
+        '''
+        '''            worksheet.CellType = buttonCellType
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_CellType_AddSheetCellType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formatting.CellType.AddSheetCellTy"& _ 
+                        "pe", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            &apos;Add custom name style.
         '''            Dim style As IStyle = workbook.Styles.Add(&quot;testStyle&quot;)
@@ -3258,19 +3758,20 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        '''            worksheet.Range(&quot;A1&quot;).Style = workbook.Styles(&quot;Good&quot;)
-        '''            worksheet.Range(&quot;A1&quot;).Value = &quot;Good&quot;
+        '''            worksheet.Range!A1.Style = workbook.Styles(&quot;Good&quot;)
+        '''            worksheet.Range!A1.Value = &quot;Good&quot;
         '''
-        '''            &apos;Create a new style based on current existing style
+        '''            &apos; Create and modify a style based on current existing style
         '''            Dim myGood As IStyle = workbook.Styles.Add(&quot;MyGood&quot;, workbook.Styles(&quot;Good&quot;))
         '''            myGood.Font.Bold = True
         '''            myGood.Font.Italic = True
-        '''            worksheet.Range(&quot;B1&quot;).Style = workbook.Styles(&quot;MyGood&quot;)
-        '''            worksheet.Ra [rest of string was truncated]&quot;;.
+        '''
+        '''            worksheet.Range!B1.Style = workbook.Styles(&quot;MyGood&quot;)
+        '''            worksheet.R [rest of string was truncated]&quot;;.
         '''</summary>
-        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_CreateStyleBaseOn() As String
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formatting_CreateStyleBasedOn() As String
             Get
-                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formatting.CreateStyleBaseOn", resourceCulture)
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formatting.CreateStyleBasedOn", resourceCulture)
             End Get
         End Property
         
@@ -3625,6 +4126,78 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
+        '''            worksheet.Range(&quot;A1&quot;).Value = 100
+        '''            worksheet.Range(&quot;C1&quot;).Formula = &quot;=$A$1&quot;
+        '''            worksheet.Range(&quot;E1:E5&quot;).Formula = &quot;=$A$1&quot;
+        '''
+        '''            For Each item In worksheet.Range(&quot;A1&quot;).GetDependents()
+        '''                item.Interior.Color = Color.Azure
+        '''            Next
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formulas_Precedentsanddependents_Dependents() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formulas.Precedentsanddependents.D"& _ 
+                        "ependents", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            With worksheet.Range
+        '''                !E2.Formula = &quot;=sum(C1:C2)&quot;
+        '''                !C1.Formula = &quot;=B1&quot;
+        '''                !B1.Formula = &quot;=sum(A1:A2)&quot;
+        '''                !A1.Value = 1
+        '''                !A2.Value = 2
+        '''                !C2.Value = 3
+        '''            End With
+        '''
+        '''            &apos; Add precedents of E2
+        '''            Dim precedentsList = worksheet.Range!E2.GetPrecedents.ToList
+        '''
+        '''            &apos; Add inner precedents of E2
+        '''           [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formulas_Precedentsanddependents_GetAllPrecedents() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formulas.Precedentsanddependents.G"& _ 
+                        "etAllPrecedents", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            With worksheet.Range
+        '''                !E2.Formula = &quot;=sum(A1:A2, B4,C1:C3)&quot;
+        '''                !A1.Value = 1
+        '''                !A2.Value = 2
+        '''                !B4.Value = 3
+        '''                !C1.Value = 4
+        '''                !C2.Value = 5
+        '''                !C3.Value = 6
+        '''            End With
+        '''
+        '''            For Each item In worksheet.Range(&quot;E2&quot;).GetPrecedents()
+        '''                item.Interior.Color = Color.Pink
+        '''            Next
+        '''        [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formulas_Precedentsanddependents_Precedents() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formulas.Precedentsanddependents.P"& _ 
+                        "recedents", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
         '''            worksheet.Range(&quot;E4:J5&quot;).Value = New Object(,)  {
         '''                {1, 2, 3},
         '''                {4, 5, 6}
@@ -3639,7 +4212,7 @@ Namespace My.Resources
         '''            &apos;2     4      #N/A
         '''            &apos;12    15     #N/A
         '''            &apos;#N/A  #N/A   #N/A
-        '''            worksheet.Range(&quot;O9:Q11&quot;).FormulaArray = &quot;=E4:G5 [rest of string was truncated]&quot;;.
+        '''            worksheet.Range(&quot;O [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formulas_UseArrayFormula() As String
             Get
@@ -3659,11 +4232,56 @@ Namespace My.Resources
         '''            }
         '''            worksheet.Tables.Add(worksheet.Range(&quot;A1:E3&quot;), True)
         '''            worksheet.Tables(0).Name = &quot;DeptSales&quot;
-        '''            worksheet [rest of string was truncated]&quot;;.
+        '''       [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Formulas_UseTableFormula() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Formulas.UseTableFormula", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim targetRange As IRange = workbook.ActiveSheet.Range(&quot;A1:C9&quot;)
+        '''            &apos; Set data
+        '''            targetRange.Value = New Object(,) {
+        '''                {&quot;Player&quot;, &quot;Side&quot;, &quot;Commander&quot;},
+        '''                {1, &quot;Soviet&quot;, &quot;AI&quot;},
+        '''                {2, &quot;Soviet&quot;, &quot;AI&quot;},
+        '''                {3, &quot;Soviet&quot;, &quot;Human&quot;},
+        '''                {4, &quot;Allied&quot;, &quot;Human&quot;},
+        '''                {5, &quot;Allied&quot;, &quot;Human&quot;},
+        '''                {6, &quot;Allied&quot;, &quot;AI&quot;},
+        '''                {7, &quot;Empire&quot;, &quot;AI&quot;},
+        '''                {8, &quot;Empire&quot;, &quot;AI&quot;} [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Grouping_AddSubtotal() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Grouping.AddSubtotal", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim targetRange As IRange = workbook.ActiveSheet.Range(&quot;A1:C9&quot;)
+        '''            &apos; Set data
+        '''            targetRange.Value = New Object(,) {
+        '''                {&quot;Grade&quot;, &quot;Class&quot;, &quot;Score&quot;, &quot;Student ID&quot;},
+        '''                {1, 1, 93, 1},
+        '''                {1, 1, 87, 2},
+        '''                {1, 2, 97, 3},
+        '''                {1, 2, 95, 4},
+        '''                {2, 1, 83, 5},
+        '''                {2, 1, 87, 6},
+        '''                {2, 2, 96, 7},
+        '''                {2, 2, 83, 8}
+        '''            }
+        '''
+        '''            &apos; Group by Grade [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Grouping_AddSubtotalAdvanced() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Grouping.AddSubtotalAdvanced", resourceCulture)
             End Get
         End Property
         
@@ -3727,6 +4345,27 @@ Namespace My.Resources
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Grouping_CreateRangeGroup() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Grouping.CreateRangeGroup", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim targetRange As IRange = workbook.ActiveSheet.Range(&quot;A1:C9&quot;)
+        '''            &apos; Set data
+        '''            targetRange.Value = New Object(,) {
+        '''                {&quot;Player&quot;, &quot;Side&quot;, &quot;Commander&quot;},
+        '''                {1, &quot;Soviet&quot;, &quot;AI&quot;},
+        '''                {2, &quot;Soviet&quot;, &quot;AI&quot;},
+        '''                {3, &quot;Soviet&quot;, &quot;Human&quot;},
+        '''                {4, &quot;Allied&quot;, &quot;Human&quot;},
+        '''                {5, &quot;Allied&quot;, &quot;Human&quot;},
+        '''                {6, &quot;Allied&quot;, &quot;AI&quot;},
+        '''                {7, &quot;Empire&quot;, &quot;AI&quot;},
+        '''                {8, &quot;Empire&quot;, &quot;AI&quot;} [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Grouping_RemoveSubtotal() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Grouping.RemoveSubtotal", resourceCulture)
             End Get
         End Property
         
@@ -3797,6 +4436,24 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
+        '''            &apos; Add shapes
+        '''            Dim shape1 As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 10, 0, 100, 100)
+        '''            shape1.TextFrame.TextRange.Add(&quot;Go to google web site.&quot;)
+        '''            Dim shape2 As IShape = worksheet.Shapes.AddShape(AutoShapeType.RightArrow, 10, 120, 100, 100)
+        '''            shape2.TextFrame.TextRange.Add(&quot;Go to sheet1 C3:E4&quot;)
+        '''            Dim shape3 As IShape = worksheet.Shapes.AddShape(AutoShap [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Hyperlinks_CreateShapeWithHyperlink() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Hyperlinks.CreateShapeWithHyperlin"& _ 
+                        "k", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
         '''            worksheet.Range(&quot;A:A&quot;).ColumnWidth = 30
         '''
         '''            &apos;add a hyperlink link to web page.
@@ -3826,7 +4483,7 @@ Namespace My.Resources
         '''            worksheet.PageSetup.EvenPage.RightFooter.Text = &quot;&amp;D&quot;
         '''
         '''            &apos;Set even page headerfooter&apos;s graphic
-        '''            worksheet.PageSet [rest of string was truncated]&quot;;.
+        '''            worksheet.PageSetup.Eve [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PageSetup_ConfigEvenPageHeaderFooter() As String
             Get
@@ -3848,7 +4505,7 @@ Namespace My.Resources
         '''            worksheet.PageSetup.FirstPage.RightFooter.Text = &quot;&amp;D&quot;
         '''
         '''            &apos;Set first page headerfooter&apos;s graphic
-        '''            worksheet. [rest of string was truncated]&quot;;.
+        '''            worksheet.PageSe [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PageSetup_ConfigFirstPageHeaderFooter() As String
             Get
@@ -3888,7 +4545,7 @@ Namespace My.Resources
         '''
         '''            &apos;Set page headerfooter&apos;s graphic
         '''            worksheet.PageSetup.CenterFooter = &quot;&amp;G&quot;
-        '''            Dim stream As IO.Stream = GetResourceStream(&quot;l [rest of string was truncated]&quot;;.
+        '''            Dim stream As IO.Stream = GetResourceStream(&quot;logo.pn [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PageSetup_ConfigHeaderFooter() As String
             Get
@@ -3980,7 +4637,7 @@ Namespace My.Resources
         '''            worksheet.PageSetup.Zoom = 150
         '''            &apos;Or Method 2: Fit to page&apos;s wide &amp; tall
         '''            &apos;worksheet.PageSetup.IsPercentScale = False
-        '''            &apos;worksheet.PageSetup.FitToPa [rest of string was truncated]&quot;;.
+        '''            &apos;worksheet.PageSetup.FitToPagesWid [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PageSetup_ConfigPaperScaling() As String
             Get
@@ -4021,6 +4678,38 @@ Namespace My.Resources
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PageSetup_ConfigPrintArea() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PageSetup.ConfigPrintArea", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream = GetResourceStream(&quot;RepeatTails.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos;Repeat the column &quot;I&quot; at the right of each page when saving pdf.
+        '''            worksheet.PageSetup.PrintTailColumns = &quot;$I:$I&quot;
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PageSetup_ConfigPrintTailColumns() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PageSetup.ConfigPrintTailColumns", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream = GetResourceStream(&quot;RepeatTails.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(1)
+        '''
+        '''            &apos;Repeat the row 67th at the bottom of each page when saving pdf.
+        '''            worksheet.PageSetup.PrintTailRows = &quot;$50:$50&quot;
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PageSetup_ConfigPrintTailRows() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PageSetup.ConfigPrintTailRows", resourceCulture)
             End Get
         End Property
         
@@ -4071,7 +4760,7 @@ Namespace My.Resources
         '''            worksheet.PageSetup.BlackAndWhite = True
         '''            worksheet.PageSetup.PrintComments = PrintLocation.InPlace
         '''            worksheet.PageSetup.PrintErrors = PrintErrors.Dash
-        '''   [rest of string was truncated]&quot;;.
+        '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PageSetup_ConfigSheetPrintSettings() As String
             Get
@@ -4082,14 +4771,474 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            &apos;Open an excel file
-        '''            Dim fileStream = GetResourceStream(&quot;Employee absence schedule.xlsx&quot;)
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;Employee absence schedule.xlsx&quot;)
         '''            workbook.Open(fileStream)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ConvertExcelToPDF() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ConvertExcelToPDF", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos;Set value
+        '''            worksheet.Range(&quot;A1:C1&quot;).Value = {
+        '''                &quot;Device&quot;, &quot;Quantity&quot;, &quot;Unit Price&quot;
+        '''            }
+        '''            worksheet.Range(&quot;A2:C5&quot;).Value = New Object(,) {
+        '''                {&quot;T540p&quot;, 12, 9850},
+        '''                {&quot;T570&quot;, 5, 7460},
+        '''                {&quot;Y460&quot;, 6, 5400},
+        '''                {&quot;Y460F&quot;, 8, 6240}
+        '''            }
+        '''
+        '''            &apos;Set style
+        '''            With worksheet.Range(&quot;A1:C1&quot;)
+        '''            [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ConvertRangeToImage() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ConvertRangeToImage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Add a rectangle
+        '''            Dim rectangle As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 0, 0, 191, 194)
+        '''
+        '''            &apos; Set soild fill for rectangle
+        '''            rectangle.Fill.Color.RGB = Color.OrangeRed
+        '''
+        '''            &apos;NOTE: To use this feature, you should have valid license for GrapeCity Documents for PDF.
+        '''            &apos;Create a pdf document.
+        '''            Dim doc As New Pdf.GcPdfDocument
+        '''            Di [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ConvertShapeToImage() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ConvertShapeToImage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;Employee absence schedule.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos;NOTE: To use this feature, you should have valid license for GrapeCity Documents for PDF.
+        '''            &apos;Create a pdf document.
+        '''            Dim doc As New Pdf.GcPdfDocument
+        '''            Dim page As Pdf.Page = doc.NewPage()
+        '''
+        '''            &apos;Create a PrintManager.
+        '''            Dim printManager As N [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ConvertSheetToImage() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ConvertSheetToImage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.Area, 20, 20, 360, 230)
+        '''            worksheet.Range(&quot;A20:C32&quot;).Value = New Object(,) {
+        '''                {Nothing, &quot;Blue Series&quot;, &quot;Orange Series&quot;},
+        '''                {&quot;Jan&quot;, 0, 59.1883603948205},
+        '''                {&quot;Feb&quot;, 44.6420211591501, 52.2280901938606},
+        '''                {&quot;Mar&quot;, 45.2174930051225, 49.8093056416248},
+        '''                {&quot;Apr&quot;, 62, 37.3065749226828},
+        '''       [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_AreaChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.AreaChart"& _ 
+                        "Pdf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.BarClustered, 20, 20, 360, 230)
+        '''            worksheet.Range(&quot;A20:D21&quot;).Value = New Object(,) {
+        '''                {100, 200, 300, 400},
+        '''                {100, 200, 300, 400}
+        '''            }
+        '''            With shape.Chart
+        '''                .SeriesCollection.Add(worksheet.Range(&quot;A20:D21&quot;), RowCol.Columns)
+        '''                .ChartTitle.Text = &quot;Bar Clustered Chart&quot;
+        '''               [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_BarChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.BarChartP"& _ 
+                        "df", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Open an excel file
+        '''            Dim fileStream = GetResourceStream(&quot;xlsx\Chart Gallery.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_ChartGalleryPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.ChartGall"& _ 
+                        "eryPdf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.ColumnClustered, 20, 20, 360, 230)
+        '''            worksheet.Range(&quot;A20:D21&quot;).Value = New Object(,) {
+        '''                {100, 200, 300, 400},
+        '''                {100, 200, 300, 400}
+        '''            }
+        '''            shape.Chart.SeriesCollection.Add(worksheet.Range(&quot;A20:D21&quot;), RowCol.Columns)
+        '''            shape.Chart.ChartTitle.Text = &quot;Column Clustered Chart&quot;
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_ColumnChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.ColumnCha"& _ 
+                        "rtPdf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.ColumnClustered, 20, 20, 360, 230)
+        '''            worksheet.Range(&quot;A20:C36&quot;).Value = New Object(,) {
+        '''                {&quot;Area 1&quot;, &quot;Column 1&quot;, &quot;Column 2&quot;},
+        '''                {1350, 120, 75}, {1500, 90, 35}, {1200, 80, 50}, {1300, 80, 80},
+        '''                {1750, 90, 100}, {1640, 120, 130}, {1700, 120, 95}, {1100, 90, 80},
+        '''                {1350, 120, 75}, {1500, 90, 35}, {1200 [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_ComboChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.ComboChar"& _ 
+                        "tPdf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.Line, 20, 20, 360, 230)
+        '''            worksheet.Range(&quot;A20:C26&quot;).Value = New Object(,) {
+        '''                {0, 59.18, 27.14},
+        '''                {44.64, 52.22, 25.08},
+        '''                {45.21, 49.8, 57.99},
+        '''                {24.32, 37.3, 42.73},
+        '''                {58.34, 34.43, 28.34},
+        '''                {31.89, 69.78, 46.88},
+        '''                {41.79, 63.94, 56.24}
+        '''             [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_LineChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.LineChart"& _ 
+                        "Pdf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.Pie, 20, 20, 360, 230)
+        '''            worksheet.Range(&quot;A20:B23&quot;).Value = New Object(,) {
+        '''                {&quot;Blue&quot;, 1}, {&quot;Red&quot;, 2}, {&quot;Green&quot;, 3}, {&quot;Purple&quot;, 4}
+        '''            }
+        '''
+        '''            With shape.Chart
+        '''                .SeriesCollection.Add(worksheet.Range(&quot;A20:B23&quot;), RowCol.Columns)
+        '''                .ChartTitle.Text = &quot;Pie Chart&quot;
+        '''                .Legend.Position = Leg [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_PieChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.PieChartP"& _ 
+                        "df", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.Radar, 20, 20, 360, 230)
+        '''            worksheet.Range(&quot;B20:C20&quot;).Value = {
+        '''                {&quot;S1&quot;, &quot;S2&quot;}
+        '''            }
+        '''            worksheet.Range(&quot;A21:A25&quot;).Value = {
+        '''                {&quot;A&quot;}, {&quot;B&quot;}, {&quot;C&quot;}, {&quot;D&quot;}, {&quot;E&quot;}
+        '''            }
+        '''            worksheet.Range(&quot;B21:C25&quot;).Value = {
+        '''                {10.0, 25}, {51, 36}, {52, 85}, {22, 65}, {23, 69}
+        '''            }
+        '''
+        '''   [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_RadarChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.RadarChar"& _ 
+                        "tPdf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.StockOHLC, 20, 20, 360, 220)
+        '''            worksheet.Range(&quot;A20:E36&quot;).Value = New Object(,) {
+        '''                {Nothing, &quot;Open&quot;, &quot;High&quot;, &quot;Low&quot;, &quot;Close&quot;},
+        '''                {#2019-9-1#, 103.46, 105.76, 92.38, 100.94},
+        '''                {#2019-9-2#, 100.26, 102.45, 90.14, 93.45},
+        '''                {#2019-9-3#, 98.05, 102.11, 85.01, 99.89},
+        '''                {#2019-9-4#, 100.32,  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_StockChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.StockChar"& _ 
+                        "tPdf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.XYScatter, 20, 20, 360, 230)
+        '''            worksheet.Range(&quot;A20:D25&quot;).Value = New Object(,) {
+        '''                {55, 964, 67, 475},
+        '''                {20, 825, 10, 163},
+        '''                {77, 840, 87, 224},
+        '''                {182, 596, 46, 196},
+        '''                {190, 384, 100, 377},
+        '''                {140, 503, 92, 47}
+        '''            }
+        '''            shape.Chart.SeriesCollection. [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportChart_XYScatterChartPdf() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportChart.XYScatter"& _ 
+                        "ChartPdf", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Add a rectangle
+        '''            sheet.Shapes.AddShape(AutoShapeType.Rectangle, 20, 10, 100, 100)
+        '''
+        '''            &apos; Add an oval
+        '''            sheet.Shapes.AddShape(AutoShapeType.Oval, 20, 160, 100, 100)
+        '''
+        '''            &apos; Add a trangle
+        '''            sheet.Shapes.AddShape(AutoShapeType.IsoscelesTriangle, 20, 310, 100, 100)
+        '''
+        '''            &apos; Add a &quot;Not Allowed&quot; symbol
+        '''            sheet.Shapes.AddShape(AutoShapeType.NoSymbol, 20, 460, 100,  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_BasicShapes() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.BasicShap"& _ 
+                        "es", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Open an excel file
+        '''            Dim fileStream = GetResourceStream(&quot;CustomShapes.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_CustomShape() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.CustomSha"& _ 
+                        "pe", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Open an excel file
+        '''            Dim fileStream = GetResourceStream(&quot;Flowcharts.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_ExportFlowChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.ExportFlo"& _ 
+                        "wChart", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Add a rectangle
+        '''            Dim rectangle As IShape = sheet.Shapes.AddShape(AutoShapeType.Rectangle, 20, 15, 100, 100)
+        '''
+        '''            &apos; Add an oval
+        '''            Dim oval As IShape = sheet.Shapes.AddShape(AutoShapeType.Oval, 160, 15, 100, 100)
+        '''
+        '''            &apos;set oval not to print
+        '''            oval.IsPrintable = False
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_SetShapeNotToPrint() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.SetShapeN"& _ 
+                        "otToPrint", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Add a sun
+        '''            Dim sun As IShape = sheet.Shapes.AddShape(AutoShapeType.Sun, 20, 15, 200, 200)
+        '''
+        '''            &apos; Set gradient fill for sun
+        '''            sun.Fill.OneColorGradient(GradientStyle.Horizontal, 1, 0.8)
+        '''            sun.Fill.GradientStops.Insert(&amp;Hff6347, 0)
+        '''            sun.Fill.GradientStops.Insert(&amp;HFFA500, 0.2)
+        '''            sun.Fill.GradientStops.Insert(&amp;HFFFF00, 0.4)
+        '''            sun.Fill.GradientStops.Insert [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_ShapeWithGradientAndPatternFill() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.ShapeWith"& _ 
+                        "GradientAndPatternFill", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            Dim rectangle As IShape = sheet.Shapes.AddShape(AutoShapeType.Rectangle, 20, 50, 200, 200)
+        '''            rectangle.Line.DashStyle = LineDashStyle.Dash
+        '''            rectangle.Line.Style = LineStyle.Single
+        '''            rectangle.Line.Weight = 7
+        '''            rectangle.Line.Color.RGB = System.Drawing.Color.Yellow
+        '''
+        '''            Dim donut As IShape = sheet.Shapes.AddShape(AutoShapeType.Donut, 260, 50, 200, 200)
+        '''            donut.Line.D [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_ShapeWithLine() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.ShapeWith"& _ 
+                        "Line", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Get stream of picture
+        '''            Dim stream As IO.Stream = GetResourceStream(&quot;logo.png&quot;)
+        '''
+        '''            &apos; Add a rectangle
+        '''            Dim rectangle As IShape = sheet.Shapes.AddShape(AutoShapeType.Rectangle, 20, 20, 250, 50)
+        '''            &apos; Set picture fill
+        '''            rectangle.Fill.UserPicture(stream, ImageType.PNG)
+        '''            rectangle.Line.Transparency = 1
+        '''
+        '''            &apos; Add a oval
+        '''            Dim oval As IShape = she [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_ShapeWithPictureOrTextureFill() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.ShapeWith"& _ 
+                        "PictureOrTextureFill", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            sheet.Range!D2.Value = &quot;rectangle with 30 degrees&quot;
+        '''            sheet.Range!I2.Value = &quot;right arrow with 40 degrees&quot;
+        '''
+        '''            &apos; Add a rectangle with rotation
+        '''            Dim rectangle As IShape = sheet.Shapes.AddShape(AutoShapeType.Rectangle, 50, 50, 200, 50)
+        '''            rectangle.Rotation = 30
+        '''
+        '''            &apos; Add a right arrow with rotation
+        '''            Dim rightArrowWithRotation As IShape = sheet.Shapes.AddShape(AutoSha [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_ShapeWithRotation() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.ShapeWith"& _ 
+                        "Rotation", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            &apos; Add a rectangle
+        '''            Dim rectangle As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 50, 30, 300, 200)
+        '''
+        '''            &apos; Add rich text to rectangle
+        '''            rectangle.Fill.Color.RGB = Color.White
+        '''
+        '''            &apos; Add first paragraph
+        '''            Dim run1 As ITextRange = rectangle.TextFrame.TextRange.Paragraphs(0).Runs.Add(&quot;         Doc&quot;)
+        '''            run1.Font.Color.RGB = Color.Tomato
+        '''            Dim r [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ExportShape_ShapeWithText() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ExportShape.ShapeWith"& _ 
+                        "Text", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            With sheet.Range
+        '''                &apos; Set text for some cells.
+        '''                !A1.Value = &quot;Grapecity&quot;
+        '''                !A2.Value = &quot;Document For .NET&quot;
+        '''                !B1.Value = &quot;Grapecity&quot;
+        '''                !B2.Value = &quot;Excel for .NET&quot;
+        '''                &apos;Set font size of cell &quot;A2&quot;
+        '''                !A2.Font.Size = 20
+        '''            End With
+        '''
+        '''            With sheet.PageSetup
+        '''                &apos; Set bestFitColumns/bestFitRows as true [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PdfPageSetup_ConfigureBestFitRowColumn() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PdfPageSetup.Configur"& _ 
+                        "eBestFitRowColumn", resourceCulture)
             End Get
         End Property
         
@@ -4319,6 +5468,26 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
+        '''            Dim fileStream = GetResourceStream(&quot;RepeatTails.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''
+        '''            &apos;Repeat the columns &quot;I&quot; at the left of each page when saving worksheet2 to pdf.
+        '''            Dim worksheet1 As IWorksheet = workbook.Worksheets(0)
+        '''            worksheet1.PageSetup.PrintTailColumns = &quot;$I:$I&quot;
+        '''
+        '''            &apos;Repeat the row 67th at the bottom of each page when saving worksheet1 to pdf.
+        '''            Dim worksheet2 As IWorksheet = workbook.Worksheets(1)
+        '''            workshe [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PdfPageSetup_ConfigurePrintTails() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PdfPageSetup.Configur"& _ 
+                        "ePrintTails", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
         '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            Dim row As Integer = 50
@@ -4364,6 +5533,176 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;KeepTogether.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos;Firstly, create a printManager.
+        '''            Dim printManager As New Excel.PrintManager
+        '''
+        '''            &apos;Get the natural pagination information of the worksheet.
+        '''            &apos;The first page of the natural pagination is &quot;A1:F37&quot;, the second page is from row &quot;A38:F73&quot; 
+        '''            Dim pages As IList(Of PageIn [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PrintManager_CustomPageInfos() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PrintManager.CustomPa"& _ 
+                        "geInfos", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Set value
+        '''            worksheet.Range(&quot;A4:C4&quot;).Value = {&quot;Device&quot;, &quot;Quantity&quot;, &quot;Unit Price&quot;}
+        '''            worksheet.Range(&quot;A5:C8&quot;).Value = New Object(,) {
+        '''                {&quot;T540p&quot;, 12, 9850},
+        '''                {&quot;T570&quot;, 5, 7460},
+        '''                {&quot;Y460&quot;, 6, 5400},
+        '''                {&quot;Y460F&quot;, 8, 6240}
+        '''            }
+        '''
+        '''            &apos; Set style
+        '''            With worksheet.Range(&quot;A4:C4&quot;)
+        '''                .Font.Bold = True
+        '''       [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PrintManager_DrawRangeInsideAPDF() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PrintManager.DrawRang"& _ 
+                        "eInsideAPDF", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;KeepTogether.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos;The first page of the natural pagination is from row 1th to 37th, the second page is from row 38th to 73th. 
+        '''            Dim keepTogetherRanges As IList(Of IRange) = New List(Of IRange)
+        '''            &apos;The row 37th and 38th need to keep together. So the pagination results are: the first page if from row 1th to  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PrintManager_KeepTogether() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PrintManager.KeepToge"& _ 
+                        "ther", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;MultipleHeaders.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            Dim repeatSettings As IList(Of RepeatSetting) = New List(Of RepeatSetting)
+        '''
+        '''            &apos;The title rows of the &quot;B2:F87&quot; is &quot;$2:$2&quot;
+        '''            Dim repeatSetting As New RepeatSetting With {
+        '''                .TitleRowStart = 1,
+        '''                .TitleRowEnd = 1,
+        '''                .Range = worksheet.Range(&quot;B2 [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PrintManager_ManageHeadersOnDifferentPages() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PrintManager.ManageHe"& _ 
+                        "adersOnDifferentPages", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;Multiple sheets one page.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''
+        '''            &apos;NOTE: To use this feature, you should have valid license for GrapeCity Documents for PDF.
+        '''            &apos;Create a pdf document.
+        '''            Dim doc As New Pdf.GcPdfDocument
+        '''            &apos; This page will save datas for multiple pages.
+        '''            Dim page As Pdf.Page = doc.NewPage()
+        '''
+        '''            &apos;Create a PrintManager.
+        '''            Dim printManager As New Excel [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PrintManager_PrintMultipleWorksheetsToOnePage() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PrintManager.PrintMul"& _ 
+                        "tipleWorksheetsToOnePage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;PrintSpecificPDFPages.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''
+        '''            &apos;Firstly, create a printManager.
+        '''            Dim printManager As New Excel.PrintManager
+        '''
+        '''            &apos;Get the natural pagination information of the workbook.
+        '''            Dim pages As IList(Of PageInfo) = printManager.Paginate(workbook)
+        '''
+        '''            &apos;Pick some pages to print.
+        '''            Dim newPages As IList(Of PageInfo) = New List(Of PageInfo)
+        '''            ne [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PrintManager_PrintSpecificPages() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PrintManager.PrintSpe"& _ 
+                        "cificPages", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;FinancialReport.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos;NOTE: To use this feature, you should have valid license for GrapeCity Documents for PDF.
+        '''            &apos;Create a pdf document.
+        '''            Dim doc As New Pdf.GcPdfDocument
+        '''            doc.Load(GetResourceStream(&quot;Acme-Financial Report 2018.pdf&quot;))
+        '''
+        '''            &apos;Create a PrintManager.
+        '''            Dim prin [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PrintManager_RenderExcelRangesInsideAPDF() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PrintManager.RenderEx"& _ 
+                        "celRangesInsideAPDF", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim fileStream As Stream = GetResourceStream(&quot;Any year calendar1.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''
+        '''            Dim workbook2 As New Excel.Workbook
+        '''            Dim fileStream2 As Stream = GetResourceStream(&quot;Any year calendar (Ion theme)1.xlsx&quot;)
+        '''            workbook2.Open(fileStream2)
+        '''
+        '''            &apos;Create a printmanager.
+        '''            Dim printManager As New Excel.PrintManager
+        '''
+        '''            &apos;Save the workbook1 and workbook2 into one pdf file.
+        '''            printManager.SavePDF( [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_PrintManager_SaveMultipleWorkbooksToPDF() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.PrintManager.SaveMult"& _ 
+                        "ipleWorkbooksToPDF", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
         '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            &apos;Single cell border
@@ -4391,8 +5730,7 @@ Namespace My.Resources
         '''            cf.Borders.ThemeColor = ThemeColor.Accent1
         '''            cf.Borders.LineStyle = BorderLineStyle.Thin
         '''
-        '''            &apos;Set cell values
-        ''' [rest of string was truncated]&quot;;.
+        '''            &apos;Set cell values        ''' [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SaveConditionalFormatting() As String
             Get
@@ -4406,8 +5744,7 @@ Namespace My.Resources
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''            worksheet.PageSetup.Orientation = PageOrientation.Landscape
         '''
-        '''            Dim assembly = [GetType]().GetTypeInfo().Assembly
-        '''            Dim stream As IO.Stream = assembly.GetManifestResourceStream(&quot;GrapeCity.Documents.Excel.Examples.logo.png&quot;)
+        '''            Dim stream As IO.Stream = GetResourceStream(&quot;logo.png&quot;)
         '''            Dim picture As IShape = worksheet.Shapes.AddPicture(stream, ImageType.PNG, 20, 20, 690, 100)
         '''        .
         '''</summary>
@@ -4419,18 +5756,35 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
+        '''            Dim sourceData(,) As Object = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
+        '''                {1, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #2018-1-7#, &quot;United Kingdom&quot;},
+        '''                {2, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #2018-1-8#, &quot;United States&quot;},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #2018-1-10#, &quot;Canada&quot;},
+        '''                {4, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #2018-1-10#, &quot;Germany&quot;},
+        '''                {5, &quot;Orange&quot;, &quot;Fruit&quot;, 3610, #2018-1-11#, &quot;United States&quot;},
+        '''  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SavePivotTable() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.SavePivotTable", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            Dim rangeA1B2 As IRange = worksheet.Range(&quot;A1:B2&quot;)
         '''            rangeA1B2.Merge()
         '''            rangeA1B2.Interior.Pattern = Pattern.LinearGradient
         '''
-        '''            Dim gradientA1B2 As ILinearGradient = TryCast(rangeA1B2.Interior.Gradient, ILinearGradient)
+        '''            Dim gradientA1B2 = TryCast(rangeA1B2.Interior.Gradient, ILinearGradient)
         '''            gradientA1B2.ColorStops(0).Color = Color.Red
         '''            gradientA1B2.ColorStops(1).Color = Color.Yellow
         '''            gradientA1B2.Degree = 90
         '''
-        '''            Dim  [rest of string was truncated]&quot;;.
+        '''            Dim rangeE1E2 As IRange [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SaveRangeFillToPDF() As String
             Get
@@ -4440,7 +5794,46 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            worksheet.Range(&quot;A1&quot;).Value = &quot;GrapeCity Documents for Excel&quot;
+        '''            worksheet.Range(&quot;A1&quot;).Font.Size = 25
+        '''
+        '''            Dim stream As Stream = GetResourceStream(&quot;logo.png&quot;)
+        '''            Dim imageBytes(CInt(stream.Length) - 1) As Byte
+        '''            stream.Read(imageBytes, 0, imageBytes.Length)
+        '''            &apos;Set a background image for worksheet
+        '''            worksheet.BackgroundPicture = imageBytes
+        '''
+        '''            Dim pdfSaveO [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SaveSheetBackgroundToPDF() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.SaveSheetBackgroundTo"& _ 
+                        "PDF", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData As Object(,) = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;},
+        '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#},
+        '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#},
+        '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#},
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#},
+        '''                {6, &quot;Orange&quot;, &quot;Fruit&quot;, 3610, #1/11/2018#},
+        '''                {7,  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SaveSlicer() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.SaveSlicer", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim data As Object(,) = {
         '''                {&quot;Customer&quot;, &quot;0-30 Days&quot;, &quot;30-60 Days&quot;, &quot;60-90 Days&quot;, &quot;&gt;90 Days&quot;},
         '''                {&quot;Customer A&quot;, 1200.15, 1916.18, 1105.23, 1806.53},
         '''                {&quot;Customer B&quot;, 896.23, 1005.53, 1800.56, 1150.49},
@@ -4449,8 +5842,7 @@ Namespace My.Resources
         '''
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''            worksheet.Range(&quot;B2:E5&quot;).Value = data
-        '''            worksheet.Range(&quot;B:F&quot;).ColumnWidth = 15
-        '''          [rest of string was truncated]&quot;;.
+        '''            worksheet.Range(&quot;B:F&quot;).ColumnWidth =  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SaveSparklinesToPDF() As String
             Get
@@ -4491,7 +5883,7 @@ Namespace My.Resources
         '''            sheet.Range!A1.Interior.Color = Color.Green
         '''
         '''            &apos;change the path to real export path when save.
-        '''            workbook.Save(CurrentDirectory &amp; &quot;dest.pdf&quot;, SaveFileFormat.Pdf)
+        '''            workbook.Save(IO.Path.Combine(CurrentDirectory, &quot;dest.pdf&quot;), SaveFileFormat.Pdf)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SaveWorkbookToPDF() As String
@@ -4511,12 +5903,32 @@ Namespace My.Resources
         '''            sheet.Range!A1.Interior.Color = Color.Green
         '''
         '''            &apos;change the path to real export path when save.
-        '''            sheet.Save(CurrentDirectory &amp; &quot;dest.pdf&quot;, SaveFileFormat.Pdf)
+        '''            sheet.Save(IO.Path.Combine(CurrentDirectory, &quot;dest.pdf&quot;), SaveFileFormat.Pdf)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SaveWorksheetToPDF() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.SaveWorksheetToPDF", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            worksheet.Range!A1.Value = &quot;GrapeCity Documents for Excel&quot;
+        '''            worksheet.Range!A1.Font.Size = 25
+        '''
+        '''            Dim documentProperties As New DocumentProperties
+        '''            With documentProperties
+        '''                &apos;Sets the name of the person that created the PDF document.
+        '''                .Author = &quot;Jaime Smith&quot;
+        '''                &apos;Sets the title of the  PDF document.
+        '''                .Title = &quot;GcPdf Document Info Sampl [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SetDocumentPropertiesToPDF() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.SetDocumentProperties"& _ 
+                        "ToPDF", resourceCulture)
             End Get
         End Property
         
@@ -4531,10 +5943,10 @@ Namespace My.Resources
         '''            sheet.Range!A1.Interior.Color = Color.Green
         '''
         '''            &apos;specify font path.
-        '''            workbook.FontsFolderPath = &quot;D:\Fonts&quot;
+        '''            Excel.Workbook.FontsFolderPath = &quot;D:\Fonts&quot;
         '''
         '''            &apos;get the used fonts list in workbook, the list are:&quot;Wide Latin&quot;, &quot;Calibri&quot;
-        '''            Dim fonts = workbook.GetUse [rest of string was truncated]&quot;;.
+        '''            Dim fonts = workbook. [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SetFontsFolderPath() As String
             Get
@@ -4545,8 +5957,52 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            worksheet.Range!A1.Value = &quot;GrapeCity Documents for Excel&quot;
+        '''            worksheet.Range!A1.Font.Size = 25
         '''
-        '''            Dim a1 As IRange = worksheet.Range(&quot;A1&quot;)
+        '''            &apos;The security settings of pdf when converting excel to pdf.
+        '''            Dim securityOptions As New PdfSecurityOptions
+        '''            With securityOptions
+        '''                &apos;Sets the user password.
+        '''                .UserPassword = &quot;user&quot;
+        '''                &apos;Sets the owner password.
+        '''                .OwnerPassword = [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_SetSecurityOptionsToPDF() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.SetSecurityOptionsToP"& _ 
+                        "DF", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.PageSetup.PrintGridlines = True
+        '''            worksheet.PageSetup.PrintHeadings = True
+        '''
+        '''            &apos;&quot;A1&quot; is ordinary wrapped text.
+        '''            worksheet.Range!A1.WrapText = True
+        '''            worksheet.Range!A1.Value = &quot;GrapeCity Documents for Excel&quot;
+        '''            worksheet.Range!A1.RowHeight = 42
+        '''            worksheet.Range!A1.ColumnWidth = 9
+        '''
+        '''            &apos;The wrapped text &quot;A2&quot; will be sheink to fit.
+        '''           [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_ShrinkToFitForWrappedText() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PDFExporting.ShrinkToFitForWrapped"& _ 
+                        "Text", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            Dim a1 As IRange = worksheet.Range!A1
         '''            a1.Value = &quot;Perfect square trinomial&quot;
         '''
         '''            a1.Font.Size = 26
@@ -4558,7 +6014,7 @@ Namespace My.Resources
         '''
         '''            Dim run1 As ITextRun = a1.Characters(8, 7)
         '''            run1.Font.Italic = True
-        '''            run1.Font.Them [rest of string was truncated]&quot;;.
+        '''            run1.Font.ThemeCo [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_Text_ExportCellRichText() As String
             Get
@@ -4630,7 +6086,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
-        '''            sheet.Range!A1.Font.Name = &quot;@Meiryo&quot;
+        '''            sheet.Range!A1.Font.Name = &quot;@MS UI Gothic&quot;
         '''            sheet.Range!A1.Value = &quot;日本語（にほんご、にっぽんご）は、主として、日本列島で使用されてきた言語である。GrapeCity&quot;
         '''            sheet.Range!A1.HorizontalAlignment = HorizontalAlignment.Right
         '''            sheet.Range!A1.VerticalAlignment = VerticalAlignment.Top
@@ -4638,7 +6094,7 @@ Namespace My.Resources
         '''            sheet.Range!A1.WrapText = True
         '''
         '''            sheet.Range!A1.ColumnWidth = 27
-        '''            sheet.Range!A1. [rest of string was truncated]&quot;;.
+        '''            sheet.Ran [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PDFExporting_Text_VerticalText() As String
             Get
@@ -4740,14 +6196,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_ChangeDataFieldSummarizeFunction() As String
             Get
@@ -4758,14 +6213,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_CreatePivotTable() As String
             Get
@@ -4775,14 +6229,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_FilterItemsInPivotTable() As String
             Get
@@ -4793,14 +6246,30 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
+        '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #2018-1-6#, &quot;United States&quot;},
+        '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #2018-1-7#, &quot;United Kingdom&quot;},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #2018-1-8#, &quot;United States&quot;},
+        '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #2018-1-10#, &quot;Canada&quot;},
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #2018-1-10#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_HideGrandTotalsInPivotTable() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PivotTable.HideGrandTotalsInPivotT"& _ 
+                        "able", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_ModifySubtotalsForPivotField() As String
             Get
@@ -4811,18 +6280,116 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_RefreshPivotTable() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PivotTable.RefreshPivotTable", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData As Object(,) = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
+        '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #2018-1-6#, &quot;United States&quot;},
+        '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #2018-1-7#, &quot;United Kingdom&quot;},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #2018-1-8#, &quot;United States&quot;},
+        '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #2018-1-10#, &quot;Canada&quot;},
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #2018-1-10#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_RowAxisLayoutInPivotTable() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PivotTable.RowAxisLayoutInPivotTab"& _ 
+                        "le", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData(,) As Object = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
+        '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #2018-1-6#, &quot;United States&quot;},
+        '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #2018-1-7#, &quot;United Kingdom&quot;},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #2018-1-8#, &quot;United States&quot;},
+        '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #2018-1-10#, &quot;Canada&quot;},
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #2018-1-10#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_SetBuiltinStyle() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PivotTable.SetBuiltinStyle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData(,) As Object = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
+        '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #2018-1-6#, &quot;United States&quot;},
+        '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #2018-1-7#, &quot;United Kingdom&quot;},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #2018-1-8#, &quot;United States&quot;},
+        '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #2018-1-10#, &quot;Canada&quot;},
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #2018-1-10#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_SetCustomPivotStyle() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PivotTable.SetCustomPivotStyle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData(,) As Object = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
+        '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #2018-1-6#, &quot;United States&quot;},
+        '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #2018-1-7#, &quot;United Kingdom&quot;},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #2018-1-8#, &quot;United States&quot;},
+        '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #2018-1-10#, &quot;Canada&quot;},
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #2018-1-10#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_SetNumberFormatForField() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PivotTable.SetNumberFormatForField"& _ 
+                        "", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData As Object(,) = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
+        '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #2018-1-6#, &quot;United States&quot;},
+        '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #2018-1-7#, &quot;United Kingdom&quot;},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #2018-1-8#, &quot;United States&quot;},
+        '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #2018-1-10#, &quot;Canada&quot;},
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #2018-1-10#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_SetPivotFieldNameInPivotTable() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PivotTable.SetPivotFieldNameInPivo"& _ 
+                        "tTable", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData(,) As Object = {
+        '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
+        '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #2018-1-6#, &quot;United States&quot;},
+        '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #2018-1-7#, &quot;United Kingdom&quot;},
+        '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #2018-1-8#, &quot;United States&quot;},
+        '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #2018-1-10#, &quot;Canada&quot;},
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #2018-1-10#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_PivotTable_SetShowTableStyles() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.PivotTable.SetShowTableStyles", resourceCulture)
             End Get
         End Property
         
@@ -4922,6 +6489,29 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
+        '''            &apos;Set data of PC
+        '''            worksheet.Range!A2.Value = &quot;PC&quot;
+        '''            worksheet.Range(&quot;A4:C4&quot;).Value = New String() {&quot;Device&quot;, &quot;Quantity&quot;, &quot;Unit Price&quot;}
+        '''            worksheet.Range(&quot;A5:C10&quot;).Value = New Object(,) {
+        '''                {&quot;T540p&quot;, 12, 9850},
+        '''                {&quot;T570&quot;, 5, 7460},
+        '''                {&quot;Y460&quot;, 6, 5400},
+        '''                {&quot;Y460F&quot;, 8, 6240}
+        '''            }
+        '''
+        '''            &apos;Set style
+        '''            worksheet. [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_RangeOperations_CopyPasteOptions() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.RangeOperations.CopyPasteOptions", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
         '''            Dim worksheet2 As IWorksheet = workbook.Worksheets.Add()
         '''            worksheet.Range(&quot;B3:D12&quot;).Value = 5
         '''            worksheet.Range(&quot;B3:D12&quot;).Interior.Color = Color.LightGreen
@@ -4937,6 +6527,26 @@ Namespace My.Resources
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_RangeOperations_CutCopyRange() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.RangeOperations.CutCopyRange", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Home inventory.xlsx from resource
+        '''            Dim source_workbook As New Excel.Workbook
+        '''            Dim source_fileStream = GetResourceStream(&quot;Home inventory.xlsx&quot;)
+        '''            source_workbook.Open(source_fileStream)
+        '''
+        '''            &apos;Hide gridline
+        '''            workbook.ActiveSheet.SheetView.DisplayGridlines = False
+        '''
+        '''            workbook.ActiveSheet.Range!A1.Value = &quot;Copy content from the first sheet of source workbook&quot;
+        '''            workbook.ActiveSheet.Range!A1.Font.Col [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_RangeOperations_CutCopyRangeBetweenWorkbooks() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.RangeOperations.CutCopyRangeBetwee"& _ 
+                        "nWorkbooks", resourceCulture)
             End Get
         End Property
         
@@ -5100,13 +6710,12 @@ Namespace My.Resources
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            worksheet.Range(&quot;A:F&quot;).ColumnWidth = 15
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
-        '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
-        '''  [rest of string was truncated]&quot;;.
+        '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_RangeOperations_SetRangeValue() As String
             Get
@@ -5129,6 +6738,25 @@ Namespace My.Resources
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.RangeOperations.SetRowHeightColumn"& _ 
                         "Width", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            &apos; Add a right arrow callout.
+        '''            Dim shape As IShape = worksheet.Shapes.AddShape(AutoShapeType.RightArrowCallout, 20, 20, 200, 100)
+        '''
+        '''            Dim adjustments As IAdjustments = shape.Adjustments
+        '''            adjustments(0) = 0.5 &apos; arrow neck width
+        '''            adjustments(1) = 0.4 &apos; arrow head width
+        '''            adjustments(2) = 0.5 &apos; arrow head height
+        '''            adjustments(3) = 0.6 &apos; text box width
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Shape_ConfigAdjustmentPoints() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Shape.ConfigAdjustmentPoints", resourceCulture)
             End Get
         End Property
         
@@ -5173,7 +6801,7 @@ Namespace My.Resources
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            Dim shape As IShape = worksheet.Shapes.AddShape(AutoShapeType.Parallelogram, 1, 1, 200, 100)
-        '''            shape.Fill.PresetGradient(Drawing.GradientStyle.Vertical, 3, Drawing.PresetGradientType.Silver)
+        '''            shape.Fill.PresetGradient(GradientStyle.Vertical, 3, PresetGradientType.Silver)
         '''            shape.Fill.RotateWithObject = False
         '''        .
         '''</summary>
@@ -5188,7 +6816,7 @@ Namespace My.Resources
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            Dim shape As IShape = worksheet.Shapes.AddShape(AutoShapeType.Parallelogram, 1, 1, 200, 100)
-        '''            shape.Fill.Patterned(Drawing.PatternType.Percent10)
+        '''            shape.Fill.Patterned(PatternType.Percent10)
         '''            shape.Fill.Color.ObjectThemeColor = ThemeColor.Accent2
         '''            shape.Fill.PatternColor.ObjectThemeColor = ThemeColor.Accent6
         '''        .
@@ -5238,13 +6866,13 @@ Namespace My.Resources
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
         '''            Dim shape As IShape = worksheet.Shapes.AddShape(AutoShapeType.Parallelogram, 1, 1, 200, 100)
-        '''            shape.Fill.PresetTextured(Drawing.PresetTexture.Canvas)
+        '''            shape.Fill.PresetTextured(PresetTexture.Canvas)
         '''            shape.Fill.TextureAlignment = TextureAlignment.Center
         '''            shape.Fill.TextureOffsetX = 2.5
         '''            shape.Fill.TextureOffsetY = 3.2
         '''            shape.Fill.TextureHorizontalScale = 0.9
         '''            shape.Fill.TextureVerticalScale = 0.2
-        '''       [rest of string was truncated]&quot;;.
+        '''            sh [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Shape_ConfigShapeWithTextureFill() As String
             Get
@@ -5258,10 +6886,10 @@ Namespace My.Resources
         '''
         '''            Dim ShapeBegin As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 1, 1, 100, 100)
         '''            Dim EndBegin As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 200, 200, 100, 100)
-        '''            Dim ConnectorShape As IShape = worksheet.Shapes.AddConnector(Drawing.ConnectorType.Straight, 1, 1, 101, 101)
+        '''            Dim ConnectorShape As IShape = worksheet.Shapes.AddConnector(ConnectorType.Straight, 1, 1, 101, 101)
         '''
         '''            &apos;connect shapes by connector shape.
-        '''            ConnectorShape.ConnectorFormat.BeginConne [rest of string was truncated]&quot;;.
+        '''            ConnectorShape.ConnectorFormat.BeginConnect(Shape [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Shape_ConnectShapesByConnector() As String
             Get
@@ -5343,14 +6971,53 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            Dim shapes As IShapes = worksheet.Shapes
+        '''            Dim pentagon As IShape = shapes.AddShape(AutoShapeType.RegularPentagon, 89.4, 57.0, 153.6, 90.6)
+        '''            Dim pie As IShape = shapes.AddShape(AutoShapeType.Pie, 344.4, 156.8, 50.4, 60.0)
+        '''            Dim shpRange As IShapeRange = shapes.Range({pentagon.Name, pie.Name})
+        '''
+        '''            &apos; Group the shape range
+        '''            Dim grouped As IShape = shpRange.Group()
+        '''
+        '''       [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Shape_ShapeGroup() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Shape.ShapeGroup", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            Dim shapes As IShapes = worksheet.Shapes
+        '''            Dim pentagon As IShape = shapes.AddShape(AutoShapeType.RegularPentagon, 89.4, 57.0, 153.6, 90.6)
+        '''            Dim pie As IShape = shapes.AddShape(AutoShapeType.Pie, 344.4, 156.8, 50.4, 60.0)
+        '''            Dim shpRange As IShapeRange = shapes.Range({pentagon.Name, pie.Name})
+        '''
+        '''            &apos; Group the shape range
+        '''            Dim grouped As IShape = shpRange.Group()
+        '''
+        '''       [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Shape_ShapeUngroup() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Shape.ShapeUngroup", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_AddCustomSlicerStyle() As String
             Get
@@ -5360,14 +7027,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_AddSlicersForPivotTable() As String
             Get
@@ -5377,14 +7043,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_AddSlicersForTable() As String
             Get
@@ -5394,14 +7059,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_ApplySlicerStyle() As String
             Get
@@ -5411,14 +7075,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_ConfigSlicerLayout() As String
             Get
@@ -5428,14 +7091,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_DoTableFilter() As String
             Get
@@ -5447,13 +7109,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                 [rest of string was truncated]&quot;;.
+        '''    [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_SlicerCopy() As String
             Get
@@ -5465,13 +7127,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                 [rest of string was truncated]&quot;;.
+        '''    [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_SlicerCut() As String
             Get
@@ -5483,13 +7145,13 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                 [rest of string was truncated]&quot;;.
+        '''    [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_SlicerDuplicate() As String
             Get
@@ -5499,14 +7161,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_UseSlicerDoFilter() As String
             Get
@@ -5516,14 +7177,13 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim sourceData = {
+        '''            Dim sourceData As Object(,) = {
         '''                {&quot;Order ID&quot;, &quot;Product&quot;, &quot;Category&quot;, &quot;Amount&quot;, &quot;Date&quot;, &quot;Country&quot;},
         '''                {1, &quot;Carrots&quot;, &quot;Vegetables&quot;, 4270, #1/6/2018#, &quot;United States&quot;},
         '''                {2, &quot;Broccoli&quot;, &quot;Vegetables&quot;, 8239, #1/7/2018#, &quot;United Kingdom&quot;},
         '''                {3, &quot;Banana&quot;, &quot;Fruit&quot;, 617, #1/8/2018#, &quot;United States&quot;},
         '''                {4, &quot;Banana&quot;, &quot;Fruit&quot;, 8384, #1/10/2018#, &quot;Canada&quot;},
-        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot;},
-        '''          [rest of string was truncated]&quot;;.
+        '''                {5, &quot;Beans&quot;, &quot;Vegetables&quot;, 2626, #1/10/2018#, &quot;Germany&quot; [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Slicer_UseSlicerToClearFilter() As String
             Get
@@ -5533,14 +7193,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sorting_CustomSort() As String
             Get
@@ -5550,14 +7210,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sorting_SortRangeByFontColor() As String
             Get
@@ -5567,14 +7227,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sorting_SortRangeByIcon() As String
             Get
@@ -5584,14 +7244,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sorting_SortRangeByInterior() As String
             Get
@@ -5601,14 +7261,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sorting_SortRangeByValue() As String
             Get
@@ -5618,11 +7278,11 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Number&quot;, &quot;Date&quot;, &quot;Customer&quot;, &quot;Description&quot;, &quot;Trend&quot;, &quot;0-30 Days&quot;, &quot;30-60 Days&quot;, &quot;60-90 Days&quot;, &quot;&gt;90 Days&quot;, &quot;Amount&quot;},
         '''                {&quot;1001&quot;, #5/21/2017#, &quot;Customer A&quot;, &quot;Invoice 1001&quot;, Nothing, 1200.15, 1916.18, 1105.23, 1806.53, Nothing},
         '''                {&quot;1002&quot;, #3/18/2017#, &quot;Customer B&quot;, &quot;Invoice 1002&quot;, Nothing, 896.23, 1005.53, 1800.56, 1150.49, Nothing},
-        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 1009.23, 1869.23 [rest of string was truncated]&quot;;.
+        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 100 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sparklines_ClearSparklineGroup() As String
             Get
@@ -5632,11 +7292,11 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Number&quot;, &quot;Date&quot;, &quot;Customer&quot;, &quot;Description&quot;, &quot;Trend&quot;, &quot;0-30 Days&quot;, &quot;30-60 Days&quot;, &quot;60-90 Days&quot;, &quot;&gt;90 Days&quot;, &quot;Amount&quot;},
         '''                {&quot;1001&quot;, #5/21/2017#, &quot;Customer A&quot;, &quot;Invoice 1001&quot;, Nothing, 1200.15, 1916.18, 1105.23, 1806.53, Nothing},
         '''                {&quot;1002&quot;, #3/18/2017#, &quot;Customer B&quot;, &quot;Invoice 1002&quot;, Nothing, 896.23, 1005.53, 1800.56, 1150.49, Nothing},
-        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 1009.23, 1869.23 [rest of string was truncated]&quot;;.
+        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 100 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sparklines_ClearSparklines() As String
             Get
@@ -5646,11 +7306,11 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Number&quot;, &quot;Date&quot;, &quot;Customer&quot;, &quot;Description&quot;, &quot;Trend&quot;, &quot;0-30 Days&quot;, &quot;30-60 Days&quot;, &quot;60-90 Days&quot;, &quot;&gt;90 Days&quot;, &quot;Amount&quot;},
         '''                {&quot;1001&quot;, #5/21/2017#, &quot;Customer A&quot;, &quot;Invoice 1001&quot;, Nothing, 1200.15, 1916.18, 1105.23, 1806.53, Nothing},
         '''                {&quot;1002&quot;, #3/18/2017#, &quot;Customer B&quot;, &quot;Invoice 1002&quot;, Nothing, 896.23, 1005.53, 1800.56, 1150.49, Nothing},
-        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 1009.23, 1869.23 [rest of string was truncated]&quot;;.
+        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 100 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sparklines_ConfigSparklineSettings() As String
             Get
@@ -5661,11 +7321,11 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Number&quot;, &quot;Date&quot;, &quot;Customer&quot;, &quot;Description&quot;, &quot;Trend&quot;, &quot;0-30 Days&quot;, &quot;30-60 Days&quot;, &quot;60-90 Days&quot;, &quot;&gt;90 Days&quot;, &quot;Amount&quot;},
         '''                {&quot;1001&quot;, #5/21/2017#, &quot;Customer A&quot;, &quot;Invoice 1001&quot;, Nothing, 1200.15, 1916.18, 1105.23, 1806.53, Nothing},
         '''                {&quot;1002&quot;, #3/18/2017#, &quot;Customer B&quot;, &quot;Invoice 1002&quot;, Nothing, 896.23, 1005.53, 1800.56, 1150.49, Nothing},
-        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 1009.23, 1869.23 [rest of string was truncated]&quot;;.
+        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 100 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sparklines_CreateSparklines() As String
             Get
@@ -5675,11 +7335,11 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Number&quot;, &quot;Date&quot;, &quot;Customer&quot;, &quot;Description&quot;, &quot;Trend&quot;, &quot;0-30 Days&quot;, &quot;30-60 Days&quot;, &quot;60-90 Days&quot;, &quot;&gt;90 Days&quot;, &quot;Amount&quot;},
         '''                {&quot;1001&quot;, #5/21/2017#, &quot;Customer A&quot;, &quot;Invoice 1001&quot;, Nothing, 1200.15, 1916.18, 1105.23, 1806.53, Nothing},
         '''                {&quot;1002&quot;, #3/18/2017#, &quot;Customer B&quot;, &quot;Invoice 1002&quot;, Nothing, 896.23, 1005.53, 1800.56, 1150.49, Nothing},
-        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 1009.23, 1869.23 [rest of string was truncated]&quot;;.
+        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 100 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sparklines_GroupExistSparklines() As String
             Get
@@ -5689,11 +7349,11 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data = New Object(,) {
         '''                {&quot;Number&quot;, &quot;Date&quot;, &quot;Customer&quot;, &quot;Description&quot;, &quot;Trend&quot;, &quot;0-30 Days&quot;, &quot;30-60 Days&quot;, &quot;60-90 Days&quot;, &quot;&gt;90 Days&quot;, &quot;Amount&quot;},
         '''                {&quot;1001&quot;, #5/21/2017#, &quot;Customer A&quot;, &quot;Invoice 1001&quot;, Nothing, 1200.15, 1916.18, 1105.23, 1806.53, Nothing},
         '''                {&quot;1002&quot;, #3/18/2017#, &quot;Customer B&quot;, &quot;Invoice 1002&quot;, Nothing, 896.23, 1005.53, 1800.56, 1150.49, Nothing},
-        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 1009.23, 1869.23 [rest of string was truncated]&quot;;.
+        '''                {&quot;1003&quot;, #6/15/2017#, &quot;Customer C&quot;, &quot;Invoice 1003&quot;, Nothing, 827.63, 10 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Sparklines_UseDateAxis() As String
             Get
@@ -5703,14 +7363,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Tables_AccessTableRanges() As String
             Get
@@ -5759,14 +7419,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Tables_CreateTable() As String
             Get
@@ -5776,14 +7436,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Tables_InsertDeleteTableRowColumns() As String
             Get
@@ -5794,14 +7454,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Tables_PerformCalculationsInTable() As String
             Get
@@ -5811,14 +7471,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                    {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                    {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                    {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                    {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                    {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                    {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                    {&quot;Ange [rest of string was truncated]&quot;;.
+        '''              [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Tables_RemoveTable() As String
             Get
@@ -5828,14 +7488,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Tables_TableFilter() As String
             Get
@@ -5845,14 +7505,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Eye color&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Richard&quot;, &quot;New York&quot;, #6/8/1968#, &quot;Blue&quot;, 67, 165},
         '''                {&quot;Nia&quot;, &quot;New York&quot;, #7/3/1972#, &quot;Brown&quot;, 62, 134},
         '''                {&quot;Jared&quot;, &quot;New York&quot;, #3/2/1964#, &quot;Hazel&quot;, 72, 180},
         '''                {&quot;Natalie&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;Blue&quot;, 66, 163},
         '''                {&quot;Damon&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;Hazel&quot;, 76, 176},
-        '''                {&quot;Angela&quot;, &quot;Washington&quot;, #2/15/199 [rest of string was truncated]&quot;;.
+        '''                {&quot;Angela&quot;, &quot;Washingto [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Tables_TableSort() As String
             Get
@@ -5940,12 +7600,15 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            &apos;Open csv with more settings.
-        '''            Dim options As New CsvOpenOptions
-        '''            options.SeparatorString = &quot;-&quot;
+        '''            &apos;Open csv with custom delimiter.
+        '''            Dim options As New CsvOpenOptions With {
+        '''                .ColumnSeparator = &quot;,&quot;,
+        '''                .RowSeparator = vbCrLf,
+        '''                .CellSeparator = &quot;&quot;&quot;&quot;c
+        '''            }
         '''
         '''            &apos;Change the path to the real file path when open.
-        '''            workbook.Open(CurrentDirectory &amp; &quot;source.csv&quot;, options)
+        '''            workbook.Open(IO.Path.Combine(CurrentDirectory, &quot;source.csv&quot;), options)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ImportCsvFileToWorkbookWithOptions() As String
@@ -5959,9 +7622,10 @@ Namespace My.Resources
         '''  Looks up a localized string similar to 
         '''            &apos;Use XlsxOpenOptions.ImportFlags to control what you want to import from excel, ImportFlags.Data means only the data will be imported
         '''            &apos;Change the path to the real file path when open.
-        '''            Dim options As New XlsxOpenOptions
-        '''            options.ImportFlags = ImportFlags.Data
-        '''            workbook.Open(CurrentDirectory &amp; &quot;source.xlsx&quot;, options)
+        '''            Dim options As New XlsxOpenOptions With {
+        '''                .ImportFlags = ImportFlags.Data
+        '''            }
+        '''            workbook.Open(IO.Path.Combine(CurrentDirectory, &quot;source.xlsx&quot;), options)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ImportExcelFileDataOnly() As String
@@ -5973,7 +7637,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            &apos;Change the path to the real file path when open.
-        '''            workbook.Open(CurrentDirectory &amp; &quot;source.xlsx&quot;, OpenFileFormat.Xlsx)
+        '''            workbook.Open(IO.Path.Combine(CurrentDirectory, &quot;source.xlsx&quot;), OpenFileFormat.Xlsx)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ImportExcelFileToWorkbook() As String
@@ -5988,9 +7652,10 @@ Namespace My.Resources
         '''            &apos;When XlsxOpenOptions.DoNotRecalculateAfterOpened means GrapeCity Documents for Excel will just read all the cached values without calculating again after
         '''            &apos;opening an Excel file.
         '''            &apos;Change the path to the real file path when open.
-        '''            Dim options As New XlsxOpenOptions
-        '''            options.DoNotRecalculateAfterOpened = True
-        '''            workbook.Open(CurrentDirectory &amp; &quot;source.xlsx&quot;, options)
+        '''            Dim options As New XlsxOpenOptions With {
+        '''                .DoNotRecalculateAfterOpened = True
+        '''            }
+        '''            workbook.Open(IO.Path.Combine(CurrentDirectory, &quot;source.xlsx&quot;), options)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ImportExcelFileWithoutCalculation() As String
@@ -6003,9 +7668,10 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            &apos;Change the path to the real file path when open.
-        '''            Dim options As New XlsxOpenOptions
-        '''            options.Password = &quot;123456&quot;
-        '''            workbook.Open(CurrentDirectory &amp; &quot;source.xlsx&quot;, options)
+        '''            Dim options As New XlsxOpenOptions With {
+        '''                .Password = &quot;123456&quot;
+        '''            }
+        '''            workbook.Open(IO.Path.Combine(CurrentDirectory, &quot;source.xlsx&quot;), options)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ImportExcelFileWithPassword() As String
@@ -6017,11 +7683,23 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
+        '''            workbook.Open(GetResourceStream(&quot;OleTemplates.xlsx&quot;))
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ImportOleObjectsToWorkbookAndExport() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Workbook.ImportOleObjectsToWorkboo"& _ 
+                        "kAndExport", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
         '''
         '''            &apos;GcExcel supports open xlsm file
-        '''            workbook.Open(Me.CurrentDirectory &amp; &quot;macros.xlsm&quot;)
+        '''            workbook.Open(IO.Path.Combine(CurrentDirectory, &quot;macros.xlsm&quot;))
         '''            &apos;Macros can be preserved after saving
-        '''            workbook.Save(Me.CurrentDirectory &amp; &quot;macros-exported.xlsm&quot;)
+        '''            workbook.Save(IO.Path.Combine(CurrentDirectory, &quot;macros-exported.xlsm&quot;))
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ImportXlsmToWorkbook() As String
@@ -6032,13 +7710,16 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim workbookWithShape As GrapeCity.Documents.Excel.Workbook = New GrapeCity.Documents.Excel.Workbook()
+        '''            Dim workbookWithShape As New Excel.Workbook()
         '''            Dim worksheet As IWorksheet = workbookWithShape.Worksheets(0)
         '''
         '''            &apos;Add a shape in worksheet
-        '''            Dim shape As GrapeCity.Documents.Excel.Drawing.IShape = worksheet.Shapes.AddShape(GrapeCity.Documents.Excel.Drawing.AutoShapeType.Parallelogram, 1, 1, 200, 100)
-        '''            shape.Line.DashStyle = GrapeCity.Documents.Excel.Drawing.LineDashStyle.Dash
-        '''            sha [rest of string was truncated]&quot;;.
+        '''            Dim shape As IShape = worksheet.Shapes.AddShape(AutoShapeType.Parallelogram, 1, 1, 200, 100)
+        '''            shape.Line.DashStyle = LineDashStyle.Dash
+        '''            shape.Line.Style = LineStyle.Single
+        '''            shape.Line.Weight = 2
+        '''            shape.Line.Color.ObjectThemeColor = ThemeColor.Accent6
+        '''            shape.Line [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_LoadAndSaveJsonWithShapes() As String
             Get
@@ -6049,14 +7730,30 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            worksheet.Range!A1.Value = &quot;GrapeCity Documents for Excel&quot;
+        '''
+        '''            &apos;Protects the workbook so that other users cannot view hidden worksheets, add, move, delete, hidie, or rename worksheets.
+        '''            &apos;The protection only happens when you open it with an Excel application.
+        '''            workbook.Protect()
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ProtectWorkbook() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Workbook.ProtectWorkbook", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Sex&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Bob&quot;, &quot;NewYork&quot;, #6/8/1968#, &quot;male&quot;, 80, 180},
         '''                {&quot;Betty&quot;, &quot;NewYork&quot;, #7/3/1972#, &quot;female&quot;, 72, 168},
         '''                {&quot;Gary&quot;, &quot;NewYork&quot;, #3/2/1964#, &quot;male&quot;, 71, 179},
         '''                {&quot;Hunk&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;male&quot;, 80, 171},
         '''                {&quot;Cherry&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;female&quot;, 58, 161},
-        '''                {&quot;Eva&quot;, &quot;Washington&quot;, #2/5/1993#, &quot;female&quot;, 71, [rest of string was truncated]&quot;;.
+        '''                {&quot;Eva&quot;, &quot;Washington&quot;, #2/5/1993#,  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_SaveWorkbookToCsvFile() As String
             Get
@@ -6066,14 +7763,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Sex&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Bob&quot;, &quot;NewYork&quot;, #6/8/1968#, &quot;male&quot;, 80, 180},
         '''                {&quot;Betty&quot;, &quot;NewYork&quot;, #7/3/1972#, &quot;female&quot;, 72, 168},
         '''                {&quot;Gary&quot;, &quot;NewYork&quot;, #3/2/1964#, &quot;male&quot;, 71, 179},
         '''                {&quot;Hunk&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;male&quot;, 80, 171},
         '''                {&quot;Cherry&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;female&quot;, 58, 161},
-        '''                {&quot;Eva&quot;, &quot;Washington&quot;, #2/5/1993#, &quot;female&quot;, 71, [rest of string was truncated]&quot;;.
+        '''                {&quot;Eva&quot;, &quot;Washington&quot;, #2/5/1993#,  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_SaveWorkbookToCsvFileWithOptions() As String
             Get
@@ -6085,7 +7782,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            &apos;change the path to real export path when save.
-        '''            workbook.Save(CurrentDirectory &amp; &quot;dest.xlsx&quot;, SaveFileFormat.Xlsx)
+        '''            workbook.Save(IO.Path.Combine(CurrentDirectory, &quot;dest.xlsx&quot;), SaveFileFormat.Xlsx)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_SaveWorkbookToExcelFile() As String
@@ -6097,9 +7794,10 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            &apos;Change the path to real export path when save.
-        '''            Dim options As New XlsxSaveOptions
-        '''            options.Password = &quot;123456&quot;
-        '''            workbook.Save(CurrentDirectory &amp; &quot;dest.xlsx&quot;, options)
+        '''            Dim options As New XlsxSaveOptions With {
+        '''                .Password = &quot;123456&quot;
+        '''            }
+        '''            workbook.Save(IO.Path.Combine(CurrentDirectory, &quot;dest.xlsx&quot;), options)
         '''        .
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_SaveWorkbookWithPassword() As String
@@ -6113,17 +7811,36 @@ Namespace My.Resources
         '''            &apos;ToJson&amp;FromJson can be used in combination with spread.sheets product:http://spread.grapecity.com/spreadjs/sheets/
         '''            &apos;GrapeCity Documents for Excel import an excel file.
         '''            &apos;change the path to real source file path.
-        '''            Dim source As String = CurrentDirectory &amp; &quot;source.xlsx&quot;
+        '''            Dim source As String = IO.Path.Combine(CurrentDirectory, &quot;source.xlsx&quot;)
         '''            workbook.Open(source)
         '''
         '''            &apos;GrapeCity Documents for Excel export to a json string.
         '''            Dim jsonstr = workbook.ToJson()
         '''
-        '''            &apos;use the json string to i [rest of string was truncated]&quot;;.
+        '''            &apos;use the  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_ToJsonFromJson() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Workbook.ToJsonFromJson", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''            worksheet.Range!A1.Value = &quot;GrapeCity Documents for Excel&quot;
+        '''
+        '''            &apos;Protects the workbook so that other users cannot view hidden worksheets, add, move, delete, hidie, or rename worksheets.
+        '''            &apos;The protection only happens when you open it with an Excel application.
+        '''            workbook.Protect()
+        '''
+        '''            &apos;Removes the above protection from the workbook.
+        '''            workbook.Unprotect()
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Workbook_UnprotectWorkbook() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Workbook.UnprotectWorkbook", resourceCulture)
             End Get
         End Property
         
@@ -6157,6 +7874,29 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            worksheet.Range(&quot;A1:D6&quot;).Value = New Object(,) {
+        '''                {Nothing, &quot;S1&quot;, &quot;S2&quot;, &quot;S3&quot;},
+        '''                {&quot;Item1&quot;, 10, 25, 25},
+        '''                {&quot;Item2&quot;, 51, 36, 27},
+        '''                {&quot;Item3&quot;, 52, 85, 30},
+        '''                {&quot;Item4&quot;, 22, 65, 65},
+        '''                {&quot;Item5&quot;, 23, 69, 69}
+        '''            }
+        '''
+        '''            &apos;Add a chart sheet.
+        '''            Dim chartSheet As IWorksheet = workbook.Worksheets.Add(SheetType.Chart)
+        ''' [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_AddChartSheet() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.AddChartSheet", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
         '''            &apos; Add a new worksheet to the workbook. The worksheet will be inserted into the end of the existing worksheet collection.
         '''            workbook.Worksheets.Add()
         '''
@@ -6171,6 +7911,31 @@ Namespace My.Resources
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_AddWorksheet() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.AddWorksheet", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Auto fit column width of range &apos;A1&apos;
+        '''            With worksheet.Range!A1
+        '''                .Value = &quot;Grapecity Documents for Excel&quot;
+        '''                .Columns.AutoFit()
+        '''            End With
+        '''
+        '''            &apos;Auto fit row height of range &apos;B2&apos;
+        '''            With worksheet.Range!B2
+        '''                .Value = &quot;Grapecity&quot;
+        '''                .Font.Size = 20
+        '''                .Rows.AutoFit()
+        '''            End With
+        '''
+        '''            &apos;Auto fit c [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_AutoFit() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.AutoFit", resourceCulture)
             End Get
         End Property
         
@@ -6216,6 +7981,64 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
+        '''            Dim sheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            sheet.Range(&quot;A1:E5&quot;).Value = New Object(,) {
+        '''                {1, 2, 3, 4, 5},
+        '''                {6, 7, 8, 9, 10},
+        '''                {11, 12, 13, 14, 15},
+        '''                {16, 17, 18, 19, 20},
+        '''                {21, 22, 23, 24, 25}
+        '''            }
+        '''
+        '''            &apos;Add page break
+        '''            sheet.HPageBreaks.Add(sheet.Range!D4) &apos;add a horizontal page break before the fourth row.
+        '''            sheet.VPageBreaks.Add(sheet.Range!D4) &apos;add [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_ControlAdjustingPageBreaks() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.ControlAdjustingPageBre"& _ 
+                        "aks", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file AgingReport.xlsx from resource
+        '''            Dim fileStream = GetResourceStream(&quot;AgingReport.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''
+        '''            &apos;Copy the active sheet to the end of current workbook
+        '''            Dim copy_worksheet = workbook.ActiveSheet.Copy()
+        '''            copy_worksheet.Name = &quot;Copy of &quot; &amp; workbook.ActiveSheet.Name
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_CopyWorksheet() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.CopyWorksheet", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Home inventory.xlsx from resource to the source workbook
+        '''            Dim source_workbook As New Excel.Workbook
+        '''            Dim source_fileStream = GetResourceStream(&quot;Home inventory.xlsx&quot;)
+        '''            source_workbook.Open(source_fileStream)
+        '''
+        '''            &apos;Copy content of active sheet from source workbook to the current workbook before the first sheet
+        '''            Dim copy_worksheet = source_workbook.ActiveSheet.CopyBefore(workbook.Worksheets(0))
+        '''            copy_workshe [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_CopyWorksheetBetweenWorkbooks() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.CopyWorksheetBetweenWor"& _ 
+                        "kbooks", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets.Add()
         '''            &apos;workbook must contain one visible worksheet at least, if delete the one visible worksheet, it will throw exception.
         '''            worksheet.Delete()
@@ -6224,6 +8047,41 @@ Namespace My.Resources
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_DeleteWorksheet() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.DeleteWorksheet", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file AgingReport.xlsx from resource
+        '''            Dim fileStream = GetResourceStream(&quot;AgingReport.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''
+        '''            &apos;Move the active sheet to the end of current workbook
+        '''            Dim move_worksheet = workbook.ActiveSheet.Move()
+        '''            move_worksheet.Name = &quot;Move of &quot; &amp; workbook.ActiveSheet.Name
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_MoveWorksheet() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.MoveWorksheet", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Home inventory.xlsx from resource to the source workbook
+        '''            Dim source_workbook As New Excel.Workbook
+        '''            Dim source_fileStream = GetResourceStream(&quot;Home inventory.xlsx&quot;)
+        '''            source_workbook.Open(source_fileStream)
+        '''
+        '''            &apos;Move content of active sheet from source workbook to the current workbook before the first sheet
+        '''            Dim move_worksheet = source_workbook.ActiveSheet.MoveBefore(workbook.Worksheets(0))
+        '''            move_workshe [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_MoveWorksheetBetweenWorkbooks() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.MoveWorksheetBetweenWor"& _ 
+                        "kbooks", resourceCulture)
             End Get
         End Property
         
@@ -6243,14 +8101,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Sex&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Bob&quot;, &quot;NewYork&quot;, #6/8/1968#, &quot;male&quot;, 80, 180},
         '''                {&quot;Betty&quot;, &quot;NewYork&quot;, #7/3/1972#, &quot;female&quot;, 72, 168},
         '''                {&quot;Gary&quot;, &quot;NewYork&quot;, #3/2/1964#, &quot;male&quot;, 71, 179},
         '''                {&quot;Hunk&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;male&quot;, 80, 171},
         '''                {&quot;Cherry&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;female&quot;, 58, 161},
-        '''                {&quot;Eva&quot;, &quot;Washington&quot;, #2/5/1993#, &quot;female&quot;, 71, [rest of string was truncated]&quot;;.
+        '''                {&quot;Eva&quot;, &quot;Washington&quot;, #2/5/1993#,  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_SaveWorksheetToCsvFile() As String
             Get
@@ -6260,14 +8118,14 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
-        '''            Dim data = {
+        '''            Dim data As Object(,) = {
         '''                {&quot;Name&quot;, &quot;City&quot;, &quot;Birthday&quot;, &quot;Sex&quot;, &quot;Weight&quot;, &quot;Height&quot;},
         '''                {&quot;Bob&quot;, &quot;NewYork&quot;, #6/8/1968#, &quot;male&quot;, 80, 180},
         '''                {&quot;Betty&quot;, &quot;NewYork&quot;, #7/3/1972#, &quot;female&quot;, 72, 168},
         '''                {&quot;Gary&quot;, &quot;NewYork&quot;, #3/2/1964#, &quot;male&quot;, 71, 179},
         '''                {&quot;Hunk&quot;, &quot;Washington&quot;, #8/8/1972#, &quot;male&quot;, 80, 171},
         '''                {&quot;Cherry&quot;, &quot;Washington&quot;, #2/2/1986#, &quot;female&quot;, 58, 161},
-        '''                {&quot;Eva&quot;, &quot;Washington&quot;, #2/5/1993#, &quot;female&quot;, 71, [rest of string was truncated]&quot;;.
+        '''                {&quot;Eva&quot;, &quot;Washington&quot;, #2/5/1993#,  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_SaveWorksheetToCsvFileWithOptions() As String
             Get
@@ -6279,8 +8137,8 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to 
         '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
-        '''            Dim stream As Stream = Me.GetResourceStream(&quot;logo.png&quot;)
-        '''            Dim imageBytes As Byte() = New Byte(stream.Length - 1) {}
+        '''            Dim stream As Stream = GetResourceStream(&quot;logo.png&quot;)
+        '''            Dim imageBytes As Byte() = New Byte(CInt(stream.Length) - 1) {}
         '''            stream.Read(imageBytes, 0, imageBytes.Length)
         '''            worksheet.BackgroundPicture = imageBytes
         '''        .
@@ -6288,6 +8146,30 @@ Namespace My.Resources
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_SetBackgroundImage() As String
             Get
                 Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.SetBackgroundImage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+        '''
+        '''            &apos; Add tag for worksheet
+        '''            worksheet.Tag = &quot;This is a Tag for sheet.&quot;
+        '''
+        '''            &apos; Add tag for range A1:B2
+        '''            worksheet.Range(&quot;A1:B2&quot;).Tag = &quot;This is a Tag for A1:B2&quot;
+        '''
+        '''            &apos; Add tag for row 4
+        '''            worksheet.Range(&quot;A4&quot;).EntireRow.Tag = &quot;This is a Tag for Row 4&quot;
+        '''
+        '''            &apos; Add tag for column F
+        '''            worksheet.Range(&quot;F5&quot;).EntireColumn.Tag = &quot;This is a Tag for Column F&quot;
+        '''
+        '''    [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Features_Worksheets_Tag() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Features.Worksheets.Tag", resourceCulture)
             End Get
         End Property
         
@@ -6415,6 +8297,534 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to 
+        '''            &apos;Load template file
+        '''            Dim fileStream = GetResourceStream(&quot;WebsiteFlowChart.xlsx&quot;)
+        '''            workbook.Open(fileStream)
+        '''        .
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_SpreadSheetsViewer_WebsiteFlowChart() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.SpreadSheetsViewer.WebsiteFlowChart", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_SalesDataGroup.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_SalesDataGroup.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Define custom classes&quot;
+        '''            &apos; Public Class SalesData
+        '''            &apos;     Public Records As List(Of SalesRecord)
+        '''            &apos; End Class
+        '''
+        '''            &apos; Public Class SalesRecord
+        '''            &apos;     Public Area As String
+        '''            &apos;     Public Salesman As String
+        '''            &apos;     Publ [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_DataSource_CustomObject() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.DataSource.CustomObject", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_Scores.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim team1 As New Data.DataTable
+        '''            With team1.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(New DataColu [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_DataSource_DataSet() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.DataSource.DataSet", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_Score.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource As New Data.DataTable
+        '''
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(N [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_DataSource_DataTable() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.DataSource.DataTable", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_FamilyInfo.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_FamilyInfo.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Define custom classes&quot;
+        '''            &apos;Public Class StudentInfos
+        '''            &apos;    Public student As List(Of StudentInfo)
+        '''            &apos;End Class
+        '''
+        '''            &apos;Public Class StudentInfo
+        '''            &apos;    Public name As String
+        '''            &apos;    Public address As String
+        '''            &apos;    Public family As  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_DataSource_JsonFile() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.DataSource.JsonFile", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_StudentInfo.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_StudentInfo.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Define custom classes&quot;
+        '''            &apos;Public Class StudentInfo
+        '''            &apos;    Public name As String
+        '''            &apos;    Public address As String
+        '''            &apos;    Public family As List(Of Family)
+        '''            &apos;End Class
+        '''#End Region
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim studentInfos As New List(Of  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_DataSource_Variable() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.DataSource.Variable", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_SetContext.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(New  [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_Properties_SetContext() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.Properties.SetContext", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_SetExpansionType.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Ad [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_Properties_SetExpansionType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.Properties.SetExpansionType", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_SetGroupType.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(Ne [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_Properties_SetGroupType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.Properties.SetGroupType", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_SetPagebreak.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(Ne [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_Properties_SetPagebreak() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.Properties.SetPagebreak", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_SetRange.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(New Da [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_Properties_SetRange() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.Properties.SetRange", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_SetSortType.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(New [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_Properties_SetSortType() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.Properties.SetSortType", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_CellStyle.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(New D [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_Style_CellStyle() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.Style.CellStyle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_MergeCell.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(New D [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_Style_MergeCell() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.Style.MergeCell", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_DataTemplate.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(Ne [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateCell_DataTemplate() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateCell.DataTemplate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_ExpressionTemplate.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                . [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateCell_ExpressionTemplate() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateCell.ExpressionTemplate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_FunctionTemplate.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Ad [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateCell_FunctionTemplate() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateCell.FunctionTemplate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_InlineTemplate.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add( [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateCell_InlineTemplate() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateCell.InlineTemplate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_SheetTemplate.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;ID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Name&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Score&quot;, GetType(Integer)))
+        '''                .Add(N [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateCell_SheetTemplate() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateCell.SheetTemplate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_DepartmentBudget.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_DepartmentBudget.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Define custom classes&quot;
+        '''            &apos; Friend Class Departments
+        '''            &apos;     Public dpt As List(Of Department)
+        '''            &apos; End Class
+        '''
+        '''            &apos; Friend Class Department
+        '''            &apos;     Public name As String
+        '''            &apos;     Public mgr As String
+        '''            &apos;     Public bu [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateSamples_DepartmentBudget() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateSamples.DepartmentBudget", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_FinancialDashboard.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource As New DataTable
+        '''
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;season&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;country&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;expect&quot;, GetType(Double)))
+        '''         [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateSamples_FinancialDashboard() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateSamples.FinancialDashboar"& _ 
+                        "d", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_PurchaseOrder.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Define custom classes&quot;
+        '''            &apos;Public Class PurchaseOrderBasicInfo
+        '''            &apos;    Public ID As String
+        '''            &apos;    Public OrderDate As Date
+        '''            &apos;    Public CreditTerms As String
+        '''            &apos;    Public PONumber As String
+        '''            &apos;    Public Ref As String
+        '''            &apos;    Pub [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateSamples_PurchaseOrder() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateSamples.PurchaseOrder", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_Sales.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource = New DataTable
+        '''
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;Area&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Salesman&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Product&quot;, GetType(String)))
+        '''                .Add(N [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateSamples_Sales() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateSamples.Sales", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_ShippingAndDeliveryOrder.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Define custom classes&quot;
+        '''            &apos;Friend Class PackingList
+        '''            &apos;    Public exporter As String
+        '''            &apos;    Public address_exporter As String
+        '''            &apos;    Public country_exporter As String
+        '''            &apos;    Public phonenumber_shipper As String
+        '''            &apos;    Public ship [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateSamples_ShippingAndDeliveryOrder() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateSamples.ShippingAndDelive"& _ 
+                        "ryOrder", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_TablixReport.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim datasource As New DataTable
+        '''            With datasource.Columns
+        '''                .Add(New DataColumn(&quot;OrderID&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Product&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;Sales&quot;, GetType(Double)))
+        '''                [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateSamples_TablixReport() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateSamples.TablixReport", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''            &apos;Load template file Template_Score.xlsx from resource
+        '''            Dim templateFile = GetResourceStream(&quot;xlsx\Template_Travel.xlsx&quot;)
+        '''            workbook.Open(templateFile)
+        '''
+        '''#Region &quot;Init Data&quot;
+        '''            Dim ds1 As New DataTable
+        '''            With ds1.Columns
+        '''                .Add(New DataColumn(&quot;Carrier&quot;, GetType(String)))
+        '''                .Add(New DataColumn(&quot;FlightNo&quot;, GetType(Integer)))
+        '''                .Add(New DataColumn(&quot;Date&quot;, GetType(Date)))
+        '''                .Add(New DataColumn(&quot; [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Templates_TemplateSamples_Travel() As String
+            Get
+                Return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.VB.Templates.TemplateSamples.Travel", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to 
         '''        Dim worksheet As IWorksheet = workbook.Worksheets(0)
         '''        &apos;-----------------------------Set Value------------------------------
         '''        worksheet.Range(&quot;B3:C7&quot;).Value = New Object(,)  {
@@ -6427,8 +8837,7 @@ Namespace My.Resources
         '''        worksheet.Range(&quot;B10:C23&quot;).Value = New Object(,)  {
         '''            {&quot;ITEM&quot;, &quot;AMOUNT&quot;},
         '''            {&quot;Rent/mortgage&quot;, 800},
-        '''            {&quot;Electric&quot;, 120},
-        '''        [rest of string was truncated]&quot;;.
+        '''          [rest of string was truncated]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property GrapeCity_Documents_Excel_Examples_VB_Tutorial() As String
             Get

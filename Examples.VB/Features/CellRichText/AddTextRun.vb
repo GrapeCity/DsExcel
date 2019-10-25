@@ -4,7 +4,7 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            Dim b2 As IRange = worksheet.Range("B2")
+            Dim b2 As IRange = worksheet.Range!B2
 
             Dim run1 As ITextRun = b2.RichText.Add("GrapeCity")
             run1.Font.Name = "Agency FB"

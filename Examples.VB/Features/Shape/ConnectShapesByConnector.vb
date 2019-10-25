@@ -6,7 +6,7 @@
 
             Dim ShapeBegin As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 1, 1, 100, 100)
             Dim EndBegin As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 200, 200, 100, 100)
-            Dim ConnectorShape As IShape = worksheet.Shapes.AddConnector(Drawing.ConnectorType.Straight, 1, 1, 101, 101)
+            Dim ConnectorShape As IShape = worksheet.Shapes.AddConnector(ConnectorType.Straight, 1, 1, 101, 101)
 
             'connect shapes by connector shape.
             ConnectorShape.ConnectorFormat.BeginConnect(ShapeBegin, 3)

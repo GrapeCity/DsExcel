@@ -8,13 +8,16 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            //Open csv with more settings.
-            CsvOpenOptions options = new CsvOpenOptions();
-            options.SeparatorString = "-";
+            //Open csv with custom delimiter.
+            CsvOpenOptions options = new CsvOpenOptions
+            {
+                ColumnSeparator = ",",
+                RowSeparator = "\r\n",
+                CellSeparator = '"'
+            };
 
             //Change the path to the real file path when open.
-            workbook.Open(this.CurrentDirectory + "source.csv", options);
-
+            workbook.Open(System.IO.Path.Combine(this.CurrentDirectory, "source.csv"), options);
         }
 
         public override bool CanDownload
@@ -32,7 +35,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
                 return false;
             }
         }
-        
     }
 
 }

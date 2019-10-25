@@ -2,7 +2,7 @@
     Public Class AddSlicersForTable
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
-            Dim sourceData = {
+            Dim sourceData As Object(,) = {
                 {"Order ID", "Product", "Category", "Amount", "Date", "Country"},
                 {1, "Carrots", "Vegetables", 4270, #1/6/2018#, "United States"},
                 {2, "Broccoli", "Vegetables", 8239, #1/7/2018#, "United Kingdom"},
@@ -35,5 +35,12 @@
             Dim slicer1 As ISlicer = cache.Slicers.Add(workbook.Worksheets("Sheet1"), "cate1", "Category", 30, 550, 100, 200)
             Dim slicer2 As ISlicer = cache.Slicers.Add(workbook.Worksheets("Sheet1"), "cate2", "Category", 30, 700, 100, 200)
         End Sub
+
+        Public Overrides ReadOnly Property SavePdf As Boolean
+            Get
+                Return True
+            End Get
+        End Property
     End Class
+
 End Namespace

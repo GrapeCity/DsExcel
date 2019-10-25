@@ -5,7 +5,7 @@ Namespace Features.Theme
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             'Base theme is office theme when not give parameter.
-            Dim theme As ITheme = New GrapeCity.Documents.Excel.Theme("testTheme")
+            Dim theme As ITheme = New Excel.Theme("testTheme")
 
             'ITheme theme = new Theme("testTheme", Themes.Badge)
             'Customize theme's color.
@@ -44,10 +44,10 @@ Namespace Features.Theme
             worksheet.Range!F7.Interior.ThemeColor = ThemeColor.Accent2
             worksheet.Range!F8.Interior.ThemeColor = ThemeColor.Accent3
             worksheet.Range!F9.Interior.ThemeColor = ThemeColor.Accent4
-            worksheet.Range("F10").Interior.ThemeColor = ThemeColor.Accent5
-            worksheet.Range("F11").Interior.ThemeColor = ThemeColor.Accent6
-            worksheet.Range("F12").Interior.ThemeColor = ThemeColor.Hyperlink
-            worksheet.Range("F13").Interior.ThemeColor = ThemeColor.FollowedHyperlink
+            worksheet.Range!F10.Interior.ThemeColor = ThemeColor.Accent5
+            worksheet.Range!F11.Interior.ThemeColor = ThemeColor.Accent6
+            worksheet.Range!F12.Interior.ThemeColor = ThemeColor.Hyperlink
+            worksheet.Range!F13.Interior.ThemeColor = ThemeColor.FollowedHyperlink
         End Sub
         Public Overrides ReadOnly Property IsUpdate As Boolean
             Get

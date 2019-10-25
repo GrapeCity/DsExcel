@@ -38,8 +38,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.CellRichText
 
             b2.EntireRow.RowHeight = 42;
         }
-
-        public override bool IsNew => true;
     }
 
 }

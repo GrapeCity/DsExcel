@@ -4,7 +4,7 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            Dim a1 As IRange = worksheet.Range("A1")
+            Dim a1 As IRange = worksheet.Range!A1
             a1.Value = "Perfect square trinomial"
 
             a1.Font.Size = 26
@@ -18,7 +18,7 @@
             run1.Font.Italic = True
             run1.Font.ThemeColor = ThemeColor.Accent1
 
-            Dim b1 As IRange = worksheet.Range("B1")
+            Dim b1 As IRange = worksheet.Range!B1
             b1.Font.Size = 22
             b1.EntireColumn.ColumnWidth = 40
             b1.Value = "(a+b)2 = a2+2ab+b2"

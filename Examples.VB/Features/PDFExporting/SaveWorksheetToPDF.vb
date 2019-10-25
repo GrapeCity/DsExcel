@@ -13,7 +13,7 @@ Namespace Features.PDFExporting
             sheet.Range!A1.Interior.Color = Color.Green
 
             'change the path to real export path when save.
-            sheet.Save(CurrentDirectory & "dest.pdf", SaveFileFormat.Pdf)
+            sheet.Save(IO.Path.Combine(CurrentDirectory, "dest.pdf"), SaveFileFormat.Pdf)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

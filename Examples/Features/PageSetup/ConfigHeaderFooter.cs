@@ -20,7 +20,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PageSetup
             //Set page headerfooter's graphic
             worksheet.PageSetup.CenterFooter = "&G";
             System.IO.Stream stream = this.GetResourceStream("logo.png");
-            worksheet.PageSetup.CenterFooterPicture.SetGraphicStream(stream, Drawing.ImageType.PNG);
+            worksheet.PageSetup.CenterFooterPicture.SetGraphicStream(stream, GrapeCity.Documents.Excel.Drawing.ImageType.PNG);
 
             //If you have picture resources locally, you can also set graphic in this way.
             //worksheet.PageSetup.CenterFooter = "&G";

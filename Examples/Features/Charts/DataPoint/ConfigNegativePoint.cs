@@ -24,7 +24,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts.DataPoint
             shape.Chart.SeriesCollection.Add(worksheet.Range["A1:D6"], GrapeCity.Documents.Excel.Drawing.RowCol.Columns, true, true);
             GrapeCity.Documents.Excel.Drawing.ISeries series1 = shape.Chart.SeriesCollection[0];
 
-            //if it is a negative point, it's color is red.
+            //if it is a negative point, it's color is accent4.
             series1.InvertIfNegative = true;
             series1.InvertColor.ObjectThemeColor = ThemeColor.Accent4;
 

@@ -74,7 +74,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_BasicSalesReport {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.BasicSalesReport", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.BasicSalesReport", resourceCulture);
             }
         }
         
@@ -94,7 +94,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_BidTracker {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.BidTracker", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.BidTracker", resourceCulture);
             }
         }
         
@@ -114,7 +114,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_BloodPressureTracker {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.BloodPressureTracker", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.BloodPressureTracker", resourceCulture);
             }
         }
         
@@ -132,7 +132,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_CostAnalysisWithParetoChart {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.CostAnalysisWithParetoChart", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.CostAnalysisWithParetoChart", resourceCulture);
             }
         }
         
@@ -150,7 +150,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_CustomerProfitabilityAnalysis {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.CustomerProfitabilityAnalysis", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.CustomerProfitabilityAnalysis", resourceCulture);
             }
         }
         
@@ -171,7 +171,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_MovieList {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.MovieList", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.MovieList", resourceCulture);
             }
         }
         
@@ -193,7 +193,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_PersonalAddressBook {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.PersonalAddressBook", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.PersonalAddressBook", resourceCulture);
             }
         }
         
@@ -214,7 +214,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_PersonalNetWorthCalculator {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.PersonalNetWorthCalculator", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.PersonalNetWorthCalculator", resourceCulture);
             }
         }
         
@@ -230,7 +230,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelReporting_ToDoListWithProgressTracker {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelReporting.ToDoListWithProgressTracker", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.ToDoListWithProgressTracker", resourceCulture);
             }
         }
         
@@ -251,7 +251,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelTemplates_AnnualFinancialReport {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelTemplates.AnnualFinancialReport", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.AnnualFinancialReport", resourceCulture);
             }
         }
         
@@ -274,7 +274,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelTemplates_BloodSugarTracker {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelTemplates.BloodSugarTracker", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.BloodSugarTracker", resourceCulture);
             }
         }
         
@@ -297,7 +297,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelTemplates_EventBudget {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelTemplates.EventBudget", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.EventBudget", resourceCulture);
             }
         }
         
@@ -321,7 +321,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelTemplates_FinancialKPIs {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelTemplates.FinancialKPIs", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.FinancialKPIs", resourceCulture);
             }
         }
         
@@ -343,7 +343,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelTemplates_IncomeStatement {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelTemplates.IncomeStatement", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.IncomeStatement", resourceCulture);
             }
         }
         
@@ -364,7 +364,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelTemplates_MonthlyBusinessBudget {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelTemplates.MonthlyBusinessBudget", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.MonthlyBusinessBudget", resourceCulture);
             }
         }
         
@@ -385,7 +385,7 @@ namespace GrapeCity.Documents.Excel.Examples {
         /// </summary>
         internal static string GrapeCity_Documents_Excel_Examples_ExcelTemplates_SimpleInvoice {
             get {
-                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.ExcelTemplates.SimpleInvoice", resourceCulture);
+                return ResourceManager.GetString("GrapeCity.Documents.Excel.Examples.Showcase.SimpleInvoice", resourceCulture);
             }
         }
         

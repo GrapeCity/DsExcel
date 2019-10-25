@@ -26,7 +26,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Worksheets
             sheet.Tables.Add(sheet.Range["A1:F7"], true);
 
             //Change the path to real export path when save.
-            sheet.Save(this.CurrentDirectory + "dest.csv", SaveFileFormat.Csv);
+            sheet.Save(System.IO.Path.Combine(this.CurrentDirectory, "dest.csv"), SaveFileFormat.Csv);
 
         }
 

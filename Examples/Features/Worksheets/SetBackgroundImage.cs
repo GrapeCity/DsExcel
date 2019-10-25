@@ -27,7 +27,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Worksheets
             }
         }
 
-        public override bool IsNew => true;
         public override string[] UsedResources
         {
             get

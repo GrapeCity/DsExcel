@@ -1,5 +1,4 @@
-﻿Imports System.Reflection
-Namespace Features.PDFExporting
+﻿Namespace Features.PDFExporting
     Public Class SavePictureToPDF
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)

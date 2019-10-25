@@ -24,7 +24,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             var fonts = workbook.GetUsedFonts();
 
             //change the path to real export path when save.
-            sheet.Save(this.CurrentDirectory + "dest.pdf", SaveFileFormat.Pdf);
+            sheet.Save(System.IO.Path.Combine(this.CurrentDirectory, "dest.pdf"), SaveFileFormat.Pdf);
         }
 
         public override bool CanDownload
@@ -42,6 +42,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
                 return false;
             }
         }
-        
+
     }
 }

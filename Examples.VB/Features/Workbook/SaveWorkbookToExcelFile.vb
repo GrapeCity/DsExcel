@@ -3,7 +3,7 @@
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             'change the path to real export path when save.
-            workbook.Save(CurrentDirectory & "dest.xlsx", SaveFileFormat.Xlsx)
+            workbook.Save(IO.Path.Combine(CurrentDirectory, "dest.xlsx"), SaveFileFormat.Xlsx)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

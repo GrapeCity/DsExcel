@@ -5,7 +5,7 @@
             'ToJson&FromJson can be used in combination with spread.sheets product:http://spread.grapecity.com/spreadjs/sheets/
             'GrapeCity Documents for Excel import an excel file.
             'change the path to real source file path.
-            Dim source As String = CurrentDirectory & "source.xlsx"
+            Dim source As String = IO.Path.Combine(CurrentDirectory, "source.xlsx")
             workbook.Open(source)
 
             'GrapeCity Documents for Excel export to a json string.
@@ -19,7 +19,7 @@
 
             'GrapeCity Documents for Excel export workbook to an excel file.
             'change the path to real export file path.
-            Dim export As String = CurrentDirectory & "export.xlsx"
+            Dim export As String = IO.Path.Combine(CurrentDirectory, "export.xlsx")
 
             workbook.Save(export)
         End Sub

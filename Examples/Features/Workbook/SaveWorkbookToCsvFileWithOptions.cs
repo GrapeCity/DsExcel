@@ -24,16 +24,19 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
             sheet.Range["A1:F7"].Value = data;
             sheet.Tables.Add(sheet.Range["A1:F7"], true);
 
-            //Save csv options
-            CsvSaveOptions options = new CsvSaveOptions();
-            options.SeparatorString = "-";
+            //Save csv options with custom delimiter
+            CsvSaveOptions options = new CsvSaveOptions
+            {
+                ColumnSeparator = "-",
+                RowSeparator = "\r\n",
+                CellSeparator = '"'
+            };
 
             //Change the path to real export path when save.
-            workbook.Save(this.CurrentDirectory + "dest.csv", options);
-
+            workbook.Save(System.IO.Path.Combine(this.CurrentDirectory, "dest.csv"), options);
         }
-
-        public override bool CanDownload
+        
+        public override bool ShowViewer
         {
             get
             {
@@ -41,7 +44,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
             }
         }
 
-        public override bool ShowViewer
+        public override bool CanDownload
         {
             get
             {

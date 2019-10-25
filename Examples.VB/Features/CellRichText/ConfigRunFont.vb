@@ -4,7 +4,7 @@
         Public Overrides Sub Execute(workbook As Excel.Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            Dim a2 As IRange = worksheet.Range("A2")
+            Dim a2 As IRange = worksheet.Range!A2
             a2.Font.Size = 18
             a2.Font.Bold = True
             a2.VerticalAlignment = VerticalAlignment.Center
@@ -16,7 +16,7 @@
             run1.Font.Italic = True
             run1.Font.ThemeColor = ThemeColor.Accent1
 
-            Dim b2 As IRange = worksheet.Range("B2")
+            Dim b2 As IRange = worksheet.Range!B2
             b2.Font.Size = 26
             b2.EntireColumn.ColumnWidth = 60
 

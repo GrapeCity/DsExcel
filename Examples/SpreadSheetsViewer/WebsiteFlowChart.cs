@@ -37,8 +37,6 @@ namespace GrapeCity.Documents.Excel.Examples.SpreadSheetsViewer
                 return false;
             }
         }
-
-        public override bool IsNew => true;
         
         public override bool CanDownloadZip => false;
 

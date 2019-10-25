@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GrapeCity.Documents.Excel.Examples.Features.Charts.Axes
 {
-   public class ConfigValueAxesFormat:ExampleBase
+    public class ConfigValueAxesFormat : ExampleBase
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
@@ -30,5 +30,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts.Axes
             value_axis.Format.Line.Style = GrapeCity.Documents.Excel.Drawing.LineStyle.Single;
 
         }
-        }
     }
+}

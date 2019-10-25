@@ -23,13 +23,15 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Worksheets
             IWorksheet sheet = workbook.Worksheets[0];
             sheet.Range["A1:F7"].Value = data;
             sheet.Tables.Add(sheet.Range["A1:F7"], true);
-         
+
             //Save csv options
-            CsvSaveOptions options = new CsvSaveOptions();
-            options.SeparatorString = "-";
+            CsvSaveOptions options = new CsvSaveOptions
+            {
+                ColumnSeparator = "-"
+            };
 
             //Change the path to real export path when save.
-            sheet.Save(this.CurrentDirectory + "dest.csv", options);
+            sheet.Save(System.IO.Path.Combine(this.CurrentDirectory, "dest.csv"), options);
 
         }
 

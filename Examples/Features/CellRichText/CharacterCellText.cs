@@ -36,7 +36,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.CellRichText
             run4.Font.Color = System.Drawing.Color.Blue;
             run4.Font.Bold = true;
         }
-
-        public override bool IsNew => true;
     }
 }

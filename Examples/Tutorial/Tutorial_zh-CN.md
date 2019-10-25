@@ -1,17 +1,17 @@
 ﻿# 介绍
 
-在本教程中, 我们将会通过一个真实的使用场景，来让大家对Sprea表格组件能够做什么有一个基础的了解，并且在教程的最后一步，你将会得到一个用Spread表格组件生成的Excel文件，这个文件可以用来分析你的月度收入和支出。
+在本教程中, 我们将会通过一个真实的使用场景，来让大家对GcExcel能够做什么有一个基础的了解，并且在教程的最后一步，你将会得到一个用GcExcel生成的Excel文件，这个文件可以用来分析你的月度收入和支出。
 
 ## 准备
 
-1. 安装[.NET Core](https://www.microsoft.com/net/core). 虽然在本教程中我们使用.NET Core, 但你可以用类似的方式在.NET Framework和Mono中去使用Spread表格组件.
+1. 安装[.NET Core](https://www.microsoft.com/net/core). 虽然在本教程中我们使用.NET Core, 但你可以用类似的方式在.NET Framework和Mono中去使用GcExcel.
 
 2. 在**Visual Studio 2017**中创建一个.NET Core的控制台程序或者更简单的方式是使用下面的**dotnet CLI**.
 > ```csharp
 > dotnet new console
 > ```
 
-3. 安装**Spread表格组件** NuGet包:
+3. 安装**GcExcel** NuGet包:
 > **Visual Studio**
 > - 鼠标右键单击工程文件, 选择 "管理NuGet程序包..."。
 > - 选择**nuget.org**作为程序包源, 然后搜索"GrapeCity.Documents.Excel"，最后点击安装。
@@ -35,7 +35,7 @@ using GrapeCity.Documents.Excel.Drawing;
 
 ## 创建工作簿
 
-通过Spread表格组件来生成一个Excel文件的第一步就是先创建一个工作簿实例。
+通过GcExcel来生成一个Excel文件的第一步就是先创建一个工作簿实例。
 
 ```csharp
 Workbook workbook = new Workbook();
@@ -44,7 +44,7 @@ IWorksheet worksheet = workbook.Worksheets[0];
 
 ## 初始化数据
 
-在给**Spread表格组件**设置大量数据时, 需要先准备一个填充好的二维数组，然后将这个二维数组赋值给需要设置数据的区域。
+在给**GcExcel**设置大量数据时, 需要先准备一个填充好的二维数组，然后将这个二维数组赋值给需要设置数据的区域。
 
 ```csharp
 worksheet.Range["B3:C7"].Value = new object[,]
@@ -194,7 +194,7 @@ worksheet.Range["E3:F3"].Borders.Color = Color.FromArgb(32, 61, 64);
 
 ## 添加条件格式
 
-Spread表格组件支持Excel所有类型的条件格式，在这里我们会创建一个渐变的数据条条件格式用以可视化地展示支出收入比，并将它设置为只显示数据条而不显示单元格的值。
+GcExcel支持Excel所有类型的条件格式，在这里我们会创建一个渐变的数据条条件格式用以可视化地展示支出收入比，并将它设置为只显示数据条而不显示单元格的值。
 
 ```csharp
 IDataBar dataBar = worksheet.Range["E3"].FormatConditions.AddDatabar();

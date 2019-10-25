@@ -2,7 +2,7 @@
     Public Class SaveWorkbookToCsvFileWithOptions
         Inherits ExampleBase
         Public Overrides Sub Execute(workbook As Excel.Workbook)
-            Dim data = {
+            Dim data As Object(,) = {
                 {"Name", "City", "Birthday", "Sex", "Weight", "Height"},
                 {"Bob", "NewYork", #6/8/1968#, "male", 80, 180},
                 {"Betty", "NewYork", #7/3/1972#, "female", 72, 168},
@@ -18,11 +18,12 @@
             sheet.Tables.Add(sheet.Range("A1:F7"), True)
 
             'Save csv options
-            Dim options As New CsvSaveOptions
-            options.SeparatorString = "-"
+            Dim options As New CsvSaveOptions With {
+                .ColumnSeparator = "-"
+            }
 
             'Change the path to real export path when save.
-            workbook.Save(CurrentDirectory & "dest.csv", options)
+            workbook.Save(IO.Path.Combine(CurrentDirectory, "dest.csv"), options)
         End Sub
         Public Overrides ReadOnly Property CanDownload As Boolean
             Get

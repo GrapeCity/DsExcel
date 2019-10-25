@@ -5,7 +5,7 @@
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
             Dim shape As IShape = worksheet.Shapes.AddShape(AutoShapeType.Parallelogram, 1, 1, 200, 100)
-            shape.Fill.PresetTextured(Drawing.PresetTexture.Canvas)
+            shape.Fill.PresetTextured(PresetTexture.Canvas)
             shape.Fill.TextureAlignment = TextureAlignment.Center
             shape.Fill.TextureOffsetX = 2.5
             shape.Fill.TextureOffsetY = 3.2
