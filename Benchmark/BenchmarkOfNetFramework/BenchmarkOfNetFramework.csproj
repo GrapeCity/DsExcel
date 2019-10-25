@@ -33,11 +33,38 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GrapeCity.Documents.Excel, Version=2.1.1.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
-      <HintPath>packages\GrapeCity.Documents.Excel.2.1.1\lib\netstandard2.0\GrapeCity.Documents.Excel.dll</HintPath>
+    <Reference Include="GrapeCity.DataVisualization.Chart, Version=0.3.242.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
+      <HintPath>packages\GrapeCity.Documents.DataVisualization.Chart.0.3.242\lib\netstandard2.0\GrapeCity.DataVisualization.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.DataVisualization.TypeScript, Version=0.3.242.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
+      <HintPath>packages\GrapeCity.Documents.DataVisualization.TypeScript.0.3.242\lib\netstandard2.0\GrapeCity.DataVisualization.TypeScript.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Documents.Common, Version=3.0.0.414, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>packages\GrapeCity.Documents.Common.3.0.0.414\lib\net461\GrapeCity.Documents.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Documents.Excel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
+      <HintPath>packages\GrapeCity.Documents.Excel.3.0.0\lib\net461\GrapeCity.Documents.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Documents.Imaging, Version=3.0.0.414, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>packages\GrapeCity.Documents.Imaging.3.0.0.414\lib\net461\GrapeCity.Documents.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Documents.Pdf, Version=3.0.0.414, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>packages\GrapeCity.Documents.Pdf.3.0.0.414\lib\net461\GrapeCity.Documents.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.0\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
