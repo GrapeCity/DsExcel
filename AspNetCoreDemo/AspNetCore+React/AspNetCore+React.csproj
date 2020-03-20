@@ -3,11 +3,11 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <IsPackable>false</IsPackable>
-    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="3.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="3.0.0" />
   </ItemGroup>
   <ItemGroup>
     <!-- Files not to show in IDE -->

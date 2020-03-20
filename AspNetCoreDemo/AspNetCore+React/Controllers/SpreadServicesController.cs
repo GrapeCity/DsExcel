@@ -21,10 +21,15 @@ namespace SpreadService.WebApi.Controllers
         [HttpPost]
         public IActionResult ImportExcel()
         {
-            Workbook workbook = new Workbook();
-            workbook.Open(Request.Body);
-            var ssjson = workbook.ToJson();
-            return Ok(ssjson);
+            Workbook workbook = new Workbook();;
+            using (var mem = new MemoryStream())
+            {
+                Request.Body.CopyTo(mem);
+                mem.Seek(0, SeekOrigin.Begin);
+                workbook.Open(mem);
+                var ssjson = workbook.ToJson();
+                return Ok(ssjson);
+            }
         }
 
         [HttpPost]

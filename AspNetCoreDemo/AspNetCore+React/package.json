@@ -32,5 +32,9 @@
     "webpack-hot-middleware": "2.18.0",
     "copy-webpack-plugin": "^4.0.1",
     "react-select": "1.2.1"
+  },
+  "dependencies": {
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.3"
   }
 }

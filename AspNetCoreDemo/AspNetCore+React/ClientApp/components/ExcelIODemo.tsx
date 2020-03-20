@@ -70,7 +70,7 @@ export class ExcelIODemo extends React.Component<{}, {}> {
 
     componentDidMount() {
         this.spread = new GC.Spread.Sheets.Workbook(document.getElementById('spreadjs'), {
-            seetCount: 1
+            sheetCount: 1
         });
 
        var sheet = this.spread.getActiveSheet();
