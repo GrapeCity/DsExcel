@@ -27,13 +27,5 @@
 
             targetRange.AutoFit();
         }
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
-
 }

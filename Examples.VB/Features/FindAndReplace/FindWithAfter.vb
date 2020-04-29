@@ -23,11 +23,5 @@
                 misspelledCell.Interior.Color = System.Drawing.Color.Red
             Loop
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

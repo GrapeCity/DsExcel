@@ -77,13 +77,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts
                 return new string[] { "logo.png" };
             }
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

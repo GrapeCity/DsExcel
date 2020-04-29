@@ -21,14 +21,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.ExportChart
             shape.Chart.Legend.Position = GrapeCity.Documents.Excel.Drawing.LegendPosition.Right;
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool SavePdf
         {
             get

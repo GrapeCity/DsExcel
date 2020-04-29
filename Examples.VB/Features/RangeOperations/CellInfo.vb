@@ -31,10 +31,5 @@ Namespace Features.RangeOperations
             rowIndex = Excel.CellInfo.RowNameToIndex("5")
             worksheet.Rows(rowIndex).Interior.Color = Color.LightSkyBlue
         End Sub
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.TemplateSamples
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            //Load template file Template_Score.xlsx from resource
+            //Load template file from resource
             var templateFile = this.GetResourceStream("xlsx\\Template_Travel.xlsx");
             workbook.Open(templateFile);
 
@@ -68,6 +68,9 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.TemplateSamples
             ds4.Rows.Add("Rayna James", "19234222456", "ratna.james@deloz.com");
             #endregion
 
+            //Init template global settings
+            workbook.Names.Add("TemplateOptions.KeepLineSize", "true");
+
             //Add data source
             workbook.AddDataSource("ds1", ds1);
             workbook.AddDataSource("ds2", ds2);
@@ -76,20 +79,20 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.TemplateSamples
             //Invoke to process the template
             workbook.ProcessTemplate();
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
+        
         public override string TemplateName
         {
             get
             {
                 return "Template_Travel.xlsx";
+            }
+        }
+
+        public override bool ShowTemplate
+        {
+            get
+            {
+                return true;
             }
         }
 

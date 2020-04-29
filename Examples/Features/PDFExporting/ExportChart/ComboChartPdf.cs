@@ -45,14 +45,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.ExportChart
             value_second_axis.MajorUnit = 75;
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool SavePdf
         {
             get

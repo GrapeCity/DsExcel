@@ -56,11 +56,5 @@ Namespace Features.PDFExporting.PrintManager
                 Return False
             End Get
         End Property
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

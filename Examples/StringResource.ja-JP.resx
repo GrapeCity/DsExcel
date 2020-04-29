@@ -2779,16 +2779,16 @@ The examples in this folder demonstrate the following cases:
     <comment>Render excel ranges inside a pdfAdvanced usage)</comment>
   </data>
   <data name="ConvertRangeToImage.Name" xml:space="preserve">
-    <value>Convert range to image</value>
+    <value />
     <comment>Convert range to image</comment>
   </data>
   <data name="ConvertShapeToImage.Name" xml:space="preserve">
-    <value>Convert shape to image</value>
+    <value />
     <comment>Convert shape to image</comment>
   </data>
-  <data name="ConvertSheetToImage.Name" xml:space="preserve">
-    <value>Convert sheet to image</value>
-    <comment>Convert sheet to image</comment>
+  <data name="ExportSheetToImage.Name" xml:space="preserve">
+    <value />
+    <comment>Convert sheet to image from existing file</comment>
   </data>
   <data name="SaveSheetBackgroundToPDF.Name" xml:space="preserve">
     <value>シートの背景画像をエクスポート</value>
@@ -2997,7 +2997,8 @@ GrapeCity Documents for Excel supports exporting charts to PDF file.
     <value>Column Chart</value>
   </data>
   <data name="ComboChartPdf.Name" xml:space="preserve">
-    <value>Combo Chart</value>
+    <value />
+    <comment>Combo Chart</comment>
   </data>
   <data name="LineChartPdf.Name" xml:space="preserve">
     <value>Line Chart</value>
@@ -3154,7 +3155,8 @@ The examples in this folder demonstrate how to create cell types. Following cell
     <value>Export column chart to PDF file</value>
   </data>
   <data name="ComboChartPdf.Descrip" xml:space="preserve">
-    <value>Export combo chart to PDF file</value>
+    <value />
+    <comment>Export combo chart to PDF file</comment>
   </data>
   <data name="ConfigAdjustmentPoints.Descrip" xml:space="preserve">
     <value>Use IShape.Adjustments to get/set adjustment points for shapes.</value>
@@ -3352,9 +3354,11 @@ GcExcelは** "{{" **および** "}}" **をテンプレートタグとして使�
 
 -**データテンプレート：**データフィールドを表すテンプレート
 -**関数テンプレート：**関数を表すテンプレート
+-**フォーミュラ：**数式を表すテンプレートで、テンプレート処理後に数式として残ります
 -**式テンプレート：**式のテンプレートを表します
 -**インラインテンプレート：**テキストのインラインテンプレート
--**ワークシートテンプレート：**ワークシート名のテンプレート</value>
+-**ワークシートテンプレート：**ワークシート名のテンプレート
+-**イメージテンプレート：**画像を表すテンプレートで、生成されたレポートに画像として表示されます</value>
     <comment>## Template cell
 GcExcel use **“{{”** and **“}}”** as markers of template.
 
@@ -3364,9 +3368,11 @@ The template supports kinds of template cells:
 
 - **data template:** a template representing a data field
 - **function template:** a template representing a function
+- **formula template:** a template representing a formula, and will be remained as formula after template processing
 - **expression template:** a template representing an expression
 - **inline template:** inline template for use with text
-- **sheet template:** template in the sheet name</comment>
+- **sheet template:** template in the sheet name
+- **image template:** a template representing an image, and will be shown as image in the generated report</comment>
   </data>
   <data name="TemplateCell.Name" xml:space="preserve">
     <value>テンプレートセル</value>
@@ -3514,5 +3520,534 @@ In the specified range, if a template cell has no default context nor explicit c
   <data name="DepartmentBudget.Name" xml:space="preserve">
     <value>部門予算</value>
     <comment>Department Budget</comment>
+  </data>
+  <data name="ProtectWorksheetWithPassword.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to protect a worksheet with a password.</comment>
+  </data>
+  <data name="ProtectWorksheetWithPassword.Name" xml:space="preserve">
+    <value />
+    <comment>Protect worksheet with password</comment>
+  </data>
+  <data name="UnprotectWorksheetWithPassword.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to unprotect the worksheet with a password.</comment>
+  </data>
+  <data name="UnprotectWorksheetWithPassword.Name" xml:space="preserve">
+    <value />
+    <comment>Unprotect worksheet with password</comment>
+  </data>
+  <data name="ExportShapeToImage.Name" xml:space="preserve">
+    <value />
+    <comment>Convert shape to image from existing file</comment>
+  </data>
+  <data name="ConvertChartToImage.Name" xml:space="preserve">
+    <value />
+    <comment>Convert chart to image</comment>
+  </data>
+  <data name="ExportChartToImage.Name" xml:space="preserve">
+    <value />
+    <comment>Convert chart to image from existing file</comment>
+  </data>
+  <data name="ExportRangeToImage.Name" xml:space="preserve">
+    <value />
+    <comment>Convert range to image from existing file</comment>
+  </data>
+  <data name="ToJsonFromJsonForWorksheet.Descrip" xml:space="preserve">
+    <value>Jsonとして単一のワークシートをインポートまたはエクスポートする方法については、次のサンプルコードを参照してください</value>
+    <comment>Refer to the following example code to see how to import and export json for a single worksheet.</comment>
+  </data>
+  <data name="ToJsonFromJsonForWorksheet.Name" xml:space="preserve">
+    <value>Jsonのインポート/エクスポート</value>
+    <comment>ToJson and FromJson</comment>
+  </data>
+  <data name="SaveBackgroundPicturesToPDF.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to export background pictures to pdf.</comment>
+  </data>
+  <data name="SaveBackgroundPicturesToPDF.Name" xml:space="preserve">
+    <value />
+    <comment>Save background pictures to pdf</comment>
+  </data>
+  <data name="ConfigChartTitleAngle.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure text angle of a chart title.</comment>
+  </data>
+  <data name="ConfigChartTitleAngle.Name" xml:space="preserve">
+    <value />
+    <comment>Set angle of chart title</comment>
+  </data>
+  <data name="ConfigCustomErrorBar.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure a custom type error bar of chart.</comment>
+  </data>
+  <data name="ConfigCustomErrorBar.Name" xml:space="preserve">
+    <value />
+    <comment>Custom type</comment>
+  </data>
+  <data name="ConfigDataLabelAngle.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure text angle of data labels.</comment>
+  </data>
+  <data name="ConfigDataLabelAngle.Name" xml:space="preserve">
+    <value />
+    <comment>Set angle of data labels</comment>
+  </data>
+  <data name="ConfigDeleteErrorBar.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to delete an error bar of chart.</comment>
+  </data>
+  <data name="ConfigDeleteErrorBar.Name" xml:space="preserve">
+    <value />
+    <comment>Delete error bar</comment>
+  </data>
+  <data name="ConfigErrorBarIncludeAndEndType.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure include type and end cap type of error bar.</comment>
+  </data>
+  <data name="ConfigErrorBarIncludeAndEndType.Name" xml:space="preserve">
+    <value />
+    <comment>Set include type and end cap type</comment>
+  </data>
+  <data name="ConfigErrorBarStyle.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure error bar's style.</comment>
+  </data>
+  <data name="ConfigErrorBarStyle.Name" xml:space="preserve">
+    <value />
+    <comment>Style</comment>
+  </data>
+  <data name="ConfigFixedValueErrorBar.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure a fixed value type error bar of chart.</comment>
+  </data>
+  <data name="ConfigFixedValueErrorBar.Name" xml:space="preserve">
+    <value />
+    <comment>Fixed value type</comment>
+  </data>
+  <data name="ConfigPercentageErrorBar.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure a percentage type error bar of chart.</comment>
+  </data>
+  <data name="ConfigPercentageErrorBar.Name" xml:space="preserve">
+    <value />
+    <comment>Percentage type</comment>
+  </data>
+  <data name="ConfigStdErrErrorBar.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure a standard error type error bar of chart.</comment>
+  </data>
+  <data name="ConfigStdErrErrorBar.Name" xml:space="preserve">
+    <value />
+    <comment>Standard error type</comment>
+  </data>
+  <data name="ConfigStDevErrorBar.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure a standard deviation type error bar of chart.</comment>
+  </data>
+  <data name="ConfigStDevErrorBar.Name" xml:space="preserve">
+    <value />
+    <comment>Standard deviation type</comment>
+  </data>
+  <data name="ConfigTickMarkLabelAngle.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure the tick labels' angle of axis.</comment>
+  </data>
+  <data name="ConfigTickMarkLabelAngle.Name" xml:space="preserve">
+    <value />
+    <comment>Set angle of tick mark labels</comment>
+  </data>
+  <data name="ConfigXYErrorBars.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to configure X and Y direction error bar of scatter or bubble chart.</comment>
+  </data>
+  <data name="ConfigXYErrorBars.Name" xml:space="preserve">
+    <value />
+    <comment>X and Y direction</comment>
+  </data>
+  <data name="ErrorBars.Descrip" xml:space="preserve">
+    <value />
+    <comment>## ErrorBars
+These examples demonstrate how to configure chart **error bars**.</comment>
+  </data>
+  <data name="ErrorBars.Name" xml:space="preserve">
+    <value />
+    <comment>Error bars</comment>
+  </data>
+  <data name="ConfigGradientFillWithPathShape.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to set different path type of gradient fill.</comment>
+  </data>
+  <data name="ConfigGradientFillWithPathShape.Name" xml:space="preserve">
+    <value />
+    <comment>Set gradient path type</comment>
+  </data>
+  <data name="PrintTransparentCell.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to print the transparency of the cell's background colors.</comment>
+  </data>
+  <data name="PrintTransparentCell.Name" xml:space="preserve">
+    <value />
+    <comment>Print transparent cell</comment>
+  </data>
+  <data name="SetPickTrayByPDFSizeOptionToPDF.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to control whether the PDF page size is used to select the input paper tray when printing.</comment>
+  </data>
+  <data name="SetPickTrayByPDFSizeOptionToPDF.Name" xml:space="preserve">
+    <value />
+    <comment>Set PickTrayByPDFSize option for PDF document</comment>
+  </data>
+  <data name="GetPaginationInfo.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to getget an array of page boundaries of a sheet for vertical or horizontal paging in GcExcel.</comment>
+  </data>
+  <data name="GetPaginationInfo.Name" xml:space="preserve">
+    <value />
+    <comment>Get the horizontal or vertical pagination infos</comment>
+  </data>
+  <data name="OutlineColumn.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to add the outline column for the worksheet to display the data in tree structure.</comment>
+  </data>
+  <data name="OutlineColumn.Name" xml:space="preserve">
+    <value />
+    <comment>Outline column</comment>
+  </data>
+  <data name="DisplayUnitLabelPdf.Descrip" xml:space="preserve">
+    <value />
+    <comment>Export axis display unit label to PDF file</comment>
+  </data>
+  <data name="DisplayUnitLabelPdf.Name" xml:space="preserve">
+    <value />
+    <comment>Axis display unit label</comment>
+  </data>
+  <data name="SunburstChartPdf.Descrip" xml:space="preserve">
+    <value />
+    <comment>Export sunburst chart to PDF file</comment>
+  </data>
+  <data name="SunburstChartPdf.Name" xml:space="preserve">
+    <value />
+    <comment>Sunburst chart</comment>
+  </data>
+  <data name="TreemapChartPdf.Descrip" xml:space="preserve">
+    <value />
+    <comment>Export treemap chart to PDF file</comment>
+  </data>
+  <data name="TreemapChartPdf.Name" xml:space="preserve">
+    <value />
+    <comment>Treemap chart</comment>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Descrip" xml:space="preserve">
+    <value />
+    <comment>Export axis label number format to PDF file</comment>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Name" xml:space="preserve">
+    <value />
+    <comment>Axis label number format</comment>
+  </data>
+  <data name="ErrorbarPdf.Descrip" xml:space="preserve">
+    <value />
+    <comment>Export error bars to PDF file</comment>
+  </data>
+  <data name="ErrorbarPdf.Name" xml:space="preserve">
+    <value />
+    <comment>Error bars</comment>
+  </data>
+  <data name="TrendlinePdf.Descrip" xml:space="preserve">
+    <value />
+    <comment>Export trendline to PDF file</comment>
+  </data>
+  <data name="TrendlinePdf.Name" xml:space="preserve">
+    <value />
+    <comment>Trendline</comment>
+  </data>
+  <data name="FormulaTemplate.Descrip" xml:space="preserve">
+    <value>式からなるテンプレートでデータをバインドします。そして、これらの式は残って、拡大されたデータを参照します。</value>
+    <comment>Bind data with a template which consists of formulas. And these formulas will be remained and refer to the expanded data.</comment>
+  </data>
+  <data name="FormulaTemplate.Name" xml:space="preserve">
+    <value>フォーミュラ</value>
+    <comment>Formula template</comment>
+  </data>
+  <data name="SetShapeTextAlignment.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to set the horizontal and vertical alignment of the shape's text in GcExcel.</comment>
+  </data>
+  <data name="SetShapeTextAlignment.Name" xml:space="preserve">
+    <value />
+    <comment>Set alignment of shape's text</comment>
+  </data>
+  <data name="ShapeWithTextAlignment.Descrip" xml:space="preserve">
+    <value />
+    <comment>GcExcel can export shape text with alignment to PDF file.</comment>
+  </data>
+  <data name="ShapeWithTextAlignment.Name" xml:space="preserve">
+    <value />
+    <comment>Shape with text alignment</comment>
+  </data>
+  <data name="OutlineColumnToPDF.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to export the outline column of the worksheet to PDF file.</comment>
+  </data>
+  <data name="OutlineColumnToPDF.Name" xml:space="preserve">
+    <value />
+    <comment>Export outline column</comment>
+  </data>
+  <data name="GlobalOptions.Descrip" xml:space="preserve">
+    <value>##グローバルオプション
+この機能は、ユーザーがGCExcelテンプレートの既定の動作を制御するためのグローバルオプションを提供します。
+
+GCExcelはいくつかの組み込みのブックを定義し、テンプレートのグローバルオプションの名前を定義します。
+現在、これらのオプションはワークブックで定義された名前でのみサポートされます。したがって、ユーザーは、この機能を使用するとき、それらの範囲に注意しなければなりません。
+つまり、複数のワークシートのテンプレートは同じ動作をします。
+
+ユーザーが追加/編集/これらの組み込み定義された名前を直接Excelファイル、またはGCExcel APIを介して削除することができます。
+
+組み込みの定義された名前のnameプロパティの値は、テンプレートグローバルオプションの名前として扱われます。
+組み込みの定義された名前のreferstoプロパティの値は、テンプレートグローバルオプションの値として扱われます。
+オプション名は大文字小文字を区別しません。
+
+テンプレートはグローバルオプションの種類をサポートします。
+- **TemplateOptions.KeepLineSize:** Boolean型。値は**True**、または**False**(デフォルト)。
+テンプレートの処理時に行の高さと列の幅を維持するかどうか。
+- **TemplateOptions.InsertMode:** 文字列型。 値は**Cells**(デフォルト)または**EntireRowColumn**です。
+GCExcelがテンプレートを展開している間に余分なスペースが必要な場合、セルまたは全体の行＆列を挿入するかどうか。</value>
+    <comment>## Global options
+This feature provide a global options for user to control the default behaviors of GcExcel Template. 
+
+GcExcel defines some built-in workbook defined names for the global options of template.
+Currently, these options only be supported in Workbook Defined Names. So, user should take care on the scope of them when using this feature.
+That is, templates in multiple worksheets will behave the same. 
+
+User can add/edit/delete these built-in defined names directly in Excel file, or via GcExcel APIs.
+
+The value of Name property in built-in defined name will be taken as the template global option's name.
+The value of RefersTo property in built-in defined name will be taken as the template global option's value.
+The option name is case-sensitive, while the option value is case-insensitive.
+
+The template supports kinds of global options:
+
+- **TemplateOptions.KeepLineSize:** Boolean. The value can be **True** or **False**(Default).
+Whether the row height and column width should be keep when processing template.
+- **TemplateOptions.InsertMode:** String. The value can be **Cells**(Default) or **EntireRowColumn**.
+Whether GcExcel will insert cells or entire rows &amp; columns when extra spaces are needed while expanding the template.</comment>
+  </data>
+  <data name="GlobalOptions.Name" xml:space="preserve">
+    <value>グローバルオプション</value>
+    <comment>Global options</comment>
+  </data>
+  <data name="InsertMode.Descrip" xml:space="preserve">
+    <value>組み込みの定義されたname“templateoptions . insertMode”を使用して、GCExcelがテンプレートを展開している間に余分なスペースが必要な場合、セルまたは全体の行と列を挿入するかどうかを指定します。
+値は文字列型で、「セル」（デフォルト）または「Entirerowcolumn」でありえます。</value>
+    <comment>Use built-in defined name "TemplateOptions.InsertMode" to specify whether GcExcel will insert cells or entire rows &amp; columns when extra spaces are needed while expanding the template.
+The value is in string type, and can be "Cells"(Default) or "EntireRowColumn".</comment>
+  </data>
+  <data name="InsertMode.Name" xml:space="preserve">
+    <value>挿入モード</value>
+    <comment>Insert mode</comment>
+  </data>
+  <data name="KeepLineSize.Descrip" xml:space="preserve">
+    <value>組み込みの定義名を使用して、テンプレートを処理するときに行の高さと列幅を維持するかどうかを指定します。
+値はboolean型であり、trueまたはfalseになります。</value>
+    <comment>Use built-in defined name "TemplateOptions.KeepLineSize" to specify whether the row height and column width should be keep when processing template.
+The value is in boolean type, and can be True or False(Default).</comment>
+  </data>
+  <data name="KeepLineSize.Name" xml:space="preserve">
+    <value>行と列サイズ</value>
+    <comment>Keep row &amp; column size</comment>
+  </data>
+  <data name="ImageTemplate.Descrip" xml:space="preserve">
+    <value>テンプレートのプロパティ「image=true」を使用して、テンプレート処理後にイメージフィールドのデータを画像として表示します。</value>
+    <comment>Use template property "image=true" to show data of an image field as images after template processing</comment>
+  </data>
+  <data name="ImageTemplate.Name" xml:space="preserve">
+    <value>イメージテンプレート</value>
+    <comment>Image template</comment>
+  </data>
+  <data name="TemplateOtherFeatures.Descrip" xml:space="preserve">
+    <value>## 他の機能と共に働く
+GCExcelのテンプレートは、などの動的なレポートの多くを作成する他の機能で動作することができます：条件付き書式、グラフ。
+我々はより多くの機能を将来的にテンプレートで作業をサポートする予定です。</value>
+    <comment>## Work with other features
+GcExcel template can work with other features to create lots of dynamic reports, such as: conditional formatting, chart.
+We've planed to support more features working with template in future.</comment>
+  </data>
+  <data name="TemplateOtherFeatures.Name" xml:space="preserve">
+    <value>他の機能と協力する</value>
+    <comment>Template work with other features</comment>
+  </data>
+  <data name="TemplateWorkWithChart.Descrip" xml:space="preserve">
+    <value>ユーザーは手動で関連するテンプレートセルにグラフのシリーズ名、シリーズ値と軸のラベルを設定することができます。また、グラフの処理後にこれらの設定に従って正しく表示できます。</value>
+    <comment>User can manually set chart's series name, series value and axis label to related template cells. And the chart can be correctly displayed following these settings after template processing.</comment>
+  </data>
+  <data name="TemplateWorkWithChart.Name" xml:space="preserve">
+    <value>チャート</value>
+    <comment>Chart</comment>
+  </data>
+  <data name="TemplateWorkWithConditionalFormatting.Descrip" xml:space="preserve">
+    <value>テンプレート処理の後に展開されたすべてのセルに対して、テンプレートセル上の条件付き書式を適用する。</value>
+    <comment>Conditional formattings on the a template cell will be applied to all the cells expanded from it after template processing.</comment>
+  </data>
+  <data name="TemplateWorkWithConditionalFormatting.Name" xml:space="preserve">
+    <value>条件付き書式</value>
+    <comment>Conditional formatting</comment>
+  </data>
+  <data name="EmployeeAbsenceSchedule.Name" xml:space="preserve">
+    <value>従業員不在スケジュール</value>
+    <comment>Employee absence schedule</comment>
+  </data>
+  <data name="SalesTracker.Name" xml:space="preserve">
+    <value>販売トラッカー</value>
+    <comment>Sales tracker</comment>
+  </data>
+  <data name="AddShapeWithCustomName.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to add a shape with custom name.</comment>
+  </data>
+  <data name="AddShapeWithCustomName.Name" xml:space="preserve">
+    <value />
+    <comment>Shape with custom name</comment>
+  </data>
+  <data name="CreateChartWithCustomName.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to create a chart with custom name.</comment>
+  </data>
+  <data name="CreateChartWithCustomName.Name" xml:space="preserve">
+    <value />
+    <comment>Chart with custom name</comment>
+  </data>
+  <data name="DepartmentBudget.Descrip" xml:space="preserve">
+    <value>このサンプルは垂直グループテンプレートを示すことです。従業員のデータが垂直に拡大される間、部門のデータは水平に拡大されます。</value>
+    <comment>This sample is to show a vertical group template. The departments' data are expanded horizontally, while the employees' data  are expanded vertically.</comment>
+  </data>
+  <data name="EmployeeAbsenceSchedule.Descrip" xml:space="preserve">
+    <value>このサンプルは、条件付きのformattingsで働くテンプレートを示すことです。これは、シート名のテンプレートを使用して、毎月のデータは、Seperatedシートで表示します。</value>
+    <comment>This sample is to show the template working with conditional formattings. It uses a sheet name template to show each month's data in a seperated sheet.</comment>
+  </data>
+  <data name="FinancialDashboard.Descrip" xml:space="preserve">
+    <value>このサンプルは、クロステーブルテンプレートを示すことです。それはテーブルの上にタイトルがあります。</value>
+    <comment>This sample is to show a cross-table template. It has a title on top of the table.</comment>
+  </data>
+  <data name="PurchaseOrder.Descrip" xml:space="preserve">
+    <value>このサンプルは、静的な値と動的テーブルで文書全体を報告することです。</value>
+    <comment>This sample is to show a entire document report with static values and a dynamic table.</comment>
+  </data>
+  <data name="Sales.Descrip" xml:space="preserve">
+    <value>このサンプルはアウトライングループテンプレート表を示す。それは、各地域のアウトラインとサブグループを持っています。</value>
+    <comment>This sample is to show an outline group template table. It has outline and subtotal groups for each area.</comment>
+  </data>
+  <data name="SalesTracker.Descrip" xml:space="preserve">
+    <value>このサンプルは、グラフで作業しているテンプレートを示すことです。これらのチャートは、それらのシリーズのデータとしてテンプレートセルを使用しています：値、軸ラベルなど。</value>
+    <comment>This sample is to show the template working with charts. These charts are using template cells as their series' data: values, axis labels etc.</comment>
+  </data>
+  <data name="ShippingAndDeliveryOrder.Descrip" xml:space="preserve">
+    <value>このサンプルは、事前に登録されたスタイルでドキュメントレポートを表示することです。これは、静的および動的なデータを入力するテンプレートを使用します。</value>
+    <comment>This sample is to show a document report with pre-desigied style. It uses template to fill the static and dynamic data.</comment>
+  </data>
+  <data name="TablixReport.Descrip" xml:space="preserve">
+    <value>このサンプルはテーブルビューテーブルを示すことです。これは、行＆列ヘッダーに複数行があります。また、内部には合計の行があります。</value>
+    <comment>This sample is to show a Tablix template table. It has multiple lines in row &amp; column header. And also, there're subtotal lines inside.</comment>
+  </data>
+  <data name="Travel.Descrip" xml:space="preserve">
+    <value>このサンプルは、1つのシートに複数のテンプレートテーブルを表示することです。</value>
+    <comment>This sample is to show multiple template tables in one sheet.</comment>
+  </data>
+  <data name="DataBinding.Descrip" xml:space="preserve">
+    <value />
+    <comment>## Data Binding
+GrapeCity Documents for Excel now supports one-time data binding. 
+
+- **Sheet binding**: bind source data to sheet
+- **Cell binding**: bind source data to cell
+- **Table binding**: bind source data to table</comment>
+  </data>
+  <data name="DataBinding.Name" xml:space="preserve">
+    <value />
+    <comment>Data binding</comment>
+  </data>
+  <data name="BindAutomatically.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to bind data source to sheet columns automatically.</comment>
+  </data>
+  <data name="BindAutomatically.Name" xml:space="preserve">
+    <value />
+    <comment>Bind to sheet automatically</comment>
+  </data>
+  <data name="BindCustomObject.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to bind custom object to table.</comment>
+  </data>
+  <data name="BindCustomObject.Name" xml:space="preserve">
+    <value />
+    <comment>Bind custom object</comment>
+  </data>
+  <data name="BindDataSet.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to bind DataSet to tables.</comment>
+  </data>
+  <data name="BindDataSet.Name" xml:space="preserve">
+    <value />
+    <comment>Bind DataSet</comment>
+  </data>
+  <data name="BindDataTable.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to bind DataTable to sheet columns.</comment>
+  </data>
+  <data name="BindDataTable.Name" xml:space="preserve">
+    <value />
+    <comment>Bind DataTable to sheet</comment>
+  </data>
+  <data name="BindManually.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to bind data source to sheet columns manually.</comment>
+  </data>
+  <data name="BindManually.Name" xml:space="preserve">
+    <value />
+    <comment>Bind to sheet manually</comment>
+  </data>
+  <data name="CellBinding.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to bind data source to cells.</comment>
+  </data>
+  <data name="CellBinding.Name" xml:space="preserve">
+    <value />
+    <comment>Cell binding</comment>
+  </data>
+  <data name="SheetBinding.Descrip" xml:space="preserve">
+    <value />
+    <comment>## Sheet binding
+The examples in this folder demonstrate how to config sheet binding:
+- Use IRange.BindingPath to get/set column binding path (e.g. worksheet.Range["A:A"].EntireColumn.BindingPath = "xxx" ).
+- Use IWorsheet.AutoGenerateColumns to get/set if data source should be bound to columns automatically. The default value is true.
+- If IWorsheet.AutoGenerateColumns is true, each property and field of source data would be bound to a column.
+- Use IWorksheet.DataSource to get/set data source. And each worksheet can only have one data source. Data source can be a System.Data.DataTable or an IEnumerable.</comment>
+  </data>
+  <data name="SheetBinding.Name" xml:space="preserve">
+    <value />
+    <comment>Sheet binding</comment>
+  </data>
+  <data name="TableBinding.Descrip" xml:space="preserve">
+    <value />
+    <comment>## Table binding
+The examples in this folder demonstrate how to config table binding:
+- Use ITabel.BindingPath to get/set table's binding path.
+- Use ITableColumn.DataField to get/set binding path for table columns.
+- Use ITable.AutoGenerateColumns to get/set if data source should be bound to table columns automatically. The default value is true.
+- When ITable.AutoGenerateColumns is true, each property and field of source data would be bound to a table column.
+- Use IWorksheet.DataSource to get/set data source. Data source can only be DataSet or custom object which contains an IEnumerable filed or property.
+- The table range would change with data source.</comment>
+  </data>
+  <data name="TableBinding.Name" xml:space="preserve">
+    <value />
+    <comment>Table binding</comment>
+  </data>
+  <data name="GetRangeBoundary.Descrip" xml:space="preserve">
+    <value />
+    <comment>Refer to the following example code to see how to add a image to specific range in GcExcel.</comment>
+  </data>
+  <data name="GetRangeBoundary.Name" xml:space="preserve">
+    <value />
+    <comment>Add image to specific range</comment>
   </data>
 </root>

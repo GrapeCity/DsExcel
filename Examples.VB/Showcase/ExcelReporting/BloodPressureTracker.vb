@@ -7,33 +7,35 @@ Namespace Showcase
         Public Overrides Sub Execute(workbook As Workbook)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
-            '			#Region "theme"
+#Region "theme"
             'create a custom theme.
             Dim themes As New Themes
             Dim theme As ITheme = themes.Add("testTheme")
-            theme.ThemeColorScheme(ThemeColor.Light1).RGB = Color.FromArgb(255, 255, 255)
-            theme.ThemeColorScheme(ThemeColor.Dark1).RGB = Color.FromArgb(0, 0, 0)
-            theme.ThemeColorScheme(ThemeColor.Light2).RGB = Color.FromArgb(222, 222, 212)
-            theme.ThemeColorScheme(ThemeColor.Dark2).RGB = Color.FromArgb(30, 46, 47)
-            theme.ThemeColorScheme(ThemeColor.Accent1).RGB = Color.FromArgb(233, 117, 90)
-            theme.ThemeColorScheme(ThemeColor.Accent2).RGB = Color.FromArgb(122, 182, 186)
-            theme.ThemeColorScheme(ThemeColor.Accent3).RGB = Color.FromArgb(125, 181, 135)
-            theme.ThemeColorScheme(ThemeColor.Accent4).RGB = Color.FromArgb(230, 191, 94)
-            theme.ThemeColorScheme(ThemeColor.Accent5).RGB = Color.FromArgb(230, 143, 77)
-            theme.ThemeColorScheme(ThemeColor.Accent6).RGB = Color.FromArgb(194, 107, 112)
-            theme.ThemeColorScheme(ThemeColor.Hyperlink).RGB = Color.FromArgb(122, 182, 186)
-            theme.ThemeColorScheme(ThemeColor.FollowedHyperlink).RGB = Color.FromArgb(166, 140, 177)
-            theme.ThemeFontScheme.Major(FontLanguageIndex.Latin).Name = "Gill Sans"
-            theme.ThemeFontScheme.Minor(FontLanguageIndex.Latin).Name = "Gill Sans"
+            With theme
+                .ThemeColorScheme(ThemeColor.Light1).RGB = Color.FromArgb(255, 255, 255)
+                .ThemeColorScheme(ThemeColor.Dark1).RGB = Color.FromArgb(0, 0, 0)
+                .ThemeColorScheme(ThemeColor.Light2).RGB = Color.FromArgb(222, 222, 212)
+                .ThemeColorScheme(ThemeColor.Dark2).RGB = Color.FromArgb(30, 46, 47)
+                .ThemeColorScheme(ThemeColor.Accent1).RGB = Color.FromArgb(233, 117, 90)
+                .ThemeColorScheme(ThemeColor.Accent2).RGB = Color.FromArgb(122, 182, 186)
+                .ThemeColorScheme(ThemeColor.Accent3).RGB = Color.FromArgb(125, 181, 135)
+                .ThemeColorScheme(ThemeColor.Accent4).RGB = Color.FromArgb(230, 191, 94)
+                .ThemeColorScheme(ThemeColor.Accent5).RGB = Color.FromArgb(230, 143, 77)
+                .ThemeColorScheme(ThemeColor.Accent6).RGB = Color.FromArgb(194, 107, 112)
+                .ThemeColorScheme(ThemeColor.Hyperlink).RGB = Color.FromArgb(122, 182, 186)
+                .ThemeColorScheme(ThemeColor.FollowedHyperlink).RGB = Color.FromArgb(166, 140, 177)
+                .ThemeFontScheme.Major(FontLanguageIndex.Latin).Name = "Gill Sans"
+                .ThemeFontScheme.Minor(FontLanguageIndex.Latin).Name = "Gill Sans"
+            End With
 
             'assign the custom theme for workbook.
             workbook.Theme = theme
-            '			#End Region
+#End Region
 
             'does not show sheet gridlines.
             worksheet.SheetView.DisplayGridlines = False
 
-            '			#Region "RowHeightColumnWidth"
+#Region "RowHeightColumnWidth"
             'set row height and column width.
             worksheet.StandardHeight = 12.75
             worksheet.StandardWidth = 8.43
@@ -56,9 +58,9 @@ Namespace Showcase
             worksheet.Columns(5).ColumnWidth = 12.7109375
             worksheet.Columns(6).ColumnWidth = 13.85546875
             worksheet.Columns(7).ColumnWidth = 44.7109375
-            '			#End Region
+#End Region
 
-            '			#Region "Values"
+#Region "Values"
             'initialize worksheet's values.
             worksheet.Name = "BLOOD PRESSURE DATA"
             worksheet.Range!B2.Value = "BLOOD PRESSURE TRACKER"
@@ -77,9 +79,9 @@ Namespace Showcase
 
             worksheet.Range!B16.Value = "CHARTED PROGRESS"
             worksheet.Range!B34.Value = "DATA ENTRY"
-            '			#End Region
+#End Region
 
-            '			#Region "Table"
+#Region "Table"
             'initialize table data.
             worksheet.Range("B36:H44").Value = New Object(,) {
                 {"TIME", "DATE", "AM/PM", "SYSTOLIC", "DIASTOLIC", "HEART RATE", "NOTES"},
@@ -180,9 +182,9 @@ Namespace Showcase
             table.Range.HorizontalAlignment = HorizontalAlignment.Left
             table.Range.IndentLevel = 0
             table.Range.VerticalAlignment = VerticalAlignment.Center
-            '			#End Region
+#End Region
 
-            '			#Region "TableStyle"
+#Region "TableStyle"
             'create a custom table style.
             Dim tablestyle As ITableStyle = workbook.TableStyles.Add("testStyle")
             tablestyle.TableStyleElements(TableStyleElementType.WholeTable).Font.ThemeColor = ThemeColor.Dark1
@@ -219,9 +221,9 @@ Namespace Showcase
 
             'assign custom table style for table.
             table.TableStyle = workbook.TableStyles("testStyle")
-            '			#End Region
+#End Region
 
-            '			#Region "Style"
+#Region "Style"
             'assign built-in styles for ranges.
             worksheet.Range("B2:H2").Style = workbook.Styles("Heading 1")
             worksheet.Range("B4:F4, B7:D7, B10:D10, B13:D13").Style = workbook.Styles("Heading 2")
@@ -310,9 +312,9 @@ Namespace Showcase
             range2.Borders(BordersIndex.EdgeRight).LineStyle = BorderLineStyle.Thin
             range2.Borders(BordersIndex.EdgeRight).ThemeColor = ThemeColor.Light1
             range2.Borders(BordersIndex.EdgeRight).TintAndShade = -0.5
-            '			#End Region
+#End Region
 
-            '			#Region "Chart"
+#Region "Chart"
             'create a new chart.
             Dim shape As IShape = worksheet.Shapes.AddChart(ChartType.ColumnClustered, 8.99984251968504, 268.5, 627.750157480315, 184.5)
 
@@ -382,10 +384,10 @@ Namespace Showcase
             shape.Chart.ChartArea.Font.Size = 9
             shape.Chart.ChartArea.Font.Color.ObjectThemeColor = ThemeColor.Dark1
             shape.Chart.ChartArea.Font.Color.Brightness = 0.5
-            '			#End Region
+#End Region
 
 
-            '			#Region "Shape"
+#Region "Shape"
             Dim shape1 As IShape = worksheet.Shapes.AddShape(AutoShapeType.Rectangle, 402, 77.25, 234, 100)
             shape1.Fill.Solid()
             shape1.Fill.Color.ObjectThemeColor = ThemeColor.Accent1
@@ -426,21 +428,21 @@ Namespace Showcase
             shape2.TextFrame.TextRange.Font.Color.ObjectThemeColor = ThemeColor.Dark1
             shape2.TextFrame.TextRange.Font.Color.Brightness = 0.25
             shape2_p1.Runs(0).Font.Bold = True
-            '			#End Region
+#End Region
 
-            '			#Region "DefinedName"
+#Region "DefinedName"
             'create defined names for workbook.
             workbook.Names.Add("MaxDiastolic", "='BLOOD PRESSURE DATA'!$F$10")
             workbook.Names.Add("MaxSystolic", "='BLOOD PRESSURE DATA'!$E$10")
-            '			#End Region
+#End Region
 
-            '			#Region "ConditionalFormat"
+#Region "ConditionalFormat"
             'create conditional format for ranges.
             Dim condition1 As IFormatCondition = TryCast(worksheet.Range("E37:E44").FormatConditions.Add(FormatConditionType.Expression, formula1:="=E37>MaxSystolic"), IFormatCondition)
             Dim condition2 As IFormatCondition = TryCast(worksheet.Range("F37:F44").FormatConditions.Add(FormatConditionType.Expression, formula1:="=F37>MaxDiastolic"), IFormatCondition)
             condition1.Interior.Color = Color.Red
             condition2.Interior.Color = Color.Red
-            '			#End Region
+#End Region
         End Sub
 
         Public Overrides ReadOnly Property ShowViewer As Boolean

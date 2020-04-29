@@ -41,13 +41,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts.NewCharts
             //Modify chart title text.
             shape.Chart.ChartTitle.Text = "Annual Report";
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

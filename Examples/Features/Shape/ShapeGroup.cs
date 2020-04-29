@@ -26,12 +26,5 @@
                 return true;
             }
         }
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

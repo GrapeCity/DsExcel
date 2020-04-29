@@ -441,4 +441,4 @@ workbook.Save("SimpleBudget.xlsx");
 workbook.Save("SimpleBudget.xlsx")
 ```
 
-上記のコードを実行して保存したExcelファイル（ [SimpleBudget.xlsx](api/examples/xlsx/GrapeCity.Documents.Excel.Examples.Tutorial?fileName=SimpleBudget) ）をダウンロードして実行結果を確認できます。[チュートリアルのソースプロジェクト](GrapeCity.Documents.Excel.Tutorial.zip) をダウンロードしてご自身でコードを実行する場合は、事前に <a href="https://docs.microsoft.com/ja-jp/dotnet/core/" target="_blank">.NET Core</a> のSDKまたはランタイムをお使いのマシンにインストールしてください。
+上記のコードを実行して保存したExcelファイル（ [SimpleBudget.xlsx](api/examples/xlsx/tutorial?fileName=SimpleBudget) ）をダウンロードして実行結果を確認できます。[チュートリアルのソースプロジェクト](GrapeCity.Documents.Excel.Tutorial.zip) をダウンロードしてご自身でコードを実行する場合は、事前に <a href="https://docs.microsoft.com/ja-jp/dotnet/core/" target="_blank">.NET Core</a> のSDKまたはランタイムをお使いのマシンにインストールしてください。

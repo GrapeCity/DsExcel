@@ -28,14 +28,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.ExportChart
             series2.MarkerSize = 10;
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool SavePdf
         {
             get

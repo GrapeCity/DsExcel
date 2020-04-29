@@ -1,4 +1,5 @@
-﻿Imports System.IO
+﻿Imports System.Collections.Generic
+Imports System.IO
 Imports Newtonsoft.Json
 
 Namespace Templates.DataSource
@@ -47,12 +48,6 @@ Namespace Templates.DataSource
             workbook.ProcessTemplate()
         End Sub
 
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
-
         Public Overrides ReadOnly Property TemplateName As String
             Get
                 Return "Template_FamilyInfo.xlsx"
@@ -74,6 +69,11 @@ Namespace Templates.DataSource
         Public Overrides ReadOnly Property UsedResources As String()
             Get
                 Return New String() {"xlsx\Template_FamilyInfo.xlsx", "Template_FamilyInfo.json"}
+            End Get
+        End Property
+        Public Overrides ReadOnly Property Refs As String()
+            Get
+                Return New String() {"StudentInfos", "StudentInfo", "Family", "Guardian"}
             End Get
         End Property
     End Class

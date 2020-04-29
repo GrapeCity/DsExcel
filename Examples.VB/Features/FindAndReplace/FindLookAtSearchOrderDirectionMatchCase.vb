@@ -34,11 +34,5 @@
             lastValue1.Font.Color = System.Drawing.Color.Blue
             lastValue1.Font.Size += 8
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

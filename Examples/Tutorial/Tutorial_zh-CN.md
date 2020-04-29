@@ -248,4 +248,4 @@ chartSeries.DataLabels.Position = DataLabelPosition.OutsideEnd;
 workbook.Save(@"SimpleBudget.xlsx");
 ```
 
-此时，你可以下载并查看保存的[SimpleBudget.xlsx](api/examples/xlsx/GrapeCity.Documents.Excel.Examples.Tutorial?fileName=SimpleBudget). 同时，你也可以下载本教程的[源代码工程](GrapeCity.Documents.Excel.Tutorial.zip)并亲自运行它，在你尝试运行源代码工程之前请先确保你已经安装了[.NET Core](https://www.microsoft.com/net/core)。
+此时，你可以下载并查看保存的[SimpleBudget.xlsx](api/examples/xlsx/tutorial?fileName=SimpleBudget). 同时，你也可以下载本教程的[源代码工程](GrapeCity.Documents.Excel.Tutorial.zip)并亲自运行它，在你尝试运行源代码工程之前请先确保你已经安装了[.NET Core](https://www.microsoft.com/net/core)。

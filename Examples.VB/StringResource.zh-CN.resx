@@ -1605,4 +1605,40 @@ Spread表格组件支持以下几种类型的迷你图：
   <data name="VerticalText.Name" xml:space="preserve">
     <value>垂直文本</value>
   </data>
+  <data name="DisplayUnitLabelPdf.Descrip" xml:space="preserve">
+    <value>导出显示单位标签到PDF文档</value>
+  </data>
+  <data name="DisplayUnitLabelPdf.Name" xml:space="preserve">
+    <value>显示单位标签</value>
+  </data>
+  <data name="SunburstChartPdf.Descrip" xml:space="preserve">
+    <value>导出旭日图到PDF文档</value>
+  </data>
+  <data name="SunburstChartPdf.Name" xml:space="preserve">
+    <value>旭日图</value>
+  </data>
+  <data name="TreemapChartPdf.Descrip" xml:space="preserve">
+    <value>导出树状图到PDF文档</value>
+  </data>
+  <data name="TreemapChartPdf.Name" xml:space="preserve">
+    <value>树状图</value>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Descrip" xml:space="preserve">
+    <value>导出带有数字格式的轴标签到PDF文档</value>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Name" xml:space="preserve">
+    <value>带数字格式的轴标签</value>
+  </data>
+  <data name="ErrorbarPdf.Descrip" xml:space="preserve">
+    <value>导出误差线到PDF文档</value>
+  </data>
+  <data name="ErrorbarPdf.Name" xml:space="preserve">
+    <value>误差线</value>
+  </data>
+  <data name="TrendlinePdf.Descrip" xml:space="preserve">
+    <value>导出趋势线到PDF文档</value>
+  </data>
+  <data name="TrendlinePdf.Name" xml:space="preserve">
+    <value>趋势线</value>
+  </data>
 </root>

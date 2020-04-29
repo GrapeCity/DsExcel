@@ -13,12 +13,5 @@
             adjustments(2) = 0.5 ' arrow head height
             adjustments(3) = 0.6 ' text box width
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
-
     End Class
 End Namespace

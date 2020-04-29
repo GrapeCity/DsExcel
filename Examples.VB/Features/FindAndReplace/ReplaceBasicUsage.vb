@@ -15,11 +15,5 @@
             ' Replace ".NET Core" with ".NET 5"
             worksheet.UsedRange.Replace(".NET Core", ".NET 5")
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

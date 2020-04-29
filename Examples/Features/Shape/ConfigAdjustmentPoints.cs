@@ -18,14 +18,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Shape
             adjustments[2] = 0.5;// arrow head height
             adjustments[3] = 0.6;// text box width
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
     }
 }

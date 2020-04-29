@@ -7,7 +7,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formatting.CellType
 
     public class AddRowColumnCellType : ExampleBase
     {
-        public override bool IsNew => true;
         public override void Execute(Excel.Workbook workbook)
         {
             IWorksheet worksheet = workbook.Worksheets[0];

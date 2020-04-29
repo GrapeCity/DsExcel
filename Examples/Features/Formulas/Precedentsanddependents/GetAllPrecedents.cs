@@ -7,7 +7,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Formulas.Precedentsanddepe
 {
     public class GetAllPrecedents : ExampleBase
     {
-        public override bool IsNew => true;
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
             IWorksheet worksheet = workbook.Worksheets[0];

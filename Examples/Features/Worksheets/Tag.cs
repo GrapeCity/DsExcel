@@ -31,14 +31,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Worksheets
             }
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool CanDownload
         {
             get

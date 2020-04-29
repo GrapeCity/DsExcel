@@ -1,185 +1,222 @@
-﻿Namespace Templates.DataSource
+﻿Imports System.Collections.Generic
+Namespace Templates.DataSource
     Public Class CustomObject
         Inherits ExampleBase
 
         Public Overrides Sub Execute(workbook As Workbook)
-            'Load template file Template_SalesDataGroup.xlsx from resource
+            'Load template file from resource
             Dim templateFile = GetResourceStream("xlsx\Template_SalesDataGroup.xlsx")
             workbook.Open(templateFile)
 
 #Region "Define custom classes"
             ' Public Class SalesData
-            '     Public Records As List(Of SalesRecord)
+            '     Public Sales As List(Of SalesRecord)
             ' End Class
 
             ' Public Class SalesRecord
             '     Public Area As String
-            '     Public Salesman As String
-            '     Public Product As String
-            '     Public ProductType As String
-            '     Public Sales As Integer
+            '     Public City As String
+            '     Public Category As String
+            '     Public Name As String
+            '     Public Revenue As Double
             ' End Class
 #End Region
 
 #Region "Init Data"
-            Dim datasource = New SalesData With {
-                .Records = New List(Of SalesRecord) From {
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Hellen",
-                        .Product = "Apple",
-                        .ProductType = "Fruit",
-                        .Sales = 120
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Hellen",
-                        .Product = "Banana",
-                        .ProductType = "Fruit",
-                        .Sales = 143
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Hellen",
-                        .Product = "Kiwi",
-                        .ProductType = "Fruit",
-                        .Sales = 322
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Hellen",
-                        .Product = "Carrots",
-                        .ProductType = "Vegetable",
-                        .Sales = 154
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Fancy",
-                        .Product = "Carrots",
-                        .ProductType = "Vegetable",
-                        .Sales = 131
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Fancy",
-                        .Product = "Cabbage",
-                        .ProductType = "Vegetable",
-                        .Sales = 98
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Fancy",
-                        .Product = "Potato",
-                        .ProductType = "Vegetable",
-                        .Sales = 212
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Fancy",
-                        .Product = "Apple",
-                        .ProductType = "Fruit",
-                        .Sales = 102
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Ivan",
-                        .Product = "Apple",
-                        .ProductType = "Fruit",
-                        .Sales = 164
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Ivan",
-                        .Product = "Kiwi",
-                        .ProductType = "Fruit",
-                        .Sales = 213
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Ivan",
-                        .Product = "Potato",
-                        .ProductType = "Vegetable",
-                        .Sales = 56
-                    },
-                    New SalesRecord With {
-                        .Area = "NorthChina",
-                        .Salesman = "Ivan",
-                        .Product = "Cabbage",
-                        .ProductType = "Vegetable",
-                        .Sales = 265
-                    },
-                    New SalesRecord With {
-                        .Area = "SouthChina",
-                        .Salesman = "Adam",
-                        .Product = "Cabbage",
-                        .ProductType = "Vegetable",
-                        .Sales = 112
-                    },
-                    New SalesRecord With {
-                        .Area = "SouthChina",
-                        .Salesman = "Adam",
-                        .Product = "Carrots",
-                        .ProductType = "Vegetable",
-                        .Sales = 354
-                    },
-                    New SalesRecord With {
-                        .Area = "SouthChina",
-                        .Salesman = "Adam",
-                        .Product = "Banana",
-                        .ProductType = "Fruit",
-                        .Sales = 277
-                    },
-                    New SalesRecord With {
-                        .Area = "SouthChina",
-                        .Salesman = "Adam",
-                        .Product = "Apple",
-                        .ProductType = "Fruit",
-                        .Sales = 105
-                    },
-                    New SalesRecord With {
-                        .Area = "SouthChina",
-                        .Salesman = "Bob",
-                        .Product = "Banana",
-                        .ProductType = "Fruit",
-                        .Sales = 133
-                    },
-                    New SalesRecord With {
-                        .Area = "SouthChina",
-                        .Salesman = "Bob",
-                        .Product = "Cabbage",
-                        .ProductType = "Vegetable",
-                        .Sales = 252
-                    },
-                    New SalesRecord With {
-                        .Area = "SouthChina",
-                        .Salesman = "Bob",
-                        .Product = "Potato",
-                        .ProductType = "Vegetable",
-                        .Sales = 265
-                    },
-                    New SalesRecord With {
-                        .Area = "SouthChina",
-                        .Salesman = "Bob",
-                        .Product = "Kiwi",
-                        .ProductType = "Fruit",
-                        .Sales = 402
-                    }
+            Dim salesData As New List(Of SalesRecord) From {
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Chicago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Bose 785593-0050",
+                    .Revenue = 92800
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "New York",
+                    .Category = "Consumer Electronics",
+                    .Name = "Bose 785593-0050",
+                    .Revenue = 92800
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Santiago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Bose 785593-0050",
+                    .Revenue = 19550
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Chicago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Canon EOS 1500D",
+                    .Revenue = 98650
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Minnesota",
+                    .Category = "Consumer Electronics",
+                    .Name = "Canon EOS 1500D",
+                    .Revenue = 89110
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Santiago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Canon EOS 1500D",
+                    .Revenue = 459000
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Chicago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Haier 394L 4Star",
+                    .Revenue = 367050
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Quito",
+                    .Category = "Consumer Electronics",
+                    .Name = "Haier 394L 4Star",
+                    .Revenue = 729100
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Santiago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Haier 394L 4Star",
+                    .Revenue = 578900
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Fremont",
+                    .Category = "Consumer Electronics",
+                    .Name = "IFB 6.5 Kg FullyAuto",
+                    .Revenue = 904930
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Buenos Aires",
+                    .Category = "Consumer Electronics",
+                    .Name = "IFB 6.5 Kg FullyAuto",
+                    .Revenue = 673800
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Medillin",
+                    .Category = "Consumer Electronics",
+                    .Name = "IFB 6.5 Kg FullyAuto",
+                    .Revenue = 82910
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Chicago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Mi LED 40inch",
+                    .Revenue = 550010
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Minnesota",
+                    .Category = "Consumer Electronics",
+                    .Name = "Mi LED 40inch",
+                    .Revenue = 1784702
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Santiago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Mi LED 40inch",
+                    .Revenue = 102905
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Chicago",
+                    .Category = "Consumer Electronics",
+                    .Name = "Sennheiser HD 4.40-BT",
+                    .Revenue = 178100
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Quito",
+                    .Category = "Consumer Electronics",
+                    .Name = "Sennheiser HD 4.40-BT",
+                    .Revenue = 234459
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Minnesota",
+                    .Category = "Mobile",
+                    .Name = "Iphone XR",
+                    .Revenue = 1734621
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Santiago",
+                    .Category = "Mobile",
+                    .Name = "Iphone XR",
+                    .Revenue = 109300
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Chicago",
+                    .Category = "Mobile",
+                    .Name = "OnePlus 7Pro",
+                    .Revenue = 499100
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Quito",
+                    .Category = "Mobile",
+                    .Name = "OnePlus 7Pro",
+                    .Revenue = 215000
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Minnesota",
+                    .Category = "Mobile",
+                    .Name = "Redmi 7",
+                    .Revenue = 81650
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Quito",
+                    .Category = "Mobile",
+                    .Name = "Redmi 7",
+                    .Revenue = 276390
+                },
+                New SalesRecord With {
+                    .Area = "North America",
+                    .City = "Minnesota",
+                    .Category = "Mobile",
+                    .Name = "Samsung S9",
+                    .Revenue = 896250
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Buenos Aires",
+                    .Category = "Mobile",
+                    .Name = "Samsung S9",
+                    .Revenue = 896250
+                },
+                New SalesRecord With {
+                    .Area = "South America",
+                    .City = "Quito",
+                    .Category = "Mobile",
+                    .Name = "Samsung S9",
+                    .Revenue = 716520
                 }
             }
-
 #End Region
+            Dim datasource = New SalesData With {.Sales = salesData}
 
+            'Init template global settings
+            workbook.Names.Add("TemplateOptions.KeepLineSize", "true")
             'Add data source
             workbook.AddDataSource("ds", datasource)
             'Invoke to process the template
             workbook.ProcessTemplate()
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
 
         Public Overrides ReadOnly Property TemplateName As String
             Get
@@ -204,17 +241,22 @@
                 Return New String() {"xlsx\Template_SalesDataGroup.xlsx"}
             End Get
         End Property
+        Public Overrides ReadOnly Property Refs As String()
+            Get
+                Return New String() {"SalesData", "SalesRecord"}
+            End Get
+        End Property
     End Class
 
     Public Class SalesData
-        Public Records As List(Of SalesRecord)
+        Public Sales As List(Of SalesRecord)
     End Class
 
     Public Class SalesRecord
         Public Area As String
-        Public Salesman As String
-        Public Product As String
-        Public ProductType As String
-        Public Sales As Integer
+        Public City As String
+        Public Category As String
+        Public Name As String
+        Public Revenue As Double
     End Class
 End Namespace

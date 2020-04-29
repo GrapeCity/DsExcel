@@ -437,4 +437,4 @@ workbook.Save("SimpleBudget.xlsx");
 workbook.Save("SimpleBudget.xlsx")
 ```
 
-You can download and view the saved [SimpleBudget.xlsx](api/examples/xlsx/GrapeCity.Documents.Excel.Examples.Tutorial?fileName=SimpleBudget). If you prefer to download the [Tutorial Source Project](GrapeCity.Documents.Excel.Tutorial.zip) and run the code yourself, be sure to first install [.NET Core](https://www.microsoft.com/net/core) on your machine. 
+You can download and view the saved [SimpleBudget.xlsx](api/examples/xlsx/tutorial?fileName=SimpleBudget). If you prefer to download the [Tutorial Source Project](GrapeCity.Documents.Excel.Tutorial.zip) and run the code yourself, be sure to first install [.NET Core](https://www.microsoft.com/net/core) on your machine. 

@@ -6,6 +6,8 @@ Public MustInherit Class ExampleBase
     Public Sub New()
     End Sub
 
+    Public Overridable ReadOnly Property Refs As String()
+
     Public Overridable ReadOnly Property ID As String
         Get
             Return [GetType]().FullName

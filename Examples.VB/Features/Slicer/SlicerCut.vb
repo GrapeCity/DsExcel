@@ -43,10 +43,5 @@
             'worksheet.Range("H3:J16").Cut(worksheet2.Range!K3)
             'worksheet.Range("H3:J16").Cut(worksheet2.Range("K3:M16"))
         End Sub
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

@@ -28,14 +28,5 @@
             // Remove subtotal
             workbook.ActiveSheet.Range["A1:C13"].RemoveSubtotal();
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
-
 }

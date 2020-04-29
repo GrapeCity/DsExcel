@@ -31,11 +31,5 @@
             'Modify chart title text.
             shape.Chart.ChartTitle.Text = "Annual Report"
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

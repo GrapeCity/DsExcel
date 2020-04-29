@@ -1754,4 +1754,46 @@ Various of text effect can be exported to pdf file, such as:
   <data name="VerticalText.Name" xml:space="preserve">
     <value>Export vertical text</value>
   </data>
+  <data name="GetPaginationInfo.Descrip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GetPaginationInfo.Name" xml:space="preserve">
+    <value>Get horizontal/Vertical pagination infos</value>
+  </data>
+  <data name="DisplayUnitLabelPdf.Descrip" xml:space="preserve">
+    <value>Export axis display unit label to PDF file</value>
+  </data>
+  <data name="DisplayUnitLabelPdf.Name" xml:space="preserve">
+    <value>Axis display unit label</value>
+  </data>
+  <data name="SunburstChartPdf.Descrip" xml:space="preserve">
+    <value>Export sunburst chart to PDF file</value>
+  </data>
+  <data name="SunburstChartPdf.Name" xml:space="preserve">
+    <value>Sunburst chart</value>
+  </data>
+  <data name="TreemapChartPdf.Descrip" xml:space="preserve">
+    <value>Export treemap chart to PDF file</value>
+  </data>
+  <data name="TreemapChartPdf.Name" xml:space="preserve">
+    <value>Treemap chart</value>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Descrip" xml:space="preserve">
+    <value>Export axis label numberformat to PDF file</value>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Name" xml:space="preserve">
+    <value>Axis label numberformat</value>
+  </data>
+  <data name="ErrorbarPdf.Descrip" xml:space="preserve">
+    <value>Export error bars to PDF file</value>
+  </data>
+  <data name="ErrorbarPdf.Name" xml:space="preserve">
+    <value>Error bars</value>
+  </data>
+  <data name="TrendlinePdf.Descrip" xml:space="preserve">
+    <value>Export trendline to PDF file</value>
+  </data>
+  <data name="TrendlinePdf.Name" xml:space="preserve">
+    <value>Trendline</value>
+  </data>
 </root>

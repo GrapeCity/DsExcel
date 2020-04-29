@@ -5,64 +5,70 @@ Namespace Showcase
         Inherits ExampleBase
 
         Public Overrides Sub Execute(workbook As Workbook)
-            '			#Region "theme"
+#Region "theme"
             'create a custom theme.
             Dim themes As New Themes
             Dim theme As ITheme = themes.Add("testTheme")
-            theme.ThemeColorScheme(ThemeColor.Light1).RGB = Color.FromArgb(255, 255, 255)
-            theme.ThemeColorScheme(ThemeColor.Dark1).RGB = Color.FromArgb(0, 0, 0)
-            theme.ThemeColorScheme(ThemeColor.Light2).RGB = Color.FromArgb(255, 255, 255)
-            theme.ThemeColorScheme(ThemeColor.Dark2).RGB = Color.FromArgb(0, 0, 0)
-            theme.ThemeColorScheme(ThemeColor.Accent1).RGB = Color.FromArgb(140, 198, 63)
-            theme.ThemeColorScheme(ThemeColor.Accent2).RGB = Color.FromArgb(242, 116, 45)
-            theme.ThemeColorScheme(ThemeColor.Accent3).RGB = Color.FromArgb(106, 159, 207)
-            theme.ThemeColorScheme(ThemeColor.Accent4).RGB = Color.FromArgb(242, 192, 45)
-            theme.ThemeColorScheme(ThemeColor.Accent5).RGB = Color.FromArgb(146, 98, 174)
-            theme.ThemeColorScheme(ThemeColor.Accent6).RGB = Color.FromArgb(121, 198, 199)
-            theme.ThemeColorScheme(ThemeColor.Hyperlink).RGB = Color.FromArgb(106, 159, 207)
-            theme.ThemeColorScheme(ThemeColor.FollowedHyperlink).RGB = Color.FromArgb(146, 98, 74)
-            theme.ThemeFontScheme.Major(FontLanguageIndex.Latin).Name = "Garamond"
-            theme.ThemeFontScheme.Minor(FontLanguageIndex.Latin).Name = "Garamond"
+            With theme
+                .ThemeColorScheme(ThemeColor.Light1).RGB = Color.FromArgb(255, 255, 255)
+                .ThemeColorScheme(ThemeColor.Dark1).RGB = Color.FromArgb(0, 0, 0)
+                .ThemeColorScheme(ThemeColor.Light2).RGB = Color.FromArgb(255, 255, 255)
+                .ThemeColorScheme(ThemeColor.Dark2).RGB = Color.FromArgb(0, 0, 0)
+                .ThemeColorScheme(ThemeColor.Accent1).RGB = Color.FromArgb(140, 198, 63)
+                .ThemeColorScheme(ThemeColor.Accent2).RGB = Color.FromArgb(242, 116, 45)
+                .ThemeColorScheme(ThemeColor.Accent3).RGB = Color.FromArgb(106, 159, 207)
+                .ThemeColorScheme(ThemeColor.Accent4).RGB = Color.FromArgb(242, 192, 45)
+                .ThemeColorScheme(ThemeColor.Accent5).RGB = Color.FromArgb(146, 98, 174)
+                .ThemeColorScheme(ThemeColor.Accent6).RGB = Color.FromArgb(121, 198, 199)
+                .ThemeColorScheme(ThemeColor.Hyperlink).RGB = Color.FromArgb(106, 159, 207)
+                .ThemeColorScheme(ThemeColor.FollowedHyperlink).RGB = Color.FromArgb(146, 98, 74)
+                .ThemeFontScheme.Major(FontLanguageIndex.Latin).Name = "Garamond"
+                .ThemeFontScheme.Minor(FontLanguageIndex.Latin).Name = "Garamond"
+            End With
 
             'assign the custom theme for workbook.
             workbook.Theme = theme
-            '			#End Region
+#End Region
 
-            '			#Region "NameStyle"
+#Region "NameStyle"
             'Change built-in custom styles.
             Dim style_Title = workbook.Styles("Title")
-            style_Title.Font.ThemeFont = ThemeFont.Major
-            style_Title.Font.Size = 26
-            style_Title.Font.Bold = True
-            style_Title.Font.ThemeColor = ThemeColor.Light1
-            style_Title.IncludeAlignment = False
-            style_Title.IncludeFont = True
-            style_Title.IncludeBorder = False
-            style_Title.IncludeNumber = False
-            style_Title.IncludePatterns = False
-            style_Title.IncludeProtection = False
+            With style_Title
+                .Font.ThemeFont = ThemeFont.Major
+                .Font.Size = 26
+                .Font.Bold = True
+                .Font.ThemeColor = ThemeColor.Light1
+                .IncludeAlignment = False
+                .IncludeFont = True
+                .IncludeBorder = False
+                .IncludeNumber = False
+                .IncludePatterns = False
+                .IncludeProtection = False
+            End With
 
             Dim style_Normal = workbook.Styles("Normal")
-            style_Normal.HorizontalAlignment = HorizontalAlignment.General
-            style_Normal.VerticalAlignment = VerticalAlignment.Center
-            style_Normal.Font.ThemeFont = ThemeFont.Minor
-            style_Normal.Font.Size = 9
-            style_Normal.Font.ThemeColor = ThemeColor.Dark1
-            style_Normal.IncludeAlignment = True
-            style_Normal.IncludeFont = True
-            style_Normal.IncludeBorder = True
-            style_Normal.IncludeNumber = True
-            style_Normal.IncludePatterns = True
-            style_Normal.IncludeProtection = True
-            '			#End Region
+            With style_Normal
+                .HorizontalAlignment = HorizontalAlignment.General
+                .VerticalAlignment = VerticalAlignment.Center
+                .Font.ThemeFont = ThemeFont.Minor
+                .Font.Size = 9
+                .Font.ThemeColor = ThemeColor.Dark1
+                .IncludeAlignment = True
+                .IncludeFont = True
+                .IncludeBorder = True
+                .IncludeNumber = True
+                .IncludePatterns = True
+                .IncludeProtection = True
+            End With
+#End Region
 
-            '			#Region "Worksheet_DataInput"
+#Region "Worksheet_DataInput"
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
             worksheet.Name = "Data Input"
             'hide worksheet gridlines.
             worksheet.SheetView.DisplayGridlines = False
 
-            '			#Region "RowHeightColumnWidth"
+#Region "RowHeightColumnWidth"
             worksheet.StandardHeight = 18.75
             worksheet.StandardWidth = 8.43
 
@@ -77,13 +83,13 @@ Namespace Showcase
             worksheet.Range("E:E").ColumnWidth = 17.7109375
             worksheet.Range("F:F").ColumnWidth = 18.140625
             worksheet.Range("G:G").ColumnWidth = 2.28515625
-            '			#End Region
+#End Region
 
-            '			#Region "Values"
+#Region "Values"
             worksheet.Range!B1.Value = "DATA INPUT"
-            '			#End Region
+#End Region
 
-            '			#Region "Table"
+#Region "Table"
             worksheet.Range("B2:F87").Value = New Object(,) {
                 {"DATE", "PRODUCT", "CUSTOMER", "AMOUNT", "QUARTER"},
                 {
@@ -711,9 +717,9 @@ Namespace Showcase
             table_Data.Columns(4).DataBodyRange.HorizontalAlignment = HorizontalAlignment.Left
             table_Data.Columns(4).DataBodyRange.IndentLevel = 1
             table_Data.Columns(4).DataBodyRange.VerticalAlignment = VerticalAlignment.Bottom
-            '			#End Region
+#End Region
 
-            '			#Region "Slicers"
+#Region "Slicers"
             'create slicer caches.
             Dim cache_customer As ISlicerCache = workbook.SlicerCaches.Add(table_Data, "CUSTOMER", "CUSTOMER")
             Dim cache_product As ISlicerCache = workbook.SlicerCaches.Add(table_Data, "PRODUCT", "PRODUCT")
@@ -725,9 +731,9 @@ Namespace Showcase
             'assign built-in slicer style for slicers.
             slicer_customer.Style = workbook.TableStyles("SlicerStyleDark1")
             slicer_product.Style = workbook.TableStyles("SlicerStyleDark1")
-            '			#End Region
+#End Region
 
-            '			#Region "Style"
+#Region "Style"
             worksheet.Range("1:1").Style = workbook.Styles("Title")
             worksheet.Range("1:1").Interior.ThemeColor = ThemeColor.Accent1
             worksheet.Range("1:1").HorizontalAlignment = HorizontalAlignment.Left
@@ -735,16 +741,16 @@ Namespace Showcase
             worksheet.Range("1:1").VerticalAlignment = VerticalAlignment.Center
             worksheet.Range!A1.Style = workbook.Styles("Normal")
 
-            '			#End Region
+#End Region
 
-            '			#End Region
+#End Region
 
-            '			#Region "Worksheet_CustomizableReport"
+#Region "Worksheet_CustomizableReport"
             Dim worksheet2 As IWorksheet = workbook.Worksheets.Add()
             worksheet2.Name = "Customizable Report"
             worksheet2.SheetView.DisplayGridlines = False
 
-            '			#Region "RowHeightColumnWidth"
+#Region "RowHeightColumnWidth"
             worksheet2.StandardHeight = 16.5
             worksheet2.StandardWidth = 8.43
             worksheet2.Range("1:1").RowHeight = 51.75
@@ -754,13 +760,13 @@ Namespace Showcase
             worksheet2.Range("C:C").ColumnWidth = 15.5703125
             worksheet2.Range("D:F").ColumnWidth = 11.42578125
             worksheet2.Range("G:H").ColumnWidth = 13.42578125
-            '			#End Region
+#End Region
 
-            '			#Region "Values"
+#Region "Values"
             worksheet2.Range!B1.Value = "SALES REPORT"
-            '			#End Region
+#End Region
 
-            '			#Region "PivotTable"
+#Region "PivotTable"
             'create pivot cache.
             Dim pivotcache = workbook.PivotCaches.Create(worksheet.Range("B2:F87"))
             'create pivot table.
@@ -784,18 +790,18 @@ Namespace Showcase
             'just a workaround, we dost not provide api to set number format
             'for pivot field. so use follow way.
             pivottable.DataBodyRange.NumberFormat = "$#,##0.00_);($#,##0.00)"
-            '			#End Region
+#End Region
 
-            '			#Region "Style"
+#Region "Style"
             worksheet2.Range("1:1").Style = workbook.Styles("Title")
             worksheet2.Range("1:1").Interior.ThemeColor = ThemeColor.Accent1
             worksheet2.Range("1:1").HorizontalAlignment = HorizontalAlignment.Left
             worksheet2.Range("1:1").IndentLevel = 1
             worksheet2.Range("1:1").VerticalAlignment = VerticalAlignment.Center
             worksheet2.Range!A1.Style = workbook.Styles("Normal")
-            '			#End Region
+#End Region
 
-            '			#Region "Shape"
+#Region "Shape"
             'create a shape.
             Dim shape As IShape = worksheet2.Shapes.AddShape(AutoShapeType.RectangularCallout, 472, 65, 300, 70)
             'config shape's line and fill.
@@ -824,29 +830,29 @@ Namespace Showcase
             shape_p2.Font.Size = 8
             shape_p2.Font.Color.ObjectThemeColor = ThemeColor.Dark1
             shape_p2.Font.Color.Brightness = 0.25
-            '			#End Region
+#End Region
 
-            '			#End Region
+#End Region
 
-            '			#Region "Worksheet_DataLists"
+#Region "Worksheet_DataLists"
             Dim worksheet3 As IWorksheet = workbook.Worksheets.Add()
             worksheet3.Name = "Data Lists"
             worksheet3.SheetView.DisplayGridlines = False
 
-            '			#Region "RowHeightColumnWidth"
+#Region "RowHeightColumnWidth"
             worksheet3.StandardHeight = 18.75
             worksheet3.StandardWidth = 8.43
             worksheet3.Range("1:1").RowHeight = 51.75
             worksheet3.Range("2:32").RowHeight = 19
             worksheet3.Range("A:A, D:D").ColumnWidth = 2.28515625
             worksheet3.Range("B:C").ColumnWidth = 34.42578125
-            '			#End Region
+#End Region
 
-            '			#Region "Values"
+#Region "Values"
             worksheet3.Range!B1.Value = "DATA LISTS"
-            '			#End Region
+#End Region
 
-            '			#Region "Table"
+#Region "Table"
             worksheet3.Range("B2:B32").Value = New Object(,) {
                 {"PRODUCTS"},
                 {"Product 1"},
@@ -926,18 +932,18 @@ Namespace Showcase
             table_Customers.Columns(0).Range.VerticalAlignment = VerticalAlignment.Center
             table_Customers.ShowTableStyleFirstColumn = True
             table_Customers.HeaderRange.Font.Size = 11
-            '			#End Region
+#End Region
 
-            '			#Region "Style"
+#Region "Style"
             worksheet3.Range("1:1").Style = workbook.Styles("Title")
             worksheet3.Range("1:1").Interior.ThemeColor = ThemeColor.Accent1
             worksheet3.Range("1:1").HorizontalAlignment = HorizontalAlignment.Left
             worksheet3.Range("1:1").IndentLevel = 1
             worksheet3.Range("1:1").VerticalAlignment = VerticalAlignment.Center
             worksheet3.Range!A1.Style = workbook.Styles("Normal")
-            '			#End Region
+#End Region
 
-            '			#Region "Shape"
+#Region "Shape"
             Dim shape2 As IShape = worksheet3.Shapes.AddShape(AutoShapeType.RectangularCallout, 380, 65, 280, 50)
             shape2.Line.DashStyle = LineDashStyle.Solid
             shape2.Line.Weight = 4
@@ -959,9 +965,9 @@ Namespace Showcase
             shape2_p2.Font.Size = 8
             shape2_p2.Font.Color.ObjectThemeColor = ThemeColor.Dark1
             shape2_p2.Font.Color.Brightness = 0.25
-            '			#End Region
+            			#End Region
 
-            '			#End Region
+            			#End Region
 
         End Sub
 

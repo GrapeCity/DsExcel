@@ -62,19 +62,19 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.DataSource
             workbook.ProcessTemplate();
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override string TemplateName
         {
             get
             {
                 return "Template_StudentInfo.xlsx";
+            }
+        }
+
+        public override bool ShowTemplate
+        {
+            get
+            {
+                return true;
             }
         }
 

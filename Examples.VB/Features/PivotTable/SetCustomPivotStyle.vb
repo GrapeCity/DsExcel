@@ -73,11 +73,5 @@
 
             worksheet.Range("A1:H16").Columns.AutoFit()
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

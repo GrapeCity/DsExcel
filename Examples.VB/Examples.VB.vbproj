@@ -19,10 +19,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ExcelReporting\**" />
+    <Compile Remove="ExcelTemplates\**" />
+    <EmbeddedResource Remove="ExcelReporting\**" />
+    <EmbeddedResource Remove="ExcelTemplates\**" />
+    <None Remove="ExcelReporting\**" />
+    <None Remove="ExcelTemplates\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="CodeResource.Designer.cs" />
     <None Remove="Resource\list.png" />
     <None Remove="Resource\logo.png" />
     <None Remove="Resource\movie.png" />
+    <None Remove="Resource\puffins.jpg" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Axes.ConfigDisplayUnitLabel.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Chart3DFormat.ConfigChart3DFormat.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Chart3DFormat.ConfigChartBackWall.png" />
@@ -91,10 +101,12 @@
     <None Remove="Resource\xlsx\Family budget.xlsx" />
     <None Remove="Resource\xlsx\Financial KPIs.xlsx" />
     <None Remove="Resource\xlsx\Flowcharts.xlsx" />
+    <None Remove="Resource\xlsx\GroupShape.xlsx" />
     <None Remove="Resource\xlsx\Home inventory.xlsx" />
     <None Remove="Resource\xlsx\Income statement.xlsx" />
     <None Remove="Resource\xlsx\Information.csv" />
     <None Remove="Resource\xlsx\KeepTogether.xlsx" />
+    <None Remove="Resource\xlsx\Manufacturing output chart.xlsx" />
     <None Remove="Resource\xlsx\Monthly business budget.xlsx" />
     <None Remove="Resource\xlsx\Multiple sheets one page.xlsx" />
     <None Remove="Resource\xlsx\MultipleHeaders.xlsx" />
@@ -109,6 +121,7 @@
     <None Remove="Resource\xlsx\Simple invoice.xlsx" />
     <None Remove="Resource\xlsx\Simple personal budget.xlsx" />
     <None Remove="Resource\xlsx\Student calendar (Mon).xlsx" />
+    <None Remove="Resource\xlsx\Template_SalesTracker_report.xlsx" />
     <None Remove="Resource\xlsx\Travel expense report.xlsx" />
     <None Remove="Resource\xlsx\WebsiteFlowChart.xlsx" />
     <None Remove="Tutorial\Tutorial_en-US.md" />
@@ -123,6 +136,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\movie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\puffins.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Axes.ConfigDisplayUnitLabel.png">
@@ -321,6 +337,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Flowcharts.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\GroupShape.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Home inventory.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -333,6 +352,7 @@
     <EmbeddedResource Include="Resource\xlsx\KeepTogether.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Manufacturing output chart.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Monthly business budget.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -371,6 +391,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Student calendar (Mon).xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\Template_SalesTracker_report.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Travel expense report.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -389,8 +410,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ExcelReporting\" />
-    <Folder Include="ExcelTemplates\" />
     <Folder Include="SpreadSheetsViewer\" />
   </ItemGroup>
 

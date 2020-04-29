@@ -4,7 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 
-namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
+namespace GrapeCity.Documents.Excel.Examples.Features.ImageExporting
 {
     public class ConvertRangeToImage : ExampleBase
     {
@@ -28,25 +28,8 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             worksheet.Range["A2:C5"].Borders[BordersIndex.InsideHorizontal].Color = Color.Orange;
             worksheet.Range["A2:C5"].Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.DashDot;
 
-            //NOTE: To use this feature, you should have valid license for GrapeCity Documents for PDF.
-            //Create a pdf document.
-            GrapeCity.Documents.Pdf.GcPdfDocument doc = new GrapeCity.Documents.Pdf.GcPdfDocument();
-            GrapeCity.Documents.Pdf.Page page = doc.NewPage();
-
-            //Create a PrintManager.
-            GrapeCity.Documents.Excel.PrintManager printManager = new GrapeCity.Documents.Excel.PrintManager();
-
-            //Get the size of the range"A1:C5".
-            SizeF size = printManager.GetSize(worksheet.Range["A1:C5"]);
-
-            //Modify the size of the page.
-            page.Size = size;
-
-            // Draw the Range"A1:E5" to the specified location on the page. 
-            printManager.Draw(page, new PointF(0, 0), worksheet.Range["A1:C5"]);
-
-            // Saves the page as an image to a stream.
-            page.SaveAsPng(outputStream, new Pdf.SaveAsImageOptions() { Resolution = 72 });
+            // Save the range "A1:C5" as an image to a stream.
+            worksheet.Range["A1:C5"].ToImage(outputStream, Drawing.ImageType.PNG);
         }
 
         public override bool SaveAsImages
@@ -57,11 +40,11 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             }
         }
 
-        public override bool ShowViewer
+        public override bool IsNew
         {
             get
             {
-                return false;
+                return true;
             }
         }
     }

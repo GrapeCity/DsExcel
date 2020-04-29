@@ -8,12 +8,12 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            IWorksheet worksheet = workbook.Worksheets[0];
-            worksheet.Range["A1"].Value = "GrapeCity Documents for Excel";
+            var fileStream = this.GetResourceStream("xlsx\\Medical office start-up expenses 1.xlsx");
+            workbook.Open(fileStream);
 
-            //Protects the workbook so that other users cannot view hidden worksheets, add, move, delete, hidie, or rename worksheets.
+            //Protects the workbook with a password so that other users cannot view hidden worksheets, add, move, delete, hide, or rename worksheets.
             //The protection only happens when you open it with an Excel application.
-            workbook.Protect();
+            workbook.Protect("Y6dh!et5");
         }
 
         public override bool CanDownload
@@ -29,6 +29,14 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Workbook
             get
             {
                 return false;
+            }
+        }
+
+        public override string[] UsedResources
+        {
+            get
+            {
+                return new string[] { "xlsx\\Medical office start-up expenses 1.xlsx" };
             }
         }
 

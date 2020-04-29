@@ -46,14 +46,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.ExportChart
             categoryAxis.TickLabelSpacing = 5;
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool SavePdf
         {
             get

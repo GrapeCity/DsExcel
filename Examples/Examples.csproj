@@ -26,7 +26,13 @@
   <ItemGroup>
     <None Remove="CodeResource_VB.Designer.vb" />
     <None Remove="Resource\Acme-Financial Report 2018.pdf" />
+    <None Remove="Resource\AcmeLogo-vertical-250px.png" />
+    <None Remove="Resource\AcmeLogo.png" />
     <None Remove="Resource\Annual financial report.csv" />
+    <None Remove="Resource\archiverFolder.png" />
+    <None Remove="Resource\decreaseIndicator.png" />
+    <None Remove="Resource\docFile.png" />
+    <None Remove="Resource\folder.png" />
     <None Remove="Resource\Fonts\AGENCYR.TTF" />
     <None Remove="Resource\Fonts\arial.ttf" />
     <None Remove="Resource\Fonts\arialbd.ttf" />
@@ -50,8 +56,22 @@
     <None Remove="Resource\Fonts\times.ttf" />
     <None Remove="Resource\Fonts\timesbd.ttf" />
     <None Remove="Resource\Fonts\timesi.ttf" />
+    <None Remove="Resource\image\Mountain-100.jpg" />
+    <None Remove="Resource\image\Mountain-200.jpg" />
+    <None Remove="Resource\image\Mountain-300.jpg" />
+    <None Remove="Resource\image\Mountain-400-W.jpg" />
+    <None Remove="Resource\image\Mountain-500.jpg" />
+    <None Remove="Resource\image\Road-150.jpg" />
+    <None Remove="Resource\image\Road-350-W.jpg" />
+    <None Remove="Resource\image\Touring-1000.jpg" />
+    <None Remove="Resource\image\Touring-2000.jpg" />
+    <None Remove="Resource\increaseIndicator.png" />
+    <None Remove="Resource\leaf1.png" />
+    <None Remove="Resource\leaf2.png" />
     <None Remove="Resource\list.png" />
     <None Remove="Resource\logo.png" />
+    <None Remove="Resource\newFloder.png" />
+    <None Remove="Resource\puffins.jpg" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.AddUserShapes.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Axes.ConfigDisplayUnitLabel.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.Chart3DFormat.ConfigChart3DFormat.png" />
@@ -65,7 +85,9 @@
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.ChartLines.CreateSeriesLine.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.ChartLines.CreateTrendline.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.ChartLines.CreateUpDownBars.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.ChartTitle.ConfigChartTitleAngle.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.ChartTitle.ConfigChartTitleRichText.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.DataLabel.ConfigDataLabelAngle.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.DataPoint.ConfigDataPointFormat.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.DataPoint.ConfigNegativePoint.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.DataPoint.ConfigSecondarySection.png" />
@@ -103,6 +125,7 @@
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.RefreshPivotTable.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.RowAxisLayoutInPivotTable.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.SetPivotFieldNameInPivotTable.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigGradientFillWithPathShape.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigShape3DFormat.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigShapeLine.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigShapeWithGradientFill.png" />
@@ -112,6 +135,7 @@
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigShapeWithTextureFill.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConnectShapesByConnector.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.SetShapeText.png" />
+    <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.SetShapeTextAlignment.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ShapeCopy.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ShapeCut.png" />
     <None Remove="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ShapeDuplicate.png" />
@@ -131,6 +155,7 @@
     <None Remove="Resource\xlsx\Budget summary report1.xlsx" />
     <None Remove="Resource\xlsx\Chart Gallery.xlsx" />
     <None Remove="Resource\xlsx\ControlAdjustingPageBreaks.xlsx" />
+    <None Remove="Resource\xlsx\Cost analysis with Pareto chart.xlsx" />
     <None Remove="Resource\xlsx\CustomShapes.xlsx" />
     <None Remove="Resource\xlsx\DecisionTreeFlowChart.xlsx" />
     <None Remove="Resource\xlsx\Employee absence schedule.xlsx" />
@@ -141,10 +166,14 @@
     <None Remove="Resource\xlsx\Financial KPIs.xlsx" />
     <None Remove="Resource\xlsx\FinancialReport.xlsx" />
     <None Remove="Resource\xlsx\Flowcharts.xlsx" />
+    <None Remove="Resource\xlsx\Flowcharts3.xlsx" />
+    <None Remove="Resource\xlsx\GroupShape.xlsx" />
     <None Remove="Resource\xlsx\Home inventory.xlsx" />
     <None Remove="Resource\xlsx\Income statement.xlsx" />
     <None Remove="Resource\xlsx\Information.csv" />
     <None Remove="Resource\xlsx\KeepTogether.xlsx" />
+    <None Remove="Resource\xlsx\Manufacturing output chart.xlsx" />
+    <None Remove="Resource\xlsx\Medical office start-up expenses 1.xlsx" />
     <None Remove="Resource\xlsx\Monthly business budget.xlsx" />
     <None Remove="Resource\xlsx\Multiple sheets one page.xlsx" />
     <None Remove="Resource\xlsx\MultipleHeaders.xlsx" />
@@ -154,6 +183,7 @@
     <None Remove="Resource\xlsx\PageSetup Print Area.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Print Title Columns.xlsx" />
     <None Remove="Resource\xlsx\PageSetup Print Title Rows.xlsx" />
+    <None Remove="Resource\xlsx\Personal Monthly Budget.xlsx" />
     <None Remove="Resource\xlsx\PrintSpecificPDFPages.xlsx" />
     <None Remove="Resource\xlsx\Project cost tracker.xlsx" />
     <None Remove="Resource\xlsx\RepeatColumnsAtRight.xlsx" />
@@ -163,19 +193,29 @@
     <None Remove="Resource\xlsx\Simple invoice.xlsx" />
     <None Remove="Resource\movie.png" />
     <None Remove="Resource\xlsx\Simple personal budget.xlsx" />
+    <None Remove="Resource\xlsx\Sport sign-up sheet.xlsx" />
     <None Remove="Resource\xlsx\Student calendar %28Mon%29.xlsx" />
     <None Remove="Resource\xlsx\Template_CellStyle.xlsx" />
     <None Remove="Resource\xlsx\Template_DataTemplate.xlsx" />
     <None Remove="Resource\xlsx\Template_DepartmentBudget.xlsx" />
+    <None Remove="Resource\xlsx\Template_EmployeeAbsenceSchedule.xlsx" />
     <None Remove="Resource\xlsx\Template_ExpressionTemplate.xlsx" />
     <None Remove="Resource\xlsx\Template_FamilyInfo.xlsx" />
     <None Remove="Resource\xlsx\Template_FinancialDashboard.xlsx" />
+    <None Remove="Resource\xlsx\Template_FormulaTemplate.xlsx" />
     <None Remove="Resource\xlsx\Template_FunctionTemplate.xlsx" />
+    <None Remove="Resource\xlsx\Template_ImageTemplate.xlsx" />
     <None Remove="Resource\xlsx\Template_InlineTemplate.xlsx" />
+    <None Remove="Resource\xlsx\Template_InsertMode.xlsx" />
+    <None Remove="Resource\xlsx\Template_KeepLineSize.xlsx" />
     <None Remove="Resource\xlsx\Template_MergeCell.xlsx" />
     <None Remove="Resource\xlsx\Template_PurchaseOrder.xlsx" />
     <None Remove="Resource\xlsx\Template_Sales.xlsx" />
     <None Remove="Resource\xlsx\Template_SalesDataGroup.xlsx" />
+    <None Remove="Resource\xlsx\Template_SalesDataGroup_DataSet.xlsx" />
+    <None Remove="Resource\xlsx\Template_SalesDataGroup_DataTable.xlsx" />
+    <None Remove="Resource\xlsx\Template_SalesTracker.xlsx" />
+    <None Remove="Resource\xlsx\Template_SalesTracker_report.xlsx" />
     <None Remove="Resource\xlsx\Template_Score.xlsx" />
     <None Remove="Resource\xlsx\Template_Scores.xlsx" />
     <None Remove="Resource\xlsx\Template_SetContext.xlsx" />
@@ -189,14 +229,33 @@
     <None Remove="Resource\xlsx\Template_StudentInfo.xlsx" />
     <None Remove="Resource\xlsx\Template_TablixReport.xlsx" />
     <None Remove="Resource\xlsx\Template_Travel.xlsx" />
+    <None Remove="Resource\xlsx\Template_WorkWithChart.xlsx" />
+    <None Remove="Resource\xlsx\Template_WorkWithConditionalFormatting.xlsx" />
+    <None Remove="Resource\xlsx\To_Do_List.xlsx" />
     <None Remove="Resource\xlsx\Travel expense report.xlsx" />
     <None Remove="Resource\xlsx\WebsiteFlowChart.xlsx" />
+    <None Remove="Resource\xlsx\WebsiteFlowChart[Template].xlsx" />
     <None Remove="StringResource.resx.resolve" />
     <None Remove="UpdateCodeResources.bat" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resource\Acme-Financial Report 2018.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\AcmeLogo-vertical-250px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\AcmeLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\archiverFolder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\decreaseIndicator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\docFile.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\Fonts\AGENCYR.TTF">
@@ -268,9 +327,47 @@
     <EmbeddedResource Include="Resource\Fonts\timesi.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Mountain-100.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Mountain-200.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Mountain-300.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Mountain-400-W.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Mountain-500.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Road-150.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Road-350-W.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Touring-1000.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\image\Touring-2000.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\increaseIndicator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\newFloder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\puffins.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.AddUserShapes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.ChartTitle.ConfigChartTitleAngle.png" />
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.DataLabel.ConfigDataLabelAngle.png" />
     <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Charts.NewCharts.AddBoxWhiskerChart.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -304,6 +401,10 @@
     <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.HideGrandTotalsInPivotTable.png" />
     <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.RowAxisLayoutInPivotTable.png" />
     <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.PivotTable.SetPivotFieldNameInPivotTable.png" />
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.ConfigGradientFillWithPathShape.png" />
+    <EmbeddedResource Include="Resource\Screenshots\GrapeCity.Documents.Spread.Examples.Features.Shape.SetShapeTextAlignment.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\Template_FamilyInfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -492,6 +593,7 @@
     <EmbeddedResource Include="Resource\xlsx\ControlAdjustingPageBreaks.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Cost analysis with Pareto chart.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\CustomShapes.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\DecisionTreeFlowChart.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Employee absence schedule.xlsx">
@@ -516,6 +618,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Flowcharts.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\GroupShape.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Home inventory.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -526,6 +629,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\KeepTogether.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Manufacturing output chart.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\Medical office start-up expenses 1.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Monthly business budget.xlsx">
@@ -550,6 +657,7 @@
     <EmbeddedResource Include="Resource\xlsx\PageSetup Print Title Rows.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Personal Monthly Budget.xlsx" />
     <EmbeddedResource Include="Resource\xlsx\PrintSpecificPDFPages.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -568,6 +676,9 @@
     <EmbeddedResource Include="Resource\xlsx\Simple personal budget.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Sport sign-up sheet.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Student calendar (Mon).xlsx" />
     <EmbeddedResource Include="Resource\xlsx\Template_CellStyle.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -578,6 +689,9 @@
     <EmbeddedResource Include="Resource\xlsx\Template_DepartmentBudget.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_EmployeeAbsenceSchedule.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Template_ExpressionTemplate.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -585,6 +699,34 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Template_FinancialDashboard.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SalesDataGroup_DataSet.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SalesDataGroup_DataTable.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SalesTracker.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_SalesTracker_report.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\Template_WorkWithChart.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_WorkWithConditionalFormatting.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_ImageTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_InsertMode.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_KeepLineSize.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\Template_FormulaTemplate.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Template_FunctionTemplate.xlsx">
@@ -644,10 +786,16 @@
     <EmbeddedResource Include="Resource\xlsx\Template_Travel.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource\xlsx\To_Do_List.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\Travel expense report.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource\xlsx\WebsiteFlowChart.xlsx" />
+    <EmbeddedResource Include="Resource\xlsx\WebsiteFlowChart[Template].xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tutorial\Tutorial_en-US.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -667,8 +815,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="$(GcExcelVersion)" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="GrapeCity.Documents.Excel" Version="3.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>

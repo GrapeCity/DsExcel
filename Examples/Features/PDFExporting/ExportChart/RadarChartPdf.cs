@@ -17,14 +17,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting.ExportChart
             shape.Chart.SeriesCollection.Add(worksheet.Range["A20:C25"]);
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool SavePdf
         {
             get

@@ -25,11 +25,5 @@
             Dim luigiCell = searchRange.Find("ルイージ")
             luigiCell.Interior.Color = System.Drawing.Color.Green
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

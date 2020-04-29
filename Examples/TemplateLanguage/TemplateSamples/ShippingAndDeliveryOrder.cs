@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.TemplateSamples
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            //Load template file Template_Score.xlsx from resource
+            //Load template file from resource
             var templateFile = this.GetResourceStream("xlsx\\Template_ShippingAndDeliveryOrder.xlsx");
             workbook.Open(templateFile);
 
@@ -129,19 +129,19 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.TemplateSamples
             workbook.ProcessTemplate();
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override string TemplateName
         {
             get
             {
                 return "Template_ShippingAndDeliveryOrder.xlsx";
+            }
+        }
+
+        public override bool ShowTemplate
+        {
+            get
+            {
+                return true;
             }
         }
 

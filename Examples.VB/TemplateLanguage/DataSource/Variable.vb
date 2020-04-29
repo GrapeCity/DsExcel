@@ -1,4 +1,5 @@
-﻿Namespace Templates.DataSource
+﻿Imports System.Collections.Generic
+Namespace Templates.DataSource
     Public Class Variable
         Inherits ExampleBase
 
@@ -50,12 +51,6 @@
             workbook.ProcessTemplate()
         End Sub
 
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
-
         Public Overrides ReadOnly Property TemplateName As String
             Get
                 Return "Template_StudentInfo.xlsx"
@@ -77,6 +72,11 @@
         Public Overrides ReadOnly Property UsedResources As String()
             Get
                 Return New String() {"xlsx\Template_StudentInfo.xlsx"}
+            End Get
+        End Property
+        Public Overrides ReadOnly Property Refs As String()
+            Get
+                Return New String() {"StudentInfo", "Family", "Guardian"}
             End Get
         End Property
     End Class

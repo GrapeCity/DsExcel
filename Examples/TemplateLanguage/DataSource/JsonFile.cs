@@ -48,7 +48,7 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.DataSource
                 jsonText = reader.ReadToEnd();
             }
 
-            var datasource = JsonConvert.DeserializeObject<StudentInfos>(jsonText);
+            var datasource = Newtonsoft.Json.JsonConvert.DeserializeObject<StudentInfos>(jsonText);
 
             //Add data source
             workbook.AddDataSource("ds", datasource);
@@ -56,19 +56,19 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.DataSource
             workbook.ProcessTemplate();
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override string TemplateName
         {
             get
             {
                 return "Template_FamilyInfo.xlsx";
+            }
+        }
+
+        public override bool ShowTemplate
+        {
+            get
+            {
+                return true;
             }
         }
 

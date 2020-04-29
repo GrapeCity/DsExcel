@@ -51,14 +51,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Hyperlinks
                                     "External.xlsx");
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool ShowViewer
         {
             get

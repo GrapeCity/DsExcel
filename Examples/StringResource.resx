@@ -1990,8 +1990,8 @@ The examples in this folder demonstrate the following cases:
   <data name="ConvertShapeToImage.Name" xml:space="preserve">
     <value>Convert shape to image</value>
   </data>
-  <data name="ConvertSheetToImage.Name" xml:space="preserve">
-    <value>Convert sheet to image</value>
+  <data name="ExportSheetToImage.Name" xml:space="preserve">
+    <value>Convert sheet to image from existing file</value>
   </data>
   <data name="AccessCellsRowsColumns.Descrip" xml:space="preserve">
     <value>This sample demonstrates how to access the Cells/Rows/Columns/EntireRow/EntireColumn object in a sheet range.</value>
@@ -3190,17 +3190,19 @@ The templates support **cell style** and **merged styles** applied on the cell. 
   </data>
   <data name="TemplateCell.Descrip" xml:space="preserve">
     <value>## Template cell
-GcExcel use **“{{”** and **“}}”** as markers of template.
+GcExcel uses **“{{”** and **“}}”** as markers of template.
 
 Between these markers, user can use data field, function field, expression field and lots of properties.
 
-The template supports kinds of template cells:
+The template supports following kinds of template cells:
 
 - **data template:** a template representing a data field
 - **function template:** a template representing a function
+- **formula template:** a template representing a formula, and will be remained as formula after template processing
 - **expression template:** a template representing an expression
 - **inline template:** inline template for use with text
-- **sheet template:** template in the sheet name</value>
+- **sheet template:** template in the sheet name
+- **image template:** a template representing an image, and will be shown as image in the generated report</value>
   </data>
   <data name="Templates.Descrip" xml:space="preserve">
     <value>## Templates
@@ -3221,21 +3223,21 @@ Then you can view the results by downloading the Excel file.
   </data>
   <data name="TemplateSamples.Descrip" xml:space="preserve">
     <value>## Template samples
-User samples for you to have an entire vision of **GcExcel Templates** and generated reports.</value>
+This section showcases some real-world scenarios implemented GcExcel Templates to generate full professional Excel Reports.</value>
   </data>
   <data name="CellStyle.Descrip" xml:space="preserve">
     <value>User can directly use Excel's cell style in the template. 
 
-The style will be applied to the cells as per the data grow.</value>
+The style will be applied to the cells as the data grows.</value>
   </data>
   <data name="CustomObject.Descrip" xml:space="preserve">
-    <value>User can use **custom object** as the data source of GcExcel Template, and take its fields and properties as data field in template.</value>
+    <value>User can use **custom object** as the data source of GcExcel Template, and bind its fields and properties as data field in template.</value>
   </data>
   <data name="DataSet.Descrip" xml:space="preserve">
-    <value>User can use .Net **DataSet** as the data source of GcExcel Template.</value>
+    <value>User can use .NET **DataSet** as the data source of GcExcel Template.</value>
   </data>
   <data name="DataTable.Descrip" xml:space="preserve">
-    <value>User can use .Net **DataTable** as the data source of GcExcel Template.</value>
+    <value>User can use .NET **DataTable** as the data source of GcExcel Template.</value>
   </data>
   <data name="DataTemplate.Descrip" xml:space="preserve">
     <value>Bind data with a template which consists of a data field of data source.</value>
@@ -3250,13 +3252,13 @@ The style will be applied to the cells as per the data grow.</value>
     <value>Bind data with a template which consists of inline fields.</value>
   </data>
   <data name="JsonFile.Descrip" xml:space="preserve">
-    <value>User can use a json file as the data source of GcExcel Template. Before this, user should read data from the file and serialize it to an custom object.
-Actually, user can use any data which can be serialized to an custom object as the data souce.</value>
+    <value>User can use a json file as the data source of GcExcel Template. Before this, user should read data from the file and serialize it to a custom object.
+Actually, user can use any data which can be serialized to a custom object as the data souce.</value>
   </data>
   <data name="MergeCell.Descrip" xml:space="preserve">
     <value>User can use merge cells in the template. 
 
-GcExcel will try to understand the meanings of merge cell in template, and generate expected report.</value>
+GcExcel will detect the type of merge cell in template, and generate the expected report.</value>
   </data>
   <data name="SetContext.Descrip" xml:space="preserve">
     <value>User can use **C(context)** property to set a template's context explicitly.</value>
@@ -3268,7 +3270,7 @@ GcExcel will try to understand the meanings of merge cell in template, and gener
     <value>User can use **G(group)** property to set a template's group type.</value>
   </data>
   <data name="SetPagebreak.Descrip" xml:space="preserve">
-    <value>User can use **PB(pagebreak)** property on a template to insert a pagebreak dynamically for the report.</value>
+    <value>User can use **PB(pagebreak)** property on a template to insert a page break dynamically for the report.</value>
   </data>
   <data name="SetRange.Descrip" xml:space="preserve">
     <value>User can use **R(range)** property to set a range for the current template.
@@ -3296,8 +3298,8 @@ In the specified range, if a template cell has no default context nor explicit c
   <data name="ConvertShapeToImage.Descrip" xml:space="preserve">
     <value>Refer to the following example code to see how to convert a shape in spreadsheet to an image.</value>
   </data>
-  <data name="ConvertSheetToImage.Descrip" xml:space="preserve">
-    <value>Refer to the following example code to see how to convert a worksheet to an image.</value>
+  <data name="ExportSheetToImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to convert sheet to image from existing file.</value>
   </data>
   <data name="CreatePicture.Descrip" xml:space="preserve">
     <value>Refer to the following example code to see how to create a picture object in worksheet.</value>
@@ -3597,5 +3599,423 @@ Click the **"Run"** button to perform the following actions on the server:
   </data>
   <data name="DepartmentBudget.Name" xml:space="preserve">
     <value>Department Budget</value>
+  </data>
+  <data name="ProtectWorksheetWithPassword.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to protect the worksheet with a password.</value>
+  </data>
+  <data name="ProtectWorksheetWithPassword.Name" xml:space="preserve">
+    <value>Protect worksheet with password</value>
+  </data>
+  <data name="UnprotectWorksheetWithPassword.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to unprotect the worksheet with a password.</value>
+  </data>
+  <data name="UnprotectWorksheetWithPassword.Name" xml:space="preserve">
+    <value>Unprotect worksheet with password</value>
+  </data>
+  <data name="ConvertChartToImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to convert a chart in spreadsheet to an image.</value>
+  </data>
+  <data name="ConvertChartToImage.Name" xml:space="preserve">
+    <value>Convert chart to image</value>
+  </data>
+  <data name="ExportShapeToImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to convert shape to image from existing file.</value>
+  </data>
+  <data name="ExportShapeToImage.Name" xml:space="preserve">
+    <value>Convert shape to image from existing file</value>
+  </data>
+  <data name="ExportChartToImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to convert chart to image from existing file.</value>
+  </data>
+  <data name="ExportChartToImage.Name" xml:space="preserve">
+    <value>Convert chart to image from existing file</value>
+  </data>
+  <data name="ExportRangeToImage.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to convert range to image from existing file.</value>
+  </data>
+  <data name="ExportRangeToImage.Name" xml:space="preserve">
+    <value>Convert range to image from existing file</value>
+  </data>
+  <data name="ImageExporting.Descrip" xml:space="preserve">
+    <value>## Image Exporting
+In this folder, you can explore complete code demonstrating how to export sheet/range/shape/chart to image files at server side. 
+
+Click the **"Run"** button to perform the following actions on the server:
+- Create an empty workbook
+- Execute all of code in the code window
+- Save to an image file
+
+Then you can view the image in your browser.</value>
+  </data>
+  <data name="ImageExporting.Name" xml:space="preserve">
+    <value>Image Exporting</value>
+  </data>
+  <data name="ToJsonFromJsonForWorksheet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to import and export json for a single worksheet.</value>
+  </data>
+  <data name="ToJsonFromJsonForWorksheet.Name" xml:space="preserve">
+    <value>ToJson and FromJson</value>
+  </data>
+  <data name="SaveBackgroundPicturesToPDF.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to export background pictures to pdf.</value>
+  </data>
+  <data name="SaveBackgroundPicturesToPDF.Name" xml:space="preserve">
+    <value>Save background pictures to pdf</value>
+  </data>
+  <data name="ConfigChartTitleAngle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure text angle of a chart title.</value>
+  </data>
+  <data name="ConfigChartTitleAngle.Name" xml:space="preserve">
+    <value>Set angle of chart title</value>
+  </data>
+  <data name="ConfigCustomErrorBar.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure a custom type error bar of chart.</value>
+  </data>
+  <data name="ConfigCustomErrorBar.Name" xml:space="preserve">
+    <value>Custom type</value>
+  </data>
+  <data name="ConfigDataLabelAngle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure text angle of data labels.</value>
+  </data>
+  <data name="ConfigDataLabelAngle.Name" xml:space="preserve">
+    <value>Set angle of data labels</value>
+  </data>
+  <data name="ConfigDeleteErrorBar.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to delete an error bar of chart.</value>
+  </data>
+  <data name="ConfigDeleteErrorBar.Name" xml:space="preserve">
+    <value>Delete error bar</value>
+  </data>
+  <data name="ConfigErrorBarIncludeAndEndType.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure include type and end cap type of error bar.</value>
+  </data>
+  <data name="ConfigErrorBarIncludeAndEndType.Name" xml:space="preserve">
+    <value>Set include type and end cap type</value>
+  </data>
+  <data name="ConfigErrorBarStyle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure error bar's style.</value>
+  </data>
+  <data name="ConfigErrorBarStyle.Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="ConfigFixedValueErrorBar.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure a fixed value type error bar of chart.</value>
+  </data>
+  <data name="ConfigFixedValueErrorBar.Name" xml:space="preserve">
+    <value>Fixed value type</value>
+  </data>
+  <data name="ConfigPercentageErrorBar.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure a percentage type error bar of chart.</value>
+  </data>
+  <data name="ConfigPercentageErrorBar.Name" xml:space="preserve">
+    <value>Percentage type</value>
+  </data>
+  <data name="ConfigStdErrErrorBar.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure a standard error type error bar of chart.</value>
+  </data>
+  <data name="ConfigStdErrErrorBar.Name" xml:space="preserve">
+    <value>Standard error type</value>
+  </data>
+  <data name="ConfigStDevErrorBar.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure a standard deviation type error bar of chart.</value>
+  </data>
+  <data name="ConfigStDevErrorBar.Name" xml:space="preserve">
+    <value>Standard deviation type</value>
+  </data>
+  <data name="ConfigTickMarkLabelAngle.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure the tick labels' angle of axis.</value>
+  </data>
+  <data name="ConfigTickMarkLabelAngle.Name" xml:space="preserve">
+    <value>Set angle of tick mark labels</value>
+  </data>
+  <data name="ConfigXYErrorBars.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to configure X and Y direction error bar of scatter or bubble chart.</value>
+  </data>
+  <data name="ConfigXYErrorBars.Name" xml:space="preserve">
+    <value>X and Y direction</value>
+  </data>
+  <data name="ErrorBars.Descrip" xml:space="preserve">
+    <value>## ErrorBars
+These examples demonstrate how to configure chart **error bars**.</value>
+  </data>
+  <data name="ErrorBars.Name" xml:space="preserve">
+    <value>Error bars</value>
+  </data>
+  <data name="ConfigGradientFillWithPathShape.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set different path type of gradient fill.</value>
+  </data>
+  <data name="ConfigGradientFillWithPathShape.Name" xml:space="preserve">
+    <value>Set gradient path type</value>
+  </data>
+  <data name="PrintTransparentCell.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to print the transparency of the cell's background colors.</value>
+  </data>
+  <data name="PrintTransparentCell.Name" xml:space="preserve">
+    <value>Print transparent cell</value>
+  </data>
+  <data name="SetPickTrayByPDFSizeOptionToPDF.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to control whether the PDF page size is used to select the input paper tray when printing.</value>
+  </data>
+  <data name="SetPickTrayByPDFSizeOptionToPDF.Name" xml:space="preserve">
+    <value>Set PickTrayByPDFSize option for PDF document</value>
+  </data>
+  <data name="GetPaginationInfo.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to getget an array of page boundaries of a sheet for vertical or horizontal paging in GcExcel.</value>
+  </data>
+  <data name="GetPaginationInfo.Name" xml:space="preserve">
+    <value>Get the horizontal or vertical pagination infos</value>
+  </data>
+  <data name="OutlineColumn.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add the outline column for the worksheet to display the data in tree structure.</value>
+  </data>
+  <data name="OutlineColumn.Name" xml:space="preserve">
+    <value>Outline column</value>
+  </data>
+  <data name="DisplayUnitLabelPdf.Descrip" xml:space="preserve">
+    <value>Export axis display unit label to PDF file</value>
+  </data>
+  <data name="DisplayUnitLabelPdf.Name" xml:space="preserve">
+    <value>Axis display unit label</value>
+  </data>
+  <data name="SunburstChartPdf.Descrip" xml:space="preserve">
+    <value>Export sunburst chart to PDF file</value>
+  </data>
+  <data name="SunburstChartPdf.Name" xml:space="preserve">
+    <value>Sunburst chart</value>
+  </data>
+  <data name="TreemapChartPdf.Descrip" xml:space="preserve">
+    <value>Export treemap chart to PDF file</value>
+  </data>
+  <data name="TreemapChartPdf.Name" xml:space="preserve">
+    <value>Treemap chart</value>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Descrip" xml:space="preserve">
+    <value>Export axis label number format to PDF file</value>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Name" xml:space="preserve">
+    <value>Axis label number format</value>
+  </data>
+  <data name="ErrorbarPdf.Descrip" xml:space="preserve">
+    <value>Export error bars to PDF file</value>
+  </data>
+  <data name="ErrorbarPdf.Name" xml:space="preserve">
+    <value>Error bars</value>
+  </data>
+  <data name="TrendlinePdf.Descrip" xml:space="preserve">
+    <value>Export trendline to PDF file</value>
+  </data>
+  <data name="TrendlinePdf.Name" xml:space="preserve">
+    <value>Trendline</value>
+  </data>
+  <data name="FormulaTemplate.Descrip" xml:space="preserve">
+    <value>Bind data with a template which consists of formulas. And these formulas will be retained and refer to the expanded data.</value>
+  </data>
+  <data name="FormulaTemplate.Name" xml:space="preserve">
+    <value>Formula template</value>
+  </data>
+  <data name="SetShapeTextAlignment.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to set the horizontal and vertical alignment of the shape's text in GcExcel.</value>
+  </data>
+  <data name="SetShapeTextAlignment.Name" xml:space="preserve">
+    <value>Set alignment of shape's text</value>
+  </data>
+  <data name="ShapeWithTextAlignment.Descrip" xml:space="preserve">
+    <value>GcExcel can export shape text with alignment to PDF file.</value>
+  </data>
+  <data name="ShapeWithTextAlignment.Name" xml:space="preserve">
+    <value>Shape with text alignment</value>
+  </data>
+  <data name="OutlineColumnToPDF.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to export the outline column of the worksheet to PDF file.</value>
+  </data>
+  <data name="OutlineColumnToPDF.Name" xml:space="preserve">
+    <value>Export outline column</value>
+  </data>
+  <data name="GlobalOptions.Descrip" xml:space="preserve">
+    <value>## Global options
+This feature provides global options for user to control the default behaviors of GcExcel Template. 
+
+GcExcel defines some built-in workbook defined names to set global options on the template.
+Currently, these options are Workbook Defined Names. So, user should take care of the scope of using in the options in the template. That is, template options in multiple worksheets will behave the same.
+
+User can add/edit/delete these built-in defined names directly in Excel file, or via GcExcel APIs.
+
+The value of Name property in built-in defined name will be taken as the template global option's name.
+The value of RefersTo property in built-in defined name will be taken as the template global option's value.
+The option name is case-sensitive, while the option value is case-insensitive.
+
+The template supports following types of global options:
+
+- **TemplateOptions.KeepLineSize:** Boolean type. The value can be **True** or **False**(Default).
+Whether the row height and column width should be of equal size when processing template.
+- **TemplateOptions.InsertMode:** String type. The value can be **Cells**(Default) or **EntireRowColumn**.
+Whether GcExcel will insert cells or entire rows &amp; columns when extra spaces are needed while expanding the template.</value>
+  </data>
+  <data name="GlobalOptions.Name" xml:space="preserve">
+    <value>Global options</value>
+  </data>
+  <data name="InsertMode.Descrip" xml:space="preserve">
+    <value>Use built-in defined name "TemplateOptions.InsertMode" to specify whether GcExcel will insert cells or entire rows &amp; columns when extra spaces are needed while expanding the template.
+The value is in string type, and can be "Cells"(Default) or "EntireRowColumn".</value>
+  </data>
+  <data name="InsertMode.Name" xml:space="preserve">
+    <value>Insert mode</value>
+  </data>
+  <data name="KeepLineSize.Descrip" xml:space="preserve">
+    <value>Use built-in defined name "TemplateOptions.KeepLineSize" to specify whether the row height and column width should be of equal size when processing template.
+The value is in boolean type, and can be True or False(Default).</value>
+  </data>
+  <data name="KeepLineSize.Name" xml:space="preserve">
+    <value>Keep row &amp; column size</value>
+  </data>
+  <data name="ImageTemplate.Descrip" xml:space="preserve">
+    <value>Use template property "image=true" to show data of an image field as images after template processing</value>
+  </data>
+  <data name="ImageTemplate.Name" xml:space="preserve">
+    <value>Image template</value>
+  </data>
+  <data name="TemplateOtherFeatures.Descrip" xml:space="preserve">
+    <value>## Work with other features
+GcExcel template can work with other features to create lots of dynamic reports.
+Such as: conditional formatting, chart.
+
+We've planed to support more features working with template in future. </value>
+  </data>
+  <data name="TemplateOtherFeatures.Name" xml:space="preserve">
+    <value>Work with other features</value>
+  </data>
+  <data name="TemplateWorkWithChart.Descrip" xml:space="preserve">
+    <value>User can manually set chart's series name, series value and axis label to related template cells. And the chart can be correctly displayed following these settings after template processing.</value>
+  </data>
+  <data name="TemplateWorkWithChart.Name" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="TemplateWorkWithConditionalFormatting.Descrip" xml:space="preserve">
+    <value>Conditional formattings on a template cell will be applied to all the cells expanded from it after template processing.</value>
+  </data>
+  <data name="TemplateWorkWithConditionalFormatting.Name" xml:space="preserve">
+    <value>Conditional formatting</value>
+  </data>
+  <data name="EmployeeAbsenceSchedule.Name" xml:space="preserve">
+    <value>Employee absence schedule</value>
+  </data>
+  <data name="SalesTracker.Name" xml:space="preserve">
+    <value>Sales tracker</value>
+  </data>
+  <data name="AddShapeWithCustomName.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a shape with custom name.</value>
+  </data>
+  <data name="AddShapeWithCustomName.Name" xml:space="preserve">
+    <value>Shape with custom name</value>
+  </data>
+  <data name="CreateChartWithCustomName.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to create a chart with custom name. </value>
+  </data>
+  <data name="CreateChartWithCustomName.Name" xml:space="preserve">
+    <value>Chart with custom name</value>
+  </data>
+  <data name="DepartmentBudget.Descrip" xml:space="preserve">
+    <value>This sample demonstrates a vertical group template. The departments' data are expanded horizontally, while the employees' data  are expanded vertically.</value>
+  </data>
+  <data name="EmployeeAbsenceSchedule.Descrip" xml:space="preserve">
+    <value>This sample demonstrates template with conditional formatting applied on a template cell. It uses a sheet name template to show each month's data in a seperate sheet. </value>
+  </data>
+  <data name="FinancialDashboard.Descrip" xml:space="preserve">
+    <value>This sample demonstrates a cross-table template.</value>
+  </data>
+  <data name="PurchaseOrder.Descrip" xml:space="preserve">
+    <value>This sample demonstrates a entire document report with static values and a dynamic table.</value>
+  </data>
+  <data name="Sales.Descrip" xml:space="preserve">
+    <value>This sample demonstrates an outline group template table. It has outline and subtotal groups for each area.</value>
+  </data>
+  <data name="SalesTracker.Descrip" xml:space="preserve">
+    <value>This sample demonstrates the template with charts. These charts use template cells as their series' data: values, axis labels etc.</value>
+  </data>
+  <data name="ShippingAndDeliveryOrder.Descrip" xml:space="preserve">
+    <value>This sample demonstrates a document report with pre-desigied style. It uses template to fill the static and dynamic data.</value>
+  </data>
+  <data name="TablixReport.Descrip" xml:space="preserve">
+    <value>This sample demonstrates a Tablix template table. It has multiple lines in row &amp; column header. And also, there are subtotal lines inside.</value>
+  </data>
+  <data name="Travel.Descrip" xml:space="preserve">
+    <value>This sample demonstrates multiple template tables in one sheet.</value>
+  </data>
+  <data name="DataBinding.Descrip" xml:space="preserve">
+    <value>## Data Binding
+GrapeCity Documents for Excel now supports one-time data binding. 
+
+- **Sheet binding**: bind source data to sheet
+- **Cell binding**: bind source data to cell
+- **Table binding**: bind source data to table </value>
+  </data>
+  <data name="DataBinding.Name" xml:space="preserve">
+    <value>Data binding</value>
+  </data>
+  <data name="BindAutomatically.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to bind data source to sheet columns automatically.</value>
+  </data>
+  <data name="BindAutomatically.Name" xml:space="preserve">
+    <value>Bind to sheet automatically</value>
+  </data>
+  <data name="BindCustomObject.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to bind custom object to table.</value>
+  </data>
+  <data name="BindCustomObject.Name" xml:space="preserve">
+    <value>Bind custom object</value>
+  </data>
+  <data name="BindDataSet.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to bind DataSet to tables.</value>
+  </data>
+  <data name="BindDataSet.Name" xml:space="preserve">
+    <value>Bind DataSet</value>
+  </data>
+  <data name="BindDataTable.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to bind DataTable to sheet columns.</value>
+  </data>
+  <data name="BindDataTable.Name" xml:space="preserve">
+    <value>Bind DataTable to sheet</value>
+  </data>
+  <data name="BindManually.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to bind data source to sheet columns manually.</value>
+  </data>
+  <data name="BindManually.Name" xml:space="preserve">
+    <value>Bind to sheet manually</value>
+  </data>
+  <data name="CellBinding.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to bind data source to cells.</value>
+  </data>
+  <data name="CellBinding.Name" xml:space="preserve">
+    <value>Cell binding</value>
+  </data>
+  <data name="SheetBinding.Descrip" xml:space="preserve">
+    <value>## Sheet binding
+The examples in this folder demonstrate how to config sheet binding:
+- Use IRange.BindingPath to get/set column binding path (e.g. worksheet.Range["A:A"].EntireColumn.BindingPath = "xxx" ).
+- Use IWorsheet.AutoGenerateColumns to get/set if data source should be bound to columns automatically. The default value is true.
+- If IWorsheet.AutoGenerateColumns is true, each property and field of source data would be bound to a column.
+- Use IWorksheet.DataSource to get/set data source. And each worksheet can only have one data source. Data source can be a System.Data.DataTable or an IEnumerable.</value>
+  </data>
+  <data name="SheetBinding.Name" xml:space="preserve">
+    <value>Sheet binding</value>
+  </data>
+  <data name="TableBinding.Descrip" xml:space="preserve">
+    <value>## Table binding
+The examples in this folder demonstrate how to config table binding:
+- Use ITabel.BindingPath to get/set table's binding path.
+- Use ITableColumn.DataField to get/set binding path for table columns.
+- Use ITable.AutoGenerateColumns to get/set if data source should be bound to table columns automatically. The default value is true.
+- When ITable.AutoGenerateColumns is true, each property and field of source data would be bound to a table column.
+- Use IWorksheet.DataSource to get/set data source. Data source can only be DataSet or custom object which contains an IEnumerable filed or property.
+- The table range would change with data source.</value>
+  </data>
+  <data name="TableBinding.Name" xml:space="preserve">
+    <value>Table binding</value>
+  </data>
+  <data name="GetRangeBoundary.Descrip" xml:space="preserve">
+    <value>Refer to the following example code to see how to add a image to specific range in GcExcel.</value>
+  </data>
+  <data name="GetRangeBoundary.Name" xml:space="preserve">
+    <value>Add image to specific range</value>
   </data>
 </root>

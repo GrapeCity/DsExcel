@@ -57,6 +57,14 @@ namespace GrapeCity.Documents.Excel.Examples
             }
         }
 
+        public virtual bool ShowTemplate
+        {
+            get
+            {
+                return false;
+            }
+        }
+
         public virtual bool ShowViewer
         {
             get
@@ -294,40 +302,45 @@ namespace GrapeCity.Documents.Excel.Examples
             string streamCode = null;
             if (this.SavePageInfos)
             {
-                streamCode = "   //create a pdf file stream";
-                streamCode += string.Format("\r\n   FileStream outputStream = new FileStream(\"{0}.pdf\", FileMode.Create);\r\n\r\n", this.GetShortID());
+                streamCode = "//create a pdf file stream";
+                streamCode += string.Format("\r\nFileStream outputStream = new FileStream(\"{0}.pdf\", FileMode.Create);\r\n\r\n", this.GetShortID());
             }
             else if (this.SaveAsImages)
             {
-                streamCode = "   //create a png file stream";
-                streamCode += string.Format("\r\n   FileStream outputStream = new FileStream(\"{0}.png\", FileMode.Create);\r\n\r\n", this.GetShortID());
+                streamCode = "//create a png file stream";
+                streamCode += string.Format("\r\nFileStream outputStream = new FileStream(\"{0}.png\", FileMode.Create);\r\n\r\n", this.GetShortID());
             }
 
             string code = CodeResource.ResourceManager.GetString(this.GetType().FullName);
             if (!string.IsNullOrWhiteSpace(code))
             {
-                code = Regex.Replace(code, "[\r\n][^\r\n]\\s{8}", "\n");
+                code = Regex.Replace(code, "[\r\n][^\r\n]\\s{11}", "\n");
             }
 
             if (this.SavePdf)
             {
-                code += "\r\n   //save to a pdf file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.pdf\");", this.GetShortID());
+                code += "\r\n//save to a pdf file";
+                code += string.Format("\r\nworkbook.Save(\"{0}.pdf\");", this.GetShortID());
             }
-            else if (this.SavePageInfos || this.SaveAsImages)
+            else if (this.SavePageInfos)
             {
-                code += "\r\n   //close the pdf stream";
-                code += string.Format("\r\n   outputStream.Close();");
+                code += "\r\n//close the pdf stream";
+                code += string.Format("\r\noutputStream.Close();");
+            }
+            else if (this.SaveAsImages)
+            {
+                code += "\r\n//close the image stream";
+                code += string.Format("\r\noutputStream.Close();");
             }
             else if (this.SaveCsv)
             {
-                code += "\r\n   //save to a csv file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.csv\");", this.GetShortID());
+                code += "\r\n//save to a csv file";
+                code += string.Format("\r\nworkbook.Save(\"{0}.csv\");", this.GetShortID());
             }
             else if (this.CanDownload)
             {
-                code += "\r\n   //save to an excel file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.xlsx\");", this.GetShortID());
+                code += "\r\n//save to an excel file";
+                code += string.Format("\r\nworkbook.Save(\"{0}.xlsx\");", this.GetShortID());
             }
             return streamCode + code;
         }
@@ -337,42 +350,42 @@ namespace GrapeCity.Documents.Excel.Examples
             string streamCode = null;
             if (this.SavePageInfos)
             {
-                streamCode = "   ' Create a pdf file stream";
-                streamCode += string.Format("\r\n   Dim outputStream = File.Create(\"{0}.pdf\")\r\n\r\n", this.GetShortID());
+                streamCode = "' Create a pdf file stream";
+                streamCode += string.Format("\r\nDim outputStream = File.Create(\"{0}.pdf\")\r\n\r\n", this.GetShortID());
             }
             else if (this.SaveAsImages)
             {
-                streamCode = "   ' Create a png file stream";
-                streamCode += string.Format("\r\n   Dim outputStream = File.Create(\"{0}.png\")\r\n\r\n", this.GetShortID());
+                streamCode = "' Create a png file stream";
+                streamCode += string.Format("\r\nDim outputStream = File.Create(\"{0}.png\")\r\n\r\n", this.GetShortID());
             }
 
             string code = CodeResource_VB.ResourceManager.GetString(this.GetType().FullName.Replace("GrapeCity.Documents.Excel.Examples", "GrapeCity.Documents.Excel.Examples.VB"));
             if (!string.IsNullOrWhiteSpace(code))
             {
-                code = Regex.Replace(code, "[\r\n][^\r\n]\\s{8}", "\n");
+                code = Regex.Replace(code, "[\r\n][^\r\n]\\s{11}", "\n");
             }
 
-            code = "   ' Create a new Workbook" + Environment.NewLine + "   Dim workbook As New Workbook" + code;
+            code = "' Create a new Workbook" + Environment.NewLine + "Dim workbook As New Workbook" + code;
 
             if (this.SavePdf)
             {
-                code += "\r\n  ' save to a pdf file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.pdf\")", this.GetShortID());
+                code += "\r\n' save to a pdf file";
+                code += string.Format("\r\nworkbook.Save(\"{0}.pdf\")", this.GetShortID());
             }
             else if (this.SaveCsv)
             {
-                code += "\r\n  ' save to a csv file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.csv\")", this.GetShortID());
+                code += "\r\n' save to a csv file";
+                code += string.Format("\r\nworkbook.Save(\"{0}.csv\")", this.GetShortID());
             }
             else if (this.SavePageInfos || this.SaveAsImages)
             {
-                code += "\r\n   ' close the pdf stream";
-                code += string.Format("\r\n   outputStream.Close()");
+                code += "\r\n' close the pdf stream";
+                code += string.Format("\r\noutputStream.Close()");
             }
             else if (this.CanDownload)
             {
-                code += "\r\n  ' save to an excel file";
-                code += string.Format("\r\n   workbook.Save(\"{0}.xlsx\")", this.GetShortID());
+                code += "\r\n' save to an excel file";
+                code += string.Format("\r\nworkbook.Save(\"{0}.xlsx\")", this.GetShortID());
             }
             return streamCode + code;
         }
@@ -524,7 +537,8 @@ namespace GrapeCity.Documents.Excel.Examples
                 return null;
             }
 
-            if (example.GetShortID().ToLower() == id.ToLower())
+            if (example.GetShortID().ToLower() == id.ToLower() || 
+                example.ID.ToLower() == id.ToLower())
             {
                 return example;
             }

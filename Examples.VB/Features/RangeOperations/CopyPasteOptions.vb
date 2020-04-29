@@ -51,11 +51,5 @@ Namespace Features.RangeOperations
             worksheet2.Range!A3.Font.Color = Color.Red
             worksheet2.Range!A3.Font.Bold = True
         End Sub
-
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
     End Class
 End Namespace

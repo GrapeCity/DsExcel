@@ -46,14 +46,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             }
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override string[] UsedResources
         {
             get

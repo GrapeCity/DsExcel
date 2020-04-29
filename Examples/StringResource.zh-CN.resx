@@ -1656,10 +1656,10 @@ GcExcel支持以下几种类型的迷你图：
     <value>基于现有style创建新style</value>
   </data>
   <data name="ExportCellRichText.Name" xml:space="preserve">
-    <value>Cell rich text</value>
+    <value>单元格富文本</value>
   </data>
   <data name="ImportXlsmToWorkbook.Name" xml:space="preserve">
-    <value>Open and save xlsm file</value>
+    <value>打开和保存xlsm文件</value>
   </data>
   <data name="LoadAndSaveJsonWithShapes.Name" xml:space="preserve">
     <value>加载和保存含有shape的json</value>
@@ -1842,8 +1842,8 @@ GrapeCity Documents for Excel 支持导出图形到PDF文件中.
   <data name="ConvertShapeToImage.Name" xml:space="preserve">
     <value>将图形保存成图片</value>
   </data>
-  <data name="ConvertSheetToImage.Name" xml:space="preserve">
-    <value>将工作表保存成图片</value>
+  <data name="ExportSheetToImage.Name" xml:space="preserve">
+    <value>工作表导出为图片</value>
   </data>
   <data name="SaveSheetBackgroundToPDF.Name" xml:space="preserve">
     <value>将表格背景图片保存到PDF</value>
@@ -2086,7 +2086,7 @@ GrapeCity Documents for Excel 支持导出图表到PDF文件中
     <value>本示例展示如何为行列创建单元格类型</value>
   </data>
   <data name="AddRowColumnCellType.Name" xml:space="preserve">
-    <value>为 行列设置单元格类型</value>
+    <value>为行列设置单元格类型</value>
   </data>
   <data name="AddSheetCellType.Descrip" xml:space="preserve">
     <value>本示例展示如何为整个工作表创建单元格类型</value>
@@ -2096,7 +2096,7 @@ GrapeCity Documents for Excel 支持导出图表到PDF文件中
   </data>
   <data name="CellType.Descrip" xml:space="preserve">
     <value>## 单元格类型
-本示例中的程序讲解了如何设置单元格类型，GeExcel支持下面几类单元格类型:
+本示例中的程序讲解了如何设置单元格类型，GcExcel支持下面几类单元格类型:
 - 按钮单元格
 - 复选框单元格
 - 普通组合框单元格
@@ -2179,7 +2179,7 @@ GrapeCity Documents for Excel 支持导出图表到PDF文件中
     <value>数据集</value>
   </data>
   <data name="DataSource.Descrip" xml:space="preserve">
-    <value>##数据源
+    <value>## 数据源
 模板API可以直接将Excel模板与来自以下对象的数据绑定：
 
 -**DataSet / DataTable：**可以处理任何类型的数据库中的数据源
@@ -2215,7 +2215,7 @@ GrapeCity Documents for Excel 支持导出图表到PDF文件中
     <value>合并单元格</value>
   </data>
   <data name="Properties.Descrip" xml:space="preserve">
-    <value>##属性
+    <value>## 属性
 GcExcel使用括号**（**和**）**来组织所有模板属性。 属性以键值格式设置。 多个属性使用逗号分隔。
 
 属性名称和值不区分大小写。
@@ -2269,7 +2269,7 @@ GcExcel使用括号**（**和**）**来组织所有模板属性。 属性以键�
     <value>运输和交货单</value>
   </data>
   <data name="Style.Descrip" xml:space="preserve">
-    <value>##样式
+    <value>## 样式
 模板支持**单元格样式**和应用于单元格的**合并样式**。 数据将根据单元格上应用的样式增长。</value>
   </data>
   <data name="Style.Name" xml:space="preserve">
@@ -2279,7 +2279,7 @@ GcExcel使用括号**（**和**）**来组织所有模板属性。 属性以键�
     <value>Tablix报告</value>
   </data>
   <data name="TemplateCell.Descrip" xml:space="preserve">
-    <value>##模板单元格
+    <value>## 模板单元格
 GcExcel使用**“ {{” **和**“}}” **作为模板标记。
 
 在这些标记之间，用户可以使用数据字段，函数字段，表达式字段和许多属性。
@@ -2288,15 +2288,17 @@ GcExcel使用**“ {{” **和**“}}” **作为模板标记。
 
 -**数据模板：**代表数据字段的模板
 -**函数模板：**代表函数的模板
+-**公式模板：**表示公式的模板，模板处理后仍保留为公式
 -**表达式模板：**表示表达式的模板
 -**内联模板：**用于文本的内联模板
--**工作表模板：**工作表名称中的模板</value>
+-**工作表模板：**工作表名称中的模板
+- **图片模板:** 表示图片的模板，将在生成的报告中显示为图片</value>
   </data>
   <data name="TemplateCell.Name" xml:space="preserve">
     <value>模板单元格</value>
   </data>
   <data name="Template.Descrip" xml:space="preserve">
-    <value>##模板
+    <value>## 模板
 GcExcel（GrapeCity Documents for Excel）支持模板功能，它具有全面的语法和API，可将Excel文档绑定到数据并生成具有高级布局的Excel报告。
 
 借助灵活的语法以及用于数据扩展和公式的简便表示法，新的模板语法和API可以轻松定义Excel模板，并生成支持多种用例的Excel报告。
@@ -2316,7 +2318,7 @@ GcExcel（GrapeCity Documents for Excel）支持模板功能，它具有全面�
     <value>模板</value>
   </data>
   <data name="TemplateSamples.Descrip" xml:space="preserve">
-    <value>##模板示例
+    <value>## 模板示例
 用户示例，让您全面了解**GcExcel模板**和生成的报告。</value>
   </data>
   <data name="TemplateSamples.Name" xml:space="preserve">
@@ -2394,5 +2396,404 @@ GcExcel将尝试理解模板中合并单元格的含义，并生成预期的报�
   </data>
   <data name="DepartmentBudget.Name" xml:space="preserve">
     <value>部门预算</value>
+  </data>
+  <data name="ProtectWorksheetWithPassword.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何使用密码保护工作表。</value>
+  </data>
+  <data name="ProtectWorksheetWithPassword.Name" xml:space="preserve">
+    <value>密码保护工作表</value>
+  </data>
+  <data name="UnprotectWorksheetWithPassword.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何取消有密码的工作表的保护。</value>
+  </data>
+  <data name="UnprotectWorksheetWithPassword.Name" xml:space="preserve">
+    <value>取消有密码的工作表的保护</value>
+  </data>
+  <data name="ConvertChartToImage.Name" xml:space="preserve">
+    <value>将图表保存成图片</value>
+  </data>
+  <data name="ExportChartToImage.Name" xml:space="preserve">
+    <value>图表导出为图片</value>
+  </data>
+  <data name="ExportRangeToImage.Name" xml:space="preserve">
+    <value>工作表区域导出为图片</value>
+  </data>
+  <data name="ImageExporting.Name" xml:space="preserve">
+    <value>导出图片</value>
+  </data>
+  <data name="ImageExporting.Descrip" xml:space="preserve">
+    <value>在此类示例中，你可以发现很多完整的使用GcExcel的程序代码，这些示例模拟真实场景，让这些代码运行在服务端并将工作表/区域/图形导出为图片，所以在点击**运行**按钮后，在服务端会执行以下操作：
+	- 创建一个空的工作簿实例
+	- 执行代码窗口中的所有代码
+	- 将工作簿保存为一个图片文件
+	
+	然后，你就可以在浏览器中查看保存的结果了</value>
+  </data>
+  <data name="ToJsonFromJsonForWorksheet.Descrip" xml:space="preserve">
+    <value>参考以下示例代码，学习如何将单个工作表导入或导出为Json</value>
+  </data>
+  <data name="ToJsonFromJsonForWorksheet.Name" xml:space="preserve">
+    <value>导入/导出 Json</value>
+  </data>
+  <data name="SaveBackgroundPicturesToPDF.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何创建多个背景图片以及保存到PDF文档中。</value>
+  </data>
+  <data name="SaveBackgroundPicturesToPDF.Name" xml:space="preserve">
+    <value>将多个背景图片保存到PDF文档</value>
+  </data>
+  <data name="ConfigChartTitleAngle.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置图表标题的角度。</value>
+  </data>
+  <data name="ConfigChartTitleAngle.Name" xml:space="preserve">
+    <value>设置图表标题角度</value>
+  </data>
+  <data name="ConfigCustomErrorBar.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置自定义误差线。</value>
+  </data>
+  <data name="ConfigCustomErrorBar.Name" xml:space="preserve">
+    <value>自定义类型</value>
+  </data>
+  <data name="ConfigDataLabelAngle.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置数据标签的角度。</value>
+  </data>
+  <data name="ConfigDataLabelAngle.Name" xml:space="preserve">
+    <value>设置数据标签的角度</value>
+  </data>
+  <data name="ConfigDeleteErrorBar.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何删除误差线。</value>
+  </data>
+  <data name="ConfigDeleteErrorBar.Name" xml:space="preserve">
+    <value>删除误差线</value>
+  </data>
+  <data name="ConfigErrorBarIncludeAndEndType.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置正负偏差类型以及末端样式。</value>
+  </data>
+  <data name="ConfigErrorBarIncludeAndEndType.Name" xml:space="preserve">
+    <value>设置正负偏差类型以及末端样式</value>
+  </data>
+  <data name="ConfigErrorBarStyle.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置误差线样式。</value>
+  </data>
+  <data name="ConfigErrorBarStyle.Name" xml:space="preserve">
+    <value>误差线样式</value>
+  </data>
+  <data name="ConfigFixedValueErrorBar.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置固定值类型。</value>
+  </data>
+  <data name="ConfigFixedValueErrorBar.Name" xml:space="preserve">
+    <value>固定值类型</value>
+  </data>
+  <data name="ConfigPercentageErrorBar.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置百分比类型。</value>
+  </data>
+  <data name="ConfigPercentageErrorBar.Name" xml:space="preserve">
+    <value>百分比类型</value>
+  </data>
+  <data name="ConfigStdErrErrorBar.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置标准误差类型。</value>
+  </data>
+  <data name="ConfigStdErrErrorBar.Name" xml:space="preserve">
+    <value>标准误差类型</value>
+  </data>
+  <data name="ConfigStDevErrorBar.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置标准偏差类型。</value>
+  </data>
+  <data name="ConfigStDevErrorBar.Name" xml:space="preserve">
+    <value>标准偏差类型</value>
+  </data>
+  <data name="ConfigTickMarkLabelAngle.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置坐标轴标签角度。</value>
+  </data>
+  <data name="ConfigTickMarkLabelAngle.Name" xml:space="preserve">
+    <value>设置坐标轴标签角度</value>
+  </data>
+  <data name="ConfigXYErrorBars.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置XY方向误差线（散列图或气泡图）。</value>
+  </data>
+  <data name="ConfigXYErrorBars.Name" xml:space="preserve">
+    <value>XY方向误差线</value>
+  </data>
+  <data name="ErrorBars.Descrip" xml:space="preserve">
+    <value>## 误差线
+	下列示例程序演示了如何配置图表的 **误差线**.</value>
+  </data>
+  <data name="ErrorBars.Name" xml:space="preserve">
+    <value>误差线</value>
+  </data>
+  <data name="ConfigGradientFillWithPathShape.Descrip" xml:space="preserve">
+    <value>本示例中的代码讲解了如何设置不同的渐变填充类型。</value>
+  </data>
+  <data name="ConfigGradientFillWithPathShape.Name" xml:space="preserve">
+    <value>设置渐变填充类型</value>
+  </data>
+  <data name="PrintTransparentCell.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何打印单元格背景颜色的透明度。</value>
+  </data>
+  <data name="PrintTransparentCell.Name" xml:space="preserve">
+    <value>打印单元格背景颜色的透明度</value>
+  </data>
+  <data name="SetPickTrayByPDFSizeOptionToPDF.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何设置PDF文档在打印时是否根据页面大小选择输入的纸张。</value>
+  </data>
+  <data name="SetPickTrayByPDFSizeOptionToPDF.Name" xml:space="preserve">
+    <value>设置PDF文档的打印纸张选择</value>
+  </data>
+  <data name="GetPaginationInfo.Descrip" xml:space="preserve">
+    <value>本示例的程序讲解了如果获取一个工作表的水平或者垂直分页的页面边界数组。</value>
+  </data>
+  <data name="GetPaginationInfo.Name" xml:space="preserve">
+    <value>获取水平或者垂直分页信息</value>
+  </data>
+  <data name="OutlineColumn.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何为工作表添加outline column,以展示数据的树形结构。</value>
+  </data>
+  <data name="OutlineColumn.Name" xml:space="preserve">
+    <value>Outline column</value>
+  </data>
+  <data name="DisplayUnitLabelPdf.Descrip" xml:space="preserve">
+    <value>导出显示单位标签到PDF文档</value>
+  </data>
+  <data name="DisplayUnitLabelPdf.Name" xml:space="preserve">
+    <value>显示单位标签</value>
+  </data>
+  <data name="SunburstChartPdf.Descrip" xml:space="preserve">
+    <value>导出旭日图到PDF文档</value>
+  </data>
+  <data name="SunburstChartPdf.Name" xml:space="preserve">
+    <value>旭日图</value>
+  </data>
+  <data name="TreemapChartPdf.Descrip" xml:space="preserve">
+    <value>导出树状图到PDF文档</value>
+  </data>
+  <data name="TreemapChartPdf.Name" xml:space="preserve">
+    <value>树状图</value>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Descrip" xml:space="preserve">
+    <value>导出带有数字格式的轴标签到PDF文档</value>
+  </data>
+  <data name="AxisLabelNumberformatPdf.Name" xml:space="preserve">
+    <value>带数字格式的轴标签</value>
+  </data>
+  <data name="ErrorbarPdf.Descrip" xml:space="preserve">
+    <value>导出误差线到PDF文档</value>
+  </data>
+  <data name="ErrorbarPdf.Name" xml:space="preserve">
+    <value>误差线</value>
+  </data>
+  <data name="TrendlinePdf.Descrip" xml:space="preserve">
+    <value>导出趋势线到PDF文档</value>
+  </data>
+  <data name="TrendlinePdf.Name" xml:space="preserve">
+    <value>趋势线</value>
+  </data>
+  <data name="FormulaTemplate.Descrip" xml:space="preserve">
+    <value>用包含公式的模板绑定数据。这些公式将保留下来，并引用扩展后的数据。</value>
+  </data>
+  <data name="FormulaTemplate.Name" xml:space="preserve">
+    <value>公式模板</value>
+  </data>
+  <data name="SetShapeTextAlignment.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何设置形状文本的水平和垂直对齐方式。</value>
+  </data>
+  <data name="SetShapeTextAlignment.Name" xml:space="preserve">
+    <value>设置形状文本的对齐方式</value>
+  </data>
+  <data name="ShapeWithTextAlignment.Descrip" xml:space="preserve">
+    <value>GcExcel支持图形文本的对齐方式导出到PDF文件中。</value>
+  </data>
+  <data name="ShapeWithTextAlignment.Name" xml:space="preserve">
+    <value>带有文本对齐方式的图形</value>
+  </data>
+  <data name="OutlineColumnToPDF.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何将outline column导出到PDF文件中。</value>
+  </data>
+  <data name="OutlineColumnToPDF.Name" xml:space="preserve">
+    <value>将outline column保存到PDF</value>
+  </data>
+  <data name="GlobalOptions.Descrip" xml:space="preserve">
+    <value>##全局选项
+此功能为用户提供全局选项，以控制GcExcel模板的默认行为。
+
+GcExcel为模板的全局选项定义了一些内置工作簿定义的名称。
+当前，这些选项仅在工作簿定义的名称中受支持。因此，用户在使用此功能时应注意它们的作用域。
+也就是说，多个工作表中的模板的行为相同。
+
+用户可以直接在Excel文件中或通过GcExcel api添加/编辑/删除这些内置定义的名称。
+
+内置命名公式中Name属性的值将作为模板全局选项的名称。
+内置命名公式中ReferesTo属性的值将作为模板全局选项的值。
+选项名称区分大小写，而选项值不区分大小写。
+
+模板支持多种全局选项：
+-**TemplateOptions.KeepLineSize:**布尔类型。该值可以是**True**或**False**（默认值）。
+模板处理时是否应保留行高和列宽。
+-**TemplateOptions.InsertMode:**字符串类型。值可以是**Cells**（默认值）或**EntireRowColumn**。
+当扩展模板时需要额外的空间时，GcExcel是插入单元格还是插入整个行和列。</value>
+  </data>
+  <data name="GlobalOptions.Name" xml:space="preserve">
+    <value>全局选项</value>
+  </data>
+  <data name="InsertMode.Descrip" xml:space="preserve">
+    <value>使用内置命名公式 "TemplateOptions.InsertMode" 指定当扩展模板时需要额外的空间时，GcExcel是插入单元格还是插入整行和整列。
+该值为字符串类型，可以是"Cells"（默认值）或"EntireRowColumn"。</value>
+  </data>
+  <data name="InsertMode.Name" xml:space="preserve">
+    <value>插入模式</value>
+  </data>
+  <data name="KeepLineSize.Descrip" xml:space="preserve">
+    <value>使用内置命名公式 "TemplateOptions.KeepLineSize" 指定在处理模板时是否应保留行高和列宽。
+该值为布尔类型，可以为True或False（默认值）。</value>
+  </data>
+  <data name="KeepLineSize.Name" xml:space="preserve">
+    <value>保留行列大小</value>
+  </data>
+  <data name="ImageTemplate.Descrip" xml:space="preserve">
+    <value>使用模板属性 "image=true"，在模板处理后把图片字段的数据显示为图片</value>
+  </data>
+  <data name="ImageTemplate.Name" xml:space="preserve">
+    <value>图片模板</value>
+  </data>
+  <data name="TemplateOtherFeatures.Descrip" xml:space="preserve">
+    <value>## 结合其他功能
+GcExcel模板可以与其他功能一起创建许多动态报表，如：条件格式、图表。
+我们计划在将来支持更多使用模板的功能。</value>
+  </data>
+  <data name="TemplateOtherFeatures.Name" xml:space="preserve">
+    <value>结合其他功能</value>
+  </data>
+  <data name="TemplateWorkWithChart.Descrip" xml:space="preserve">
+    <value>用户可以手动将图表的系列名称、系列值和轴标签设置为相关模板单元格。模板处理后，可以按照这些设置正确显示图表。</value>
+  </data>
+  <data name="TemplateWorkWithChart.Name" xml:space="preserve">
+    <value>图表</value>
+  </data>
+  <data name="TemplateWorkWithConditionalFormatting.Descrip" xml:space="preserve">
+    <value>模板单元格上的条件格式，在模板处理后，将应用于从其展开的所有单元格。</value>
+  </data>
+  <data name="TemplateWorkWithConditionalFormatting.Name" xml:space="preserve">
+    <value>条件格式</value>
+  </data>
+  <data name="EmployeeAbsenceSchedule.Name" xml:space="preserve">
+    <value>员工缺勤计划</value>
+  </data>
+  <data name="SalesTracker.Name" xml:space="preserve">
+    <value>销售跟踪</value>
+  </data>
+  <data name="AddShapeWithCustomName.Descrip" xml:space="preserve">
+    <value>本示例中的代码演示了如何添加带有自定义名字的形状。</value>
+  </data>
+  <data name="AddShapeWithCustomName.Name" xml:space="preserve">
+    <value>自定义名字</value>
+  </data>
+  <data name="CreateChartWithCustomName.Descrip" xml:space="preserve">
+    <value>本示例中的代码演示了如何创建带有自定义表名的图表。</value>
+  </data>
+  <data name="CreateChartWithCustomName.Name" xml:space="preserve">
+    <value>自定义表名</value>
+  </data>
+  <data name="DepartmentBudget.Descrip" xml:space="preserve">
+    <value>此示例显示垂直组模板。部门数据横向展开，员工数据纵向展开。</value>
+  </data>
+  <data name="EmployeeAbsenceSchedule.Descrip" xml:space="preserve">
+    <value>此示例显示使用条件格式的模板。它使用一个工作表名称模板在单独的工作表中显示每个月的数据。</value>
+  </data>
+  <data name="FinancialDashboard.Descrip" xml:space="preserve">
+    <value>此示例显示交叉表模板。它在表格上面有一个标题。</value>
+  </data>
+  <data name="PurchaseOrder.Descrip" xml:space="preserve">
+    <value>此示例显示包含静态值和一个动态表的整个文档报表。</value>
+  </data>
+  <data name="Sales.Descrip" xml:space="preserve">
+    <value>此示例显示大纲组模板表。它在每个区域有对应的大纲和小计组。</value>
+  </data>
+  <data name="SalesTracker.Descrip" xml:space="preserve">
+    <value>此示例显示使用图表的模板。这些图表使用模板单元作为它们的系列数据：值、轴标签等。</value>
+  </data>
+  <data name="ShippingAndDeliveryOrder.Descrip" xml:space="preserve">
+    <value>此示例显示具有预先设计样式的文档报告。它使用模板来填充静态和动态数据。</value>
+  </data>
+  <data name="TablixReport.Descrip" xml:space="preserve">
+    <value>此示例显示Tablix模板表。行和列标题中有多行。里面有小计行。</value>
+  </data>
+  <data name="Travel.Descrip" xml:space="preserve">
+    <value>此示例在一个工作表中显示多个模板表。</value>
+  </data>
+  <data name="DataBinding.Descrip" xml:space="preserve">
+    <value>## 数据绑定
+GrapeCity Documents for Excel 支持一次性的数据绑定. 
+
+**工作表绑定**
+**单元格绑定**
+**表格绑定**
+</value>
+  </data>
+  <data name="DataBinding.Name" xml:space="preserve">
+    <value>数据绑定</value>
+  </data>
+  <data name="BindAutomatically.Descrip" xml:space="preserve">
+    <value>此示例显示如何将数据源自动绑定到工作表中。</value>
+  </data>
+  <data name="BindAutomatically.Name" xml:space="preserve">
+    <value>自动绑定</value>
+  </data>
+  <data name="BindCustomObject.Descrip" xml:space="preserve">
+    <value>此示例显示如何将自定义对象作为数据源绑定到表格上。</value>
+  </data>
+  <data name="BindCustomObject.Name" xml:space="preserve">
+    <value>绑定自定义对象</value>
+  </data>
+  <data name="BindDataSet.Descrip" xml:space="preserve">
+    <value>此示例显示如何将DataSet作为数据源绑定到表格上。</value>
+  </data>
+  <data name="BindDataSet.Name" xml:space="preserve">
+    <value>绑定DataSet</value>
+  </data>
+  <data name="BindDataTable.Descrip" xml:space="preserve">
+    <value>此示例显示如何将DataTable作为数据源绑定到工作表中。</value>
+  </data>
+  <data name="BindDataTable.Name" xml:space="preserve">
+    <value>绑定DataTable到工作表</value>
+  </data>
+  <data name="BindManually.Descrip" xml:space="preserve">
+    <value>此示例显示如何将数据源手动绑定到工作表中。</value>
+  </data>
+  <data name="BindManually.Name" xml:space="preserve">
+    <value>手动绑定</value>
+  </data>
+  <data name="CellBinding.Descrip" xml:space="preserve">
+    <value>此示例显示如何将数据源绑定到单元格中。</value>
+  </data>
+  <data name="CellBinding.Name" xml:space="preserve">
+    <value>绑定单元格</value>
+  </data>
+  <data name="SheetBinding.Descrip" xml:space="preserve">
+    <value>## 绑定工作表
+此目录下的示例展示如何配置工作表的绑定:
+- 使用 **IRange.BindingPath** 来设置/获取列的绑定路径(例如： worksheet.Range["A:A"].EntireColumn.BindingPath = "xxx" )。
+- 使用 **IWorsheet.AutoGenerateColumns** 来设置/获取是否数据源应该自动绑定到列上。 默认值为true。
+- 如果 **IWorsheet.AutoGenerateColumns** 为真, 数据源的每个字段及属性都会绑定到列上。
+- 使用 **IWorksheet.DataSource** 来设置/获取数据源。 每个工作表只能有一个数据源。 对于工作表绑定，数据源只能为System.Data.DataTable或者实现了IEnumerable接口的自定义对象。</value>
+  </data>
+  <data name="SheetBinding.Name" xml:space="preserve">
+    <value>绑定工作表</value>
+  </data>
+  <data name="TableBinding.Descrip" xml:space="preserve">
+    <value>## 绑定表格
+此目录下的示例展示如何配置表格的绑定:
+- 使用 **ITabel.BindingPath** 来设置/获取表格的绑定路径。
+- 使用 **ITableColumn.DataField** 来设置/获取表格列的绑定路径。
+- 使用 **ITable.AutoGenerateColumns** 来设置/获取是否数据源应该被自动绑定到表格上。默认为真。
+- 当 **ITable.AutoGenerateColumns** 为真， 数据源的每个公有字段和属性会被绑定到对应的表格列上。
+- 使用 **IWorksheet.DataSource** 来设置/获取数据源。 数据源只能为DataSet类型或含有实现了IEnumerable接口的字段/属性的自定义对象。
+- 表格区域会随着数据源的大小动态变化。</value>
+  </data>
+  <data name="TableBinding.Name" xml:space="preserve">
+    <value>绑定表格</value>
+  </data>
+  <data name="GetRangeBoundary.Descrip" xml:space="preserve">
+    <value>本示例中的程序讲解了如何添加一个图片到指定区域。</value>
+  </data>
+  <data name="GetRangeBoundary.Name" xml:space="preserve">
+    <value>添加图片到指定的区域</value>
   </data>
 </root>

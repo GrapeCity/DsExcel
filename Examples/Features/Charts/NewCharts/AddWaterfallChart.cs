@@ -56,12 +56,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Charts.NewCharts
                 return true;
             }
         }
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

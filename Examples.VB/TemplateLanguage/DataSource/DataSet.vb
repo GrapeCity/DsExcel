@@ -1,84 +1,101 @@
-﻿Imports System.Data
+﻿Imports System.Collections.Generic
+Imports System.Data
 
 Namespace Templates.DataSource
-    Public Class DataSet
-        Inherits ExampleBase
+	Public Class DataSet
+		Inherits ExampleBase
 
-        Public Overrides Sub Execute(workbook As Workbook)
-            'Load template file Template_Score.xlsx from resource
-            Dim templateFile = GetResourceStream("xlsx\Template_Scores.xlsx")
-            workbook.Open(templateFile)
+		Public Overrides Sub Execute(workbook As Workbook)
+			'Load template file from resource
+			Dim templateFile = GetResourceStream("xlsx\Template_SalesDataGroup_DataSet.xlsx")
+			workbook.Open(templateFile)
 
 #Region "Init Data"
-            Dim team1 As New Data.DataTable
-            With team1.Columns
-                .Add(New DataColumn("ID", GetType(Integer)))
-                .Add(New DataColumn("Name", GetType(String)))
-                .Add(New DataColumn("Score", GetType(Integer)))
-                .Add(New DataColumn("Team", GetType(String)))
-            End With
+			Dim table1 = New System.Data.DataTable
+			With table1.Columns
+				.Add(New DataColumn("Area", GetType(String)))
+				.Add(New DataColumn("City", GetType(String)))
+				.Add(New DataColumn("Category", GetType(String)))
+				.Add(New DataColumn("Name", GetType(String)))
+				.Add(New DataColumn("Revenue", GetType(Double)))
+			End With
 
-            With team1.Rows
-                .Add(10, "Bob", 12, "Xi'An")
-                .Add(11, "Tommy", 6, "Xi'An")
-                .Add(12, "Jaguar", 15, "Xi'An")
-                .Add(12, "Lusia", 9, "Xi'An")
-            End With
+			With table1.Rows
+				.Add("North America", "Chicago", "Consumer Electronics", "Bose 785593-0050", 92800)
+				.Add("North America", "New York", "Consumer Electronics", "Bose 785593-0050", 92800)
+				.Add("South America", "Santiago", "Consumer Electronics", "Bose 785593-0050", 19550)
+				.Add("North America", "Chicago", "Consumer Electronics", "Canon EOS 1500D", 98650)
+				.Add("North America", "Minnesota", "Consumer Electronics", "Canon EOS 1500D", 89110)
+				.Add("South America", "Santiago", "Consumer Electronics", "Canon EOS 1500D", 459000)
+				.Add("North America", "Chicago", "Consumer Electronics", "Haier 394L 4Star", 367050)
+				.Add("South America", "Quito", "Consumer Electronics", "Haier 394L 4Star", 729100)
+				.Add("South America", "Santiago", "Consumer Electronics", "Haier 394L 4Star", 578900)
+				.Add("North America", "Fremont", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 904930)
+				.Add("South America", "Buenos Aires", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 673800)
+				.Add("South America", "Medillin", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 82910)
+				.Add("North America", "Chicago", "Consumer Electronics", "Mi LED 40inch", 550010)
+				.Add("North America", "Minnesota", "Consumer Electronics", "Mi LED 40inch", 1784702)
+				.Add("South America", "Santiago", "Consumer Electronics", "Mi LED 40inch", 102905)
+				.Add("North America", "Chicago", "Consumer Electronics", "Sennheiser HD 4.40-BT", 178100)
+				.Add("South America", "Quito", "Consumer Electronics", "Sennheiser HD 4.40-BT", 234459)
+			End With
 
-            Dim team2 As New Data.DataTable
-            With team2.Columns
-                .Add(New DataColumn("ID", GetType(Int32)))
-                .Add(New DataColumn("Name", GetType(String)))
-                .Add(New DataColumn("Score", GetType(Int32)))
-                .Add(New DataColumn("Team", GetType(String)))
-            End With
+			Dim table2 = New System.Data.DataTable()
+			With table2.Columns
+				.Add(New DataColumn("Area", GetType(String)))
+				.Add(New DataColumn("City", GetType(String)))
+				.Add(New DataColumn("Category", GetType(String)))
+				.Add(New DataColumn("Name", GetType(String)))
+				.Add(New DataColumn("Revenue", GetType(Double)))
+			End With
 
-            With team2.Rows
-                .Add(2, "Phillip", 9, "BeiJing")
-                .Add(3, "Hunter", 10, "BeiJing")
-                .Add(4, "Hellen", 8, "BeiJing")
-                .Add(5, "Jim", 9, "BeiJing")
-            End With
+			With table2.Rows
+				.Add("North America", "Minnesota", "Mobile", "Iphone XR", 1734621)
+				.Add("South America", "Santiago", "Mobile", "Iphone XR", 109300)
+				.Add("North America", "Chicago", "Mobile", "OnePlus 7Pro", 499100)
+				.Add("South America", "Quito", "Mobile", "OnePlus 7Pro", 215000)
+				.Add("North America", "Minnesota", "Mobile", "Redmi 7", 81650)
+				.Add("South America", "Quito", "Mobile", "Redmi 7", 276390)
+				.Add("North America", "Minnesota", "Mobile", "Samsung S9", 896250)
+				.Add("South America", "Buenos Aires", "Mobile", "Samsung S9", 896250)
+				.Add("South America", "Quito", "Mobile", "Samsung S9", 716520)
+			End With
 
-            Dim datasource As New Data.DataSet
-            datasource.Tables.Add(team1)
-            datasource.Tables.Add(team2)
+			Dim datasource = New System.Data.DataSet()
+			datasource.Tables.Add(table1)
+			datasource.Tables.Add(table2)
 #End Region
 
-            'Add data source
-            workbook.AddDataSource("ds", datasource)
-            'Invoke to process the template
-            workbook.ProcessTemplate()
-        End Sub
+			'Init template global settings
+			workbook.Names.Add("TemplateOptions.KeepLineSize", "true")
+			'Add data source
+			workbook.AddDataSource("ds", datasource)
+			'Invoke to process the template
+			workbook.ProcessTemplate()
+		End Sub
 
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
+		Public Overrides ReadOnly Property TemplateName As String
+			Get
+				Return "Template_SalesDataGroup_DataSet.xlsx"
+			End Get
+		End Property
 
-        Public Overrides ReadOnly Property TemplateName As String
-            Get
-                Return "Template_Scores.xlsx"
-            End Get
-        End Property
+		Public Overrides ReadOnly Property HasTemplate As Boolean
+			Get
+				Return True
+			End Get
+		End Property
 
-        Public Overrides ReadOnly Property HasTemplate As Boolean
-            Get
-                Return True
-            End Get
-        End Property
+		Public Overrides ReadOnly Property CanDownloadZip As Boolean
+			Get
+				Return False
+			End Get
+		End Property
 
-        Public Overrides ReadOnly Property CanDownloadZip As Boolean
-            Get
-                Return False
-            End Get
-        End Property
-
-        Public Overrides ReadOnly Property UsedResources As String()
-            Get
-                Return New String() {"xlsx\Template_Scores.xlsx"}
-            End Get
-        End Property
-    End Class
+		Public Overrides ReadOnly Property UsedResources As String()
+			Get
+				Return New String() {"xlsx\Template_SalesDataGroup_DataSet.xlsx"}
+			End Get
+		End Property
+	End Class
 End Namespace

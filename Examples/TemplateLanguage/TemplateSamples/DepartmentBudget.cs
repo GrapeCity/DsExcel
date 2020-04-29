@@ -9,7 +9,7 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.TemplateSamples
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            //Load template file Template_DepartmentBudget.xlsx from resource
+            //Load template file from resource
             var templateFile = this.GetResourceStream("xlsx\\Template_DepartmentBudget.xlsx");
             workbook.Open(templateFile);
 
@@ -212,19 +212,19 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.TemplateSamples
             workbook.ProcessTemplate();
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override string TemplateName
         {
             get
             {
                 return "Template_DepartmentBudget.xlsx";
+            }
+        }
+
+        public override bool ShowTemplate
+        {
+            get
+            {
+                return true;
             }
         }
 

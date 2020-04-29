@@ -31,14 +31,6 @@ namespace GrapeCity.Documents.Excel.Examples.Features.Worksheets
             chartSheet.Activate();
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override bool ShowViewer
         {
             get

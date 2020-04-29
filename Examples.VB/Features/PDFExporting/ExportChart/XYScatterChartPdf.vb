@@ -23,12 +23,6 @@
             series2.MarkerSize = 10
         End Sub
 
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
-
         Public Overrides ReadOnly Property SavePdf As Boolean
             Get
                 Return True

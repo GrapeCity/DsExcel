@@ -69,13 +69,5 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PivotTable
                 return true;
             }
         }
-
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
     }
 }

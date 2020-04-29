@@ -9,37 +9,60 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.DataSource
     {
         public override void Execute(GrapeCity.Documents.Excel.Workbook workbook)
         {
-            //Load template file Template_Score.xlsx from resource
-            var templateFile = this.GetResourceStream("xlsx\\Template_Scores.xlsx");
+            //Load template file from resource
+            var templateFile = this.GetResourceStream("xlsx\\Template_SalesDataGroup_DataSet.xlsx");
             workbook.Open(templateFile);
 
             #region Init Data
-            var team1 = new System.Data.DataTable();
-            team1.Columns.Add(new DataColumn("ID", typeof(Int32)));
-            team1.Columns.Add(new DataColumn("Name", typeof(string)));
-            team1.Columns.Add(new DataColumn("Score", typeof(Int32)));
-            team1.Columns.Add(new DataColumn("Team", typeof(string)));
+            var table1 = new System.Data.DataTable();
+            table1.Columns.Add(new DataColumn("Area", typeof(string)));
+            table1.Columns.Add(new DataColumn("City", typeof(string)));
+            table1.Columns.Add(new DataColumn("Category", typeof(string)));
+            table1.Columns.Add(new DataColumn("Name", typeof(string)));
+            table1.Columns.Add(new DataColumn("Revenue", typeof(double)));
 
-            team1.Rows.Add(10, "Bob", 12, "Xi'An");
-            team1.Rows.Add(11, "Tommy", 6, "Xi'An");
-            team1.Rows.Add(12, "Jaguar", 15, "Xi'An");
-            team1.Rows.Add(12, "Lusia", 9, "Xi'An");
+            table1.Rows.Add("North America", "Chicago", "Consumer Electronics", "Bose 785593-0050", 92800);
+            table1.Rows.Add("North America", "New York", "Consumer Electronics", "Bose 785593-0050", 92800);
+            table1.Rows.Add("South America", "Santiago", "Consumer Electronics", "Bose 785593-0050", 19550);
+            table1.Rows.Add("North America", "Chicago", "Consumer Electronics", "Canon EOS 1500D", 98650);
+            table1.Rows.Add("North America", "Minnesota", "Consumer Electronics", "Canon EOS 1500D", 89110);
+            table1.Rows.Add("South America", "Santiago", "Consumer Electronics", "Canon EOS 1500D", 459000);
+            table1.Rows.Add("North America", "Chicago", "Consumer Electronics", "Haier 394L 4Star", 367050);
+            table1.Rows.Add("South America", "Quito", "Consumer Electronics", "Haier 394L 4Star", 729100);
+            table1.Rows.Add("South America", "Santiago", "Consumer Electronics", "Haier 394L 4Star", 578900);
+            table1.Rows.Add("North America", "Fremont", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 904930);
+            table1.Rows.Add("South America", "Buenos Aires", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 673800);
+            table1.Rows.Add("South America", "Medillin", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 82910);
+            table1.Rows.Add("North America", "Chicago", "Consumer Electronics", "Mi LED 40inch", 550010);
+            table1.Rows.Add("North America", "Minnesota", "Consumer Electronics", "Mi LED 40inch", 1784702);
+            table1.Rows.Add("South America", "Santiago", "Consumer Electronics", "Mi LED 40inch", 102905);
+            table1.Rows.Add("North America", "Chicago", "Consumer Electronics", "Sennheiser HD 4.40-BT", 178100);
+            table1.Rows.Add("South America", "Quito", "Consumer Electronics", "Sennheiser HD 4.40-BT", 234459);
+         
+            var table2 = new System.Data.DataTable();
+            table2.Columns.Add(new DataColumn("Area", typeof(string)));
+            table2.Columns.Add(new DataColumn("City", typeof(string)));
+            table2.Columns.Add(new DataColumn("Category", typeof(string)));
+            table2.Columns.Add(new DataColumn("Name", typeof(string)));
+            table2.Columns.Add(new DataColumn("Revenue", typeof(double)));
 
-            var team2 = new System.Data.DataTable();
-            team2.Columns.Add(new DataColumn("ID", typeof(Int32)));
-            team2.Columns.Add(new DataColumn("Name", typeof(string)));
-            team2.Columns.Add(new DataColumn("Score", typeof(Int32)));
-            team2.Columns.Add(new DataColumn("Team", typeof(string)));
-
-            team2.Rows.Add(2, "Phillip", 9, "BeiJing");
-            team2.Rows.Add(3, "Hunter", 10, "BeiJing");
-            team2.Rows.Add(4, "Hellen", 8, "BeiJing");
-            team2.Rows.Add(5, "Jim", 9, "BeiJing");
+            table2.Rows.Add("North America", "Minnesota", "Mobile", "Iphone XR", 1734621);
+            table2.Rows.Add("South America", "Santiago", "Mobile", "Iphone XR", 109300);
+            table2.Rows.Add("North America", "Chicago", "Mobile", "OnePlus 7Pro", 499100);
+            table2.Rows.Add("South America", "Quito", "Mobile", "OnePlus 7Pro", 215000);
+            table2.Rows.Add("North America", "Minnesota", "Mobile", "Redmi 7", 81650);
+            table2.Rows.Add("South America", "Quito", "Mobile", "Redmi 7", 276390);
+            table2.Rows.Add("North America", "Minnesota", "Mobile", "Samsung S9", 896250);
+            table2.Rows.Add("South America", "Buenos Aires", "Mobile", "Samsung S9", 896250);
+            table2.Rows.Add("South America", "Quito", "Mobile", "Samsung S9", 716520);
 
             var datasource = new System.Data.DataSet();
-            datasource.Tables.Add(team1);
-            datasource.Tables.Add(team2);
+            datasource.Tables.Add(table1);
+            datasource.Tables.Add(table2);
             #endregion
+
+            //Init template global settings
+            workbook.Names.Add("TemplateOptions.KeepLineSize", "true");
 
             //Add data source
             workbook.AddDataSource("ds", datasource);
@@ -47,19 +70,19 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.DataSource
             workbook.ProcessTemplate();
         }
 
-        public override bool IsNew
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public override string TemplateName
         {
             get
             {
-                return "Template_Scores.xlsx";
+                return "Template_SalesDataGroup_DataSet.xlsx";
+            }
+        }
+
+        public override bool ShowTemplate
+        {
+            get
+            {
+                return true;
             }
         }
 
@@ -83,7 +106,7 @@ namespace GrapeCity.Documents.Excel.Examples.Templates.DataSource
         {
             get
             {
-                return new string[] { "xlsx\\Template_Scores.xlsx" };
+                return new string[] { "xlsx\\Template_SalesDataGroup_DataSet.xlsx" };
             }
         }
     }

@@ -64,12 +64,6 @@ Namespace Templates.TemplateSamples
             workbook.ProcessTemplate()
         End Sub
 
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
-
         Public Overrides ReadOnly Property TemplateName As String
             Get
                 Return "Template_PurchaseOrder.xlsx"

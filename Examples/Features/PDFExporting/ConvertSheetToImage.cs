@@ -37,7 +37,7 @@ namespace GrapeCity.Documents.Excel.Examples.Features.PDFExporting
             printManager.Draw(page, new PointF(0, 0), printArea);
 
             // Saves the page as an image to a stream.
-            page.SaveAsPng(outputStream, new Pdf.SaveAsImageOptions() { Resolution = 72 });
+            page.SaveAsPng(outputStream, new Pdf.SaveAsImageOptions());
         }
 
         public override bool SaveAsImages 

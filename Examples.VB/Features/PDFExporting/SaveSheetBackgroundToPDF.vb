@@ -36,12 +36,6 @@ Namespace Features.PDFExporting
             End Get
         End Property
 
-        Public Overrides ReadOnly Property IsNew As Boolean
-            Get
-                Return True
-            End Get
-        End Property
-
         Public Overrides ReadOnly Property UsedResources As String()
             Get
                 Return New String() {"logo.png"}
