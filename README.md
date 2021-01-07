@@ -21,4 +21,4 @@ These projects use the non-licensed version of GcExcel. The non-licensed version
 * Product Home Site: [https://www.grapecity.com/documents-api-excel](https://www.grapecity.com/documents-api-excel)
 * Nuget Package: [https://www.nuget.org/packages/GrapeCity.Documents.Excel/](https://www.nuget.org/packages/GrapeCity.Documents.Excel/)
 * .NET Core SDK: [https://www.microsoft.com/net/core](https://www.microsoft.com/net/core)
-* 中文版在线演示站点：[http://demo.gcpowertools.com.cn/spread/services/#/](http://demo.gcpowertools.com.cn/spread/services/#/)
+* 中文版在线演示站点：[https://demo.grapecity.com.cn/spread/services/#/](https://demo.grapecity.com.cn/spread/services/#/)
