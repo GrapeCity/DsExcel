@@ -95,7 +95,7 @@ namespace SpreadService.WebApi.Controllers
             IWorksheet worksheet = workbook.Worksheets[0];
 
 
-            //***********************Set RowHeight & ColumnWidth***************
+            //**********************Set RowHeight & ColumnWidth**************
             worksheet.StandardHeight = 30;
             worksheet.Range["1:1"].RowHeight = 57.75;
             worksheet.Range["2:9"].RowHeight = 30;
@@ -108,9 +108,7 @@ namespace SpreadService.WebApi.Controllers
             worksheet.Range["G:H"].ColumnWidth = 16.71;
             worksheet.Range["I:I"].ColumnWidth = 2.71;
 
-
-
-            //**************************Set Table Value & Formulas*********************
+            //*************************Set Table Value & Formulas********************
             ITable table = worksheet.Tables.Add(worksheet.Range["B2:H9"], true);
             worksheet.Range["B2:H9"].Value = new object[,]
             {
@@ -133,13 +131,12 @@ namespace SpreadService.WebApi.Controllers
             worksheet.Range["G3:G9"].Formula = "=[@[DATE RECEIVED]]+30";
             worksheet.Range["H3:H9"].Formula = "=[@DEADLINE]-TODAY()";
 
-
-
-            //****************************Set Table Style********************************
+            //***************************Set Table Style*******************************
             ITableStyle tableStyle = workbook.TableStyles.Add("Bid Tracker");
             workbook.DefaultTableStyle = "Bid Tracker";
 
             var wholeTableStyle = tableStyle.TableStyleElements[TableStyleElementType.WholeTable];
+
             //Set WholeTable element style.
             wholeTableStyle.Font.Color = Color.FromArgb(89, 89, 89);
             wholeTableStyle.Borders.Color = Color.FromArgb(89, 89, 89);
@@ -151,6 +148,7 @@ namespace SpreadService.WebApi.Controllers
             wholeTableStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
 
             var headerRowStyle = tableStyle.TableStyleElements[TableStyleElementType.HeaderRow];
+
             //Set HeaderRow element style.
             headerRowStyle.Borders.Color = Color.FromArgb(89, 89, 89);
             headerRowStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
@@ -162,8 +160,8 @@ namespace SpreadService.WebApi.Controllers
             headerRowStyle.Interior.Color = Color.FromArgb(131, 95, 1);
             headerRowStyle.Interior.PatternColor = Color.FromArgb(254, 184, 10);
 
-
             var totalRowStyle = tableStyle.TableStyleElements[TableStyleElementType.TotalRow];
+
             //Set TotalRow element style.
             totalRowStyle.Borders.Color = Color.White;
             totalRowStyle.Borders[BordersIndex.EdgeLeft].LineStyle = BorderLineStyle.Thin;
@@ -174,16 +172,13 @@ namespace SpreadService.WebApi.Controllers
             totalRowStyle.Borders[BordersIndex.InsideHorizontal].LineStyle = BorderLineStyle.Thin;
             totalRowStyle.Interior.Color = Color.FromArgb(131, 95, 1);
 
-
-
-            //***********************************Set Named Styles*****************************
+            //**********************************Set Named Styles****************************
             IStyle titleStyle = workbook.Styles["Title"];
             titleStyle.Font.Name = "Calibri";
             titleStyle.Font.Size = 36;
             titleStyle.Font.Color = Color.FromArgb(56, 145, 167);
             titleStyle.IncludeAlignment = true;
             titleStyle.VerticalAlignment = VerticalAlignment.Center;
-
 
             IStyle heading1Style = workbook.Styles["Heading 1"];
             heading1Style.IncludeAlignment = true;
@@ -195,8 +190,7 @@ namespace SpreadService.WebApi.Controllers
             heading1Style.Font.Color = Color.White;
             heading1Style.Font.Bold = false;
             heading1Style.IncludePatterns = true;
-            heading1Style.Interior.Color = Color.FromArgb(131, 95, 1);
-
+            heading1Style.Interior.Color = Color.White;
 
             IStyle dateStyle = workbook.Styles.Add("Date");
             dateStyle.IncludeNumber = true;
@@ -209,7 +203,6 @@ namespace SpreadService.WebApi.Controllers
             dateStyle.IncludeBorder = false;
             dateStyle.IncludePatterns = false;
 
-
             IStyle commaStyle = workbook.Styles["Comma"];
             commaStyle.IncludeNumber = true;
             commaStyle.NumberFormat = "#,##0_);(#,##0)";
@@ -218,7 +211,6 @@ namespace SpreadService.WebApi.Controllers
             commaStyle.IndentLevel = 1;
             commaStyle.VerticalAlignment = VerticalAlignment.Center;
 
-
             IStyle normalStyle = workbook.Styles["Normal"];
             normalStyle.HorizontalAlignment = HorizontalAlignment.Left;
             normalStyle.IndentLevel = 1;
@@ -226,14 +218,12 @@ namespace SpreadService.WebApi.Controllers
             normalStyle.WrapText = true;
             normalStyle.Font.Color = Color.FromArgb(89, 89, 89);
 
-
             IStyle currencyStyle = workbook.Styles["Currency"];
             currencyStyle.NumberFormat = "$#,##0.00";
             currencyStyle.IncludeAlignment = true;
-            currencyStyle.HorizontalAlignment = HorizontalAlignment.Left;
+            currencyStyle.HorizontalAlignment = HorizontalAlignment.Right;
             currencyStyle.IndentLevel = 1;
             currencyStyle.VerticalAlignment = VerticalAlignment.Center;
-
 
             IStyle percentStyle = workbook.Styles["Percent"];
             percentStyle.IncludeAlignment = true;
@@ -245,7 +235,6 @@ namespace SpreadService.WebApi.Controllers
             percentStyle.Font.Bold = true;
             percentStyle.Font.Color = Color.FromArgb(89, 89, 89);
 
-
             IStyle comma0Style = workbook.Styles["Comma [0]"];
             comma0Style.NumberFormat = "#,##0_);(#,##0)";
             comma0Style.IncludeAlignment = true;
@@ -253,9 +242,7 @@ namespace SpreadService.WebApi.Controllers
             comma0Style.IndentLevel = 3;
             comma0Style.VerticalAlignment = VerticalAlignment.Center;
 
-
-
-            //************************************Add Conditional Formatting****************
+            //***********************************Add Conditional Formatting***************
             IDataBar dataBar = worksheet.Range["F3:F9"].FormatConditions.AddDatabar();
             dataBar.MinPoint.Type = ConditionValueTypes.Number;
             dataBar.MinPoint.Value = 1;
@@ -273,9 +260,7 @@ namespace SpreadService.WebApi.Controllers
             dataBar.NegativeBarFormat.Color.Color = Color.Red;
             dataBar.ShowValue = true;
 
-
-
-            //****************************************Use NamedStyle**************************
+            //***************************************Use NamedStyle*************************
             worksheet.SheetView.DisplayGridlines = false;
             table.TableStyle = tableStyle;
             worksheet.Range["B1"].Style = titleStyle;
