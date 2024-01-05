@@ -6,7 +6,7 @@
     <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="6.2.3" />
+    <PackageReference Include="Document.Solutions.Excel" Version="7.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
   </ItemGroup>
   <ItemGroup>
