@@ -42,7 +42,7 @@
     <Reference Include="GrapeCity.Documents.Common, Version=3.0.0.414, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
       <HintPath>packages\GrapeCity.Documents.Common.3.0.0.414\lib\net461\GrapeCity.Documents.Common.dll</HintPath>
     </Reference>
-    <Reference Include="GrapeCity.Documents.Excel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
+    <Reference Include="Document.Solutions.Excel, Version=7.0.1.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
       <HintPath>packages\GrapeCity.Documents.Excel.3.0.0\lib\net461\GrapeCity.Documents.Excel.dll</HintPath>
     </Reference>
     <Reference Include="GrapeCity.Documents.Imaging, Version=3.0.0.414, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
