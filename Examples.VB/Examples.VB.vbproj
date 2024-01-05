@@ -433,7 +433,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GrapeCity.Documents.Excel" Version="$(GcExcelVersion)" />
+    <PackageReference Include="Document.Solutions.Excel" Version="$(GcExcelVersion)" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 
