@@ -49,7 +49,7 @@
     <Reference Include="GrapeCity.Documents.DataVisualization.Chart, Version=13.0.36.0, Culture=neutral, PublicKeyToken=8dbeb54e07a9de91, processorArchitecture=MSIL">
       <HintPath>packages\GrapeCity.Documents.DataVisualization.Chart.13.0.36\lib\netstandard2.0\GrapeCity.Documents.DataVisualization.Chart.dll</HintPath>
     </Reference>
-    <Reference Include="GrapeCity.Documents.Excel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
+    <Reference Include="Document.Solutions.Excel, Version=7.0.1.0, Culture=neutral, PublicKeyToken=c57ae7fc6891b71d, processorArchitecture=MSIL">
       <HintPath>packages\GrapeCity.Documents.Excel.4.0.0\lib\net461\GrapeCity.Documents.Excel.dll</HintPath>
     </Reference>
     <Reference Include="GrapeCity.Documents.Imaging, Version=4.0.0.616, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
